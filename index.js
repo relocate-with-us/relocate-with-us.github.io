@@ -1,5 +1,5 @@
 function fetchJobs() {
-    fetch("db.json")
+    fetch("https://relocate-with-us.github.io/db.json")
         .then(res => res.json())
         .then(data => {
             const jobsList = document.getElementById("jobsList");
