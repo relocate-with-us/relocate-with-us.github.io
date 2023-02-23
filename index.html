@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <title>Job Listing with Relocation Assistance</title>
+    <link rel="icon" type="image/x-icon" href="rocket.png">
 </head>
 
 <body class="bg-gray-100 h-screen" onload="fetchJobs()">
@@ -16,16 +17,17 @@
             <div class="flex justify-between">
                 <div class="flex space-x-1">
                     <div>
-                        <a href="#" class="flex items-center py-5 px-2 text-gray-700 hover:text-black">
+                        <a href="" class="flex items-center py-5 px-2 text-gray-700 hover:text-black">
                             <svg class="h-8 w-10 mr-1 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
-              </svg>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                            </svg>
                             <span class="font-bold">Relocate with us</span>
                         </a>
                     </div>
                 </div>
                 <div class="hidden md:flex items-center space-x-1">
-                    <a href="#" class="py-2 px-3 bg-blue-300 text-white-800 rounded hover:bg-blue-500 hover:text-black-400 transition duration-300">Post a job FREE</a>
+                    <a class="px-8  text-white-800 rounded hover:underline " href="newsletter.html">Newsletter</a>
+                    <a href="https://airtable.com/shrnUCBHSQR6rsTzT" class="py-2 px-3 bg-blue-300 text-white-800 rounded hover:bg-blue-500 hover:text-black-400 transition duration-300">Post a job</a>
                 </div>
                 <div class="md:hidden flex items-center">
 
@@ -40,31 +42,61 @@
     <header class="hero bg-white text-grey-darkest py-8 hero--compact">
         <div class="container mx-auto px-4">
             <h1 class="hero__title font-normal leading-normal">
-                <h3 class="text-3xl font-bold">Job Listing</h3>
-                We got you covered with daily job posts that offer relcoation assistance, visa sponsorship and more
+                <h1 class="text-center text-4xl font-bold">
+                    Pack Your Bags<svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-10 h-10 icon icon-tabler icon-tabler-backpack" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M5 18v-6a6 6 0 0 1 6 -6h2a6 6 0 0 1 6 6v6a3 3 0 0 1 -3 3h-8a3 3 0 0 1 -3 -3z"></path>
+                        <path d="M10 6v-1a2 2 0 1 1 4 0v1"></path>
+                        <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4"></path>
+                        <path d="M11 10h2"></path>
+                     </svg>, We're Moving <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-10 h-10 icon icon-tabler icon-tabler-plane-departure" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M14.639 10.258l4.83 -1.294a2 2 0 1 1 1.035 3.863l-14.489 3.883l-4.45 -5.02l2.897 -.776l2.45 1.414l2.897 -.776l-3.743 -6.244l2.898 -.777l5.675 5.727z"></path>
+                        <path d="M3 21h18"></path>
+                     </svg>
+                    <br> Jobs with Visa Sponsorship & Relocation Assistance<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="inline-block w-18 h-12">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM8.547 4.505a8.25 8.25 0 1011.672 8.214l-.46-.46a2.252 2.252 0 01-.422-.586l-1.08-2.16a.414.414 0 00-.663-.107.827.827 0 01-.812.21l-1.273-.363a.89.89 0 00-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.211.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 01-1.81 1.025 1.055 1.055 0 01-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.654-.261a2.25 2.25 0 01-1.384-2.46l.007-.042a2.25 2.25 0 01.29-.787l.09-.15a2.25 2.25 0 012.37-1.048l1.178.236a1.125 1.125 0 001.302-.795l.208-.73a1.125 1.125 0 00-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 01-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 01-1.458-1.137l1.279-2.132z" clip-rule="evenodd" />
+                      </svg>
+                </h1>
                 <header class="bg-white p-6">
-                    <p class="text-xl">Find your next career opportunity with relocation assistance</p>
+
                 </header>
                 <main class="container mx-auto p-6">
-                    <h1 class="text-2xl font-bold mb-6">Available Jobs</h1>
+                    <h1 class="text-2xl font-bold mb-6">Available Jobs: +30</h1>
                     <ul id="jobsList" class="list-none">
                     </ul>
                 </main>
                 <script src="index.js"></script>
 
-<footer class="bg-gray-100 fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
-    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="" class="hover:underline">Relocate with us™</a>. All Rights Reserved.
-    </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
-        <li>
-            <a href="#" class="mr-9 text-black hover:underline md:mr-6 ">About</a>
-        </li>
-        <li>
-            <a href="#" class="text-black hover:underline">Contact</a>
-        </li>
-    </ul>
-</footer>
-    
+
+                <footer class="justify-between bg-gray-100 fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+                    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="index.html" class="hover:underline">Relocate with us™</a>. All Rights Reserved.
+                    </span>
+                    <div class="flex mr-20 ">
+                        <a href="https://twitter.com/RelocatewithU ">
+                            <svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24Z" fill="#55ACEE"/>
+                                <path d="M23.2812 19.5075L23.3316 20.338L22.4922 20.2363C19.4369 19.8465 16.7677 18.5245 14.5013 16.3043L13.3934 15.2027L13.108 16.0162C12.5036 17.8297 12.8897 19.7448 14.1488 21.0328C14.8203 21.7447 14.6692 21.8464 13.5109 21.4227C13.108 21.2871 12.7554 21.1854 12.7219 21.2362C12.6044 21.3549 13.0073 22.8971 13.3262 23.5073C13.7627 24.3547 14.6524 25.1851 15.6261 25.6766L16.4487 26.0664L15.475 26.0834C14.5349 26.0834 14.5013 26.1003 14.6021 26.4562C14.9378 27.5578 16.264 28.7273 17.7413 29.2357L18.7822 29.5916L17.8756 30.1339C16.5326 30.9136 14.9546 31.3542 13.3766 31.3881C12.6211 31.4051 12 31.4728 12 31.5237C12 31.6932 14.0481 32.6423 15.24 33.0151C18.8157 34.1167 23.063 33.6422 26.2526 31.761C28.5189 30.4221 30.7852 27.7612 31.8428 25.1851C32.4136 23.8123 32.9844 21.304 32.9844 20.1007C32.9844 19.3211 33.0347 19.2194 33.9748 18.2873C34.5288 17.7449 35.0492 17.1517 35.15 16.9823C35.3178 16.6603 35.3011 16.6603 34.4449 16.9484C33.018 17.4568 32.8165 17.389 33.5216 16.6264C34.042 16.084 34.6631 15.101 34.6631 14.8129C34.6631 14.7621 34.4113 14.8468 34.1259 14.9993C33.8238 15.1688 33.1523 15.423 32.6486 15.5756L31.7421 15.8637L30.9195 15.3044C30.4663 14.9993 29.8283 14.6604 29.4926 14.5587C28.6364 14.3214 27.327 14.3553 26.5548 14.6265C24.4563 15.3892 23.1301 17.3551 23.2812 19.5075Z" fill="white"/>
+                                </svg>
+                        </a>
+                        <a class="ml-1" href="https://www.linkedin.com/company/relocatewithus">
+                            <svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24Z" fill="#0077B5"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.3188 14.8227C17.3188 16.3918 16.1377 17.6473 14.2412 17.6473H14.2064C12.3805 17.6473 11.2 16.3918 11.2 14.8227C11.2 13.2204 12.4164 12 14.277 12C16.1377 12 17.2835 13.2204 17.3188 14.8227ZM16.9605 19.8778V36.2196H11.5216V19.8778H16.9605ZM36.5752 36.2196L36.5754 26.8497C36.5754 21.8303 33.8922 19.4941 30.3131 19.4941C27.4254 19.4941 26.1325 21.0802 25.4107 22.1929V19.8783H19.9711C20.0428 21.4117 19.9711 36.22 19.9711 36.22H25.4107V27.0934C25.4107 26.605 25.446 26.1178 25.5898 25.7681C25.9829 24.7924 26.8779 23.7822 28.3805 23.7822C30.3494 23.7822 31.1365 25.2807 31.1365 27.4767V36.2196H36.5752Z" fill="white"/>
+                                </svg>
+                        </a>
+                    </div>
+                    <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+                        <li>
+                            <a href="about.html" class="mr-9 text-black hover:underline md:mr-6 ">About</a>
+                        </li>
+                        <li>
+                            <a href="https://us12.list-manage.com/contact-form?u=5f1327076a747496c7ce750c7&form_id=327d4e741f9e9f75217bf30cd430ee30" class="text-black hover:underline">Contact</a>
+                        </li>
+                    </ul>
+                </footer>
+
 </body>
 
 </html>
