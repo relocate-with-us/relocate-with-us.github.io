@@ -5,6 +5,13 @@ function fetchJobs() {
             const jobsList = document.getElementById("jobsList");
             jobsList.innerHTML = "";
             data.forEach((job, index) => {
+                // calculate the number of days since the job was posted
+
+                //const postedDate = moment(job.post_date, "YYYY-MM-DD");
+
+                // calculate the number of days since the job was posted
+                // const postedDaysAgo = moment().diff(postedDate, "days");
+
                 jobsList.innerHTML += `
                 <a href="${job.description}" class="flex bg-white shadow-md my-16 mx-10 p-6 rounded border-l-4 border-teal-500 border-solid
                 sm: flex-row sm: my-10">
@@ -21,8 +28,10 @@ function fetchJobs() {
                           </h3>
                           <h2 class="font-bold text-xl my-2 sm:my-0">${job.position}</h2>
                           <p class="text-gray-700">
-                          ${job.post_date} · ${job.contract} · ${job.location}
+                          ${job.contract} · ${job.location} 
                           </p>
+                          <h2 class="text-gray-700">Posted ${job.post_date}</h2>
+                          
                         </div>
                         
                         <div class="flex justify-end">
@@ -34,6 +43,17 @@ function fetchJobs() {
                         <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5"></path>
                         <path d="M10 14l10 -10"></path>
                         <path d="M15 4l5 0l0 5"></path>
+                    </svg>
+                    </button>
+                </div>
+                
+            </div>
+              </>
+                `
+            });
+        })
+        .catch(error => console.error(error));
+}"></path>
                     </svg>
                     </button>
                 </div>
