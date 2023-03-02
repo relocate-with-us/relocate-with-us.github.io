@@ -53,15 +53,4 @@ function fetchJobs() {
             });
         })
         .catch(error => console.error(error));
-}"></path>
-                    </svg>
-                    </button>
-                </div>
-                
-            </div>
-              </>
-                `
-            });
-        })
-        .catch(error => console.error(error));
 }
