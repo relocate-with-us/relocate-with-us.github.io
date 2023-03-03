@@ -1,4 +1,20 @@
 [
+       
+       {
+        "company": "justDice",
+        "position": "Go Backend Developer (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "relocation_assistance": true,
+        "experience": 3,
+        "isNew": "Relocation Assistance",
+        "Featured": true,
+        "visa": "Visa Sponsorship",
+        "Experience": "2 years",
+        "contract": "Full Time",
+        "post_date": "March 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFHJjbb8aK5qw/company-logo_200_200/0/1674060192311?e=1686182400&v=beta&t=LS4AIsOnZxvswH1XBr_Vzn0dLu-b7USKiYyi2sVE-EA",
+        "description": "https://justdice.io/jobs/?j_id=75dd8ce7-5ca0-4319-905f-6b392a377fb9&apply=1"
+    },
        {
         "company": "Lightcurve",
         "position": "Business Developer",
