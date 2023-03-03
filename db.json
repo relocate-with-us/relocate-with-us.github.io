@@ -1,4 +1,19 @@
 [
+       {
+        "company": "Lightcurve",
+        "position": "Business Developer",
+        "location": "Berlin, Germany 🇩🇪",
+        "relocation_assistance": true,
+        "experience": 3,
+        "isNew": "Relocation Assistance",
+        "Featured": true,
+        "visa": "Visa Sponsorship",
+        "Experience": "2 years",
+        "contract": "Full Time",
+        "post_date": "March 3, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/77310/social/340207f13f75010b9ad78918756d0e76.png",
+        "description": "https://lightcurve.jobs.personio.de/job/1036270?display=en"
+    },
           {
         "company": "Nexxiot",
         "position": "Frontend Software Engineer",
