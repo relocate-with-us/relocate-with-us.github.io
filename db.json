@@ -1,5 +1,18 @@
 [
         {
+        "company": "Sendinblue",
+        "position": "Customer Experience Representative - English (Hybrid Remote Policy)",
+        "location": "Paris, France 🇫🇷",
+        "relocation_assistance": true,
+        "isNew": "Relocation Assistance",
+        "Featured": true,
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 11, 2023",
+        "logo": "https://www.sendinblue.com/wp-content/themes/sendinblue2019/assets/images/common/logo-color.svg",
+        "description": "https://jobs.lever.co/sendinblue/7c866d78-4038-4629-a143-fab042eea0dd/apply"
+    }, 
+        {
         "company": "TomTom",
         "position": "Senior Software Engineer (C++)",
         "location": "Amesterdam, Netherlands 🇳🇱",
