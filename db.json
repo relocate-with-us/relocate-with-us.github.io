@@ -1,4 +1,17 @@
 [
+        {
+        "company": "Lightcurve",
+        "position": "Ops Engineer",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "isNew": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "Featured": true,
+        "relocation_assistance": true,
+        "post_date": "March 12, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/77310/social/340207f13f75010b9ad78918756d0e76.png",
+        "description": "https://lightcurve.jobs.personio.de/job/1044660?display=en#apply"
+    }, 
     {
         "company": "navvis",
         "position": "Dynamics 365 Solution Developer/ Architect (F/M/D)",
