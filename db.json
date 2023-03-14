@@ -1,4 +1,30 @@
 [
+          {
+        "company": "Voodoo",
+        "position": "IT & SaaS Administrator",
+        "location": "Paris, France 🇫🇷",
+        "relocation_assistance": true,
+        "isNew": "Relocation Assistance",
+        "Featured": true,
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 14, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFJQUE7nc_EQA/company-logo_200_200/0/1619510413232?e=1686787200&v=beta&t=F0NhO1qeTDSXydS1BzMReh6kOnExYc8-vuU4DJ2DkMM",
+        "description": "https://jobs.lever.co/voodoo/03f5ccf9-147f-4afb-bd30-2ca21dfaa255/apply"
+    }, 
+        {
+        "company": "BlaBlaCar",
+        "position": "Python mid-level Backend engineer",
+        "location": "Paris, France 🇫🇷",
+        "relocation_assistance": true,
+        "isNew": "Relocation Assistance",
+        "Featured": true,
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 14, 2023",
+        "logo": "https://www.blablacar.com/static/images/blablacar.svg",
+        "description": "https://jobs.lever.co/blablacar/7d2906e0-e204-470f-8b8a-0390e80b2557/apply"
+    }, 
         {
         "company": "Lightcurve",
         "position": "Ops Engineer",
