@@ -1,5 +1,43 @@
 [
-
+        {
+        "company": "finleap connect",
+        "position": "(Senior) Sales Manager (all genders)",
+        "location": "Berlin, Germany 🇩🇪",
+        "relocation_assistance": true,
+        "isNew": "Relocation Assistance",
+        "Featured": true,
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 15, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/110441/social/864c9dd1b214847e9e28775e78fff1f9.png",
+        "description": "https://finleapconnect.jobs.personio.com/job/1046309?display=en"
+    },
+        {
+        "company": "finleap connect",
+        "position": "(Senior) Cloud/Infrastructure Engineer (all genders)",
+        "location": "Berlin, Germany 🇩🇪",
+        "relocation_assistance": true,
+        "isNew": "Relocation Assistance",
+        "Featured": true,
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 15, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/110441/social/864c9dd1b214847e9e28775e78fff1f9.png",
+        "description": "https://finleapconnect.jobs.personio.com/job/1036876?display=en"
+    },
+        {
+        "company": "finleap connect",
+        "position": "Engineering Manager Infrastructure (all genders)",
+        "location": "Berlin, Germany 🇩🇪",
+        "relocation_assistance": true,
+        "isNew": "Relocation Assistance",
+        "Featured": true,
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 15, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/110441/social/864c9dd1b214847e9e28775e78fff1f9.png",
+        "description": "https://finleapconnect.jobs.personio.com/job/1046300?display=en"
+    },
         {
         "company": "byrd",
         "position": "Team Lead - Python Engineer (f/m/x)",
