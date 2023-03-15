@@ -1,4 +1,31 @@
 [
+
+        {
+        "company": "byrd",
+        "position": "Team Lead - Python Engineer (f/m/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "relocation_assistance": true,
+        "isNew": "Relocation Assistance",
+        "Featured": true,
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 15, 2023",
+        "logo": "https://getbyrd.com/core/uploads/2021/06/logo_white-green.svg",
+        "description": "https://getbyrd.com/en/jobs/?gh_jid=4135133101"
+    },
+        {
+        "company": "byrd",
+        "position": "Junior Android Engineer (f/m/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "relocation_assistance": true,
+        "isNew": "Relocation Assistance",
+        "Featured": true,
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 15, 2023",
+        "logo": "https://getbyrd.com/core/uploads/2021/06/logo_white-green.svg",
+        "description": "https://getbyrd.com/en/jobs/?gh_jid=4141885101"
+    },
         {
         "company": "Scalable GmbH",
         "position": "Senior Performance Marketing Manager - PPC (m/f/x)",
