@@ -1,5 +1,18 @@
 [
         {    
+        "company": "Funcom",
+        "position": "Marketing Director",
+        "location": "Stockholm, Sweden 🇸🇪",
+        "relocation_assistance": true,
+        "isNew": "Relocation Assistance",
+        "Featured": true,
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 16, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEoFqOr7ICAfg/company-logo_200_200/0/1678525277192?e=1686787200&v=beta&t=icRTo2llw9o_NsmRFF0HQImxAmb1QyOkJZJEmYBzK30",
+        "description": "https://jobs.funcom.com/jobs/1447747-marketing-director"
+    },
+        {    
         "company": "Klarna",
         "position": "Senior Product Manager - Platform Products",
         "location": "Stockholm, Sweden 🇸🇪",
