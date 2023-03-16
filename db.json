@@ -1,5 +1,31 @@
 [
         {    
+        "company": "Klarna",
+        "position": "Senior Product Manager - Platform Products",
+        "location": "Stockholm, Sweden 🇸🇪",
+        "relocation_assistance": true,
+        "isNew": "Relocation Assistance",
+        "Featured": true,
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 16, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQGLZq8y0KysHg/company-logo_200_200/0/1650893275381?e=1686787200&v=beta&t=Uo4rSl9XmyJNoiPynzBNgwfF6O3__EPMIOmUdr3Y_QA",
+        "description": "https://jobs.lever.co/klarna/704efb8c-416c-46b4-bbee-339301c09f88"
+    },
+        {    
+        "company": "Klarna",
+        "position": "Product Manager - AdTech Products",
+        "location": "Stockholm, Sweden 🇸🇪",
+        "relocation_assistance": true,
+        "isNew": "Relocation Assistance",
+        "Featured": true,
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 16, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQGLZq8y0KysHg/company-logo_200_200/0/1650893275381?e=1686787200&v=beta&t=Uo4rSl9XmyJNoiPynzBNgwfF6O3__EPMIOmUdr3Y_QA",
+        "description": "https://jobs.lever.co/klarna/1a2f2582-6b41-4a3b-ae81-ac47f80fbe79"
+    },
+        {    
         "company": "Kiwi.com",
         "position": "Senior Business Analyst (Resilience)",
         "location": "Barcelona , Spain 🇪🇸",
