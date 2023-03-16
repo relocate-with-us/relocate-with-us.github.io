@@ -1,6 +1,19 @@
 [
         {
         "company": "Telespazio",
+        "position": "IT Cyber Security Engineer",
+        "location": "Transinne, Belgium 🇧🇪",
+        "relocation_assistance": true,
+        "isNew": "Relocation Assistance",
+        "Featured": true,
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 16, 2023",
+        "logo": "https://gallery-cdn.breezy.hr/b735a295-0687-4069-b3a0-b39c8991adbb/telespazio-logo.png",
+        "description": "https://telespazio-be.breezy.hr/p/de9929feb98201-it-cyber-security-engineer"
+    },
+        {
+        "company": "Telespazio",
         "position": "Product Assurance (PA) Engineer",
         "location": "Transinne, Belgium 🇧🇪",
         "relocation_assistance": true,
