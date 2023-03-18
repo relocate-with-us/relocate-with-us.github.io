@@ -13,13 +13,6 @@ function defaultJobs(data) {
     const jobsList = document.getElementById("jobsList");
     jobsList.innerHTML = "";
     data.forEach((job, index) => {
-        // calculate the number of days since the job was posted
-
-        //const postedDate = moment(job.post_date, "YYYY-MM-DD");
-
-        // calculate the number of days since the job was posted
-        // const postedDaysAgo = moment().diff(postedDate, "days");
-
         jobsList.innerHTML += generateJobElement(job);
     });
 }
@@ -39,45 +32,43 @@ function filterJobs(text) {
             }
         });
     })
-}
+}    
 
-function generateJobElement({ description, company, logo, isNew, visa, position, contract, location, post_date }) {
-    return `
-    <a href="${description}" class="flex bg-white shadow-md my-16 mx-10 p-6 rounded border-l-4 border-teal-500 border-solid
-    sm: flex-row sm: my-10">
-        <div class=" flex justify-between">
-            <img  src=${logo}
-            class="-mt-16 mb-4 w-16 h-16 sm:w-28 sm:h-24 sm:mt-0 sm:my-0 object-contain"
-            alt="${company}" />
-        </div>
-            <div class="flex flex-col justify-between ml-6">
-              <h3 class="font-bold text-base text-teal-500 mb-1">
-              ${company}
-              <span class="ml-2 bg-teal-500 text-sm text-teal-100 p-1 px-2 rounded-full uppercase">${isNew}</span>
-              <span class="ml-2 bg-gray-600 text-sm text-white p-1 pr-2 px-2 rounded-full uppercase">${visa}</span>
-              </h3>
-              <h2 class="font-bold text-xl my-2 sm:my-0">${position}</h2>
-              <p class="text-gray-700">
-              ${contract} · ${location} 
-              </p>
-              <h2 class="text-gray-700">Posted ${post_date}</h2>
-              
+function generateJobElement({ description, company, logo, reloc, visa, position, contract, location, post_date }) {
+        return `
+          <a href="${description}" class="flex bg-white shadow-md my-6 mx-2 p-3 rounded border-l-4 border-teal-500 border-solid">
+            <div class="flex-shrink-0 mr-4">
+              <img src=${logo} class="w-16 h-16 object-contain" alt="${company}" />
             </div>
-            
-            <div class="flex justify-end">
-    </div>
-    <div class="ml-auto">
-        <button onclick="location.href='${description}'" type="button" class="hover:bg-blue-500 text-black-300 rounded bg-blue-300 py-2 px-3  transition duration-300">Apply
-        <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="20" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5"></path>
-            <path d="M10 14l10 -10"></path>
-            <path d="M15 4l5 0l0 5"></path>
-        </svg>
-        </button>
-    </div>
-    
-</div>
-  </>
-    `
-}
+            <div class="flex-grow">
+              <div class="flex items-center justify-between">
+                <h2 class="font-bold text-xl">${position}</h2>
+                <div class="flex items-center">
+                  <div class="mt-2 text-gray-700 hidden md:block">${post_date}</div>
+                  <button onclick="location.href='${description}'" type="button" class="hidden md:block bg-blue-500 text-white rounded py-2 px-3 hover:bg-blue-700 transition duration-300 ml-2">Apply<svg class="inline-block" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="20" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5"></path>
+                  <path d="M10 14l10 -10"></path>
+                  <path d="M15 4l5 0l0 5"></path>
+              </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="mt-2 text-teal-500">${company}</div>
+              <div class="flex items-center flex-wrap mt-2">
+                ${reloc && `<div class="mr-2 mb-2 md:mb-0 bg-teal-500 text-sm text-teal-100 p-1 px-2 rounded-full uppercase">${reloc}</div>`}
+                ${visa && `<div class="mr-2 mb-2 md:mb-0 bg-purple-500 text-sm text-purple-100 p-1 px-2 rounded-full uppercase">${visa}</div>`}
+              </div>
+              <div class="mt-2 text-gray-700">${contract} · ${location}</div>
+              <button onclick="location.href='${description}'" type="button" class="md:hidden block mt-2 bg-blue-500 text-white rounded py-2 px-3 hover:bg-blue-700 transition duration-300 w-full">Apply<svg class="inline-block" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="20" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5"></path>
+              <path d="M10 14l10 -10"></path>
+              <path d="M15 4l5 0l0 5"></path>
+          </svg>
+          </button>
+              <div class="text-gray-700 mt-2 md:hidden">Posted: ${post_date}</div>
+            </div>
+          </a>
+        `;
+      }
