@@ -1,5 +1,104 @@
 [
           {
+        "company": "Booking.com",
+        "position": "Engineering Manager - Cloud Security",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFm2_ALJcnvbg/company-logo_200_200/0/1668126222905?e=1687392000&v=beta&t=KkGouAFfpgLOriNjauJiS4YoI5CSOj3AWYt8UgAYK-4",
+        "description": "https://jobs.booking.com/careers/job/562949956761307?domain=booking.com"
+    },
+          {
+        "company": "SCHNEIDER GROUP",
+        "position": "Azure Developer (w/m/x)",
+        "location": "Munich, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFm2_ALJcnvbg/company-logo_200_200/0/1668126222905?e=1687392000&v=beta&t=KkGouAFfpgLOriNjauJiS4YoI5CSOj3AWYt8UgAYK-4",
+        "description": "https://www.linkedin.com/jobs/view/3517197902/?refId=62e89f59-86ce-4cf2-b5ae-4bb92e8918cc&trackingId=iOxuqNbVQVehPFcXTPkVoA%3D%3D"
+    }, 
+          {
+        "company": "Criteo",
+        "position": "Senior Site Reliability Engineer - Software Factory",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFiWqZbbEmQZw/company-logo_200_200/0/1622720669686?e=1687392000&v=beta&t=n2gkoXBbGg5C4LHrEbIFuuGlx0vvhXI7o38j9o1xH78",
+        "description": "https://careers.criteo.com/job/CRITUSR135005ENUSEXTERNAL/Senior-Site-Reliability-Engineer-Software-Factory"
+    }, 
+          {
+        "company": "MEDWING",
+        "position": "Software Engineer (gn)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEWCwjjIpNBtw/company-logo_200_200/0/1657801850983?e=1687392000&v=beta&t=aqhfwyjwMTjiuTcPGYdJUK5Jqwso8UVzs5E_ECe6t2Y",
+        "description": "https://team.medwing.com/en/jobs/software-engineer-gn/"
+    }, 
+          {
+        "company": "MEDWING",
+        "position": "(Senior) QA Automation Engineer (gn)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEWCwjjIpNBtw/company-logo_200_200/0/1657801850983?e=1687392000&v=beta&t=aqhfwyjwMTjiuTcPGYdJUK5Jqwso8UVzs5E_ECe6t2Y",
+        "description": "https://team.medwing.com/en/jobs/qa-automation-engineer-gn/"
+    }, 
+          {
+        "company": "MEDWING",
+        "position": "Senior PHP Developer (gn) – Marketplace",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEWCwjjIpNBtw/company-logo_200_200/0/1657801850983?e=1687392000&v=beta&t=aqhfwyjwMTjiuTcPGYdJUK5Jqwso8UVzs5E_ECe6t2Y",
+        "description": "https://team.medwing.com/en/jobs/senior-php-developer-gn-marketplace/"
+    }, 
+          {
+        "company": "Wooga",
+        "position": "Senior Game Designer (Economy)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEqCukrX6kZKA/company-logo_200_200/0/1660590864681?e=1687392000&v=beta&t=vbHDyWcrjB10LL3KE2lHamcj-X98uA6xAd2nFKdJyh8",
+        "description": "https://boards.greenhouse.io/wooga/jobs/2682796?gh_src=940ed7eb1us"
+    }, 
+          {
+        "company": "Wooga",
+        "position": "(Senior) Backend Engineer - Elixir",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEqCukrX6kZKA/company-logo_200_200/0/1660590864681?e=1687392000&v=beta&t=vbHDyWcrjB10LL3KE2lHamcj-X98uA6xAd2nFKdJyh8",
+        "description": "https://boards.greenhouse.io/wooga/jobs/4762536?gh_src=4b9516c81us"
+    }, 
+          {
+        "company": "Bigpoint",
+        "position": "Associate Product Data Analyst (m/f/d) - #5719",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQF_mljwUnWkMw/company-logo_200_200/0/1659974613567?e=1687392000&v=beta&t=QL5WCJ27CiodzF0QumyrTa6bkeFwtc05S7gMeADIPYk",
+        "description": "https://bigpoint.jobs.personio.de/job/1051742?display=en"
+    }, 
+          {
         "company": "E-Mobility Search",
         "position": "Technical Program Manager",
         "location": "Boston, US 🇺🇸",
