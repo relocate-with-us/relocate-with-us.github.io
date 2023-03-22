@@ -20,7 +20,7 @@
 
 </head>
 
-<body class="bg-gray-100 h-screen" onload="fetchDefaultJobs()">
+<body class="bg-gray-100 h-screen"> 
 
 
     <nav class="sticky top-0 bg-gray-100 z-50">
@@ -141,7 +141,6 @@
                     <ul id="jobsList" class="list-none">
                     </ul>
                 </main>
-                <script src="index.js"></script>
 
 
                 <footer class="justify-between bg-gray-100 fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
@@ -168,6 +167,12 @@
                     </ul>
                 </footer>
 
+                <script defer src="index.js"></script>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        fetchDefaultJobs();
+                    }, false);
+                </script>
 </body>
 
 </html>
