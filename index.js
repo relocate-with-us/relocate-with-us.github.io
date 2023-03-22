@@ -3,7 +3,7 @@ function fetchDefaultJobs() {
 }
 
 function fetchJobs(callback) {
-    fetch("https://relocate-with-us.github.io/db.json")
+    fetch("./db.json")
         .then(res => res.json())
         .then(data => callback(data))
         .catch(error => console.error(error));
