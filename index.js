@@ -38,7 +38,7 @@ function generateJobElement({ description, company, logo, reloc, visa, position,
         return `
           <a href="${description}" class="flex bg-white shadow-md my-6 mx-2 p-3 rounded border-l-4 border-teal-500 border-solid">
             <div class="flex-shrink-0 mr-4">
-              <img src=${logo} class="w-16 h-16 object-contain" alt="${company}" />
+              <img src=${logo} loading=lazy class="w-16 h-16 object-contain" alt="${company}" />
             </div>
             <div class="flex-grow">
               <div class="flex items-center justify-between">
