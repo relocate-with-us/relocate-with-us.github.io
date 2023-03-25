@@ -1,5 +1,49 @@
 [
     {
+        "company": "Back Market",
+        "position": "Senior Frontend Engineer // Design System",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 25, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQGrbUAuM_Qldw/company-logo_200_200/0/1559050539185?e=1687392000&v=beta&t=i3X77l8LOIuGINBPj0s1O_LTFAUV1-FzYRgP2R7d7v4",
+        "description": "https://jobs.lever.co/backmarket/98312414-3075-427d-9e54-f762b55a6366"
+    },
+    {
+        "company": "Kaufland.de",
+        "position": "Junior Data Scientist (f/m/d) - Information Retrieval and Recommender Systems",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 25, 2023",
+        "logo": "https://kaufland-ecommerce.com/wp-content/uploads/KL_Ecommerce_Logo_RGB.png",
+        "description": "https://kaufland-ecommerce.com/en/job/junior-data-scientist-f-m-d-information-retrieval-and-recommender-systems/"
+    },
+    {
+        "company": "finleap connect",
+        "position": "IT Administrator (all genders)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 25, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/110441/social/864c9dd1b214847e9e28775e78fff1f9.png",
+        "description": "https://connect.finleap.com/finleap-connect-open-positions-jobs/"
+    },
+    {
+        "company": "finleap connect",
+        "position": "(Senior) Key Account Manager (all genders)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 25, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/110441/social/864c9dd1b214847e9e28775e78fff1f9.png",
+        "description": "https://connect.finleap.com/finleap-connect-open-positions-jobs/"
+    },
+    {
         "company": "Truecaller",
         "position": "Data Analyst",
         "location": "Stockholm, Sweden 🇸🇪",
