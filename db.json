@@ -1,5 +1,16 @@
 [
     {
+        "company": "University of Bath",
+        "position": "Marketing Coordinator (fixed-term role)",
+        "location": "Bath, UK 🇬🇧",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 25, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHQLVwhPQAQ1g/company-logo_200_200/0/1677695706581?e=1687996800&v=beta&t=mfvxwQl3M1I_XjJItaRLZiI78Yhp1YbNZrKmBl4k2ms",
+        "description": "https://www.bath.ac.uk/jobs/Vacancy.aspx?ref=CC10294R"
+    },
+    {
         "company": "Back Market",
         "position": "Senior Frontend Engineer // Design System",
         "location": "Berlin, Germany 🇩🇪",
