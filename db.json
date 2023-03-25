@@ -1,4 +1,92 @@
 [
+    {
+        "company": "Truecaller",
+        "position": "Data Analyst",
+        "location": "Stockholm, Sweden 🇸🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 25, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQFOVQ1AU0QAqw/company-logo_200_200/0/1574340515909?e=1687996800&v=beta&t=y50rJ2ITi0qDS5oVPodcKdlK_ZtzWOsS9xBpYxDbEgo",
+        "description": "https://www.truecaller.com/careers/jobs/4720493"
+    },
+       {
+        "company": "Truecaller",
+        "position": "Senior Data Analyst",
+        "location": "Stockholm, Sweden 🇸🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 25, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQFOVQ1AU0QAqw/company-logo_200_200/0/1574340515909?e=1687996800&v=beta&t=y50rJ2ITi0qDS5oVPodcKdlK_ZtzWOsS9xBpYxDbEgo",
+        "description": "https://www.truecaller.com/careers/jobs/4844316"
+    },
+       {
+        "company": "Truecaller",
+        "position": "Data Engineer",
+        "location": "Stockholm, Sweden 🇸🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 25, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQFOVQ1AU0QAqw/company-logo_200_200/0/1574340515909?e=1687996800&v=beta&t=y50rJ2ITi0qDS5oVPodcKdlK_ZtzWOsS9xBpYxDbEgo",
+        "description": "https://www.truecaller.com/careers/jobs/4874882"
+    },
+       {
+        "company": "Truecaller",
+        "position": "Senior Software Engineer - Android",
+        "location": "Stockholm, Sweden 🇸🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 25, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQFOVQ1AU0QAqw/company-logo_200_200/0/1574340515909?e=1687996800&v=beta&t=y50rJ2ITi0qDS5oVPodcKdlK_ZtzWOsS9xBpYxDbEgo",
+        "description": "https://www.truecaller.com/careers/jobs/4009545"
+    },
+       {
+        "company": "Truecaller",
+        "position": "Senior Software Engineer - iOS",
+        "location": "Stockholm, Sweden 🇸🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 25, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQFOVQ1AU0QAqw/company-logo_200_200/0/1574340515909?e=1687996800&v=beta&t=y50rJ2ITi0qDS5oVPodcKdlK_ZtzWOsS9xBpYxDbEgo",
+        "description": "https://www.truecaller.com/careers/jobs/4841415"
+    },
+       {
+        "company": "Truecaller",
+        "position": "Software Engineer Backend",
+        "location": "Stockholm, Sweden 🇸🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 25, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQFOVQ1AU0QAqw/company-logo_200_200/0/1574340515909?e=1687996800&v=beta&t=y50rJ2ITi0qDS5oVPodcKdlK_ZtzWOsS9xBpYxDbEgo",
+        "description": "https://www.truecaller.com/careers/jobs/4846393"
+    },
+       {
+        "company": "Project A Ventures",
+        "position": "Junior Talent Sourcer (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 25, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQF8_kJGTMAYfQ/company-logo_200_200/0/1656916947379?e=1687996800&v=beta&t=rddGqJLrZkCAYjLFj5THtLpOJSWrGh9HWN79UAYdKgA",
+        "description": "https://www.project-a.com/careers/talent-sourcer-mfd-5754151002/"
+    },
+       {
+        "company": "Sunday GmbH",
+        "position": "Business Intelligence / Data Science Lead (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 25, 2023",
+        "logo": "//cdn.join.com/5f759e23632ed40001dffb67/sunday-gmb-h-logo-s.png",
+        "description": "https://sunday.gg/jobs/?j_id=610b3c7e-b192-42ee-8d3b-aa7d9903feb1"
+    },
        {
         "company": "justtrack",
         "position": "(Senior) Technical Support Engineer (f/m/d)",
