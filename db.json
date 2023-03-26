@@ -1,5 +1,38 @@
 [
     {
+        "company": "taxfix",
+        "position": "Creative Director (d/f/m)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 26, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGlLjjiaSeQVg/company-logo_200_200/0/1630915482700?e=1687392000&v=beta&t=daC2rUEh6ny3ABcXGE_Nc1xzoa6UiWbE8pDWJcjLxlA",
+        "description": "https://taxfix.de/en/careers/open-position/6508720002/"
+    },
+    {
+        "company": "AI Sweden’s Data Factory",
+        "position": "Systems Engineer",
+        "location": "Göteborg, Sweden 🇸🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 26, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQE_PYWtZRNGQg/company-logo_200_200/0/1599132587433?e=1687996800&v=beta&t=r9niDs5ZHRoWTa9__MOKLS_vJBiAHjHvI7WwAUnMoa0",
+        "description": "https://careers.ai.se/jobs/1887852-systems-engineer-to-ai-sweden-s-data-factory"
+    },
+    {
+        "company": "FRG Technology Consulting",
+        "position": "Senior C++ Developer",
+        "location": "Prague, Czech Republic 🇨🇿",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 26, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEtefUzbbvGMQ/company-logo_200_200/0/1622565098187?e=1687996800&v=beta&t=-Xn8malyt9JoYFtNuIp1RPA5NQCyhCLAGJTo-rNbCkU",
+        "description": "https://www.frgconsulting.com/job/SM24032023C/senior-c++-developer"
+    },
+    {
         "company": "LandSolutions Inc",
         "position": "Software Engineer",
         "location": "Calgary, Canada 🇨🇦",
