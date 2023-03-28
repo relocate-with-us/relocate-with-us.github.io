@@ -1,5 +1,60 @@
 [
     {
+        "company": "Volkswagen Digital Solutions",
+        "position": "Cloud Solutions Architect",
+        "location": "Lisbon, Portugal 🇵🇹",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQG5T3RuuvHyBQ/company-logo_200_200/0/1656956311470?e=1687996800&v=beta&t=5XWmFLwnSn1LZStRzXl5UeMTn_oqgxaWKN12oVjrfKw",
+        "description": "https://www.vwds.pt/job/mid-senior-cloud-solutions-architect/"
+    },
+    {
+        "company": "Volkswagen Digital Solutions",
+        "position": "Fullstack Developer",
+        "location": "Lisbon, Portugal 🇵🇹",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQG5T3RuuvHyBQ/company-logo_200_200/0/1656956311470?e=1687996800&v=beta&t=5XWmFLwnSn1LZStRzXl5UeMTn_oqgxaWKN12oVjrfKw",
+        "description": "https://www.vwds.pt/job/mid-level-fullstack-developer-2/"
+    },
+    {
+        "company": "Volkswagen Digital Solutions",
+        "position": "Data Scientist",
+        "location": "Lisbon, Portugal 🇵🇹",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQG5T3RuuvHyBQ/company-logo_200_200/0/1656956311470?e=1687996800&v=beta&t=5XWmFLwnSn1LZStRzXl5UeMTn_oqgxaWKN12oVjrfKw",
+        "description": "https://www.vwds.pt/job/senior-level-data-scientist/"
+    },
+    {
+        "company": "Volkswagen Digital Solutions",
+        "position": "Program Manager",
+        "location": "Lisbon, Portugal 🇵🇹",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQG5T3RuuvHyBQ/company-logo_200_200/0/1656956311470?e=1687996800&v=beta&t=5XWmFLwnSn1LZStRzXl5UeMTn_oqgxaWKN12oVjrfKw",
+        "description": "https://www.vwds.pt/job/senior-program-manager/"
+    },
+    {
+        "company": "Volkswagen Digital Solutions",
+        "position": "QA Tester",
+        "location": "Lisbon, Portugal 🇵🇹",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQG5T3RuuvHyBQ/company-logo_200_200/0/1656956311470?e=1687996800&v=beta&t=5XWmFLwnSn1LZStRzXl5UeMTn_oqgxaWKN12oVjrfKw",
+        "description": "https://www.vwds.pt/job/mid-senior-qa-tester/"
+    },
+    {
         "company": "Kaufland.de",
         "position": "(Senior) Product Analyst (f/m/d) - Explore & Discover",
         "location": "Cologne, Germany 🇩🇪",
