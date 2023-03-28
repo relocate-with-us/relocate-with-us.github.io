@@ -1,5 +1,27 @@
 [
     {
+        "company": "GetYourGuide",
+        "position": "Backend Engineer, Marketplace",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEGbwfgHCpCGg/company-logo_200_200/0/1624280872752?e=1687996800&v=beta&t=0_xVyHpyo_efG480TC9K0rd6jT6j1CX1SGp1J0KD0No",
+        "description": "https://www.getyourguide.careers/jobs/2464807"
+    },
+    {
+        "company": "GetYourGuide",
+        "position": "Data Analyst, Product Analytics",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEGbwfgHCpCGg/company-logo_200_200/0/1624280872752?e=1687996800&v=beta&t=0_xVyHpyo_efG480TC9K0rd6jT6j1CX1SGp1J0KD0No",
+        "description": "https://www.getyourguide.careers/jobs/1193918"
+    },
+    {
         "company": "Volkswagen Digital Solutions",
         "position": "Cloud Solutions Architect",
         "location": "Lisbon, Portugal 🇵🇹",
