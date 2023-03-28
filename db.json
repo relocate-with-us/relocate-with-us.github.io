@@ -1,5 +1,60 @@
 [
     {
+        "company": "Kaufland.de",
+        "position": "(Senior) Product Analyst (f/m/d) - Explore & Discover",
+        "location": "Cologne, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 28, 2023",
+        "logo": "https://kaufland-ecommerce.com/wp-content/uploads/KL_Ecommerce_Logo_RGB.png",
+        "description": "https://kaufland-ecommerce.com/en/job/senior-product-analyst-f-m-d-explore-discover/"
+    },
+    {
+        "company": "Kaufland.de",
+        "position": "Analytics Engineer (f/m/d) - Web Analytics",
+        "location": "Cologne, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 28, 2023",
+        "logo": "https://kaufland-ecommerce.com/wp-content/uploads/KL_Ecommerce_Logo_RGB.png",
+        "description": "https://kaufland-ecommerce.com/en/job/analytics-engineer-f-m-d-web-analytics/"
+    }, 
+    {
+        "company": "Kaufland.de",
+        "position": "Data Engineer (f/m/d)",
+        "location": "Cologne, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 28, 2023",
+        "logo": "https://kaufland-ecommerce.com/wp-content/uploads/KL_Ecommerce_Logo_RGB.png",
+        "description": "https://kaufland-ecommerce.com/en/job/data-engineer-f-m-d/"
+    }, 
+    {
+        "company": "Kaufland.de",
+        "position": "Junior PHP Engineer (f/m/d)",
+        "location": "Cologne, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 28, 2023",
+        "logo": "https://kaufland-ecommerce.com/wp-content/uploads/KL_Ecommerce_Logo_RGB.png",
+        "description": "https://kaufland-ecommerce.com/en/job/junior-php-engineer-f-m-d/"
+    }, 
+    {
+        "company": "Kaufland.de",
+        "position": "Search Engineer (Elasticsearch) (f/m/d)",
+        "location": "Cologne, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 28, 2023",
+        "logo": "https://kaufland-ecommerce.com/wp-content/uploads/KL_Ecommerce_Logo_RGB.png",
+        "description": "https://kaufland-ecommerce.com/en/job/search-engineer-elasticsearch-f-m-d/"
+    }, 
+    {
         "company": "Plumerai",
         "position": "Deep Learning Research Engineer",
         "location": "Amsterdam, Netherlands 🇳🇱",
