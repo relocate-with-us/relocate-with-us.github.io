@@ -1,4 +1,104 @@
 [
+     {
+        "company": "Wooga",
+        "position": "Revenue Operations Manager",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEqCukrX6kZKA/company-logo_200_200/0/1660590864681?e=1687996800&v=beta&t=2Nw6qJHc_eRxtKyAYCiHu3GR-JkQ6vvacSPYoo9IpGw",
+        "description": "https://boards.greenhouse.io/wooga/jobs/4928661?gh_src=e044890c1us"
+    }, 
+    {
+        "company": "Adjust",
+        "position": "Revenue Operations Manager",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHPBTQl1rnjfA/company-logo_200_200/0/1621241839226?e=1687996800&v=beta&t=bjnxnaKmnq_HtXQCippiQ60P5N35q9YoCNgKH7cJR_0",
+        "description": "https://www.adjust.com/company/careers/jobs/apply/?jobid=6684371002&gh_jid=6684371002&gh_src=e0f620fb2us"
+    }, 
+    {
+        "company": "GetYourGuide",
+        "position": "Data Engineer,Business Intelligence",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEGbwfgHCpCGg/company-logo_200_200/0/1624280872752?e=1687996800&v=beta&t=0_xVyHpyo_efG480TC9K0rd6jT6j1CX1SGp1J0KD0No",
+        "description": "https://www.getyourguide.careers/jobs/2504105"
+    }, 
+    {
+        "company": "GetYourGuide",
+        "position": "Android Engineer, FinTech Fulfillment",
+        "location": "Zurich, Switzerland 🇨🇭",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEGbwfgHCpCGg/company-logo_200_200/0/1624280872752?e=1687996800&v=beta&t=0_xVyHpyo_efG480TC9K0rd6jT6j1CX1SGp1J0KD0No",
+        "description": "https://www.getyourguide.careers/jobs/2392662"
+    }, 
+    {
+        "company": "adjoe",
+        "position": "AdOps Specialist (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1687392000&v=beta&t=_8U5s5W3-MKqF8bjS-BTXycKfQRWicaAof9Z3cAuamE",
+        "description": "https://adjoe.io/career/?j_id=7bc76a40-34e9-47c9-812d-d57463675929"
+    }, 
+    {
+        "company": "adjoe",
+        "position": "Project Manager: Cloud Technologies (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1687392000&v=beta&t=_8U5s5W3-MKqF8bjS-BTXycKfQRWicaAof9Z3cAuamE",
+        "description": "https://adjoe.io/career/?j_id=65ca5cc0-4b44-4868-aeb9-b32d54743fd3"
+    }, 
+    {
+        "company": "adjoe",
+        "position": "Tech Lead: Backend Development (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1687392000&v=beta&t=_8U5s5W3-MKqF8bjS-BTXycKfQRWicaAof9Z3cAuamE",
+        "description": "https://adjoe.io/career/?j_id=139e554d-312e-4493-8037-456ce82c5f92"
+    }, 
+    {
+        "company": "adjoe",
+        "position": "Senior DevOps/DataOps Engineer (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1687392000&v=beta&t=_8U5s5W3-MKqF8bjS-BTXycKfQRWicaAof9Z3cAuamE",
+        "description": "https://adjoe.io/career/?j_id=29c6ae07-ae12-4000-9d22-553b4cb1944a"
+    }, 
+    {
+        "company": "justtrack",
+        "position": "Senior Sales Executive (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQE2fk2A8vRATg/company-logo_200_200/0/1644184678222?e=1687996800&v=beta&t=OOWPe8mdRToFhjif4QQwhvCJNU2LQe4P-shNoi4VZ0Q",
+        "description": "https://justtrack.io/career/?j_id=8ce7dab2-5d07-4a20-84be-f30896843c99"
+    },
+    
     {
         "company": "GetYourGuide",
         "position": "Backend Engineer, Marketplace",
