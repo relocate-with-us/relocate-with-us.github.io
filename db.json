@@ -1,4 +1,114 @@
 [
+       {
+        "company": "Kaufland.de",
+        "position": "Product Designer (f/m/d) - Content",
+        "location": "Cologne, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 30, 2023",
+        "logo": "https://kaufland-ecommerce.com/wp-content/uploads/KL_Ecommerce_Logo_RGB.png",
+        "description": "https://kaufland-ecommerce.com/en/job/product-designer-f-m-d-content/"
+    },
+     {
+        "company": "Sunday GmbH",
+        "position": "UI & Graphic Designer (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 30, 2023",
+        "logo": "//cdn.join.com/5f759e23632ed40001dffb67/sunday-gmb-h-logo-s.png",
+        "description": "https://sunday.gg/jobs/?j_id=d1c6328c-8ece-434f-b827-0c879ee21982"
+    },
+     {
+        "company": "Sunday GmbH",
+        "position": "Head of Product Growth (Mobile Games Live Ops) (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 30, 2023",
+        "logo": "//cdn.join.com/5f759e23632ed40001dffb67/sunday-gmb-h-logo-s.png",
+        "description": "https://sunday.gg/jobs/?j_id=dfa8e044-0f61-4922-aabd-ec79f77cdc42"
+    },
+     {
+        "company": "applike-group",
+        "position": "HR Operations Team Lead (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQH3E9hdGSjeAg/company-logo_200_200/0/1587472483648?e=1687392000&v=beta&t=2-fSPVQv38QYcLz4rkjeo0Jor4T9JM82svWgbbyUfi0",
+        "description": "https://applike-group.com/jobs/?j_id=aa199e53-e4df-4806-abbd-79497be92674"
+    },
+     {
+        "company": "Kaufland.de",
+        "position": "(Senior) Web Analyst (f/m/d)",
+        "location": "Cologne, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "March 30, 2023",
+        "logo": "https://kaufland-ecommerce.com/wp-content/uploads/KL_Ecommerce_Logo_RGB.png",
+        "description": "https://kaufland-ecommerce.com/en/job/senior-web-analyst-f-m-d/"
+    },
+     {
+        "company": "adjoe",
+        "position": "Customer Success Manager - Demand Account Management (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1687392000&v=beta&t=_8U5s5W3-MKqF8bjS-BTXycKfQRWicaAof9Z3cAuamE",
+        "description": "https://join.com/companies/adjoe/7475858-customer-success-manager-demand-account-management-f-m-d"
+    }, 
+     {
+        "company": "justtrack",
+        "position": "Growth Hacker (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQE2fk2A8vRATg/company-logo_200_200/0/1644184678222?e=1687996800&v=beta&t=OOWPe8mdRToFhjif4QQwhvCJNU2LQe4P-shNoi4VZ0Q",
+        "description": "https://join.com/companies/justtrack/7448822-growth-hacker-f-m-d"
+    },
+     {
+        "company": "One Player Missions",
+        "position": "Product Marketing Manager– Games Publisher",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFOJ8TGJJNk_w/company-logo_200_200/0/1674487291237?e=1687996800&v=beta&t=EbvkDFoHRzNJRtDK05Jd6V3tNF8v7TPUsMAaXLKY7Is",
+        "description": "https://opmjobs.com/job/product-marketing-manager-hybrid-lille-france-games-publisher/"
+    },
+     {
+        "company": "One Player Missions",
+        "position": "Product Marketing Manager– Games Publisher",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFOJ8TGJJNk_w/company-logo_200_200/0/1674487291237?e=1687996800&v=beta&t=EbvkDFoHRzNJRtDK05Jd6V3tNF8v7TPUsMAaXLKY7Is",
+        "description": "https://opmjobs.com/job/product-marketing-manager-hybrid-lille-france-games-publisher/"
+    },
+     {
+        "company": "TOPIC Embedded Systems",
+        "position": "Senior Software Engineer C++/Python/C",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQFteY6SS2QoNw/company-logo_200_200/0/1665989867834?e=1687996800&v=beta&t=Ey9SdG0RLyQrVWYWrKTiRUKgXSMDKNqDSNbTyFBi8zU",
+        "description": "https://www.tecnoempleo.com/senior-software-engineer-c-python-c-brabante-septe/c-python-c-c/rf-698f18f9d296b30a844f?lang=en"
+    },
      {
         "company": "Wooga",
         "position": "Revenue Operations Manager",
@@ -584,17 +694,6 @@
         "description": "https://join.com/companies/justtrack/7423252-devops-engineer-f-m-d"
     },
           {
-        "company": "justtrack",
-        "position": "Growth Hacker (f/m/d)",
-        "location": "Hamburg, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 24, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQE2fk2A8vRATg/company-logo_200_200/0/1644184678222?e=1687996800&v=beta&t=OOWPe8mdRToFhjif4QQwhvCJNU2LQe4P-shNoi4VZ0Q",
-        "description": "https://join.com/companies/justtrack/7448822-growth-hacker-f-m-d"
-    },
-          {
         "company": "FRIDAY",
         "position": "Senior Software Engineer - Data Team (m/f/d)",
         "location": "Berlin, Germany 🇩🇪",
@@ -945,17 +1044,6 @@
         "post_date": "March 22, 2023",
         "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1687392000&v=beta&t=_8U5s5W3-MKqF8bjS-BTXycKfQRWicaAof9Z3cAuamE",
         "description": "https://join.com/companies/adjoe/7484611-sales-operations-specialist-f-m-d"
-    }, 
-          {
-        "company": "adjoe",
-        "position": "Customer Success Manager - Demand Account Management (f/m/d)",
-        "location": "Hamburg, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 22, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1687392000&v=beta&t=_8U5s5W3-MKqF8bjS-BTXycKfQRWicaAof9Z3cAuamE",
-        "description": "https://join.com/companies/adjoe/7475858-customer-success-manager-demand-account-management-f-m-d"
     }, 
           {
         "company": "adjoe",
