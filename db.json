@@ -1,4 +1,71 @@
 [
+
+       {
+        "company": "GULP – experts united",
+        "position": "Backend Software Developer (m/f/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 1, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQE_h48yn9kC-w/company-logo_200_200/0/1628089426737?e=1688601600&v=beta&t=BaCOZX30s8Ymm7mteHc73wT-jw9KppzkOYCLpOZlUA4",
+        "description": "https://www.gulp.de/gulp2/g/jobs/C00686362"
+    },
+       {
+        "company": "justDice",
+        "position": "Senior Game Artist (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 1, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFHJjbb8aK5qw/company-logo_200_200/0/1674060192311?e=1686182400&v=beta&t=LS4AIsOnZxvswH1XBr_Vzn0dLu-b7USKiYyi2sVE-EA",
+        "description": "https://justdice.io/jobs/?j_id=2cc25714-f284-4d8e-9a2a-45bb23a8e43e"
+    },
+       {
+        "company": "Adjust",
+        "position": "Platform Security Engineer",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 1, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHPBTQl1rnjfA/company-logo_200_200/0/1621241839226?e=1687996800&v=beta&t=bjnxnaKmnq_HtXQCippiQ60P5N35q9YoCNgKH7cJR_0",
+        "description": "https://www.adjust.com/company/careers/jobs/apply/?jobid=6651117002"
+    },
+       {
+        "company": "Adjust",
+        "position": "Platform Engineer",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 1, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHPBTQl1rnjfA/company-logo_200_200/0/1621241839226?e=1687996800&v=beta&t=bjnxnaKmnq_HtXQCippiQ60P5N35q9YoCNgKH7cJR_0",
+        "description": "https://www.adjust.com/company/careers/jobs/apply/?jobid=6427476002"
+    },
+       {
+        "company": "Adjust",
+        "position": "Mid Backend Engineer - Go",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 1, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHPBTQl1rnjfA/company-logo_200_200/0/1621241839226?e=1687996800&v=beta&t=bjnxnaKmnq_HtXQCippiQ60P5N35q9YoCNgKH7cJR_0",
+        "description": "https://www.adjust.com/company/careers/jobs/apply/?jobid=6472819002"
+    }, 
+       {
+        "company": "Adjust",
+        "position": "Infrastructure Engineer",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 1, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHPBTQl1rnjfA/company-logo_200_200/0/1621241839226?e=1687996800&v=beta&t=bjnxnaKmnq_HtXQCippiQ60P5N35q9YoCNgKH7cJR_0",
+        "description": "https://www.adjust.com/company/careers/jobs/apply/?jobid=6688847002"
+    }, 
        {
         "company": "Kaufland.de",
         "position": "Product Designer (f/m/d) - Content",
