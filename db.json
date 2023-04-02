@@ -1,4 +1,37 @@
 [
+         {
+        "company": "N26",
+        "position": "Site Reliability Engineer",
+        "location": "Vienna, Austria 🇦🇹",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 2, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHPfb-rJRi6oA/company-logo_200_200/0/1623663734137?e=1687392000&v=beta&t=QxI-Z7rpTLBJnu6jrp8L7oiCUta7qcGWMn3bhOBI8x4",
+        "description": "https://n26.com/en/careers/positions/4726314?gh_jid=4459280"
+    },
+        {    
+        "company": " GlobalLogic",
+        "position": "Junior Backend Engineer",
+        "location": "Bucharest , Romania 🇷🇴",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 2, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHfsFr91ekzrQ/company-logo_200_200/0/1593608530033?e=1688601600&v=beta&t=6Hkx0eAGnuh-ZYzbHUyQ3TRZS2cj80LTGX7WsrtbTsA",
+        "description": "https://www.globallogic.com/careers/junior-backend-engineer-scala-irc178382"
+    },
+        {    
+        "company": "Klarna",
+        "position": "Product Manager - Platform Products",
+        "location": "Stockholm, Sweden 🇸🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 2, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQGLZq8y0KysHg/company-logo_200_200/0/1650893275381?e=1686787200&v=beta&t=Uo4rSl9XmyJNoiPynzBNgwfF6O3__EPMIOmUdr3Y_QA",
+        "description": "https://jobs.lever.co/klarna/8dddbe71-49a8-471e-80a5-fda885e93b4e"
+    },
         {
         "company": "GUARDSQUARE",
         "position": "Full-Stack Engineer (Go/React)",
