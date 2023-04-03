@@ -1,4 +1,81 @@
 [
+       {
+        "company": "MBition",
+        "position": "C/C++ Software Engineer for Vehicle Abstraction Layer Development (All genders)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 3, 2023",
+        "logo": "https://mbition.io/wp-content/uploads//2022/02/print-logo-horiz-color1-negative-Kopie.png",
+        "description": "https://mbition.io/jobs/?job=1000281"
+    },
+         {
+        "company": "MBition",
+        "position": "Embedded (Linux) Software Engineer (All genders)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 3, 2023",
+        "logo": "https://mbition.io/wp-content/uploads//2022/02/print-logo-horiz-color1-negative-Kopie.png",
+        "description": "https://mbition.io/jobs/?job=1026583"
+    }, 
+         {
+        "company": "Huspy",
+        "position": "QA Automation Engineer",
+        "location": " Dubai, United Arab Emirates 🇦🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQGGffTNsnzsPQ/company-logo_200_200/0/1649852015896?e=1688601600&v=beta&t=ClQeJ1iz7dH_0vnVSXbKi1ZUr4GWb1T-Q4IwGbzgty4",
+        "description": "https://boards.eu.greenhouse.io/huspy/jobs/4145158101"
+    }, 
+         {
+        "company": "Huspy",
+        "position": "Visual Designer",
+        "location": " Dubai, United Arab Emirates 🇦🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQGGffTNsnzsPQ/company-logo_200_200/0/1649852015896?e=1688601600&v=beta&t=ClQeJ1iz7dH_0vnVSXbKi1ZUr4GWb1T-Q4IwGbzgty4",
+        "description": "https://boards.eu.greenhouse.io/huspy/jobs/4146213101"
+    }, 
+         {
+        "company": "Huspy",
+        "position": "Technical Product Manager",
+        "location": " Dubai, United Arab Emirates 🇦🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQGGffTNsnzsPQ/company-logo_200_200/0/1649852015896?e=1688601600&v=beta&t=ClQeJ1iz7dH_0vnVSXbKi1ZUr4GWb1T-Q4IwGbzgty4",
+        "description": "https://boards.eu.greenhouse.io/huspy/jobs/4138520101"
+    },  
+         {
+        "company": "Huspy",
+        "position": "Software Development Engineer - Fullstack",
+        "location": " Dubai, United Arab Emirates 🇦🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQGGffTNsnzsPQ/company-logo_200_200/0/1649852015896?e=1688601600&v=beta&t=ClQeJ1iz7dH_0vnVSXbKi1ZUr4GWb1T-Q4IwGbzgty4",
+        "description": "https://boards.eu.greenhouse.io/huspy/jobs/4145043101"
+    },   
+         {
+        "company": "Huspy",
+        "position": "Software Development Engineer - Backend",
+        "location": " Dubai, United Arab Emirates 🇦🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQGGffTNsnzsPQ/company-logo_200_200/0/1649852015896?e=1688601600&v=beta&t=ClQeJ1iz7dH_0vnVSXbKi1ZUr4GWb1T-Q4IwGbzgty4",
+        "description": "https://boards.eu.greenhouse.io/huspy/jobs/4145041101"
+    },   
          {
         "company": "N26",
         "position": "Site Reliability Engineer",
