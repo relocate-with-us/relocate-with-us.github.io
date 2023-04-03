@@ -1,5 +1,49 @@
 [
        {
+        "company": "Kaufland.de",
+        "position": "Senior Frontend Engineer (f/m/d)",
+        "location": "Cologne, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 3, 2023",
+        "logo": "https://kaufland-ecommerce.com/wp-content/uploads/KL_Ecommerce_Logo_RGB.png",
+        "description": "https://kaufland-ecommerce.com/en/job/senior-frontend-engineer-f-m-d/"
+    },
+       {
+        "company": "Kaufland.de",
+        "position": "Senior Full-Stack Engineer (f/m/d)",
+        "location": "Cologne, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 3, 2023",
+        "logo": "https://kaufland-ecommerce.com/wp-content/uploads/KL_Ecommerce_Logo_RGB.png",
+        "description": "https://kaufland-ecommerce.com/en/job/senior-full-stack-engineer-f-m-d/"
+    },
+       {
+        "company": "Kaufland.de",
+        "position": "Software Architect Backend (f/m/d)",
+        "location": "Cologne, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 3, 2023",
+        "logo": "https://kaufland-ecommerce.com/wp-content/uploads/KL_Ecommerce_Logo_RGB.png",
+        "description": "https://kaufland-ecommerce.com/en/job/software-architect-backend-f-m-d/"
+    },
+       {
+        "company": "Kaufland.de",
+        "position": "Backend Engineer (f/m/d) - Search Experience",
+        "location": "Cologne, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 3, 2023",
+        "logo": "https://kaufland-ecommerce.com/wp-content/uploads/KL_Ecommerce_Logo_RGB.png",
+        "description": "https://kaufland-ecommerce.com/en/job/backend-engineer-f-m-d-search-experience/"
+    },
+       {
         "company": "MBition",
         "position": "C/C++ Software Engineer for Vehicle Abstraction Layer Development (All genders)",
         "location": "Berlin, Germany 🇩🇪",
