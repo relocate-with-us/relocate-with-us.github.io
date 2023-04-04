@@ -1,5 +1,49 @@
 [
        {
+        "company": "byrd",
+        "position": "Team Lead - Python Engineer (f/m/x)",
+        "location": "Warsaw, Poland 🇵🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 4, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQEa4J7ciS4RTw/company-logo_200_200/0/1656933172203?e=1688601600&v=beta&t=-owciJJv46EsGJfyTsjnIJrFK6-IZi4p9dss3dH5CyQ",
+        "description": "https://getbyrd.com/en/jobs/?gh_jid=4135133101"
+    },
+       {
+        "company": "BlaBlaCar",
+        "position": "Tech and Ops Project Manager - Bus Marketplace",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 4, 2023",
+        "logo": "https://www.blablacar.com/static/images/blablacar.svg",
+        "description": "https://jobs.lever.co/blablacar/be2011c4-366b-45a1-a803-f55db2a499ca"
+    }, 
+       {
+        "company": "BlaBlaCar",
+        "position": "Senior Front-end Developer - Operated Bus & Marketing Software",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 4, 2023",
+        "logo": "https://www.blablacar.com/static/images/blablacar.svg",
+        "description": "https://jobs.lever.co/blablacar/c539b482-ee79-46eb-a9f7-f1f7fc270cc5"
+    }, 
+       {
+        "company": "Sharpist GmbH ",
+        "position": "Enterprise Account Executive (f/m/x) Berlin",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 4, 2023",
+        "logo": "https://d27i7n2isjbnbi.cloudfront.net/careers/photos/124130/thumb_photo_1563894767.png",
+        "description": "https://career.sharpist.com/o/enterprise-account-executive-fmx-berlin"
+    },
+       {
         "company": "Radley James",
         "position": "Data Center Engineer",
         "location": "Frankfurt, Germany 🇩🇪",
