@@ -1,49 +1,4 @@
 [
-
-        {
-        "company": "byrd",
-        "position": "Team Lead - Python Engineer (f/m/x)",
-        "location": "Warsaw, Poland 🇵🇱",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "April 4, 2023",
-        "logo": "https://media.licdn.com/dms/image/C560BAQEa4J7ciS4RTw/company-logo_200_200/0/1656933172203?e=1688601600&v=beta&t=-owciJJv46EsGJfyTsjnIJrFK6-IZi4p9dss3dH5CyQ",
-        "description": "https://getbyrd.com/en/jobs/?gh_jid=4135133101"
-    },
-       {
-        "company": "BlaBlaCar",
-        "position": "Tech and Ops Project Manager - Bus Marketplace",
-        "location": "Paris, France 🇫🇷",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "April 4, 2023",
-        "logo": "https://www.blablacar.com/static/images/blablacar.svg",
-        "description": "https://jobs.lever.co/blablacar/be2011c4-366b-45a1-a803-f55db2a499ca"
-    }, 
-       {
-        "company": "BlaBlaCar",
-        "position": "Senior Front-end Developer - Operated Bus & Marketing Software",
-        "location": "Paris, France 🇫🇷",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "April 4, 2023",
-        "logo": "https://www.blablacar.com/static/images/blablacar.svg",
-        "description": "https://jobs.lever.co/blablacar/c539b482-ee79-46eb-a9f7-f1f7fc270cc5"
-    }, 
-       {
-        "company": "Sharpist GmbH ",
-        "position": "Enterprise Account Executive (f/m/x) Berlin",
-        "location": "Berlin, Germany 🇩🇪",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "April 4, 2023",
-        "logo": "https://d27i7n2isjbnbi.cloudfront.net/careers/photos/124130/thumb_photo_1563894767.png",
-        "description": "https://career.sharpist.com/o/enterprise-account-executive-fmx-berlin"
-    },
        {
         "company": "Radley James",
         "position": "Data Center Engineer",
@@ -2280,7 +2235,7 @@
         "visa": "Visa Sponsorship",
         "contract": "Full Time",
         "post_date": "March 15, 2023",
-        "logo": "https://media.licdn.com/dms/image/C560BAQEa4J7ciS4RTw/company-logo_200_200/0/1656933172203?e=1688601600&v=beta&t=-owciJJv46EsGJfyTsjnIJrFK6-IZi4p9dss3dH5CyQ",
+        "logo": "https://getbyrd.com/core/uploads/2021/06/logo_white-green.svg",
         "description": "https://getbyrd.com/en/jobs/?gh_jid=4135133101"
     },
         {
@@ -2625,7 +2580,39 @@
         "logo": "https://careers.recruiteecdn.com/image/upload/q_auto,f_auto,w_400,c_limit/production/images/ASDS/iaUqAs3O-1Qs.png",
         "description": "https://orbem.recruitee.com/o/mri-scientist-munchen/c/new?source=Arbeitnow"
     },
-
+    {
+        "company": "nyris",
+        "position": "QA Engineer",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "February 28, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/21103/social/ca780e59276c20b233baa387ab47da64.png",
+        "description": "https://nyris.jobs.personio.de/job/1017834"
+    },
+    {
+        "company": "navvis",
+        "position": "Advanced Cloud Infrastructure Engineer (F/M/D)",
+        "location": "München, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "February 28, 2023",
+        "logo": "https://www.arbeitnow.com/storage/company_logo/74d6fd484e78f9f23f543867aa8c1f67.jpg",
+        "description": "https://navvis.jobs.personio.de/job/532350?display=en"
+    },
+    {
+        "company": "Sharpist GmbH ",
+        "position": "Learning and Development Content Working Student (f/m/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "February 28, 2023",
+        "logo": "https://d27i7n2isjbnbi.cloudfront.net/careers/photos/124130/thumb_photo_1563894767.png",
+        "description": "https://career.sharpist.com/o/learning-and-development-content-working-student-fmx/c/new?source=Arbeitnow"
+    },
     {
         "company": "roadsurfer",
         "position": "DevOps Engineer (m/f/d)",
