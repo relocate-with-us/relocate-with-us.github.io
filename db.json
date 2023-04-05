@@ -1,5 +1,38 @@
 [
        {
+        "company": "Mercedes-Benz Customer Assistance Center",
+        "position": "Product Owner",
+        "location": "Maastricht, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C510BAQFYwu-O_lc6nA/company-logo_200_200/0/1519899420001?e=1688601600&v=beta&t=wF_-_9ldNp6u3lVX3XJ1WCtK5XnbfLNOzlSce5WUlaw",
+        "description": "https://cac.mercedes-benz.com/vacancy-apply/OPE-99163"
+    },
+       {
+        "company": "Mercedes-Benz Customer Assistance Center",
+        "position": "Data Engineer DWH & BI",
+        "location": "Maastricht, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C510BAQFYwu-O_lc6nA/company-logo_200_200/0/1519899420001?e=1688601600&v=beta&t=wF_-_9ldNp6u3lVX3XJ1WCtK5XnbfLNOzlSce5WUlaw",
+        "description": "https://www.connexys.nl/mbcacsite/page.html?p_sfw_id=653&adv_adv_id=101302#boven"
+    },
+       {
+        "company": "Adjust",
+        "position": "Information Security Analyst",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHPBTQl1rnjfA/company-logo_200_200/0/1621241839226?e=1687996800&v=beta&t=bjnxnaKmnq_HtXQCippiQ60P5N35q9YoCNgKH7cJR_0",
+        "description": "https://www.adjust.com/company/careers/jobs/apply/?jobid=6648381002"
+    },
+       {
         "company": "byrd",
         "position": "Team Lead - Python Engineer (f/m/x)",
         "location": "Warsaw, Poland 🇵🇱",
