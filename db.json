@@ -1,4 +1,26 @@
 [
+     {
+        "company": "adjoe",
+        "position": "Senior Data Scientist (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 6, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1687392000&v=beta&t=_8U5s5W3-MKqF8bjS-BTXycKfQRWicaAof9Z3cAuamE",
+        "description": "https://adjoe.io/career/?j_id=a827e3a2-b6f3-4eae-a0f9-e35ca86de342"
+    },
+          {
+        "company": "adjoe",
+        "position": "Data Scientist (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 6, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1687392000&v=beta&t=_8U5s5W3-MKqF8bjS-BTXycKfQRWicaAof9Z3cAuamE",
+        "description": "https://adjoe.io/career/?j_id=df13e38d-9c0e-4f24-b005-a175ab347fa8"
+    }, 
           {
         "company": "retraced",
         "position": "Mid NodeJS backend developer",
