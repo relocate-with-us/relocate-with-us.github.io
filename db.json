@@ -1,5 +1,115 @@
 [
      {
+        "company": "Wallapop",
+        "position": "Engineering Manager",
+        "location": "Barcelona, Spain 🇪🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEH2KKHpM7Fwg/company-logo_200_200/0/1519929420091?e=1689206400&v=beta&t=lA00zaJw0rWeHss6GqJucVIuUcbAEritFY9n_ItPfBU",
+        "description": "https://boards.eu.greenhouse.io/wallapop/jobs/4103765101"
+    },
+     {
+        "company": "Wallapop",
+        "position": "UX Writer",
+        "location": "Barcelona, Spain 🇪🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEH2KKHpM7Fwg/company-logo_200_200/0/1519929420091?e=1689206400&v=beta&t=lA00zaJw0rWeHss6GqJucVIuUcbAEritFY9n_ItPfBU",
+        "description": "https://boards.eu.greenhouse.io/wallapop/jobs/4119119101"
+    },
+     {
+        "company": "Wallapop",
+        "position": "Performance Marketing Specialist",
+        "location": "Barcelona, Spain 🇪🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEH2KKHpM7Fwg/company-logo_200_200/0/1519929420091?e=1689206400&v=beta&t=lA00zaJw0rWeHss6GqJucVIuUcbAEritFY9n_ItPfBU",
+        "description": "https://boards.eu.greenhouse.io/wallapop/jobs/4104839101"
+    },
+     {
+        "company": "Wallapop",
+        "position": "Data Analyst",
+        "location": "Barcelona, Spain 🇪🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEH2KKHpM7Fwg/company-logo_200_200/0/1519929420091?e=1689206400&v=beta&t=lA00zaJw0rWeHss6GqJucVIuUcbAEritFY9n_ItPfBU",
+        "description": "https://boards.eu.greenhouse.io/wallapop/jobs/4137188101"
+    },
+     {
+        "company": "Wallapop",
+        "position": "Android Engineer",
+        "location": "Barcelona, Spain 🇪🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEH2KKHpM7Fwg/company-logo_200_200/0/1519929420091?e=1689206400&v=beta&t=lA00zaJw0rWeHss6GqJucVIuUcbAEritFY9n_ItPfBU",
+        "description": "https://boards.eu.greenhouse.io/wallapop/jobs/4098647101"
+    },
+     {
+        "company": "Popcore",
+        "position": "QA Analyst (M/F/X)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQE6e9qfOHeBcQ/company-logo_200_200/0/1645717471272?e=1689206400&v=beta&t=_UT9u974gMDbnoRYmR-3FrYyuS5VojTlJGeiajQO4ig",
+        "description": "https://boards.eu.greenhouse.io/popcore/jobs/4019725101"
+    },
+     {
+        "company": "Popcore",
+        "position": "Game Analyst - M/F/X",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQE6e9qfOHeBcQ/company-logo_200_200/0/1645717471272?e=1689206400&v=beta&t=_UT9u974gMDbnoRYmR-3FrYyuS5VojTlJGeiajQO4ig",
+        "description": "https://boards.eu.greenhouse.io/popcore/jobs/4019913101"
+    },
+     {
+        "company": "Popcore",
+        "position": "Data Analyst (New Games) - M/F/X",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQE6e9qfOHeBcQ/company-logo_200_200/0/1645717471272?e=1689206400&v=beta&t=_UT9u974gMDbnoRYmR-3FrYyuS5VojTlJGeiajQO4ig",
+        "description": "https://boards.eu.greenhouse.io/popcore/jobs/4125172101"
+    },
+     {
+        "company": "Popcore",
+        "position": "Data Analyst (Monetization) - M/F/X",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQE6e9qfOHeBcQ/company-logo_200_200/0/1645717471272?e=1689206400&v=beta&t=_UT9u974gMDbnoRYmR-3FrYyuS5VojTlJGeiajQO4ig",
+        "description": "https://boards.eu.greenhouse.io/popcore/jobs/4111527101"
+    },
+     {
+        "company": "Popcore",
+        "position": "Data Engineer",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQE6e9qfOHeBcQ/company-logo_200_200/0/1645717471272?e=1689206400&v=beta&t=_UT9u974gMDbnoRYmR-3FrYyuS5VojTlJGeiajQO4ig",
+        "description": "https://boards.eu.greenhouse.io/popcore/jobs/4124538101"
+    },
+     {
         "company": "adjoe",
         "position": "Senior Data Scientist (f/m/d)",
         "location": "Hamburg, Germany 🇩🇪",
