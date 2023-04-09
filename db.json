@@ -1,4 +1,81 @@
 [
+          {
+        "company": "Airbus",
+        "position": "Network Integration Test Manager",
+        "location": "Blandford, UK 🇬🇧",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQF2j_LDG_TOzg/company-logo_200_200/0/1529051939639?e=1689206400&v=beta&t=mogIs8p4ohqUrfJVqyZwcEWfSz7J0l6WzGlTTdTAcTY",
+        "description": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Blandford/Network-Integration-Test-Manager_JR10143730"
+    },
+     {
+        "company": "Criteo",
+        "position": "Senior Site Reliability Engineer - Software Factory",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFiWqZbbEmQZw/company-logo_200_200/0/1622720669686?e=1687392000&v=beta&t=n2gkoXBbGg5C4LHrEbIFuuGlx0vvhXI7o38j9o1xH78",
+        "description": "https://careers.criteo.com/job/CRITUSR135005ENUSEXTERNAL/Senior-Site-Reliability-Engineer-Software-Factory"
+    },
+     {    
+        "company": "Kiwi.com",
+        "position": "Technical Product Manager for Data Acquisition (Core)",
+        "location": "Bratislava, Slovakia 🇸🇰",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 9, 2023",
+        "logo": "https://jobs.kiwi.com/wp-content/themes/kiwi-jobs/static/img/kiwi-logo-header.svg",
+        "description": "https://jobs.kiwi.com/jobs/technical-product-manager-for-data-acquisition-core-3/"
+    },
+     {    
+        "company": "Kiwi.com",
+        "position": "Senior Business Analyst (Pricing)",
+        "location": "Bratislava, Slovakia 🇸🇰",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 9, 2023",
+        "logo": "https://jobs.kiwi.com/wp-content/themes/kiwi-jobs/static/img/kiwi-logo-header.svg",
+        "description": "https://jobs.kiwi.com/jobs/senior-business-analyst-pricing-3/"
+    },
+     {    
+        "company": "Kiwi.com",
+        "position": "Business Analyst",
+        "location": "Prague, Czech Republic 🇨🇿",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 9, 2023",
+        "logo": "https://jobs.kiwi.com/wp-content/themes/kiwi-jobs/static/img/kiwi-logo-header.svg",
+        "description": "https://jobs.kiwi.com/jobs/business-analyst/"
+    },
+     {
+        "company": "Boost-IT",
+        "position": "Software Development Manager",
+        "location": "Seville, Spain 🇪🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHK69AyTxAScA/company-logo_200_200/0/1646393242347?e=1687392000&v=beta&t=i9sssdO-o9YMth35DiX2hdg2442qUvtRsQCsFQP5s4M",
+        "description": "https://join.com/companies/boost-it1/7690695-software-development-manager"
+    },
+     {
+        "company": "Boost-IT",
+        "position": "QA Engineer (M/f)",
+        "location": "Seville, Spain 🇪🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHK69AyTxAScA/company-logo_200_200/0/1646393242347?e=1687392000&v=beta&t=i9sssdO-o9YMth35DiX2hdg2442qUvtRsQCsFQP5s4M",
+        "description": "https://join.com/companies/boost-it1/7681668-qa-engineer-m-f"
+    },
      {
         "company": "Wallapop",
         "position": "Engineering Manager",
@@ -1925,17 +2002,7 @@
         "logo": "https://media.licdn.com/dms/image/C4D0BAQFm2_ALJcnvbg/company-logo_200_200/0/1668126222905?e=1687392000&v=beta&t=KkGouAFfpgLOriNjauJiS4YoI5CSOj3AWYt8UgAYK-4",
         "description": "https://www.linkedin.com/jobs/view/3517197902/?refId=62e89f59-86ce-4cf2-b5ae-4bb92e8918cc&trackingId=iOxuqNbVQVehPFcXTPkVoA%3D%3D"
     }, 
-          {
-        "company": "Criteo",
-        "position": "Senior Site Reliability Engineer - Software Factory",
-        "location": "Paris, France 🇫🇷",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 20, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQFiWqZbbEmQZw/company-logo_200_200/0/1622720669686?e=1687392000&v=beta&t=n2gkoXBbGg5C4LHrEbIFuuGlx0vvhXI7o38j9o1xH78",
-        "description": "https://careers.criteo.com/job/CRITUSR135005ENUSEXTERNAL/Senior-Site-Reliability-Engineer-Software-Factory"
-    }, 
+ 
           {
         "company": "MEDWING",
         "position": "Software Engineer (gn)",
