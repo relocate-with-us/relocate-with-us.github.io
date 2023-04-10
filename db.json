@@ -1,5 +1,93 @@
 [
     {
+        "company": "Twaice",
+        "position": "Product Marketing Manager (m/f/d)",
+        "location": "München, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 10, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQF3Q65vLWweQQ/company-logo_200_200/0/1665561671567?e=1689206400&v=beta&t=jRdMjlJjzkKo_KIItQqg3T_Uf3HcLJ5onWchdAYsb9U",
+        "description": "https://twaice.jobs.personio.com/job/1054146?display=en"
+    }, 
+     {
+        "company": "Twaice",
+        "position": "Data Engineer (m/f/d) Energy Solutions",
+        "location": "München, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 10, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQF3Q65vLWweQQ/company-logo_200_200/0/1665561671567?e=1689206400&v=beta&t=jRdMjlJjzkKo_KIItQqg3T_Uf3HcLJ5onWchdAYsb9U",
+        "description": "https://twaice.jobs.personio.com/job/1049730?display=en"
+    }, 
+    {
+        "company": "Twaice",
+        "position": "Cloud Engineer for Customer Success (m/w/d)",
+        "location": "München, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 10, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQF3Q65vLWweQQ/company-logo_200_200/0/1665561671567?e=1689206400&v=beta&t=jRdMjlJjzkKo_KIItQqg3T_Uf3HcLJ5onWchdAYsb9U",
+        "description": "https://twaice.jobs.personio.com/job/663891?display=en"
+    }, 
+    {
+        "company": "Twaice",
+        "position": "Senior Full Stack Software Engineer (m/f/d)",
+        "location": "München, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 10, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQF3Q65vLWweQQ/company-logo_200_200/0/1665561671567?e=1689206400&v=beta&t=jRdMjlJjzkKo_KIItQqg3T_Uf3HcLJ5onWchdAYsb9U",
+        "description": "https://twaice.jobs.personio.com/job/935606?display=en"
+    }, 
+    {
+        "company": "Twaice",
+        "position": "Technical Solution Engineer Pre-Sales (m/f/d)",
+        "location": "München, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 10, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQF3Q65vLWweQQ/company-logo_200_200/0/1665561671567?e=1689206400&v=beta&t=jRdMjlJjzkKo_KIItQqg3T_Uf3HcLJ5onWchdAYsb9U",
+        "description": "https://twaice.jobs.personio.com/job/1064352?display=en"
+    }, 
+    {
+        "company": "Picnic",
+        "position": "Product Owner - Supply Chain",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 10, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHS7qmjAasAyw/company-logo_200_200/0/1636644894385?e=1689206400&v=beta&t=8YoPVS7vyztYSPVjOYouqUv4H_VtnjhPiPZ7z1UJGkM",
+        "description": "https://picnic.app/careers/jobs/4334613/technology--amp--engineering/amsterdam-north-holland-netherlands/product-owner---supply-chain"
+    }, 
+    {
+        "company": "Twaice",
+        "position": "Project Engineer (m/f/d) Battery Quick Check",
+        "location": "München, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 10, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQF3Q65vLWweQQ/company-logo_200_200/0/1665561671567?e=1689206400&v=beta&t=jRdMjlJjzkKo_KIItQqg3T_Uf3HcLJ5onWchdAYsb9U",
+        "description": "https://twaice.jobs.personio.com/job/1066450?display=en"
+    }, 
+    {
+        "company": "Picnic",
+        "position": "Network Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 10, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHS7qmjAasAyw/company-logo_200_200/0/1636644894385?e=1689206400&v=beta&t=8YoPVS7vyztYSPVjOYouqUv4H_VtnjhPiPZ7z1UJGkM",
+        "description": "https://picnic.app/careers/jobs/2297239/technology--amp--engineering/amsterdam-north-holland-netherlands/network-engineer"
+    },     
+    {
         "company": "Picnic",
         "position": "Staff Engineer (Java)",
         "location": "Amsterdam, Netherlands 🇳🇱",
