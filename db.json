@@ -1,5 +1,71 @@
 [
           {
+        "company": "Billie",
+        "position": "Senior Software Engineer (Payments) (w/m/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 13, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQFSujdc9NkEKg/company-logo_200_200/0/1666246505157?e=1686787200&v=beta&t=iaS7qBTvzAGmGIHuXjZX1kUrUa2MiKL2XQbKv8RwM7c",
+        "description": "https://www.billie.io/jobs/apply?gh_jid=6682465002"
+    },
+          {
+        "company": "Wire™",
+        "position": "Backend Operations Developer (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 13, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQFSujdc9NkEKg/company-logo_200_200/0/1666246505157?e=1686787200&v=beta&t=iaS7qBTvzAGmGIHuXjZX1kUrUa2MiKL2XQbKv8RwM7c",
+        "description": "https://wire.softgarden.io/job/29890947/Backend-Operations-Developer-m-f-d-"
+    },
+          {
+        "company": " Wire™ ",
+        "position": "Senior Haskell Developer (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 13, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQFSujdc9NkEKg/company-logo_200_200/0/1666246505157?e=1686787200&v=beta&t=iaS7qBTvzAGmGIHuXjZX1kUrUa2MiKL2XQbKv8RwM7c",
+        "description": "https://wire.softgarden.io/job/25936684/Senior-Haskell-Developer-m-f-d-?l=en"
+    },
+          {
+        "company": "Billie",
+        "position": "Senior Software Engineer (Risk) (w/m/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 13, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQFSujdc9NkEKg/company-logo_200_200/0/1666246505157?e=1686787200&v=beta&t=iaS7qBTvzAGmGIHuXjZX1kUrUa2MiKL2XQbKv8RwM7c",
+        "description": "https://www.billie.io/jobs/apply?gh_jid=6686846002"
+    },
+          {
+        "company": "adjoe",
+        "position": "IT Business Analyst (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 13, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1687392000&v=beta&t=_8U5s5W3-MKqF8bjS-BTXycKfQRWicaAof9Z3cAuamE",
+        "description": "https://adjoe.io/career/?j_id=50b95375-0b92-4d2e-855b-7a0b9db84348"
+    },
+          {
+        "company": "adjoe",
+        "position": "IT System Analyst (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 13, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1687392000&v=beta&t=_8U5s5W3-MKqF8bjS-BTXycKfQRWicaAof9Z3cAuamE",
+        "description": "https://adjoe.io/career/?j_id=3fcea246-064b-4465-8d58-c06561bae16b"
+    },
+          {
         "company": "Booking.com",
         "position": "Site Reliability Engineer - Developer Experience",
         "location": "Amsterdam, Netherlands 🇳🇱",
