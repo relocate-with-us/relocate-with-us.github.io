@@ -1,5 +1,38 @@
 [
          {
+        "company": "N26",
+        "position": "Senior Backend Engineer - FCP & ID",
+        "location": "Barcelona, Spain 🇪🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 17, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHPfb-rJRi6oA/company-logo_200_200/0/1623663734137?e=1687392000&v=beta&t=QxI-Z7rpTLBJnu6jrp8L7oiCUta7qcGWMn3bhOBI8x4",
+        "description": "https://n26.com/en/careers/positions/4957140"
+    },
+         {
+        "company": "N26",
+        "position": "Lead Analytics Engineer",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 17, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHPfb-rJRi6oA/company-logo_200_200/0/1623663734137?e=1687392000&v=beta&t=QxI-Z7rpTLBJnu6jrp8L7oiCUta7qcGWMn3bhOBI8x4",
+        "description": "https://n26.com/en/careers/positions/4747059"
+    },
+         {
+        "company": "N26",
+        "position": "Product Lead - Risk & Data Foundation",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 17, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHPfb-rJRi6oA/company-logo_200_200/0/1623663734137?e=1687392000&v=beta&t=QxI-Z7rpTLBJnu6jrp8L7oiCUta7qcGWMn3bhOBI8x4",
+        "description": "https://n26.com/en/careers/positions/4836704"
+    },
+         {
         "company": "Entain",
         "position": "Infrastructure Engineer",
         "location": "Vienna, Austria 🇦🇹",
