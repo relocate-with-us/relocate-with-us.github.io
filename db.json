@@ -1,4 +1,114 @@
 [
+        {
+        "company": "gridX",
+        "position": "Cyber Security Engineer (M/W/D)",
+        "location": "Aachen & München, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 19, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/8310/social/4846ba3d2d414a97711cf772c6bbbe61.png",
+        "description": "https://gridx.jobs.personio.de/job/1068660?display=en"
+    },
+    {
+        "company": "CELUS",
+        "position": "Python Web Developer (M/F/D)",
+        "location": "München, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 19, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQETByKiqnJtRw/company-logo_200_200/0/1652106554606?e=1689811200&v=beta&t=N0kN-tEWVrEtgGfxT7rotu8qm2RfON4Y8opegKe-Ke0",
+        "description": "https://www.arbeitnow.com/view/python-web-developer-celus-munich-355350"
+    },
+    {
+        "company": "gridX",
+        "position": "Frontend Developer (M/W/D)",
+        "location": "Aachen & München, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 19, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/8310/social/4846ba3d2d414a97711cf772c6bbbe61.png",
+        "description": "https://gridx.jobs.personio.de/job/1086856?display=en"
+    }, 
+    {
+        "company": "SimScale",
+        "position": "Growth Product Manager (m/f/d)",
+        "location": "München, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 19, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFPPtgmh14kNg/company-logo_200_200/0/1656648590366?e=1689811200&v=beta&t=8u_JaDVIUaHH-JRyTL9XeOrZmvGL3Z5L33mU9AG0XMQ",
+        "description": "https://www.simscale.com/jobs/?gh_jid=6555455002"
+    },    
+    {
+        "company": "SimScale",
+        "position": "SRE/Cloud Engineer (m/f/d)",
+        "location": "München, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 19, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFPPtgmh14kNg/company-logo_200_200/0/1656648590366?e=1689811200&v=beta&t=8u_JaDVIUaHH-JRyTL9XeOrZmvGL3Z5L33mU9AG0XMQ",
+        "description": "https://www.simscale.com/jobs/?gh_jid=6677617002"
+    },    
+    {
+        "company": "gridX",
+        "position": "Go/Linux Systems Engineer (M/W/D)",
+        "location": "Aachen & München, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 19, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/8310/social/4846ba3d2d414a97711cf772c6bbbe61.png",
+        "description": "https://gridx.jobs.personio.de/job/543699?display=en"
+    }, 
+    {
+        "company": "gridX",
+        "position": "Senior Software Engineer (M/F/D)",
+        "location": "Aachen & München, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 19, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/8310/social/4846ba3d2d414a97711cf772c6bbbe61.png",
+        "description": "https://gridx.jobs.personio.de/job/631925?display=en"
+    }, 
+    {
+        "company": "gridX",
+        "position": "(Senior) Solution Engineer (M/F/D)",
+        "location": "Aachen & München, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 19, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/8310/social/4846ba3d2d414a97711cf772c6bbbe61.png",
+        "description": "https://gridx.jobs.personio.de/job/1081006?display=en"
+    }, 
+    {
+        "company": "gridX",
+        "position": "Backend Developer (M/F/D)",
+        "location": "Aachen & München, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 19, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/8310/social/4846ba3d2d414a97711cf772c6bbbe61.png",
+        "description": "https://gridx.jobs.personio.de/job/543653?display=en"
+    }, 
+    {
+        "company": "N26",
+        "position": "Chatbot Analyst",
+        "location": "Barcelona, Spain 🇪🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 19, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHPfb-rJRi6oA/company-logo_200_200/0/1623663734137?e=1687392000&v=beta&t=QxI-Z7rpTLBJnu6jrp8L7oiCUta7qcGWMn3bhOBI8x4",
+        "description": "https://n26.com/en/careers/positions/4997180"
+    },
     {
         "company": "Volkswagen Digital Solutions",
         "position": "DevOps Engineer",
