@@ -1,4 +1,114 @@
 [
+     {
+        "company": "Wallapop",
+        "position": "Search Engineer",
+        "location": "Barcelona, Spain 🇪🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEH2KKHpM7Fwg/company-logo_200_200/0/1519929420091?e=1689206400&v=beta&t=lA00zaJw0rWeHss6GqJucVIuUcbAEritFY9n_ItPfBU",
+        "description": "https://boards.eu.greenhouse.io/wallapop/jobs/4115333101"
+    },
+        {
+        "company": "Wallapop",
+        "position": "DevOps Engineer",
+        "location": "Barcelona, Spain 🇪🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEH2KKHpM7Fwg/company-logo_200_200/0/1519929420091?e=1689206400&v=beta&t=lA00zaJw0rWeHss6GqJucVIuUcbAEritFY9n_ItPfBU",
+        "description": "https://boards.eu.greenhouse.io/wallapop/jobs/4156850101"
+    },
+        {
+        "company": "Jus Mundi",
+        "position": "Software Engineer | Node.js/Vue.js",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFkFSDZh9uBpg/company-logo_200_200/0/1519903803617?e=1689811200&v=beta&t=5u99NO33cS03dEh_6siyCIxqrBGNF9ib2lFZZ1O2JH4",
+        "description": "https://www.welcometothejungle.com/en/companies/jus-mundi/jobs/software-engineer-node-js-vue-js_paris"
+    },
+        {
+        "company": "Scout24",
+        "position": "Senior UX Designer (d/f/m)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHymfxcVPKrhA/company-logo_200_200/0/1581940288258?e=1689811200&v=beta&t=1VGe68RNdv8wGyc8aNjzoQcJzc5-YZhAsphRwy-wYL4",
+        "description": "https://www.immobilienscout24.de/company/careers/jobs/product-management/senior-ux-designer-d-f-m-4999498/"
+    },
+        {
+        "company": "Mondu",
+        "position": "Senior Customer Success Manager (m/f/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFq0wR8fgr5Uw/company-logo_200_200/0/1675326260603?e=1689206400&v=beta&t=K_bei-GucebCz6Hp-oiLUN53LBJk4yVjrNBFa7aVKKg",
+        "description": "https://boards.eu.greenhouse.io/monduai/jobs/4055651101"
+    },
+        {
+        "company": "Popcore",
+        "position": "Frontend Developer",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQE6e9qfOHeBcQ/company-logo_200_200/0/1645717471272?e=1689206400&v=beta&t=_UT9u974gMDbnoRYmR-3FrYyuS5VojTlJGeiajQO4ig",
+        "description": "https://boards.eu.greenhouse.io/popcore/jobs/4156984101"
+    },
+     {
+        "company": "Mondu",
+        "position": "Customer Success Manager (m/f/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFq0wR8fgr5Uw/company-logo_200_200/0/1675326260603?e=1689206400&v=beta&t=K_bei-GucebCz6Hp-oiLUN53LBJk4yVjrNBFa7aVKKg",
+        "description": "https://boards.eu.greenhouse.io/monduai/jobs/4145298101"
+    },
+        {
+        "company": "Popcore",
+        "position": "Unity Developer (M/F/X)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQE6e9qfOHeBcQ/company-logo_200_200/0/1645717471272?e=1689206400&v=beta&t=_UT9u974gMDbnoRYmR-3FrYyuS5VojTlJGeiajQO4ig",
+        "description": "https://boards.eu.greenhouse.io/popcore/jobs/4022254101"
+    },
+        {
+        "company": "Popcore",
+        "position": "Analytics Engineer - M/F/X",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQE6e9qfOHeBcQ/company-logo_200_200/0/1645717471272?e=1689206400&v=beta&t=_UT9u974gMDbnoRYmR-3FrYyuS5VojTlJGeiajQO4ig",
+        "description": "https://boards.eu.greenhouse.io/popcore/jobs/4156139101"
+    },
+        {
+        "company": "justDice",
+        "position": " Tech Lead – Unity Game Development (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFHJjbb8aK5qw/company-logo_200_200/0/1674060192311?e=1686182400&v=beta&t=LS4AIsOnZxvswH1XBr_Vzn0dLu-b7USKiYyi2sVE-EA",
+        "description": "https://justdice.io/jobs/?j_id=d1e58800-4b6d-4bb6-8a9d-68368ac18207"
+    },
         {
         "company": "gridX",
         "position": "Cyber Security Engineer (M/W/D)",
