@@ -1,5 +1,126 @@
 [
           {
+        "company": "Bystronic Group",
+        "position": "Product Manager Bending (m/w/d)",
+        "location": "Gotha, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 24, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQFWxgkq14C_-g/company-logo_200_200/0/1666643068051?e=1690416000&v=beta&t=M2p6h4Jyzk-orEi5V6NhMgbxCvFA7zY311y6HrPHTfc",
+        "description": "https://careers.bystronic.com/careers-fr/offres/advertisement.php?includeDocument=/de-de/karriere/jobs/Product-Manager-Bending-m-w-d.php"
+    },
+          {
+        "company": "Billie",
+        "position": "Senior Software Engineer (Payments) (w/m/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 24, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQFSujdc9NkEKg/company-logo_200_200/0/1666246505157?e=1686787200&v=beta&t=iaS7qBTvzAGmGIHuXjZX1kUrUa2MiKL2XQbKv8RwM7c",
+        "description": "https://www.billie.io/jobs/apply?gh_jid=6682465002&board=billie"
+    },
+          {
+        "company": "Billie",
+        "position": "Senior Web Designer (w/m/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 24, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQFSujdc9NkEKg/company-logo_200_200/0/1666246505157?e=1686787200&v=beta&t=iaS7qBTvzAGmGIHuXjZX1kUrUa2MiKL2XQbKv8RwM7c",
+        "description": "https://www.billie.io/jobs/apply?gh_jid=6723313002&board=billie"
+    },
+          {
+        "company": "Billie",
+        "position": "Data Scientist (w/m/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 24, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQFSujdc9NkEKg/company-logo_200_200/0/1666246505157?e=1686787200&v=beta&t=iaS7qBTvzAGmGIHuXjZX1kUrUa2MiKL2XQbKv8RwM7c",
+        "description": "https://www.billie.io/jobs/apply?gh_jid=6725672002&board=billie"
+    },
+          {
+        "company": "Alteos",
+        "position": "Senior Software Engineer (m/w/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 24, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFLiCuAJY5-ew/company-logo_200_200/0/1655224126951?e=1688601600&v=beta&t=9e8xR9E7RKOKRmAsXMsAteYKo3CMTsnFnl3Ooc8CCN4",
+        "description": "https://alteos.jobs.personio.de/job/1022912?display=en"
+    },
+          {
+        "company": "Catawiki",
+        "position": "Junior Frontend Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 24, 2023",
+        "logo": "https://catawiki.careers/static/custom-logos/catawiki-logo.svg",
+        "description": "https://catawiki.careers/vacancies/junior-frontend-engineer-netherlands-amsterdam-2474540-4859292"
+    },
+          {
+        "company": "Catawiki",
+        "position": "Data Scientist - Machine Learning",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 24, 2023",
+        "logo": "https://catawiki.careers/static/custom-logos/catawiki-logo.svg",
+        "description": "https://catawiki.careers/vacancies/data-scientist-machine-learning-netherlands-amsterdam-1427963-2338337"
+    },
+          {
+        "company": "Catawiki",
+        "position": "Senior Android Developer II",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 24, 2023",
+        "logo": "https://catawiki.careers/static/custom-logos/catawiki-logo.svg",
+        "description": "https://catawiki.careers/vacancies/senior-android-developer-ii-netherlands-1013791-4856144"
+    },
+          {
+        "company": "Catawiki",
+        "position": "Senior Data Analyst - Commercial Insights",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 24, 2023",
+        "logo": "https://catawiki.careers/static/custom-logos/catawiki-logo.svg",
+        "description": "https://catawiki.careers/vacancies/senior-data-analyst-commercial-insights-netherlands-amsterdam-1376275-4922445"
+    },
+          {
+        "company": "Catawiki",
+        "position": "Senior Full Stack Developer II",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 24, 2023",
+        "logo": "https://catawiki.careers/static/custom-logos/catawiki-logo.svg",
+        "description": "https://catawiki.careers/vacancies/senior-full-stack-developer-ii-netherlands-amsterdam-2104353-4856187"
+    },
+          {
+        "company": "Catawiki",
+        "position": "Threat Response Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 24, 2023",
+        "logo": "https://catawiki.careers/static/custom-logos/catawiki-logo.svg",
+        "description": "https://catawiki.careers/vacancies/threat-response-engineer-netherlands-amsterdam-2513814-4962165"
+    },
+          {
         "company": "Picnic",
         "position": "Customer Growth Analytics Lead (m/w/d)",
         "location": "Hamburg, Germany 🇩🇪",
