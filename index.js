@@ -28,6 +28,15 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Get the search input element
+const searchInput = document.getElementById("default-search");
+
+// Add an event listener to the search input
+searchInput.addEventListener("input", () => {
+    const query = searchInput.value.trim();
+    filterJobs(query);
+});
+
 function filterJobs(text, start, limit) {
   fetchJobs(start, limit, (data) => {
     const jobsList = document.getElementById("jobsList");
