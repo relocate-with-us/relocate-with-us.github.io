@@ -28,22 +28,21 @@ window.addEventListener('scroll', () => {
     }
 });
 
+function filterJobs(text, start, limit) {
+  fetchJobs(start, limit, (data) => {
+    const jobsList = document.getElementById("jobsList");
+    jobsList.innerHTML = "";
 
-function filterJobs(text) {
-    fetchJobs((data) => {
-        const jobsList = document.getElementById("jobsList");
-        jobsList.innerHTML = "";
+    data.forEach((job, index) => {
+      const query = String(text).toLowerCase();
+      const position = String(job.position).toLowerCase();
 
-        data.forEach((job, index) => {
-            const query = String(text).toLowerCase();
-            const position = String(job.position).toLowerCase();
-
-            if (position.includes(query)) {
-                jobsList.innerHTML += generateJobElement(job);
-            }
-        });
-    })
-}    
+      if (position.includes(query)) {
+        jobsList.innerHTML += generateJobElement(job);
+      }
+    });
+  });
+}
 
 function generateJobElement({ description, company, logo, reloc, visa, position, contract, location, post_date }) {
         return `
