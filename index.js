@@ -2,20 +2,31 @@ function fetchDefaultJobs() {
     fetchJobs(defaultJobs)
 }
 
-function fetchJobs(callback) {
+function fetchJobs(start, limit, callback) {
     fetch("./db.json")
         .then(res => res.json())
-        .then(data => callback(data))
+        .then(data => callback(data.slice(start, start + limit)))
         .catch(error => console.error(error));
 }
 
+
 function defaultJobs(data) {
     const jobsList = document.getElementById("jobsList");
-    jobsList.innerHTML = "";
     data.forEach((job, index) => {
         jobsList.innerHTML += generateJobElement(job);
     });
 }
+
+window.addEventListener('scroll', () => {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        const jobsList = document.getElementById("jobsList");
+        const start = jobsList.children.length;
+        const limit = 10; // Load 10 items at a time
+        fetchJobs(start, limit, (data) => {
+            defaultJobs(data);
+        });
+    }
+});
 
 
 function filterJobs(text) {
