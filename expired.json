@@ -1,5 +1,71 @@
 [
          {
+        "company": "N26",
+        "position": "Lead Database Engineer (PostgreSQL)",
+        "location": "Vienna, Austria 🇦🇹",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 17, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHPfb-rJRi6oA/company-logo_200_200/0/1623663734137?e=1687392000&v=beta&t=QxI-Z7rpTLBJnu6jrp8L7oiCUta7qcGWMn3bhOBI8x4",
+        "description": "https://n26.com/en/careers/positions/3676004"
+    },
+         {
+        "company": "N26",
+        "position": "Lead Data Engineer",
+        "location": "Vienna, Austria 🇦🇹",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 17, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHPfb-rJRi6oA/company-logo_200_200/0/1623663734137?e=1687392000&v=beta&t=QxI-Z7rpTLBJnu6jrp8L7oiCUta7qcGWMn3bhOBI8x4",
+        "description": "https://n26.com/en/careers/positions/4459280"
+    },
+         {
+        "company": "Entain",
+        "position": "Full Stack Engineer (All genders)",
+        "location": "Vienna, Austria 🇦🇹",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 17, 2023",
+        "logo": "https://apply.entaincareers.com/images/logo.svg",
+        "description": "https://apply.entaincareers.com/vacancies/83740/full-stack-engineer-all-genders.html"
+    }, 
+         {
+        "company": " Studio Gobo",
+        "position": "Technical Artist (All levels)",
+        "location": "Brighton, UK 🇬🇧",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 16, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFVI6uB8kfzMA/company-logo_200_200/0/1669390181836?e=1686787200&v=beta&t=ZGcBLj4wNxoKYHS_WYcltbqBTx8gsH5cnfhXMzJ-TXI",
+        "description": "https://apply.workable.com/studiogobo/j/56427B45DA/"
+    }, 
+         {
+        "company": "Billie",
+        "position": "Partnerships Business Development Manager (w/m/d) ",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 16, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQFSujdc9NkEKg/company-logo_200_200/0/1666246505157?e=1686787200&v=beta&t=iaS7qBTvzAGmGIHuXjZX1kUrUa2MiKL2XQbKv8RwM7c",
+        "description": "https://www.billie.io/jobs/apply?gh_jid=6593724002"
+    },
+         {
+        "company": "Billie",
+        "position": "Analyst Risk Management (f/m/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 16, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQFSujdc9NkEKg/company-logo_200_200/0/1666246505157?e=1686787200&v=beta&t=iaS7qBTvzAGmGIHuXjZX1kUrUa2MiKL2XQbKv8RwM7c",
+        "description": "https://www.billie.io/jobs/apply?gh_jid=6666329002"
+    },
+         {
         "company": "West Fraser",
         "position": " Reliability Supervisor",
         "location": "Hinton, AB Canada 🇨🇦",
