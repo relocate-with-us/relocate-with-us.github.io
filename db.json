@@ -1,4 +1,92 @@
 [
+         {
+        "company": "Tactile Games",
+        "position": "Art Director",
+        "location": "Copenhagen, Denmark 🇩🇰",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 27, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQG-P3_JnWdobw/company-logo_200_200/0/1661944019486?e=1687392000&v=beta&t=TWD7JrDbNQ2ZhaKXRI9bzUB6qwCI3S1_83vo8U9G_O8",
+        "description": "https://jobs.lever.co/tactilegames/bc4c497b-5a78-41e5-b47a-9f731dcfa85d/apply"
+    },
+          {    
+        "company": "Nokia",
+        "position": "Senior Specification Engineer",
+        "location": "Oulou, Finland 🇫🇮",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 27, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQGL8hpduEqGKQ/company-logo_200_200/0/1677420438777?e=1690416000&v=beta&t=7uQdPrDWNH8jYzfYDBjrHpec6nv0CvAb-PZfB93mtnA",
+        "description": "https://aluperf.referrals.selectminds.com/jobs/senior-specification-engineer-98702"
+    },
+          {    
+        "company": "Kiwi.com",
+        "position": "Senior Product Manager for Ancillaries Mobile",
+        "location": "Barcelona, Spain 🇪🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 27, 2023",
+        "logo": "https://jobs.kiwi.com/wp-content/themes/kiwi-jobs/static/img/kiwi-logo-header.svg",
+        "description": "https://jobs.eu.lever.co/kiwi/2e82970f-245e-4441-840d-413fb4587126"
+    },
+          {
+        "company": "Destinus",
+        "position": "Embedded Software Engineer",
+        "location": "Payerne, Switzerland 🇨🇭",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 27, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQEqPOjmVIfznA/company-logo_200_200/0/1667566056808?e=1690416000&v=beta&t=thLaEOcnF-DQnwalDJOSNL_pcTz0Jzb2W2O5yZcyIEg",
+        "description": "https://join.com/companies/destinus1/7854220-embedded-software-engineer"
+    },
+          {
+        "company": "Destinus",
+        "position": "IT Administrator",
+        "location": "Madrid, Spain 🇪🇸",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 27, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQEqPOjmVIfznA/company-logo_200_200/0/1667566056808?e=1690416000&v=beta&t=thLaEOcnF-DQnwalDJOSNL_pcTz0Jzb2W2O5yZcyIEg",
+        "description": "https://join.com/companies/destinus1/7858854-it-administrator"
+    },
+          {
+        "company": "Destinus",
+        "position": "Lead Systems Engineer",
+        "location": "Madrid, Spain 🇪🇸",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 27, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQEqPOjmVIfznA/company-logo_200_200/0/1667566056808?e=1690416000&v=beta&t=thLaEOcnF-DQnwalDJOSNL_pcTz0Jzb2W2O5yZcyIEg",
+        "description": "https://join.com/companies/destinus1/7855706-lead-systems-engineer"
+    },
+          {
+        "company": "Picnic",
+        "position": "IAM Software Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 27, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHS7qmjAasAyw/company-logo_200_200/0/1636644894385?e=1689206400&v=beta&t=8YoPVS7vyztYSPVjOYouqUv4H_VtnjhPiPZ7z1UJGkM",
+        "description": "https://picnic.app/careers/jobs/4250602/technology--amp--engineering/amsterdam-north-holland-netherlands/iam-software-engineer"
+    },
+          {
+        "company": "Bigpoint GmbH",
+        "position": "SAP SPECIALIST (m/f/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 27, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQF_mljwUnWkMw/company-logo_200_200/0/1659974613567?e=1689811200&v=beta&t=YBNtNhqKMsDXVIZz_WMVnF4MwHuThwM7fdch3GWoM1A",
+        "description": "https://bigpoint.jobs.personio.de/job/672383?display=en"
+    },
           {
         "company": "Ryanair",
         "position": "iOS Developer",
