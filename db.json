@@ -1,7 +1,29 @@
 [
          {
+        "company": "SumUp",
+        "position": "Analytics Engineer",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 27, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFKTfHAXegsGQ/company-logo_200_200/0/1609758363237?e=1690416000&v=beta&t=uwEWPdD72gUhwNYLz2Etg_cSG8jrds9Y5k3LZI64Ic4",
+        "description": "https://www.sumup.com/careers/positions/berlin-germany/engineering/analytics-engineer/6669140002/"
+    },
+         {
+        "company": "SumUp",
+        "position": "Payment Application Engineer, Hardware",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 27, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFKTfHAXegsGQ/company-logo_200_200/0/1609758363237?e=1690416000&v=beta&t=uwEWPdD72gUhwNYLz2Etg_cSG8jrds9Y5k3LZI64Ic4",
+        "description": "https://www.sumup.com/careers/positions/berlin-germany/engineering/payment-application-engineer-hardware/6733877002"
+    },
+         {
         "company": "Tactile Games",
-        "position": "Art Director",
+        "position": "Senior/Lead Level Designer",
         "location": "Copenhagen, Denmark 🇩🇰",
         "reloc": "Relocation Assistance",
         "visa": "Visa Sponsorship",
