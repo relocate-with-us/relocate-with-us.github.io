@@ -1,7 +1,6 @@
 function fetchDefaultJobs() {
     fetchJobs(defaultJobs)
 }
-
 function fetchJobs(start, limit, callback) {
     fetch("./db.json")
         .then(res => res.json())
