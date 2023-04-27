@@ -28,31 +28,22 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Get the search input element
-const searchInput = document.getElementById("default-search");
 
-// Add an event listener to the search input
-searchInput.addEventListener("input", () => {
-    const query = searchInput.value.trim();
-    filterJobs(query);
-});
+function filterJobs(text) {
+    fetchJobs((data) => {
+        const jobsList = document.getElementById("jobsList");
+        jobsList.innerHTML = "";
 
-function filterJobs(text, start, limit) {
-  fetchJobs(start, limit, (data) => {
-    const jobsList = document.getElementById("jobsList");
-    jobsList.innerHTML = "";
+        data.forEach((job, index) => {
+            const query = String(text).toLowerCase();
+            const position = String(job.position).toLowerCase();
 
-    data.forEach((job, index) => {
-      const query = String(text).toLowerCase();
-      const position = String(job.position).toLowerCase();
-
-      if (position.includes(query)) {
-        jobsList.innerHTML += generateJobElement(job);
-      }
-    });
-  });
-}
-
+            if (position.includes(query)) {
+                jobsList.innerHTML += generateJobElement(job);
+            }
+        });
+    })
+}    
 function generateJobElement({ description, company, logo, reloc, visa, position, contract, location, post_date }) {
         return `
           <a href="${description}" class="flex bg-white shadow-md my-6 mx-2 p-3 rounded border-l-4 border-teal-500 border-solid">
