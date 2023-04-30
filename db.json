@@ -1,4 +1,59 @@
 [
+     {
+        "company": "Zalando SE",
+        "position": "Software Engineer - Partner Tech",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQGxrOwBBerWZg/company-logo_200_200/0/1666604520687?e=1689206400&v=beta&t=atanjx5G_dY6nmyGrKDxzcd583FlO08VQ980d6FpvDY",
+        "description": "https://jobs.zalando.com/en/jobs/4950374"
+    },
+         {
+        "company": "Picnic",
+        "position": "Senior DevOps Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHS7qmjAasAyw/company-logo_200_200/0/1636644894385?e=1689206400&v=beta&t=8YoPVS7vyztYSPVjOYouqUv4H_VtnjhPiPZ7z1UJGkM",
+        "description": "https://picnic.app/careers/jobs/4466489/technology--amp--engineering/amsterdam-north-holland-netherlands/senior-devops-engineer"
+    },
+         {
+        "company": "Booking.com",
+        "position": "Product Manager - Global Customer service",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEgzF5azm3fNA/company-logo_200_200/0/1628510256914?e=1687392000&v=beta&t=BAASpYFwuJpzsCSnzCKZQb5thxXuQkpOdMxafP41h-Q",
+        "description": "https://jobs.booking.com/careers/job/562949957285448"
+    },
+         {
+        "company": "Booking.com",
+        "position": "Site Reliability Engineer- Observability",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEgzF5azm3fNA/company-logo_200_200/0/1628510256914?e=1687392000&v=beta&t=BAASpYFwuJpzsCSnzCKZQb5thxXuQkpOdMxafP41h-Q",
+        "description": "https://jobs.booking.com/careers/job/562949957287223"
+    },
+         {
+        "company": "Booking.com",
+        "position": "Junior Test Engineer - Attractions",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEgzF5azm3fNA/company-logo_200_200/0/1628510256914?e=1687392000&v=beta&t=BAASpYFwuJpzsCSnzCKZQb5thxXuQkpOdMxafP41h-Q",
+        "description": "https://jobs.booking.com/careers/job/562949957054553"
+    },
          {
         "company": "SumUp",
         "position": "Analytics Engineer",
