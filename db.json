@@ -1,4 +1,103 @@
 [
+    {
+        "company": "SimScale",
+        "position": "Senior Backend Developer (m/f/d)",
+        "location": "München, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 1, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFPPtgmh14kNg/company-logo_200_200/0/1656648590366?e=1689811200&v=beta&t=8u_JaDVIUaHH-JRyTL9XeOrZmvGL3Z5L33mU9AG0XMQ",
+        "description": "https://www.simscale.com/jobs/?gh_jid=6729238002"
+    },   
+     {
+        "company": "CLARK",
+        "position": "Salesforce Developer (m/f/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 1, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEaisXlj7wkkQ/company-logo_200_200/0/1657102403103?e=1691020800&v=beta&t=5tX7ptjxU1oTav9tj-T_WpOt0jVNLqGAB1ZMV65_lq0",
+        "description": "https://boards.greenhouse.io/clark71/jobs/4924498002"
+    },
+     {
+        "company": "CLARK",
+        "position": "(Senior) Product Manager (m/f/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 1, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEaisXlj7wkkQ/company-logo_200_200/0/1657102403103?e=1691020800&v=beta&t=5tX7ptjxU1oTav9tj-T_WpOt0jVNLqGAB1ZMV65_lq0",
+        "description": "https://boards.greenhouse.io/clark71/jobs/4038161002"
+    },
+     {    
+        "company": "Citymapper",
+        "position": "Senior Software Engineer - iOS",
+        "location": "London , UK 🇬🇧",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 1, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQFzdj53g88kqg/company-logo_200_200/0/1519912347965?e=1691020800&v=beta&t=6IL1IftVXgw1IhbK_N-3A2qb_C3R-BRQ7eFRBtJsGos",
+        "description": "https://apply.workable.com/citymapper/j/18D32D839A/"
+    },
+     {    
+        "company": "Citymapper",
+        "position": "Software Engineer - Transport Data",
+        "location": "London , UK 🇬🇧",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 1, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQFzdj53g88kqg/company-logo_200_200/0/1519912347965?e=1691020800&v=beta&t=6IL1IftVXgw1IhbK_N-3A2qb_C3R-BRQ7eFRBtJsGos",
+        "description": "https://apply.workable.com/citymapper/j/309969CD0E/"
+    },
+     {    
+        "company": "Citymapper",
+        "position": "Software Engineer - iOS",
+        "location": "London , UK 🇬🇧",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 1, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQFzdj53g88kqg/company-logo_200_200/0/1519912347965?e=1691020800&v=beta&t=6IL1IftVXgw1IhbK_N-3A2qb_C3R-BRQ7eFRBtJsGos",
+        "description": "https://apply.workable.com/citymapper/j/6FFD7F4C65/"
+    },
+     {    
+        "company": "Atos",
+        "position": "Senior SAP Consultant SD",
+        "location": "Wrocław, Poland 🇵🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 1, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEA-7akfn4FzA/company-logo_200_200/0/1638575002083?e=1691020800&v=beta&t=oNcIFhrTEHuMiLKhpV2hlw0KPiTBHmWzdSa3yPrVoKc",
+        "description": "https://jobs.atos.net/job/Wroclaw-Senior-SAP-Consultant-SD-Pola-53-611/887594001/"
+    },
+     {    
+        "company": "Atos",
+        "position": "Azure Cloud Architect",
+        "location": "Barcelona, Spain 🇪🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 1, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEA-7akfn4FzA/company-logo_200_200/0/1638575002083?e=1691020800&v=beta&t=oNcIFhrTEHuMiLKhpV2hlw0KPiTBHmWzdSa3yPrVoKc",
+        "description": "https://jobs.atos.net/job/Bydgoszcz-Azure-Cloud-DevOps-Engineer-1-Bydg/642559701/"
+    },
+          {    
+        "company": "Kiwi.com",
+        "position": "Senior Business Analyst",
+        "location": "Barcelona, Spain 🇪🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 1, 2023",
+        "logo": "https://jobs.kiwi.com/wp-content/themes/kiwi-jobs/static/img/kiwi-logo-header.svg",
+        "description": "https://jobs.eu.lever.co/kiwi/99006808-e00d-4c88-8406-32e74af7726d"
+    },
      {
         "company": "Zalando SE",
         "position": "Software Engineer - Partner Tech",
