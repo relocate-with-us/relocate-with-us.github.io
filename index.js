@@ -1,8 +1,12 @@
+// keep track of loaded jobs
+const loadedJobs = [];
+
 function fetchDefaultJobs() {
     const start = 0;
     const limit = 10;
     fetchJobs(start, limit, defaultJobs);
 }
+
 function fetchJobs(start, limit, callback) {
     fetch("./db.json")
         .then(res => res.json())
@@ -10,11 +14,14 @@ function fetchJobs(start, limit, callback) {
         .catch(error => console.error(error));
 }
 
-
 function defaultJobs(data) {
     const jobsList = document.getElementById("jobsList");
     data.forEach((job, index) => {
-        jobsList.innerHTML += generateJobElement(job);
+        // check if job is already loaded
+        if (!loadedJobs.includes(job.position)) {
+            jobsList.innerHTML += generateJobElement(job);
+            loadedJobs.push(job.position);
+        }
     });
 }
 
@@ -29,27 +36,31 @@ window.addEventListener('scroll', () => {
     }
 });
 
-
 function filterJobs(text) {
     const start = 0;
     const limit = 10;
     fetchJobs(start, limit, (data) => {
         const jobsList = document.getElementById("jobsList");
         jobsList.innerHTML = "";
+        loadedJobs.length = 0;
 
         data.forEach((job, index) => {
             const query = String(text).toLowerCase();
             const position = String(job.position).toLowerCase();
 
             if (position.includes(query)) {
-                jobsList.innerHTML += generateJobElement(job);
+                // check if job is already loaded
+                if (!loadedJobs.includes(job.position)) {
+                    jobsList.innerHTML += generateJobElement(job);
+                    loadedJobs.push(job.position);
+                }
             }
         });
     });
 }
 
 function generateJobElement({ description, company, logo, reloc, visa, position, contract, location, post_date }) {
-        return `
+    return `
           <a href="${description}" class="flex bg-white shadow-md my-6 mx-2 p-3 rounded border-l-4 border-teal-500 border-solid">
             <div class="flex-shrink-0 mr-4">
               <img src=${logo} loading=lazy class="w-16 h-16 object-contain" alt="${company}" />
