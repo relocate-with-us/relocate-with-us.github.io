@@ -1,4 +1,70 @@
 [
+         {
+        "company": "Cinemo",
+        "position": "Solution Engineer (f/m/d)",
+        "location": "Karlsruhe, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 4, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFmZWDNJxMJpg/company-logo_200_200/0/1677841551161?e=1691020800&v=beta&t=a_AMtLhwZiFiqFWzgZQfGqB-SL8C_ygoJsrjT3sKfq0",
+        "description": "https://join.com/companies/cinemo/7844042-solution-engineer-f-m-d"
+    },
+    {
+        "company": "Cinemo",
+        "position": "Embedded Software Engineer C++ (f/m/d)",
+        "location": "Karlsruhe, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 4, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFmZWDNJxMJpg/company-logo_200_200/0/1677841551161?e=1691020800&v=beta&t=a_AMtLhwZiFiqFWzgZQfGqB-SL8C_ygoJsrjT3sKfq0",
+        "description": "https://join.com/companies/cinemo/7907432-embedded-software-engineer-c-f-m-d"
+    },
+    {
+        "company": "K-tronik GmbH",
+        "position": "Development Engineer (m/f/x) for ASIC/FPGA",
+        "location": "Dresden, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 4, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQF4R67vpmwP0Q/company-logo_200_200/0/1585740177486?e=1691020800&v=beta&t=s7r1pSPB93lM_QNYBX4GYRY8Bsi2shkMHL22Lq5YHZQ",
+        "description": "https://join.com/companies/k-tronik/7920276-development-engineer-m-f-x-for-asic-fpga"
+    },
+    {
+        "company": "HousingAnywhere",
+        "position": "Engineering Manager - Core API",
+        "location": "Rotterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 4, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQG9yedIEa5gyA/company-logo_200_200/0/1646670271841?e=1691020800&v=beta&t=nNvT63MzuogIM1fhTiYSOsnVIol2LBbRpRLKFtvZ-Go",
+        "description": "https://boards.greenhouse.io/housinganywhere/jobs/5570185003"
+    },
+    {
+        "company": "HousingAnywhere",
+        "position": "Junior HR Administrator",
+        "location": "Rotterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 4, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQG9yedIEa5gyA/company-logo_200_200/0/1646670271841?e=1691020800&v=beta&t=nNvT63MzuogIM1fhTiYSOsnVIol2LBbRpRLKFtvZ-Go",
+        "description": "https://boards.greenhouse.io/housinganywhere/jobs/5085656003"
+    },
+    {
+        "company": "Zalando SE",
+        "position": "Junior Software Engineer- Paradox (all genders)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 4, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQGxrOwBBerWZg/company-logo_200_200/0/1666604520687?e=1689206400&v=beta&t=atanjx5G_dY6nmyGrKDxzcd583FlO08VQ980d6FpvDY",
+        "description": "https://jobs.zalando.com/en/jobs/4977539"
+    },
     {
         "company": "brighter AI",
         "position": "Technical Pre-Sales Manager (m/f/d)",
