@@ -1,5 +1,126 @@
 [
          {
+        "company": "Adyen",
+        "position": "Marketing Data Analyst",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 7, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_200_200/0/1664880075658?e=1691625600&v=beta&t=C2dGEabnLe5IcqLigxgCw0e4c1ILGw6yw8VPSQy7Ukk",
+        "description": "https://boards.greenhouse.io/adyen/jobs/4017277"
+    },
+         {
+        "company": "Adyen",
+        "position": "Database Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 7, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_200_200/0/1664880075658?e=1691625600&v=beta&t=C2dGEabnLe5IcqLigxgCw0e4c1ILGw6yw8VPSQy7Ukk",
+        "description": "https://boards.greenhouse.io/adyen/jobs/3727491"
+    },
+         {
+        "company": "Adyen",
+        "position": "Monitoring Operations Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 7, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_200_200/0/1664880075658?e=1691625600&v=beta&t=C2dGEabnLe5IcqLigxgCw0e4c1ILGw6yw8VPSQy7Ukk",
+        "description": "https://boards.greenhouse.io/adyen/jobs/4905966"
+    },
+         {
+        "company": "Cinemo",
+        "position": "Junior C++ Embedded Software Engineer (f/m/d)",
+        "location": "Karlsruhe, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 7, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFmZWDNJxMJpg/company-logo_200_200/0/1677841551161?e=1691020800&v=beta&t=a_AMtLhwZiFiqFWzgZQfGqB-SL8C_ygoJsrjT3sKfq0",
+        "description": "https://join.com/companies/cinemo/7931072-junior-c-embedded-software-engineer-f-m-d"
+    },
+         {
+        "company": "Zalando SE",
+        "position": "Backend Engineer (Java) - Zalando Premium Logistics)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 7, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQGxrOwBBerWZg/company-logo_200_200/0/1666604520687?e=1689206400&v=beta&t=atanjx5G_dY6nmyGrKDxzcd583FlO08VQ980d6FpvDY",
+        "description": "https://jobs.zalando.com/en/jobs/4806967"
+    },
+         {
+        "company": "Kolibri Games",
+        "position": "Unity Games Developer (f/m/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 7, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFOEkW0KYobgg/company-logo_200_200/0/1625510136003?e=1691020800&v=beta&t=U9iQRelpotvdJnbeo0mFKm64l0uEp0LNZvxTrs2Fd88",
+        "description": "https://jobs.lever.co/kolibrigames/551b8398-defb-4260-8d10-d06f6dcd25de/apply"
+    },
+         {
+        "company": "Kolibri Games",
+        "position": "Game Data Analyst (f/m/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 7, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFOEkW0KYobgg/company-logo_200_200/0/1625510136003?e=1691020800&v=beta&t=U9iQRelpotvdJnbeo0mFKm64l0uEp0LNZvxTrs2Fd88",
+        "description": "https://jobs.lever.co/kolibrigames/028f1aae-99c0-460b-bf98-4009e98d2e26/apply"
+    },
+         {
+        "company": "Kolibri Games",
+        "position": "Data Engineer (f/m/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 7, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFOEkW0KYobgg/company-logo_200_200/0/1625510136003?e=1691020800&v=beta&t=U9iQRelpotvdJnbeo0mFKm64l0uEp0LNZvxTrs2Fd88",
+        "description": "https://jobs.lever.co/kolibrigames/25a571cf-3220-4ffe-8b66-65ca049d719c/apply"
+    },  
+         {
+        "company": "Kolibri Games",
+        "position": "QA Tester (f/m/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 7, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFOEkW0KYobgg/company-logo_200_200/0/1625510136003?e=1691020800&v=beta&t=U9iQRelpotvdJnbeo0mFKm64l0uEp0LNZvxTrs2Fd88",
+        "description": "https://jobs.lever.co/kolibrigames/5dcb80fc-e26f-4069-b34e-71894f199a62/apply"
+    },  
+         {
+        "company": "brighter AI",
+        "position": "Machine Learning Operations (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 7, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFOEkW0KYobgg/company-logo_200_200/0/1625510136003?e=1691020800&v=beta&t=U9iQRelpotvdJnbeo0mFKm64l0uEp0LNZvxTrs2Fd88",
+        "description": "https://brighter-ai.jobs.personio.de/job/1107391?display=en&language=en"
+    },  
+         {
+        "company": "Picnic",
+        "position": "Warehouse Simulation Software Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 7, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHS7qmjAasAyw/company-logo_200_200/0/1636644894385?e=1689206400&v=beta&t=8YoPVS7vyztYSPVjOYouqUv4H_VtnjhPiPZ7z1UJGkM",
+        "description": "https://picnic.app/careers/jobs/5005639/technology--amp--engineering/amsterdam-north-holland-netherlands/warehouse-simulation-software-engineer"
+    },
+         {
         "company": "Cinemo",
         "position": "Solution Engineer (f/m/d)",
         "location": "Karlsruhe, Germany 🇩🇪",
