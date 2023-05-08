@@ -7,10 +7,14 @@ function fetchDefaultJobs() {
     fetchJobs(start, limit, defaultJobs);
 }
 
-function fetchJobs(start, limit, callback) {
+function fetchJobs(start, limit, filter, callback) {
     fetch("./db.json")
         .then(res => res.json())
-        .then(data => callback(data.slice(start, start + limit)))
+        .then(data => {
+            const filteredData = filter ? data.filter(filter) : data;
+            const slicedData = filteredData.slice(start, start + limit);
+            callback(slicedData);
+        })
         .catch(error => console.error(error));
 }
 
@@ -30,7 +34,7 @@ window.addEventListener('scroll', () => {
         const jobsList = document.getElementById("jobsList");
         const start = jobsList.children.length;
         const limit = 10; // Load 10 items at a time
-        fetchJobs(start, limit, (data) => {
+        fetchJobs(start, limit, null, (data) => {
             defaultJobs(data);
         });
     }
@@ -39,21 +43,20 @@ window.addEventListener('scroll', () => {
 function filterJobs(text) {
     const start = 0;
     const limit = 10;
-    fetchJobs(start, limit, (data) => {
+    fetchJobs(start, limit, (job) => {
+        const query = String(text).toLowerCase();
+        const position = String(job.position).toLowerCase();
+        return position.includes(query);
+    }, (data) => {
         const jobsList = document.getElementById("jobsList");
         jobsList.innerHTML = "";
         loadedJobs.length = 0;
 
         data.forEach((job, index) => {
-            const query = String(text).toLowerCase();
-            const position = String(job.position).toLowerCase();
-
-            if (position.includes(query)) {
-                // check if job is already loaded
-                if (!loadedJobs.includes(job.position)) {
-                    jobsList.innerHTML += generateJobElement(job);
-                    loadedJobs.push(job.position);
-                }
+            // check if job is already loaded
+            if (!loadedJobs.includes(job.position)) {
+                jobsList.innerHTML += generateJobElement(job);
+                loadedJobs.push(job.position);
             }
         });
     });
