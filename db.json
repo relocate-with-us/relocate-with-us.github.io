@@ -1,4 +1,81 @@
 [
+     {
+        "company": "Diabolocom",
+        "position": "Frontend Software Engineer",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQGGg6n49T7GRA/company-logo_200_200/0/1676623165479?e=1691625600&v=beta&t=DgS4kenFIv0jlV0-RFJBPTV8QM2WW3w-bM3xvYAKzcY",
+        "description": "https://jobs.eu.lever.co/diabolocom/7b39597f-355c-4e02-85f0-542a632625c0"
+    },
+         {
+        "company": "Diabolocom",
+        "position": "Lead QA Automation Engineer",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQGGg6n49T7GRA/company-logo_200_200/0/1676623165479?e=1691625600&v=beta&t=DgS4kenFIv0jlV0-RFJBPTV8QM2WW3w-bM3xvYAKzcY",
+        "description": "https://jobs.eu.lever.co/diabolocom/5c9fcb4f-d123-41f5-860d-d4cc622403f7"
+    },
+         {
+        "company": "Diabolocom",
+        "position": "Java Developer",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQGGg6n49T7GRA/company-logo_200_200/0/1676623165479?e=1691625600&v=beta&t=DgS4kenFIv0jlV0-RFJBPTV8QM2WW3w-bM3xvYAKzcY",
+        "description": "https://jobs.eu.lever.co/diabolocom/8be11b9a-b208-4c85-8880-47cea70f3328"
+    },
+         {
+        "company": "justtrack",
+        "position": "Senior Product Marketing Manager (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQE2fk2A8vRATg/company-logo_200_200/0/1644184678222?e=1687996800&v=beta&t=OOWPe8mdRToFhjif4QQwhvCJNU2LQe4P-shNoi4VZ0Q",
+        "description": "https://justtrack.io/career/?j_id=e18c4bc5-96e1-4f3d-bbb1-2dca2422fe79"
+    },
+         {
+        "company": "Cinemo",
+        "position": "Senior C++ Software Engineer - Car Connectivity (f/m/d)",
+        "location": "Karlsruhe, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFmZWDNJxMJpg/company-logo_200_200/0/1677841551161?e=1691020800&v=beta&t=a_AMtLhwZiFiqFWzgZQfGqB-SL8C_ygoJsrjT3sKfq0",
+        "description": "https://join.com/companies/cinemo/7960530-senior-c-software-engineer-car-connectivity-f-m-d"
+    },
+         {
+        "company": "K-tronik GmbH",
+        "position": "Software Developer - Aerospace (m/f/x)",
+        "location": "Munich, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQF4R67vpmwP0Q/company-logo_200_200/0/1585740177486?e=1691020800&v=beta&t=s7r1pSPB93lM_QNYBX4GYRY8Bsi2shkMHL22Lq5YHZQ",
+        "description": "https://join.com/companies/k-tronik/7962026-software-developer-aerospace-m-f-x"
+    },
+         {
+        "company": "Tabit GmbH",
+        "position": "Senior Java Developer",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHXyDH5z42Ekw/company-logo_200_200/0/1551112493168?e=1691625600&v=beta&t=z8Ibtw-AmEVr7mkkLcupRfE-VSRbfdEK7gCXwl0MrHk",
+        "description": "https://join.com/companies/tabit-gmbh/7965075-senior-java-developer"
+    },
          {
         "company": "Adyen",
         "position": "Marketing Data Analyst",
