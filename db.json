@@ -1,5 +1,115 @@
 [
      {
+        "company": "AKUR8",
+        "position": "Machine Learning Engineer",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHzTKXYtsnsBg/company-logo_200_200/0/1625555187476?e=1691625600&v=beta&t=PrfdsNNt-7-PsL5Obc2Zg60hkt9_oQcOoKyOmMKC3gY",
+        "description": "https://apply.workable.com/akur8/j/5CDB870362/"
+    },
+     {
+        "company": "AKUR8",
+        "position": "Senior Front-end Engineer",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHzTKXYtsnsBg/company-logo_200_200/0/1625555187476?e=1691625600&v=beta&t=PrfdsNNt-7-PsL5Obc2Zg60hkt9_oQcOoKyOmMKC3gY",
+        "description": "https://apply.workable.com/akur8/j/6DEFE4CE62/"
+    },
+     {
+        "company": "Delivion GmbH",
+        "position": "Cloud Platform Engineer",
+        "location": "Mülheim, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFl56kGDtwBLQ/company-logo_200_200/0/1593078386081?e=1691625600&v=beta&t=3qBfG8PLKewxkxA2Syc7ymAcJRiDwZXFvK-_jNYLFO4",
+        "description": "https://join.com/companies/delivion/7975300-cloud-platform-engineer"
+    },
+     {
+        "company": "Delivion GmbH",
+        "position": "Cloud Native Software Developer",
+        "location": "Mülheim, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFl56kGDtwBLQ/company-logo_200_200/0/1593078386081?e=1691625600&v=beta&t=3qBfG8PLKewxkxA2Syc7ymAcJRiDwZXFvK-_jNYLFO4",
+        "description": "https://join.com/companies/delivion/7893970-cloud-native-software-developer"
+    },
+     {
+        "company": "byrd",
+        "position": "Junior Account Manager (f/m/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQEa4J7ciS4RTw/company-logo_200_200/0/1656933172203?e=1688601600&v=beta&t=-owciJJv46EsGJfyTsjnIJrFK6-IZi4p9dss3dH5CyQ",
+        "description": "https://getbyrd.com/en/jobs/?gh_jid=4162165101"
+    },
+     {
+        "company": "Container xChange",
+        "position": "CRM Marketing Manager (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/C510BAQFQ7AeIjPgU4A/company-logo_200_200/0/1519878725709?e=1691625600&v=beta&t=I44CGXzsWx5o4mnAMH059ux7YLoj8SVL-XX0HPtJI3s",
+        "description": "https://join.com/companies/container-xchange/7886717-crm-marketing-manager-f-m-d"
+    },
+     {
+        "company": "Container xChange",
+        "position": "Data Analyst (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/C510BAQFQ7AeIjPgU4A/company-logo_200_200/0/1519878725709?e=1691625600&v=beta&t=I44CGXzsWx5o4mnAMH059ux7YLoj8SVL-XX0HPtJI3s",
+        "description": "https://join.com/companies/container-xchange/7973565-data-analyst-f-m-d"
+    },
+     {
+        "company": "Container xChange",
+        "position": "Analytics Engineer (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/C510BAQFQ7AeIjPgU4A/company-logo_200_200/0/1519878725709?e=1691625600&v=beta&t=I44CGXzsWx5o4mnAMH059ux7YLoj8SVL-XX0HPtJI3s",
+        "description": "https://join.com/companies/container-xchange/7973566-analytics-engineer-f-m-d"
+    },
+     {
+        "company": "Optiver",
+        "position": "Senior Software Engineer",
+        "location": "SYDNEY, Australia 🇦🇺",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQE5InV7BZ_Wjg/company-logo_200_200/0/1659345131555?e=1691625600&v=beta&t=i1fhzUyyJAVNl9bybFjilXHw6h9rPNMV-mh9KCQUFfI",
+        "description": "https://optiver.com/working-at-optiver/career-opportunities/6553549002/"
+    },
+     {
+        "company": "Optiver",
+        "position": "Project Manager – Platform Technology",
+        "location": "SYDNEY, Australia 🇦🇺",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQE5InV7BZ_Wjg/company-logo_200_200/0/1659345131555?e=1691625600&v=beta&t=i1fhzUyyJAVNl9bybFjilXHw6h9rPNMV-mh9KCQUFfI",
+        "description": "https://optiver.com/working-at-optiver/career-opportunities/6042433002/"
+    },
+     {
         "company": "Diabolocom",
         "position": "Frontend Software Engineer",
         "location": "Paris, France 🇫🇷",
