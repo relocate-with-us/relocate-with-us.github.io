@@ -1,4 +1,70 @@
 [
+         {
+        "company": "Picnic",
+        "position": "Quality Assurance (QA) Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 10, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHS7qmjAasAyw/company-logo_200_200/0/1636644894385?e=1689206400&v=beta&t=8YoPVS7vyztYSPVjOYouqUv4H_VtnjhPiPZ7z1UJGkM",
+        "description": "https://picnic.app/careers/jobs/2485921/technology--amp--engineering/amsterdam-north-holland-netherlands/quality-assurance--qa--engineer"
+    },
+     {
+        "company": "Picnic",
+        "position": "Technical Product Owner - Network",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 10, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHS7qmjAasAyw/company-logo_200_200/0/1636644894385?e=1689206400&v=beta&t=8YoPVS7vyztYSPVjOYouqUv4H_VtnjhPiPZ7z1UJGkM",
+        "description": "https://picnic.app/careers/jobs/4378022/technology--amp--engineering/amsterdam-north-holland-netherlands/technical-product-owner---network"
+    },
+     {
+        "company": "Alteos",
+        "position": "Senior Frontend Engineer, Food Alliance (f/m/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 10, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGPF61q2af2nw/company-logo_200_200/0/1656691720475?e=1691625600&v=beta&t=tGr7fdtGWJM62Ecl1Chm0F35bsKQ3z4opMpwrsoqpx0",
+        "description": "https://careers.hellofresh.com/global/en/job/4903585?gh_jid=4903585"
+    },
+     {
+        "company": "Alteos",
+        "position": "Insurance Product Manager (m/w/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 10, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFLiCuAJY5-ew/company-logo_200_200/0/1655224126951?e=1688601600&v=beta&t=9e8xR9E7RKOKRmAsXMsAteYKo3CMTsnFnl3Ooc8CCN4",
+        "description": "https://join.com/companies/alteos/7986870-insurance-product-manager-m-w-d"
+    },
+     {
+        "company": "BMW Group",
+        "position": "C++ Software Engineer for OTA Updates (f/m/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 10, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQGwFRgrIle1aw/company-logo_200_200/0/1672980392988?e=1691625600&v=beta&t=Fyf8gth7GJ4XPUUGtnkD1Tr-qWmR3xw6IcZb3Txlii4",
+        "description": "https://jobs.bmwgroup.com/job/Ulm-C%2B%2B-Software-Engineer-for-OTA-Updates-%28fmx%29-BW-89081/933667301/"
+    },
+     {
+        "company": "soundcloud",
+        "position": "Security Engineer",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 10, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQGmgMVxobAgAA/company-logo_200_200/0/1616509058898?e=1691625600&v=beta&t=dTBfCoblKH3cZyFIm31oWwL0slpUfp3BIWqsKhpzgEc",
+        "description": "https://careers.soundcloud.com/job?gh_jid=4959828002"
+    },
      {
         "company": "AKUR8",
         "position": "Machine Learning Engineer",
