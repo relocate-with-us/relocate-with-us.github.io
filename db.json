@@ -1,4 +1,136 @@
 [
+    {
+        "company": "University of Bath",
+        "position": "Systems Developer",
+        "location": "Bath, UK 🇬🇧",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHQLVwhPQAQ1g/company-logo_200_200/0/1677695706581?e=1687996800&v=beta&t=mfvxwQl3M1I_XjJItaRLZiI78Yhp1YbNZrKmBl4k2ms",
+        "description": "https://www.bath.ac.uk/jobs/Vacancy.aspx?ref=FM10542"
+    },
+         {
+        "company": "Catawiki",
+        "position": "Android Developer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHh28w3kjswwQ/company-logo_200_200/0/1603460321166?e=1691625600&v=beta&t=ryAVJE4DHzhKrNKPmanivAIKMNS8qCkxGm3bpVSQyHs",
+        "description": "https://catawiki.careers/vacancies/android-developer-netherlands-amsterdam-2529342-5005058"
+    },
+         {
+        "company": "Catawiki",
+        "position": "Senior Software Engineer - Back-End",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHh28w3kjswwQ/company-logo_200_200/0/1603460321166?e=1691625600&v=beta&t=ryAVJE4DHzhKrNKPmanivAIKMNS8qCkxGm3bpVSQyHs",
+        "description": "https://catawiki.careers/vacancies/senior-software-engineer-back-end-netherlands-1232541-4751394"
+    },
+         {
+        "company": "Babbel",
+        "position": "Team Lead - Growth Data (all genders)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQH2zyYj23jX_g/company-logo_200_200/0/1657545331143?e=1691625600&v=beta&t=GVCSi4TCBtL8eAJHIYx4jXTU__cfY0-59Ah3OMS_q1E",
+        "description": "https://join.com/companies/babbel/7996348-team-lead-growth-data-all-genders"
+    },
+         {
+        "company": "Payrails",
+        "position": "Senior Systems Engineer (all genders)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQFHWP40ck-1lA/company-logo_200_200/0/1666191891137?e=1691625600&v=beta&t=rzmWm6_dZBUUMyM4pZVcX9OAFSc9ODGOCZ0xqDcknDA",
+        "description": "https://payrails-a878df-6480e55b81e9de7932c1b74.webflow.io/career/jobs?id=961617"
+    },
+         {
+        "company": "Payrails",
+        "position": "Senior Product Manager (all genders)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQFHWP40ck-1lA/company-logo_200_200/0/1666191891137?e=1691625600&v=beta&t=rzmWm6_dZBUUMyM4pZVcX9OAFSc9ODGOCZ0xqDcknDA",
+        "description": "https://payrails-a878df-6480e55b81e9de7932c1b74.webflow.io/career/jobs?id=961706"
+    },
+         {
+        "company": "Payrails",
+        "position": "Senior Frontend Engineer (all genders)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQFHWP40ck-1lA/company-logo_200_200/0/1666191891137?e=1691625600&v=beta&t=rzmWm6_dZBUUMyM4pZVcX9OAFSc9ODGOCZ0xqDcknDA",
+        "description": "https://payrails-a878df-6480e55b81e9de7932c1b74.webflow.io/career/jobs?id=961649"
+    },
+         {
+        "company": "Talon.One GmbH",
+        "position": "QA Engineer (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4D0BAQEDXvvoklwI8g/company-logo_200_200/0/1682582489536?e=1691625600&v=beta&t=sX83f64HZFWWKFwTTMoMVzaEfZ-3Xadjx_YgzQDJOr8",
+        "description": "https://join.com/companies/talonone-jobs/7992230-qa-engineer-m-f-d"
+    },
+         {
+        "company": "HelloFresh",
+        "position": "Atlassian Cloud Admin (m/f/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGPF61q2af2nw/company-logo_200_200/0/1656691720475?e=1691625600&v=beta&t=tGr7fdtGWJM62Ecl1Chm0F35bsKQ3z4opMpwrsoqpx0",
+        "description": "https://careers.hellofresh.com/global/en/job/4986473?gh_jid=4986473"
+    },
+         {
+        "company": "HelloFresh",
+        "position": "Senior Staff Engineer, Growth Alliance (m/f/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGPF61q2af2nw/company-logo_200_200/0/1656691720475?e=1691625600&v=beta&t=tGr7fdtGWJM62Ecl1Chm0F35bsKQ3z4opMpwrsoqpx0",
+        "description": "https://careers.hellofresh.com/global/en/job/4975721?gh_jid=4975721"
+    },
+         {
+        "company": "K-tronik GmbH",
+        "position": "Test Engineer (m/f/x) Embedded Software",
+        "location": "Forchheim, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQF4R67vpmwP0Q/company-logo_200_200/0/1585740177486?e=1691020800&v=beta&t=s7r1pSPB93lM_QNYBX4GYRY8Bsi2shkMHL22Lq5YHZQ",
+        "description": "https://join.com/companies/k-tronik/7995182-test-engineer-m-f-x-embedded-software"
+    },
+         {
+        "company": "K-tronik GmbH",
+        "position": "Embedded Software Developer (m/f/x)",
+        "location": "Forchheim, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQF4R67vpmwP0Q/company-logo_200_200/0/1585740177486?e=1691020800&v=beta&t=s7r1pSPB93lM_QNYBX4GYRY8Bsi2shkMHL22Lq5YHZQ",
+        "description": "https://join.com/companies/k-tronik/7995183-embedded-software-developer-m-f-x"
+    },
          {
         "company": "Picnic",
         "position": "Quality Assurance (QA) Engineer",
@@ -20,17 +152,6 @@
         "post_date": "May 10, 2023",
         "logo": "https://media.licdn.com/dms/image/C4D0BAQHS7qmjAasAyw/company-logo_200_200/0/1636644894385?e=1689206400&v=beta&t=8YoPVS7vyztYSPVjOYouqUv4H_VtnjhPiPZ7z1UJGkM",
         "description": "https://picnic.app/careers/jobs/4378022/technology--amp--engineering/amsterdam-north-holland-netherlands/technical-product-owner---network"
-    },
-     {
-        "company": "Alteos",
-        "position": "Senior Frontend Engineer, Food Alliance (f/m/x)",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "May 10, 2023",
-        "logo": "https://media.licdn.com/dms/image/C560BAQGPF61q2af2nw/company-logo_200_200/0/1656691720475?e=1691625600&v=beta&t=tGr7fdtGWJM62Ecl1Chm0F35bsKQ3z4opMpwrsoqpx0",
-        "description": "https://careers.hellofresh.com/global/en/job/4903585?gh_jid=4903585"
     },
      {
         "company": "Alteos",
