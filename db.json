@@ -1,4 +1,103 @@
 [
+         {
+        "company": "HelloFresh",
+        "position": "BI Analyst - Operations Strategy & Analytics (f/m/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 15, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGPF61q2af2nw/company-logo_200_200/0/1656691720475?e=1691625600&v=beta&t=tGr7fdtGWJM62Ecl1Chm0F35bsKQ3z4opMpwrsoqpx0",
+        "description": "https://careers.hellofresh.com/global/en/job/5033682?gh_jid=5033682"
+    },
+    {
+        "company": "Micropsi Industries",
+        "position": "Senior Python Developer (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 15, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHWI9cvSIEInw/company-logo_200_200/0/1590235578170?e=1692230400&v=beta&t=RSdbv7e5g-YhdLpGRQC5R4aEZY1pwoy_b2U9rdu3GvA",
+        "description": "https://micropsi-industries.jobs.personio.de/job/1099645?display=en"
+    },
+    {
+        "company": "Micropsi Industries",
+        "position": "Performance Marketing Manager (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 15, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHWI9cvSIEInw/company-logo_200_200/0/1590235578170?e=1692230400&v=beta&t=RSdbv7e5g-YhdLpGRQC5R4aEZY1pwoy_b2U9rdu3GvA",
+        "description": "https://micropsi-industries.jobs.personio.de/job/1062370?display=en"
+    },
+    {
+        "company": "Energetech",
+        "position": "Junior Software Engineer",
+        "location": " Dubai, United Arab Emirates 🇦🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 15, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHjKvrcn9ia0g/company-logo_200_200/0/1614670059034?e=1692230400&v=beta&t=bsulv110zjyMgrvZCawrWQUxE2seD8vMhGpdhO77Emo",
+        "description": "https://careers.energetech.ae/jobs/2609984-junior-software-engineer"
+    }, 
+    {
+        "company": "Improvin'",
+        "position": "UI Designer",
+        "location": "Stockholm, Sweden 🇸🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 15, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQE3pPUUSMrxFg/company-logo_200_200/0/1672740111000?e=1692230400&v=beta&t=FvhGjS1kZOQaTkyxU_mWoHFUHSaXkCOwGVE-JkmGIbM",
+        "description": "https://careers.improvin.com/jobs/2809150-ui-designer"
+    },
+    {
+        "company": "Improvin'",
+        "position": "Business Developer",
+        "location": "Stockholm, Sweden 🇸🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 15, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQE3pPUUSMrxFg/company-logo_200_200/0/1672740111000?e=1692230400&v=beta&t=FvhGjS1kZOQaTkyxU_mWoHFUHSaXkCOwGVE-JkmGIbM",
+        "description": "https://careers.improvin.com/jobs/2808213-business-developer"
+    },
+    {
+        "company": "Improvin'",
+        "position": "Full-stack Engineer",
+        "location": "Stockholm, Sweden 🇸🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 15, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQE3pPUUSMrxFg/company-logo_200_200/0/1672740111000?e=1692230400&v=beta&t=FvhGjS1kZOQaTkyxU_mWoHFUHSaXkCOwGVE-JkmGIbM",
+        "description": "https://careers.improvin.com/jobs/2809093-full-stack-engineer"
+    },
+    {
+        "company": "Improvin'",
+        "position": "Data Platform Engineer",
+        "location": "Stockholm, Sweden 🇸🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 15, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQE3pPUUSMrxFg/company-logo_200_200/0/1672740111000?e=1692230400&v=beta&t=FvhGjS1kZOQaTkyxU_mWoHFUHSaXkCOwGVE-JkmGIbM",
+        "description": "https://careers.improvin.com/jobs/2809124-data-platform-engineer"
+    },
+    {
+        "company": "Gymondo",
+        "position": "Senior Backend Engineer - Golang (d/f/m)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 15, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQGrby25jY1XDQ/company-logo_200_200/0/1660567100385?e=1692230400&v=beta&t=zj5Y702FNk_4Jqhz7nFsZAQ0s-d5WPkmmQMqgeqg1vo",
+        "description": "https://gymondo-gmbh.jobs.personio.com/job/620016?display=en"
+    },
     {
         "company": "University of Bath",
         "position": "Systems Developer",
