@@ -1,4 +1,37 @@
 [
+     {
+        "company": "soundcloud",
+        "position": "Senior Data Scientist- Search and Recommendation",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 16, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQGmgMVxobAgAA/company-logo_200_200/0/1616509058898?e=1691625600&v=beta&t=dTBfCoblKH3cZyFIm31oWwL0slpUfp3BIWqsKhpzgEc",
+        "description": "https://careers.soundcloud.com/job?gh_jid=6759972002"
+    },
+         {
+        "company": "adjoe",
+        "position": "Senior Frontend Developer (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 16, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1687392000&v=beta&t=_8U5s5W3-MKqF8bjS-BTXycKfQRWicaAof9Z3cAuamE",
+        "description": "https://join.com/companies/adjoe/8047307-senior-frontend-developer-f-m-d"
+    },
+         {
+        "company": "Sunday GmbH",
+        "position": "Game Designer (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 16, 2023",
+        "logo": "//cdn.join.com/5f759e23632ed40001dffb67/sunday-gmb-h-logo-s.png",
+        "description": "https://join.com/companies/sunday/8046889-game-designer-f-m-d"
+    },
          {
         "company": "HelloFresh",
         "position": "BI Analyst - Operations Strategy & Analytics (f/m/x)",
