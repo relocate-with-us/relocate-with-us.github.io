@@ -1,4 +1,81 @@
 [
+    {
+        "company": "Phoenix Labs",
+        "position": "UI ARTIST",
+        "location": "VANCOUVER, Canada 🇨🇦",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 17, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHVVCFLPliOQw/company-logo_200_200/0/1652891399775?e=1692230400&v=beta&t=Hk-maG2ZtdbNWggLZMjNBa6615KeoRo6oCFHgJ87CSI",
+        "description": "https://phxlabs.ca/careers/5610579003/?gh_jid=5610579003"
+    },
+         {
+        "company": "Phoenix Labs",
+        "position": "DATA ANALYST",
+        "location": "VANCOUVER, Canada 🇨🇦",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 17, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHVVCFLPliOQw/company-logo_200_200/0/1652891399775?e=1692230400&v=beta&t=Hk-maG2ZtdbNWggLZMjNBa6615KeoRo6oCFHgJ87CSI",
+        "description": "https://phxlabs.ca/careers/5614022003/?gh_jid=5614022003"
+    },
+         {
+        "company": "Phoenix Labs",
+        "position": "SENIOR SERVICES ENGINEER",
+        "location": "VANCOUVER, Canada 🇨🇦",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 17, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHVVCFLPliOQw/company-logo_200_200/0/1652891399775?e=1692230400&v=beta&t=Hk-maG2ZtdbNWggLZMjNBa6615KeoRo6oCFHgJ87CSI",
+        "description": "https://phxlabs.ca/careers/5617003003/?gh_jid=5617003003"
+    },
+         {
+        "company": "K-tronik GmbH",
+        "position": "IoT DevOps Engineer (m/f/x) Innovative Fast Charging System",
+        "location": "Forchheim, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 17, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQF4R67vpmwP0Q/company-logo_200_200/0/1585740177486?e=1691020800&v=beta&t=s7r1pSPB93lM_QNYBX4GYRY8Bsi2shkMHL22Lq5YHZQ",
+        "description": "https://join.com/companies/k-tronik/8059390-iot-devops-engineer-m-f-x-innovative-fast-charging-system"
+    },
+         {
+        "company": "Kolibri Games",
+        "position": "LiveOPS Frontend Developer (f/m/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 17, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFOEkW0KYobgg/company-logo_200_200/0/1625510136003?e=1691020800&v=beta&t=U9iQRelpotvdJnbeo0mFKm64l0uEp0LNZvxTrs2Fd88",
+        "description": "https://www.kolibrigames.com/career/position/dcc17abd-9d1d-4482-ba2e-067cdfd00c3c/"
+    },
+         {
+        "company": "Kolibri Games",
+        "position": "Product Manager (f/m/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 17, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFOEkW0KYobgg/company-logo_200_200/0/1625510136003?e=1691020800&v=beta&t=U9iQRelpotvdJnbeo0mFKm64l0uEp0LNZvxTrs2Fd88",
+        "description": "https://www.kolibrigames.com/career/position/edda4c55-ed06-400d-bbbe-a375ded752d7/"
+    },
+         {
+        "company": "Synergeticon GmbH",
+        "position": "Industrial Game Developer (m/f/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 17, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGbY14mlZu5zA/company-logo_200_200/0/1519872565970?e=1692230400&v=beta&t=0eaTykqspStjK1ZsUMZQIjSgc8NGBH4F7VJ6WAEUITI",
+        "description": "https://join.com/companies/synergeticon/8059176-industrial-game-developer-m-f-d"
+    },
          {
         "company": "Adyen",
         "position": "Group Product Manager, Data Platform",
