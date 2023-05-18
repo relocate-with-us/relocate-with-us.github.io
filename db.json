@@ -1,8 +1,19 @@
 [
     {
+        "company": "Project A Ventures",
+        "position": "HR Manager (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 18, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQF8_kJGTMAYfQ/company-logo_200_200/0/1656916947379?e=1692230400&v=beta&t=_IOyVe04MYxLEO1xzMWuOx0lWuUOh3vJ5r-QM0BhhM8",
+        "description": "https://www.project-a.com/careers/hr-manager-mfd-6644829002/"
+    },
+    {
         "company": "Back Market",
         "position": "Backend Engineer - Browsing",
-        "location": "Berlin, Germany 🇩🇪",
+        "location": "Barcelona, Spain 🇪🇸",
         "contract": "Full Time",
         "reloc": "Relocation Assistance",
         "visa": "Visa Sponsorship",
@@ -13,7 +24,7 @@
           {
         "company": "Back Market",
         "position": "Data Engineering Manager - Customer squad",
-        "location": "Berlin, Germany 🇩🇪",
+        "location": "Paris, France 🇫🇷",
         "contract": "Full Time",
         "reloc": "Relocation Assistance",
         "visa": "Visa Sponsorship",
