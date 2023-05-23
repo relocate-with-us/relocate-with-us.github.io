@@ -1,5 +1,115 @@
 [
     {
+        "company": "METRO Markets GmbH",
+        "position": "Senior JavaScript-Developer - React (m/f/d)",
+        "location": "Palma de Mallorca , Spain 🇪🇸",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 23, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEx2tLVobeQPg/company-logo_200_200/0/1613055769698?e=1692835200&v=beta&t=3EYLKm1r4gDmlm-IOndFp8UpMuwQtK4kPuWrdKpmgEg",
+        "description": "https://metro-markets-gmbh.jobs.personio.de/job/317489?display=en"
+    }, 
+    {
+        "company": "METRO Markets GmbH",
+        "position": "Full-stack Developer (m/f/d)",
+        "location": "Düsseldorf, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 23, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEx2tLVobeQPg/company-logo_200_200/0/1613055769698?e=1692835200&v=beta&t=3EYLKm1r4gDmlm-IOndFp8UpMuwQtK4kPuWrdKpmgEg",
+        "description": "https://metro-markets-gmbh.jobs.personio.de/job/1127022#apply"
+    }, 
+    {
+        "company": "Twaice",
+        "position": "Cloud Engineer for Customer Success (m/w/d)",
+        "location": "München, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 23, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQF3Q65vLWweQQ/company-logo_200_200/0/1665561671567?e=1689206400&v=beta&t=jRdMjlJjzkKo_KIItQqg3T_Uf3HcLJ5onWchdAYsb9U",
+        "description": "https://twaice.jobs.personio.com/job/663891?display=en"
+    }, 
+    {
+        "company": "Catawiki",
+        "position": "Group Product Manager - Supply",
+        "location": "Randstad, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 23, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHh28w3kjswwQ/company-logo_200_200/0/1603460321166?e=1691625600&v=beta&t=ryAVJE4DHzhKrNKPmanivAIKMNS8qCkxGm3bpVSQyHs",
+        "description": "https://boards.greenhouse.io/catawiki/jobs/4917951"
+    },
+    {
+        "company": "Fashion Cloud",
+        "position": "Full Stack Engineer (gn)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 23, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFQtYSJlZ2q0A/company-logo_200_200/0/1656943926149?e=1692835200&v=beta&t=y9VFcwjncHyWEHniA7PePNHabPI3hBsPrLnkY1stNic",
+        "description": "https://fashion.cloud/en/jobs-en/#job-775125"
+    }, 
+       {
+        "company": "Fashion Cloud",
+        "position": "Product Designer UX/UI (gn)",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 23, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFQtYSJlZ2q0A/company-logo_200_200/0/1656943926149?e=1692835200&v=beta&t=y9VFcwjncHyWEHniA7PePNHabPI3hBsPrLnkY1stNic",
+        "description": "https://fashion.cloud/en/jobs-en/#job-1237802"
+    },
+        {
+        "company": "Fashion Cloud",
+        "position": "Cloud Security Engineer (gn)",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 23, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFQtYSJlZ2q0A/company-logo_200_200/0/1656943926149?e=1692835200&v=beta&t=y9VFcwjncHyWEHniA7PePNHabPI3hBsPrLnkY1stNic",
+        "description": "https://fashion.cloud/en/jobs-en/#job-1220081"
+    },
+    {
+        "company": "Fashion Cloud",
+        "position": "Senior Python Developer (gn)",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 23, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFQtYSJlZ2q0A/company-logo_200_200/0/1656943926149?e=1692835200&v=beta&t=y9VFcwjncHyWEHniA7PePNHabPI3hBsPrLnkY1stNic",
+        "description": "https://fashion.cloud/en/jobs-en/#job-506438"
+    },
+    {
+        "company": "Booking.com",
+        "position": "Senior Software Engineer - Data & Machine Learning Platform",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 23, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEgzF5azm3fNA/company-logo_200_200/0/1628510256914?e=1687392000&v=beta&t=BAASpYFwuJpzsCSnzCKZQb5thxXuQkpOdMxafP41h-Q",
+        "description": "https://jobs.booking.com/careers/job/562949957070430"
+    },
+    {
+        "company": "Optiver",
+        "position": "Support Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 23, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQE5InV7BZ_Wjg/company-logo_200_200/0/1659345131555?e=1691625600&v=beta&t=i1fhzUyyJAVNl9bybFjilXHw6h9rPNMV-mh9KCQUFfI",
+        "description": "https://optiver.com/working-at-optiver/career-opportunities/5845783002/"
+    },
+    {
         "company": "Guerrilla",
         "position": "Infrastructure Engineer",
         "location": "Amsterdam, Netherlands 🇳🇱",
@@ -2881,17 +2991,6 @@
         "post_date": "April 10, 2023",
         "logo": "https://media.licdn.com/dms/image/D4E0BAQF3Q65vLWweQQ/company-logo_200_200/0/1665561671567?e=1689206400&v=beta&t=jRdMjlJjzkKo_KIItQqg3T_Uf3HcLJ5onWchdAYsb9U",
         "description": "https://twaice.jobs.personio.com/job/1049730?display=en"
-    }, 
-    {
-        "company": "Twaice",
-        "position": "Cloud Engineer for Customer Success (m/w/d)",
-        "location": "München, Germany 🇩🇪",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "April 10, 2023",
-        "logo": "https://media.licdn.com/dms/image/D4E0BAQF3Q65vLWweQQ/company-logo_200_200/0/1665561671567?e=1689206400&v=beta&t=jRdMjlJjzkKo_KIItQqg3T_Uf3HcLJ5onWchdAYsb9U",
-        "description": "https://twaice.jobs.personio.com/job/663891?display=en"
     }, 
     {
         "company": "Twaice",
