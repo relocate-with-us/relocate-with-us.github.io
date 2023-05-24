@@ -430,17 +430,6 @@
     },
           {
         "company": "BlaBlaCar",
-        "position": "Product Manager - Identity & Access Management",
-        "location": "Paris, France 🇫🇷",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "May 18, 2023",
-        "logo": "https://www.blablacar.com/static/images/blablacar.svg",
-        "description": "https://jobs.lever.co/blablacar/6b4c0be7-dedb-4dc5-93d7-8c3df2b4275c"
-    }, 
-          {
-        "company": "BlaBlaCar",
         "position": "Python Backend Engineer - BlaBlaCar Daily",
         "location": "Paris, France 🇫🇷",
         "reloc": "Relocation Assistance",
@@ -614,29 +603,6 @@
         "post_date": "May 16, 2023",
         "logo": "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_200_200/0/1664880075658?e=1691625600&v=beta&t=C2dGEabnLe5IcqLigxgCw0e4c1ILGw6yw8VPSQy7Ukk",
         "description": "https://boards.greenhouse.io/adyen/jobs/4407783"
-    },
-
-     {
-        "company": "Adyen",
-        "position": "Solution Engineer",
-        "location": "Amsterdam, Netherlands 🇳🇱",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "May 16, 2023",
-        "logo": "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_200_200/0/1664880075658?e=1691625600&v=beta&t=C2dGEabnLe5IcqLigxgCw0e4c1ILGw6yw8VPSQy7Ukk",
-        "description": "https://boards.greenhouse.io/adyen/jobs/3761817"
-    },
-     {
-        "company": "Adyen",
-        "position": "Implementation Engineer",
-        "location": "Amsterdam, Netherlands 🇳🇱",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "May 16, 2023",
-        "logo": "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_200_200/0/1664880075658?e=1691625600&v=beta&t=C2dGEabnLe5IcqLigxgCw0e4c1ILGw6yw8VPSQy7Ukk",
-        "description": "https://boards.greenhouse.io/adyen/jobs/3761814"
     },
      {
         "company": "Trinamics",
@@ -903,17 +869,6 @@
         "description": "https://join.com/companies/k-tronik/7995182-test-engineer-m-f-x-embedded-software"
     },
          {
-        "company": "K-tronik GmbH",
-        "position": "Embedded Software Developer (m/f/x)",
-        "location": "Forchheim, Germany 🇩🇪",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "May 11, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQF4R67vpmwP0Q/company-logo_200_200/0/1585740177486?e=1691020800&v=beta&t=s7r1pSPB93lM_QNYBX4GYRY8Bsi2shkMHL22Lq5YHZQ",
-        "description": "https://join.com/companies/k-tronik/7995183-embedded-software-developer-m-f-x"
-    },
-         {
         "company": "Picnic",
         "position": "Quality Assurance (QA) Engineer",
         "location": "Amsterdam, Netherlands 🇳🇱",
@@ -1035,28 +990,6 @@
         "description": "https://join.com/companies/container-xchange/7886717-crm-marketing-manager-f-m-d"
     },
      {
-        "company": "Container xChange",
-        "position": "Data Analyst (f/m/d)",
-        "location": "Hamburg, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "May 9, 2023",
-        "logo": "https://media.licdn.com/dms/image/C510BAQFQ7AeIjPgU4A/company-logo_200_200/0/1519878725709?e=1691625600&v=beta&t=I44CGXzsWx5o4mnAMH059ux7YLoj8SVL-XX0HPtJI3s",
-        "description": "https://join.com/companies/container-xchange/7973565-data-analyst-f-m-d"
-    },
-     {
-        "company": "Container xChange",
-        "position": "Analytics Engineer (f/m/d)",
-        "location": "Hamburg, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "May 9, 2023",
-        "logo": "https://media.licdn.com/dms/image/C510BAQFQ7AeIjPgU4A/company-logo_200_200/0/1519878725709?e=1691625600&v=beta&t=I44CGXzsWx5o4mnAMH059ux7YLoj8SVL-XX0HPtJI3s",
-        "description": "https://join.com/companies/container-xchange/7973566-analytics-engineer-f-m-d"
-    },
-     {
         "company": "Optiver",
         "position": "Senior Software Engineer",
         "location": "SYDNEY, Australia 🇦🇺",
@@ -1066,17 +999,6 @@
         "post_date": "May 9, 2023",
         "logo": "https://media.licdn.com/dms/image/C4E0BAQE5InV7BZ_Wjg/company-logo_200_200/0/1659345131555?e=1691625600&v=beta&t=i1fhzUyyJAVNl9bybFjilXHw6h9rPNMV-mh9KCQUFfI",
         "description": "https://optiver.com/working-at-optiver/career-opportunities/6553549002/"
-    },
-     {
-        "company": "Optiver",
-        "position": "Project Manager – Platform Technology",
-        "location": "SYDNEY, Australia 🇦🇺",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "May 9, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQE5InV7BZ_Wjg/company-logo_200_200/0/1659345131555?e=1691625600&v=beta&t=i1fhzUyyJAVNl9bybFjilXHw6h9rPNMV-mh9KCQUFfI",
-        "description": "https://optiver.com/working-at-optiver/career-opportunities/6042433002/"
     },
      {
         "company": "Diabolocom",
@@ -1157,17 +1079,6 @@
     },
          {
         "company": "Adyen",
-        "position": "Marketing Data Analyst",
-        "location": "Amsterdam, Netherlands 🇳🇱",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "May 7, 2023",
-        "logo": "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_200_200/0/1664880075658?e=1691625600&v=beta&t=C2dGEabnLe5IcqLigxgCw0e4c1ILGw6yw8VPSQy7Ukk",
-        "description": "https://boards.greenhouse.io/adyen/jobs/4017277"
-    },
-         {
-        "company": "Adyen",
         "position": "Monitoring Operations Engineer",
         "location": "Amsterdam, Netherlands 🇳🇱",
         "contract": "Full Time",
@@ -1176,17 +1087,6 @@
         "post_date": "May 7, 2023",
         "logo": "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_200_200/0/1664880075658?e=1691625600&v=beta&t=C2dGEabnLe5IcqLigxgCw0e4c1ILGw6yw8VPSQy7Ukk",
         "description": "https://boards.greenhouse.io/adyen/jobs/4905966"
-    },
-         {
-        "company": "Cinemo",
-        "position": "Junior C++ Embedded Software Engineer (f/m/d)",
-        "location": "Karlsruhe, Germany 🇩🇪",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "May 7, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQFmZWDNJxMJpg/company-logo_200_200/0/1677841551161?e=1691020800&v=beta&t=a_AMtLhwZiFiqFWzgZQfGqB-SL8C_ygoJsrjT3sKfq0",
-        "description": "https://join.com/companies/cinemo/7931072-junior-c-embedded-software-engineer-f-m-d"
     },
          {
         "company": "Zalando SE",
@@ -1231,29 +1131,7 @@
         "post_date": "May 7, 2023",
         "logo": "https://media.licdn.com/dms/image/C4D0BAQFOEkW0KYobgg/company-logo_200_200/0/1625510136003?e=1691020800&v=beta&t=U9iQRelpotvdJnbeo0mFKm64l0uEp0LNZvxTrs2Fd88",
         "description": "https://jobs.lever.co/kolibrigames/25a571cf-3220-4ffe-8b66-65ca049d719c/apply"
-    },  
-         {
-        "company": "Kolibri Games",
-        "position": "QA Tester (f/m/d)",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "May 7, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQFOEkW0KYobgg/company-logo_200_200/0/1625510136003?e=1691020800&v=beta&t=U9iQRelpotvdJnbeo0mFKm64l0uEp0LNZvxTrs2Fd88",
-        "description": "https://jobs.lever.co/kolibrigames/5dcb80fc-e26f-4069-b34e-71894f199a62/apply"
-    },  
-         {
-        "company": "brighter AI",
-        "position": "Machine Learning Operations (m/f/d)",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "May 7, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQFOEkW0KYobgg/company-logo_200_200/0/1625510136003?e=1691020800&v=beta&t=U9iQRelpotvdJnbeo0mFKm64l0uEp0LNZvxTrs2Fd88",
-        "description": "https://brighter-ai.jobs.personio.de/job/1107391?display=en&language=en"
-    },  
+    },   
          {
         "company": "Picnic",
         "position": "Warehouse Simulation Software Engineer",
@@ -1310,17 +1188,6 @@
         "description": "https://boards.greenhouse.io/housinganywhere/jobs/5570185003"
     },
     {
-        "company": "HousingAnywhere",
-        "position": "Junior HR Administrator",
-        "location": "Rotterdam, Netherlands 🇳🇱",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "May 4, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQG9yedIEa5gyA/company-logo_200_200/0/1646670271841?e=1691020800&v=beta&t=nNvT63MzuogIM1fhTiYSOsnVIol2LBbRpRLKFtvZ-Go",
-        "description": "https://boards.greenhouse.io/housinganywhere/jobs/5085656003"
-    },
-    {
         "company": "Zalando SE",
         "position": "Junior Software Engineer- Paradox (all genders)",
         "location": "Berlin, Germany 🇩🇪",
@@ -1330,39 +1197,6 @@
         "post_date": "May 4, 2023",
         "logo": "https://media.licdn.com/dms/image/D4E0BAQGxrOwBBerWZg/company-logo_200_200/0/1666604520687?e=1689206400&v=beta&t=atanjx5G_dY6nmyGrKDxzcd583FlO08VQ980d6FpvDY",
         "description": "https://jobs.zalando.com/en/jobs/4977539"
-    },
-    {
-        "company": "brighter AI",
-        "position": "Technical Pre-Sales Manager (m/f/d)",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "May 4, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQFOEkW0KYobgg/company-logo_200_200/0/1625510136003?e=1691020800&v=beta&t=U9iQRelpotvdJnbeo0mFKm64l0uEp0LNZvxTrs2Fd88",
-        "description": "https://brighter-ai.jobs.personio.de/job/1052731?display=en"
-    },   
-         {
-        "company": "brighter AI",
-        "position": "Product Manager (m/f/d) AI",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "May 4, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQFOEkW0KYobgg/company-logo_200_200/0/1625510136003?e=1691020800&v=beta&t=U9iQRelpotvdJnbeo0mFKm64l0uEp0LNZvxTrs2Fd88",
-        "description": "https://brighter-ai.jobs.personio.de/job/788568?display=en"
-    },   
-         {
-        "company": "brighter AI",
-        "position": "Product Owner (m/f/d)",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "May 4, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQFOEkW0KYobgg/company-logo_200_200/0/1625510136003?e=1691020800&v=beta&t=U9iQRelpotvdJnbeo0mFKm64l0uEp0LNZvxTrs2Fd88",
-        "description": "https://brighter-ai.jobs.personio.de/job/1091136?display=en"
     },   
          {
         "company": "Neuffer Fenster + Türen GmbH",
@@ -1385,40 +1219,7 @@
         "post_date": "May 2, 2023",
         "logo": "https://media.licdn.com/dms/image/C4D0BAQG9yedIEa5gyA/company-logo_200_200/0/1646670271841?e=1691020800&v=beta&t=nNvT63MzuogIM1fhTiYSOsnVIol2LBbRpRLKFtvZ-Go",
         "description": "https://boards.greenhouse.io/housinganywhere/jobs/5595037003"
-    },
-    {
-        "company": "SimScale",
-        "position": "Senior Backend Developer (m/f/d)",
-        "location": "München, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "May 1, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQFPPtgmh14kNg/company-logo_200_200/0/1656648590366?e=1689811200&v=beta&t=8u_JaDVIUaHH-JRyTL9XeOrZmvGL3Z5L33mU9AG0XMQ",
-        "description": "https://www.simscale.com/jobs/?gh_jid=6729238002"
-    },   
-     {
-        "company": "CLARK",
-        "position": "Salesforce Developer (m/f/x)",
-        "location": "Berlin, Germany 🇩🇪",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "May 1, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQEaisXlj7wkkQ/company-logo_200_200/0/1657102403103?e=1691020800&v=beta&t=5tX7ptjxU1oTav9tj-T_WpOt0jVNLqGAB1ZMV65_lq0",
-        "description": "https://boards.greenhouse.io/clark71/jobs/4924498002"
-    },
-     {
-        "company": "CLARK",
-        "position": "(Senior) Product Manager (m/f/x)",
-        "location": "Berlin, Germany 🇩🇪",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "May 1, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQEaisXlj7wkkQ/company-logo_200_200/0/1657102403103?e=1691020800&v=beta&t=5tX7ptjxU1oTav9tj-T_WpOt0jVNLqGAB1ZMV65_lq0",
-        "description": "https://boards.greenhouse.io/clark71/jobs/4038161002"
-    },
+    },  
      {    
         "company": "Citymapper",
         "position": "Senior Software Engineer - iOS",
@@ -5106,17 +4907,6 @@
         "description": "https://applike-group.com/jobs/?j_id=610b3c7e-b192-42ee-8d3b-aa7d9903feb1"
     },
           {
-        "company": "Scopely",
-        "position": "Technical Manager - STFC",
-        "location": "Dublin, Ireland 🇮🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 21, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQH5VBWCAtRthA/company-logo_200_200/0/1641337621162?e=1687392000&v=beta&t=WKBcqe8Axs0_i49OQ1kqo1462AHDTRRmuniSEtZb6Z4",
-        "description": "https://www.scopely.com/en/careers?jobviteiframe=job/oX8ImfwT&nl=1"
-    },
-          {
         "company": "Centaur Analytics, Inc.",
         "position": "Embedded Systems Engineer",
         "location": "Volos, Thessalia, Greece 🇬🇷",
@@ -5126,17 +4916,6 @@
         "post_date": "March 21, 2023",
         "logo": "https://media.licdn.com/dms/image/C510BAQHCiyr-rJ-oBg/company-logo_200_200/0/1519907360053?e=1687392000&v=beta&t=ey9nOJKfcwXnHb16Ht6NeJ1oGZnCbWDLWXGA2pe_5kg",
         "description": "https://apply.workable.com/centaur-analytics-inc/j/0DA7124426/"
-    },
-          {
-        "company": "Centaur Analytics, Inc.",
-        "position": "Manufacturing Engineer",
-        "location": "Volos, Thessalia, Greece 🇬🇷",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 21, 2023",
-        "logo": "https://media.licdn.com/dms/image/C510BAQHCiyr-rJ-oBg/company-logo_200_200/0/1519907360053?e=1687392000&v=beta&t=ey9nOJKfcwXnHb16Ht6NeJ1oGZnCbWDLWXGA2pe_5kg",
-        "description": "https://apply.workable.com/centaur-analytics-inc/j/8F8EE2FE46/"
     },
           {
         "company": "Centaur Analytics, Inc.",
@@ -5216,29 +4995,6 @@
         "description": "https://jobs.booking.com/careers/job/562949956761307?domain=booking.com"
     },
           {
-        "company": "SCHNEIDER GROUP",
-        "position": "Azure Developer (w/m/x)",
-        "location": "Munich, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 20, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQFm2_ALJcnvbg/company-logo_200_200/0/1668126222905?e=1687392000&v=beta&t=KkGouAFfpgLOriNjauJiS4YoI5CSOj3AWYt8UgAYK-4",
-        "description": "https://www.linkedin.com/jobs/view/3517197902/?refId=62e89f59-86ce-4cf2-b5ae-4bb92e8918cc&trackingId=iOxuqNbVQVehPFcXTPkVoA%3D%3D"
-    }, 
- 
-          {
-        "company": "MEDWING",
-        "position": "Software Engineer (gn)",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 20, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQEWCwjjIpNBtw/company-logo_200_200/0/1657801850983?e=1687392000&v=beta&t=aqhfwyjwMTjiuTcPGYdJUK5Jqwso8UVzs5E_ECe6t2Y",
-        "description": "https://team.medwing.com/en/jobs/software-engineer-gn/"
-    }, 
-          {
         "company": "MEDWING",
         "position": "(Senior) QA Automation Engineer (gn)",
         "location": "Berlin, Germany 🇩🇪",
@@ -5248,17 +5004,6 @@
         "post_date": "March 20, 2023",
         "logo": "https://media.licdn.com/dms/image/C4E0BAQEWCwjjIpNBtw/company-logo_200_200/0/1657801850983?e=1687392000&v=beta&t=aqhfwyjwMTjiuTcPGYdJUK5Jqwso8UVzs5E_ECe6t2Y",
         "description": "https://team.medwing.com/en/jobs/qa-automation-engineer-gn/"
-    }, 
-          {
-        "company": "MEDWING",
-        "position": "Senior PHP Developer (gn) – Marketplace",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 20, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQEWCwjjIpNBtw/company-logo_200_200/0/1657801850983?e=1687392000&v=beta&t=aqhfwyjwMTjiuTcPGYdJUK5Jqwso8UVzs5E_ECe6t2Y",
-        "description": "https://team.medwing.com/en/jobs/senior-php-developer-gn-marketplace/"
     }, 
           {
         "company": "Wooga",
@@ -5281,17 +5026,6 @@
         "post_date": "March 20, 2023",
         "logo": "https://media.licdn.com/dms/image/C4E0BAQEqCukrX6kZKA/company-logo_200_200/0/1660590864681?e=1687392000&v=beta&t=vbHDyWcrjB10LL3KE2lHamcj-X98uA6xAd2nFKdJyh8",
         "description": "https://boards.greenhouse.io/wooga/jobs/4762536?gh_src=4b9516c81us"
-    }, 
-          {
-        "company": "Bigpoint",
-        "position": "Associate Product Data Analyst (m/f/d) - #5719",
-        "location": "Hamburg, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 20, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQF_mljwUnWkMw/company-logo_200_200/0/1659974613567?e=1687392000&v=beta&t=QL5WCJ27CiodzF0QumyrTa6bkeFwtc05S7gMeADIPYk",
-        "description": "https://bigpoint.jobs.personio.de/job/1051742?display=en"
     }, 
           {
         "company": "E-Mobility Search",
@@ -5337,17 +5071,6 @@
         "logo": "https://theworkshop.com/themes/workshop/images/logo.svg",
         "description": "https://careers.theworkshop.com/jobs/1520324-product-manager-payments"
     }, 
-         {
-        "company": "Back Market",
-        "position": "Frontend Staff Engineer",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 18, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQGrbUAuM_Qldw/company-logo_200_200/0/1559050539185?e=1687392000&v=beta&t=i3X77l8LOIuGINBPj0s1O_LTFAUV1-FzYRgP2R7d7v4",
-        "description": "https://jobs.lever.co/backmarket/79bed33e-7b52-4420-90db-5017e7636705"
-    },
           {
         "company": "Back Market",
         "position": "Senior Product Manager (Customer Care Tribe)",
@@ -5359,28 +5082,6 @@
         "logo": "https://media.licdn.com/dms/image/C4D0BAQGrbUAuM_Qldw/company-logo_200_200/0/1559050539185?e=1687392000&v=beta&t=i3X77l8LOIuGINBPj0s1O_LTFAUV1-FzYRgP2R7d7v4",
         "description": "https://jobs.lever.co/backmarket/80a6cf17-1d55-492b-adc2-b75b2f7cf30d"
     },
-         {
-        "company": "Back Market",
-        "position": "Account Manager",
-        "location": "Bordeaux, France 🇫🇷",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 18, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQGrbUAuM_Qldw/company-logo_200_200/0/1559050539185?e=1687392000&v=beta&t=i3X77l8LOIuGINBPj0s1O_LTFAUV1-FzYRgP2R7d7v4",
-        "description": "https://jobs.lever.co/backmarket/ac2fc586-965c-45de-a59e-f9cc1e6beb0a"
-    },
-         {
-        "company": "Back Market",
-        "position": "Account Manager",
-        "location": "Paris, France 🇫🇷",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 18, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQGrbUAuM_Qldw/company-logo_200_200/0/1559050539185?e=1687392000&v=beta&t=i3X77l8LOIuGINBPj0s1O_LTFAUV1-FzYRgP2R7d7v4",
-        "description": "https://jobs.lever.co/backmarket/528f501c-0fa0-44b4-a2e7-f615ccf2907a"
-    }, 
           {
         "company": "Back Market",
         "position": "Frontend Engineer - Acquisition",
@@ -5391,29 +5092,7 @@
         "post_date": "March 18, 2023",
         "logo": "https://media.licdn.com/dms/image/C4D0BAQGrbUAuM_Qldw/company-logo_200_200/0/1559050539185?e=1687392000&v=beta&t=i3X77l8LOIuGINBPj0s1O_LTFAUV1-FzYRgP2R7d7v4",
         "description": "https://jobs.lever.co/backmarket/6cc5e8bf-65d9-493d-9025-7616c07f6535"
-    }, 
-         {
-        "company": "Back Market",
-        "position": "Backend Engineer - Self Care & Automation",
-        "location": "Barcelona, Spain 🇪🇸",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 18, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQGrbUAuM_Qldw/company-logo_200_200/0/1559050539185?e=1687392000&v=beta&t=i3X77l8LOIuGINBPj0s1O_LTFAUV1-FzYRgP2R7d7v4",
-        "description": "https://jobs.lever.co/backmarket/ad0b50fd-2799-4351-baee-03a0c03309a3"
-    },         
-         {
-        "company": "Back Market",
-        "position": "Backend Engineer - Browsing",
-        "location": "Barcelona, Spain 🇪🇸",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 18, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQGrbUAuM_Qldw/company-logo_200_200/0/1559050539185?e=1687392000&v=beta&t=i3X77l8LOIuGINBPj0s1O_LTFAUV1-FzYRgP2R7d7v4",
-        "description": "https://jobs.lever.co/backmarket/6ce9b86b-802a-4d63-8dc0-4ec332806fbf"
-    },
+    },        
          {
         "company": "GMV",
         "position": "Project Manager for Security Infrastructures",
@@ -5457,18 +5136,7 @@
         "post_date": "March 18, 2023",
         "logo": "https://media.licdn.com/dms/image/C4D0BAQEWIbfGlhVfmg/company-logo_200_200/0/1610354778826?e=1687392000&v=beta&t=0TiEinwbGFhPg2k9yxINtnUSBQjVfvlH6jk4RXXeprM",
         "description": "https://gmv.csod.com/ux/ats/careersite/4/home/requisition/1793?c=gmv&lang=en-US"
-    },  
-          {
-        "company": "Property Finder",
-        "position": "Head of Customer Advocacy",
-        "location": " Dubai, United Arab Emirates 🇦🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 18, 2023",
-        "logo": "https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/569/000/resized/PF_Logo.png?1618404137",
-        "description": "https://boards.greenhouse.io/propertyfinder/jobs/5471733003"
-    },          
+    },        
          {
         "company": " Oak Ridge National Laboratory ",
         "position": "Full Stack Software Developer II",
@@ -5482,28 +5150,6 @@
     },         
          {
         "company": "Tactile Games",
-        "position": "Art Director",
-        "location": "Copenhagen, Denmark 🇩🇰",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 17, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQG-P3_JnWdobw/company-logo_200_200/0/1661944019486?e=1687392000&v=beta&t=TWD7JrDbNQ2ZhaKXRI9bzUB6qwCI3S1_83vo8U9G_O8",
-        "description": "https://jobs.lever.co/tactilegames/2f161994-9401-4f00-84b2-76557170eba6"
-    },
-         {
-        "company": "Tactile Games",
-        "position": "QA Games Tester",
-        "location": "Copenhagen, Denmark 🇩🇰",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 17, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQG-P3_JnWdobw/company-logo_200_200/0/1661944019486?e=1687392000&v=beta&t=TWD7JrDbNQ2ZhaKXRI9bzUB6qwCI3S1_83vo8U9G_O8",
-        "description": "https://jobs.lever.co/tactilegames/9090b369-88a0-4d14-9125-e7cad79335af"
-    },
-         {
-        "company": "Tactile Games",
         "position": "Senior Unity Game Programmer",
         "location": "Tenerife, Spain 🇪🇸",
         "reloc": "Relocation Assistance",
@@ -5512,17 +5158,6 @@
         "post_date": "March 17, 2023",
         "logo": "https://media.licdn.com/dms/image/C4E0BAQG-P3_JnWdobw/company-logo_200_200/0/1661944019486?e=1687392000&v=beta&t=TWD7JrDbNQ2ZhaKXRI9bzUB6qwCI3S1_83vo8U9G_O8",
         "description": "https://jobs.lever.co/tactilegames/b4d94092-5f6e-48d3-a5ca-f93b7c729018"
-    }, 
-         {
-        "company": "Tactile Games",
-        "position": "Chief Marketing Officer (CMO)",
-        "location": "Copenhagen, Denmark 🇩🇰",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 17, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQG-P3_JnWdobw/company-logo_200_200/0/1661944019486?e=1687392000&v=beta&t=TWD7JrDbNQ2ZhaKXRI9bzUB6qwCI3S1_83vo8U9G_O8",
-        "description": "https://jobs.lever.co/tactilegames/a93220aa-672e-4bd0-bb69-5473fd46b152"
     }, 
          {
         "company": "Tactile Games",
@@ -5556,18 +5191,7 @@
         "post_date": "March 17, 2023",
         "logo": "https://media.licdn.com/dms/image/C4E0BAQG-P3_JnWdobw/company-logo_200_200/0/1661944019486?e=1687392000&v=beta&t=TWD7JrDbNQ2ZhaKXRI9bzUB6qwCI3S1_83vo8U9G_O8",
         "description": "https://jobs.lever.co/tactilegames/b0c3b4da-99c4-42a1-a02e-25cd4554b4e3"
-    },  
-         {
-        "company": "Tactile Games",
-        "position": "Data Analyst",
-        "location": "Copenhagen, Denmark 🇩🇰",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 17, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQG-P3_JnWdobw/company-logo_200_200/0/1661944019486?e=1687392000&v=beta&t=TWD7JrDbNQ2ZhaKXRI9bzUB6qwCI3S1_83vo8U9G_O8",
-        "description": "https://jobs.lever.co/tactilegames/2a12705d-56ec-4ce5-8e48-134cab638abe"
-    },         
+    },       
          {
         "company": "Tactile Games",
         "position": "Senior UI Designer",
@@ -5623,17 +5247,6 @@
         "logo": "https://media.licdn.com/dms/image/C4D0BAQGLZq8y0KysHg/company-logo_200_200/0/1650893275381?e=1686787200&v=beta&t=Uo4rSl9XmyJNoiPynzBNgwfF6O3__EPMIOmUdr3Y_QA",
         "description": "https://jobs.lever.co/klarna/1a2f2582-6b41-4a3b-ae81-ac47f80fbe79"
     },
-        {    
-        "company": "Kiwi.com",
-        "position": "Senior Business Analyst (Resilience)",
-        "location": "Barcelona , Spain 🇪🇸",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 16, 2023",
-        "logo": "https://jobs.kiwi.com/wp-content/themes/kiwi-jobs/static/img/kiwi-logo-header.svg",
-        "description": "https://jobs.eu.lever.co/kiwi/42dc5cf1-51c4-4d8c-b47b-7018926d0e27"
-    },
         {
         "company": "Telespazio",
         "position": "IT Cyber Security Engineer",
@@ -5668,17 +5281,6 @@
         "description": "https://nxp.wd3.myworkdayjobs.com/careers/job/Leuven/Customer---Application-Support-Engineer--software-_R-10037234-1"
     },
         {
-        "company": "Billie",
-        "position": "Product Manager (ML/DS focus) (w/m/d)",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 16, 2023",
-        "logo": "https://media.licdn.com/dms/image/D4E0BAQFSujdc9NkEKg/company-logo_200_200/0/1666246505157?e=1686787200&v=beta&t=iaS7qBTvzAGmGIHuXjZX1kUrUa2MiKL2XQbKv8RwM7c",
-        "description": "https://www.billie.io/jobs/apply?gh_jid=6218588002"
-    },
-        {
         "company": "gridX",
         "position": "Python Software Engineer (M/F/X)",
         "location": "Aachen & München, Germany 🇩🇪",
@@ -5690,110 +5292,6 @@
         "description": "https://gridx.jobs.personio.de/job/1051749?display=en"
     }, 
         {
-        "company": "Booking.",
-        "position": " Full Stack Developer - Advertising Technology ",
-        "location": "Amsterdam, Netherlands 🇳🇱",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 16, 2023",
-        "logo": "https://jobs.booking.com/careers/job/562949957080101?domain=booking.com&utm_medium=jobposting",
-        "description": "https://jobs.booking.com/careers/job/562949957080101?domain=booking.com&utm_medium=jobposting"
-    }, 
-
-        
-        {    
-        "company": "Nexthink",
-        "position": "Software Engineer (Full-Stack)",
-        "location": "Madrid, Spain 🇪🇸",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 16, 2023",
-        "logo": "https://c.smartrecruiters.com/sr-company-logo-prod/5706774ce4b06e265773c200/huge?r=s3&_1568908677769",
-        "description": "https://www.smartrecruiters.com/Nexthink/743999837199755"
-    }, 
-        
-        {
-        "company": "Lilium",
-        "position": "Compliance Verification Engineer – Energy & Electrical Systems",
-        "location": "München, Germany 🇩🇪",
-        "relocation_assistance": true,
-        "reloc": "Relocation Assistance",
-        "Featured": true,
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 15, 2023",
-        "logo": "https://lilium.com/files/theme-lilium/images/logo/lilium_logo.svg",
-        "description": "https://lilium.com/jobs/3753229"
-    },
-        {
-        "company": "finleap connect",
-        "position": "(Senior) Sales Manager (all genders)",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 15, 2023",
-        "logo": "https://assets.cdn.personio.de/logos/110441/social/864c9dd1b214847e9e28775e78fff1f9.png",
-        "description": "https://finleapconnect.jobs.personio.com/job/1046309?display=en"
-    },
-        {
-        "company": "finleap connect",
-        "position": "(Senior) Cloud/Infrastructure Engineer (all genders)",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 15, 2023",
-        "logo": "https://assets.cdn.personio.de/logos/110441/social/864c9dd1b214847e9e28775e78fff1f9.png",
-        "description": "https://finleapconnect.jobs.personio.com/job/1036876?display=en"
-    },
-        {
-        "company": "finleap connect",
-        "position": "Engineering Manager Infrastructure (all genders)",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 15, 2023",
-        "logo": "https://assets.cdn.personio.de/logos/110441/social/864c9dd1b214847e9e28775e78fff1f9.png",
-        "description": "https://finleapconnect.jobs.personio.com/job/1046300?display=en"
-    },
-        {
-        "company": "byrd",
-        "position": "Team Lead - Python Engineer (f/m/x)",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 15, 2023",
-        "logo": "https://getbyrd.com/core/uploads/2021/06/logo_white-green.svg",
-        "description": "https://getbyrd.com/en/jobs/?gh_jid=4135133101"
-    },
-        {
-        "company": "byrd",
-        "position": "Junior Android Engineer (f/m/x)",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 15, 2023",
-        "logo": "https://getbyrd.com/core/uploads/2021/06/logo_white-green.svg",
-        "description": "https://getbyrd.com/en/jobs/?gh_jid=4141885101"
-    },
-        {
-        "company": "Scalable GmbH",
-        "position": "Senior Performance Marketing Manager - PPC (m/f/x)",
-        "location": "München, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 15, 2023",
-        "logo": "https://de.scalable.capital/theme/images/scalable-logo-regular-small-0011d1e5fa9dc5bdca23.c.svg",
-        "description": "https://jobs.smartrecruiters.com/ScalableGmbH/743999893156063-senior-performance-marketing-manager-ppc-m-f-x-"
-    },
-        {
         "company": "Scalable GmbH",
         "position": "Investment Operations Manager - Wealth (m/f/x)",
         "location": "München, Germany 🇩🇪",
@@ -5803,18 +5301,7 @@
         "post_date": "March 15, 2023",
         "logo": "https://de.scalable.capital/theme/images/scalable-logo-regular-small-0011d1e5fa9dc5bdca23.c.svg",
         "description": "https://jobs.smartrecruiters.com/ScalableGmbH/743999893193418-investment-operations-manager-wealth-m-f-x-"
-    }, 
-        {
-        "company": "Scalable GmbH",
-        "position": "Senior Manager (m/w/x) Information Security Risk",
-        "location": "München, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 15, 2023",
-        "logo": "https://de.scalable.capital/theme/images/scalable-logo-regular-small-0011d1e5fa9dc5bdca23.c.svg",
-        "description": "https://jobs.smartrecruiters.com/ScalableGmbH/743999886507558-senior-manager-m-w-x-information-security-risk"
-    }, 
+    },  
          {
         "company": "Scalable GmbH",
         "position": "Information Security Analyst (m/f/x)",
@@ -5825,18 +5312,7 @@
         "post_date": "March 15, 2023",
         "logo": "https://de.scalable.capital/theme/images/scalable-logo-regular-small-0011d1e5fa9dc5bdca23.c.svg",
         "description": "https://jobs.smartrecruiters.com/ScalableGmbH/743999886504605-information-security-analyst-m-f-x-"
-    }, 
-         {
-        "company": "Scalable GmbH",
-        "position": "IT Support (m/f/x)",
-        "location": "München, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 15, 2023",
-        "logo": "https://de.scalable.capital/theme/images/scalable-logo-regular-small-0011d1e5fa9dc5bdca23.c.svg",
-        "description": "https://jobs.smartrecruiters.com/ScalableGmbH/743999886502077-it-support-m-f-x-"
-    },         
+    },        
         {
         "company": "Scalable GmbH",
         "position": "Senior Java/Kotlin Engineer - Authentication Team (m/f/x) - onsite or remote",
@@ -5847,17 +5323,6 @@
         "post_date": "March 15, 2023",
         "logo": "https://de.scalable.capital/theme/images/scalable-logo-regular-small-0011d1e5fa9dc5bdca23.c.svg",
         "description": "https://jobs.smartrecruiters.com/ScalableGmbH/743999886508012-senior-java-kotlin-engineer-authentication-team-m-f-x-onsite-or-remote-in-germany-"
-    },
-        {
-        "company": "Scalable GmbH",
-        "position": "Senior Platform Engineer (m/f/x) - onsite or remote",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 15, 2023",
-        "logo": "https://de.scalable.capital/theme/images/scalable-logo-regular-small-0011d1e5fa9dc5bdca23.c.svg",
-        "description": "https://jobs.smartrecruiters.com/ScalableGmbH/743999886508303-senior-platform-engineer-m-f-x-onsite-or-remote-in-germany-"
     },
         {
         "company": "Scalable GmbH",
@@ -5882,17 +5347,6 @@
         "description": "https://jobs.smartrecruiters.com/ScalableGmbH/743999893193385--senior-fullstack-engineer-core-tribe-m-f-x-onsite-or-remote-in-germany"
     },
          {
-        "company": "Circus",
-        "position": "Senior Payroll Specialist (m/f/d)",
-        "location": "Hamburg, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 15, 2023",
-        "logo": "https://assets.cdn.personio.de/logos/87168/social/39487daab25ba7a175e14d706ea36115.png",
-        "description": "https://circus.jobs.personio.com/job/1048241?display=en"
-    },
-         {
         "company": "Voodoo",
         "position": "IT & SaaS Administrator",
         "location": "Paris, France 🇫🇷",
@@ -5902,61 +5356,6 @@
         "post_date": "March 14, 2023",
         "logo": "https://media.licdn.com/dms/image/C4D0BAQFJQUE7nc_EQA/company-logo_200_200/0/1619510413232?e=1686787200&v=beta&t=F0NhO1qeTDSXydS1BzMReh6kOnExYc8-vuU4DJ2DkMM",
         "description": "https://jobs.lever.co/voodoo/03f5ccf9-147f-4afb-bd30-2ca21dfaa255/apply"
-    }, 
-    {
-        "company": "navvis",
-        "position": "Dynamics 365 Solution Developer/ Architect (F/M/D)",
-        "location": "München, Germany 🇩🇪",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "March 12, 2023",
-        "logo": "https://www.arbeitnow.com/storage/company_logo/74d6fd484e78f9f23f543867aa8c1f67.jpg",
-        "description": "https://boards.eu.greenhouse.io/navvis/jobs/4124057101"
-    }, 
-       {
-        "company": "BlaBlaCar",
-        "position": "Product Manager - Engage",
-        "location": "Paris, France 🇫🇷",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 11, 2023",
-        "logo": "https://www.blablacar.com/static/images/blablacar.svg",
-        "description": "https://jobs.lever.co/blablacar/3242a047-ba78-47bb-b239-111ed3bd3dee/apply"
-    }, 
-        {
-        "company": "Sendinblue",
-        "position": "Customer Experience Representative - English (Hybrid Remote Policy)",
-        "location": "Paris, France 🇫🇷",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 11, 2023",
-        "logo": "https://www.sendinblue.com/wp-content/themes/sendinblue2019/assets/images/common/logo-color.svg",
-        "description": "https://jobs.lever.co/sendinblue/7c866d78-4038-4629-a143-fab042eea0dd/apply"
-    }, 
-        {
-        "company": "TomTom",
-        "position": "Senior Software Engineer (C++)",
-        "location": "Amesterdam, Netherlands 🇳🇱",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 9, 2023",
-        "logo": "https://media.licdn.com/dms/image/D4E0BAQEp2Gvhh-zjGQ/company-logo_200_200/0/1667371078806?e=1686182400&v=beta&t=47yC_NpbZjJ9Tyn_grc7oZ63tYTwXXM6SDCt8fbqm38",
-        "description": "https://jobs.eu.lever.co/tomtom/eb24f8f8-a5ed-4001-917a-5498de0ea739"
-    }, 
-       {
-        "company": "MBition",
-        "position": "Expert HR Consultant (all genders) – 2 years limited contract",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 9, 2023",
-        "logo": "https://mbition.io/wp-content/uploads//2022/02/print-logo-horiz-color1-negative-Kopie.png",
-        "description": "https://mbition.io/jobs/?job=897597"
     }, 
         {
         "company": "MBition",
@@ -6002,26 +5401,6 @@
         "logo": "https://recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/006/557/resized/Guardsquare-RGB-1600x302.png?1619777854",
         "description": "https://boards.greenhouse.io/guardsquare/jobs/3042671"
     },
-        {
-        "company": "BIT Capital GmbH",
-        "position": "Fullstack Engineer",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "February 28, 2023",
-        "logo": "https://bitcap.com/wp-content/uploads/2020/11/BITCap_Logo_Rhombus_Fill_White.svg",
-        "description": "https://bitcap.jobs.personio.com/job/1013031?display=en&language=en&pid=467abbf8-d41f-45b2-bc9e-61bb039a7dfc&it=Y3SPjw00n5wthDbtzJtWrg&_ghcid=313af691-d6f6-4a40-b0d3-c91d7ceb85ae#apply"
-    },
-    {
-        "company": "roadsurfer",
-        "position": "DevOps Engineer (m/f/d)",
-        "location": "Berlin, Germany 🇩🇪",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "February 28, 2023",
-        "logo": "https://roadsurfer.com/wp-content/themes/roadsurfer/_/img/logo-icon.svg",
-        "description": "https://roadsurfer.jobs.personio.de/job/1017666?display=en&language=en&pid=7c422b71-3315-4f32-af36-99f1fa176492&it=M0jjbP6qi7VOTzKI7X_SJw&_ghcid=313af691-d6f6-4a40-b0d3-c91d7ceb85ae#apply"
-    }
+
+
 ]
