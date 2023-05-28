@@ -1,5 +1,126 @@
 [
           {
+        "company": "Adyen",
+        "position": "C++ Development Tooling Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_200_200/0/1664880075658?e=1691625600&v=beta&t=C2dGEabnLe5IcqLigxgCw0e4c1ILGw6yw8VPSQy7Ukk",
+        "description": "https://boards.greenhouse.io/adyen/jobs/5072589"
+    },
+          {
+        "company": "Zalando SE",
+        "position": "Senior Fullstack Engineer (Java/Kotlin) - Core Logistics Abilities (all genders)",
+        "location": "Munich, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQE9Edi5Ml9fOQ/company-logo_200_200/0/1546856978159?e=1692835200&v=beta&t=7HG6KP9d5R3G_JW6x73zXXr5L0p8gReayYvy930q6uk",
+        "description": "https://jobs.zalando.com/en/jobs/4897428"
+    },
+          {
+        "company": "Container xChange",
+        "position": "Frontend Engineer - Angular (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/C510BAQFQ7AeIjPgU4A/company-logo_200_200/0/1519878725709?e=1691625600&v=beta&t=I44CGXzsWx5o4mnAMH059ux7YLoj8SVL-XX0HPtJI3s",
+        "description": "https://join.com/companies/container-xchange/8158539-frontend-engineer-angular-f-m-d"
+    },
+          {
+        "company": "K-tronik GmbH",
+        "position": "Development Engineer (m/f/x) for ASIC/FPGA",
+        "location": "Dresden, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQF4R67vpmwP0Q/company-logo_200_200/0/1585740177486?e=1691020800&v=beta&t=s7r1pSPB93lM_QNYBX4GYRY8Bsi2shkMHL22Lq5YHZQ",
+        "description": "https://join.com/companies/k-tronik/7920276-development-engineer-m-f-x-for-asic-fpga"
+    },
+          {
+        "company": "Chimera Entertainment",
+        "position": "UI Artist (f/m/d)",
+        "location": "Munich, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQEK1nmhBcPLlg/company-logo_200_200/0/1519898908708?e=1693440000&v=beta&t=T1uU55FAnq3YMwEnpeF51IFifVXAmMALZLwmJhAaDUQ",
+        "description": "https://join.com/companies/chimera-entertainment/8160621-ui-artist-f-m-d"
+    },
+          {
+        "company": "HomeToGo",
+        "position": "Risk and Fraud Analyst - Small Partner Solutions (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQGJiD3znrXYCg/company-logo_200_200/0/1623823994504?e=1693440000&v=beta&t=HLnrLmvO0XLWqpA-j5dKsIb6B27WkixWUU8XWOWPIVo",
+        "description": "https://boards.eu.greenhouse.io/hometogo/jobs/4169559101"
+    },
+          {
+        "company": "HomeToGo",
+        "position": "Technical Account Manager / API Expert (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQGJiD3znrXYCg/company-logo_200_200/0/1623823994504?e=1693440000&v=beta&t=HLnrLmvO0XLWqpA-j5dKsIb6B27WkixWUU8XWOWPIVo",
+        "description": "https://boards.eu.greenhouse.io/hometogo/jobs/4138130101"
+    },
+          {
+        "company": "HomeToGo",
+        "position": "Senior Product Designer - Small Partner Solutions (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQGJiD3znrXYCg/company-logo_200_200/0/1623823994504?e=1693440000&v=beta&t=HLnrLmvO0XLWqpA-j5dKsIb6B27WkixWUU8XWOWPIVo",
+        "description": "https://boards.eu.greenhouse.io/hometogo/jobs/4147200101"
+    },
+          {
+        "company": "Vermietet.de (von ImmoScout24)",
+        "position": "Senior Backend Engineer (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQG2hXy9alxSGA/company-logo_200_200/0/1668755852643?e=1693440000&v=beta&t=31tuqJI0qNThUzs-qSvJVNY4WIejMLYl5JMUpc4mPKI",
+        "description": "https://join.com/companies/zenhomes/8163756-senior-backend-engineer-m-f-d"
+    },
+          {
+        "company": "Picnic",
+        "position": "Angular Developer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHS7qmjAasAyw/company-logo_200_200/0/1636644894385?e=1689206400&v=beta&t=8YoPVS7vyztYSPVjOYouqUv4H_VtnjhPiPZ7z1UJGkM",
+        "description": "https://picnic.app/careers/jobs/1647816/technology--amp--engineering/amsterdam-north-holland-netherlands/angular-developer"
+    },
+          {
+        "company": "Adyen",
+        "position": "Linux System Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_200_200/0/1664880075658?e=1691625600&v=beta&t=C2dGEabnLe5IcqLigxgCw0e4c1ILGw6yw8VPSQy7Ukk",
+        "description": "https://boards.greenhouse.io/adyen/jobs/3751149"
+    },
+          {
         "company": "BlaBlaCar",
         "position": "Learning and Development Specialist",
         "location": "Paris, France 🇫🇷",
@@ -1274,17 +1395,6 @@
         "post_date": "May 4, 2023",
         "logo": "https://media.licdn.com/dms/image/C4E0BAQFmZWDNJxMJpg/company-logo_200_200/0/1677841551161?e=1691020800&v=beta&t=a_AMtLhwZiFiqFWzgZQfGqB-SL8C_ygoJsrjT3sKfq0",
         "description": "https://join.com/companies/cinemo/7907432-embedded-software-engineer-c-f-m-d"
-    },
-    {
-        "company": "K-tronik GmbH",
-        "position": "Development Engineer (m/f/x) for ASIC/FPGA",
-        "location": "Dresden, Germany 🇩🇪",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "May 4, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQF4R67vpmwP0Q/company-logo_200_200/0/1585740177486?e=1691020800&v=beta&t=s7r1pSPB93lM_QNYBX4GYRY8Bsi2shkMHL22Lq5YHZQ",
-        "description": "https://join.com/companies/k-tronik/7920276-development-engineer-m-f-x-for-asic-fpga"
     },
     {
         "company": "HousingAnywhere",
