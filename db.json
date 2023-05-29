@@ -1,5 +1,137 @@
 [
           {
+        "company": "enmacc",
+        "position": "Fullstack Engineer (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHQ8mN6WDeRlQ/company-logo_200_200/0/1654160706941?e=1693440000&v=beta&t=f30m_iZ2IMh4xwNKuu7jv9lwcmRMpWYcVm5Zbzrewpw",
+        "description": "https://boards.eu.greenhouse.io/enmacc/jobs/4010041101"
+    },
+          {
+        "company": "enmacc",
+        "position": "QA Engineer (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHQ8mN6WDeRlQ/company-logo_200_200/0/1654160706941?e=1693440000&v=beta&t=f30m_iZ2IMh4xwNKuu7jv9lwcmRMpWYcVm5Zbzrewpw",
+        "description": "https://boards.eu.greenhouse.io/enmacc/jobs/4062624101"
+    },
+          {
+        "company": "enmacc",
+        "position": "Marketing Manager",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHQ8mN6WDeRlQ/company-logo_200_200/0/1654160706941?e=1693440000&v=beta&t=f30m_iZ2IMh4xwNKuu7jv9lwcmRMpWYcVm5Zbzrewpw",
+        "description": "https://boards.eu.greenhouse.io/enmacc/jobs/4172423101"
+    },
+          {
+        "company": "enmacc",
+        "position": "Senior QA Engineer (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHQ8mN6WDeRlQ/company-logo_200_200/0/1654160706941?e=1693440000&v=beta&t=f30m_iZ2IMh4xwNKuu7jv9lwcmRMpWYcVm5Zbzrewpw",
+        "description": "https://boards.eu.greenhouse.io/enmacc/jobs/4062732101"
+    },          
+          {
+        "company": "enmacc",
+        "position": "Cloud Engineer - AWS (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHQ8mN6WDeRlQ/company-logo_200_200/0/1654160706941?e=1693440000&v=beta&t=f30m_iZ2IMh4xwNKuu7jv9lwcmRMpWYcVm5Zbzrewpw",
+        "description": "https://boards.eu.greenhouse.io/enmacc/jobs/4163722101"
+    },
+          {
+        "company": "Kaufland.de",
+        "position": "Product Manager (f/m/d) - Supply Chain Technology",
+        "location": "Cologne, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 29, 2023",
+        "logo": "https://kaufland-ecommerce.com/wp-content/uploads/KL_Ecommerce_Logo_RGB.png",
+        "description": "https://join.com/companies/kaufland-e-commerce/8179567-product-manager-f-m-d-supply-chain-technology"
+    },
+          {
+        "company": "byrd",
+        "position": "Customer Care Consultant (f/m/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQEa4J7ciS4RTw/company-logo_200_200/0/1656933172203?e=1688601600&v=beta&t=-owciJJv46EsGJfyTsjnIJrFK6-IZi4p9dss3dH5CyQ",
+        "description": "https://join.com/companies/getbyrd/8180650-customer-care-consultant-f-m-x"
+    },
+          {
+        "company": "justtrack",
+        "position": "IOS Developer (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQE2fk2A8vRATg/company-logo_200_200/0/1644184678222?e=1687996800&v=beta&t=OOWPe8mdRToFhjif4QQwhvCJNU2LQe4P-shNoi4VZ0Q",
+        "description": "https://join.com/companies/justtrack/8176804-ios-developer-f-m-d"
+    },
+          {
+        "company": "ticketbro",
+        "position": "Senior React Native Developer (f/m/d)",
+        "location": "Munich, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFYbckF5o8zqA/company-logo_200_200/0/1604438759654?e=1693440000&v=beta&t=a9gxXpGdyroHOUggLl0MLMvIb1zrLckzuXRbIjSPTMg",
+        "description": "https://join.com/companies/ticketbro/8116890-senior-react-native-developer-f-m-d"
+    },
+          {
+        "company": "ticketbro",
+        "position": "Backend & Cloud Developer - AWS, Node.js, Serverless, TypeScript (f/m/d)",
+        "location": "Munich, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFYbckF5o8zqA/company-logo_200_200/0/1604438759654?e=1693440000&v=beta&t=a9gxXpGdyroHOUggLl0MLMvIb1zrLckzuXRbIjSPTMg",
+        "description": "https://join.com/companies/ticketbro/8089652-backend-and-cloud-developer-aws-node-js-serverless-typescript-f-m-d"
+    },
+          {
+        "company": "ticketbro",
+        "position": "Full Stack Engineer - React Native, React.js, AWS, Node.js, TypeScript (f/m/d)",
+        "location": "Munich, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFYbckF5o8zqA/company-logo_200_200/0/1604438759654?e=1693440000&v=beta&t=a9gxXpGdyroHOUggLl0MLMvIb1zrLckzuXRbIjSPTMg",
+        "description": "https://join.com/companies/ticketbro/8180648-full-stack-engineer-react-native-react-js-aws-node-js-typescript-f-m-d"
+    },
+    {
+        "company": "adjoe",
+        "position": "Senior Go Backend Developer (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1687392000&v=beta&t=_8U5s5W3-MKqF8bjS-BTXycKfQRWicaAof9Z3cAuamE",
+        "description": "https://adjoe.io/career/?j_id=8d25a019-7ef0-4dbe-b0da-5e792e9bebf6"
+    },          
+          {
         "company": "Adyen",
         "position": "C++ Development Tooling Engineer",
         "location": "Amsterdam, Netherlands 🇳🇱",
@@ -2715,17 +2847,6 @@
         "post_date": "April 12, 2023",
         "logo": "//cdn.join.com/5f759e23632ed40001dffb67/sunday-gmb-h-logo-s.png",
         "description": "https://sunday.gg/jobs/?j_id=f58ddda3-9533-4e92-8609-3ca9e700c438"
-    },
-    {
-        "company": "adjoe",
-        "position": "Senior Go Backend Developer (f/m/d)",
-        "location": "Hamburg, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "April 12, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1687392000&v=beta&t=_8U5s5W3-MKqF8bjS-BTXycKfQRWicaAof9Z3cAuamE",
-        "description": "https://adjoe.io/career/?j_id=8d25a019-7ef0-4dbe-b0da-5e792e9bebf6"
     },
     {
         "company": "adjoe",
