@@ -1,5 +1,115 @@
 [
           {
+        "company": "Monzo",
+        "position": "Web Engineer",
+        "location": "London , UK 🇬🇧",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQETxhKUKLvg-A/company-logo_200_200/0/1665998657935?e=1690416000&v=beta&t=UPok2Wk35lrUrUiQOXnh7FEa0tdJQWJ2l_1ybAOrLI8",
+        "description": "https://boards.greenhouse.io/monzo/jobs/5079994"
+    },
+          {
+        "company": "Coolblue",
+        "position": "PHP Developer",
+        "location": "Utrecht, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQH9yPq7nb89tQ/company-logo_200_200/0/1544083989543?e=1693440000&v=beta&t=YjThLqQZUq-0MP5dEfmUsizyD39H5g7urZNf--zYOXI",
+        "description": "https://www.careersatcoolblue.com/vacancies/php-developer/"
+    },
+          {
+        "company": "Coolblue",
+        "position": "Front-End Developer",
+        "location": "Utrecht, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQH9yPq7nb89tQ/company-logo_200_200/0/1544083989543?e=1693440000&v=beta&t=YjThLqQZUq-0MP5dEfmUsizyD39H5g7urZNf--zYOXI",
+        "description": "https://www.careersatcoolblue.com/vacancies/javascript-developer/"
+    },
+          {
+        "company": "Coolblue",
+        "position": "Team Lead C#",
+        "location": "Utrecht, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQH9yPq7nb89tQ/company-logo_200_200/0/1544083989543?e=1693440000&v=beta&t=YjThLqQZUq-0MP5dEfmUsizyD39H5g7urZNf--zYOXI",
+        "description": "https://www.careersatcoolblue.com/vacancies/technical-team-lead-c/"
+    },
+          {
+        "company": "Coolblue",
+        "position": "Team Lead Web Development Coolblue Energy",
+        "location": "Utrecht, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "May 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQH9yPq7nb89tQ/company-logo_200_200/0/1544083989543?e=1693440000&v=beta&t=YjThLqQZUq-0MP5dEfmUsizyD39H5g7urZNf--zYOXI",
+        "description": "https://www.careersatcoolblue.com/vacancies/team-lead-web-development/"
+    },
+          {
+        "company": "Event Inc",
+        "position": "(Senior) Product Owner / Product Manager",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 30, 2023",
+        "logo": "https://pbs.twimg.com/profile_images/1181574089254813697/7zcl-LYU_400x400.png",
+        "description": "https://about.eventinc.de/career/?_ga=2.18487225.1851756862.1685454263-1777519357.1684743532"
+    },
+          {
+        "company": "Statkraft",
+        "position": "C++ Software Developer",
+        "location": "Oslo, Norway 🇳🇴",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQEakqxCzo4JfQ/company-logo_200_200/0/1519856219312?e=1693440000&v=beta&t=yIsWxMplwSxA6Tpf_BtMADBoon_Bdz4obYqXGat4tEg",
+        "description": "https://jobs.smartrecruiters.com/Statkraft1/743999908715218-c-software-developer"
+    },
+          {
+        "company": "Statkraft",
+        "position": "Senior Frontend Developer",
+        "location": "Oslo, Norway 🇳🇴",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQEakqxCzo4JfQ/company-logo_200_200/0/1519856219312?e=1693440000&v=beta&t=yIsWxMplwSxA6Tpf_BtMADBoon_Bdz4obYqXGat4tEg",
+        "description": "https://jobs.smartrecruiters.com/Statkraft1/743999909936413-senior-frontend-developer"
+    },
+          {
+        "company": "Statkraft",
+        "position": "Senior DevOps Engineer",
+        "location": "Oslo, Norway 🇳🇴",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQEakqxCzo4JfQ/company-logo_200_200/0/1519856219312?e=1693440000&v=beta&t=yIsWxMplwSxA6Tpf_BtMADBoon_Bdz4obYqXGat4tEg",
+        "description": "https://jobs.smartrecruiters.com/Statkraft1/743999910028005-senior-devops-engineer"
+    },
+          {
+        "company": "Statkraft",
+        "position": "Python Lead Developer",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "May 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHQ8mN6WDeRlQ/company-logo_200_200/0/1654160706941?e=1693440000&v=beta&t=f30m_iZ2IMh4xwNKuu7jv9lwcmRMpWYcVm5Zbzrewpw",
+        "description": "https://jobs.smartrecruiters.com/Statkraft1/743999904257913-python-lead-developer"
+    },
+          {
         "company": "enmacc",
         "position": "Fullstack Engineer (m/f/d)",
         "location": "Berlin, Germany 🇩🇪",
