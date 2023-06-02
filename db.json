@@ -1,4 +1,125 @@
 [
+           {
+        "company": "trivago",
+        "position": "Junior Salesforce Administrator",
+        "location": "Düsseldorf, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 2, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFhKLgNXpe6qg/company-logo_200_200/0/1606478925574?e=1694044800&v=beta&t=xEZM8Jy8VjC4EvTiWL38W1_AZmI3U4bZ9vyLCPUIDTg",
+        "description": "https://careers.trivago.com/job/r6753825002/"
+    },
+         {
+        "company": "trivago",
+        "position": "Data Analyst – Product Intelligence",
+        "location": "Düsseldorf, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 2, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFhKLgNXpe6qg/company-logo_200_200/0/1606478925574?e=1694044800&v=beta&t=xEZM8Jy8VjC4EvTiWL38W1_AZmI3U4bZ9vyLCPUIDTg",
+        "description": "https://careers.trivago.com/job/r6650680002/"
+    },
+         {
+        "company": "enmacc",
+        "position": "Senior Frontend Engineer (m/f/d)",
+        "location": "Munich, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 2, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHQ8mN6WDeRlQ/company-logo_200_200/0/1654160706941?e=1693440000&v=beta&t=f30m_iZ2IMh4xwNKuu7jv9lwcmRMpWYcVm5Zbzrewpw",
+        "description": "https://boards.eu.greenhouse.io/enmacc/jobs/4009840101"
+    },
+         {
+        "company": "Coolblue",
+        "position": "Junior Front-End Developer",
+        "location": "Rotterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 2, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQH9yPq7nb89tQ/company-logo_200_200/0/1544083989543?e=1693440000&v=beta&t=YjThLqQZUq-0MP5dEfmUsizyD39H5g7urZNf--zYOXI",
+        "description": "https://www.werkenbijcoolblue.nl/vacatures/junior-front-end-developer/"
+    },
+         {
+        "company": "adjoe",
+        "position": "Account Manager - Demand Account Management (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 2, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1687392000&v=beta&t=_8U5s5W3-MKqF8bjS-BTXycKfQRWicaAof9Z3cAuamE",
+        "description": "https://join.com/companies/adjoe/8192434-account-manager-demand-account-management-f-m-d"
+    },
+          {
+        "company": "trivago",
+        "position": "Consumer Insights Specialist",
+        "location": "Düsseldorf, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 2, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFhKLgNXpe6qg/company-logo_200_200/0/1606478925574?e=1694044800&v=beta&t=xEZM8Jy8VjC4EvTiWL38W1_AZmI3U4bZ9vyLCPUIDTg",
+        "description": "https://careers.trivago.com/job/r6673196002/"
+    },
+         {
+        "company": "Qualcomm",
+        "position": "Full Stack Engineer (m/f/d) Augmented and Virtual Reality - Amsterdam",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 2, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHHmRgEadFrdA/company-logo_200_200/0/1611250856145?e=1694044800&v=beta&t=oWgaXbM71xJcWkifJoshIYJV0yVBIVHtGvvXk6ddgGc",
+        "description": "https://qualcomm.wd5.myworkdayjobs.com/External/job/Amsterdam-NLD/Full-Stack-Engineer--m-f-d--Augmented-and-Virtual-Reality---Amsterdam_3050665"
+    },
+         {
+        "company": "ITSync",
+        "position": "Full Stack Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 2, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQGGgsoMJ5L53Q/company-logo_200_200/0/1572270703797?e=1694044800&v=beta&t=cAau9EV-dBGNofur330t3W5qgkR9dmR_Bx2CZdFn7t0",
+        "description": "https://www.itsync.nl/vacancies/4905-fullstack-engineer"
+    },
+         {
+        "company": "Sendcloud",
+        "position": "Senior DevOps Engineer",
+        "location": "Eindhoven, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 2, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFz6LuXT2XFHg/company-logo_200_200/0/1649418529711?e=1694044800&v=beta&t=eWPpbvKfNdCNIr0ZTEOnYNAiPgyEGBBuAE_38q1Fvqw",
+        "description": "https://jobs.sendcloud.com/jobs/6785360002?gh_jid=6785360002"
+    },  
+         {
+        "company": "Sendcloud",
+        "position": "Senior Backend Engineer (Python)",
+        "location": "Eindhoven, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 2, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFz6LuXT2XFHg/company-logo_200_200/0/1649418529711?e=1694044800&v=beta&t=eWPpbvKfNdCNIr0ZTEOnYNAiPgyEGBBuAE_38q1Fvqw",
+        "description": "https://jobs.sendcloud.com/jobs/6598602002?gh_jid=6598602002"
+    },         
+           {
+        "company": "trivago",
+        "position": "Product Manager – Auction",
+        "location": "Düsseldorf, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 2, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFhKLgNXpe6qg/company-logo_200_200/0/1606478925574?e=1694044800&v=beta&t=xEZM8Jy8VjC4EvTiWL38W1_AZmI3U4bZ9vyLCPUIDTg",
+        "description": "https://careers.trivago.com/job/r6730118002/"
+    },
          {
         "company": "Sunday GmbH",
         "position": "UI Designer (f/m/d)",
@@ -5003,17 +5124,6 @@
         "post_date": "March 22, 2023",
         "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1687392000&v=beta&t=_8U5s5W3-MKqF8bjS-BTXycKfQRWicaAof9Z3cAuamE",
         "description": "https://join.com/companies/adjoe/7484611-sales-operations-specialist-f-m-d"
-    }, 
-          {
-        "company": "adjoe",
-        "position": "Account Manager - Demand Account Management (f/m/d)",
-        "location": "Hamburg, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 22, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1687392000&v=beta&t=_8U5s5W3-MKqF8bjS-BTXycKfQRWicaAof9Z3cAuamE",
-        "description": "https://join.com/companies/adjoe/7444785-account-manager-demand-account-management-f-m-d"
     }, 
           {
         "company": "adjoe",
