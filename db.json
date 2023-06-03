@@ -1,5 +1,115 @@
 [
            {
+        "company": "Rheinmetall",
+        "position": "Cloud Solution Architect (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEt8fLt55e65w/company-logo_200_200/0/1557302218531?e=1694044800&v=beta&t=puSTs4vsMIbSscr89BzwlUud6CbSvJVZ2P4zEGMV4vs",
+        "description": "https://www.rheinmetall.com/de/job/cloud_solution_architect__m_f_d_/18614"
+    },
+           {
+        "company": "Rheinmetall",
+        "position": "Junior Systems Engineer (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEt8fLt55e65w/company-logo_200_200/0/1557302218531?e=1694044800&v=beta&t=puSTs4vsMIbSscr89BzwlUud6CbSvJVZ2P4zEGMV4vs",
+        "description": "https://www.rheinmetall.com/de/job/junior_systems_engineer__m_f_d_/23947"
+    },
+          {
+        "company": "Sytac",
+        "position": "Senior Java/Kotlin Developer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQGOnSBnGCxBFw/company-logo_200_200/0/1519899289373?e=1694044800&v=beta&t=7UXJDvIuyzNt4lWaf70a4sRZWLxutotM45eeeew27q0",
+        "description": "https://www.linkedin.com/jobs/search/?currentJobId=3615476441&f_C=626751&geoId=92000000&originToLandingJobPostings=3575087525%2C3601463337%2C3575805423%2C3575084735%2C3615471668%2C3615476441%2C3615476575"
+    },
+           {
+        "company": "Adyen",
+        "position": "Backend Software Engineer - Feature Platform",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_200_200/0/1664880075658?e=1691625600&v=beta&t=C2dGEabnLe5IcqLigxgCw0e4c1ILGw6yw8VPSQy7Ukk",
+        "description": "https://boards.greenhouse.io/adyen/jobs/4835713"
+    },
+          {
+        "company": "PhotoRoom",
+        "position": "Content Marketing Manager",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQECQD03VSVIxA/company-logo_200_200/0/1573748358334?e=1694044800&v=beta&t=N3J3rwbv3p6r608n1J9mIHlmbK_s-j1k8eI5VBE1iUI",
+        "description": "https://jobs.lever.co/photoroom/f9f50503-e547-465a-9859-604386619f1c"
+    }, 
+          {
+        "company": "PhotoRoom",
+        "position": "Senior Backend Engineer (Django)",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQECQD03VSVIxA/company-logo_200_200/0/1573748358334?e=1694044800&v=beta&t=N3J3rwbv3p6r608n1J9mIHlmbK_s-j1k8eI5VBE1iUI",
+        "description": "https://jobs.lever.co/photoroom/01f5cb22-695a-402a-a970-818a6c2d47a9"
+    }, 
+           {
+        "company": "PhotoRoom",
+        "position": "Product Manager (Creative Platform)",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQECQD03VSVIxA/company-logo_200_200/0/1573748358334?e=1694044800&v=beta&t=N3J3rwbv3p6r608n1J9mIHlmbK_s-j1k8eI5VBE1iUI",
+        "description": "https://jobs.lever.co/photoroom/4d0cfe0e-fa45-4e61-b5db-27b71f459456"
+    }, 
+           {
+        "company": "Rheinmetall",
+        "position": "Backend Developer Webapplications (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEt8fLt55e65w/company-logo_200_200/0/1557302218531?e=1694044800&v=beta&t=puSTs4vsMIbSscr89BzwlUud6CbSvJVZ2P4zEGMV4vs",
+        "description": "https://www.rheinmetall.com/de/job/backend_developer_webapplications__m_f_d_/18609"
+    },
+           {
+        "company": "PARADOX CAT GmbH",
+        "position": "(Senior) Android Software Developer (w/m/d)",
+        "location": "Munich, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQH1OIL0KUkCbw/company-logo_200_200/0/1632428779374?e=1694044800&v=beta&t=R7ODJ74bhVG88XrcsS2GlpktTHT51Y9feSo9ZB5nruI",
+        "description": "https://join.com/companies/paradoxcat/8188589-senior-android-software-developer-w-m-d-munich"
+    },
+           {
+        "company": "Picnic",
+        "position": "Senior Java Developer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHS7qmjAasAyw/company-logo_200_200/0/1636644894385?e=1689206400&v=beta&t=8YoPVS7vyztYSPVjOYouqUv4H_VtnjhPiPZ7z1UJGkM",
+        "description": "https://picnic.app/careers/jobs/4476506/technology--amp--engineering/amsterdam-north-holland-netherlands/senior-java-developer"
+    },
+           {
         "company": "trivago",
         "position": "Junior Salesforce Administrator",
         "location": "Düsseldorf, Germany 🇩🇪",
