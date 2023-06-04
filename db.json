@@ -1,5 +1,82 @@
 [
            {
+        "company": "Platin Gaming LTD",
+        "position": "Graphic Designer",
+        "location": "Gzira, Malta 🇲🇹",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 4, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFvLOEdiCFR6w/company-logo_200_200/0/1628694852885?e=1694044800&v=beta&t=Jm9PiW3rLggyuzDCPwi27wL-nR7JQ5k2KZn2JFZY0H8",
+        "description": "https://join.com/companies/platingaming/8184149-graphic-designer"
+    },
+           {
+        "company": "Adyen",
+        "position": "Product Manager, Data Platform",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 4, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_200_200/0/1664880075658?e=1691625600&v=beta&t=C2dGEabnLe5IcqLigxgCw0e4c1ILGw6yw8VPSQy7Ukk",
+        "description": "https://boards.greenhouse.io/adyen/jobs/4132483"
+    },
+           {
+        "company": "Platin Gaming LTD",
+        "position": "Full-Stack Developer",
+        "location": "Gzira, Malta 🇲🇹",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 4, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFvLOEdiCFR6w/company-logo_200_200/0/1628694852885?e=1694044800&v=beta&t=Jm9PiW3rLggyuzDCPwi27wL-nR7JQ5k2KZn2JFZY0H8",
+        "description": "https://join.com/companies/platingaming/8206265-full-stack-developer"
+    },
+          {
+        "company": "Profitap",
+        "position": "Technical Support Engineer",
+        "location": "Eindhoven, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 4, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQEknNGJUCHWWg/company-logo_200_200/0/1542205373524?e=1694044800&v=beta&t=FtRXHgyBMSbLO0XyOwvVZyMji_eaKnFQS3zelGtEdfE",
+        "description": "https://join.com/companies/profitap/8169138-technical-support-engineer"
+    },
+           {
+        "company": "Profitap",
+        "position": "QA Engineer",
+        "location": "Eindhoven, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 4, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQEknNGJUCHWWg/company-logo_200_200/0/1542205373524?e=1694044800&v=beta&t=FtRXHgyBMSbLO0XyOwvVZyMji_eaKnFQS3zelGtEdfE",
+        "description": "https://join.com/companies/profitap/8185659-qa-engineer"
+    },
+         {
+        "company": "Shape Games",
+        "position": "Kotlin Backend Developer",
+        "location": "Copenhagen, Denmark 🇩🇰",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 4, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHtkLUciYB7Iw/company-logo_200_200/0/1637333141895?e=1694044800&v=beta&t=qqzipc7tUhCS0J9MAMgUHR3WUt75V4Fg5AVWSKkbDEg",
+        "description": "https://careers.shapegames.com/jobs/2804545-kotlin-backend-developer-copenhagen"
+    },
+           {
+        "company": "Shape Games",
+        "position": "Technical Product Owner",
+        "location": "Copenhagen, Denmark 🇩🇰",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 4, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHtkLUciYB7Iw/company-logo_200_200/0/1637333141895?e=1694044800&v=beta&t=qqzipc7tUhCS0J9MAMgUHR3WUt75V4Fg5AVWSKkbDEg",
+        "description": "https://careers.shapegames.com/jobs/2771092-technical-product-owner"
+    },
+           {
         "company": "Rheinmetall",
         "position": "Cloud Solution Architect (m/f/d)",
         "location": "Berlin, Germany 🇩🇪",
