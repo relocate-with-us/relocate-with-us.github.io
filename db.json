@@ -1,4 +1,103 @@
 [
+     {
+        "company": "byrd",
+        "position": "Junior Account Manager (f/m/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQEa4J7ciS4RTw/company-logo_200_200/0/1656933172203?e=1688601600&v=beta&t=-owciJJv46EsGJfyTsjnIJrFK6-IZi4p9dss3dH5CyQ",
+        "description": "https://getbyrd.com/en/jobs/?gh_jid=4162165101"
+    },
+           {
+        "company": "byrd",
+        "position": "Finance Associate (f/m/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQEa4J7ciS4RTw/company-logo_200_200/0/1656933172203?e=1688601600&v=beta&t=-owciJJv46EsGJfyTsjnIJrFK6-IZi4p9dss3dH5CyQ",
+        "description": "https://getbyrd.com/en/jobs/?gh_jid=4175864101"
+    },
+           {
+        "company": "byrd",
+        "position": "Customer Care Consultant (f/m/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQEa4J7ciS4RTw/company-logo_200_200/0/1656933172203?e=1688601600&v=beta&t=-owciJJv46EsGJfyTsjnIJrFK6-IZi4p9dss3dH5CyQ",
+        "description": "https://getbyrd.com/en/jobs/?gh_jid=4080811101"
+    },
+           {
+        "company": "raisin",
+        "position": "Customer Service Agent (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGz9FQVATVRAQ/company-logo_200_200/0/1647426086850?e=1689811200&v=beta&t=kbBCou3WMp77s03z43hKKrmnNPB22Sr8AFx7oM2uwQY",
+        "description": "https://raisin.jobs.personio.de/job/1142852?display=en"
+    }, 
+       {
+        "company": "raisin",
+        "position": "(Senior) Data Engineer (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGz9FQVATVRAQ/company-logo_200_200/0/1647426086850?e=1689811200&v=beta&t=kbBCou3WMp77s03z43hKKrmnNPB22Sr8AFx7oM2uwQY",
+        "description": "https://raisin.jobs.personio.de/job/936625?display=en"
+    },
+       {
+        "company": "HAWK:AI",
+        "position": "Python Full-Stack Developer (f/m/d)",
+        "location": "Munich, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEHmlzSCfK8Yg/company-logo_200_200/0/1598441586483?e=1688601600&v=beta&t=8W4cylFPI_PP3weSLHk9UyXWyEBJ5zfWjx8uF347g0Y",
+        "description": "https://boards.eu.greenhouse.io/hawkai/jobs/4170592101"
+    },
+           {
+        "company": "raisin",
+        "position": "(Senior) DevOps Engineer (f/m/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGz9FQVATVRAQ/company-logo_200_200/0/1647426086850?e=1689811200&v=beta&t=kbBCou3WMp77s03z43hKKrmnNPB22Sr8AFx7oM2uwQY",
+        "description": "https://raisin.jobs.personio.de/job/759132?display=en"
+    },
+       {
+        "company": "HAWK:AI",
+        "position": "Java Full-stack Developer (f/m/d)",
+        "location": "Munich, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEHmlzSCfK8Yg/company-logo_200_200/0/1598441586483?e=1688601600&v=beta&t=8W4cylFPI_PP3weSLHk9UyXWyEBJ5zfWjx8uF347g0Y",
+        "description": "https://boards.eu.greenhouse.io/hawkai/jobs/4047623101"
+    },
+       {
+        "company": "HAWK:AI",
+        "position": "Senior Java Full-Stack Developer (f/m/d)",
+        "location": "Munich, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEHmlzSCfK8Yg/company-logo_200_200/0/1598441586483?e=1688601600&v=beta&t=8W4cylFPI_PP3weSLHk9UyXWyEBJ5zfWjx8uF347g0Y",
+        "description": "https://boards.eu.greenhouse.io/hawkai/jobs/4042354101"
+    },
            {
         "company": "Platin Gaming LTD",
         "position": "Graphic Designer",
@@ -594,17 +693,6 @@
         "description": "https://join.com/companies/kaufland-e-commerce/8179567-product-manager-f-m-d-supply-chain-technology"
     },
           {
-        "company": "byrd",
-        "position": "Customer Care Consultant (f/m/x)",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "May 29, 2023",
-        "logo": "https://media.licdn.com/dms/image/C560BAQEa4J7ciS4RTw/company-logo_200_200/0/1656933172203?e=1688601600&v=beta&t=-owciJJv46EsGJfyTsjnIJrFK6-IZi4p9dss3dH5CyQ",
-        "description": "https://join.com/companies/getbyrd/8180650-customer-care-consultant-f-m-x"
-    },
-          {
         "company": "justtrack",
         "position": "IOS Developer (f/m/d)",
         "location": "Hamburg, Germany 🇩🇪",
@@ -1121,17 +1209,6 @@
         "logo": "https://media.licdn.com/dms/image/C4E0BAQHQLVwhPQAQ1g/company-logo_200_200/0/1677695706581?e=1687996800&v=beta&t=mfvxwQl3M1I_XjJItaRLZiI78Yhp1YbNZrKmBl4k2ms",
         "description": "https://www.bath.ac.uk/jobs/Vacancy.aspx?ref=CC10615"
     },
-       {
-        "company": "raisin",
-        "position": "Junior Zendesk Engineer (m/f/d)",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "May 21, 2023",
-        "logo": "https://media.licdn.com/dms/image/C560BAQGz9FQVATVRAQ/company-logo_200_200/0/1647426086850?e=1689811200&v=beta&t=kbBCou3WMp77s03z43hKKrmnNPB22Sr8AFx7oM2uwQY",
-        "description": "https://raisin.jobs.personio.de/job/1116384?display=en"
-    }, 
        {
         "company": "Oetker Digital",
         "position": "(Senior) Consultant Data Protection (m/f/d)",
@@ -1857,17 +1934,6 @@
         "post_date": "May 9, 2023",
         "logo": "https://media.licdn.com/dms/image/C4E0BAQFl56kGDtwBLQ/company-logo_200_200/0/1593078386081?e=1691625600&v=beta&t=3qBfG8PLKewxkxA2Syc7ymAcJRiDwZXFvK-_jNYLFO4",
         "description": "https://join.com/companies/delivion/7893970-cloud-native-software-developer"
-    },
-     {
-        "company": "byrd",
-        "position": "Junior Account Manager (f/m/x)",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "May 9, 2023",
-        "logo": "https://media.licdn.com/dms/image/C560BAQEa4J7ciS4RTw/company-logo_200_200/0/1656933172203?e=1688601600&v=beta&t=-owciJJv46EsGJfyTsjnIJrFK6-IZi4p9dss3dH5CyQ",
-        "description": "https://getbyrd.com/en/jobs/?gh_jid=4162165101"
     },
      {
         "company": "Container xChange",
@@ -3191,17 +3257,6 @@
     },
           {
         "company": "raisin",
-        "position": "(Senior) Data Engineer (m/f/d)",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "April 16, 2023",
-        "logo": "https://media.licdn.com/dms/image/C560BAQGz9FQVATVRAQ/company-logo_200_200/0/1647426086850?e=1689811200&v=beta&t=kbBCou3WMp77s03z43hKKrmnNPB22Sr8AFx7oM2uwQY",
-        "description": "https://raisin.jobs.personio.de/job/936625?display=en"
-    }, 
-          {
-        "company": "raisin",
         "position": "IT Governance and Compliance Manager (m/f/d)",
         "location": "Berlin, Germany 🇩🇪",
         "reloc": "Relocation Assistance",
@@ -4321,17 +4376,6 @@
         "post_date": "April 4, 2023",
         "logo": "https://media.licdn.com/dms/image/C4D0BAQEHmlzSCfK8Yg/company-logo_200_200/0/1598441586483?e=1688601600&v=beta&t=8W4cylFPI_PP3weSLHk9UyXWyEBJ5zfWjx8uF347g0Y",
         "description": "https://boards.eu.greenhouse.io/hawkai/jobs/4138095101"
-    },
-       {
-        "company": "HAWK:AI",
-        "position": "Java Full-stack Developer (f/m/d)",
-        "location": "Munich, Germany 🇩🇪",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "April 4, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQEHmlzSCfK8Yg/company-logo_200_200/0/1598441586483?e=1688601600&v=beta&t=8W4cylFPI_PP3weSLHk9UyXWyEBJ5zfWjx8uF347g0Y",
-        "description": "https://boards.eu.greenhouse.io/hawkai/jobs/4047623101"
     },
        {
         "company": "Kaufland.de",
