@@ -1,4 +1,81 @@
 [
+    {
+        "company": "Optiver",
+        "position": "Technical Recruiter",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQE5InV7BZ_Wjg/company-logo_200_200/0/1659345131555?e=1691625600&v=beta&t=i1fhzUyyJAVNl9bybFjilXHw6h9rPNMV-mh9KCQUFfI",
+        "description": "https://optiver.com/working-at-optiver/career-opportunities/5845783002/"
+    },
+          {
+        "company": "Nexperia",
+        "position": "IAM Software Engineer",
+        "location": "Nijmegen, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQEphxQ0i6ZdCA/company-logo_200_200/0/1519903893300?e=1694649600&v=beta&t=rINSdZ3SDHQhtmndJSdBKVF3AccJ3IzlOtL15fkJ_Ng",
+        "description": "https://nexperia.wd3.myworkdayjobs.com/careers/job/Delft/Junior-Analog-IC-Designer_R-20008805-1"
+    },
+    {
+        "company": "Optiver",
+        "position": "Software Engineer – Python",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQE5InV7BZ_Wjg/company-logo_200_200/0/1659345131555?e=1691625600&v=beta&t=i1fhzUyyJAVNl9bybFjilXHw6h9rPNMV-mh9KCQUFfI",
+        "description": "https://optiver.com/working-at-optiver/career-opportunities/6793838002/"
+    },
+          {
+        "company": "Optiver",
+        "position": "FPGA Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQE5InV7BZ_Wjg/company-logo_200_200/0/1659345131555?e=1691625600&v=beta&t=i1fhzUyyJAVNl9bybFjilXHw6h9rPNMV-mh9KCQUFfI",
+        "description": "https://optiver.com/working-at-optiver/career-opportunities/5845759002/"
+    },
+          {
+        "company": "Picnic",
+        "position": "IAM Software Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHS7qmjAasAyw/company-logo_200_200/0/1636644894385?e=1689206400&v=beta&t=8YoPVS7vyztYSPVjOYouqUv4H_VtnjhPiPZ7z1UJGkM",
+        "description": "https://picnic.app/careers/jobs/4250602/technology--amp--engineering/amsterdam-north-holland-netherlands/iam-software-engineer"
+    },
+           {
+        "company": "Adyen",
+        "position": "Deal Pricing Analyst",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_200_200/0/1664880075658?e=1691625600&v=beta&t=C2dGEabnLe5IcqLigxgCw0e4c1ILGw6yw8VPSQy7Ukk",
+        "description": "https://boards.greenhouse.io/adyen/jobs/5101222"
+    },
+          {
+        "company": "HelloFresh",
+        "position": "Senior Data Engineer (f/m/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGPF61q2af2nw/company-logo_200_200/0/1656691720475?e=1691625600&v=beta&t=tGr7fdtGWJM62Ecl1Chm0F35bsKQ3z4opMpwrsoqpx0",
+        "description": "https://careers.hellofresh.com/global/en/job/HELLGLOBAL5100839EXTERNALENGLOBAL/Senior-Data-Engineer-f-m-x"
+    },
           {
         "company": "Zalando SE",
         "position": "Backend Engineer (Scala) - Partner Tech (all genders)",
@@ -2562,17 +2639,7 @@
         "logo": "https://media.licdn.com/dms/image/D4E0BAQEqPOjmVIfznA/company-logo_200_200/0/1667566056808?e=1690416000&v=beta&t=thLaEOcnF-DQnwalDJOSNL_pcTz0Jzb2W2O5yZcyIEg",
         "description": "https://join.com/companies/destinus1/7855706-lead-systems-engineer"
     },
-          {
-        "company": "Picnic",
-        "position": "IAM Software Engineer",
-        "location": "Amsterdam, Netherlands 🇳🇱",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "April 27, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQHS7qmjAasAyw/company-logo_200_200/0/1636644894385?e=1689206400&v=beta&t=8YoPVS7vyztYSPVjOYouqUv4H_VtnjhPiPZ7z1UJGkM",
-        "description": "https://picnic.app/careers/jobs/4250602/technology--amp--engineering/amsterdam-north-holland-netherlands/iam-software-engineer"
-    },
+
           {
         "company": "Bigpoint GmbH",
         "position": "SAP SPECIALIST (m/f/d)",
