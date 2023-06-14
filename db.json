@@ -1,4 +1,125 @@
 [
+     {
+        "company": "About you",
+        "position": "Junior GCP DevOps Engineer (m/f/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 14, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHhyX2YHtbNqw/company-logo_200_200/0/1557995840152?e=1689206400&v=beta&t=XwNXcahB6Pa4yt9BNM-pTHGEbn5k1xrKi9kHiQ_BcAY",
+        "description": "https://corporate.aboutyou.de/en/jobs/junior-gcp-devops-engineer-m-f-d-marketing-intelligence-and-technology-team"
+    },
+          {
+        "company": "About you",
+        "position": "(Junior) Business Analyst (m/w/d) - SCAYLE",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 14, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHhyX2YHtbNqw/company-logo_200_200/0/1557995840152?e=1689206400&v=beta&t=XwNXcahB6Pa4yt9BNM-pTHGEbn5k1xrKi9kHiQ_BcAY",
+        "description": "https://corporate.aboutyou.de/en/jobs/junior-business-analyst-m-w-d-scayle"
+    },
+          {
+        "company": "About you",
+        "position": "(Junior) Platform Engineer – Cloud Platforms",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 14, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHhyX2YHtbNqw/company-logo_200_200/0/1557995840152?e=1689206400&v=beta&t=XwNXcahB6Pa4yt9BNM-pTHGEbn5k1xrKi9kHiQ_BcAY",
+        "description": "https://corporate.aboutyou.de/en/jobs/junior-platform-engineer-cloud-platforms"
+    },
+          {
+        "company": "Leapsome",
+        "position": "Full Stack Software Engineer (d/f/m)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 14, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQG6_JXT3WNJDQ/company-logo_200_200/0/1603268419774?e=1694649600&v=beta&t=coe-Gjp9E6gxruN3e0o48qpFaZIzVbfJDp3Bm-5lT9E",
+        "description": "https://www.leapsome.com/careers?ashby_jid=a93672d1-93a4-45f2-9e94-9da7dbbea238"
+    },
+          {
+        "company": "Leapsome",
+        "position": "Senior Product Manager (d/f/m)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 14, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQG6_JXT3WNJDQ/company-logo_200_200/0/1603268419774?e=1694649600&v=beta&t=coe-Gjp9E6gxruN3e0o48qpFaZIzVbfJDp3Bm-5lT9E",
+        "description": "https://www.leapsome.com/careers?ashby_jid=c7460f78-0b8e-445d-9d43-6416b87d6cd6"
+    },
+          {
+        "company": "Leapsome",
+        "position": "Analytics Engineer (d/f/m)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 14, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQG6_JXT3WNJDQ/company-logo_200_200/0/1603268419774?e=1694649600&v=beta&t=coe-Gjp9E6gxruN3e0o48qpFaZIzVbfJDp3Bm-5lT9E",
+        "description": "https://www.leapsome.com/careers?ashby_jid=e00ac8e3-a0a4-4c0a-8674-d7b36d4aa372"
+    },
+           {
+        "company": "Instapro",
+        "position": "Data Engineer",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 14, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQF8HFJCecgFhA/company-logo_200_200/0/1632412292093?e=1694649600&v=beta&t=gBlUdUfiTp0DBEQa0FqXXRJJ3fJRyGJK2srwtDhYBmk",
+        "description": "https://careers.instapro.group/o/data-engineer-berlin"
+    },
+          {
+        "company": "Catawiki",
+        "position": "Data Scientist - Machine Learning",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 14, 2023",
+        "logo": "https://catawiki.careers/static/custom-logos/catawiki-logo.svg",
+        "description": "https://catawiki.careers/vacancies/data-scientist-machine-learning-netherlands-amsterdam-1427963-2338337"
+    },
+           {
+        "company": "Leapsome",
+        "position": "Product Marketing Manager (d/f/m)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 14, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQG6_JXT3WNJDQ/company-logo_200_200/0/1603268419774?e=1694649600&v=beta&t=coe-Gjp9E6gxruN3e0o48qpFaZIzVbfJDp3Bm-5lT9E",
+        "description": "https://www.leapsome.com/careers?ashby_jid=a31044ae-79e7-4709-b54f-72d8a2c2a72b"
+    },
+           {
+        "company": "Leapsome",
+        "position": "Senior Full Stack Software Engineer (d/f/m)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 14, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQG6_JXT3WNJDQ/company-logo_200_200/0/1603268419774?e=1694649600&v=beta&t=coe-Gjp9E6gxruN3e0o48qpFaZIzVbfJDp3Bm-5lT9E",
+        "description": "https://www.leapsome.com/careers?ashby_jid=84eb9163-064a-464f-a716-af265cb2dc94"
+    },
+           {
+        "company": "Leapsome",
+        "position": "Salesforce Administrator",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 14, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQG6_JXT3WNJDQ/company-logo_200_200/0/1603268419774?e=1694649600&v=beta&t=coe-Gjp9E6gxruN3e0o48qpFaZIzVbfJDp3Bm-5lT9E",
+        "description": "https://www.leapsome.com/careers?ashby_jid=ee5f98e5-e51c-4aa1-b3cb-dbc2cffbeab3"
+    },
           {
         "company": "Instapro",
         "position": "Salesforce Developer (Enterprise Applications)",
@@ -2969,28 +3090,6 @@
         "post_date": "April 24, 2023",
         "logo": "https://media.licdn.com/dms/image/C4E0BAQFLiCuAJY5-ew/company-logo_200_200/0/1655224126951?e=1688601600&v=beta&t=9e8xR9E7RKOKRmAsXMsAteYKo3CMTsnFnl3Ooc8CCN4",
         "description": "https://alteos.jobs.personio.de/job/1022912?display=en"
-    },
-          {
-        "company": "Catawiki",
-        "position": "Junior Frontend Engineer",
-        "location": "Amsterdam, Netherlands 🇳🇱",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "April 24, 2023",
-        "logo": "https://catawiki.careers/static/custom-logos/catawiki-logo.svg",
-        "description": "https://catawiki.careers/vacancies/junior-frontend-engineer-netherlands-amsterdam-2474540-4859292"
-    },
-          {
-        "company": "Catawiki",
-        "position": "Data Scientist - Machine Learning",
-        "location": "Amsterdam, Netherlands 🇳🇱",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "April 24, 2023",
-        "logo": "https://catawiki.careers/static/custom-logos/catawiki-logo.svg",
-        "description": "https://catawiki.careers/vacancies/data-scientist-machine-learning-netherlands-amsterdam-1427963-2338337"
     },
           {
         "company": "Catawiki",
