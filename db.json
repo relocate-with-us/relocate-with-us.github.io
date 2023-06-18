@@ -1,5 +1,93 @@
 [
           {
+        "company": "Nexxiot",
+        "position": "Site Reliability Engineer (SRE)",
+        "location": "Zurich, Switzerland 🇨🇭",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 18, 2023",
+        "logo": "https://static.swissdevjobs.ch/logo-images/nexxiot-logo-1667230802865.jpg",
+        "description": "https://boards.eu.greenhouse.io/nexxiot/jobs/4062551101"
+    },
+          {
+        "company": "Nexxiot",
+        "position": "Product Owner",
+        "location": "Zurich, Switzerland 🇨🇭",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 18, 2023",
+        "logo": "https://static.swissdevjobs.ch/logo-images/nexxiot-logo-1667230802865.jpg",
+        "description": "https://boards.eu.greenhouse.io/nexxiot/jobs/4095769101"
+    },
+          {
+        "company": "Nexxiot",
+        "position": "Backend Software Engineer",
+        "location": "Zurich, Switzerland 🇨🇭",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 18, 2023",
+        "logo": "https://static.swissdevjobs.ch/logo-images/nexxiot-logo-1667230802865.jpg",
+        "description": "https://boards.eu.greenhouse.io/nexxiot/jobs/4094321101"
+    },
+          {
+        "company": "Nexxiot",
+        "position": "Hardware Engineer",
+        "location": "Zurich, Switzerland 🇨🇭",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 18, 2023",
+        "logo": "https://static.swissdevjobs.ch/logo-images/nexxiot-logo-1667230802865.jpg",
+        "description": "https://boards.eu.greenhouse.io/nexxiot/jobs/4085934101"
+    },
+          {
+        "company": "Nexxiot",
+        "position": "Frontend Software Engineer",
+        "location": "Zurich, Switzerland 🇨🇭",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 18, 2023",
+        "logo": "https://static.swissdevjobs.ch/logo-images/nexxiot-logo-1667230802865.jpg",
+        "description": "https://boards.eu.greenhouse.io/nexxiot/jobs/4091552101"
+    },
+    {
+        "company": "Truecaller",
+        "position": "Software Engineer - Android",
+        "location": "Stockholm, Sweden 🇸🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 18, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQFOVQ1AU0QAqw/company-logo_200_200/0/1574340515909?e=1687996800&v=beta&t=y50rJ2ITi0qDS5oVPodcKdlK_ZtzWOsS9xBpYxDbEgo",
+        "description": "https://www.truecaller.com/careers/jobs/5091163"
+    },
+          {
+        "company": "Truecaller",
+        "position": "Software Engineer - Backend",
+        "location": "Stockholm, Sweden 🇸🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 18, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQFOVQ1AU0QAqw/company-logo_200_200/0/1574340515909?e=1687996800&v=beta&t=y50rJ2ITi0qDS5oVPodcKdlK_ZtzWOsS9xBpYxDbEgo",
+        "description": "https://www.truecaller.com/careers/jobs/5002011"
+    },
+          {
+        "company": "Truecaller",
+        "position": "Senior Software Engineer - Android",
+        "location": "Stockholm, Sweden 🇸🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 18, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQFOVQ1AU0QAqw/company-logo_200_200/0/1574340515909?e=1687996800&v=beta&t=y50rJ2ITi0qDS5oVPodcKdlK_ZtzWOsS9xBpYxDbEgo",
+        "description": "https://www.truecaller.com/careers/jobs/5002052"
+    },
+          {
         "company": "Zalando SE",
         "position": "Fullstack Software Engineer (Java/Kotlin/JavaScript/TypeScript)",
         "location": "Munich, Germany 🇩🇪",
