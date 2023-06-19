@@ -1,4 +1,103 @@
 [
+         {
+        "company": "SumUp",
+        "position": "iOS Engineer",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 19, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFKTfHAXegsGQ/company-logo_200_200/0/1609758363237?e=1690416000&v=beta&t=uwEWPdD72gUhwNYLz2Etg_cSG8jrds9Y5k3LZI64Ic4",
+        "description": "https://www.sumup.com/careers/positions/berlin-germany/engineering/ios-engineer/6702786002/"
+    },
+          {
+        "company": "Adyen",
+        "position": "Technical Support POS",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 19, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_200_200/0/1664880075658?e=1691625600&v=beta&t=C2dGEabnLe5IcqLigxgCw0e4c1ILGw6yw8VPSQy7Ukk",
+        "description": "https://boards.greenhouse.io/adyen/jobs/4131974"
+    },
+          {
+        "company": "Allianz Technology",
+        "position": "Frontend/ Fullstack Developer",
+        "location": "Barcelona, Spain 🇪🇸",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 19, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEL8T8rxb8Zfw/company-logo_200_200/0/1654594093516?e=1695254400&v=beta&t=kGkkQTm-xIfgykrGm44UNk-FQCwCHP99ZkrDWVNtKXs",
+        "description": "https://careers.allianz.com/job/Frontend-Fullstack-Developer/938401101/"
+    },
+          {
+        "company": "Miratech",
+        "position": "Python/ETL Developer",
+        "location": "Barcelona, Spain 🇪🇸",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 19, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEG_z5KNOjzjg/company-logo_200_200/0/1677857889955?e=1695254400&v=beta&t=fZ6iY7G9zV9lx5tZV1BuL4ByOG9YnjMfNxlndehmF2M",
+        "description": "https://www.linkedin.com/jobs/search/?currentJobId=3627379771&f_C=9562&geoId=92000000&originToLandingJobPostings=3627379771%2C3628713132%2C3599110871%2C3599116079%2C3634365268%2C3605423156%2C3599110773%2C3620461797%2C3628712174"
+    },
+    {
+        "company": "Fever",
+        "position": "Senior Full Stack Engineer",
+        "location": "Madrid, Spain 🇪🇸",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 19, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQGZ34Z5Azy0Qw/company-logo_200_200/0/1581070180744?e=1695254400&v=beta&t=oE0c7Q8T8OUifjV5bT9TYZN-XhLlcK0F-wuKN2UDXi8",
+        "description": "https://careers.feverup.com/jobs/4090033101/senior-full-stack-engineer/"
+    },
+          {
+        "company": "Fever",
+        "position": "Senior Frontend Engineer",
+        "location": "Madrid, Spain 🇪🇸",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 19, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQGZ34Z5Azy0Qw/company-logo_200_200/0/1581070180744?e=1695254400&v=beta&t=oE0c7Q8T8OUifjV5bT9TYZN-XhLlcK0F-wuKN2UDXi8",
+        "description": "https://careers.feverup.com/jobs/4089984101/senior-frontend-engineer/"
+    },
+          {
+        "company": "Fever",
+        "position": "Senior Backend Engineer",
+        "location": "Madrid, Spain 🇪🇸",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 19, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQGZ34Z5Azy0Qw/company-logo_200_200/0/1581070180744?e=1695254400&v=beta&t=oE0c7Q8T8OUifjV5bT9TYZN-XhLlcK0F-wuKN2UDXi8",
+        "description": "https://careers.feverup.com/jobs/4085720101/senior-backend-engineer/"
+    },
+          {
+        "company": "Fever",
+        "position": "Tech Lead",
+        "location": "Madrid, Spain 🇪🇸",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 19, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQGZ34Z5Azy0Qw/company-logo_200_200/0/1581070180744?e=1695254400&v=beta&t=oE0c7Q8T8OUifjV5bT9TYZN-XhLlcK0F-wuKN2UDXi8",
+        "description": "https://careers.feverup.com/jobs/4090030101/tech-lead/"
+    },
+          {
+        "company": "Datos",
+        "position": "Senior Backend Developer",
+        "location": "Valencia, Spain 🇪🇸",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 19, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQE0wT_7LaJbOg/company-logo_200_200/0/1663926719147?e=1695254400&v=beta&t=R32C0rviBsc5cl7g7ISDZYSnm3ge6FwOag2cVN5oul0",
+        "description": "https://www.buscojobs.com.es/senior-backend-developer-ID-248142487"
+    },
           {
         "company": "Nexxiot",
         "position": "Site Reliability Engineer (SRE)",
@@ -603,17 +702,6 @@
         "post_date": "June 8, 2023",
         "logo": "https://media.licdn.com/dms/image/C4D0BAQFKTfHAXegsGQ/company-logo_200_200/0/1609758363237?e=1690416000&v=beta&t=uwEWPdD72gUhwNYLz2Etg_cSG8jrds9Y5k3LZI64Ic4",
         "description": "https://www.sumup.com/careers/positions/berlin-germany/engineering/payment-application-engineer/6733875002/"
-    },
-         {
-        "company": "SumUp",
-        "position": "iOS Engineer",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "June 8, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQFKTfHAXegsGQ/company-logo_200_200/0/1609758363237?e=1690416000&v=beta&t=uwEWPdD72gUhwNYLz2Etg_cSG8jrds9Y5k3LZI64Ic4",
-        "description": "https://www.sumup.com/careers/positions/berlin-germany/engineering/ios-engineer/6702786002/"
     },
          {
         "company": "SumUp",
