@@ -1,5 +1,104 @@
 [
          {
+        "company": "trivago",
+        "position": "Backend Software Engineer – Connectivity",
+        "location": "Düsseldorf, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFhKLgNXpe6qg/company-logo_200_200/0/1606478925574?e=1694044800&v=beta&t=xEZM8Jy8VjC4EvTiWL38W1_AZmI3U4bZ9vyLCPUIDTg",
+        "description": "https://careers.trivago.com/job/r6809910002/"
+    },
+         {
+        "company": "Adyen",
+        "position": "Data Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_200_200/0/1664880075658?e=1691625600&v=beta&t=C2dGEabnLe5IcqLigxgCw0e4c1ILGw6yw8VPSQy7Ukk",
+        "description": "https://boards.greenhouse.io/adyen/jobs/3728367"
+    },
+       {
+        "company": "ImmoScout24",
+        "position": "Data Scientist (d/f/m)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHymfxcVPKrhA/company-logo_200_200/0/1581940288258?e=1695254400&v=beta&t=9qSVrcmEDe7XJFnJahq0Mgnbxbzfy-R1cqsUsYgQkTA",
+        "description": "https://www.immobilienscout24.de/unternehmen/karriere/jobs/default-detail/data-scientist-d-f-m-5119150/"
+    },
+         {
+        "company": "trivago",
+        "position": "Site Reliability Engineer",
+        "location": "Düsseldorf, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFhKLgNXpe6qg/company-logo_200_200/0/1606478925574?e=1694044800&v=beta&t=xEZM8Jy8VjC4EvTiWL38W1_AZmI3U4bZ9vyLCPUIDTg",
+        "description": "https://careers.trivago.com/job/r6811785002"
+    },
+      {
+        "company": "Booking.com",
+        "position": "Product Manager, FinTech - SAP Systems",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEgzF5azm3fNA/company-logo_200_200/0/1628510256914?e=1687392000&v=beta&t=BAASpYFwuJpzsCSnzCKZQb5thxXuQkpOdMxafP41h-Q",
+        "description": "https://jobs.booking.com/careers/job/562949956241712"
+    },
+           {
+        "company": "Adyen",
+        "position": "Monitoring Operations Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_200_200/0/1664880075658?e=1691625600&v=beta&t=C2dGEabnLe5IcqLigxgCw0e4c1ILGw6yw8VPSQy7Ukk",
+        "description": "https://boards.greenhouse.io/adyen/jobs/4905966"
+    },
+         {
+        "company": "Booking.com",
+        "position": "Senior Engineering Manager",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEgzF5azm3fNA/company-logo_200_200/0/1628510256914?e=1687392000&v=beta&t=BAASpYFwuJpzsCSnzCKZQb5thxXuQkpOdMxafP41h-Q",
+        "description": "https://jobs.booking.com/careers/job/562949957550199"
+    },
+           {
+        "company": "Zalando SE",
+        "position": "Principal Software Engineer - Fulfillment Core",
+        "location": "Munich, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQGxrOwBBerWZg/company-logo_200_200/0/1666604520687?e=1693440000&v=beta&t=u64XaLRGSf4xKJDKyWm9utozBeDrP9esTI6eOXcqBqU",
+        "description": "https://jobs.zalando.com/en/jobs/5121225"
+    },
+           {
+        "company": "Adyen",
+        "position": "Enterprise Sales Manager",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_200_200/0/1664880075658?e=1691625600&v=beta&t=C2dGEabnLe5IcqLigxgCw0e4c1ILGw6yw8VPSQy7Ukk",
+        "description": "https://boards.greenhouse.io/adyen/jobs/3728525"
+    },
+         {
         "company": "SumUp",
         "position": "iOS Engineer",
         "location": "Berlin, Germany 🇩🇪",
