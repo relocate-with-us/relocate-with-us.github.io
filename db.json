@@ -1,4 +1,136 @@
 [
+           {
+        "company": "trivago",
+        "position": "Systems Engineer",
+        "location": "Düsseldorf, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 21, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFhKLgNXpe6qg/company-logo_200_200/0/1606478925574?e=1694044800&v=beta&t=xEZM8Jy8VjC4EvTiWL38W1_AZmI3U4bZ9vyLCPUIDTg",
+        "description": "https://careers.trivago.com/job/r6518133002/"
+    },
+         {
+        "company": "gridX",
+        "position": "Go/Linux Systems Engineer (M/W/D)",
+        "location": "Aachen & München, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 21, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/8310/social/4846ba3d2d414a97711cf772c6bbbe61.png",
+        "description": "https://gridx.jobs.personio.de/job/543699?display=en"
+    }, 
+         {
+        "company": "gridX",
+        "position": "Frontend Developer (M/W/D)",
+        "location": "Aachen & München, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 21, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/8310/social/4846ba3d2d414a97711cf772c6bbbe61.png",
+        "description": "https://gridx.jobs.personio.de/job/1086856?display=en"
+    }, 
+         {
+        "company": "gridX",
+        "position": "(Senior) Solution Engineer (M/F/D)",
+        "location": "Aachen & München, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 21, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/8310/social/4846ba3d2d414a97711cf772c6bbbe61.png",
+        "description": "https://gridx.jobs.personio.de/job/1081006?display=en"
+    }, 
+    {
+        "company": "gridX",
+        "position": "Senior Software Engineer (M/F/D)",
+        "location": "Aachen & München, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 21, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/8310/social/4846ba3d2d414a97711cf772c6bbbe61.png",
+        "description": "https://gridx.jobs.personio.de/job/631925?display=en"
+    }, 
+         {
+        "company": "gridX",
+        "position": "Backend Developer (M/F/D)",
+        "location": "Aachen & München, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 21, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/8310/social/4846ba3d2d414a97711cf772c6bbbe61.png",
+        "description": "https://gridx.jobs.personio.de/job/543653?display=en"
+    }, 
+         {
+        "company": "idealo internet GmbH",
+        "position": "Technical Product Owner",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 21, 2023",
+        "logo": "https://careers.recruiteecdn.com/image/upload/q_auto,f_auto,w_400,c_limit/production/images/Bkg/k2vZUeRp6e9_.png",
+        "description": "https://jobs.idealo.com/o/technical-product-owner-mfd"
+    },
+         {
+        "company": "idealo internet GmbH",
+        "position": "(Senior) Fullstack Engineer - Homepage",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 21, 2023",
+        "logo": "https://careers.recruiteecdn.com/image/upload/q_auto,f_auto,w_400,c_limit/production/images/Bkg/k2vZUeRp6e9_.png",
+        "description": "https://jobs.idealo.com/o/senior-fullstack-engineer-homepage-mfx"
+    },
+         {
+        "company": "idealo internet GmbH",
+        "position": "(Senior) Backend Developer",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 21, 2023",
+        "logo": "https://careers.recruiteecdn.com/image/upload/q_auto,f_auto,w_400,c_limit/production/images/Bkg/k2vZUeRp6e9_.png",
+        "description": "https://jobs.idealo.com/o/senior-backend-developer-mfx"
+    },
+         {
+        "company": "idealo internet GmbH",
+        "position": "PR & Communications Manager",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 21, 2023",
+        "logo": "https://careers.recruiteecdn.com/image/upload/q_auto,f_auto,w_400,c_limit/production/images/Bkg/k2vZUeRp6e9_.png",
+        "description": "https://jobs.idealo.com/o/pr-communications-manager-mwx-1"
+    },
+         {
+        "company": "idealo internet GmbH",
+        "position": "Brand & Communications Manager France",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 21, 2023",
+        "logo": "https://careers.recruiteecdn.com/image/upload/q_auto,f_auto,w_400,c_limit/production/images/Bkg/k2vZUeRp6e9_.png",
+        "description": "https://jobs.idealo.com/o/brand-communications-manager-france-mfx-berlin"
+    },
+         {
+        "company": "idealo internet GmbH",
+        "position": "(Senior) Performance Marketing Manager - Paid Search",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 21, 2023",
+        "logo": "https://careers.recruiteecdn.com/image/upload/q_auto,f_auto,w_400,c_limit/production/images/Bkg/k2vZUeRp6e9_.png",
+        "description": "https://jobs.idealo.com/l/en/o/senior-performance-marketing-manager-paid-search-mwx"
+    },
          {
         "company": "trivago",
         "position": "Backend Software Engineer – Connectivity",
@@ -3696,17 +3828,6 @@
         "logo": "https://media.licdn.com/dms/image/C4D0BAQFHJjbb8aK5qw/company-logo_200_200/0/1674060192311?e=1686182400&v=beta&t=LS4AIsOnZxvswH1XBr_Vzn0dLu-b7USKiYyi2sVE-EA",
         "description": "https://justdice.io/jobs/?j_id=d1e58800-4b6d-4bb6-8a9d-68368ac18207"
     },
-        {
-        "company": "gridX",
-        "position": "Cyber Security Engineer (M/W/D)",
-        "location": "Aachen & München, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "April 19, 2023",
-        "logo": "https://assets.cdn.personio.de/logos/8310/social/4846ba3d2d414a97711cf772c6bbbe61.png",
-        "description": "https://gridx.jobs.personio.de/job/1068660?display=en"
-    },
     {
         "company": "CELUS",
         "position": "Python Web Developer (M/F/D)",
@@ -3718,17 +3839,6 @@
         "logo": "https://media.licdn.com/dms/image/C4D0BAQETByKiqnJtRw/company-logo_200_200/0/1652106554606?e=1689811200&v=beta&t=N0kN-tEWVrEtgGfxT7rotu8qm2RfON4Y8opegKe-Ke0",
         "description": "https://www.arbeitnow.com/view/python-web-developer-celus-munich-355350"
     },
-    {
-        "company": "gridX",
-        "position": "Frontend Developer (M/W/D)",
-        "location": "Aachen & München, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "April 19, 2023",
-        "logo": "https://assets.cdn.personio.de/logos/8310/social/4846ba3d2d414a97711cf772c6bbbe61.png",
-        "description": "https://gridx.jobs.personio.de/job/1086856?display=en"
-    }, 
     {
         "company": "SimScale",
         "position": "Growth Product Manager (m/f/d)",
@@ -3751,50 +3861,6 @@
         "logo": "https://media.licdn.com/dms/image/C4E0BAQFPPtgmh14kNg/company-logo_200_200/0/1656648590366?e=1689811200&v=beta&t=8u_JaDVIUaHH-JRyTL9XeOrZmvGL3Z5L33mU9AG0XMQ",
         "description": "https://www.simscale.com/jobs/?gh_jid=6677617002"
     },    
-    {
-        "company": "gridX",
-        "position": "Go/Linux Systems Engineer (M/W/D)",
-        "location": "Aachen & München, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "April 19, 2023",
-        "logo": "https://assets.cdn.personio.de/logos/8310/social/4846ba3d2d414a97711cf772c6bbbe61.png",
-        "description": "https://gridx.jobs.personio.de/job/543699?display=en"
-    }, 
-    {
-        "company": "gridX",
-        "position": "Senior Software Engineer (M/F/D)",
-        "location": "Aachen & München, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "April 19, 2023",
-        "logo": "https://assets.cdn.personio.de/logos/8310/social/4846ba3d2d414a97711cf772c6bbbe61.png",
-        "description": "https://gridx.jobs.personio.de/job/631925?display=en"
-    }, 
-    {
-        "company": "gridX",
-        "position": "(Senior) Solution Engineer (M/F/D)",
-        "location": "Aachen & München, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "April 19, 2023",
-        "logo": "https://assets.cdn.personio.de/logos/8310/social/4846ba3d2d414a97711cf772c6bbbe61.png",
-        "description": "https://gridx.jobs.personio.de/job/1081006?display=en"
-    }, 
-    {
-        "company": "gridX",
-        "position": "Backend Developer (M/F/D)",
-        "location": "Aachen & München, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "April 19, 2023",
-        "logo": "https://assets.cdn.personio.de/logos/8310/social/4846ba3d2d414a97711cf772c6bbbe61.png",
-        "description": "https://gridx.jobs.personio.de/job/543653?display=en"
-    }, 
     {
         "company": "N26",
         "position": "Chatbot Analyst",
@@ -6589,17 +6655,6 @@
         "logo": "https://media.licdn.com/dms/image/C510BAQFopDEhRcpz9g/company-logo_200_200/0/1519855915315?e=1686787200&v=beta&t=lYLPX0J5-nZcsvsK_F0ALKL2LOFDU0-oDTy0BZpXIiM",
         "description": "https://nxp.wd3.myworkdayjobs.com/careers/job/Leuven/Customer---Application-Support-Engineer--software-_R-10037234-1"
     },
-        {
-        "company": "gridX",
-        "position": "Python Software Engineer (M/F/X)",
-        "location": "Aachen & München, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 16, 2023",
-        "logo": "https://assets.cdn.personio.de/logos/8310/social/4846ba3d2d414a97711cf772c6bbbe61.png",
-        "description": "https://gridx.jobs.personio.de/job/1051749?display=en"
-    }, 
         {
         "company": "Scalable GmbH",
         "position": "Investment Operations Manager - Wealth (m/f/x)",
