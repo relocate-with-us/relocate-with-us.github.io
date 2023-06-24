@@ -1,5 +1,93 @@
 [
          {
+        "company": "Client Server",
+        "position": "Back End Developer HLS Scala - Media Streaming",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 24, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQE_8pRTMzWPZA/company-logo_200_200/0/1557732216518?e=1695859200&v=beta&t=yBDexRFU_tobPmE4ZwdmVbqDYW9OrMXOyzsRS3wZyiE",
+        "description": "https://www.linkedin.com/jobs/view/3643926418/?refId=90499e78-2851-406e-a11f-be6fedb9b099&trackingId=1JNvyRU7SGynZdKSa4NhqQ%3D%3D&trk=flagship3_job_home_savedjobs"
+    },
+         {    
+        "company": "Selvita",
+        "position": "Java Developer",
+        "location": "Kraków, Poland 🇵🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 24, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQGwAb9j_bnazg/company-logo_200_200/0/1661175180417?e=1695859200&v=beta&t=9zDAu0DCdA03RORNHNtvusjvKdUv78lZw76fpw_Wm_A",
+        "description": "https://recruitment.elevato.net/en/java-developer,j,364"
+    },
+         {    
+        "company": "Selvita",
+        "position": "Python Developer",
+        "location": "Kraków, Poland 🇵🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 24, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQGwAb9j_bnazg/company-logo_200_200/0/1661175180417?e=1695859200&v=beta&t=9zDAu0DCdA03RORNHNtvusjvKdUv78lZw76fpw_Wm_A",
+        "description": "https://jobs.atos.net/job/Wroclaw-Senior-SAP-Consultant-SD-Pola-53-611/887594001/"
+    },
+           {
+        "company": "Picnic",
+        "position": "Data Scientist",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 24, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHS7qmjAasAyw/company-logo_200_200/0/1636644894385?e=1689206400&v=beta&t=8YoPVS7vyztYSPVjOYouqUv4H_VtnjhPiPZ7z1UJGkM",
+        "description": "https://picnic.app/careers/jobs/5068763/technology--amp--engineering/amsterdam-north-holland-netherlands/data-scientist"
+    },
+         {
+        "company": "Doctolib",
+        "position": "Salesforce Technical Architect",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 24, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQEWOdZn4rxDeg/company-logo_200_200/0/1652108782657?e=1694044800&v=beta&t=f82BSMUlxesnqfzUMT2WDveTRwwkv-IegWW9UTPEmuA",
+        "description": "https://careers.doctolib.com/job/?gh_jid=5616180003"
+    },
+           {
+        "company": "Adyen",
+        "position": "Software Engineer - Platform Observability",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 24, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_200_200/0/1664880075658?e=1691625600&v=beta&t=C2dGEabnLe5IcqLigxgCw0e4c1ILGw6yw8VPSQy7Ukk",
+        "description": "https://boards.greenhouse.io/adyen/jobs/5044061"
+    },
+         {
+        "company": "Adyen",
+        "position": "System Administrator",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 24, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_200_200/0/1664880075658?e=1691625600&v=beta&t=C2dGEabnLe5IcqLigxgCw0e4c1ILGw6yw8VPSQy7Ukk",
+        "description": "https://boards.greenhouse.io/adyen/jobs/4974508"
+    },
+         {
+        "company": "Vacos",
+        "position": "Java / Kotlin Developer",
+        "location": "Stuttgart, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 24, 2023",
+        "logo": "https://vacostime.de/wp-content/uploads/2022/12/vacostime-logo-schwarz-gruen.svg",
+        "description": "https://www.linkedin.com/jobs/view/3643765331/?refId=90499e78-2851-406e-a11f-be6fedb9b099&trackingId=ICNjTxsrQEimGs9ntIimIQ%3D%3D&trk=flagship3_job_home_savedjobs"
+    },
+         {
         "company": "Cinemo",
         "position": "Talent Acquisition Specialist (f/m/d) one year limited contract",
         "location": "Karlsruhe, Germany 🇩🇪",
