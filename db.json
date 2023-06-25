@@ -1,5 +1,70 @@
 [
          {
+        "company": "SupplyOn",
+        "position": "Full Stack Software Developer",
+        "location": "Munich, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 25, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHZoNoE80z7jg/company-logo_200_200/0/1610606350223?e=1695859200&v=beta&t=Wd00aqzM0V_m_TwMdLBEfKUjQUK5v-mYkETQRAtTQw0",
+        "description": "https://jobs.supplyon.com/Full-Stack-Software-Developer-wmd-eng-j361.html"
+    },
+         {
+        "company": "SumUp",
+        "position": "Senior Fullstack Software Engineer / Online Payments",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 25, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFKTfHAXegsGQ/company-logo_200_200/0/1609758363237?e=1690416000&v=beta&t=uwEWPdD72gUhwNYLz2Etg_cSG8jrds9Y5k3LZI64Ic4",
+        "description": "https://www.sumup.com/careers/positions/berlin-germany/engineering/senior-fullstack-software-engineer-online-payments-/6711500002/"
+    },
+         {
+        "company": "SumUp",
+        "position": "Frontend Engineer - Onboarding",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 25, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFKTfHAXegsGQ/company-logo_200_200/0/1609758363237?e=1690416000&v=beta&t=uwEWPdD72gUhwNYLz2Etg_cSG8jrds9Y5k3LZI64Ic4",
+        "description": "https://www.sumup.com/careers/positions/berlin-germany/engineering/frontend-engineer-onboarding/6627244002/"
+    },
+         {
+        "company": "SumUp",
+        "position": "Backend Engineer - Java/Kotlin",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 25, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFKTfHAXegsGQ/company-logo_200_200/0/1609758363237?e=1690416000&v=beta&t=uwEWPdD72gUhwNYLz2Etg_cSG8jrds9Y5k3LZI64Ic4",
+        "description": "https://www.sumup.com/careers/positions/berlin-germany/engineering/backend-engineer-javakotlin/6584452002/"
+    },
+         {
+        "company": "SumUp",
+        "position": "Full Stack Engineer",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 25, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFKTfHAXegsGQ/company-logo_200_200/0/1609758363237?e=1690416000&v=beta&t=uwEWPdD72gUhwNYLz2Etg_cSG8jrds9Y5k3LZI64Ic4",
+        "description": "https://www.sumup.com/careers/positions/berlin-germany/engineering/full-stack-engineer/6711501002/"
+    },
+         {
+        "company": "SumUp",
+        "position": "Android Engineer",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 25, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFKTfHAXegsGQ/company-logo_200_200/0/1609758363237?e=1690416000&v=beta&t=uwEWPdD72gUhwNYLz2Etg_cSG8jrds9Y5k3LZI64Ic4",
+        "description": "https://www.sumup.com/careers/positions/berlin-germany/engineering/android-engineer/6748607002"
+    },         {
         "company": "Client Server",
         "position": "Back End Developer HLS Scala - Media Streaming",
         "location": "Berlin, Germany 🇩🇪",
@@ -1088,50 +1153,7 @@
         "logo": "https://media.licdn.com/dms/image/C4D0BAQFKTfHAXegsGQ/company-logo_200_200/0/1609758363237?e=1690416000&v=beta&t=uwEWPdD72gUhwNYLz2Etg_cSG8jrds9Y5k3LZI64Ic4",
         "description": "https://www.sumup.com/careers/positions/berlin-germany/engineering/payment-application-engineer/6733875002/"
     },
-         {
-        "company": "SumUp",
-        "position": "Frontend Engineer - Onboarding",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "June 8, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQFKTfHAXegsGQ/company-logo_200_200/0/1609758363237?e=1690416000&v=beta&t=uwEWPdD72gUhwNYLz2Etg_cSG8jrds9Y5k3LZI64Ic4",
-        "description": "https://www.sumup.com/careers/positions/berlin-germany/engineering/frontend-engineer-onboarding/6627244002/"
-    },
-         {
-        "company": "SumUp",
-        "position": "Backend Engineer - Java/Kotlin",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "June 8, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQFKTfHAXegsGQ/company-logo_200_200/0/1609758363237?e=1690416000&v=beta&t=uwEWPdD72gUhwNYLz2Etg_cSG8jrds9Y5k3LZI64Ic4",
-        "description": "https://www.sumup.com/careers/positions/berlin-germany/engineering/backend-engineer-javakotlin/6584452002/"
-    },
-         {
-        "company": "SumUp",
-        "position": "Full Stack Engineer",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "June 8, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQFKTfHAXegsGQ/company-logo_200_200/0/1609758363237?e=1690416000&v=beta&t=uwEWPdD72gUhwNYLz2Etg_cSG8jrds9Y5k3LZI64Ic4",
-        "description": "https://www.sumup.com/careers/positions/berlin-germany/engineering/full-stack-engineer/6711501002/"
-    },
-         {
-        "company": "SumUp",
-        "position": "Android Engineer",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "June 8, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQFKTfHAXegsGQ/company-logo_200_200/0/1609758363237?e=1690416000&v=beta&t=uwEWPdD72gUhwNYLz2Etg_cSG8jrds9Y5k3LZI64Ic4",
-        "description": "https://www.sumup.com/careers/positions/berlin-germany/engineering/android-engineer/6748607002"
-    },
+
          {
         "company": "SumUp",
         "position": "Product Designer, Hardware",
