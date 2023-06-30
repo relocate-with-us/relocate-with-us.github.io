@@ -1,5 +1,148 @@
 [
          {
+        "company": "Diabolocom",
+        "position": "Java Developer",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQGGg6n49T7GRA/company-logo_200_200/0/1676623165479?e=1691625600&v=beta&t=DgS4kenFIv0jlV0-RFJBPTV8QM2WW3w-bM3xvYAKzcY",
+        "description": "https://jobs.eu.lever.co/diabolocom/8be11b9a-b208-4c85-8880-47cea70f3328"
+    },
+         {
+        "company": "HomeToGo",
+        "position": "Backend Developer - PHP (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQGJiD3znrXYCg/company-logo_200_200/0/1623823994504?e=1693440000&v=beta&t=HLnrLmvO0XLWqpA-j5dKsIb6B27WkixWUU8XWOWPIVo",
+        "description": "https://www.linkedin.com/jobs/search/?currentJobId=3643204154&f_C=9359057&geoId=92000000&originToLandingJobPostings=3643204154%2C3586583177%2C3618987282%2C3638818410%2C3623801629%2C3617638237%2C3617688360%2C3638819146%2C3617637297"
+    },
+           {
+        "company": "Doctolib",
+        "position": "Senior Software Engineer - C++, Golang, TypeScript (x/f/m)",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQEWOdZn4rxDeg/company-logo_200_200/0/1652108782657?e=1694044800&v=beta&t=f82BSMUlxesnqfzUMT2WDveTRwwkv-IegWW9UTPEmuA",
+        "description": "https://www.linkedin.com/jobs/view/3644941077"
+    },
+         {
+        "company": "Adjust",
+        "position": "Senior Database Engineer - PostgreSQL",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHPBTQl1rnjfA/company-logo_200_200/0/1621241839226?e=1687996800&v=beta&t=bjnxnaKmnq_HtXQCippiQ60P5N35q9YoCNgKH7cJR_0",
+        "description": "https://www.adjust.com/company/careers/jobs/apply/?jobid=6776996002"
+    },
+         {
+        "company": "Zalando SE",
+        "position": "Support - Collaboration Services",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQGxrOwBBerWZg/company-logo_200_200/0/1666604520687?e=1693440000&v=beta&t=u64XaLRGSf4xKJDKyWm9utozBeDrP9esTI6eOXcqBqU",
+        "description": "https://jobs.zalando.com/en/jobs/5097490"
+    }, 
+          {
+        "company": "HomeToGo",
+        "position": "Senior Android Developer - Smoobu (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQGJiD3znrXYCg/company-logo_200_200/0/1623823994504?e=1693440000&v=beta&t=HLnrLmvO0XLWqpA-j5dKsIb6B27WkixWUU8XWOWPIVo",
+        "description": "https://www.linkedin.com/jobs/view/3643830188"
+    },
+         {
+        "company": "HomeToGo",
+        "position": "Senior iOS Developer - Smoobu (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQGJiD3znrXYCg/company-logo_200_200/0/1623823994504?e=1693440000&v=beta&t=HLnrLmvO0XLWqpA-j5dKsIb6B27WkixWUU8XWOWPIVo",
+        "description": "https://www.linkedin.com/jobs/view/3643825948"
+    },
+         {
+        "company": "GetYourGuide",
+        "position": "Senior Software Engineer, Backend",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEGbwfgHCpCGg/company-logo_200_200/0/1624280872752?e=1696464000&v=beta&t=zO4me-b0VhXMO6ZC8DFgiL9e2tV0kH7K3rDe-wAzXrI",
+        "description": "https://www.getyourguide.careers/jobs/5137017"
+    },
+         {
+        "company": "GetYourGuide",
+        "position": "Senior Data Scientist - Data Products (Supply)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEGbwfgHCpCGg/company-logo_200_200/0/1624280872752?e=1696464000&v=beta&t=zO4me-b0VhXMO6ZC8DFgiL9e2tV0kH7K3rDe-wAzXrI",
+        "description": "https://www.getyourguide.careers/jobs/5103009"
+    },
+         {
+        "company": "Instapro",
+        "position": "Senior UX Designer (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQF8HFJCecgFhA/company-logo_200_200/0/1632412292093?e=1694649600&v=beta&t=gBlUdUfiTp0DBEQa0FqXXRJJ3fJRyGJK2srwtDhYBmk",
+        "description": "https://careers.instapro.group/o/senior-ux-designer-mfd"
+    },
+          {
+        "company": "BeamNG GmbH",
+        "position": "Senior Python Engineer (onsite/remote)",
+        "location": "Bremen, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEOx2l1yqwOww/company-logo_200_200/0/1542620900795?e=1696464000&v=beta&t=vpx0R-Oehnz_YIJbU2vYwpE2_rT0Fw4XXIwQ7_cGG1k",
+        "description": "https://www.linkedin.com/jobs/search/?currentJobId=3598038481&f_C=17921033&geoId=92000000&originToLandingJobPostings=3634486315%2C3605890851%2C3598038481%2C3631738527%2C3561421836%2C3631737396%2C3631735207"
+    },
+         {
+        "company": "BeamNG GmbH",
+        "position": "Senior Technical Artist (remote/onsite)",
+        "location": "Bremen, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEOx2l1yqwOww/company-logo_200_200/0/1542620900795?e=1696464000&v=beta&t=vpx0R-Oehnz_YIJbU2vYwpE2_rT0Fw4XXIwQ7_cGG1k",
+        "description": "https://www.linkedin.com/jobs/search/?currentJobId=3631735207&f_C=17921033&geoId=92000000&originToLandingJobPostings=3634486315%2C3605890851%2C3598038481%2C3631738527%2C3561421836%2C3631737396%2C3631735207"
+    },
+         {
+        "company": "BeamNG GmbH",
+        "position": "VFX / Unreal engine Programmer (onsite/remote)",
+        "location": "Bremen, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEOx2l1yqwOww/company-logo_200_200/0/1542620900795?e=1696464000&v=beta&t=vpx0R-Oehnz_YIJbU2vYwpE2_rT0Fw4XXIwQ7_cGG1k",
+        "description": "https://www.linkedin.com/jobs/search/?currentJobId=3561421836&f_C=17921033&geoId=92000000&originToLandingJobPostings=3634486315%2C3605890851%2C3598038481%2C3631738527%2C3561421836%2C3631737396%2C3631735207"
+    },
+         {
         "company": "Gigs",
         "position": "Senior Backend Engineer (f/m/x)",
         "location": "Berlin, Germany 🇩🇪",
@@ -64,17 +207,6 @@
         "post_date": "June 26, 2023",
         "logo": "https://media.licdn.com/dms/image/C4E0BAQFXGvF3Uwdx1A/company-logo_200_200/0/1670331291679?e=1695859200&v=beta&t=bVlYHM68eD0SzAvmLrzqknIhqTKWK2JRZ7N9CvY1p4I",
         "description": "https://www.statista.com/career/details/1155033"
-    },
-         {
-        "company": "PAIR Finance",
-        "position": "DevOps Engineer",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "June 26, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQEQs-oDKvVsKg/company-logo_200_200/0/1592983349755?e=1695859200&v=beta&t=G7eCoTYiQccaRY-81EA8wfMHC2j85GE3AT7kJphQFxA",
-        "description": "https://pairfinance.jobs.personio.com/job/647097?display=en"
     },
          {
         "company": "Gigs",
@@ -3210,17 +3342,6 @@
         "post_date": "May 8, 2023",
         "logo": "https://media.licdn.com/dms/image/C4E0BAQGGg6n49T7GRA/company-logo_200_200/0/1676623165479?e=1691625600&v=beta&t=DgS4kenFIv0jlV0-RFJBPTV8QM2WW3w-bM3xvYAKzcY",
         "description": "https://jobs.eu.lever.co/diabolocom/5c9fcb4f-d123-41f5-860d-d4cc622403f7"
-    },
-         {
-        "company": "Diabolocom",
-        "position": "Java Developer",
-        "location": "Paris, France 🇫🇷",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "May 8, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQGGg6n49T7GRA/company-logo_200_200/0/1676623165479?e=1691625600&v=beta&t=DgS4kenFIv0jlV0-RFJBPTV8QM2WW3w-bM3xvYAKzcY",
-        "description": "https://jobs.eu.lever.co/diabolocom/8be11b9a-b208-4c85-8880-47cea70f3328"
     },
          {
         "company": "justtrack",
