@@ -1,4 +1,114 @@
 [
+    {
+        "company": "N26",
+        "position": "Business Operations Manager - Insurance",
+        "location": "Barcelona, Spain 🇪🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHPfb-rJRi6oA/company-logo_200_200/0/1623663734137?e=1687392000&v=beta&t=QxI-Z7rpTLBJnu6jrp8L7oiCUta7qcGWMn3bhOBI8x4",
+        "description": "https://n26.com/en/careers/positions/5146601"
+    },
+         {
+        "company": "Kwalee",
+        "position": "Product Marketing Manager - PC / Console",
+        "location": "Leamington Spa , UK 🇬🇧",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHl9-hBv2j63w/company-logo_200_200/0/1663669020492?e=1696464000&v=beta&t=uVSawIyVhI0k2FyH_Yb-RhPdZFBSdFXHEnB78XykH0w",
+        "description": "https://jobs.jobvite.com/kwalee/job/oFf9nfwa"
+    },
+         {
+        "company": "Kwalee",
+        "position": "Product Owner - Game Discovery Platform",
+        "location": "Leamington Spa , UK 🇬🇧",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHl9-hBv2j63w/company-logo_200_200/0/1663669020492?e=1696464000&v=beta&t=uVSawIyVhI0k2FyH_Yb-RhPdZFBSdFXHEnB78XykH0w",
+        "description": "https://jobs.jobvite.com/kwalee/job/o8pVmfwy"
+    },
+         {
+        "company": "Kwalee",
+        "position": "Machine Learning Engineer",
+        "location": "Leamington Spa , UK 🇬🇧",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHl9-hBv2j63w/company-logo_200_200/0/1663669020492?e=1696464000&v=beta&t=uVSawIyVhI0k2FyH_Yb-RhPdZFBSdFXHEnB78XykH0w",
+        "description": "https://jobs.jobvite.com/kwalee/job/oPs0mfwn"
+    },
+         {
+        "company": "Kwalee",
+        "position": "DevOps Engineer",
+        "location": "Leamington Spa , UK 🇬🇧",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHl9-hBv2j63w/company-logo_200_200/0/1663669020492?e=1696464000&v=beta&t=uVSawIyVhI0k2FyH_Yb-RhPdZFBSdFXHEnB78XykH0w",
+        "description": "https://jobs.jobvite.com/kwalee/job/oDitlfwt"
+    },
+            {
+        "company": "Adyen",
+        "position": "CI/CD Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "July 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_200_200/0/1664880075658?e=1691625600&v=beta&t=C2dGEabnLe5IcqLigxgCw0e4c1ILGw6yw8VPSQy7Ukk",
+        "description": "https://boards.greenhouse.io/adyen/jobs/4200768"
+    },
+            {
+        "company": "Kwalee",
+        "position": "Lead QA - Mobile Games",
+        "location": "Leamington Spa , UK 🇬🇧",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHl9-hBv2j63w/company-logo_200_200/0/1663669020492?e=1696464000&v=beta&t=uVSawIyVhI0k2FyH_Yb-RhPdZFBSdFXHEnB78XykH0w",
+        "description": "https://jobs.jobvite.com/kwalee/job/o1vXhfwu"
+    },
+         {
+        "company": "Kwalee",
+        "position": "Machine Learning Engineer",
+        "location": "Leamington Spa , UK 🇬🇧",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHl9-hBv2j63w/company-logo_200_200/0/1663669020492?e=1696464000&v=beta&t=uVSawIyVhI0k2FyH_Yb-RhPdZFBSdFXHEnB78XykH0w",
+        "description": "https://jobs.jobvite.com/kwalee/job/oPs0mfwn"
+    },
+         {
+        "company": "Kwalee",
+        "position": "Data Science Core Developer",
+        "location": "Leamington Spa , UK 🇬🇧",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHl9-hBv2j63w/company-logo_200_200/0/1663669020492?e=1696464000&v=beta&t=uVSawIyVhI0k2FyH_Yb-RhPdZFBSdFXHEnB78XykH0w",
+        "description": "https://jobs.jobvite.com/kwalee/job/oL8IlfwG"
+    },
+         {
+        "company": "Kwalee",
+        "position": "Senior Software Engineer - Backend",
+        "location": "Leamington Spa , UK 🇬🇧",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHl9-hBv2j63w/company-logo_200_200/0/1663669020492?e=1696464000&v=beta&t=uVSawIyVhI0k2FyH_Yb-RhPdZFBSdFXHEnB78XykH0w",
+        "description": "https://jobs.jobvite.com/kwalee/job/o5hanfwD"
+    },
          {
         "company": "Diabolocom",
         "position": "Java Developer",
@@ -40,7 +150,7 @@
         "visa": "Visa Sponsorship",
         "contract": "Full Time",
         "post_date": "June 30, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQHPBTQl1rnjfA/company-logo_200_200/0/1621241839226?e=1687996800&v=beta&t=bjnxnaKmnq_HtXQCippiQ60P5N35q9YoCNgKH7cJR_0",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHPBTQl1rnjfA/company-logo_200_200/0/1621241839226?e=1696464000&v=beta&t=j9oRTMCAyMi8kw9fF8aKpEX6yZA6NGw_ipIw1e0th54",
         "description": "https://www.adjust.com/company/careers/jobs/apply/?jobid=6776996002"
     },
          {
@@ -1800,7 +1910,7 @@
         "visa": "Visa Sponsorship",
         "contract": "Full Time",
         "post_date": "June 2, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1687392000&v=beta&t=_8U5s5W3-MKqF8bjS-BTXycKfQRWicaAof9Z3cAuamE",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1696464000&v=beta&t=8eCZy-YPwV1I3pOezdEMbnHSSBwRrYRfsKaD0dvdToM",
         "description": "https://join.com/companies/adjoe/8192434-account-manager-demand-account-management-f-m-d"
     },
           {
