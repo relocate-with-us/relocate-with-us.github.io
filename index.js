@@ -72,7 +72,7 @@ function generateJobElement({ description, company, logo, reloc, visa, position,
               <div class="flex items-center justify-between">
                 <h2 class="font-bold text-xl">${position}</h2>
                 <div class="flex items-center">
-                  <div class="mt-2 text-gray-700 hidden md:block">${post_date}</div>
+                  <div class="mt-2 text-gray-700 hidden md:block">Posted: ${post_date}</div>
                   <button onclick="location.href='${description}'" type="button" class="hidden md:block bg-blue-500 text-white rounded py-2 px-3 hover:bg-blue-700 transition duration-300 ml-2">Apply<svg class="inline-block" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="20" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                   <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5"></path>
