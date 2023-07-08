@@ -1,4 +1,70 @@
 [
+    {
+        "company": "trivago",
+        "position": "Data Scientist – Insights Connectivity",
+        "location": "Düsseldorf, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFhKLgNXpe6qg/company-logo_200_200/0/1606478925574?e=1694044800&v=beta&t=xEZM8Jy8VjC4EvTiWL38W1_AZmI3U4bZ9vyLCPUIDTg",
+        "description": "https://careers.trivago.com/job/r6830945002"
+    },
+         {
+        "company": "Unikie",
+        "position": "Embedded SW Engineer in Abu Dhabi",
+        "location": "Abu Dhabi, United Arab Emirates 🇦🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQFFqbJ7NZx5iw/company-logo_200_200/0/1644270432539?e=1697068800&v=beta&t=IA_U7hSmY5YUTnoeP-eabJ1kg8-oVevdMnnIpG97OjI",
+        "description": "https://www.unikie.com/careers/embedded-sw-engineer-in-abu-dhabi/"
+    },
+         {
+        "company": "ImmoScout24",
+        "position": "(Senior) Network Engineer",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHymfxcVPKrhA/company-logo_200_200/0/1581940288258?e=1695254400&v=beta&t=9qSVrcmEDe7XJFnJahq0Mgnbxbzfy-R1cqsUsYgQkTA",
+        "description": "https://www.immobilienscout24.de/unternehmen/karriere/jobs/engineering/senior-network-engineer-5151595/"
+    },
+         {
+        "company": "ImmoScout24",
+        "position": "Product Manager (d/f/m) Media & Loft",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHymfxcVPKrhA/company-logo_200_200/0/1581940288258?e=1695254400&v=beta&t=9qSVrcmEDe7XJFnJahq0Mgnbxbzfy-R1cqsUsYgQkTA",
+        "description": "https://www.immobilienscout24.de/unternehmen/karriere/jobs/product-management/product-manager-d-f-m-media-loft-5157562/"
+    },
+         {
+        "company": "Booking.com",
+        "position": "Senior Data Engineer - Data & Machine Learning Platform",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEgzF5azm3fNA/company-logo_200_200/0/1628510256914?e=1687392000&v=beta&t=BAASpYFwuJpzsCSnzCKZQb5thxXuQkpOdMxafP41h-Q",
+        "description": "https://jobs.booking.com/careers/job/562949957364314"
+    },
+              {
+        "company": "Adyen",
+        "position": "Project Operation Manager",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "July 8, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQGCuaSq8TqalA/company-logo_200_200/0/1664880075658?e=1691625600&v=beta&t=C2dGEabnLe5IcqLigxgCw0e4c1ILGw6yw8VPSQy7Ukk",
+        "description": "https://boards.greenhouse.io/adyen/jobs/4974172"
+    },
          {
         "company": "HolidayPirates Group",
         "position": "Junior Global CRM Manager (f/m/d)",
