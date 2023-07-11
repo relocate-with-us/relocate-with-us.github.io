@@ -1,4 +1,114 @@
 [
+         {
+        "company": "MODE Recruitment",
+        "position": "Frontend Developer",
+        "location": "Munich, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFoqEuMFJDVwg/company-logo_200_200/0/1648216539327?e=1697068800&v=beta&t=0xjrw0Sjio7CsHkE7x2W-vSb1FcNdPFUr_KOORrVmX4",
+        "description": "https://www.linkedin.com/jobs/view/3659748001"
+    },
+    {
+        "company": "arculus – a Jungheinrich company",
+        "position": "Software Engineer - DevOps (d/f/m)",
+        "location": "Munich, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQHmJtepaN0OrA/company-logo_200_200/0/1688239617630?e=1697068800&v=beta&t=iB2lKHTZCkcQQ0v9SgNtY9gSFpU3bTdjtV6mAktG4Kw",
+        "description": "https://www.arculus.de/jobs/?gh_jid=5566155003"
+    },
+    {
+        "company": "arculus – a Jungheinrich company",
+        "position": "IT Specialist (d/f/m)",
+        "location": "Munich, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQHmJtepaN0OrA/company-logo_200_200/0/1688239617630?e=1697068800&v=beta&t=iB2lKHTZCkcQQ0v9SgNtY9gSFpU3bTdjtV6mAktG4Kw",
+        "description": "https://www.arculus.de/jobs/?gh_jid=5620777003"
+    },
+    {
+        "company": "arculus – a Jungheinrich company",
+        "position": "System Engineer IT (d/f/m)",
+        "location": "Munich, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQHmJtepaN0OrA/company-logo_200_200/0/1688239617630?e=1697068800&v=beta&t=iB2lKHTZCkcQQ0v9SgNtY9gSFpU3bTdjtV6mAktG4Kw",
+        "description": "https://www.arculus.de/jobs/?gh_jid=5622075003"
+    },
+    {
+        "company": "Picnic",
+        "position": "iOS Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "July 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHS7qmjAasAyw/company-logo_200_200/0/1636644894385?e=1689206400&v=beta&t=8YoPVS7vyztYSPVjOYouqUv4H_VtnjhPiPZ7z1UJGkM",
+        "description": "https://picnic.app/careers/jobs/3642838/technology--amp--engineering/amsterdam-north-holland-netherlands/ios-engineer"
+    },
+    {
+        "company": "Picnic",
+        "position": "Angular Developer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "July 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHS7qmjAasAyw/company-logo_200_200/0/1636644894385?e=1689206400&v=beta&t=8YoPVS7vyztYSPVjOYouqUv4H_VtnjhPiPZ7z1UJGkM",
+        "description": "https://picnic.app/careers/jobs/1647816/technology--amp--engineering/amsterdam-north-holland-netherlands/angular-developer"
+    },
+          {
+        "company": "Picnic",
+        "position": "Pricing & Promotions - Data Analyst (m/w/d)",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "July 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHS7qmjAasAyw/company-logo_200_200/0/1636644894385?e=1689206400&v=beta&t=8YoPVS7vyztYSPVjOYouqUv4H_VtnjhPiPZ7z1UJGkM",
+        "description": "https://picnic.app/careers/jobs/5029059/strategy--amp--analytics/d%C3%BCsseldorf-north-rhine-westphalia-germany/pricing--amp--promotions---data-analyst--m-w-d-"
+    },
+    {
+        "company": "Picnic",
+        "position": "Visual Designer H/F",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "July 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHS7qmjAasAyw/company-logo_200_200/0/1636644894385?e=1689206400&v=beta&t=8YoPVS7vyztYSPVjOYouqUv4H_VtnjhPiPZ7z1UJGkM",
+        "description": "https://picnic.app/careers/jobs/5074717/commercial/paris-paris-france/visual-designer-h-f"
+    },
+          {
+        "company": "BlaBlaCar",
+        "position": "Confirmed Python Backend Engineer - BlaBlaCar Daily",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 11, 2023",
+        "logo": "https://www.blablacar.com/static/images/blablacar.svg",
+        "description": "https://jobs.lever.co/blablacar/7f38da4f-82e6-419a-ba54-7481e0a240d1"
+    }, 
+    {
+        "company": "BlaBlaCar",
+        "position": "Senior Brand Designer",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 11, 2023",
+        "logo": "https://www.blablacar.com/static/images/blablacar.svg",
+        "description": "https://jobs.lever.co/blablacar/c38d0e02-c56c-41a2-9c99-269668999308"
+    }, 
     {
         "company": "trivago",
         "position": "Data Scientist – Insights Connectivity",
@@ -2562,17 +2672,6 @@
         "post_date": "May 28, 2023",
         "logo": "https://media.licdn.com/dms/image/C4E0BAQG2hXy9alxSGA/company-logo_200_200/0/1668755852643?e=1693440000&v=beta&t=31tuqJI0qNThUzs-qSvJVNY4WIejMLYl5JMUpc4mPKI",
         "description": "https://join.com/companies/zenhomes/8163756-senior-backend-engineer-m-f-d"
-    },
-          {
-        "company": "Picnic",
-        "position": "Angular Developer",
-        "location": "Amsterdam, Netherlands 🇳🇱",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "May 28, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQHS7qmjAasAyw/company-logo_200_200/0/1636644894385?e=1689206400&v=beta&t=8YoPVS7vyztYSPVjOYouqUv4H_VtnjhPiPZ7z1UJGkM",
-        "description": "https://picnic.app/careers/jobs/1647816/technology--amp--engineering/amsterdam-north-holland-netherlands/angular-developer"
     },
           {
         "company": "Adyen",
