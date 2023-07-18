@@ -1,4 +1,92 @@
 [
+       {
+        "company": "Scout24",
+        "position": "Junior Backend Engineer (d/f/m)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 18, 2023",
+        "logo": "https://www.immobilienscout24.de/company/typo3conf/ext/sfsitepackage/Resources/Public/Images/immoscout24.svg",
+        "description": "https://www.scout24.com/en/career/jobs/engineering/junior-backend-engineer-d-f-m-5186957"
+    },
+         {
+        "company": "DataScienceJobs.es",
+        "position": "Data Engineer",
+        "location": "Madrid, Spain 🇪🇸",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "July 18, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQESKa1Xv-jr7Q/company-logo_200_200/0/1559808997142?e=1697673600&v=beta&t=7FpseKUHEnRIjJgU2-loKi415k4oK7XDOuiRZ6PEYPU",
+        "description": "https://www.linkedin.com/jobs/view/3666559665"
+    },
+      {
+        "company": "Micropsi Industries",
+        "position": "Performance Marketing Manager (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "July 18, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHWI9cvSIEInw/company-logo_200_200/0/1590235578170?e=1692230400&v=beta&t=RSdbv7e5g-YhdLpGRQC5R4aEZY1pwoy_b2U9rdu3GvA",
+        "description": "https://join.com/companies/micropsi-industries/8629168-performance-marketing-manager-m-f-d"
+    },
+         {
+        "company": "raisin",
+        "position": "(Senior) Software Engineer (Frontend) (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 18, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGz9FQVATVRAQ/company-logo_200_200/0/1647426086850?e=1689811200&v=beta&t=kbBCou3WMp77s03z43hKKrmnNPB22Sr8AFx7oM2uwQY",
+        "description": "https://join.com/companies/raisin/8646344-senior-software-engineer-frontend-m-f-d"
+    }, 
+         {
+        "company": "MEDWING",
+        "position": "Senior Full Stack Engineer (gn)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 18, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEWCwjjIpNBtw/company-logo_200_200/0/1657801850983?e=1687392000&v=beta&t=aqhfwyjwMTjiuTcPGYdJUK5Jqwso8UVzs5E_ECe6t2Y",
+        "description": "https://www.linkedin.com/jobs/view/3667898546"
+    }, 
+         {
+        "company": "HelloFresh",
+        "position": "Product Analyst - Food (m/f/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "July 18, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGPF61q2af2nw/company-logo_200_200/0/1656691720475?e=1691625600&v=beta&t=tGr7fdtGWJM62Ecl1Chm0F35bsKQ3z4opMpwrsoqpx0",
+        "description": "https://careers.hellofresh.com/global/en/job/5187341"
+    },
+          {
+        "company": "HelloFresh",
+        "position": "Principal Engineer",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "July 18, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGPF61q2af2nw/company-logo_200_200/0/1656691720475?e=1691625600&v=beta&t=tGr7fdtGWJM62Ecl1Chm0F35bsKQ3z4opMpwrsoqpx0",
+        "description": "https://careers.hellofresh.com/global/en/job/5151724"
+    },
+         {
+        "company": "Picnic",
+        "position": "Senior Python Engineer",
+        "location": "Düsseldorf, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "July 18, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHS7qmjAasAyw/company-logo_200_200/0/1636644894385?e=1689206400&v=beta&t=8YoPVS7vyztYSPVjOYouqUv4H_VtnjhPiPZ7z1UJGkM",
+        "description": "https://picnic.app/careers/jobs/4565089/technology--amp--engineering/amsterdam-north-holland-netherlands/senior-python-engineer"
+    },
          {
         "company": "adjoe",
         "position": "Senior Android Developer (f/m/d)",
@@ -3475,17 +3563,6 @@
         "post_date": "May 15, 2023",
         "logo": "https://media.licdn.com/dms/image/C4D0BAQHWI9cvSIEInw/company-logo_200_200/0/1590235578170?e=1692230400&v=beta&t=RSdbv7e5g-YhdLpGRQC5R4aEZY1pwoy_b2U9rdu3GvA",
         "description": "https://micropsi-industries.jobs.personio.de/job/1099645?display=en"
-    },
-    {
-        "company": "Micropsi Industries",
-        "position": "Performance Marketing Manager (m/f/d)",
-        "location": "Berlin, Germany 🇩🇪",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "May 15, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQHWI9cvSIEInw/company-logo_200_200/0/1590235578170?e=1692230400&v=beta&t=RSdbv7e5g-YhdLpGRQC5R4aEZY1pwoy_b2U9rdu3GvA",
-        "description": "https://micropsi-industries.jobs.personio.de/job/1062370?display=en"
     },
     {
         "company": "Energetech",
