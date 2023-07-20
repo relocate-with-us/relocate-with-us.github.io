@@ -1,5 +1,93 @@
 [
        {
+        "company": "Merantix Momentum",
+        "position": "AI Full Stack Engineer (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQH1maZsfbDABw/company-logo_200_200/0/1648046562861?e=1697673600&v=beta&t=RfrfkriYBWj7eE_lA-d7X7mWj1FJv_mJNI0MWrQ3Hsw",
+        "description": "https://join.com/companies/mxlabs/8664026-ai-full-stack-engineer-m-f-d"
+    },
+       {
+        "company": "adjoe",
+        "position": "DevOps Engineer (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1696464000&v=beta&t=8eCZy-YPwV1I3pOezdEMbnHSSBwRrYRfsKaD0dvdToM",
+        "description": "https://join.com/companies/adjoe/8669156-devops-engineer-f-m-d"
+    },
+       {
+        "company": "Hashtag You",
+        "position": "Junior CRM Manager (m/f/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQF8Eo4pAqBusA/company-logo_200_200/0/1536050063322?e=1697673600&v=beta&t=I6PpShmHCNblHRN2oPSfkVDFv5uSPdgulKtanzetBPA",
+        "description": "https://hashtagyou.jobs.personio.com/job/1192172?display=en"
+    },
+       {
+        "company": "ImmoScout24",
+        "position": "Product Manager (d/f/m) Media & Loft",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHymfxcVPKrhA/company-logo_200_200/0/1581940288258?e=1695254400&v=beta&t=9qSVrcmEDe7XJFnJahq0Mgnbxbzfy-R1cqsUsYgQkTA",
+        "description": "https://www.immobilienscout24.de/unternehmen/karriere/jobs/product-management/product-manager-d-f-m-media-loft-5157562/"
+    },
+       {
+        "company": "Sunday GmbH",
+        "position": "Unity Gameplay Developer (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 20, 2023",
+        "logo": "//cdn.join.com/5f759e23632ed40001dffb67/sunday-gmb-h-logo-s.png",
+        "description": "https://join.com/companies/sunday/8668733-unity-gameplay-developer-f-m-d-munich"
+    },
+       {
+        "company": "Civey",
+        "position": "(Junior) Research Analyst (d/m/w)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/D560BAQGpLqC7VjeG5g/company-logo_200_200/0/1682577429005?e=1697673600&v=beta&t=NMUP_VZcBg4TR50k9sMNkIMnTyPg7nQ7Wai1hxEmm60",
+        "description": "https://civey-gmbh.jobs.personio.de/job/1067433?display=en"
+    },
+       {
+        "company": "Scout24",
+        "position": "Business Intelligence Developer (f/m/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 20, 2023",
+        "logo": "https://www.immobilienscout24.de/company/typo3conf/ext/sfsitepackage/Resources/Public/Images/immoscout24.svg",
+        "description": "https://www.scout24.com/en/career/jobs/engineering/business-intelligence-developer-f-m-d-5202134"
+    },
+         {
+        "company": "Oetker Digital",
+        "position": "(Senior) Product Data Manager (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "July 20, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQF4spVwYpO9vQ/company-logo_200_200/0/1658242695577?e=1692835200&v=beta&t=14EFd0bs2KgJX2zpNRnHaZ4lg8laovNbiIcuVS3-k8M",
+        "description": "https://join.com/companies/oetkerdigital/8662470-senior-product-data-manager-m-f-d"
+    }, 
+       {
         "company": "Scout24",
         "position": "Junior Backend Engineer (d/f/m)",
         "location": "Berlin, Germany 🇩🇪",
@@ -394,17 +482,6 @@
         "post_date": "July 8, 2023",
         "logo": "https://media.licdn.com/dms/image/C4D0BAQHymfxcVPKrhA/company-logo_200_200/0/1581940288258?e=1695254400&v=beta&t=9qSVrcmEDe7XJFnJahq0Mgnbxbzfy-R1cqsUsYgQkTA",
         "description": "https://www.immobilienscout24.de/unternehmen/karriere/jobs/engineering/senior-network-engineer-5151595/"
-    },
-         {
-        "company": "ImmoScout24",
-        "position": "Product Manager (d/f/m) Media & Loft",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "July 8, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQHymfxcVPKrhA/company-logo_200_200/0/1581940288258?e=1695254400&v=beta&t=9qSVrcmEDe7XJFnJahq0Mgnbxbzfy-R1cqsUsYgQkTA",
-        "description": "https://www.immobilienscout24.de/unternehmen/karriere/jobs/product-management/product-manager-d-f-m-media-loft-5157562/"
     },
          {
         "company": "Booking.com",
@@ -7205,17 +7282,6 @@
         "post_date": "March 21, 2023",
         "logo": "https://media.licdn.com/dms/image/C4D0BAQH3E9hdGSjeAg/company-logo_200_200/0/1587472483648?e=1687392000&v=beta&t=2-fSPVQv38QYcLz4rkjeo0Jor4T9JM82svWgbbyUfi0",
         "description": "https://applike-group.com/jobs/?j_id=a2dba7da-f3b9-44c3-bb03-b01bddb00a6e"
-    },
-          {
-        "company": "applike-group",
-        "position": "Unity Gameplay Developer (f/m/d)",
-        "location": "Hamburg, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 21, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQH3E9hdGSjeAg/company-logo_200_200/0/1587472483648?e=1687392000&v=beta&t=2-fSPVQv38QYcLz4rkjeo0Jor4T9JM82svWgbbyUfi0",
-        "description": "https://applike-group.com/jobs/?j_id=2c551fe8-4c39-4248-b85e-330db950836f"
     },
           {
         "company": "applike-group",
