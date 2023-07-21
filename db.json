@@ -76,17 +76,7 @@
         "logo": "https://www.immobilienscout24.de/company/typo3conf/ext/sfsitepackage/Resources/Public/Images/immoscout24.svg",
         "description": "https://www.scout24.com/en/career/jobs/engineering/business-intelligence-developer-f-m-d-5202134"
     },
-         {
-        "company": "Oetker Digital",
-        "position": "(Senior) Product Data Manager (m/f/d)",
-        "location": "Berlin, Germany 🇩🇪",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "July 20, 2023",
-        "logo": "https://media.licdn.com/dms/image/C560BAQF4spVwYpO9vQ/company-logo_200_200/0/1658242695577?e=1692835200&v=beta&t=14EFd0bs2KgJX2zpNRnHaZ4lg8laovNbiIcuVS3-k8M",
-        "description": "https://join.com/companies/oetkerdigital/8662470-senior-product-data-manager-m-f-d"
-    }, 
+
        {
         "company": "Scout24",
         "position": "Junior Backend Engineer (d/f/m)",
@@ -3300,28 +3290,6 @@
         "logo": "https://media.licdn.com/dms/image/D4E0BAQGDUUj6j5dcMg/company-logo_200_200/0/1682418404704?e=1692835200&v=beta&t=pXlr0SZBHdlE3HOgSEJCvXLSIm0wm2X-4rOzI4B6s9s",
         "description": "https://evbox.com/en/about/careers/job?gh_jid=5549834003"
     },
-       {
-        "company": "Oetker Digital",
-        "position": "(Senior) Consultant Data Protection (m/f/d)",
-        "location": "Berlin, Germany 🇩🇪",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "May 21, 2023",
-        "logo": "https://media.licdn.com/dms/image/C560BAQF4spVwYpO9vQ/company-logo_200_200/0/1658242695577?e=1692835200&v=beta&t=14EFd0bs2KgJX2zpNRnHaZ4lg8laovNbiIcuVS3-k8M",
-        "description": "https://careers.oetkerdigital.com/o/senior-consultant-data-protection-mfd"
-    }, 
-       {
-        "company": "Oetker Digital",
-        "position": " (Senior) Data & Analytics Consultant (m/f/d)",
-        "location": "Berlin, Germany 🇩🇪",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "May 21, 2023",
-        "logo": "https://media.licdn.com/dms/image/C560BAQF4spVwYpO9vQ/company-logo_200_200/0/1658242695577?e=1692835200&v=beta&t=14EFd0bs2KgJX2zpNRnHaZ4lg8laovNbiIcuVS3-k8M",
-        "description": "https://careers.oetkerdigital.com/o/senior-data-analytics-consultant-mfd"
-    }, 
        {
         "company": "GUARDSQUARE",
         "position": "DevOps Engineer",
