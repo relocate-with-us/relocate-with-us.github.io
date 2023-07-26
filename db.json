@@ -1,6 +1,61 @@
 [
          {
         "company": "Statista",
+        "position": "(Senior) Data Analyst - askStatista (m/f/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 26, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFXGvF3Uwdx1A/company-logo_200_200/0/1670331291679?e=1695859200&v=beta&t=bVlYHM68eD0SzAvmLrzqknIhqTKWK2JRZ7N9CvY1p4I",
+        "description": "https://statista.jobs.personio.de/job/1197598?display=en"
+    },
+         {
+        "company": "About you",
+        "position": "Analytics Engineer (m/f/d) - SCAYLE",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 26, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHhyX2YHtbNqw/company-logo_200_200/0/1557995840152?e=1689206400&v=beta&t=XwNXcahB6Pa4yt9BNM-pTHGEbn5k1xrKi9kHiQ_BcAY",
+        "description": "https://www.linkedin.com/jobs/view/3674671829"
+    },
+         {
+        "company": "Payrails",
+        "position": "Marketing Specialist (all genders)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "July 26, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQFHWP40ck-1lA/company-logo_200_200/0/1666191891137?e=1691625600&v=beta&t=rzmWm6_dZBUUMyM4pZVcX9OAFSc9ODGOCZ0xqDcknDA",
+        "description": "https://payrails-a878df-6480e55b81e9de7932c1b74.webflow.io/career/jobs?id=1199084"
+    },
+         {
+        "company": "Wageningen University & Research",
+        "position": "Data Scientist for Developing an Animal Digital Twin",
+        "location": "Wageningen, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 26, 2023",
+        "logo": "https://media.licdn.com/dms/image/C510BAQFQJQXtOy2Stw/company-logo_200_200/0/1519889640020?e=1696464000&v=beta&t=aBTgUQc7EBZ7DOxjmz7d6jp4YvPe78Uf6QVA1oFJfis",
+        "description": "https://www.wur.nl/nl/vacature/data-scientist-for-developing-an-animal-digital-twin.htm"
+    },
+         {
+        "company": "Wageningen University & Research",
+        "position": "PhD Candidate in Nutrition and measuring Biological Ageing",
+        "location": "Wageningen, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 26, 2023",
+        "logo": "https://media.licdn.com/dms/image/C510BAQFQJQXtOy2Stw/company-logo_200_200/0/1519889640020?e=1696464000&v=beta&t=aBTgUQc7EBZ7DOxjmz7d6jp4YvPe78Uf6QVA1oFJfis",
+        "description": "https://www.wur.nl/nl/vacature/phd-candidate-in-nutrition-and-measuring-biological-ageing.htm"
+    },
+         {
+        "company": "Statista",
         "position": "Junior Analyst Technology Markets (m/f/d)",
         "location": "Hamburg, Germany 🇩🇪",
         "reloc": "Relocation Assistance",
