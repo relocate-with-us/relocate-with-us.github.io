@@ -1,4 +1,59 @@
 [
+    {
+        "company": "Brunel",
+        "position": "Junior Java Engineer",
+        "location": "Eindhoven, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHLdgv4dmCReA/company-logo_200_200/0/1657521306559?e=1698883200&v=beta&t=IGTwkt8UGhoMnPIwkrmb0BBui8GhyUmP2A9x7uF4EFY",
+        "description": "https://www.brunel.net/nl-nl/vacatures/junior-java-engineer-pub402757"
+    },
+         {
+        "company": "Brunel",
+        "position": "Junior .NET Engineer",
+        "location": "Eindhoven, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHLdgv4dmCReA/company-logo_200_200/0/1657521306559?e=1698883200&v=beta&t=IGTwkt8UGhoMnPIwkrmb0BBui8GhyUmP2A9x7uF4EFY",
+        "description": "https://www.brunel.net/nl-nl/vacatures/junior-net-engineer-pub402759"
+    },
+         {
+        "company": "HelloFresh",
+        "position": "Senior Data Engineer (f/m/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "July 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGPF61q2af2nw/company-logo_200_200/0/1656691720475?e=1691625600&v=beta&t=tGr7fdtGWJM62Ecl1Chm0F35bsKQ3z4opMpwrsoqpx0",
+        "description": "https://careers.hellofresh.com/global/en/job/5100839"
+    },
+         {
+        "company": "arculus – a Jungheinrich company",
+        "position": "Rust Developer (d/f/m)",
+        "location": "Munich, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQHmJtepaN0OrA/company-logo_200_200/0/1688239617630?e=1697068800&v=beta&t=iB2lKHTZCkcQQ0v9SgNtY9gSFpU3bTdjtV6mAktG4Kw",
+        "description": "https://www.arculus.de/jobs/?gh_jid=5684797003"
+    },
+         {
+        "company": "BlaBlaCar",
+        "position": "Product Manager - BlaBlaCar Daily",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "July 30, 2023",
+        "logo": "https://www.blablacar.com/static/images/blablacar.svg",
+        "description": "https://jobs.lever.co/blablacar/493f4637-bedf-4986-8739-b414d5060c0a/apply"
+    }, 
          {
         "company": "Statista",
         "position": "(Senior) Data Analyst - askStatista (m/f/d)",
