@@ -1,4 +1,70 @@
 [
+         {
+        "company": "HomeToGo",
+        "position": "Senior Analytical Engineer - Marketing (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "August 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQGJiD3znrXYCg/company-logo_200_200/0/1623823994504?e=1693440000&v=beta&t=HLnrLmvO0XLWqpA-j5dKsIb6B27WkixWUU8XWOWPIVo",
+        "description": "https://www.linkedin.com/jobs/view/3650992740"
+    },
+    {
+        "company": "Booking.com",
+        "position": "Manager UX Writing & Content Design, FinTech",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEgzF5azm3fNA/company-logo_200_200/0/1628510256914?e=1687392000&v=beta&t=BAASpYFwuJpzsCSnzCKZQb5thxXuQkpOdMxafP41h-Q",
+        "description": "https://jobs.booking.com/careers/job/562949955618345"
+    },
+    {
+        "company": "STAFIDE",
+        "position": "Azure Data Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/D560BAQGj4RvGTZcAcg/company-logo_200_200/0/1688554096089?e=1698883200&v=beta&t=iBe8CQnJOxTKeMbjF93aRs89zn41TWfiXJIZ6yJUmB8",
+        "description": "https://stafide.zohorecruit.com/jobs/Careers/596028000011185096/Azure-Data-Engineer"
+    },
+    {
+        "company": "idealo internet GmbH",
+        "position": "Senior Backend Engineer (Kotlin) – Mobile Application Development (m|f|x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 3, 2023",
+        "logo": "https://careers.recruiteecdn.com/image/upload/q_auto,f_auto,w_400,c_limit/production/images/Bkg/k2vZUeRp6e9_.png",
+        "description": "https://jobs.idealo.com/o/senior-backend-engineer-kotlin-mobile-application-development-mfx"
+    },
+    {
+        "company": "trivago",
+        "position": "Quality Assurance Engineer",
+        "location": "Düsseldorf, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFhKLgNXpe6qg/company-logo_200_200/0/1606478925574?e=1694044800&v=beta&t=xEZM8Jy8VjC4EvTiWL38W1_AZmI3U4bZ9vyLCPUIDTg",
+        "description": "https://careers.trivago.com/job/r6743285002"
+    },
+         {
+        "company": "SumUp",
+        "position": "Backend Engineer (Kotlin) - Reporting & Insights",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFKTfHAXegsGQ/company-logo_200_200/0/1609758363237?e=1690416000&v=beta&t=uwEWPdD72gUhwNYLz2Etg_cSG8jrds9Y5k3LZI64Ic4",
+        "description": "https://www.sumup.com/careers/positions/berlin-germany/engineering/backend-engineer-kotlin-reporting-insights/6872555002"
+    },
     {
         "company": "Brunel",
         "position": "Junior Java Engineer",
