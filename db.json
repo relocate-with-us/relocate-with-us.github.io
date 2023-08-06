@@ -1,4 +1,81 @@
 [
+    {
+        "company": "STAFIDE",
+        "position": "Node.js Developer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 6, 2023",
+        "logo": "https://media.licdn.com/dms/image/D560BAQGj4RvGTZcAcg/company-logo_200_200/0/1688554096089?e=1698883200&v=beta&t=iBe8CQnJOxTKeMbjF93aRs89zn41TWfiXJIZ6yJUmB8",
+        "description": "https://stafide.zohorecruit.com/jobs/Careers/596028000011240018/Node-js-Developer"
+    },
+         {
+        "company": "University of Bath",
+        "position": "Marketing and Communications Lead (CH10866)",
+        "location": "Bath , UK 🇬🇧",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 6, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHQLVwhPQAQ1g/company-logo_200_200/0/1677695706581?e=1698278400&v=beta&t=4f1xwjP_TvhL71ncx9PxR4RO-ihFBx60yESwi_DBfG4",
+        "description": "https://www.bath.ac.uk/jobs/Vacancy.aspx?ref=CH10866"
+    },
+         {
+        "company": "justDice",
+        "position": "Backend QA Tester",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 6, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFHJjbb8aK5qw/company-logo_200_200/0/1674060192311?e=1686182400&v=beta&t=LS4AIsOnZxvswH1XBr_Vzn0dLu-b7USKiYyi2sVE-EA",
+        "description": "https://join.com/companies/justdice/8821218-backend-qa-tester-f-m-d"
+    },
+           {
+        "company": "MOIA",
+        "position": "Senior Data Engineer - Pooling Analytics (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "August 6, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQGJiD3znrXYCg/company-logo_200_200/0/1623823994504?e=1693440000&v=beta&t=HLnrLmvO0XLWqpA-j5dKsIb6B27WkixWUU8XWOWPIVo",
+        "description": "https://boards.eu.greenhouse.io/moia/jobs/4200156101"
+    },
+         {
+        "company": "adjoe",
+        "position": "Senior DevOps Engineer (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 6, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1696464000&v=beta&t=8eCZy-YPwV1I3pOezdEMbnHSSBwRrYRfsKaD0dvdToM",
+        "description": "https://join.com/companies/adjoe/8825465-senior-devops-engineer-f-m-d"
+    },
+         {
+        "company": "adjoe",
+        "position": "Senior Android Developer (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 6, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1696464000&v=beta&t=8eCZy-YPwV1I3pOezdEMbnHSSBwRrYRfsKaD0dvdToM",
+        "description": "https://join.com/companies/adjoe/8770806-senior-android-developer-f-m-d"
+    },
+        {
+        "company": "justDice",
+        "position": "Lead Business Intelligence Analyst (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 6, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFHJjbb8aK5qw/company-logo_200_200/0/1674060192311?e=1686182400&v=beta&t=LS4AIsOnZxvswH1XBr_Vzn0dLu-b7USKiYyi2sVE-EA",
+        "description": "https://join.com/companies/justdice/8748341-lead-business-intelligence-analyst-f-m-d"
+    },
          {
         "company": "HomeToGo",
         "position": "Senior Analytical Engineer - Marketing (m/f/d)",
@@ -198,17 +275,6 @@
         "description": "https://careers.deliveryhero.com/global/en/job/DEHEGLOBALJR0040732EXTERNALENGLOBAL/Performance-Marketing-Analytics-Manager-all-genders"
     },
        {
-        "company": "justDice",
-        "position": "Backend QA Tester",
-        "location": "Hamburg, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "July 25, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4D0BAQFHJjbb8aK5qw/company-logo_200_200/0/1674060192311?e=1686182400&v=beta&t=LS4AIsOnZxvswH1XBr_Vzn0dLu-b7USKiYyi2sVE-EA",
-        "description": "https://join.com/companies/justdice/8695672-backend-qa-tester"
-    },
-       {
         "company": "University of Bath",
         "position": "Data & Reporting Analyst (fixed-term role)",
         "location": "Bath , UK 🇬🇧",
@@ -384,17 +450,6 @@
         "post_date": "July 18, 2023",
         "logo": "https://media.licdn.com/dms/image/C4D0BAQHS7qmjAasAyw/company-logo_200_200/0/1636644894385?e=1689206400&v=beta&t=8YoPVS7vyztYSPVjOYouqUv4H_VtnjhPiPZ7z1UJGkM",
         "description": "https://picnic.app/careers/jobs/4565089/technology--amp--engineering/amsterdam-north-holland-netherlands/senior-python-engineer"
-    },
-         {
-        "company": "adjoe",
-        "position": "Senior Android Developer (f/m/d)",
-        "location": "Hamburg, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "July 16, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1696464000&v=beta&t=8eCZy-YPwV1I3pOezdEMbnHSSBwRrYRfsKaD0dvdToM",
-        "description": "https://join.com/companies/adjoe/8622938-senior-android-developer-f-m-d"
     },
     {
         "company": "Insify",
