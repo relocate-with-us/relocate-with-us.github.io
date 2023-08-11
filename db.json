@@ -1,4 +1,59 @@
 [
+       {
+        "company": "Scout24",
+        "position": "Junior Backend Engineer (d/f/m)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 11, 2023",
+        "logo": "https://www.immobilienscout24.de/company/typo3conf/ext/sfsitepackage/Resources/Public/Images/immoscout24.svg",
+        "description": "https://www.scout24.com/en/career/jobs/engineering/junior-backend-engineer-d-f-m-5186957"
+    },
+          {
+        "company": "MEDWING",
+        "position": "Senior Full Stack Engineer - React & Elixir or Ruby (gn)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEWCwjjIpNBtw/company-logo_200_200/0/1657801850983?e=1687392000&v=beta&t=aqhfwyjwMTjiuTcPGYdJUK5Jqwso8UVzs5E_ECe6t2Y",
+        "description": "https://medwing.jobs.personio.de/job/1190128"
+    }, 
+    {
+        "company": "SumUp",
+        "position": "Senior Frontend Engineer",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFKTfHAXegsGQ/company-logo_200_200/0/1609758363237?e=1690416000&v=beta&t=uwEWPdD72gUhwNYLz2Etg_cSG8jrds9Y5k3LZI64Ic4",
+        "description": "https://www.sumup.com/careers/positions/berlin-germany/engineering/senior-frontend-engineer/6884697002"
+    },
+    {
+        "company": "taxfix",
+        "position": "Product Marketing Specialist (d/f/m)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "August 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGlLjjiaSeQVg/company-logo_200_200/0/1630915482700?e=1687392000&v=beta&t=daC2rUEh6ny3ABcXGE_Nc1xzoa6UiWbE8pDWJcjLxlA",
+        "description": "https://taxfix.de/en/careers/open-position/6884964002/"
+    },
+          {
+        "company": "HelloFresh",
+        "position": "Senior Marketing Automation Manager (m/f/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "August 11, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGPF61q2af2nw/company-logo_200_200/0/1656691720475?e=1691625600&v=beta&t=tGr7fdtGWJM62Ecl1Chm0F35bsKQ3z4opMpwrsoqpx0",
+        "description": "https://careers.hellofresh.com/global/en/job/5260162"
+    },
     {
         "company": "STAFIDE",
         "position": "Node.js Developer",
@@ -363,17 +418,7 @@
         "description": "https://www.scout24.com/en/career/jobs/engineering/business-intelligence-developer-f-m-d-5202134"
     },
 
-       {
-        "company": "Scout24",
-        "position": "Junior Backend Engineer (d/f/m)",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "July 18, 2023",
-        "logo": "https://www.immobilienscout24.de/company/typo3conf/ext/sfsitepackage/Resources/Public/Images/immoscout24.svg",
-        "description": "https://www.scout24.com/en/career/jobs/engineering/junior-backend-engineer-d-f-m-5186957"
-    },
+
          {
         "company": "DataScienceJobs.es",
         "position": "Data Engineer",
