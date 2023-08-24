@@ -1,5 +1,104 @@
 [
          {
+        "company": "gridX",
+        "position": "Marketing Analyst (M/F/D)",
+        "location": "Aachen & München, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 24, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/8310/social/4846ba3d2d414a97711cf772c6bbbe61.png",
+        "description": "https://gridx.jobs.personio.de/job/1222898?language=en&display=en"
+    }, 
+         {
+        "company": "Merantix Momentum",
+        "position": "Machine Learning Project Manager (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 24, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQH1maZsfbDABw/company-logo_200_200/0/1648046562861?e=1697673600&v=beta&t=RfrfkriYBWj7eE_lA-d7X7mWj1FJv_mJNI0MWrQ3Hsw",
+        "description": "https://join.com/companies/mxlabs/8994634-machine-learning-project-manager-m-f-d"
+    },
+         {
+        "company": "Sequra",
+        "position": "Senior Backend Developer",
+        "location": "Barcelona, Spain 🇪🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 24, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4D0BAQEr5CfZaGZOvw/company-logo_200_200/0/1665052058854?e=1700697600&v=beta&t=bO2HoWgSiluBydXRGhtRxhw46Ve8JSfrLqoiDmwidSU",
+        "description": "https://sequra.recruitee.com/o/senior-backend-developer-barcelona"
+    },
+         {
+        "company": "STAFIDE",
+        "position": "Business Analyst",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 24, 2023",
+        "logo": "https://media.licdn.com/dms/image/D560BAQGj4RvGTZcAcg/company-logo_200_200/0/1688554096089?e=1698883200&v=beta&t=iBe8CQnJOxTKeMbjF93aRs89zn41TWfiXJIZ6yJUmB8",
+        "description": "https://stafide.zohorecruit.com/jobs/Careers/596028000011779470/Business-Analyst"
+    },
+         {
+        "company": "STAFIDE",
+        "position": "DevOps Analyst",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 24, 2023",
+        "logo": "https://media.licdn.com/dms/image/D560BAQGj4RvGTZcAcg/company-logo_200_200/0/1688554096089?e=1698883200&v=beta&t=iBe8CQnJOxTKeMbjF93aRs89zn41TWfiXJIZ6yJUmB8",
+        "description": "https://stafide.zohorecruit.com/jobs/Careers/596028000011779274/DevOps-Analyst"
+    },
+           {
+        "company": "Instapro",
+        "position": "Senior UX Designer (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "August 24, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQF8HFJCecgFhA/company-logo_200_200/0/1632412292093?e=1694649600&v=beta&t=gBlUdUfiTp0DBEQa0FqXXRJJ3fJRyGJK2srwtDhYBmk",
+        "description": "https://careers.instapro.group/o/senior-ux-designer-mfd"
+    },
+         {
+        "company": "Instapro",
+        "position": "Lead UX Researcher",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "August 24, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQF8HFJCecgFhA/company-logo_200_200/0/1632412292093?e=1694649600&v=beta&t=gBlUdUfiTp0DBEQa0FqXXRJJ3fJRyGJK2srwtDhYBmk",
+        "description": "https://careers.instapro.group/o/template-germany-6"
+    },
+         {
+        "company": "Instapro",
+        "position": "SEO Manager",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "August 24, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQF8HFJCecgFhA/company-logo_200_200/0/1632412292093?e=1694649600&v=beta&t=gBlUdUfiTp0DBEQa0FqXXRJJ3fJRyGJK2srwtDhYBmk",
+        "description": "https://careers.instapro.group/o/seo-manager-amsterdam"
+    },
+         {
+        "company": "Instapro",
+        "position": "Lead Frontend Developer (Innovation team)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "August 24, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQF8HFJCecgFhA/company-logo_200_200/0/1632412292093?e=1694649600&v=beta&t=gBlUdUfiTp0DBEQa0FqXXRJJ3fJRyGJK2srwtDhYBmk",
+        "description": "https://careers.instapro.group/o/lead-frontend-developer-innovation-team-3"
+    },
+         {
         "company": "adjoe",
         "position": "UI/UX Designer (f/m/d)",
         "location": "Hamburg, Germany 🇩🇪",
