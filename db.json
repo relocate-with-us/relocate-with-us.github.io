@@ -1,5 +1,93 @@
 [
          {
+        "company": "finleap connect",
+        "position": "(Junior) Software Engineer - Open Banking Data (all genders)",
+        "location": "Kraków, Poland 🇵🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "August 29, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/110441/social/864c9dd1b214847e9e28775e78fff1f9.png",
+        "description": "https://qwist.jobs.personio.com/job/1115613?display=en&language=en"
+    },
+           {
+        "company": "Storyteq",
+        "position": "Platform Software Architect",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQH-yFxXfdIs4A/company-logo_200_200/0/1668585287169?e=1701302400&v=beta&t=6uueMWrTPTcmQaIlJ7agkyX_mHOQqads3F2AfK0oFwY",
+        "description": "https://www.linkedin.com/jobs/view/3667594337"
+    },
+         {
+        "company": "arculus – a Jungheinrich company",
+        "position": "Scrum Master (d/f/m)",
+        "location": "Munich, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQHmJtepaN0OrA/company-logo_200_200/0/1688239617630?e=1697068800&v=beta&t=iB2lKHTZCkcQQ0v9SgNtY9gSFpU3bTdjtV6mAktG4Kw",
+        "description": "https://www.arculus.de/jobs/?gh_jid=4116480003"
+    },
+         {
+        "company": "arculus – a Jungheinrich company",
+        "position": "Control Engineer for Electric Motors (d/f/m)",
+        "location": "Munich, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQHmJtepaN0OrA/company-logo_200_200/0/1688239617630?e=1697068800&v=beta&t=iB2lKHTZCkcQQ0v9SgNtY9gSFpU3bTdjtV6mAktG4Kw",
+        "description": "https://www.arculus.de/jobs/?gh_jid=5418497003"
+    },
+         {
+        "company": "arculus – a Jungheinrich company",
+        "position": "Rust Developer (d/f/m)",
+        "location": "Munich, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQHmJtepaN0OrA/company-logo_200_200/0/1688239617630?e=1697068800&v=beta&t=iB2lKHTZCkcQQ0v9SgNtY9gSFpU3bTdjtV6mAktG4Kw",
+        "description": "https://www.arculus.de/jobs/?gh_jid=5684797003"
+    },
+         {
+        "company": "BlaBlaCar",
+        "position": "Finance Manager - Consolidation & Projects",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 29, 2023",
+        "logo": "https://www.blablacar.com/static/images/blablacar.svg",
+        "description": "https://jobs.lever.co/blablacar/27037ac9-321b-46fc-b14d-cdbb4059c0df"
+    }, 
+         {
+        "company": "Moonfare",
+        "position": "Senior PR Manager (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "August 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFL7hm9qmHTag/company-logo_200_200/0/1656070279988?e=1701302400&v=beta&t=DTUW2ZFyDWjxjnqE32gV-iRAhf_1x7DWEfMibORCmns",
+        "description": "https://boards.greenhouse.io/moonfareintnl/jobs/5726344003"
+    },
+         {
+        "company": "HelloFresh",
+        "position": "Senior Paid Social Manager (m/f/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "August 29, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGPF61q2af2nw/company-logo_200_200/0/1656691720475?e=1691625600&v=beta&t=tGr7fdtGWJM62Ecl1Chm0F35bsKQ3z4opMpwrsoqpx0",
+        "description": "https://careers.hellofresh.com/global/en/job/5318389"
+    },
+         {
         "company": "gridX",
         "position": "Marketing Analyst (M/F/D)",
         "location": "Aachen & München, Germany 🇩🇪",
@@ -438,17 +526,6 @@
         "post_date": "July 30, 2023",
         "logo": "https://media.licdn.com/dms/image/C560BAQGPF61q2af2nw/company-logo_200_200/0/1656691720475?e=1691625600&v=beta&t=tGr7fdtGWJM62Ecl1Chm0F35bsKQ3z4opMpwrsoqpx0",
         "description": "https://careers.hellofresh.com/global/en/job/5100839"
-    },
-         {
-        "company": "arculus – a Jungheinrich company",
-        "position": "Rust Developer (d/f/m)",
-        "location": "Munich, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "July 30, 2023",
-        "logo": "https://media.licdn.com/dms/image/D4E0BAQHmJtepaN0OrA/company-logo_200_200/0/1688239617630?e=1697068800&v=beta&t=iB2lKHTZCkcQQ0v9SgNtY9gSFpU3bTdjtV6mAktG4Kw",
-        "description": "https://www.arculus.de/jobs/?gh_jid=5684797003"
     },
          {
         "company": "BlaBlaCar",
