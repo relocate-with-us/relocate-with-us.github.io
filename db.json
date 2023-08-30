@@ -1,4 +1,26 @@
 [
+        {
+        "company": "adjoe",
+        "position": "Frontend Developer (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "August 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFreRHW-tS7xg/company-logo_200_200/0/1672987587036?e=1696464000&v=beta&t=8eCZy-YPwV1I3pOezdEMbnHSSBwRrYRfsKaD0dvdToM",
+        "description": "https://join.com/companies/adjoe/8981726-frontend-developer-f-m-d"
+    },
+          {
+        "company": "HelloFresh",
+        "position": "Senior Product Owner - Payments Alliance",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "August 30, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGPF61q2af2nw/company-logo_200_200/0/1656691720475?e=1691625600&v=beta&t=tGr7fdtGWJM62Ecl1Chm0F35bsKQ3z4opMpwrsoqpx0",
+        "description": "https://careers.hellofresh.com/global/en/job/5264674"
+    },
          {
         "company": "finleap connect",
         "position": "(Junior) Software Engineer - Open Banking Data (all genders)",
