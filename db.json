@@ -1,4 +1,37 @@
 [
+    {
+        "company": "IC Resources",
+        "position": "ASIC / FPGA Hardware Support & Applications Engineer",
+        "location": "Eindhoven, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "September 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQFPr016nY4xPA/company-logo_200_200/0/1683027359708?e=1701907200&v=beta&t=dWz4q2TteeQY16-5m8_nJcvGvSmAC5lAXdHyxKu8Dj4",
+        "description": "https://www.linkedin.com/jobs/view/3708228116"
+    },
+        {
+        "company": "Apollo Solutions",
+        "position": "Full Stack Developer",
+        "location": "Eindhoven, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "September 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEwvHRFbVDibw/company-logo_200_200/0/1626271573853?e=1701907200&v=beta&t=RUtqxcFXBPFEixTwqK7dMkfFjRvfHLlwrPJMcRX7xRo",
+        "description": "https://www.apollo-solutions.com/jobs/job-details/?id=full-stack-developer-963606"
+    },
+        {
+        "company": "Picnic",
+        "position": "Android Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "September 3, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHS7qmjAasAyw/company-logo_200_200/0/1636644894385?e=1689206400&v=beta&t=8YoPVS7vyztYSPVjOYouqUv4H_VtnjhPiPZ7z1UJGkM",
+        "description": "https://picnic.app/careers/jobs/3642756/technology--amp--engineering/amsterdam-north-holland-netherlands/android-engineer"
+    },
         {
         "company": "adjoe",
         "position": "Frontend Developer (f/m/d)",
