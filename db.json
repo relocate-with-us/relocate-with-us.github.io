@@ -1,5 +1,49 @@
 [
           {
+        "company": "HelloFresh",
+        "position": "Project Manager (m/f/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "September 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/D560BAQHY6c2H6XQmzg/company-logo_200_200/0/1690812933315?e=1701907200&v=beta&t=erAyrlNypv2tFQG32Gv5AAtJWzGwVzP6xgR5DeA3zp8",
+        "description": "https://careers.hellofresh.com/global/en/job/5336936"
+    },
+          {
+        "company": "HelloFresh",
+        "position": "Backend Engineer (m/f/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "September 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/D560BAQHY6c2H6XQmzg/company-logo_200_200/0/1690812933315?e=1701907200&v=beta&t=erAyrlNypv2tFQG32Gv5AAtJWzGwVzP6xgR5DeA3zp8",
+        "description": "https://careers.hellofresh.com/global/en/job/5326383"
+    },
+          {
+        "company": "taxfix",
+        "position": "Staff Engineer - Product Security",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "September 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGlLjjiaSeQVg/company-logo_200_200/0/1630915482700?e=1687392000&v=beta&t=daC2rUEh6ny3ABcXGE_Nc1xzoa6UiWbE8pDWJcjLxlA",
+        "description": "https://taxfix.de/en/careers/open-position/6904753002/"
+    },
+          {
+        "company": "BlaBlaCar",
+        "position": "Confirmed Data Analyst - Data Capabilities",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "September 9, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFxZ245ZuqXkA/company-logo_200_200/0/1519902808602?e=1702512000&v=beta&t=N93L9e4-FFuBnbYyr8HLTc9Tfn2vgE1H9jcJVLEEMY4",
+        "description": "https://jobs.lever.co/blablacar/5440f463-090d-43e0-b99b-efb62b954ec2/apply"
+    }, 
+          {
         "company": "Monzo",
         "position": "Senior Machine Learning Engineer",
         "location": "London , UK 🇬🇧",
