@@ -1,5 +1,115 @@
 [
           {
+        "company": "Bigpoint GmbH",
+        "position": "Junior Game Developer (m/f/d) - #5738",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "September 16, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQF_mljwUnWkMw/company-logo_200_200/0/1659974613567?e=1689811200&v=beta&t=YBNtNhqKMsDXVIZz_WMVnF4MwHuThwM7fdch3GWoM1A",
+        "description": "https://bigpoint.jobs.personio.de/job/1244438?language=en&display=en"
+    },
+          {
+        "company": "gridX",
+        "position": "Agile Coach (M/F/D) / Scrum Master (M/F/D)",
+        "location": "Aachen & München, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "September 16, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/8310/social/4846ba3d2d414a97711cf772c6bbbe61.png",
+        "description": "https://gridx.jobs.personio.de/job/1235296?language=en&display=de"
+    }, 
+          {
+        "company": "Kaufland.de",
+        "position": "Backend Engineer (all genders) - Developer Experience",
+        "location": "Cologne, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "September 16, 2023",
+        "logo": "https://kaufland-ecommerce.com/wp-content/uploads/KL_Ecommerce_Logo_RGB.png",
+        "description": "https://join.com/companies/kaufland-e-commerce/9214319-backend-engineer-all-genders-developer-experience"
+    },
+          {
+        "company": "BlaBlaCar",
+        "position": "Back-end Engineer - Java",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "September 16, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFxZ245ZuqXkA/company-logo_200_200/0/1519902808602?e=1702512000&v=beta&t=N93L9e4-FFuBnbYyr8HLTc9Tfn2vgE1H9jcJVLEEMY4",
+        "description": "https://jobs.lever.co/blablacar/24f24fce-e60e-444e-b904-d984a89c2615/apply"
+    }, 
+          {
+        "company": "Delivery Hero",
+        "position": "(Senior) Software Engineer (Golang) - Customer Data Platform (All genders)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "September 16, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFFtS9aSrg1tA/company-logo_200_200/0/1659945238649?e=1694649600&v=beta&t=YLhckdwkoumvuZ78DiQk_43KlQLHkJzs5cuudUNopgM",
+        "description": "https://careers.deliveryhero.com/global/en/job/DEHEGLOBALJR0043444EXTERNALENGLOBAL/-Senior-Software-Engineer-Golang-Customer-Data-Platform-All-genders"
+    },
+          {
+        "company": "Delivery Hero",
+        "position": "Senior Backend Software Engineer (Python) - Consumer Data Products (All genders)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "September 16, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFFtS9aSrg1tA/company-logo_200_200/0/1659945238649?e=1694649600&v=beta&t=YLhckdwkoumvuZ78DiQk_43KlQLHkJzs5cuudUNopgM",
+        "description": "https://careers.deliveryhero.com/global/en/job/DEHEGLOBALJR0043455EXTERNALENGLOBAL/Senior-Backend-Software-Engineer-Python-Consumer-Data-Products-All-genders"
+    },
+          {
+        "company": "STAFIDE",
+        "position": "Senior SAP ABAP Developer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "September 16, 2023",
+        "logo": "https://media.licdn.com/dms/image/D560BAQGj4RvGTZcAcg/company-logo_200_200/0/1688554096089?e=1698883200&v=beta&t=iBe8CQnJOxTKeMbjF93aRs89zn41TWfiXJIZ6yJUmB8",
+        "description": "https://stafide.zohorecruit.com/jobs/Careers/596028000005491406/Senior-SAP-ABAP-Developer"
+    },
+          {
+        "company": "Hashtag You",
+        "position": "Data & Analytics Senior Manager (m/f/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "September 16, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQF8Eo4pAqBusA/company-logo_200_200/0/1536050063322?e=1697673600&v=beta&t=I6PpShmHCNblHRN2oPSfkVDFv5uSPdgulKtanzetBPA",
+        "description": "https://hashtagyou.jobs.personio.com/job/1251296?language=en&display=en"
+    },
+          {
+        "company": "HelloFresh",
+        "position": "Senior Infrastructure Engineer (f/m/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "September 16, 2023",
+        "logo": "https://media.licdn.com/dms/image/D560BAQHY6c2H6XQmzg/company-logo_200_200/0/1690812933315?e=1701907200&v=beta&t=erAyrlNypv2tFQG32Gv5AAtJWzGwVzP6xgR5DeA3zp8",
+        "description": "https://careers.hellofresh.com/global/en/job/HELLGLOBAL4739114EXTERNALENGLOBAL/Senior-Infrastructure-Engineer-f-m-x"
+    },
+          {
+        "company": "HelloFresh",
+        "position": "Senior Backend Engineer, Inventory Management (m/f/x)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "September 16, 2023",
+        "logo": "https://media.licdn.com/dms/image/D560BAQHY6c2H6XQmzg/company-logo_200_200/0/1690812933315?e=1701907200&v=beta&t=erAyrlNypv2tFQG32Gv5AAtJWzGwVzP6xgR5DeA3zp8",
+        "description": "https://careers.hellofresh.com/global/en/job/HELLGLOBAL5336219EXTERNALENGLOBAL/Senior-Backend-Engineer-Inventory-Management-m-f-x"
+    },
+          {
         "company": "HelloFresh",
         "position": "Project Manager (m/f/x)",
         "location": "Berlin, Germany 🇩🇪",
