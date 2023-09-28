@@ -1,4 +1,70 @@
 [
+          {    
+        "company": "Kiwi.com",
+        "position": "Python Engineer - Booking Fulfilment",
+        "location": "Brno, Czech Republic 🇨🇿",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "September 28, 2023",
+        "logo": "https://jobs.kiwi.com/wp-content/themes/kiwi-jobs/static/img/kiwi-logo-header.svg",
+        "description": "https://jobs.eu.lever.co/kiwi/a170610c-bde3-43b4-83c0-23f1c13eac86"
+    },
+          {
+        "company": "SumUp",
+        "position": "Fullstack Engineer",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "September 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQFKTfHAXegsGQ/company-logo_200_200/0/1609758363237?e=1690416000&v=beta&t=uwEWPdD72gUhwNYLz2Etg_cSG8jrds9Y5k3LZI64Ic4",
+        "description": "https://www.sumup.com/careers/positions/berlin-germany/engineering/fullstack-engineer/6711501002"
+    },
+          {
+        "company": "HelloFresh",
+        "position": "Senior Project Manager, Continuous Improvement",
+        "location": "Copenhagen, Denmark 🇩🇰",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "September 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGPF61q2af2nw/company-logo_200_200/0/1656691720475?e=1691625600&v=beta&t=tGr7fdtGWJM62Ecl1Chm0F35bsKQ3z4opMpwrsoqpx0",
+        "description": "https://careers.hellofresh.com/global/en/job/5381750"
+    },
+          {
+        "company": "BlaBlaCar",
+        "position": "Android Engineer - Booking squad",
+        "location": "Paris, France 🇫🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "September 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFxZ245ZuqXkA/company-logo_200_200/0/1519902808602?e=1702512000&v=beta&t=N93L9e4-FFuBnbYyr8HLTc9Tfn2vgE1H9jcJVLEEMY4",
+        "description": "https://jobs.lever.co/blablacar/cb6c80ee-2ed5-460e-87f2-f2b3b01ea4b3/"
+    }, 
+          {
+        "company": "Wallapop",
+        "position": "QA Engineer (manual)",
+        "location": "Barcelona, Spain 🇪🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "September 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEH2KKHpM7Fwg/company-logo_200_200/0/1519929420091?e=1689206400&v=beta&t=lA00zaJw0rWeHss6GqJucVIuUcbAEritFY9n_ItPfBU",
+        "description": "https://boards.eu.greenhouse.io/wallapop/jobs/4219414101"
+    },
+          {
+        "company": "GlobalLogic",
+        "position": "Java Developer IRC197582",
+        "location": "Kraków, Poland 🇵🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "September 28, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHfsFr91ekzrQ/company-logo_200_200/0/1593608530033?e=1703721600&v=beta&t=5ZU58HpxuKEEe350MQ5vUQbYuj86UZw7XvCLlrAMkn4",
+        "description": "https://www.globallogic.com/careers/java-developer-irc197582"
+    },
           {
         "company": "PEOPLED",
         "position": "Frontend Engineer (Angular/React)",
