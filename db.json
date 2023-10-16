@@ -1,4 +1,70 @@
 [
+          {
+        "company": "Zurich Instruments AG",
+        "position": "Senior Hardware Design Engineer",
+        "location": "Zurich, Switzerland 🇨🇭",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "October 16, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHu_OGi7Bnx5w/company-logo_200_200/0/1594375236840?e=1705536000&v=beta&t=Hv35I5GdK9u55kEXul15fDtzt9kcx9XowgGMEnPh2o0",
+        "description": "https://www.zhinst.com/others/en/jobs/senior-hardware-design-engineer-80-100"
+    },
+        {
+        "company": "Container xChange",
+        "position": "Senior Frontend Engineer - Angular (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "October 16, 2023",
+        "logo": "https://media.licdn.com/dms/image/C510BAQFQ7AeIjPgU4A/company-logo_200_200/0/1519878725709?e=1691625600&v=beta&t=I44CGXzsWx5o4mnAMH059ux7YLoj8SVL-XX0HPtJI3s",
+        "description": "https://www.arbeitnow.com/jobs/companies/container-xchange/senior-frontend-engineer-angular-hamburg-391448"
+    },
+        {
+        "company": "gridX",
+        "position": "Senior Backend Engineer (M/F/D)",
+        "location": "Aachen & München, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "October 16, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/8310/social/4846ba3d2d414a97711cf772c6bbbe61.png",
+        "description": "https://www.arbeitnow.com/jobs/companies/gridx/senior-backend-engineer-aachen-462822"
+    }, 
+        {
+        "company": "gridX",
+        "position": "Senior Go Developer (M/F/D) Renewable Energies",
+        "location": "Aachen & München, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "October 16, 2023",
+        "logo": "https://assets.cdn.personio.de/logos/8310/social/4846ba3d2d414a97711cf772c6bbbe61.png",
+        "description": "https://www.arbeitnow.com/jobs/companies/gridx/senior-go-developer-renewable-energies-aachen-208112"
+    }, 
+        {
+        "company": "Transparent Hiring",
+        "position": "(Senior) Java Full Stack Developer (m/f/d) - relocation",
+        "location": "Munich, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "October 16, 2023",
+        "logo": "https://www.arbeitnow.com/storage/company_logo/ed93837d609f8d5b20a938807d7d6f1f.png",
+        "description": "https://www.arbeitnow.com/jobs/companies/transparent-hiring/senior-java-full-stack-developer-relocation-munich-94323"
+    },
+        {
+        "company": "Transparent Hiring",
+        "position": "Senior Full Stack JavaScript Engineer (m/f/d) - relocation",
+        "location": "Munich, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "October 16, 2023",
+        "logo": "https://www.arbeitnow.com/storage/company_logo/ed93837d609f8d5b20a938807d7d6f1f.png",
+        "description": "https://www.arbeitnow.com/jobs/companies/transparent-hiring/senior-full-stack-javascript-engineer-relocation-munich-144629"
+    },
         {
         "company": "adjoe",
         "position": "Data Scientist (f/m/d)",
