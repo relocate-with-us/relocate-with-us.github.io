@@ -1,4 +1,70 @@
 [
+       {
+        "company": "Scout24",
+        "position": "Software Engineer (Fullstack) (f/d/m)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "Nov 4, 2023",
+        "logo": "https://www.immobilienscout24.de/company/typo3conf/ext/sfsitepackage/Resources/Public/Images/immoscout24.svg",
+        "description": "https://www.scout24.com/en/career/jobs/engineering/software-engineer-fullstack-f-d-m-5062003"
+    },
+          {
+        "company": "Scout24",
+        "position": "(Senior) Marketing Analyst (d/f/m)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "Nov 4, 2023",
+        "logo": "https://www.immobilienscout24.de/company/typo3conf/ext/sfsitepackage/Resources/Public/Images/immoscout24.svg",
+        "description": "https://www.scout24.com/en/career/jobs/detail/senior-marketing-analyst-d-f-m-5474134"
+    },
+          {
+        "company": "taxfix",
+        "position": "Senior DevOps Engineer (d/f/m)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "Nov 4, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGlLjjiaSeQVg/company-logo_200_200/0/1630915482700?e=1687392000&v=beta&t=daC2rUEh6ny3ABcXGE_Nc1xzoa6UiWbE8pDWJcjLxlA",
+        "description": "https://taxfix.de/en/careers/open-position/6968665002/"
+    },
+          {
+        "company": "taxfix",
+        "position": "Senior Software Engineer (Golang) (d/f/m)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "Nov 4, 2023",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGlLjjiaSeQVg/company-logo_200_200/0/1630915482700?e=1687392000&v=beta&t=daC2rUEh6ny3ABcXGE_Nc1xzoa6UiWbE8pDWJcjLxlA",
+        "description": "https://taxfix.de/en/careers/open-position/6998855002/"
+    },
+          {
+        "company": "konux",
+        "position": "Senior Backend Engineer (m/f/x)",
+        "location": "Munich, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "Nov 4, 2023",
+        "logo": "https://s3-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/277/300/resized/7f7f33fb9df0e761f8f4517aa37a237f.png?1588071811",
+        "description": "https://boards.greenhouse.io/konux/jobs/5616172003"
+    },
+          {
+        "company": "Alteos",
+        "position": "Senior QA Engineer ",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "Nov 4, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFLiCuAJY5-ew/company-logo_200_200/0/1655224126951?e=1688601600&v=beta&t=9e8xR9E7RKOKRmAsXMsAteYKo3CMTsnFnl3Ooc8CCN4",
+        "description": "https://www.arbeitnow.com/jobs/companies/alteos-gmbh/senior-qa-engineer-berlin-406987"
+    },
           {
         "company": "Zurich Instruments AG",
         "position": "Senior Hardware Design Engineer",
@@ -429,17 +495,7 @@
         "logo": "https://media.licdn.com/dms/image/D560BAQHY6c2H6XQmzg/company-logo_200_200/0/1690812933315?e=1701907200&v=beta&t=erAyrlNypv2tFQG32Gv5AAtJWzGwVzP6xgR5DeA3zp8",
         "description": "https://careers.hellofresh.com/global/en/job/5326383"
     },
-          {
-        "company": "taxfix",
-        "position": "Staff Engineer - Product Security",
-        "location": "Berlin, Germany 🇩🇪",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "September 9, 2023",
-        "logo": "https://media.licdn.com/dms/image/C560BAQGlLjjiaSeQVg/company-logo_200_200/0/1630915482700?e=1687392000&v=beta&t=daC2rUEh6ny3ABcXGE_Nc1xzoa6UiWbE8pDWJcjLxlA",
-        "description": "https://taxfix.de/en/careers/open-position/6904753002/"
-    },
+
           {
         "company": "BlaBlaCar",
         "position": "Confirmed Data Analyst - Data Capabilities",
