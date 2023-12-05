@@ -1,4 +1,125 @@
 [
+          {
+        "company": "Kaufland.de",
+        "position": "(Junior) PHP Engineer (all genders)",
+        "location": "Köln, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "December 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQELdN8NZZu1rw/company-logo_200_200/0/1651819964292/kauflandecommerce_logo?e=1709769600&v=beta&t=_7UAOlymeOAong4CvnjvkF5FHQ9-Nxj4KtW7Lih_XRA",
+        "description": "https://kaufland-ecommerce.com/en/job/junior-php-engineer-all-genders/"
+    },
+       {
+        "company": "Kaufland.de",
+        "position": "(Junior) Information Security Specialist (all genders)",
+        "location": "Köln, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "December 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQELdN8NZZu1rw/company-logo_200_200/0/1651819964292/kauflandecommerce_logo?e=1709769600&v=beta&t=_7UAOlymeOAong4CvnjvkF5FHQ9-Nxj4KtW7Lih_XRA",
+        "description": "https://kaufland-ecommerce.com/en/job/junior-information-security-specialist-all-genders/"
+    },
+         {
+        "company": "gridX",
+        "position": "Data & Analytics Manager (M/F/D)",
+        "location": "Aachen & München, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "December 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHKkSSnDGsLkA/company-logo_200_200/0/1630569597678/gridx_logo?e=1709769600&v=beta&t=Ni3OCxbGihGJ2IVDrG6arFf_YLbfgOGQ9XCz8FtpGcQ",
+        "description": "https://gridx.jobs.personio.de/job/1330327?language=en&display=en"
+    },
+       {
+        "company": "gridX",
+        "position": "Go Developer (M/F/D) Renewable Energies",
+        "location": "Aachen & München, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "December 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHKkSSnDGsLkA/company-logo_200_200/0/1630569597678/gridx_logo?e=1709769600&v=beta&t=Ni3OCxbGihGJ2IVDrG6arFf_YLbfgOGQ9XCz8FtpGcQ",
+        "description": "https://gridx.jobs.personio.de/job/1280453?language=en&display=en"
+    }, 
+       {
+        "company": "gridX",
+        "position": "Embedded Linux Software Engineer (M/F/D)",
+        "location": "Aachen & München, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "December 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHKkSSnDGsLkA/company-logo_200_200/0/1630569597678/gridx_logo?e=1709769600&v=beta&t=Ni3OCxbGihGJ2IVDrG6arFf_YLbfgOGQ9XCz8FtpGcQ",
+        "description": "https://gridx.jobs.personio.de/job/1345623?language=en&display=en"
+    }, 
+       {
+        "company": "Kaufland.de",
+        "position": "(Senior) NodeJS Engineer (all genders) Checkout & Cart",
+        "location": "Köln, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "December 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQELdN8NZZu1rw/company-logo_200_200/0/1651819964292/kauflandecommerce_logo?e=1709769600&v=beta&t=_7UAOlymeOAong4CvnjvkF5FHQ9-Nxj4KtW7Lih_XRA",
+        "description": "https://kaufland-ecommerce.com/en/job/senior-nodejs-engineer-all-genders-checkout-cart/"
+    },
+       {
+        "company": "Kaufland.de",
+        "position": "Lead Platform Engineer (all genders) - Persist",
+        "location": "Köln, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "December 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQELdN8NZZu1rw/company-logo_200_200/0/1651819964292/kauflandecommerce_logo?e=1709769600&v=beta&t=_7UAOlymeOAong4CvnjvkF5FHQ9-Nxj4KtW7Lih_XRA",
+        "description": "https://kaufland-ecommerce.com/en/job/lead-platform-engineer-all-genders-persist/"
+    },
+       {
+        "company": "Kaufland.de",
+        "position": "(Senior) Full-Stack Engineer (A/B Testing) (all genders) - Team Frontend Foundation",
+        "location": "Köln, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "December 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQELdN8NZZu1rw/company-logo_200_200/0/1651819964292/kauflandecommerce_logo?e=1709769600&v=beta&t=_7UAOlymeOAong4CvnjvkF5FHQ9-Nxj4KtW7Lih_XRA",
+        "description": "https://kaufland-ecommerce.com/en/job/senior-full-stack-engineer-a-b-testing-all-genders-team-frontend-foundation/"
+    },
+       {
+        "company": "Kaufland.de",
+        "position": "Platform Engineer (all genders) - Persist",
+        "location": "Köln, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "December 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQELdN8NZZu1rw/company-logo_200_200/0/1651819964292/kauflandecommerce_logo?e=1709769600&v=beta&t=_7UAOlymeOAong4CvnjvkF5FHQ9-Nxj4KtW7Lih_XRA",
+        "description": "https://kaufland-ecommerce.com/en/job/platform-engineer-all-genders-persist/"
+    },
+       {
+        "company": "Kaufland.de",
+        "position": "Senior Full-Stack Engineer",
+        "location": "Köln, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "December 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQELdN8NZZu1rw/company-logo_200_200/0/1651819964292/kauflandecommerce_logo?e=1709769600&v=beta&t=_7UAOlymeOAong4CvnjvkF5FHQ9-Nxj4KtW7Lih_XRA",
+        "description": "https://kaufland-ecommerce.com/en/job/senior-full-stack-engineer-all-genders/"
+    },
+       {
+        "company": "Kaufland.de",
+        "position": "Senior Frontend Engineer",
+        "location": "Köln, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "December 5, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQELdN8NZZu1rw/company-logo_200_200/0/1651819964292/kauflandecommerce_logo?e=1709769600&v=beta&t=_7UAOlymeOAong4CvnjvkF5FHQ9-Nxj4KtW7Lih_XRA",
+        "description": "https://kaufland-ecommerce.com/en/job/senior-frontend-engineer-all-genders/"
+    },
        {
         "company": "Scout24",
         "position": "Software Engineer (Fullstack) (f/d/m)",
