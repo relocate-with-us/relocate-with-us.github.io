@@ -1,5 +1,60 @@
 [
           {
+        "company": "Freeletics",
+        "position": "(Senior) CRM Manager (all genders)",
+        "location": "Munich, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "January 22, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEophrsctwg4g/company-logo_200_200/0/1664187933880/freeletics_logo?e=1714003200&v=beta&t=qITixxHrmUH9HiQaCeXvNEuRQyfFrCC888ltp2im5lM",
+        "description": "https://www.freeletics.com/en/corporate/jobs/5fc9c8c5-6522-4a30-af0d-8591ca3a6106/"
+    },
+          {
+        "company": "Freeletics",
+        "position": "Software Engineer (all genders)",
+        "location": "Munich, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "January 22, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEophrsctwg4g/company-logo_200_200/0/1664187933880/freeletics_logo?e=1714003200&v=beta&t=qITixxHrmUH9HiQaCeXvNEuRQyfFrCC888ltp2im5lM",
+        "description": "https://www.freeletics.com/en/corporate/jobs/65457d61-4382-4ffb-99a0-d2a8e97c59b8/"
+    },
+          {
+        "company": "Freeletics",
+        "position": "Software Developer - Ruby on Rails (all genders)",
+        "location": "Munich, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "January 22, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQEophrsctwg4g/company-logo_200_200/0/1664187933880/freeletics_logo?e=1714003200&v=beta&t=qITixxHrmUH9HiQaCeXvNEuRQyfFrCC888ltp2im5lM",
+        "description": "https://www.freeletics.com/en/corporate/jobs/ce1fcbcb-ff72-4506-99b9-de552816c366/"
+    },
+          {
+        "company": "Vivid Money GmbH",
+        "position": "Backend Developer (Golang)",
+        "location": "Limassol, Cyprus 🇨🇾",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "January 22, 2023",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQG-fCqcdll0Gg/company-logo_200_200/0/1630469652583/vividmoney_logo?e=1714003200&v=beta&t=vvnC-TwBCvV94TQOkXmlUHs6bBK6t2784IhMHlM1rCs",
+        "description": "https://vivid.zohorecruit.eu/jobs/Careers/63863000000391329/Backend-Developer-Golang"
+    },
+          {
+        "company": "HAWK:AI",
+        "position": "DevOps Engineer (m/f/d)",
+        "location": "Munich, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "January 22, 2023",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQFkqzNliPf37Q/company-logo_200_200/0/1696594493745/hawk_ai_tech_logo?e=1714003200&v=beta&t=uOqLkLt6ksY3QncvCdMl7VL-O8CZq2gKD4IiDdBZGgg",
+        "description": "https://boards.eu.greenhouse.io/hawkai/jobs/4246888101"
+    },
+          {
         "company": "Oxa",
         "position": "Software Engineer - Simulation & Real2Sim Tooling",
         "location": "Oxford , UK 🇬🇧",
