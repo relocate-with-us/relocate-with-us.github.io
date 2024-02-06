@@ -1,4 +1,103 @@
 [
+         {
+        "company": "Picnic",
+        "position": "Salesforce Developer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "February 6, 2024",
+        "logo": "media/picnictechnologies_logo.jpeg",
+        "description": "https://picnic.app/careers/jobs/1343437/technology--amp--engineering/amsterdam-north-holland-netherlands/salesforce-developer"
+    },
+          {
+        "company": "Picnic",
+        "position": "React Native Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "February 6, 2024",
+        "logo": "media/picnictechnologies_logo.jpeg",
+        "description": "https://picnic.app/careers/jobs/5405451/technology--amp--engineering/amsterdam-north-holland-netherlands/react-native-engineer"
+    },
+          {
+        "company": "Picnic",
+        "position": "React Developer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "February 6, 2024",
+        "logo": "media/picnictechnologies_logo.jpeg",
+        "description": "https://picnic.app/careers/jobs/3642917/technology--amp--engineering/amsterdam-north-holland-netherlands/react-developer"
+    },
+          {
+        "company": "Picnic",
+        "position": "Network Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "February 6, 2024",
+        "logo": "media/picnictechnologies_logo.jpeg",
+        "description": "https://picnic.app/careers/jobs/2297239/technology--amp--engineering/amsterdam-north-holland-netherlands/network-engineer"
+    },
+          {
+        "company": "Picnic",
+        "position": "Machine Learning Engineer - Search & Ranking",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "February 6, 2024",
+        "logo": "media/picnictechnologies_logo.jpeg",
+        "description": "https://picnic.app/careers/jobs/5579227/technology--amp--engineering/amsterdam-north-holland-netherlands/machine-learning-engineer---search--amp--ranking"
+    },
+          {
+        "company": "Picnic",
+        "position": "Java Developer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "February 6, 2024",
+        "logo": "media/picnictechnologies_logo.jpeg",
+        "description": "https://picnic.app/careers/jobs/986403/technology--amp--engineering/amsterdam-north-holland-netherlands/java-developer"
+    },
+            {
+        "company": "Picnic",
+        "position": "Android Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "February 6, 2024",
+        "logo": "media/picnictechnologies_logo.jpeg",
+        "description": "https://picnic.app/careers/jobs/3642756/technology--amp--engineering/amsterdam-north-holland-netherlands/android-engineer"
+    },
+          {
+        "company": "Picnic",
+        "position": "iOS Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "February 6, 2024",
+        "logo": "media/picnictechnologies_logo.jpeg",
+        "description": "https://picnic.app/careers/jobs/3642838/technology--amp--engineering/amsterdam-north-holland-netherlands/ios-engineer"
+    },
+           {
+        "company": "Picnic",
+        "position": "Senior Python Engineer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "February 6, 2024",
+        "logo": "media/picnictechnologies_logo.jpeg",
+        "description": "https://picnic.app/careers/jobs/4565089/technology--amp--engineering/amsterdam-north-holland-netherlands/senior-python-engineer"
+    },
           {
         "company": "justtrack",
         "position": "QA Engineer (f/m/d)",
@@ -7,7 +106,7 @@
         "visa": "Visa Sponsorship",
         "contract": "Full Time",
         "post_date": "February 4, 2024",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQE2fk2A8vRATg/company-logo_200_200/0/1644184678222?e=1687996800&v=beta&t=OOWPe8mdRToFhjif4QQwhvCJNU2LQe4P-shNoi4VZ0Q",
+        "logo": "media/justtrack_logo.jpeg",
         "description": "https://justtrack.io/career/?j_id=2795eebb-e23f-41a6-a42f-6785cb73871e"
     },
          {
