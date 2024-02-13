@@ -1,4 +1,147 @@
 [
+          {
+        "company": "Bigpoint GmbH",
+        "position": "Associate PHP Developer (m/f/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "February 13, 2024",
+        "logo": "media/bigpoint_gmbh_logo.jpeg",
+        "description": "https://bigpoint.jobs.personio.de/job/1356656?language=en&display=en"
+    },
+         {
+        "company": "Bigpoint GmbH",
+        "position": "Junior Unity Developer (m/f/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "February 13, 2024",
+        "logo": "media/bigpoint_gmbh_logo.jpeg",
+        "description": "https://bigpoint.jobs.personio.de/job/1345752?language=en&display=en"
+    },
+           {
+        "company": "applike-group",
+        "position": "Senior Frontend Developer (f/m/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "February 13, 2024",
+        "logo": "media/applike_gmbh_logo.jpeg",
+        "description": "https://alteos.jobs.personio.de/job/1408798?language=en&display=en"
+    },
+         {
+        "company": "applike-group",
+        "position": "QA Engineer (f/m/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "February 13, 2024",
+        "logo": "media/applike_gmbh_logo.jpeg",
+        "description": "https://jobs.lever.co/applike/f46b07a1-4a9d-4f09-a076-56c74c3de460"
+    },
+         {
+        "company": "applike-group",
+        "position": "Senior Product Manager (Product Owner) (m/w/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "February 13, 2024",
+        "logo": "media/applike_gmbh_logo.jpeg",
+        "description": "https://jobs.lever.co/applike/be4b2a59-cc6a-4bac-8182-1b8728dda53a"
+    },
+         {
+        "company": "K-tronik GmbH",
+        "position": "Software Test Engineer (m/f/x)",
+        "location": "Ingolstadt, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "February 13, 2024",
+        "logo": "media/k_tronik_gmbh_logo.jpeg",
+        "description": "https://bewerbung.k-tronik.de/en/6536/software-test-engineer-m-f-x"
+    },
+         {
+        "company": "Bigpoint GmbH",
+        "position": "Lead QA Tester (m/f/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "February 13, 2024",
+        "logo": "media/bigpoint_gmbh_logo.jpeg",
+        "description": "https://bigpoint.jobs.personio.de/job/1395283?language=en&display=en"
+    },
+         {
+        "company": "Bigpoint GmbH",
+        "position": "Senior Full Stack Developer (m/f/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "February 13, 2024",
+        "logo": "media/bigpoint_gmbh_logo.jpeg",
+        "description": "https://bigpoint.jobs.personio.de/job/1244370?language=en&display=en"
+    },
+         {
+        "company": "Bigpoint GmbH",
+        "position": "Senior Game Developer (m/f/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "February 13, 2024",
+        "logo": "media/bigpoint_gmbh_logo.jpeg",
+        "description": "https://bigpoint.jobs.personio.de/job/1358226?language=en&display=en"
+    },
+         {
+        "company": "MBition",
+        "position": "(Senior/Expert) Android Systems Engineer (all genders)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "February 13, 2024",
+        "logo": "media/mbitiongmbh_logo.jpeg",
+        "description": "https://mbition.io/career/senior-expert-android-systems-engineer-all-genders/"
+    },
+         {
+        "company": "MBition",
+        "position": "Embedded Linux Engineer with Yocto expertise (all genders)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "February 13, 2024",
+        "logo": "media/mbitiongmbh_logo.jpeg",
+        "description": "https://mbition.io/career/embedded-linux-engineer-with-yocto-expertise-all-genders/"
+    },
+         {
+        "company": "MBition",
+        "position": "Lead Embedded Linux Software Engineer HMI-E (all genders)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "February 13, 2024",
+        "logo": "media/mbitiongmbh_logo.jpeg",
+        "description": "https://mbition.io/career/lead-embedded-linux-software-engineer-hmi-e-all-genders/"
+    },
+         {
+        "company": "MBition",
+        "position": "Senior Software Engineer – System Analysis Reactive (all genders)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "February 13, 2024",
+        "logo": "media/mbitiongmbh_logo.jpeg",
+        "description": "https://mbition.io/career/senior-software-engineer-system-analysis-reactive-all-genders/"
+    },
          {
         "company": "Picnic",
         "position": "Salesforce Developer",
