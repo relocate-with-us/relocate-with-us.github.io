@@ -1,0 +1,22 @@
+---
+
+---
+
+<script>
+  import { filterJobs } from '@utils/jobs';
+
+  const searchInput = document.getElementById('default-search') as HTMLInputElement;
+  searchInput.addEventListener('change', (event) => {
+    filterJobs((event.target as HTMLInputElement).value);
+  });
+
+  filterJobs('');
+</script>
+
+<input
+  type="search"
+  id="default-search"
+  class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-4 pl-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+  placeholder="Search"
+/>
+<!-- onchange="filterJobs(this.value)" -->

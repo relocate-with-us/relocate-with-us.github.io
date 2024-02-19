@@ -1,0 +1,13 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@layout/*": ["src/components/layout/*"],
+      "@utils/*": ["src/utils/*"],
+      "@customTypes/*": ["src/types/*"]
+    },
+    "lib": ["ES2016"]
+  }
+}

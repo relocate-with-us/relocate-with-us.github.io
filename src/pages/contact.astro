@@ -1,0 +1,31 @@
+---
+import PageLayout from '../components/layout/PageLayout.astro';
+---
+
+<PageLayout title="Reach out to us :D">
+  <div class="flex h-screen items-center justify-center">
+    <form
+      action="https://formsubmit.co/el/bikeza"
+      method="POST"
+      class="rounded-lg bg-white p-6 shadow-md">
+      <h2 class="mb-4 text-lg font-medium">Contact Us*</h2>
+      <div class="mb-4">
+        <label class="mb-2 block font-medium" for="name"> Name* </label>
+        <input class="w-full border border-gray-400 p-2" id="name" type="text" required />
+      </div>
+      <div class="mb-4">
+        <label class="mb-2 block font-medium" for="email"> Email* </label>
+        <input class="w-full border border-gray-400 p-2" id="email" type="email" required />
+      </div>
+      <div class="mb-4">
+        <label class="mb-2 block font-medium" for="message"> Message* </label>
+        <textarea class="w-full border border-gray-400 p-2" id="message" rows="4" required
+        ></textarea>
+      </div>
+      <button
+        class="rounded bg-indigo-500 px-4 py-2 text-white transition duration-300 hover:bg-indigo-600">
+        Submit
+      </button>
+    </form>
+  </div>
+</PageLayout>
