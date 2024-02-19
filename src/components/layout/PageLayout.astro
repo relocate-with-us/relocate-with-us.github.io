@@ -1,0 +1,83 @@
+---
+import { SITE_DESCRIPTION, SITE_TITLE, SITE_THUMBNAIL } from 'src/consts';
+import Footer from './Footer.astro';
+import Navbar from './Navbar.astro';
+
+type Props = {
+  title: string;
+  description?: string;
+};
+
+const { title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
+---
+
+<!-- Call for ceasefire in Palestine banner -->
+<script is:inline src="https://tfpb.techforpalestine.org/lib/banner.min.js"></script>
+<script is:inline>
+  TFPBanner.create({
+    theme: 'auto',
+    fixed: false
+  });
+</script>
+
+<!-- Mailchimp --><!-- <script is:inline src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script is:inline>
+  (function ($) {
+    window.fnames = new Array();
+    window.ftypes = new Array();
+    fnames[0] = 'EMAIL';
+    ftypes[0] = 'email';
+    fnames[1] = 'FNAME';
+    ftypes[1] = 'text';
+    fnames[2] = 'LNAME';
+    ftypes[2] = 'text';
+    fnames[3] = 'ADDRESS';
+    ftypes[3] = 'address';
+    fnames[4] = 'PHONE';
+    ftypes[4] = 'phone';
+    fnames[5] = 'BIRTHDAY';
+    ftypes[5] = 'birthday';
+  })(jQuery);
+  var $mcj = jQuery.noConflict(true);
+</script> --><!-- Google tag (gtag.js) -->
+<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-E6NMFQFHMZ"></script>
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-E6NMFQFHMZ');
+</script>
+<script
+  is:inline
+  async
+  src="https://tag.clearbitscripts.com/v1/pk_0fab42ef1c1d7893747b55f94d761545/tags.js"
+  referrerpolicy="strict-origin-when-cross-origin"></script>
+<script
+  is:inline
+  async
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7578309605540082"
+  crossorigin="anonymous"></script>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="og:description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:image" content={SITE_THUMBNAIL} />
+
+    <title>{title}</title>
+    <link rel="icon" type="image/x-icon" href="/images/rocket.png" />
+
+    <!-- Mailchimp styles -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" />
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+    <Footer />
+  </body>
+</html>

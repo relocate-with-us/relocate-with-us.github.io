@@ -1,0 +1,103 @@
+---
+
+---
+
+<script>
+  import { filterJobs } from '@utils/jobs';
+
+  const filterButtons = document.querySelectorAll('.filterButton') as NodeListOf<HTMLButtonElement>;
+
+  filterButtons.forEach((element) => {
+    element.addEventListener('click', () => {
+      filterJobs(element.dataset.filter as string);
+    });
+  });
+</script>
+
+<div class="keywords mt-4 flex flex-wrap justify-center lg:justify-start">
+  <button
+    data-filter="marketing"
+    class="filterButton hover:text-black-400 mb-2 mr-2 rounded-lg bg-blue-700 px-3 py-1 capitalize text-white transition duration-300 hover:bg-blue-500"
+    >Marketing</button
+  ><button
+    data-filter="sales"
+    class="filterButton hover:text-black-400 mb-2 mr-2 rounded-lg bg-blue-700 px-3 py-1 capitalize text-white transition duration-300 hover:bg-blue-500"
+    >Sales</button
+  ><button
+    data-filter="frontend"
+    class="filterButton hover:text-black-400 mb-2 mr-2 rounded-lg bg-blue-700 px-3 py-1 capitalize text-white transition duration-300 hover:bg-blue-500"
+    >Frontend</button
+  ><button
+    data-filter="qa"
+    class="filterButton hover:text-black-400 mb-2 mr-2 rounded-lg bg-blue-700 px-3 py-1 capitalize text-white transition duration-300 hover:bg-blue-500"
+    >QA</button
+  ><button
+    data-filter="security"
+    class="filterButton hover:text-black-400 mb-2 mr-2 rounded-lg bg-blue-700 px-3 py-1 capitalize text-white transition duration-300 hover:bg-blue-500"
+    >Security</button
+  ><button
+    data-filter="cloud"
+    class="filterButton hover:text-black-400 mb-2 mr-2 rounded-lg bg-blue-700 px-3 py-1 capitalize text-white transition duration-300 hover:bg-blue-500"
+    >Cloud</button
+  ><button
+    data-filter="data"
+    class="filterButton hover:text-black-400 mb-2 mr-2 rounded-lg bg-blue-700 px-3 py-1 capitalize text-white transition duration-300 hover:bg-blue-500"
+    >Data</button
+  ><button
+    data-filter="devops"
+    class="filterButton hover:text-black-400 mb-2 mr-2 rounded-lg bg-blue-700 px-3 py-1 capitalize text-white transition duration-300 hover:bg-blue-500"
+    >DevOps</button
+  ><button
+    data-filter="backend"
+    class="filterButton hover:text-black-400 mb-2 mr-2 rounded-lg bg-blue-700 px-3 py-1 capitalize text-white transition duration-300 hover:bg-blue-500"
+    >Backend</button
+  ><button
+    data-filter="hr"
+    class="filterButton hover:text-black-400 mb-2 mr-2 rounded-lg bg-blue-700 px-3 py-1 capitalize text-white transition duration-300 hover:bg-blue-500"
+    >HR</button
+  ><button
+    data-filter="software"
+    class="filterButton hover:text-black-400 mb-2 mr-2 rounded-lg bg-blue-700 px-3 py-1 capitalize text-white transition duration-300 hover:bg-blue-500"
+    >Software</button
+  ><button
+    data-filter="product"
+    class="filterButton hover:text-black-400 mb-2 mr-2 rounded-lg bg-blue-700 px-3 py-1 capitalize text-white transition duration-300 hover:bg-blue-500"
+    >Product</button
+  ><button
+    data-filter="junior"
+    class="filterButton hover:text-black-400 mb-2 mr-2 rounded-lg bg-blue-700 px-3 py-1 capitalize text-white transition duration-300 hover:bg-blue-500"
+    >Junior</button
+  ><button
+    data-filter="design"
+    class="filterButton hover:text-black-400 mb-2 mr-2 rounded-lg bg-blue-700 px-3 py-1 capitalize text-white transition duration-300 hover:bg-blue-500"
+    >Design</button
+  ><button
+    data-filter="senior"
+    class="filterButton hover:text-black-400 mb-2 mr-2 rounded-lg bg-blue-700 px-3 py-1 capitalize text-white transition duration-300 hover:bg-blue-500"
+    >Senior</button
+  ><button
+    data-filter="creative"
+    class="filterButton hover:text-black-400 mb-2 mr-2 rounded-lg bg-blue-700 px-3 py-1 capitalize text-white transition duration-300 hover:bg-blue-500"
+    >Creative</button
+  ><button
+    data-filter="fullstack"
+    class="filterButton hover:text-black-400 mb-2 mr-2 rounded-lg bg-blue-700 px-3 py-1 capitalize text-white transition duration-300 hover:bg-blue-500"
+    >Full stack</button
+  ><button
+    data-filter="operations"
+    class="filterButton hover:text-black-400 mb-2 mr-2 rounded-lg bg-blue-700 px-3 py-1 capitalize text-white transition duration-300 hover:bg-blue-500"
+    >Operations</button
+  ><button
+    data-filter="android"
+    class="filterButton hover:text-black-400 mb-2 mr-2 rounded-lg bg-blue-700 px-3 py-1 capitalize text-white transition duration-300 hover:bg-blue-500"
+    >Android</button
+  ><button
+    data-filter="ios"
+    class="filterButton hover:text-black-400 mb-2 mr-2 rounded-lg bg-blue-700 px-3 py-1 capitalize text-white transition duration-300 hover:bg-blue-500"
+    >IOS</button
+  ><button
+    data-filter="''"
+    class="filterButton hover:text-black-400 mb-2 mr-2 rounded-lg bg-blue-700 px-3 py-1 capitalize text-white transition duration-300 hover:bg-blue-500"
+    >All</button
+  >
+</div>
