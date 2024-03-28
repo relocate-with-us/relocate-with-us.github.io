@@ -1,5 +1,148 @@
 [
           {
+        "company": "Monzo",
+        "position": "Senior Analytics Engineer",
+        "location": "London , UK 🇬🇧",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 28, 2024",
+        "logo": "media/monzo_bank_logo.jpeg",
+        "description": "https://job-boards.greenhouse.io/monzo/jobs/3314326"
+    },
+          {
+        "company": "Monzo",
+        "position": "Data Science Manager",
+        "location": "London , UK 🇬🇧",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 28, 2024",
+        "logo": "media/monzo_bank_logo.jpeg",
+        "description": "https://job-boards.greenhouse.io/monzo/jobs/5758065"
+    },
+          {
+        "company": "raisin",
+        "position": "Data Engineer (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 28, 2024",
+        "logo": "media/raisinbank_logo.jpeg",
+        "description": "https://raisin.jobs.personio.de/job/1483265?language=en&display=en"
+    }, 
+          {
+        "company": "raisin",
+        "position": "SOC Analyst (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 28, 2024",
+        "logo": "media/raisinbank_logo.jpeg",
+        "description": "https://raisin.jobs.personio.de/job/1357512?language=en&display=en"
+    }, 
+          {
+        "company": "raisin",
+        "position": "Backend Software Engineer (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 28, 2024",
+        "logo": "media/raisinbank_logo.jpeg",
+        "description": "https://raisin.jobs.personio.de/job/905677?language=en&display=en"
+    }, 
+           {
+        "company": "Factor Eleven",
+        "position": "Senior Cloud Engineer",
+        "location": "Bucharest, Romania 🇷🇴",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 28, 2024",
+        "logo": "media/factoreleven_logo.jpeg",
+        "description": "https://apply.workable.com/factor-eleven/j/FA160D14E5/"
+    }, 
+          {
+        "company": "qwist",
+        "position": "Senior Sales Manager",
+        "location": "Frankfurt, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 28, 2024",
+        "logo": "media/finleapconnect_logo.jpeg",
+        "description": "https://qwist.jobs.personio.com/job/1452832?language=en%3Flanguage%3D&display=en"
+    }, 
+          {
+        "company": "Factor Eleven",
+        "position": "Senior Cloud Engineer",
+        "location": "Frankfurt, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 28, 2024",
+        "logo": "media/factoreleven_logo.jpeg",
+        "description": "https://apply.workable.com/factor-eleven/j/13B5290CF0/"
+    }, 
+          {
+        "company": "Factor Eleven",
+        "position": "Senior Backend Engineer - Node.JS",
+        "location": "Zagreb, Croatia 🇭🇷",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 28, 2024",
+        "logo": "media/factoreleven_logo.jpeg",
+        "description": "https://apply.workable.com/factor-eleven/j/F1D53550F9/"
+    }, 
+          {
+        "company": "raisin",
+        "position": "Engineering Lead – Growth (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 28, 2024",
+        "logo": "media/raisinbank_logo.jpeg",
+        "description": "https://raisin.jobs.personio.de/job/1429879?language=en&display=en"
+    }, 
+          {
+        "company": "raisin",
+        "position": "Senior Backend Software Engineer (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 28, 2024",
+        "logo": "media/raisinbank_logo.jpeg",
+        "description": "https://raisin.jobs.personio.de/job/1223287?language=en&display=en"
+    }, 
+          {
+        "company": "raisin",
+        "position": "(Senior) Software Engineer (Frontend) (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 28, 2024",
+        "logo": "media/raisinbank_logo.jpeg",
+        "description": "https://raisin.jobs.personio.de/job/740495?language=en&display=en"
+    }, 
+          {
+        "company": "raisin",
+        "position": "Security Operations Center (SOC) Lead (m/f/d)",
+        "location": "Berlin, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "March 28, 2024",
+        "logo": "media/raisinbank_logo.jpeg",
+        "description": "https://raisin.jobs.personio.de/job/1357534?language=en&display=en"
+    }, 
+          {
         "company": "Enzo",
         "position": "Mobile App Engineer",
         "location": "Heidelberg, Germany 🇩🇪",
@@ -2104,17 +2247,7 @@
         "logo": "https://media.licdn.com/dms/image/C4D0BAQHWI9cvSIEInw/company-logo_200_200/0/1590235578170?e=1692230400&v=beta&t=RSdbv7e5g-YhdLpGRQC5R4aEZY1pwoy_b2U9rdu3GvA",
         "description": "https://join.com/companies/micropsi-industries/8629168-performance-marketing-manager-m-f-d"
     },
-         {
-        "company": "raisin",
-        "position": "(Senior) Software Engineer (Frontend) (m/f/d)",
-        "location": "Berlin, Germany 🇩🇪",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "July 18, 2023",
-        "logo": "https://media.licdn.com/dms/image/C560BAQGz9FQVATVRAQ/company-logo_200_200/0/1647426086850?e=1689811200&v=beta&t=kbBCou3WMp77s03z43hKKrmnNPB22Sr8AFx7oM2uwQY",
-        "description": "https://join.com/companies/raisin/8646344-senior-software-engineer-frontend-m-f-d"
-    }, 
+
          {
         "company": "MEDWING",
         "position": "Senior Full Stack Engineer (gn)",
