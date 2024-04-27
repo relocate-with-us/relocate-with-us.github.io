@@ -1,4 +1,180 @@
 [
+         {
+        "company": "Robust Intelligence",
+        "position": "Software Engineer in Test (SDET)",
+        "location": "San Francisco Bay Area, USA 🇺🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 27, 2024",
+        "logo": "media/robust_intelligence_logo.jpeg",
+        "description": "https://jobs.lever.co/robustintelligence/1f0239c7-d891-47d5-9a0b-2e34eba259c5"
+    },    
+          {
+        "company": "Robust Intelligence",
+        "position": "Senior Software Engineer, Cloud",
+        "location": "San Francisco Bay Area, USA 🇺🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 27, 2024",
+        "logo": "media/robust_intelligence_logo.jpeg",
+        "description": "https://jobs.lever.co/robustintelligence/073ea6ee-6c26-425f-aa3e-35ccfcdac655"
+    },  
+          {
+        "company": "Robust Intelligence",
+        "position": "Senior Machine Learning Engineer, AI Security",
+        "location": "San Francisco Bay Area, USA 🇺🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 27, 2024",
+        "logo": "media/robust_intelligence_logo.jpeg",
+        "description": "https://jobs.lever.co/robustintelligence/cd0fcaa4-a98c-4b3a-8141-6135c00b2e41"
+    },    
+          {
+        "company": "Robust Intelligence",
+        "position": "Software Engineering Director",
+        "location": "San Francisco Bay Area, USA 🇺🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 27, 2024",
+        "logo": "media/robust_intelligence_logo.jpeg",
+        "description": "https://jobs.lever.co/robustintelligence/5de2b666-98f7-4a09-9086-785dbf386912"
+    }, 
+          {
+        "company": "Fishlabs GmbH",
+        "position": "Junior QA Tester (Games) (m/f/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 27, 2024",
+        "logo": "media/deep_silver_fishlabs_logo.jpeg",
+        "description": "https://jobs.eu.lever.co/dsfishlabs/cefd2841-1995-4c18-8213-19f69fd0f233"
+    }, 
+          {
+        "company": "Fishlabs GmbH",
+        "position": "QA Tester (Games) (m/f/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 27, 2024",
+        "logo": "media/deep_silver_fishlabs_logo.jpeg",
+        "description": "https://jobs.eu.lever.co/dsfishlabs/736bc4de-e91e-4559-9da9-7107d094d697"
+    }, 
+          {
+        "company": "Fishlabs GmbH",
+        "position": "Build Engineer (m/f/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 27, 2024",
+        "logo": "media/deep_silver_fishlabs_logo.jpeg",
+        "description": "https://jobs.eu.lever.co/dsfishlabs/b642228b-d82c-4d35-bd96-6de7c6583b89"
+    }, 
+          {
+        "company": "Fishlabs GmbH",
+        "position": "Senior QA Tester (Games) (m/f/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 27, 2024",
+        "logo": "media/deep_silver_fishlabs_logo.jpeg",
+        "description": "https://jobs.eu.lever.co/dsfishlabs/d2a96b95-bc3a-43b6-94cc-855b4a93a732"
+    }, 
+          {
+        "company": "Fishlabs GmbH",
+        "position": "(Regular/Senior) UI/UX Designer (m/f/d)",
+        "location": "Hamburg, Germany 🇩🇪",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "April 27, 2024",
+        "logo": "media/deep_silver_fishlabs_logo.jpeg",
+        "description": "https://jobs.eu.lever.co/dsfishlabs/dfb7d5f1-3006-46ba-b58f-fd493e9e73c8"
+    }, 
+          {
+        "company": "K-tronik GmbH",
+        "position": "Test Engineer Mobile Radio Tester",
+        "location": "Dresden, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 27, 2024",
+        "logo": "media/k_tronik_gmbh_logo.jpeg",
+        "description": "https://bewerbung.k-tronik.de/en/6579/test-engineer-mobile-radio-tester-m-f-x"
+    },
+          {
+        "company": "K-tronik GmbH",
+        "position": "Hardware Developer (m/f/x) Aerospace",
+        "location": "Dresden, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 27, 2024",
+        "logo": "media/k_tronik_gmbh_logo.jpeg",
+        "description": "https://bewerbung.k-tronik.de/en/6581/hardware-developer-m-f-x-aerospace"
+    },
+          {
+        "company": "K-tronik GmbH",
+        "position": "Test Engineer (m/f/x) Battery Systems",
+        "location": "Dresden, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 27, 2024",
+        "logo": "media/k_tronik_gmbh_logo.jpeg",
+        "description": "https://bewerbung.k-tronik.de/en/6582/test-engineer-m-f-x-battery-systems"
+    },
+          {
+        "company": "Crytek",
+        "position": "QA Tester",
+        "location": "Frankfurt, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 27, 2024",
+        "logo": "media/crytek_logo.jpeg",
+        "description": "https://www.crytek.com/career/offers/overview/frankfurt-onsite-/qa-customer-support/qa-tester"
+    },
+          {
+        "company": "Crytek",
+        "position": "QA Automation Engineer - Online",
+        "location": "Frankfurt, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 27, 2024",
+        "logo": "media/crytek_logo.jpeg",
+        "description": "https://www.crytek.com/career/offers/overview/frankfurt-onsite-/qa-customer-support/qa-automation-engineer---online"
+    },
+          {
+        "company": "Crytek",
+        "position": "C++ Buildpipeline Programmer",
+        "location": "Frankfurt, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 27, 2024",
+        "logo": "media/crytek_logo.jpeg",
+        "description": "https://www.crytek.com/career/offers/overview/frankfurt-onsite-/programming-engineering/c-buildpipeline-programmer"
+    },
+          {
+        "company": "Crytek",
+        "position": "Marketing Lead",
+        "location": "Frankfurt, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "April 27, 2024",
+        "logo": "media/crytek_logo.jpeg",
+        "description": "https://www.crytek.com/career/offers/overview/frankfurt-remote/marketing-pr-biz-dev/marketing-lead"
+    },
           {
         "company": "Monzo",
         "position": "Senior Analytics Engineer",
@@ -307,17 +483,7 @@
         "logo": "media/applike_gmbh_logo.jpeg",
         "description": "https://jobs.lever.co/applike/be4b2a59-cc6a-4bac-8182-1b8728dda53a"
     },
-         {
-        "company": "K-tronik GmbH",
-        "position": "Software Test Engineer (m/f/x)",
-        "location": "Ingolstadt, Germany 🇩🇪",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "February 13, 2024",
-        "logo": "media/k_tronik_gmbh_logo.jpeg",
-        "description": "https://bewerbung.k-tronik.de/en/6536/software-test-engineer-m-f-x"
-    },
+
          {
         "company": "Bigpoint GmbH",
         "position": "Lead QA Tester (m/f/d)",
@@ -5032,17 +5198,7 @@
         "logo": "https://media.licdn.com/dms/image/C510BAQFQ7AeIjPgU4A/company-logo_200_200/0/1519878725709?e=1691625600&v=beta&t=I44CGXzsWx5o4mnAMH059ux7YLoj8SVL-XX0HPtJI3s",
         "description": "https://join.com/companies/container-xchange/8158539-frontend-engineer-angular-f-m-d"
     },
-          {
-        "company": "K-tronik GmbH",
-        "position": "Development Engineer (m/f/x) for ASIC/FPGA",
-        "location": "Dresden, Germany 🇩🇪",
-        "contract": "Full Time",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "post_date": "May 28, 2023",
-        "logo": "https://media.licdn.com/dms/image/C4E0BAQF4R67vpmwP0Q/company-logo_200_200/0/1585740177486?e=1691020800&v=beta&t=s7r1pSPB93lM_QNYBX4GYRY8Bsi2shkMHL22Lq5YHZQ",
-        "description": "https://join.com/companies/k-tronik/7920276-development-engineer-m-f-x-for-asic-fpga"
-    },
+
           {
         "company": "Chimera Entertainment",
         "position": "UI Artist (f/m/d)",
@@ -9598,17 +9754,7 @@
         "logo": "https://media.licdn.com/dms/image/C4D0BAQEWIbfGlhVfmg/company-logo_200_200/0/1610354778826?e=1687392000&v=beta&t=0TiEinwbGFhPg2k9yxINtnUSBQjVfvlH6jk4RXXeprM",
         "description": "https://gmv.csod.com/ux/ats/careersite/4/home/requisition/1793?c=gmv&lang=en-US"
     },        
-         {
-        "company": " Oak Ridge National Laboratory ",
-        "position": "Full Stack Software Developer II",
-        "location": "Tennessee, USA 🇺🇸",
-        "reloc": "Relocation Assistance",
-        "visa": "Visa Sponsorship",
-        "contract": "Full Time",
-        "post_date": "March 17, 2023",
-        "logo": "https://media.licdn.com/dms/image/C560BAQHPjhz-QCbsKg/company-logo_200_200/0/1675888043457?e=1687392000&v=beta&t=z3bGnqfsvIBBRGIhaSysXPJE9-58nunvugZ1U7Vqo_k",
-        "description": "https://jobs.ornl.gov/job/Oak-Ridge-Full-Stack-Software-Developer-II-TN-37830/881363400/"
-    },         
+     
          {
         "company": "Tactile Games",
         "position": "Senior Unity Game Programmer",
