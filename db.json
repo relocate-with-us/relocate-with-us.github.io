@@ -1,4 +1,70 @@
 [  
+         {
+        "company": "Sendcloud",
+        "position": "Lead Engineer (people manager)",
+        "location": "Eindhoven, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 2, 2023",
+        "logo": "media/sendcloud_logo.jpg",
+        "description": "https://jobs.sendcloud.com/jobs/6617544002?gh_jid=6617544002"
+    },  
+          {
+        "company": "Sendcloud",
+        "position": "Senior API Engineer",
+        "location": "Eindhoven, Netherlands 🇳🇱",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 2, 2023",
+        "logo": "media/sendcloud_logo.jpg",
+        "description": "https://jobs.sendcloud.com/jobs/7469374002?gh_jid=7469374002"
+    },  
+          {
+        "company": "Multiverse Computing",
+        "position": "Machine Learning Engineer",
+        "location": "SAN SEBASTIAN, Spain 🇪🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 2, 2024",
+        "logo": "media/multiversecomputing_logo.jpg",
+        "description": "https://multiversecomputing.teamtailor.com/jobs/4469972-machine-learning-engineer?utm_campaign=jobs-widget&utm_source=multiversecomputing.teamtailor.com&utm_content=jobs&utm_medium=web"
+    },
+          {
+        "company": "Multiverse Computing",
+        "position": "Data Scientist",
+        "location": "SAN SEBASTIAN, Spain 🇪🇸",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 2, 2024",
+        "logo": "media/multiversecomputing_logo.jpg",
+        "description": "https://multiversecomputing.teamtailor.com/jobs/4499908-data-scientist?utm_campaign=jobs-widget&utm_source=multiversecomputing.teamtailor.com&utm_content=jobs&utm_medium=web"
+    },
+          {
+        "company": "Catawiki",
+        "position": "Senior UX Designer",
+        "location": "Amsterdam, Netherlands 🇳🇱",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 2, 2024",
+        "logo": "media/catawiki_logo.jpg",
+        "description": "https://catawiki.careers/vacancies/senior-ux-designer-1069172-5376253"
+    },
+          {
+        "company": "Catawiki",
+        "position": "Backend Software Engineer",
+        "location": "Lisbon, Portugal 🇵🇹",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "contract": "Full Time",
+        "post_date": "June 2, 2024",
+        "logo": "media/catawiki_logo.jpg",
+        "description": "https://catawiki.careers/vacancies/backend-software-engineer-2807554-5758060"
+    },
           {
         "company": "adjoe",
         "position": "QA Engineer (Anti-Fraud Team) f/m/d",
