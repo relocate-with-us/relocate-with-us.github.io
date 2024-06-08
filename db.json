@@ -1,4 +1,26 @@
 [  
+          {
+        "company": "QuantCo",
+        "position": "Data Scientist (Causal Inference/Machine Learning)",
+        "location": "Berlin, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 8, 2024",
+        "logo": "media/quantco_logo.jpg",
+        "description": "https://jobs.lever.co/quantco-/7cf84f8c-eb21-4af5-97e2-6331b350a40b"
+    },
+         {
+        "company": "Crewmeister",
+        "position": "Product Owner (w/m/d)",
+        "location": "Munich, Germany 🇩🇪",
+        "contract": "Full Time",
+        "reloc": "Relocation Assistance",
+        "visa": "Visa Sponsorship",
+        "post_date": "June 8, 2024",
+        "logo": "media/crewmeister_logo.jpg",
+        "description": "https://join.com/companies/crewmeister/11476141-product-owner-w-m-d"
+    },
          {
         "company": "Sendcloud",
         "position": "Lead Engineer (people manager)",
