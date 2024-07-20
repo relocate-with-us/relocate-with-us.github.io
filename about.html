@@ -5,92 +5,238 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2.2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="rocket.png">
     <title>Reach out to us :D</title>
 </head>
 
-<body>
-
-
-    <nav class="sticky top-0 bg-gray-100">
-        <div class="mx-w-6xl mx-auto px-8">
-            <div class="flex justify-between">
-                <div class="flex space-x-1">
-                    <div>
-                        <a href="index.html" class="flex items-center py-5 px-2 text-gray-700 hover:text-black">
-                            <svg class="h-8 w-10 mr-1 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
-                            </svg>
-                            <span class="font-bold">Relocate with us</span>
-                        </a>
-                    </div>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <nav class="sticky top-0 bg-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <a href="index.html" class="flex items-center text-gray-800 hover:text-blue-600 transition duration-300">
+                        <svg class="h-8 w-10 mr-2 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                        </svg>
+                        <span class="font-bold text-xl">Relocate with us</span>
+                    </a>
                 </div>
                 <div class="hidden md:flex items-center space-x-1">
-                    <a href="https://airtable.com/shrnUCBHSQR6rsTzT" class="py-2 px-3 bg-blue-300 text-white-800 rounded hover:bg-blue-500 hover:text-black-400 transition duration-300">Post a job</a>
-                </div>
-                <div class="md:hidden flex items-center">
-
+                    <a href="https://airtable.com/shrnUCBHSQR6rsTzT" class="py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300">Post a job</a>
                 </div>
             </div>
         </div>
-        <div>
-        </div>
     </nav>
 
-    <body>
-        <div class="bg-gray-100 py-8">
+    <main class="flex-grow">
+        <div class="py-16 bg-gradient-to-b from-blue-100 to-white">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="lg:text-center">
-                    <img class="mx-auto h-25 w-auto" src="rocket.png" alt="ChatGPT">
-                    <h1 class="text-base text-indigo-600 font-semibold tracking-wide uppercase"></h1>
-                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                        Welcome
+                <div class="text-center">
+                    <img class="mx-auto h-32 w-auto mb-8" src="rocket.png" alt="Relocate with us">
+                    <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                        Welcome to Relocate with us
+                    </h1>
+                    <p class="mt-6 text-xl text-gray-600 max-w-2xl mx-auto">
+                        We're on a mission to help companies hire the best talents globally.
                     </p>
-                    <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-                        relocate with us is a project aimed at helping companies hire the best talents globally<br>
-                        relocatewith@gmail.com
-                        
+                    <div class="mt-8">
+                        <a href="mailto:relocatewith@gmail.com" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Our Impact
+                    </h2>
+                    
+                    <p class="mt-4 text-xl text-gray-600">
+                        Connecting talents with opportunities across the globe
                     </p>
                 </div>
-    </body>
-
-
-
-    <footer class="justify-between bg-gray-100 fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600 ">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 ">© 2023 <a href="index.html" class="hover:underline ">Relocate with us™</a>
-        </span>
-        <div class="flex mr-20 ">
-            <a href="https://twitter.com/RelocatewithU ">
-                <svg width="30 " height="30 " viewBox="0 0 48 48 " fill="none " xmlns="http://www.w3.org/2000/svg ">
-                    <path d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24Z " fill="#55ACEE "/>
-                    <path d="M23.2812 19.5075L23.3316 20.338L22.4922 20.2363C19.4369 19.8465 16.7677 18.5245 14.5013 16.3043L13.3934 15.2027L13.108 16.0162C12.5036 17.8297 12.8897 19.7448 14.1488 21.0328C14.8203 21.7447 14.6692 21.8464 13.5109 21.4227C13.108
-                        21.2871 12.7554 21.1854 12.7219 21.2362C12.6044 21.3549 13.0073 22.8971 13.3262 23.5073C13.7627 24.3547 14.6524 25.1851 15.6261 25.6766L16.4487 26.0664L15.475 26.0834C14.5349 26.0834 14.5013 26.1003 14.6021 26.4562C14.9378 27.5578
-                        16.264 28.7273 17.7413 29.2357L18.7822 29.5916L17.8756 30.1339C16.5326 30.9136 14.9546 31.3542 13.3766 31.3881C12.6211 31.4051 12 31.4728 12 31.5237C12 31.6932 14.0481 32.6423 15.24 33.0151C18.8157 34.1167 23.063 33.6422 26.2526 31.761C28.5189
-                        30.4221 30.7852 27.7612 31.8428 25.1851C32.4136 23.8123 32.9844 21.304 32.9844 20.1007C32.9844 19.3211 33.0347 19.2194 33.9748 18.2873C34.5288 17.7449 35.0492 17.1517 35.15 16.9823C35.3178 16.6603 35.3011 16.6603 34.4449 16.9484C33.018
-                        17.4568 32.8165 17.389 33.5216 16.6264C34.042 16.084 34.6631 15.101 34.6631 14.8129C34.6631 14.7621 34.4113 14.8468 34.1259 14.9993C33.8238 15.1688 33.1523 15.423 32.6486 15.5756L31.7421 15.8637L30.9195 15.3044C30.4663 14.9993 29.8283
-                        14.6604 29.4926 14.5587C28.6364 14.3214 27.327 14.3553 26.5548 14.6265C24.4563 15.3892 23.1301 17.3551 23.2812 19.5075Z " fill="white "/>
-                    </svg>
-            </a>
-            <a class="ml-1 " href="https://www.linkedin.com/company/relocatewithus ">
-                <svg width="30 " height="30 " viewBox="0 0 48 48 " fill="none " xmlns="http://www.w3.org/2000/svg ">
-                    <path d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24Z " fill="#0077B5 "/>
-                    <path fill-rule="evenodd " clip-rule="evenodd " d="M17.3188 14.8227C17.3188 16.3918 16.1377 17.6473 14.2412 17.6473H14.2064C12.3805 17.6473 11.2 16.3918 11.2 14.8227C11.2 13.2204 12.4164 12 14.277 12C16.1377 12 17.2835 13.2204 17.3188
-                        14.8227ZM16.9605 19.8778V36.2196H11.5216V19.8778H16.9605ZM36.5752 36.2196L36.5754 26.8497C36.5754 21.8303 33.8922 19.4941 30.3131 19.4941C27.4254 19.4941 26.1325 21.0802 25.4107 22.1929V19.8783H19.9711C20.0428 21.4117 19.9711 36.22
-                        19.9711 36.22H25.4107V27.0934C25.4107 26.605 25.446 26.1178 25.5898 25.7681C25.9829 24.7924 26.8779 23.7822 28.3805 23.7822C30.3494 23.7822 31.1365 25.2807 31.1365 27.4767V36.2196H36.5752Z " fill="white "/>
-                    </svg>
-            </a>
+                <div class="mt-10">
+                    <div class="grid grid-cols-1 gap-8 sm:grid-cols-3 lg:grid-cols-3">
+                        <div class="pt-6">
+                            <div class="flow-root bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg px-6 pb-8">
+                                <div class="-mt-6">
+                                    <div>
+                                        <span class="inline-flex items-center justify-center p-3 bg-blue-500 rounded-md shadow-lg">
+                                            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <h3 class="mt-8 text-4xl font-bold text-blue-600 tracking-tight">6K+</h3>
+                                    <p class="mt-2 text-xl font-medium text-gray-900">LinkedIn Followers</p>
+                                    <p class="mt-4 text-base text-gray-500">
+                                        Growing community of professionals
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-6">
+                            <div class="flow-root bg-gradient-to-br from-green-50 to-green-100 rounded-lg px-6 pb-8">
+                                <div class="-mt-6">
+                                    <div>
+                                        <span class="inline-flex items-center justify-center p-3 bg-green-500 rounded-md shadow-lg">
+                                            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <h3 class="mt-8 text-4xl font-bold text-green-600 tracking-tight">30K+/m</h3>
+                                    <p class="mt-2 text-xl font-medium text-gray-900">Website Visitors</p>
+                                    <p class="mt-4 text-base text-gray-500">
+                                        Engaging job seekers and employers
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-6">
+                            <div class="flow-root bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg px-6 pb-8">
+                                <div class="-mt-6">
+                                    <div>
+                                        <span class="inline-flex items-center justify-center p-3 bg-purple-500 rounded-md shadow-lg">
+                                            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <h3 class="mt-8 text-4xl font-bold text-purple-600 tracking-tight">5K+</h3>
+                                    <p class="mt-2 text-xl font-medium text-gray-900">Newsletter Subscribers</p>
+                                    <p class="mt-4 text-base text-gray-500">
+                                        Keeping our community informed
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0 ">
-            <li>
-                <a href="about.html" class="mr-9 text-black hover:underline md:mr-6 ">About</a>
-            </li>
-        </ul>
-    </footer>
-
-
+        <div class="bg-gray-50 py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Our Global Community
+                    </h2>
+                    <p class="mt-4 text-xl text-gray-600">
+                        Connecting professionals across borders and industries
+                    </p>
+                </div>
+                <div class="mt-12">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Top Visitor Countries</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                        <div class="flex items-center justify-center p-4 bg-white rounded-lg shadow-md">
+                            <span class="text-4xl mr-2">🇺🇸</span>
+                            <span class="font-semibold">USA</span>
+                        </div>
+                        <div class="flex items-center justify-center p-4 bg-white rounded-lg shadow-md">
+                            <span class="text-4xl mr-2">🇪🇬</span>
+                            <span class="font-semibold">Egypt</span>
+                        </div>
+                        <div class="flex items-center justify-center p-4 bg-white rounded-lg shadow-md">
+                            <span class="text-4xl mr-2">🇮🇳</span>
+                            <span class="font-semibold">India</span>
+                        </div>
+                        <div class="flex items-center justify-center p-4 bg-white rounded-lg shadow-md">
+                            <span class="text-4xl mr-2">🇬🇧</span>
+                            <span class="font-semibold">UK</span>
+                        </div>
+                        <div class="flex items-center justify-center p-4 bg-white rounded-lg shadow-md">
+                            <span class="text-4xl mr-2">🇩🇪</span>
+                            <span class="font-semibold">Germany</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Our community comes from </h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                        <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md">
+                            <svg class="h-12 w-12 text-blue-500 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <span class="font-semibold text-center">IT</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md">
+                            <svg class="h-12 w-12 text-green-500 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <span class="font-semibold text-center">Business</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md">
+                            <svg class="h-12 w-12 text-indigo-500 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                            <span class="font-semibold text-center">Sales</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md">
+                            <svg class="h-12 w-12 text-yellow-500 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                            </svg>
+                            <span class="font-semibold text-center">Customer Service</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md">
+                            <svg class="h-12 w-12 text-red-500 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+                            </svg>
+                            <span class="font-semibold text-center">Marketing</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md">
+                            <svg class="h-12 w-12 text-purple-500 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                            </svg>
+                            <span class="font-semibold text-center">Operations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+        <footer class="bg-gray-800 text-white py-8">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <div class="mb-4 md:mb-0">
+                            <span class="text-sm">© <span id="currentYear"></span> <a href="index.html" class="hover:underline">Relocate with us™</a></span>
+                        </div>
+                                </div>
+                    <div class="flex space-x-4 mb-4 md:mb-0">
+                        <a href="https://twitter.com/RelocatewithU" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">Twitter</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/relocatewithus" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">LinkedIn</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="https://t.me/visa_sponsored_jobs" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">Telegram</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="about.html" class="text-gray-400 hover:text-white">About</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        </script>
 </body>
-
-
 
 </html>
