@@ -1,5 +1,104 @@
 [
   {
+    "company": "Project A Ventures",
+    "position": "Product Designer (m/f/d)",
+    "location": "Berlin, Germany \ud83c\udde9\ud83c\uddea",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "August 2, 2024",
+    "logo": "media/project_a_ventures_logo.jpg",
+    "description": "https://join.com/companies/project-a/11985715-product-designer-m-f-d"
+  },
+  {
+    "company": "Project A Ventures",
+    "position": "(Senior) Data Analyst - Project A (m/f/d)",
+    "location": "Berlin, Germany \ud83c\udde9\ud83c\uddea",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "August 2, 2024",
+    "logo": "media/project_a_ventures_logo.jpg",
+    "description": "https://join.com/companies/project-a/12001696-senior-data-analyst-project-a-m-f-d"
+  },
+  {
+    "company": "K-tronik GmbH",
+    "position": "Project Manager (m/f/x) Aerospace",
+    "location": "Kiel, Germany \ud83c\udde9\ud83c\uddea",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "August 2, 2024",
+    "logo": "media/k_tronik_gmbh_logo.jpeg",
+    "description": "https://bewerbung.k-tronik.de/en/6600/project-manager-m-f-x-aerospace"
+  },
+  {
+    "company": "K-tronik GmbH",
+    "position": "Cloud Developer (m/f/x) - Backend",
+    "location": "Kiel, Germany \ud83c\udde9\ud83c\uddea",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "August 2, 2024",
+    "logo": "media/k_tronik_gmbh_logo.jpeg",
+    "description": "https://bewerbung.k-tronik.de/en/6607/cloud-developer-m-f-x-backend"
+  },
+  {
+    "company": "K-tronik GmbH",
+    "position": "C/C++ Software Developer (m/f/x)",
+    "location": "Kiel, Germany \ud83c\udde9\ud83c\uddea",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "August 2, 2024",
+    "logo": "media/k_tronik_gmbh_logo.jpeg",
+    "description": "https://bewerbung.k-tronik.de/en/6605/c-c-software-developer-m-f-x-for-linux-in-the-area-of-connectivity"
+  },
+  {
+    "company": "K-tronik GmbH",
+    "position": "Software Developer Navigation (m/f/x)",
+    "location": "Kiel, Germany \ud83c\udde9\ud83c\uddea",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "August 2, 2024",
+    "logo": "media/k_tronik_gmbh_logo.jpeg",
+    "description": "https://bewerbung.k-tronik.de/en/6603/software-developer-navigation-m-f-x"
+  },
+  {
+    "company": "K-tronik GmbH",
+    "position": "Project Manager (m/f/x) Aerospace",
+    "location": "Kiel, Germany \ud83c\udde9\ud83c\uddea",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "August 2, 2024",
+    "logo": "media/k_tronik_gmbh_logo.jpeg",
+    "description": "https://bewerbung.k-tronik.de/en/6600/project-manager-m-f-x-aerospace"
+  },
+  {
+    "company": "K-tronik GmbH",
+    "position": "Test Engineer - Propulsion (f/m/d) ",
+    "location": "Kiel, Germany \ud83c\udde9\ud83c\uddea",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "August 2, 2024",
+    "logo": "media/k_tronik_gmbh_logo.jpeg",
+    "description": "https://bewerbung.k-tronik.de/en/6642/test-engineer-propulsion-f-m-d"
+  },
+  {
+    "company": "K-tronik GmbH",
+    "position": "Test Automation Engineer (m/f/d) ",
+    "location": "Kiel, Germany \ud83c\udde9\ud83c\uddea",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "August 2, 2024",
+    "logo": "media/k_tronik_gmbh_logo.jpeg",
+    "description": "https://bewerbung.k-tronik.de/en/6660/test-automation-engineer-m-f-d-naval-it-systems"
+  },
+  {
     "company": "Kaufland.de",
     "position": "(Junior) PHP Engineer (all genders)",
     "location": "K\u00f6ln, Germany \ud83c\udde9\ud83c\uddea",
