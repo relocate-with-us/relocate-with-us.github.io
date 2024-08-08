@@ -86,15 +86,6 @@
       "description": "https://bewerbung.k-tronik.de/en/6600/project-manager-m-f-x-aerospace"
     },
     {
-      "company": "applyai",
-      "location": "",
-      "position": "Build your resume in 2min",
-      "contract": "",
-      "logo": "media/aiapply.jpg",
-      "description": "https://www.aiapply.co?via=lamine",
-      "affiliate_link": "https://www.aiapply.co?via=lamine"
-    },
-    {
       "company": "K-tronik GmbH",
       "position": "Test Engineer - Propulsion (f/m/d) ",
       "location": "Kiel, Germany \ud83c\udde9\ud83c\uddea",
@@ -104,6 +95,15 @@
       "post_date": "August 2, 2024",
       "logo": "media/k_tronik_gmbh_logo.jpeg",
       "description": "https://bewerbung.k-tronik.de/en/6642/test-engineer-propulsion-f-m-d"
+    },
+    {
+      "company": "applyai",
+      "location": "",
+      "position": "Create your resume in less than 2min",
+      "contract": "",
+      "logo": "media/aiapply.jpg",
+      "description": "https://www.aiapply.co?via=lamine",
+      "affiliate_link": "https://www.aiapply.co?via=lamine"
     },
     {
       "company": "K-tronik GmbH",
@@ -5299,3 +5299,4 @@
       "description": "https://boards.greenhouse.io/guardsquare/jobs/3042671"
     }
   ]
+  
