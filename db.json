@@ -9,6 +9,105 @@
     "affiliate_link": "https://www.aiapply.co?via=lamine"
   },
   {
+    "company": "Profitap",
+    "position": "QA Engineer",
+    "location": "Eindhoven, Netherlands \ud83c\uddf3\ud83c\uddf1",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "August 17, 2024",
+    "logo": "media/profitap_international.jpg",
+    "description": "https://join.com/companies/profitap/12126273-qa-engineer"
+  },
+  {
+    "company": "Profitap",
+    "position": "Front-End Software Engineer",
+    "location": "Eindhoven, Netherlands \ud83c\uddf3\ud83c\uddf1",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "August 17, 2024",
+    "logo": "media/profitap_international.jpg",
+    "description": "https://join.com/companies/profitap/12179586-front-end-software-engineer"
+  },
+  {
+    "company": "Optiver",
+    "position": "HR Data Analyst",
+    "location": "Amsterdam, Netherlands \ud83c\uddf3\ud83c\uddf1",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "August 17, 2024",
+    "logo": "media/optiver_logo.jpeg",
+    "description": "https://optiver.com/working-at-optiver/career-opportunities/7448680002/"
+  },
+  {
+    "company": "Optiver",
+    "position": "Production Engineer",
+    "location": "Amsterdam, Netherlands \ud83c\uddf3\ud83c\uddf1",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "August 17, 2024",
+    "logo": "media/optiver_logo.jpeg",
+    "description": "https://optiver.com/working-at-optiver/career-opportunities/6088302002/"
+  },
+  {
+    "company": "Optiver",
+    "position": "Site Reliability Engineer",
+    "location": "Amsterdam, Netherlands \ud83c\uddf3\ud83c\uddf1",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "August 17, 2024",
+    "logo": "media/optiver_logo.jpeg",
+    "description": "https://optiver.com/working-at-optiver/career-opportunities/5845750002/"
+  },
+  {
+    "company": "Optiver",
+    "position": "Senior Software Engineer",
+    "location": "Amsterdam, Netherlands \ud83c\uddf3\ud83c\uddf1",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "August 17, 2024",
+    "logo": "media/optiver_logo.jpeg",
+    "description": "https://optiver.com/working-at-optiver/career-opportunities/7518286002/"
+  },
+  {
+    "company": "Optiver",
+    "position": "Tech Lead – Data Systems",
+    "location": "Amsterdam, Netherlands \ud83c\uddf3\ud83c\uddf1",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "August 17, 2024",
+    "logo": "media/optiver_logo.jpeg",
+    "description": "https://optiver.com/working-at-optiver/career-opportunities/7465056002/"
+  },
+  {
+    "company": "Coolblue",
+    "position": "Web Backend Developer",
+    "location": "Utrecht, Netherlands \ud83c\uddf3\ud83c\uddf1",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "August 17, 2024",
+    "logo": "media/coolblue_logo.jpeg",
+    "description": "https://www.careersatcoolblue.com/vacancies/back-end-web-developer/"
+  },
+  {
+    "company": "HousingAnywhere",
+    "position": "Product Design Lead",
+    "location": "Rotterdam, Netherlands \ud83c\uddf3\ud83c\uddf1",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "August 17, 2024",
+    "logo": "media/housinganywhere_logo.jpg",
+    "description": "https://boards.greenhouse.io/housinganywhere/jobs/6091303003"
+  },
+  {
     "company": "raisin",
     "position": "(Junior) Product Manager (m/f/d)",
     "location": "Berlin, Germany \ud83c\udde9\ud83c\uddea",
@@ -27,7 +126,7 @@
     "visa": "Visa Sponsorship",
     "contract": "Full Time",
     "post_date": "August 16, 2024",
-    "logo": "media/enmacc_logo.jpg",
+    "logo": "https://media.licdn.com/dms/image/C4E0BAQHQ8mN6WDeRlQ/company-logo_200_200/0/1654160707470/enmacc_logo?e=1712793600&v=beta&t=rIsKgP1YZqRQ67Uq1dersn3hg-k5mx4LoZPHpeGA020",
     "description": "https://job-boards.eu.greenhouse.io/enmacc/jobs/4146872101"
   },
   {
@@ -2825,17 +2924,6 @@
     },
     {
       "company": "Optiver",
-      "position": "Technical Recruiter",
-      "location": "Amsterdam, Netherlands \ud83c\uddf3\ud83c\uddf1",
-      "reloc": "Relocation Assistance",
-      "visa": "Visa Sponsorship",
-      "contract": "Full Time",
-      "post_date": "June 9, 2023",
-      "logo": "https://media.licdn.com/dms/image/C4E0BAQE5InV7BZ_Wjg/company-logo_200_200/0/1659345131555?e=1691625600&v=beta&t=i1fhzUyyJAVNl9bybFjilXHw6h9rPNMV-mh9KCQUFfI",
-      "description": "https://optiver.com/working-at-optiver/career-opportunities/5845783002/"
-    },
-    {
-      "company": "Optiver",
       "position": "FPGA Engineer",
       "location": "Amsterdam, Netherlands \ud83c\uddf3\ud83c\uddf1",
       "reloc": "Relocation Assistance",
@@ -3021,17 +3109,7 @@
       "logo": "https://media.licdn.com/dms/image/C560BAQEa4J7ciS4RTw/company-logo_200_200/0/1656933172203?e=1688601600&v=beta&t=-owciJJv46EsGJfyTsjnIJrFK6-IZi4p9dss3dH5CyQ",
       "description": "https://getbyrd.com/en/jobs/?gh_jid=4162165101"
     },
-    {
-      "company": "Profitap",
-      "position": "QA Engineer",
-      "location": "Eindhoven, Netherlands \ud83c\uddf3\ud83c\uddf1",
-      "contract": "Full Time",
-      "reloc": "Relocation Assistance",
-      "visa": "Visa Sponsorship",
-      "post_date": "June 4, 2023",
-      "logo": "https://media.licdn.com/dms/image/C560BAQEknNGJUCHWWg/company-logo_200_200/0/1542205373524?e=1694044800&v=beta&t=FtRXHgyBMSbLO0XyOwvVZyMji_eaKnFQS3zelGtEdfE",
-      "description": "https://join.com/companies/profitap/8185659-qa-engineer"
-    },
+
     {
       "company": "byrd",
       "position": "Finance Associate (f/m/x)",
@@ -3164,17 +3242,7 @@
       "logo": "https://media.licdn.com/dms/image/C4E0BAQGOSs4s5aB1og/company-logo_200_200/0/1659432221685?e=1693440000&v=beta&t=Lofqph2v95hhxuJn30RHjInDED0VBESFcnZ3qVEHLpI",
       "description": "https://cuculus-gmbh.jobs.personio.com/job/1086811?display=en"
     },
-    {
-      "company": "Coolblue",
-      "position": "AWS Cloud Engineer Coolblue Energy",
-      "location": "Utrecht, Netherlands \ud83c\uddf3\ud83c\uddf1",
-      "contract": "Full Time",
-      "reloc": "Relocation Assistance",
-      "visa": "Visa Sponsorship",
-      "post_date": "May 31, 2023",
-      "logo": "https://media.licdn.com/dms/image/C4D0BAQH9yPq7nb89tQ/company-logo_200_200/0/1544083989543?e=1693440000&v=beta&t=YjThLqQZUq-0MP5dEfmUsizyD39H5g7urZNf--zYOXI",
-      "description": "https://www.careersatcoolblue.com/vacancies/aws-cloud-engineer-coolblue-energy/"
-    },
+
     {
       "company": "Coolblue",
       "position": "Front-End Developer Coolblue Energy",
@@ -3518,17 +3586,6 @@
     },
     {
       "company": "Fashion Cloud",
-      "position": "Product Designer UX/UI (gn)",
-      "location": "Amsterdam, Netherlands \ud83c\uddf3\ud83c\uddf1",
-      "reloc": "Relocation Assistance",
-      "visa": "Visa Sponsorship",
-      "contract": "Full Time",
-      "post_date": "May 23, 2023",
-      "logo": "https://media.licdn.com/dms/image/C4E0BAQFQtYSJlZ2q0A/company-logo_200_200/0/1656943926149?e=1692835200&v=beta&t=y9VFcwjncHyWEHniA7PePNHabPI3hBsPrLnkY1stNic",
-      "description": "https://fashion.cloud/en/jobs-en/#job-1237802"
-    },
-    {
-      "company": "Fashion Cloud",
       "position": "Senior Python Developer (gn)",
       "location": "Amsterdam, Netherlands \ud83c\uddf3\ud83c\uddf1",
       "reloc": "Relocation Assistance",
@@ -3559,17 +3616,6 @@
       "post_date": "May 23, 2023",
       "logo": "https://media.licdn.com/dms/image/C4E0BAQFQtYSJlZ2q0A/company-logo_200_200/0/1656943926149?e=1692835200&v=beta&t=y9VFcwjncHyWEHniA7PePNHabPI3hBsPrLnkY1stNic",
       "description": "https://fashion.cloud/en/jobs-en/#job-775125"
-    },
-    {
-      "company": "Guerrilla",
-      "position": "TOOLS PROGRAMMER",
-      "location": "Amsterdam, Netherlands \ud83c\uddf3\ud83c\uddf1",
-      "contract": "Full Time",
-      "reloc": "Relocation Assistance",
-      "visa": "Visa Sponsorship",
-      "post_date": "May 22, 2023",
-      "logo": "https://media.licdn.com/dms/image/C560BAQH8hBs8y3SZKQ/company-logo_200_200/0/1633595188051?e=1692835200&v=beta&t=0EdarH75WYiG_qx8SlnYxo_CGFJ_i1doum4yGUIvkTE",
-      "description": "https://boards.greenhouse.io/guerrilla/jobs/4426684002"
     },
     {
       "company": "Guerrilla",
@@ -3989,17 +4035,6 @@
       "post_date": "May 1, 2023",
       "logo": "https://media.licdn.com/dms/image/C560BAQFzdj53g88kqg/company-logo_200_200/0/1519912347965?e=1691020800&v=beta&t=6IL1IftVXgw1IhbK_N-3A2qb_C3R-BRQ7eFRBtJsGos",
       "description": "https://apply.workable.com/citymapper/j/6FFD7F4C65/"
-    },
-    {
-      "company": "HousingAnywhere",
-      "position": "Engineering Manager - Core API",
-      "location": "Rotterdam, Netherlands \ud83c\uddf3\ud83c\uddf1",
-      "contract": "Full Time",
-      "reloc": "Relocation Assistance",
-      "visa": "Visa Sponsorship",
-      "post_date": "May 4, 2023",
-      "logo": "https://media.licdn.com/dms/image/C4D0BAQG9yedIEa5gyA/company-logo_200_200/0/1646670271841?e=1691020800&v=beta&t=nNvT63MzuogIM1fhTiYSOsnVIol2LBbRpRLKFtvZ-Go",
-      "description": "https://boards.greenhouse.io/housinganywhere/jobs/5570185003"
     },
     {
       "company": "Atos",

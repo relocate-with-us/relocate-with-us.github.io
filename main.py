@@ -5,7 +5,7 @@ def read_json_file(file_path):
         return json.load(file)
 
 def is_german_company(job):
-    return "Germany" in job.get("location", "")
+    return "Netherlands" in job.get("location", "")
 
 def format_as_markdown_table(german_companies):
     if not german_companies:
@@ -25,7 +25,7 @@ def write_to_file(content, file_path):
 
 def main():
     input_file_path = "db.json"
-    output_file_path = "german_companies.txt"
+    output_file_path = "dutch_companies.txt"
     
     data = read_json_file(input_file_path)
     
