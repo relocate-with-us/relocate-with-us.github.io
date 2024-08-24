@@ -5,7 +5,7 @@ def read_json_file(file_path):
         return json.load(file)
 
 def is_german_company(job):
-    return "Netherlands" in job.get("location", "")
+    return "UK" in job.get("location", "")
 
 def format_as_markdown_table(german_companies):
     if not german_companies:
