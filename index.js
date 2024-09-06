@@ -23,7 +23,7 @@ function defaultJobs(data) {
     data.forEach((job, index) => {
         // check if job is already loaded
         if (!loadedJobs.includes(job.position)) {
-            jobsList.innerHTML += generateJobElement(job);
+            jobsList.innerHTML += generateJobElement(job, index);
             loadedJobs.push(job.position);
         }
     });
@@ -55,46 +55,72 @@ function filterJobs(text) {
         data.forEach((job, index) => {
             // check if job is already loaded
             if (!loadedJobs.includes(job.position)) {
-                jobsList.innerHTML += generateJobElement(job);
+                jobsList.innerHTML += generateJobElement(job, index);
                 loadedJobs.push(job.position);
             }
         });
     });
 }
 
-function generateJobElement({ description, company, logo, reloc, visa, position, contract, location, post_date, affiliate_link }) {
-    const applyLink = affiliate_link || description;
-    const applyText = affiliate_link ? "Generate" : "Apply <svg class=\"inline-block\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-external-link\" width=\"20\" height=\"16\" viewBox=\"0 0 24 24\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"></path><path d=\"M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5\"></path><path d=\"M10 14l10 -10\"></path><path d=\"M15 4l5 0l0 5\"></path></svg>";
+function toggleDescription(index) {
+    const descriptionElement = document.getElementById(`job-description-${index}`);
+    const isVisible = descriptionElement.style.display === "block";
+    descriptionElement.style.display = isVisible ? "none" : "block";
+}
 
-    const dateElement = post_date 
-        ? `<div class="mt-2 text-gray-700 hidden md:block">Posted: ${post_date}</div>` 
-        : '';        
+function generateJobElement({ description, descriptions, company, logo, reloc, visa, position, contract, location, post_date, affiliate_link }, index) {
+    const applyLink = affiliate_link || description;
+    const applyText = affiliate_link ? "Generate" : "Apply <svg class=\"inline-block\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-external-link\" width=\"20\" height=\"16\" viewBox=\"0 0 24 24\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"></path><path d=\"M10 14l10 -10\"></path><path d=\"M15 4l5 0l0 5\"></path></svg>";
+
+    // Format post date for display
+    const postDate = new Date(post_date);
+    const currentDate = new Date();
+    const timeDiff = currentDate - postDate; // Time difference in milliseconds
+    const oneDay = 24 * 60 * 60 * 1000; // One day in milliseconds
+
+    // If job posted within the last 24 hours, show "New", otherwise show the actual date
+    let dateBadge = "";
+    if (timeDiff < oneDay) {
+        dateBadge = `<span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">New</span>`;
+    } else {
+        const formattedDate = postDate.toLocaleDateString(); // Format date as MM/DD/YYYY or local format
+        dateBadge = `<span class="text-gray-500 text-sm">Posted: ${formattedDate}</span>`;
+    }
+
+    const visaBadge = visa ? `<span class="badge bg-green-200 text-green-800 mr-2">${visa}</span>` : '';
+    const relocBadge = reloc ? `<span class="badge bg-yellow-200 text-yellow-800">${reloc}</span>` : '';
+
     return `
-        <a href="${description}" class="flex bg-white shadow-md my-6 mx-2 p-3 rounded border-l-4 border-teal-500 border-solid">
-            <div class="flex-shrink-0 mr-4">
-                <img src=${logo} loading=lazy class="w-16 h-16 object-contain" alt="${company}" />
-            </div>
-            <div class="flex-grow">
-                <div class="flex items-center justify-between">
-                    <h2 class="font-bold text-xl">${position}</h2>
-                    <div class="flex items-center">
-                        ${dateElement}
-                        <button onclick="location.href='${applyLink}'" type="button" class="hidden md:block bg-blue-500 text-white rounded py-2 px-3 hover:bg-blue-700 transition duration-300 ml-2">${applyText}</button>
+        <div class="job-listing relative shadow-md my-4 p-4 rounded border-l-4 border-teal-500 border-solid hover:shadow-lg" style="max-width: 700px; transition: box-shadow 0.3s ease;">
+            <div class="flex justify-between items-center">
+                <div class="flex">
+                    <div class="flex-shrink-0 mr-4">
+                        <img src=${logo} loading=lazy class="w-16 h-16 object-contain" alt="${company}" />
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="font-bold text-xl">${position}</h2>
+                        <div class="text-teal-500">${company}</div>
+                        <div class="mt-2 text-gray-700">${contract} · ${location}</div>
                     </div>
                 </div>
-                <div class="mt-2 text-teal-500">${company}</div>
-                <div class="flex items-center flex-wrap mt-2">
-                    ${affiliate_link 
-                        ? `<div class="mr-2 mb-2 md:mb-0 bg-teal-500 text-sm text-teal-100 p-1 px-2 rounded-full uppercase">Apply quicker</div>
-                           <div class="mr-2 mb-2 md:mb-0 bg-purple-500 text-sm text-purple-100 p-1 px-2 rounded-full uppercase">Save time</div>`
-                        : `${reloc ? `<div class="mr-2 mb-2 md:mb-0 bg-teal-500 text-sm text-teal-100 p-1 px-2 rounded-full uppercase">${reloc}</div>` : ''}
-                           ${visa ? `<div class="mr-2 mb-2 md:mb-0 bg-purple-500 text-sm text-purple-100 p-1 px-2 rounded-full uppercase">${visa}</div>` : ''}`
-                    }
+                <div class="text-right relative">
+                    ${dateBadge}
+                    <!-- Apply button hidden by default, shown on hover -->
+                    <button onclick="location.href='${applyLink}'" type="button" class="apply-button hidden absolute top-0 right-0 bg-blue-500 text-white rounded py-2 px-3 hover:bg-blue-700 transition duration-300" style="font-size: 12px; transform: translateY(-100%);">Apply</button>
                 </div>
-                <div class="mt-2 text-gray-700">${contract} · ${location}</div>
-                <button onclick="location.href='${applyLink}'" type="button" class="md:hidden block mt-2 bg-blue-500 text-white rounded py-2 px-3 hover:bg-blue-700 transition duration-300 w-full">${applyText}</button>
-                ${post_date ? `<div class="text-gray-700 mt-2 md:hidden">Posted: ${post_date}</div>` : ''}
             </div>
-        </a>
+            
+            <div class="flex mt-4 items-center">
+                ${visaBadge}
+                ${relocBadge}
+            </div>
+
+            <div id="job-description-${index}" class="job-description hidden mt-4 p-4 bg-gray-100 border-t border-gray-300" style="display: none;">
+                <p><strong>Job Description:</strong> ${descriptions}</p>
+                <a href="${applyLink}" class="text-blue-500 hover:text-blue-700 transition">Apply here</a>
+            </div>
+        </div>
     `;
 }
+
+

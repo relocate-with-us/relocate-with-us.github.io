@@ -1,14 +1,5 @@
 [
   {
-    "company": "applyai",
-    "location": "",
-    "position": "Automate your job search with AI",
-    "contract": "",
-    "logo": "media/aiapply.jpg",
-    "description": "https://www.aiapply.co?via=lamine",
-    "affiliate_link": "https://www.aiapply.co?via=lamine"
-  },
-  {
     "company": "FINN",
     "position": "Junior Backend Engineer (NodeJS/Typescript)",
     "location": "Munich, Germany \ud83c\udde9\ud83c\uddea",
@@ -17,8 +8,8 @@
     "contract": "Full Time",
     "post_date": "September 1, 2024",
     "logo": "media/finn_auto_logo.jpg",
-    "description": "https://jobs.lever.co/finn/4c53cdf2-5f41-4402-b14d-2abd4f025e7f"
-  },
+    "description": "https://jobs.lever.co/finn/4c53cdf2-5f41-4402-b14d-2abd4f025e7f"  ,
+    "descriptions": "https:/" }, 
   {
     "company": "Celus",
     "position": "Software Engineer - Algorithm Optimization",
@@ -524,15 +515,6 @@
       "post_date": "August 2, 2024",
       "logo": "media/k_tronik_gmbh_logo.jpeg",
       "description": "https://bewerbung.k-tronik.de/en/6642/test-engineer-propulsion-f-m-d"
-    },
-    {
-      "company": "applyai",
-      "location": "",
-      "position": "Create your resume in less than 2min",
-      "contract": "",
-      "logo": "media/aiapply.jpg",
-      "description": "https://www.aiapply.co?via=lamine",
-      "affiliate_link": "https://www.aiapply.co?via=lamine"
     },
     {
       "company": "K-tronik GmbH",

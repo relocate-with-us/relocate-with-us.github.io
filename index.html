@@ -101,6 +101,40 @@
                         font: 14px Helvetica, Arial, sans-serif;
                         width: 400px;
                     }
+                    .badge {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    line-height: 1;
+}
+.bg-green-200 {
+    background-color: #c6f6d5;
+}
+.text-green-800 {
+    color: #2f855a;
+}
+.bg-yellow-200 {
+    background-color: #fefcbf;
+}
+.text-yellow-800 {
+    color: #975a16;
+}
+/* Hide the apply button by default */
+.apply-button {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show the apply button on hover */
+.job-listing:hover .apply-button {
+    display: inline-block;
+    opacity: 1;
+}
+
+
                 </style>
                 <div id="mc_embed_signup">
                     <form
@@ -127,6 +161,7 @@
                         </div>
                     </form>
                 </div>
+                
                 <div class="text-center mt-4">
                     <a href="https://wise.com/pay/me/mohammedlaminea4" target="_blank" style="text-decoration: none;">
                         <div style="display: inline-block; padding: 10px 20px; background-color: #00b9ff; color: white; border-radius: 5px; font-weight: bold; font-family: Arial, sans-serif;">
