@@ -1,5 +1,27 @@
 [
   {
+    "company": "Lithe Consulting Ltd",
+    "position": ".NET Developer",
+    "location": "Macclesfield, United Kingdom 🇬🇧",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "September 28, 2024",
+    "logo": "media/lithe_transformation_logo.png",
+    "description": "https://thinklithe.zohorecruit.eu/jobs/Careers/59632000003205045/NET-Developer"
+  },
+  {
+    "company": "Lithe Consulting Ltd",
+    "position": "Java Developer",
+    "location": "Macclesfield, United Kingdom 🇬🇧",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "September 28, 2024",
+    "logo": "media/lithe_transformation_logo.png",
+    "description": "https://thinklithe.zohorecruit.eu/jobs/Careers/59632000003205025/Java-Developer"
+  },
+  {
     "company": "Oxa",
     "position": "Sensor Engineer",
     "location": "Oxford, United Kingdom 🇬🇧",
