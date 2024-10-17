@@ -109,7 +109,11 @@ function generateJobElement({ description, descriptions, company, logo, reloc, v
                 <div class="text-right relative">
                     ${dateBadge}
                     <!-- Apply button hidden by default, shown on hover -->
-                    <button onclick="location.href='${applyLink}'" type="button" class="apply-button hidden absolute top-0 right-0 bg-blue-500 text-white rounded py-2 px-3 hover:bg-blue-700 transition duration-300" style="font-size: 12px; transform: translateY(-100%);">Apply</button>
+                    <a href='${applyLink}' target='_blank'>
+                        <button type="button" class="apply-button hidden absolute top-0 right-0 bg-blue-500 text-white rounded py-2 px-3 hover:bg-blue-700 transition duration-300" style="font-size: 12px; transform: translateY(-100%);">
+                            Apply
+                        </button>
+                    </a>
                 </div>
             </div>
             
