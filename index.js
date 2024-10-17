@@ -1,10 +1,14 @@
+// list of html elements
+const jobsList = document.getElementById("jobsList");
+
 // keep track of loaded jobs
 const loadedJobs = [];
 
 function fetchDefaultJobs() {
     const start = 0;
     const limit = 10;
-    fetchJobs(start, limit, defaultJobs);
+
+    fetchJobs(start, limit, null, defaultJobs);
 }
 
 function fetchJobs(start, limit, filter, callback) {
@@ -19,19 +23,18 @@ function fetchJobs(start, limit, filter, callback) {
 }
 
 function defaultJobs(data) {
-    const jobsList = document.getElementById("jobsList");
-    data.forEach((job, index) => {
-        // check if job is already loaded
-        if (!loadedJobs.includes(job.position)) {
-            jobsList.innerHTML += generateJobElement(job, index);
-            loadedJobs.push(job.position);
-        }
-    });
+        data.forEach((job, index) => {
+            // check if job is already loaded
+            if (!loadedJobs.includes(job.position)) {
+                jobsList.innerHTML += generateJobElement(job, index);
+                loadedJobs.push(job.position);
+            }
+        });
 }
 
 window.addEventListener('scroll', () => {
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-        const jobsList = document.getElementById("jobsList");
+        
         const start = jobsList.children.length;
         const limit = 10; // Load 10 items at a time
         fetchJobs(start, limit, null, (data) => {
@@ -43,12 +46,12 @@ window.addEventListener('scroll', () => {
 function filterJobs(text) {
     const start = 0;
     const limit = 10;
+
     fetchJobs(start, limit, (job) => {
         const query = String(text).toLowerCase();
         const position = String(job.position).toLowerCase();
         return position.includes(query);
     }, (data) => {
-        const jobsList = document.getElementById("jobsList");
         jobsList.innerHTML = "";
         loadedJobs.length = 0;
 
