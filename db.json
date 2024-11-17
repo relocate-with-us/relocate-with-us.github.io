@@ -1,5 +1,38 @@
 [
   {
+    "company": "Anthropic",
+    "position": "Research Engineer, Horizons",
+    "location": "London, United Kingdom 🇬🇧",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+      "post_date": "November 17, 2024",
+    "logo": "media/anthropicresearch_logo.jpg",
+    "description": "https://boards.greenhouse.io/anthropic/jobs/4138859008"
+  },
+  {
+    "company": "Anthropic",
+    "position": "Data Science and Analytics, Go to Market",
+      "location": "San Francisco, USA \ud83c\uddfa\ud83c\uddf8",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+      "post_date": "November 17, 2024",
+    "logo": "media/anthropicresearch_logo.jpg",
+    "description": "https://boards.greenhouse.io/anthropic/jobs/4136408008"
+  },
+  {
+    "company": "Anthropic",
+    "position": "Engineering Manager, API Experience",
+      "location": "San Francisco, USA \ud83c\uddfa\ud83c\uddf8",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+      "post_date": "November 17, 2024",
+    "logo": "media/anthropicresearch_logo.jpg",
+    "description": "https://boards.greenhouse.io/anthropic/jobs/4107555008"
+  },
+  {
     "company": "Capua",
     "position": "Graduate Program",
     "location": "London, United Kingdom 🇬🇧",
