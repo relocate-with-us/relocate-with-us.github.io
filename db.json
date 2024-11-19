@@ -1,4 +1,59 @@
 [
+    {
+      "company": "Crytek",
+      "position": "Senior UI Programmer",
+      "location": "Frankfurt, Germany \ud83c\udde9\ud83c\uddea",
+      "contract": "Full Time",
+      "reloc": "Relocation Assistance",
+      "visa": "Visa Sponsorship",
+      "post_date": "November 19, 2024",
+      "logo": "media/crytek_logo.jpeg",
+      "description": "https://www.crytek.com/career/offers/overview/frankfurt-remote/programming-engineering/senior-ui-programmer"
+    },
+  {
+      "company": "Crytek",
+      "position": "Senior Site Reliability Engineer",
+      "location": "Frankfurt, Germany \ud83c\udde9\ud83c\uddea",
+      "contract": "Full Time",
+      "reloc": "Relocation Assistance",
+      "visa": "Visa Sponsorship",
+      "post_date": "November 19, 2024",
+      "logo": "media/crytek_logo.jpeg",
+      "description": "https://www.crytek.com/career/offers/overview/frankfurt-remote/programming-engineering/senior-site-reliability-engineer"
+    },
+  {
+      "company": "Crytek",
+      "position": "Senior C++ Build Pipeline Programmer",
+      "location": "Frankfurt, Germany \ud83c\udde9\ud83c\uddea",
+      "contract": "Full Time",
+      "reloc": "Relocation Assistance",
+      "visa": "Visa Sponsorship",
+      "post_date": "November 19, 2024",
+      "logo": "media/crytek_logo.jpeg",
+      "description": "https://www.crytek.com/career/offers/overview/frankfurt-remote/programming-engineering/senior-c-build-pipeline-programmer"
+    },
+  {
+      "company": "Crytek",
+      "position": "Sandbox Lead",
+      "location": "Frankfurt, Germany \ud83c\udde9\ud83c\uddea",
+      "contract": "Full Time",
+      "reloc": "Relocation Assistance",
+      "visa": "Visa Sponsorship",
+      "post_date": "November 19, 2024",
+      "logo": "media/crytek_logo.jpeg",
+      "description": "https://www.crytek.com/career/offers/overview/frankfurt-remote/programming-engineering/sandbox-lead"
+    },
+  {
+      "company": "Crytek",
+      "position": "Lead Site Reliability Engineer",
+      "location": "Frankfurt, Germany \ud83c\udde9\ud83c\uddea",
+      "contract": "Full Time",
+      "reloc": "Relocation Assistance",
+      "visa": "Visa Sponsorship",
+      "post_date": "November 19, 2024",
+      "logo": "media/crytek_logo.jpeg",
+      "description": "https://www.crytek.com/career/offers/overview/frankfurt-remote/programming-engineering/lead-site-reliability-engineer"
+    },
   {
     "company": "Anthropic",
     "position": "Research Engineer, Horizons",
