@@ -1,4 +1,37 @@
 [
+ {
+      "company": "Birch",
+      "position": "Senior Data Scientist",
+      "location": "remote, Germany \ud83c\udde9\ud83c\uddea",
+      "contract": "Full Time",
+      "reloc": "Relocation Assistance",
+      "visa": "Visa Sponsorship",
+      "post_date": "November 24, 2024",
+      "logo": "media/birch_logo.jpg",
+      "description": "https://apply.workable.com/birch/j/1040EAB8B6/"
+    },
+    {
+      "company": "Container xChange",
+      "position": "Backend Engineer (f/m/d)",
+      "location": "Hamburg, Germany \ud83c\udde9\ud83c\uddea",
+      "contract": "Full Time",
+      "reloc": "Relocation Assistance",
+      "visa": "Visa Sponsorship",
+      "post_date": "November 24, 2024",
+      "logo": "media/container_xchange_logo.jpg",
+      "description": "https://xchange.recruitee.com/o/backend-engineer-fmd-2"
+    },
+    {
+      "company": "Container xChange",
+      "position": "(Junior) Frontend Engineer (m/f/d)",
+      "location": "Hamburg, Germany \ud83c\udde9\ud83c\uddea",
+      "contract": "Full Time",
+      "reloc": "Relocation Assistance",
+      "visa": "Visa Sponsorship",
+      "post_date": "November 24, 2024",
+      "logo": "media/container_xchange_logo.jpg",
+      "description": "https://xchange.recruitee.com/o/frontend-engineer-f-m-d"
+    },
     {
       "company": "Crytek",
       "position": "Senior UI Programmer",
