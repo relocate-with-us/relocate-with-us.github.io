@@ -1,352 +1,559 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
 
 <head>
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
-
-    <script src="https://tfpb.techforpalestine.org/lib/banner.min.js"></script>
-    <script>
-        TFPBanner.create({
-            theme: "auto",
-            fixed: false,
-        });
-    </script>
-    <script
-        data-grow-initializer="">!(function () { window.growMe || ((window.growMe = function (e) { window.growMe._.push(e); }), (window.growMe._ = [])); var e = document.createElement("script"); (e.type = "text/javascript"), (e.src = "https://faves.grow.me/main.js"), (e.defer = !0), e.setAttribute("data-grow-faves-site-id", "U2l0ZTowNDkzMzZkNy05Y2NhLTQwYmEtYWU3MC1jZDU4NjE3YjA4Nzg="); var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t); })();</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="og:description"
-        content="Relocate with Us is a job board that specializes in providing visa sponsorship or relocation support for job seekers. Find your next international job with ease and confidence.">
-    <meta property="og:title" content="Relocate-with-us" />
-    <meta property="og:image" content="rocket.png" />
 
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <title>Visa Sponsorship & Relocation Assistance Jobs</title>
-    <link rel="icon" type="image/x-icon" href="rocket.png">
+    <!-- Primary Meta Tags -->
+    <title>Global Visa Sponsored Jobs + Relocation Assistance</title>
+    <meta name="title" content="Global Visa Sponsored Jobs + Relocation Assistance">
+    <meta name="description"
+        content="Find international tech jobs with visa sponsorship and relocation assistance. 800+ jobs across 50+ countries. Your global career starts here.">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6NMFQFHMZ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://visajobs.xyz/">
+    <meta property="og:title" content="Global Visa Sponsored Jobs + Relocation Assistance">
+    <meta property="og:description"
+        content="Find international tech jobs with visa sponsorship and relocation assistance. 800+ jobs across 50+ countries. Your global career starts here.">
+    <meta property="og:image" content="https://visajobs.xyz/og.png">
 
-        gtag('config', 'G-E6NMFQFHMZ');
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://visajobs.xyz/">
+    <meta property="twitter:title" content="Global Visa Sponsored Jobs + Relocation Assistance">
+    <meta property="twitter:description"
+        content="Find international tech jobs with visa sponsorship and relocation assistance. 800+ jobs across 50+ countries. Your global career starts here.">
+    <meta property="twitter:image" content="https://visajobs.xyz/og.png">
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://visajobs.xyz">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "VisaJobs.xyz",
+        "url": "https://visajobs.xyz",
+        "description": "Global platform for tech professionals seeking international jobs with visa sponsorship",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://visajobs.xyz/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
     </script>
-    <script async src="https://tag.clearbitscripts.com/v1/pk_0fab42ef1c1d7893747b55f94d761545/tags.js"
-        referrerpolicy="strict-origin-when-cross-origin"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7578309605540082"
-        crossorigin="anonymous"></script>
+
+    <!-- Performance and Accessibility Optimizations -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://unpkg.com">
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="keywords"
+        content="visa jobs, tech jobs, international careers, job sponsorship, relocation jobs, global tech employment">
+        <style>
+            .group:hover .group-hover\:opacity-100 {
+                opacity: 1;
+            }
+            
+        </style>
+        
 </head>
 
-<body class="bg-gray-100 h-screen">
+<body>
+    <div class="w-full min-h-screen">
+        <!-- Header -->
+        <header class="flex items-center justify-between p-4 border-b">
+            <div class="flex items-center gap-2">
+                <i data-lucide="rocket" class="w-6 h-6 text-blue-500"></i>
+                <span class="text-xl font-semibold">visajobs.xyz</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="jobs/" class="relative text-blue-500 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full">
+                    Browse Jobs
+                </a>
+                <button class="px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600">
+                    Post a job
+                </button>
+            </div>
+        </header>
+        
+        
+        
+        
 
+        <!-- Main Content -->
+        <main class="max-w-6xl mx-auto px-4 py-12">
+            <!-- Hero Section -->
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-snug">
+                    Jobs with
+                    <span class="bg-yellow-200 px-2 inline-block">Visa Sponsorship</span> &amp;
+                    <span class="bg-yellow-200 px-2 inline-block">Relocation Assistance</span>
+                </h1>
 
-    <nav class="sticky top-0 bg-gray-100 z-50">
-        <div class="mx-w-6xl mx-auto px-8">
-            <div class="flex justify-between">
-                <div class="flex space-x-1">
-                    <div>
-                        <a href="https://relocate-with-us.github.io"
-                            class="flex items-center py-5 px-2 text-gray-700 hover:text-black">
-                            <svg class="h-8 w-10 mr-1 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
-                            </svg>
-                            <span class="font-bold">Relocate with us</span>
-                        </a>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-8">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="globe" class="w-5 h-5"></i>
+                        <span>50+ Countries</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="briefcase" class="w-5 h-5"></i>
+                        <span>800+ Jobs</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="map-pin" class="w-5 h-5"></i>
+                        <span>Visa Sponsorship + Relocation Assistance</span>
                     </div>
                 </div>
-                <div class="hidden md:flex items-center space-x-1">
-                    <a href="https://airtable.com/shrnUCBHSQR6rsTzT"
-                        class="py-2 px-3 bg-blue-300 text-white-800 rounded hover:bg-blue-500 hover:text-black-400 transition duration-300">Post
-                        a job</a>
-                </div>
-                <div class="md:hidden flex items-center">
-                </div>
             </div>
-        </div>
-        <div>
 
-        </div>
-    </nav>
-
-    <header class="hero bg-white text-grey-darkest py-8 hero--compact">
-        <div class="container mx-auto px-60 max-w-4xl">
-            <h1 class="hero__title font-normal leading-normal">
-                <h1 class="text-center text-4xl font-bold">
-
-                    <br> Jobs with <span class="relative inline-block">
-                        <span class="relative z-10">Visa Sponsorship</span>
-                        <span class="absolute inset-0 transform rotate-2 bg-yellow-300 -z-10"></span>
-                    </span> &
-                    <span class="relative inline-block">
-                        <span class="relative z-10">Relocation Assistance</span>
-                        <span class="absolute inset-0 transform -rotate-2 bg-yellow-300 -z-10"></span>
-                    </span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                        class="inline-block w-18 h-12">
-                        <path fill-rule="evenodd"
-                            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM8.547 4.505a8.25 8.25 0 1011.672 8.214l-.46-.46a2.252 2.252 0 01-.422-.586l-1.08-2.16a.414.414 0 00-.663-.107.827.827 0 01-.812.21l-1.273-.363a.89.89 0 00-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.211.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 01-1.81 1.025 1.055 1.055 0 01-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.654-.261a2.25 2.25 0 01-1.384-2.46l.007-.042a2.25 2.25 0 01.29-.787l.09-.15a2.25 2.25 0 012.37-1.048l1.178.236a1.125 1.125 0 001.302-.795l.208-.73a1.125 1.125 0 00-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 01-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 01-1.458-1.137l1.279-2.132z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </h1>
-                <!-- Begin Mailchimp Signup Form -->
-                <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
-                <style type="text/css">
-                    #mc_embed_signup {
-                        background: rgb(255, 255, 255);
-                        clear: left;
-                        font: 14px Helvetica, Arial, sans-serif;
-                        width: 400px;
-                    }
-
-                    .badge {
-                        display: inline-block;
-                        padding: 4px 8px;
-                        font-size: 12px;
-                        font-weight: 600;
-                        border-radius: 4px;
-                        line-height: 1;
-                    }
-
-                    .bg-green-200 {
-                        background-color: #c6f6d5;
-                    }
-
-                    .text-green-800 {
-                        color: #2f855a;
-                    }
-
-                    .bg-yellow-200 {
-                        background-color: #fefcbf;
-                    }
-
-                    .text-yellow-800 {
-                        color: #975a16;
-                    }
-
-                    /* Hide the apply button by default */
-                    .apply-button {
-                        display: none;
-                        opacity: 0;
-                        transition: opacity 0.3s ease;
-                    }
-
-                    /* Show the apply button on hover */
-                    .job-listing:hover .apply-button {
-                        display: inline-block;
-                        opacity: 1;
-                    }
-                </style>
+            <div class="bg-white p-6 rounded-lg shadow-sm border mb-8 max-w-lg mx-auto">
+                <h1 class="text-2xl font-bold mb-4 text-center">Find Your Dream Job Abroad</h1>
+                <p class="text-gray-600 text-center mb-6">
+                    Unlock global opportunities with visa sponsorship. Your career journey starts here! 🌍
+                </p>
                 <div id="mc_embed_signup">
-                    <form
-                        action="https://aucegypt.us12.list-manage.com/subscribe/post?u=5f1327076a747496c7ce750c7&amp;id=2c4880337f&amp;f_id=005bbde0f0"
-                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                        class="inline-block validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                            <div class="mc-field-group">
-                                <input type="email" placeholder="Email Address" value="" name="EMAIL"
-                                    class="rounded-full required email" id="mce-EMAIL" required style="width: 250px;">
-                            </div>
-                            <div id="mce-responses" class="clear foot">
-                                <div class="response" id="mce-error-response" style="display:none"></div>
-                                <div class="response" id="mce-success-response" style="display:none"></div>
-                            </div>
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                                    name="b_5f1327076a747496c7ce750c7_2c4880337f" tabindex="-1" value=""></div>
-                            <div class="optionalParent">
-                                <div class="clear foot">
-                                    <input style="background:#55ACEE" type="submit" value="Subscribe" name="subscribe"
-                                        id="mc-embedded-subscribe" class="button">
-                                </div>
-                            </div>
+                    <form action="https://aucegypt.us12.list-manage.com/subscribe/post?u=5f1327076a747496c7ce750c7&amp;id=2c4880337f&amp;f_id=005bbde0f0" 
+                          method="post" 
+                          id="mc-embedded-subscribe-form" 
+                          name="mc-embedded-subscribe-form" 
+                          class="subscriber-form validate" 
+                          target="_blank" 
+                          novalidate>
+                        <div class="flex flex-col gap-4 items-center">
+                            <input
+                                type="email"
+                                name="EMAIL"
+                                class="required email w-full p-2 border rounded-lg"
+                                id="mce-EMAIL"
+                                placeholder="Enter your email..."
+                                required
+                                aria-required="true"
+                            >
+                            <button
+                                type="submit"
+                                id="mc-embedded-subscribe"
+                                class="w-full px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors">
+                                Sign up for FREE...
+                            </button>
+                        </div>
+                        <div id="mce-responses" class="mt-4 text-center">
+                            <p id="mce-error-response" class="text-red-500" style="display:none"></p>
+                            <p id="mce-success-response" class="text-green-500" style="display:none"></p>
+                        </div>
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_5f1327076a747496c7ce750c7_2c4880337f" tabindex="-1" value="">
                         </div>
                     </form>
                 </div>
-
-                <div class="text-center mt-4">
-                    <a href="https://wise.com/pay/me/mohammedlaminea4" target="_blank" style="text-decoration: none;">
-                        <div
-                            style="display: inline-block; padding: 10px 20px; background-color: #00b9ff; color: white; border-radius: 5px; font-weight: bold; font-family: Arial, sans-serif;">
-                            Support me via Wise
+                <div class="mt-4 text-center flex gap-2">
+                    <div class="subscriber-social-proof flex ">
+                        <div class="flex -space-x-2 overflow-hidden">
+                            <img class="inline-block size-10 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                            <img class="inline-block size-10 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                            <img class="inline-block size-10 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt="">
+                            <img class="inline-block size-10 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                            <a class="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
                         </div>
+                        <p class="subscriber-social-proof-text text-gray-600 mx-4 mt-4">Join 30k job seekers...</p>
+                    </div>
+                    <img src="data:image/png;base64,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" 
+                         class="subscriber-social-proof-arrow w-12 mx-2 -mt-4" alt="Arrow">
+                </div>
+            </div>
+            <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+            <script>
+                (function($) {
+                    window.fnames = [];
+                    window.ftypes = [];
+                    fnames[0] = 'EMAIL';
+                    ftypes[0] = 'email';
+                })(jQuery);
+                var $mcj = jQuery.noConflict(true);
+            </script>
+            
+            
+
+            <!-- Search Filters -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border mb-8 px-4 max-w-3xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="relative">
+                        <i data-lucide="search"
+                            class="w-5 h-5 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                        <input type="text" placeholder="Search jobs..."
+                            class="w-full pl-10 pr-4 py-2 border rounded-lg">
+                    </div>
+
+                    <select class="w-full p-2 border rounded-lg">
+                        <option value="">Select Country</option>
+                        <option value="germany">Germany</option>
+                        <option value="france">France</option>
+                        <option value="netherlands">Netherlands</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Job Listings -->
+            <div class="space-y-4 px-4 max-w-3xl mx-auto">
+            </div>
+        </main>
+
+        <!-- Footer remains the same as in the original document -->
+        <footer class="bg-gray-50 border-t mt-16 py-12">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div>
+                        <h4 class="font-semibold mb-4">About Us</h4>
+                        <p class="text-gray-600 text-sm">
+                            We help tech professionals find jobs with visa sponsorship and
+                            relocation support worldwide.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="jobs/" class="text-gray-600 hover:text-blue-500">Browse Jobs</a></li>
+                            <!-- <li><a href="#" class="text-gray-600 hover:text-blue-500">Companies</a></li> -->
+                            <!-- <li><a href="#" class="text-gray-600 hover:text-blue-500">Visa Guide</a></li> -->
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold mb-4">Follow Us</h4>
+                        <div class="flex gap-4">
+                            <a href="https://www.linkedin.com/company/visasponsoredjobs/?" target="_blank" 
+                                class="w-5 h-5 text-gray-600 hover:text-blue-500 cursor-pointer" aria-label="LinkedIn">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="https://t.me/visa_sponsored_jobs" target="_blank" 
+                                class="w-5 h-5 text-gray-600 hover:text-blue-500 cursor-pointer" aria-label="Telegram">
+                                <i data-lucide="send"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+
+                    <div>
+                        <h4 class="font-semibold mb-4">Newsletter</h4>
+                        <div id="mc_embed_signup">
+                            <form action="https://aucegypt.us12.list-manage.com/subscribe/post?u=5f1327076a747496c7ce750c7&amp;id=2c4880337f&amp;f_id=005bbde0f0" 
+                                  method="post" 
+                                  id="mc-embedded-subscribe-form-footer" 
+                                  name="mc-embedded-subscribe-form-footer" 
+                                  class="validate" 
+                                  target="_blank" 
+                                  novalidate>
+                                <div class="relative">
+                                    <input 
+                                        type="email" 
+                                        name="EMAIL" 
+                                        id="mce-EMAIL-footer" 
+                                        placeholder="Your email" 
+                                        class="required email w-full pl-4 pr-32 py-2 border rounded-lg" 
+                                        required>
+                                    <button 
+                                        type="submit" 
+                                        id="mc-embedded-subscribe-footer" 
+                                        class="absolute right-2 top-1/2 -translate-y-1/2 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                                        Subscribe
+                                    </button>
+                                </div>
+                                <div id="mce-responses-footer" class="mt-2 text-center">
+                                    <p id="mce-error-response-footer" class="text-red-500 hidden"></p>
+                                    <p id="mce-success-response-footer" class="text-green-500 hidden"></p>
+                                </div>
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                    <input type="text" name="b_5f1327076a747496c7ce750c7_2c4880337f" tabindex="-1" value="">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <script>
+                        (function($) {
+                            window.fnames = [];
+                            window.ftypes = [];
+                            fnames[0] = 'EMAIL';
+                            ftypes[0] = 'email';
+                        })(jQuery);
+                        var $mcj = jQuery.noConflict(true);
+                    </script>
+
+                </div>
+
+                <div class="border-t mt-8 pt-8 text-center text-sm text-gray-600">
+                    © 2024 visajobs™. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const dataSource = 'db.json'; // Path to your jobs data
+        let allJobs = []; // Stores all jobs from the data source
+        let filteredJobs = []; // Stores filtered jobs based on search and filters
+
+        // DOM Elements
+        const jobContainer = document.querySelector('.space-y-4');
+        const searchInput = document.querySelector('input[type="text"]');
+        const locationFilter = document.querySelector('select');
+
+        // Display a loading spinner for job listings
+        function showLoadingEffect() {
+            jobContainer.innerHTML = `
+                <div class="rounded-lg border border-gray-200 bg-white p-4 sm:p-6 shadow-sm animate-pulse">
+                    <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+                        <div class="h-12 w-12 rounded-lg bg-gray-200"></div>
+                        <div class="flex-1 space-y-3">
+                            <div class="h-5 bg-gray-200 rounded w-3/5"></div>
+                            <div class="flex flex-wrap gap-3">
+                                <div class="h-4 bg-gray-200 rounded w-32"></div>
+                                <div class="h-4 bg-gray-200 rounded w-24"></div>
+                                <div class="h-4 bg-gray-200 rounded w-20"></div>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <div class="h-5 bg-gray-200 rounded-full w-16"></div>
+                                <div class="h-5 bg-gray-200 rounded-full w-24"></div>
+                                <div class="h-5 bg-gray-200 rounded-full w-20"></div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2">
+                            <div class="h-4 bg-gray-200 rounded w-24"></div>
+                            <div class="h-4 bg-gray-200 rounded w-20"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-lg border border-gray-200 bg-white p-4 sm:p-6 shadow-sm animate-pulse">
+                    <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+                        <div class="h-12 w-12 rounded-lg bg-gray-200"></div>
+                        <div class="flex-1 space-y-3">
+                            <div class="h-5 bg-gray-200 rounded w-2/3"></div>
+                            <div class="flex flex-wrap gap-3">
+                                <div class="h-4 bg-gray-200 rounded w-28"></div>
+                                <div class="h-4 bg-gray-200 rounded w-32"></div>
+                                <div class="h-4 bg-gray-200 rounded w-24"></div>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <div class="h-5 bg-gray-200 rounded-full w-20"></div>
+                                <div class="h-5 bg-gray-200 rounded-full w-28"></div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2">
+                            <div class="h-4 bg-gray-200 rounded w-24"></div>
+                            <div class="h-4 bg-gray-200 rounded w-20"></div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Populate location dropdown with unique countries
+        function populateLocationDropdown(jobs) {
+            const countrySet = new Set();
+            jobs.forEach(job => {
+                // Extract country name from location
+                const country = job.location.split(',').pop().trim();
+                countrySet.add(country);
+            });
+
+            // Clear existing options and add new ones
+            locationFilter.innerHTML = '<option value="">Select Country</option>';
+            countrySet.forEach(country => {
+                const option = document.createElement('option');
+                option.value = country.toLowerCase();
+                option.textContent = country;
+                locationFilter.appendChild(option);
+            });
+        }
+
+        // Function to render jobs
+       // Function to calculate relative time
+function timeAgo(dateString) {
+    const date = new Date(dateString);
+    const now = new Date();
+    const seconds = Math.floor((now - date) / 1000);
+    const intervals = [
+        { label: 'year', seconds: 31536000 },
+        { label: 'month', seconds: 2592000 },
+        { label: 'day', seconds: 86400 },
+        { label: 'hour', seconds: 3600 },
+        { label: 'minute', seconds: 60 },
+    ];
+    for (const interval of intervals) {
+        const count = Math.floor(seconds / interval.seconds);
+        if (count >= 1) {
+            return `${count} ${interval.label}${count > 1 ? 's' : ''} ago`;
+        }
+    }
+    return 'Just now';
+}
+
+// Render jobs
+function renderJobs(jobs) {
+    if (jobs.length === 0) {
+        jobContainer.innerHTML = '<p class="text-center text-gray-500">No jobs found matching your criteria.</p>';
+        return;
+    }
+
+    const firstTenJobs = jobs.slice(0, 4);
+
+    jobContainer.innerHTML = firstTenJobs.map(job => {
+        const visaBadge = job.visa ? `<span class="badge bg-green-200 text-green-800 mr-2">${job.visa}</span>` : '';
+        const relocBadge = job.reloc ? `<span class="badge bg-yellow-200 text-yellow-800">${job.reloc}</span>` : '';
+        const relativePostDate = timeAgo(job.post_date);
+
+        return `
+            <div class="p-6 border rounded-lg hover:shadow-lg transition-shadow relative group">
+                <div class="flex items-start gap-4">
+                    <img src="${job.logo}" alt="${job.company}" class="w-12 h-12 rounded-lg">
+                    <div class="flex-1">
+                        <h3 class="text-lg font-semibold mb-1">${job.position}</h3>
+                        <p class="text-gray-600 mb-2">${job.company}</p>
+                        <div class="flex items-center gap-4 text-sm text-gray-500">
+                            <span class="flex items-center gap-1">
+                                <i data-lucide="map-pin" class="w-4 h-4"></i>
+                                ${job.location}
+                            </span>
+                            <span class="flex items-center gap-1">
+                                <i data-lucide="calendar" class="w-4 h-4"></i>
+                                ${relativePostDate}
+                            </span>
+                        </div>
+                        <div class="mt-2">
+                            ${relocBadge} ${visaBadge} <span class="badge bg-gray-200 text-gray-800">${job.contract}</span>
+                        </div>
+                    </div>
+                    <a href="${job.description}" target="_blank" class="px-4 py-2 bg-blue-500 text-white rounded-lg absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                        Apply
                     </a>
                 </div>
-                <script type='text/javascript'
-                    src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-                <script type='text/javascript'>
-                    (function ($) {
-                        window.fnames = new Array();
-                        window.ftypes = new Array();
-                        fnames[0] = 'EMAIL';
-                        ftypes[0] = 'email';
-                        fnames[1] = 'FNAME';
-                        ftypes[1] = 'text';
-                        fnames[2] = 'LNAME';
-                        ftypes[2] = 'text';
-                        fnames[3] = 'ADDRESS';
-                        ftypes[3] = 'address';
-                        fnames[4] = 'PHONE';
-                        ftypes[4] = 'phone';
-                        fnames[5] = 'BIRTHDAY';
-                        ftypes[5] = 'birthday';
-                    }(jQuery));
-                    var $mcj = jQuery.noConflict(true);
-                </script>
+            </div>
+        `;
+    }).join('');
 
-                <header class="bg-white p-6">
-
-                </header>
-                <main class="container mx-auto p-6 pb-20 max-w-4xl">
-                    <div class="flex flex-col max-w-6xl items-center mx-auto mb-8">
-
-                        <h1 class="text-2xl font-bold mb-6 py-8"></h1>
-                        <h1 class="text-2xl font-bold mb-6 py-8">Available Jobs: +800 </h1>
-
-                        <div class="flex-grow w-full space-y-4 md:space-y-0 md:space-x-4">
-                            <div class="relative">
-                                <input type="search" id="jobSearch" list="jobSuggestions"
-                                    class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500"
-                                    placeholder="Search for a job" onInput="filterJobs(this.value)">
-
-                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                                    <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="none"
-                                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <p class="text-center text-gray-600 mt-4">Showing roles across all locations and all teams.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="keywords mt-4 flex flex-wrap justify-center max-w-3xl mx-auto">
-                        <a href="#"
-                            class="px-3 py-1 rounded-lg bg-blue-700 text-white mr-2 mb-2 hover:bg-blue-500 hover:text-black-400 transition duration-300"
-                            onclick="filterJobs('Marketing')">Marketing</a>
-                        <a href="#"
-                            class="px-3 py-1 rounded-lg bg-blue-700 text-white mr-2 mb-2 hover:bg-blue-500 hover:text-black-400 transition duration-300"
-                            onclick="filterJobs('Sales')">Sales</a>
-                        <a href="#"
-                            class="px-3 py-1 rounded-lg bg-blue-700 text-white mr-2 mb-2 hover:bg-blue-500 hover:text-black-400 transition duration-300"
-                            onclick="filterJobs('Frontend')">Frontend</a>
-                        <a href="#"
-                            class="px-3 py-1 rounded-lg bg-blue-700 text-white mr-2 mb-2 hover:bg-blue-500 hover:text-black-400 transition duration-300"
-                            onclick="filterJobs('QA')">QA</a>
-                        <a href="#"
-                            class="px-3 py-1 rounded-lg bg-blue-700 text-white mr-2 mb-2 hover:bg-blue-500 hover:text-black-400 transition duration-300"
-                            onclick="filterJobs('security')">Security</a>
-
-                        <a href="#"
-                            class="px-3 py-1 rounded-lg bg-blue-700 text-white mr-2 mb-2 hover:bg-blue-500 hover:text-black-400 transition duration-300"
-                            onclick="filterJobs('cloud')">Cloud</a>
-                        <a href="#"
-                            class="px-3 py-1 rounded-lg bg-blue-700 text-white mr-2 mb-2 hover:bg-blue-500 hover:text-black-400 transition duration-300"
-                            onclick="filterJobs('data')">Data</a>
-                        <a href="#"
-                            class="px-3 py-1 rounded-lg bg-blue-700 text-white mr-2 mb-2 hover:bg-blue-500 hover:text-black-400 transition duration-300"
-                            onclick="filterJobs('devops')">DevOps</a>
-                        <a href="#"
-                            class="px-3 py-1 rounded-lg bg-blue-700 text-white mr-2 mb-2 hover:bg-blue-500 hover:text-black-400 transition duration-300"
-                            onclick="filterJobs('Backend')">Backend</a>
-                        <a href="#"
-                            class="px-3 py-1 rounded-lg bg-blue-700 text-white mr-2 mb-2 hover:bg-blue-500 hover:text-black-400 transition duration-300"
-                            onclick="filterJobs(' HR ')">HR</a>
-                        <a href="#"
-                            class="px-3 py-1 rounded-lg bg-blue-700 text-white mr-2 mb-2 hover:bg-blue-500 hover:text-black-400 transition duration-300"
-                            onclick="filterJobs('Software')">Software</a>
-                        <a href="#"
-                            class="px-3 py-1 rounded-lg bg-blue-700 text-white mr-2 mb-2 hover:bg-blue-500 hover:text-black-400 transition duration-300"
-                            onclick="filterJobs('Product')">Product</a>
-                        <a href="#"
-                            class="px-3 py-1 rounded-lg bg-blue-700 text-white mr-2 mb-2 hover:bg-blue-500 hover:text-black-400 transition duration-300"
-                            onclick="filterJobs('Junior')">Junior</a>
-                        <a href="#"
-                            class="px-3 py-1 rounded-lg bg-blue-700 text-white mr-2 mb-2 hover:bg-blue-500 hover:text-black-400 transition duration-300"
-                            onclick="filterJobs('Design')">Design</a>
-                        <a href="#"
-                            class="px-3 py-1 rounded-lg bg-blue-700 text-white mr-2 mb-2 hover:bg-blue-500 hover:text-black-400 transition duration-300"
-                            onclick="filterJobs('Senior')">Senior</a>
-                        <a href="#"
-                            class="px-3 py-1 rounded-lg bg-blue-700 text-white mr-2 mb-2 hover:bg-blue-500 hover:text-black-400 transition duration-300"
-                            onclick="filterJobs('Creative')">Creative</a>
-                        <a href="#"
-                            class="px-3 py-1 rounded-lg bg-blue-700 text-white mr-2 mb-2 hover:bg-blue-500 hover:text-black-400 transition duration-300"
-                            onclick="filterJobs('fullstack')">Full Stack</a>
-                        <a href="#"
-                            class="px-3 py-1 rounded-lg bg-blue-700 text-white mr-2 mb-2 hover:bg-blue-500 hover:text-black-400 transition duration-300"
-                            onclick="filterJobs('operations')">Operations</a>
-                        <a href="#"
-                            class="px-3 py-1 rounded-lg bg-blue-700 text-white mr-2 mb-2 hover:bg-blue-500 hover:text-black-400 transition duration-300"
-                            onclick="filterJobs('android')">Android</a>
-                        <a href="#"
-                            class="px-3 py-1 rounded-lg bg-blue-700 text-white mr-2 mb-2 hover:bg-blue-500 hover:text-black-400 transition duration-300"
-                            onclick="filterJobs('ios')">IOS</a>
-
-                        <a href="#"
-                            class="px-3 py-1 rounded-lg bg-blue-700 text-white mr-2 mb-2 hover:bg-blue-500 hover:text-black-400 transition duration-300"
-                            onclick="filterJobs('')">All</a>
-                    </div>
-                    <ul id="jobsList" class="list-none px-4 max-w-3xl mx-auto">
-                    </ul>
-                </main>
-                <footer class="bg-gray-800 text-white py-4 fixed bottom-0 left-0 right-0 z-50">
-                    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div class="flex flex-col md:flex-row justify-between items-center">
-                            <div class="mb-2 md:mb-0">
-                                <span class="text-sm">© <span id="currentYear"></span> <a href="index.html"
-                                        class="hover:underline">Relocate with us™</a></span>
-                            </div>
-                            <div class="flex space-x-4 mb-2 md:mb-0">
-                                <a href="https://twitter.com/RelocatewithU" class="text-gray-400 hover:text-white">
-                                    <span class="sr-only">Twitter</span>
-                                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path
-                                            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                                    </svg>
-                                </a>
-                                <a href="https://www.linkedin.com/company/relocatewithus"
-                                    class="text-gray-400 hover:text-white">
-                                    <span class="sr-only">LinkedIn</span>
-                                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path fill-rule="evenodd"
-                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </a>
-                                <a href="https://t.me/visa_sponsored_jobs" class="text-gray-400 hover:text-white">
-                                    <span class="sr-only">Telegram</span>
-                                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path
-                                            d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="flex space-x-4">
-                                <a href="about.html" class="text-gray-400 hover:text-white">About</a>
-                                <a href="terms.html" class="text-gray-400 hover:text-white">Terms of Service</a>
-                                <a href="privacy.html" class="text-gray-400 hover:text-white">Privacy Policy</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-
-                <script src="index.js"></script>
-                <script>
-                    document.addEventListener('DOMContentLoaded', function () {
-                        fetchDefaultJobs();
-                    }, false);
-
-                </script>
+    // Add Telegram link section
+    const telegramLinkSection = `
+    <div class="p-6 border rounded-lg text-center bg-blue-50 hover:bg-blue-100 transition-colors">
+        <h2 class="text-xl font-semibold mb-4">Join Our Telegram Channel</h2>
+        <p class="text-gray-600 mb-4">Get the latest visa-sponsored jobs delivered directly to your device.</p>
+        <a href="https://t.me/your_telegram_channel" target="_blank" class="inline-flex items-center px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+            <span class="[&>svg]:h-5 [&>svg]:w-5 mr-2">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 496 512">
+                    <path
+                        d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z" />
+                </svg>
+            </span>
+            Join Now
+        </a>
+    </div>
+`;
 
 
+    jobContainer.insertAdjacentHTML('beforeend', telegramLinkSection);
+
+    if (jobs.length > 10) {
+        const browseAllButton = document.createElement('button');
+        browseAllButton.textContent = 'Browse All Jobs';
+        browseAllButton.className = 'px-4 py-2 bg-blue-500 text-white rounded-lg mt-4 block mx-auto hover:bg-blue-600';
+        browseAllButton.addEventListener('click', () => {
+            // Redirect to jobs/index.html
+            window.location.href = 'jobs/';
+        });
+
+        jobContainer.appendChild(browseAllButton);
+    }
+
+    lucide.createIcons(); // Reinitialize icons after rendering
+}
+
+
+
+
+        // Function to filter jobs based on search and location
+        function filterJobs() {
+            const searchText = searchInput.value.toLowerCase();
+            const selectedCountry = locationFilter.value;
+
+            filteredJobs = allJobs.filter(job => {
+                const country = job.location.split(',').pop().trim().toLowerCase();
+                return (
+                    (searchText === '' || job.position.toLowerCase().includes(searchText)) &&
+                    (selectedCountry === '' || country.includes(selectedCountry))
+                );
+            });
+
+            renderJobs(filteredJobs);
+        }
+
+        // Fetch and load jobs
+        async function loadJobs() {
+            try {
+                showLoadingEffect(); // Show loading spinner
+                const response = await fetch(dataSource);
+                if (!response.ok) throw new Error('Failed to fetch jobs');
+                const jobs = await response.json();
+
+                allJobs = jobs; // Store all jobs for filtering
+                filteredJobs = [...jobs]; // Initialize filtered jobs
+                populateLocationDropdown(jobs); // Populate location dropdown with countries
+                renderJobs(filteredJobs); // Render jobs
+            } catch (error) {
+                console.error('Error loading jobs:', error);
+                jobContainer.innerHTML = '<p class="text-center text-red-500">Failed to load jobs. Please try again later.</p>';
+            }
+        }
+
+        // Event listeners for search and filters
+        searchInput.addEventListener('input', () => {
+            showLoadingEffect(); // Show loading effect during filtering
+            setTimeout(filterJobs, 500); // Add delay to mimic user typing
+        });
+
+        locationFilter.addEventListener('change', () => {
+            showLoadingEffect();
+            setTimeout(filterJobs, 500); // Add delay for filter effect
+        });
+
+        // Initialize loading spinner CSS
+        const style = document.createElement('style');
+        style.innerHTML = `
+            .loader {
+                border: 4px solid #f3f3f3;
+                border-top: 4px solid #3498db;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                animation: spin 1s linear infinite;
+            }
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Load jobs on page load
+        document.addEventListener('DOMContentLoaded', loadJobs);
+
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
 </body>
 
 </html>
