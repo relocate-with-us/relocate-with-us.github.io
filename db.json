@@ -1,12 +1,133 @@
 [
   {
+    "company": "Mara Talent",
+    "position": "Senior Recruitment Consultant​/Relocate to America",
+    "location": "New York, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 8, 2024",
+    "logo": "/media/higher_talent_graduates_sales_logo.jpg",
+    "description": "https://www.learn4good.com/jobs/nottingham/uk/hr_and_recruitment/3791554722/e/"
+  },
+   {
+    "company": "HealthcareLink",
+    "position": "Community-Based Occupational Therapist",
+    "location": "Adelaide, Australia 🇦🇺",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 8, 2024",
+    "logo": "/media/healthcarelink_logo.jpg",
+    "description": "https://www.workforceaustralia.gov.au/individuals/jobs/details/2335992859"
+  },
+  {
+    "company": "adjoe",
+    "position": "iOS Developer (f/m/d)",
+    "location": "Hamburg, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 8, 2024",
+    "logo": "/media/adjoe_logo.jpeg",
+    "description": "https://adjoe.io/company/careers/?j_id=8a9c2e39-a9e3-4fe9-9e66-a602967251ec"
+  },
+  {
+    "company": "adjoe",
+    "position": "DevOps Engineer (f/m/d)",
+    "location": "Hamburg, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 8, 2024",
+    "logo": "/media/adjoe_logo.jpeg",
+    "description": "https://adjoe.io/company/careers/?j_id=a29fdac9-036f-4f2a-ba79-155d8f32733c"
+  },
+  {
+    "company": "adjoe",
+    "position": "Senior BI Analyst (Anti-Fraud) (f/m/d)",
+    "location": "Hamburg, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 8, 2024",
+    "logo": "/media/adjoe_logo.jpeg",
+    "description": "https://adjoe.io/company/careers/?j_id=38f67985-bc22-456e-9774-5fc95db90a41"
+  },
+  {
+    "company": "adjoe",
+    "position": "Senior BI Analyst (Anti-Fraud) (f/m/d)",
+    "location": "Hamburg, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 8, 2024",
+    "logo": "/media/adjoe_logo.jpeg",
+    "description": "https://adjoe.io/company/careers/?j_id=38f67985-bc22-456e-9774-5fc95db90a41"
+  },
+  {
+    "company": "adjoe",
+    "position": "Machine Learning Engineer (f/m/d)",
+    "location": "Hamburg, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 8, 2024",
+    "logo": "/media/adjoe_logo.jpeg",
+    "description": "https://adjoe.io/company/careers/?j_id=feee3bff-a9c2-4d4e-86e4-12c376d44567"
+  },
+  {
+    "company": "adjoe",
+    "position": "Senior Frontend Developer (f/m/d)",
+    "location": "Hamburg, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 8, 2024",
+    "logo": "/media/adjoe_logo.jpeg",
+    "description": "https://adjoe.io/company/careers/?j_id=6647084f-2c9d-405b-a30b-dec97a6669cb"
+  },
+  {
+    "company": "adjoe",
+    "position": "Senior Go Developer (Advertising Dashboard Team) (f/m/d)",
+    "location": "Hamburg, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 8, 2024",
+    "logo": "/media/adjoe_logo.jpeg",
+    "description": "https://adjoe.io/company/careers/?j_id=a52d2c9e-63c8-4554-a4d7-28982c1952b0"
+  },
+  {
+    "company": "adjoe",
+    "position": "Senior QA Engineer (f/m/d)",
+    "location": "Hamburg, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 8, 2024",
+    "logo": "/media/adjoe_logo.jpeg",
+    "description": "https://adjoe.io/company/careers/?j_id=b068a184-15c9-438a-86fa-f291432146f8"
+  },
+  {
+    "company": "adjoe",
+    "position": "Senior Product Manager (f/m/d)",
+    "location": "Hamburg, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 8, 2024",
+    "logo": "/media/adjoe_logo.jpeg",
+    "description": "https://adjoe.io/company/careers/?j_id=1a08e16e-44b4-4701-99cb-b00f08aa0e59"
+  },
+  {
     "company": "adjoe",
     "position": "Mobile Developer (f/m/d)",
     "location": "Hamburg, Germany 🇩🇪",
     "reloc": "Relocation Assistance",
     "visa": "Visa Sponsorship",
     "contract": "Full Time",
-    "post_date": "December 3, 2024",
+    "post_date": "December 8, 2024",
     "logo": "/media/adjoe_logo.jpeg",
     "description": "https://adjoe.io/company/careers/?j_id=9d5179c1-d0b3-4792-b16a-23ada715ad1b"
   },
@@ -17,7 +138,7 @@
     "reloc": "Relocation Assistance",
     "visa": "Visa Sponsorship",
     "contract": "Full Time",
-    "post_date": "December 3, 2024",
+    "post_date": "December 8, 2024",
     "logo": "/media/adjoe_logo.jpeg",
     "description": "https://adjoe.io/company/careers/?j_id=c5545e7e-2387-4aff-a4cf-a071f94fca70"
   },
