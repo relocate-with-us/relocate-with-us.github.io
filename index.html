@@ -48,7 +48,10 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Lucide Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.js"></script>
+
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -519,21 +522,23 @@
 
         // Fetch and load jobs
         async function loadJobs() {
-            try {
-                showLoadingEffect(); // Show loading spinner
-                const response = await fetch(dataSource);
-                if (!response.ok) throw new Error('Failed to fetch jobs');
-                const jobs = await response.json();
+    try {
+        showLoadingEffect(); // Show loading spinner
+        const response = await fetch(dataSource);
+        if (!response.ok) throw new Error('Failed to fetch jobs');
+        const jobs = await response.json();
 
-                allJobs = jobs; // Store all jobs for filtering
-                filteredJobs = [...jobs]; // Initialize filtered jobs
-                populateLocationDropdown(jobs); // Populate location dropdown with countries
-                renderJobs(filteredJobs); // Render jobs
-            } catch (error) {
-                console.error('Error loading jobs:', error);
-                jobContainer.innerHTML = '<p class="text-center text-red-500">Failed to load jobs. Please try again later.</p>';
-            }
-        }
+        console.log("Fetched jobs:", jobs); // Debug log
+        allJobs = jobs; // Store all jobs for filtering
+        filteredJobs = [...jobs]; // Initialize filtered jobs
+        populateLocationDropdown(jobs); // Populate location dropdown with countries
+        renderJobs(filteredJobs); // Render jobs
+    } catch (error) {
+        console.error('Error loading jobs:', error);
+        jobContainer.innerHTML = '<p class="text-center text-red-500">Failed to load jobs. Please try again later.</p>';
+    }
+}
+
 
         // Event listeners for search and filters
         searchInput.addEventListener('input', () => {
