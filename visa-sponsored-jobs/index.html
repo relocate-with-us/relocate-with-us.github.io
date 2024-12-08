@@ -14,20 +14,33 @@
     <meta property="og:url" content="https://visajobs.xyz/">
     <meta property="og:title" content="VisaJobs.xyz - Global Tech Jobs with Visa Sponsorship">
     <meta property="og:description" content="Find international tech jobs with visa sponsorship and relocation assistance. 800+ jobs across 50+ countries. Your global career starts here.">
-    <meta property="og:image" content="https://visajobs.xyz/og.png">
+    <meta property="og:image" content="https://visajobs.xyz/static/images/og.png">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://visajobs.xyz/">
     <meta property="twitter:title" content="VisaJobs.xyz - Global Tech Jobs with Visa Sponsorship">
     <meta property="twitter:description" content="Find international tech jobs with visa sponsorship and relocation assistance. 800+ jobs across 50+ countries. Your global career starts here.">
-    <meta property="twitter:image" content="https://visajobs.xyz/og.png">
+    <meta property="twitter:image" content="https://visajobs.xyz/static/images/og.png">
     
     <!-- Canonical Link -->
     <link rel="canonical" href="https://visajobs.xyz">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/favicon.png">
+    <!-- Favicon for Browsers -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon"  href="favicon.ico">
+
+    <!-- Favicon for Android -->
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon/android-chrome-512x512.png">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+
+    <!-- Web Manifest -->
+    <link rel="manifest" href="favicon/site.webmanifest">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -63,10 +76,10 @@
     <div class="w-full min-h-screen">
         <!-- Header -->
         <header class="flex items-center justify-between p-4 border-b">
-            <div class="flex items-center gap-2">
+            <a href="/" class="flex items-center gap-2">
                 <i data-lucide="rocket" class="w-6 h-6 text-blue-500"></i>
                 <span class="text-xl font-semibold">visajobs.xyz</span>
-            </div>
+            </a>
             <button class="px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600">
                 Post a job
             </button>
