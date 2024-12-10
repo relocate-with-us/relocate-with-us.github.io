@@ -1,5 +1,16 @@
 [
   {
+    "company": "Jaywalker",
+    "position": "Software Engineer",
+    "location": "Luzern, Switzerland 🇨🇭",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 10, 2024",
+    "logo": "/media/jaywalker_logo.jpg",
+    "description": "https://jaywalker.ch/jobs/software-engineer/"
+  },
+  {
     "company": "dashlane",
     "position": "Senior Product Manager - Integrations",
     "location": "Paris, France 🇫🇷",
