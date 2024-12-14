@@ -396,7 +396,6 @@
             });
         }
 
-        // Function to render jobs
         // Function to calculate relative time
         function timeAgo(dateString) {
             const date = new Date(dateString);
@@ -418,7 +417,7 @@
             return 'Just now';
         }
 
-        // Render jobs
+        // Function to render jobs
         function renderJobs(jobs) {
             if (jobs.length === 0) {
                 jobContainer.innerHTML = '<p class="text-center text-gray-500">No jobs found matching your criteria.</p>';
@@ -501,9 +500,6 @@
             lucide.createIcons(); // Reinitialize icons after rendering
         }
 
-
-
-
         // Function to filter jobs based on search and location
         function filterJobs() {
             const searchText = searchInput.value.toLowerCase();
@@ -522,22 +518,22 @@
 
         // Fetch and load jobs
         async function loadJobs() {
-    try {
-        showLoadingEffect(); // Show loading spinner
-        const response = await fetch(dataSource);
-        if (!response.ok) throw new Error('Failed to fetch jobs');
-        const jobs = await response.json();
+            try {
+                showLoadingEffect(); // Show loading spinner
+                const response = await fetch(dataSource);
+                if (!response.ok) throw new Error('Failed to fetch jobs');
+                const jobs = await response.json();
 
-        console.log("Fetched jobs:", jobs); // Debug log
-        allJobs = jobs; // Store all jobs for filtering
-        filteredJobs = [...jobs]; // Initialize filtered jobs
-        populateLocationDropdown(jobs); // Populate location dropdown with countries
-        renderJobs(filteredJobs); // Render jobs
-    } catch (error) {
-        console.error('Error loading jobs:', error);
-        jobContainer.innerHTML = '<p class="text-center text-red-500">Failed to load jobs. Please try again later.</p>';
-    }
-}
+                console.log("Fetched jobs:", jobs); // Debug log
+                allJobs = jobs; // Store all jobs for filtering
+                filteredJobs = [...jobs]; // Initialize filtered jobs
+                populateLocationDropdown(jobs); // Populate location dropdown with countries
+                renderJobs(filteredJobs); // Render jobs
+            } catch (error) {
+                console.error('Error loading jobs:', error);
+                jobContainer.innerHTML = '<p class="text-center text-red-500">Failed to load jobs. Please try again later.</p>';
+            }
+        }
 
 
         // Event listeners for search and filters
