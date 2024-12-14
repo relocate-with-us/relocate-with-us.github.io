@@ -218,11 +218,11 @@
                     <div class="relative">
                         <i data-lucide="search"
                             class="w-5 h-5 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
-                        <input type="text" placeholder="Search jobs..."
+                        <input id="searchInput" type="text" placeholder="Search jobs..."
                             class="w-full pl-10 pr-4 py-2 border rounded-lg">
                     </div>
 
-                    <select class="w-full p-2 border rounded-lg">
+                    <select id="locationFilter" class="w-full p-2 border rounded-lg">
                         <option value="">Select Country</option>
                         <option value="germany">Germany</option>
                         <option value="france">France</option>
@@ -232,7 +232,7 @@
             </div>
 
             <!-- Job Listings -->
-            <div class="space-y-4 px-4 max-w-3xl mx-auto">
+            <div id="jobContainer" class="space-y-4 px-4 max-w-3xl mx-auto">
             </div>
         </main>
 
@@ -324,9 +324,9 @@
         let filteredJobs = []; // Stores filtered jobs based on search and filters
 
         // DOM Elements
-        const jobContainer = document.querySelector('.space-y-4');
-        const searchInput = document.querySelector('input[type="text"]');
-        const locationFilter = document.querySelector('select');
+        const jobContainer = document.getElementById('jobContainer');
+        const searchInput = document.getElementById('searchInput');
+        const locationFilter = document.getElementById('locationFilter');
 
         // Display a loading spinner for job listings
         function showLoadingEffect() {
