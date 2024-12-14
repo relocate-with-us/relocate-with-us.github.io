@@ -535,16 +535,31 @@
             }
         }
 
+        // Function to add debounce to other function   
+        function debounce (callback, wait) {
+            let timeout = null;
+            
+            return (...args) => {
+                window.clearTimeout(timeout);
 
+                timeout = window.setTimeout(() => {
+                    callback.apply(null, args);
+                }, wait);
+            };
+        }
+
+        // Wrap filter job function with debouncing
+        const debouncedFilterJobs = debounce(filterJobs, 500); // wait for 500ms until there's no change, then filter the jobs
+        
         // Event listeners for search and filters
         searchInput.addEventListener('input', () => {
-            showLoadingEffect(); // Show loading effect during filtering
-            setTimeout(filterJobs, 500); // Add delay to mimic user typing
+            showLoadingEffect();
+            debouncedFilterJobs();
         });
-
+        
         locationFilter.addEventListener('change', () => {
             showLoadingEffect();
-            setTimeout(filterJobs, 500); // Add delay for filter effect
+            debouncedFilterJobs();
         });
 
         // Initialize loading spinner CSS
