@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <title>VisaJobs.xyz - Global Tech Jobs with Visa Sponsorship</title>
-    <meta name="title" content="VisaJobs.xyz - Global Tech Jobs with Visa Sponsorship">
+    <title>Global Visa Sponsored Jobs + Relocation Assistance</title>
+    <meta name="title" content="Global Visa Sponsored Jobs + Relocation Assistance">
     <meta name="description"
         content="Find international tech jobs with visa sponsorship and relocation assistance. 800+ jobs across 50+ countries. Your global career starts here.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://visajobs.xyz/">
-    <meta property="og:title" content="VisaJobs.xyz - Global Tech Jobs with Visa Sponsorship">
+    <meta property="og:title" content="Global Visa Sponsored Jobs + Relocation Assistance">
     <meta property="og:description"
         content="Find international tech jobs with visa sponsorship and relocation assistance. 800+ jobs across 50+ countries. Your global career starts here.">
     <meta property="og:image" content="https://visajobs.xyz/static/images/og.png">
@@ -22,7 +22,7 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://visajobs.xyz/">
-    <meta property="twitter:title" content="VisaJobs.xyz - Global Tech Jobs with Visa Sponsorship">
+    <meta property="twitter:title" content="Global Visa Sponsored Jobs + Relocation Assistance">
     <meta property="twitter:description"
         content="Find international tech jobs with visa sponsorship and relocation assistance. 800+ jobs across 50+ countries. Your global career starts here.">
     <meta property="twitter:image" content="https://visajobs.xyz/static/images/og.png">
@@ -34,7 +34,7 @@
     <!-- Favicon for Browsers -->
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon"  href="favicon.ico">
 
     <!-- Favicon for Android -->
     <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
@@ -45,7 +45,6 @@
 
     <!-- Web Manifest -->
     <link rel="manifest" href="favicon/site.webmanifest">
-
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Lucide Icons -->
@@ -53,7 +52,6 @@
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -83,11 +81,21 @@
 
         gtag('config', 'G-E6NMFQFHMZ');
     </script>
+    <script async src="https://tag.clearbitscripts.com/v1/pk_0fab42ef1c1d7893747b55f94d761545/tags.js"
+        referrerpolicy="strict-origin-when-cross-origin"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7578309605540082"
+        crossorigin="anonymous"></script>
     <!-- Additional SEO Meta Tags -->
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
     <meta name="keywords"
         content="visa jobs, tech jobs, international careers, job sponsorship, relocation jobs, global tech employment">
+    <style>
+        .group:hover .group-hover\:opacity-100 {
+            opacity: 1;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -98,13 +106,24 @@
                 <i data-lucide="rocket" class="w-6 h-6 text-blue-500"></i>
                 <span class="text-xl font-semibold">visajobs.xyz</span>
             </a>
-            <button class="px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600">
-                Post a job
-            </button>
+            <div class="flex items-center gap-4">
+                <!-- <a href="visa-sponsored-jobs/"
+                    class="relative text-blue-500 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full">
+                    Browse Jobs
+                </a> -->
+                <a href="https://airtable.com/shrnUCBHSQR6rsTzT"
+                    class="px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600">
+                    Post a job
+                </a>
+            </div>
         </header>
 
+
+
+
+
         <!-- Main Content -->
-        <main class="container mx-auto px-4 py-12">
+        <main class="max-w-6xl mx-auto px-4 py-12">
             <!-- Hero Section -->
             <div class="text-center mb-16">
                 <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-snug">
@@ -191,17 +210,19 @@
                 var $mcj = jQuery.noConflict(true);
             </script>
 
+
+
             <!-- Search Filters -->
-            <div class="bg-white p-6 rounded-lg shadow-sm border mb-8 max-w-3xl mx-auto">
+            <div class="bg-white p-6 rounded-lg shadow-sm border mb-8 px-4 max-w-3xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div class="relative">
                         <i data-lucide="search"
                             class="w-5 h-5 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
-                        <input type="text" placeholder="Search jobs..."
+                        <input id="searchInput" type="text" placeholder="Search jobs..."
                             class="w-full pl-10 pr-4 py-2 border rounded-lg">
                     </div>
 
-                    <select class="w-full p-2 border rounded-lg">
+                    <select id="locationFilter" class="w-full p-2 border rounded-lg">
                         <option value="">Select Country</option>
                         <option value="germany">Germany</option>
                         <option value="france">France</option>
@@ -211,7 +232,7 @@
             </div>
 
             <!-- Job Listings -->
-            <div class="space-y-4">
+            <div id="jobContainer" class="space-y-4 px-4 max-w-3xl mx-auto">
             </div>
         </main>
 
@@ -230,34 +251,64 @@
                     <div>
                         <h4 class="font-semibold mb-4">Quick Links</h4>
                         <ul class="space-y-2 text-sm">
-                            <li><a href="#" class="text-gray-600 hover:text-blue-500">Browse Jobs</a></li>
-                            <li><a href="#" class="text-gray-600 hover:text-blue-500">Companies</a></li>
-                            <li><a href="#" class="text-gray-600 hover:text-blue-500">Visa Guide</a></li>
+                            <li><a href="visa-sponsored-jobs/" class="text-gray-600 hover:text-blue-500">Browse Jobs</a>
+                            </li>
+                            <!-- <li><a href="#" class="text-gray-600 hover:text-blue-500">Companies</a></li> -->
+                            <!-- <li><a href="#" class="text-gray-600 hover:text-blue-500">Visa Guide</a></li> -->
                         </ul>
                     </div>
 
                     <div>
                         <h4 class="font-semibold mb-4">Follow Us</h4>
                         <div class="flex gap-4">
-                            <i data-lucide="twitter"
-                                class="w-5 h-5 text-gray-600 hover:text-blue-500 cursor-pointer"></i>
-                            <i data-lucide="linkedin"
-                                class="w-5 h-5 text-gray-600 hover:text-blue-500 cursor-pointer"></i>
-                            <i data-lucide="instagram"
-                                class="w-5 h-5 text-gray-600 hover:text-blue-500 cursor-pointer"></i>
+                            <a href="https://www.linkedin.com/company/visasponsoredjobs/?" target="_blank"
+                                class="w-5 h-5 text-gray-600 hover:text-blue-500 cursor-pointer" aria-label="LinkedIn">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="https://t.me/visa_sponsored_jobs" target="_blank"
+                                class="w-5 h-5 text-gray-600 hover:text-blue-500 cursor-pointer" aria-label="Telegram">
+                                <i data-lucide="send"></i>
+                            </a>
                         </div>
                     </div>
 
+
                     <div>
                         <h4 class="font-semibold mb-4">Newsletter</h4>
-                        <div class="relative">
-                            <input type="email" placeholder="Your email"
-                                class="w-full pl-4 pr-10 py-2 border rounded-lg">
-                            <button class="absolute right-2 top-1/2 -translate-y-1/2 text-blue-500">
-                                Subscribe
-                            </button>
+                        <div id="mc_embed_signup">
+                            <form
+                                action="https://aucegypt.us12.list-manage.com/subscribe/post?u=5f1327076a747496c7ce750c7&amp;id=2c4880337f&amp;f_id=005bbde0f0"
+                                method="post" id="mc-embedded-subscribe-form-footer"
+                                name="mc-embedded-subscribe-form-footer" class="validate" target="_blank" novalidate>
+                                <div class="relative">
+                                    <input type="email" name="EMAIL" id="mce-EMAIL-footer" placeholder="Your email"
+                                        class="required email w-full pl-4 pr-32 py-2 border rounded-lg" required>
+                                    <button type="submit" id="mc-embedded-subscribe-footer"
+                                        class="absolute right-2 top-1/2 -translate-y-1/2 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                                        Subscribe
+                                    </button>
+                                </div>
+                                <div id="mce-responses-footer" class="mt-2 text-center">
+                                    <p id="mce-error-response-footer" class="text-red-500 hidden"></p>
+                                    <p id="mce-success-response-footer" class="text-green-500 hidden"></p>
+                                </div>
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                    <input type="text" name="b_5f1327076a747496c7ce750c7_2c4880337f" tabindex="-1"
+                                        value="">
+                                </div>
+                            </form>
                         </div>
                     </div>
+                    <script>
+                        (function ($) {
+                            window.fnames = [];
+                            window.ftypes = [];
+                            fnames[0] = 'EMAIL';
+                            ftypes[0] = 'email';
+                        })(jQuery);
+                        var $mcj = jQuery.noConflict(true);
+                    </script>
+
                 </div>
 
                 <div class="border-t mt-8 pt-8 text-center text-sm text-gray-600">
@@ -273,9 +324,9 @@
         let filteredJobs = []; // Stores filtered jobs based on search and filters
 
         // DOM Elements
-        const jobContainer = document.querySelector('.space-y-4');
-        const searchInput = document.querySelector('input[type="text"]');
-        const locationFilter = document.querySelector('select');
+        const jobContainer = document.getElementById('jobContainer');
+        const searchInput = document.getElementById('searchInput');
+        const locationFilter = document.getElementById('locationFilter');
 
         // Display a loading spinner for job listings
         function showLoadingEffect() {
@@ -344,16 +395,12 @@
                 locationFilter.appendChild(option);
             });
         }
+
         // Function to calculate relative time
-        function timeAgo(postDateString) {
-            const postDate = new Date(postDateString); // Parse the date string
-            const now = new Date(); // Current date and time
-            const seconds = Math.floor((now - postDate) / 1000);
-
-            if (seconds < 60) {
-                return 'Just now';
-            }
-
+        function timeAgo(dateString) {
+            const date = new Date(dateString);
+            const now = new Date();
+            const seconds = Math.floor((now - date) / 1000);
             const intervals = [
                 { label: 'year', seconds: 31536000 },
                 { label: 'month', seconds: 2592000 },
@@ -361,14 +408,12 @@
                 { label: 'hour', seconds: 3600 },
                 { label: 'minute', seconds: 60 },
             ];
-
             for (const interval of intervals) {
                 const count = Math.floor(seconds / interval.seconds);
                 if (count >= 1) {
                     return `${count} ${interval.label}${count > 1 ? 's' : ''} ago`;
                 }
             }
-
             return 'Just now';
         }
 
@@ -379,42 +424,62 @@
                 return;
             }
 
+            // const firstTenJobs = jobs.slice(0, 4);
+
             jobContainer.innerHTML = jobs.map(job => {
-                const relativePostDate = timeAgo(job.post_date); // Calculate relative time
+                const visaBadge = job.visa ? `<span class="badge bg-green-200 text-green-800 mr-2">${job.visa}</span>` : '';
+                const relocBadge = job.reloc ? `<span class="badge bg-yellow-200 text-yellow-800">${job.reloc}</span>` : '';
+                const relativePostDate = timeAgo(job.post_date);
 
                 return `
-        <div class="p-6 border rounded-lg hover:shadow-lg transition-shadow">
-            <div class="flex items-start gap-4">
-                <img src="${job.logo}" alt="${job.company}" class="w-12 h-12 rounded-lg">
-                <div class="flex-1">
-                    <h3 class="text-lg font-semibold mb-1">${job.position}</h3>
-                    <p class="text-gray-600 mb-2">${job.company}</p>
-                    <div class="flex items-center gap-4 text-sm text-gray-500">
-                        <span class="flex items-center gap-1">
-                            <i data-lucide="map-pin" class="w-4 h-4"></i>
-                            ${job.location}
-                        </span>
-                        <span class="flex items-center gap-1" title="Posted on: ${job.post_date}">
-                            <i data-lucide="calendar" class="w-4 h-4"></i>
-                            ${relativePostDate}
-                        </span>
+            <div class="p-6 border rounded-lg hover:shadow-lg transition-shadow relative group">
+                <div class="flex items-start gap-4">
+                    <img src="${job.logo}" alt="${job.company}" class="w-12 h-12 rounded-lg" loading="lazy">
+                    <div class="flex-1">
+                        <h3 class="text-lg font-semibold mb-1">${job.position}</h3>
+                        <p class="text-gray-600 mb-2">${job.company}</p>
+                        <div class="flex items-center gap-4 text-sm text-gray-500">
+                            <span class="flex items-center gap-1">
+                                <i data-lucide="map-pin" class="w-4 h-4"></i>
+                                ${job.location}
+                            </span>
+                            <span class="flex items-center gap-1">
+                                <i data-lucide="calendar" class="w-4 h-4"></i>
+                                ${relativePostDate}
+                            </span>
+                        </div>
+                        <div class="mt-2">
+                            ${relocBadge} ${visaBadge} <span class="badge bg-gray-200 text-gray-800">${job.contract}</span>
+                        </div>
                     </div>
-                    <div class="mt-2 flex items-center gap-2">
-                        <span class="px-2 py-1 bg-green-200 text-green-800 rounded-lg text-sm">${job.reloc}</span>
-                        <span class="px-2 py-1 bg-yellow-200 text-yellow-800 rounded-lg text-sm">${job.visa}</span>
-                        <span class="px-2 py-1 bg-gray-200 text-gray-800 rounded-lg text-sm">${job.contract}</span>
-                    </div>
+                    <a href="${job.description}" target="_blank" class="px-4 py-2 bg-blue-500 text-white rounded-lg absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                        Apply
+                    </a>
                 </div>
-                <a href="${job.description}" target="_blank" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
-                    Apply
-                </a>
             </div>
-        </div>
         `;
             }).join('');
-            lucide.createIcons(); // Reinitialize icons after rendering
-        }
 
+
+;
+
+
+            // jobContainer.insertAdjacentHTML('beforeend', telegramLinkSection);
+
+            // if (jobs.length > 10) {
+            //     const browseAllButton = document.createElement('button');
+            //     browseAllButton.textContent = 'Browse All Jobs';
+            //     browseAllButton.className = 'px-4 py-2 bg-blue-500 text-white rounded-lg mt-4 block mx-auto hover:bg-blue-600';
+            //     browseAllButton.addEventListener('click', () => {
+            //         // Redirect to jobs/index.html
+            //         window.location.href = 'visa-sponsored-jobs/';
+            //     });
+
+            //     jobContainer.appendChild(browseAllButton);
+            // }
+
+            // lucide.createIcons(); // Reinitialize icons after rendering
+        }
 
         // Function to filter jobs based on search and location
         function filterJobs() {
@@ -440,6 +505,7 @@
                 if (!response.ok) throw new Error('Failed to fetch jobs');
                 const jobs = await response.json();
 
+                console.log("Fetched jobs:", jobs); // Debug log
                 allJobs = jobs; // Store all jobs for filtering
                 filteredJobs = [...jobs]; // Initialize filtered jobs
                 populateLocationDropdown(jobs); // Populate location dropdown with countries
@@ -450,15 +516,31 @@
             }
         }
 
+        // Function to add debounce to other function   
+        function debounce (callback, wait) {
+            let timeout = null;
+            
+            return (...args) => {
+                window.clearTimeout(timeout);
+
+                timeout = window.setTimeout(() => {
+                    callback.apply(null, args);
+                }, wait);
+            };
+        }
+
+        // Wrap filter job function with debouncing
+        const debouncedFilterJobs = debounce(filterJobs, 500); // wait for 500ms until there's no change, then filter the jobs
+        
         // Event listeners for search and filters
         searchInput.addEventListener('input', () => {
-            showLoadingEffect(); // Show loading effect during filtering
-            setTimeout(filterJobs, 500); // Add delay to mimic user typing
+            showLoadingEffect();
+            debouncedFilterJobs();
         });
-
+        
         locationFilter.addEventListener('change', () => {
             showLoadingEffect();
-            setTimeout(filterJobs, 500); // Add delay for filter effect
+            debouncedFilterJobs();
         });
 
         // Initialize loading spinner CSS
@@ -485,6 +567,9 @@
         // Initialize Lucide icons
         lucide.createIcons();
     </script>
+    <!-- 100% privacy-first analytics -->
+<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+
 </body>
 
 </html>
