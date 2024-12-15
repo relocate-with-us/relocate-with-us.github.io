@@ -1,4 +1,137 @@
 [
+ {
+    "company": "Shield AI",
+    "position": "Mechanical Design Engineer II (R3051)",
+    "location": "San Diego, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 15, 2024",
+    "logo": "/media/shield_ai_logo.jpg",
+    "description": "https://jobs.lever.co/shieldai/9913cc87-5734-4aae-901b-1f7e19cdd803"
+  },
+  {
+    "company": "Shield AI",
+    "position": "Software Engineer, Embedded Firmware (R2524)",
+    "location": "San Diego, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 15, 2024",
+    "logo": "/media/shield_ai_logo.jpg",
+    "description": "https://jobs.lever.co/shieldai/471e9ee3-61bf-4cc4-8430-0e02b57805a8"
+  },
+  {
+    "company": "Shield AI",
+    "position": "Electrical Engineer",
+    "location": "San Diego, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 15, 2024",
+    "logo": "/media/shield_ai_logo.jpg",
+    "description": "https://jobs.lever.co/shieldai/332af47f-4ec4-4e70-a1dd-4f7b323983cb"
+  },
+  {
+    "company": "Shield AI",
+    "position": "Senior Staff RF Engineer (R2319)",
+    "location": "San Diego, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 15, 2024",
+    "logo": "/media/shield_ai_logo.jpg",
+    "description": "https://jobs.lever.co/shieldai/b1737a8d-c564-4489-b6a4-4e6ecb42e292"
+  },
+  {
+    "company": "Shield AI",
+    "position": "Sr. RF Engineer (R2319)",
+    "location": "San Diego, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 15, 2024",
+    "logo": "/media/shield_ai_logo.jpg",
+    "description": "https://jobs.lever.co/shieldai/3860d2b9-4619-4350-9c7c-0918ef988db0"
+  },
+  {
+    "company": "Shield AI",
+    "position": "Staff Electrical Engineer, EMI (R2319)",
+    "location": "San Diego, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 15, 2024",
+    "logo": "/media/shield_ai_logo.jpg",
+    "description": "https://jobs.lever.co/shieldai/1db0ce2d-42f0-4be6-aa43-4753c1f4e011"
+  },
+  {
+    "company": "Shield AI",
+    "position": "Staff Electrical CAD Engineer (R3076)",
+    "location": "San Diego, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 15, 2024",
+    "logo": "/media/shield_ai_logo.jpg",
+    "description": "https://jobs.lever.co/shieldai/d15e6ed4-97b2-4dab-90bb-9d26aaa86bdd/"
+  },
+  {
+    "company": "Health Match BC",
+    "position": "Family Practitioner/General Practitioner",
+    "location": "British Columbia, Canada 🇨🇦",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "December 15, 2024",
+    "logo": "/media/health_match_bc_logo.jpg",
+    "description": "https://applicants.healthmatchbc.org/JobsBoard/HMBC/HMBCVacancies.aspx?VacancyId=53919"
+  },
+  {
+    "company": "Bank of Canada",
+    "position": "Senior Cyber Security Specialist",
+    "location": "Ottawa, Canada 🇨🇦",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "December 15, 2024",
+    "logo": "/media/bankofcanada_logo.jpg",
+    "description": "https://careers.bankofcanada.ca/job/Ottawa-%28Downtown%29-Senior-Cyber-Security-Specialist-ON/587635117/"
+  },
+  {
+    "company": "TELUS Digital",
+    "position": "Wellness Coach",
+    "location": "Dublin, Ireland 🇮🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "December 15, 2024",
+    "logo": "/media/telus_international_logo.jpg",
+    "description": "https://www.linkedin.com/jobs/view/4101310324"
+  },
+  {
+    "company": "Multiverse Computing",
+    "position": "Business Development Manager",
+    "location": "SAN SEBASTIAN, Spain 🇪🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 15, 2024",
+    "logo": "/media/multiversecomputing_logo.jpg",
+    "description": "https://multiversecomputing.teamtailor.com/jobs/5067680-business-development-manager"
+  },
+
+  {
+    "company": "Shield AI",
+    "position": "Senior Staff Electrical Engineer",
+    "location": "San Diego, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 15, 2024",
+    "logo": "/media/shield_ai_logo.jpg",
+    "description": "https://jobs.lever.co/shieldai/e672bf76-f8f5-4139-95db-6c3d1b0e1d3c"
+  },
   {
     "company": "HomeToGo",
     "position": "Junior PHP Back-End Engineer (Tech Services) - Smoobu (m/f/d)",
