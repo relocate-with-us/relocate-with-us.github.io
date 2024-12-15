@@ -1,5 +1,16 @@
 [
  {
+    "company": "Zalando",
+    "position": "Junior Business Intelligence Engineer (All Genders)",
+    "location": "Berlin, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 15, 2024",
+    "logo": "/media/zalando_logo.jpg",
+    "description": "https://jobs.zalando.com/en/jobs/2716140-Junior-Business-Intelligence-Engineer-(All-Genders"
+  },
+ {
     "company": "Shield AI",
     "position": "Mechanical Design Engineer II (R3051)",
     "location": "San Diego, USA 🇺🇸",
@@ -143,17 +154,7 @@
     "logo": "/media/hometogo_logo.jpg",
     "description": "https://job-boards.eu.greenhouse.io/hometogo/jobs/4474966101"
   },
-  {
-    "company": "Zalando",
-    "position": "Junior Frontend Engineer - Inbound Frontend (all genders)",
-    "location": "Berlin, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "December 12, 2024",
-    "logo": "/media/zalando_logo.jpg",
-    "description": "https://jobs.zalando.com/en/jobs/2717808"
-  },
+ 
    {
     "company": "Universal Quantum",
     "position": "Software Engineer/Architect",
