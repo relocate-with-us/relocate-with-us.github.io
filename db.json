@@ -1,5 +1,27 @@
 [
  {
+    "company": "Kikoff",
+    "position": "Data Scientist",
+    "location": "San Francisco, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 16, 2024",
+    "logo": "/media/getkikoff_logo.jpg",
+    "description": "https://jobs.ashbyhq.com/kikoff/3411be84-b1e5-4702-8ed8-312385f1b7dc"
+  },
+ {
+    "company": "Sumup",
+    "position": "(Senior) Backend Engineer",
+    "location": "Berlin, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 16, 2024",
+    "logo": "/media/sumup_logo.jpg",
+    "description": "https://www.sumup.com/careers/positions/berlin-germany/engineering/senior-backend-engineer/7687337002/"
+  },
+ {
     "company": "Zalando",
     "position": "Junior Business Intelligence Engineer (All Genders)",
     "location": "Berlin, Germany 🇩🇪",
