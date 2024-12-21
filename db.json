@@ -1,4 +1,26 @@
 [
+  {
+    "company": "DOXA PARTNERS",
+    "position": "​Investment Analyst",
+    "location": "Nex Castle, United Kingdom 🇬🇧",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 21, 2024",
+    "logo": "/media/doxa.jpeg",
+    "description": "https://www.doxa.partners/doxaregister"
+  },
+ {
+    "company": "Marsh McLennan",
+    "position": "IT Program Manager",
+    "location": "Sydney, Australia 🇦🇺",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "December 21, 2024",
+    "logo": "/media/marshmclennan_logo.jpeg",
+    "description": "https://careers.marshmclennan.com/global/en/job/R_286926/IT-Program-Manager"
+  },
  {
     "company": "Kikoff",
     "position": "Data Scientist",
