@@ -1,5 +1,137 @@
 [
  {
+    "company": "Kikoff",
+    "position": "Senior Communications Manager",
+    "location": "San Francisco, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "January 9, 2025",
+    "logo": "/media/getkikoff_logo.jpg",
+    "description": "https://jobs.ashbyhq.com/kikoff/d911c998-c1df-409c-a124-388f853b6ce3"
+  },
+   {
+    "company": "Bank for International Settlements – BIS",
+    "position": "Risk Analyst",
+    "location": "Basel, Switzerland 🇨🇭",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "January 9, 2025",
+    "logo": "/media/bis_logo.jpg",
+    "description": "https://lde.tbe.taleo.net/lde01/ats/careers/v2/viewRequisition?org=BIS&cws=40&rid=1291"
+  },
+ {
+    "company": "Bank for International Settlements – BIS",
+    "position": "Data Governance Engineer",
+    "location": "Basel, Switzerland 🇨🇭",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "January 9, 2025",
+    "logo": "/media/bis_logo.jpg",
+    "description": "https://lde.tbe.taleo.net/lde01/ats/careers/v2/viewRequisition?org=BIS&cws=40&rid=1286"
+  },
+ {
+    "company": "Bank for International Settlements – BIS",
+    "position": "Head of IT Development",
+    "location": "Basel, Switzerland 🇨🇭",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "January 9, 2025",
+    "logo": "/media/bis_logo.jpg",
+    "description": "https://lde.tbe.taleo.net/lde01/ats/careers/v2/viewRequisition?org=BIS&cws=40&rid=1287"
+  },
+ {
+    "company": "Zalando",
+    "position": "Software Engineer - Core Logistics Abilities",
+    "location": "Berlin, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "January 9, 2025",
+    "logo": "/media/zalando_logo.jpg",
+    "description": "https://jobs.zalando.com/en/jobs/2717241"
+  },
+ {
+    "company": "jndsolutions",
+    "position": "Network Tester",
+    "location": "New Jersey, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "January 9, 2025",
+    "logo": "/media/jndsolutions_logo.jpg",
+    "description": "https://jnd-inc.breezy.hr/p/14c3b744e638-network-tester-5-13958-5"
+  },
+ {
+    "company": "Kikoff",
+    "position": "Software Engineer - Mobile",
+    "location": "San Francisco, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "January 9, 2025",
+    "logo": "/media/getkikoff_logo.jpg",
+    "description": "https://jobs.ashbyhq.com/kikoff/5174cf92-0ef6-47c4-9414-afa2d26dfc4b"
+  },
+ {
+    "company": "Kikoff",
+    "position": "Software Engineer - Backend",
+    "location": "San Francisco, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "January 9, 2025",
+    "logo": "/media/getkikoff_logo.jpg",
+    "description": "https://jobs.ashbyhq.com/kikoff/642a8b0d-22cc-42fd-b21f-72d44649c3da"
+  },
+ {
+    "company": "Kikoff",
+    "position": "Senior Software Engineer - Full Stack",
+    "location": "San Francisco, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "January 9, 2025",
+    "logo": "/media/getkikoff_logo.jpg",
+    "description": "https://jobs.ashbyhq.com/kikoff/6b0b926f-510d-4e47-bbf1-ceec2913b78a"
+  },
+ {
+    "company": "Kikoff",
+    "position": "Senior Software Engineer - Frontend",
+    "location": "San Francisco, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "January 9, 2025",
+    "logo": "/media/getkikoff_logo.jpg",
+    "description": "https://jobs.ashbyhq.com/kikoff/316f1ee2-6612-48be-b20b-2d274ec57c87"
+  },
+ {
+    "company": "Kikoff",
+    "position": "Senior Software Engineer - Backend",
+    "location": "San Francisco, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "January 9, 2025",
+    "logo": "/media/getkikoff_logo.jpg",
+    "description": "https://jobs.ashbyhq.com/kikoff/dc5ce1c8-ef61-40b6-82e2-a6b04c19fff8"
+  },
+ {
+    "company": "Kikoff",
+    "position": "Product Engineering Manager",
+    "location": "San Francisco, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "January 9, 2025",
+    "logo": "/media/getkikoff_logo.jpg",
+    "description": "https://jobs.ashbyhq.com/kikoff/4ada487b-89ac-4a13-b501-bf0f8b043cae"
+  },
+ {
     "company": "Coolblue",
     "position": "Team Lead Front-End React",
     "location": "Rotterdam, Netherlands 🇳🇱",
