@@ -1,5 +1,49 @@
 [
   {
+    "company": "Sunday GmbH",
+    "position": "Forward Deployed Engineer",
+    "location": "London, United Kingdom 🇬🇧",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "January 25, 2025",
+    "logo": "/media/sunday_gmbh_logo.jpeg",
+    "description": "https://join.com/companies/sunday/13429301-marketing-artist-f-m-d"
+  },
+  {
+    "company": "OpenAI",
+    "position": "Senior Software Engineer - Backend",
+    "location": "Budapest, Hungary 🇭🇺",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "January 25, 2025",
+    "logo": "/media/openai_logo.jpg",
+    "description": "https://jobs.ashbyhq.com/openai/b40efa93-da3c-4593-bc98-03d203cd0488"
+  },
+  {
+    "company": "Shapr3d",
+    "position": "Senior Software Engineer - Backend",
+    "location": "Budapest, Hungary 🇭🇺",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "January 25, 2025",
+    "logo": "/media/shapr3d_logo.jpg",
+    "description": "https://www.shapr3d.com/company/jobs-details?gh_jid=6316008003"
+  },
+  {
+    "company": "Qualcomm",
+    "position": "Senior Software Engineer - Qualcomm XR labs Europe",
+    "location": "Amsterdam, Netherlands 🇳🇱",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "January 25, 2025",
+    "logo": "/media/qualcomm_logo.jpg",
+    "description": "https://careers.qualcomm.com/careers/job/446703622802?hl=en-US&domain=qualcomm.com"
+  },
+  {
     "company": "Mistral AI",
     "position": "Software Engineer, Billing",
     "location": "Paris, France 🇫🇷",
@@ -1974,17 +2018,7 @@
     "logo": "/media/kolibri_games_logo.jpg",
     "description": "https://www.kolibrigames.com/career/position/8ab35ce3-a5f5-4be5-84ab-7adf89e2dc39/"
   },
-  {
-    "company": "Sunday GmbH",
-    "position": "Marketing Artist (f/m/d)",
-    "location": "Hamburg, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "July 20, 2024",
-    "logo": "/media/sunday_gmbh_logo.jpeg",
-    "description": "https://sunday.gg/career/?j_id=f58ddda3-9533-4e92-8609-3ca9e700c438"
-  },
+
   {
     "company": "Sunday GmbH",
     "position": "Media & Communication Manager (f/m/d)",
