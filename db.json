@@ -1,5 +1,71 @@
 [
   {
+    "company": "Hapag-Lloyd AG ",
+    "position": "Cloud Engineer ",
+    "location": "Gdansk , Poland 🇵🇱",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "February 10, 2025",
+    "logo": "/media/hapag_lloyd_ag_logo.jpg",
+    "description": "https://www.linkedin.com/jobs/view/4148246703"
+  },
+  {
+    "company": "Byborg Enterprises",
+    "position": "Content Marketing Manager",
+    "location": "Neudorf-Weimershof, Luxembourg 🇱🇺",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "February 10, 2025",
+    "logo": "/media/byborg_enterprises_logo.jpg",
+    "description": "https://jobs.smartrecruiters.com/DoclerHolding/744000035188883-content-marketing-manager"
+  },
+   {
+    "company": "Langham Recruitment",
+    "position": "Senior FPGA Network Engineer",
+    "location": "London , United Kingdom 🇬🇧",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "February 10, 2025",
+    "logo": "/media/langham_recruitment_logo.jpg",
+    "description": "https://www.linkedin.com/jobs/view/4146351784"
+  },
+  {
+    "company": "MODE Recruitment",
+    "position": "Senior System Administrator",
+    "location": "Frankfurt, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "February 10, 2025",
+    "logo": "/media/moderecruitmentltd_logo.jpg",
+    "description": "https://www.linkedin.com/jobs/view/4148245932"
+  },
+  {
+    "company": "MODE Recruitment",
+    "position": "Senior System Engineer",
+    "location": "Frankfurt, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "February 10, 2025",
+    "logo": "/media/moderecruitmentltd_logo.jpg",
+    "description": "https://www.linkedin.com/jobs/view/4148245729"
+  },
+  {
+    "company": "MODE Recruitment",
+    "position": "Senior PHP Developer",
+    "location": "Munich, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "February 10, 2025",
+    "logo": "/media/moderecruitmentltd_logo.jpg",
+    "description": "https://www.linkedin.com/jobs/view/4148246703"
+  },
+  {
     "company": "Sunday GmbH",
     "position": "Forward Deployed Engineer",
     "location": "Hamburg, Germany 🇩🇪",
