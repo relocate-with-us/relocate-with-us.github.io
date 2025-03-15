@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /visa-sponsored-jobs/
+Allow: /relocation-jobs/
+Allow: /relocate-jobs/
+
+Sitemap: https://visajobs.xyz/sitemap.xml 
