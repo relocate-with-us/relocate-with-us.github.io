@@ -97,295 +97,304 @@
     </style>
 </head>
 
-<body class="bg-gray-50">
-    <div id="loadingScreen" class="loading-screen">
-        <div class="flex">
-            <div class="color-change-dot dot1"></div>
-            <div class="color-change-dot dot2"></div>
-            <div class="color-change-dot dot3"></div>
-        </div>
-    </div>
-
-    <header class="bg-white shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <a href="/" class="flex items-center">
-                <h1 class="text-2xl font-bold text-gray-900">Relocate Jobs</h1>
+<body>
+    <div class="w-full min-h-screen">
+        <!-- Header -->
+        <header class="flex items-center justify-between p-4 border-b">
+            <a href="/" class="flex items-center gap-2">
+                <i data-lucide="rocket" class="w-6 h-6 text-blue-500"></i>
+                <span class="text-xl font-semibold">visajobs.xyz</span>
             </a>
-            <nav class="hidden md:flex space-x-6">
-                <a href="/" class="text-gray-600 hover:text-gray-900">Home</a>
-                <a href="/visa-sponsored-jobs/" class="text-gray-600 hover:text-gray-900">Visa Sponsored Jobs</a>
-                <a href="/relocation-jobs/" class="text-gray-600 hover:text-gray-900">Relocation Jobs</a>
-                <a href="/relocate-jobs/" class="text-gray-900 font-medium">Relocate Jobs</a>
-            </nav>
-            <button id="mobileMenuButton" class="md:hidden text-gray-600">
-                <i data-lucide="menu" class="w-6 h-6"></i>
-            </button>
-        </div>
-        <div id="mobileMenu" class="hidden md:hidden px-4 py-2 pb-4">
-            <nav class="flex flex-col space-y-2">
-                <a href="/" class="text-gray-600 hover:text-gray-900 py-2">Home</a>
-                <a href="/visa-sponsored-jobs/" class="text-gray-600 hover:text-gray-900 py-2">Visa Sponsored Jobs</a>
-                <a href="/relocation-jobs/" class="text-gray-600 hover:text-gray-900 py-2">Relocation Jobs</a>
-                <a href="/relocate-jobs/" class="text-gray-900 font-medium py-2">Relocate Jobs</a>
-            </nav>
-        </div>
-    </header>
+            <div class="flex items-center gap-4">
+                <a href="../visa-sponsored-jobs/"
+                    class="relative text-blue-500 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full">
+                    Browse Jobs
+                </a>
+                <a href="https://airtable.com/shrnUCBHSQR6rsTzT"
+                    class="px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600">
+                    Post a job
+                </a>
+            </div>
+        </header>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <section class="bg-white shadow rounded-lg p-6 mb-8">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Ready to Relocate? Find Your Next Career Move</h2>
-            <p class="text-lg text-gray-600 mb-6">Discover global opportunities for professionals ready to relocate. These employers actively seek international talent and provide comprehensive relocation support to help you start your new life abroad.</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <div class="bg-blue-50 border border-blue-100 rounded-lg p-4">
-                    <h3 class="text-xl font-semibold text-blue-800 mb-2">Benefits of Relocating for Work</h3>
-                    <ul class="list-disc pl-5 text-blue-700 space-y-1">
-                        <li>Gain international work experience</li>
-                        <li>Develop a global professional network</li>
-                        <li>Experience new cultures and lifestyles</li>
-                        <li>Potentially higher salary and benefits</li>
-                        <li>Career advancement opportunities</li>
-                        <li>Personal growth and new perspectives</li>
-                    </ul>
-                </div>
-                <div class="bg-green-50 border border-green-100 rounded-lg p-4">
-                    <h3 class="text-xl font-semibold text-green-800 mb-2">Relocation Support Provided</h3>
-                    <ul class="list-disc pl-5 text-green-700 space-y-1">
-                        <li>Visa sponsorship and work permits</li>
-                        <li>Moving expenses coverage</li>
-                        <li>Temporary accommodation</li>
-                        <li>Assistance finding permanent housing</li>
-                        <li>Help with administrative procedures</li>
-                        <li>Cultural orientation and language courses</li>
-                    </ul>
+        <!-- Main Content -->
+        <main class="max-w-6xl mx-auto px-4 py-12">
+            <!-- Hero Section -->
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-snug">
+                    Relocate Jobs with
+                    <span class="bg-yellow-200 px-2 inline-block">Visa Sponsorship</span> &amp;
+                    <span class="bg-yellow-200 px-2 inline-block">Relocation Assistance</span>
+                </h1>
+
+                <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-8">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="globe" class="w-5 h-5"></i>
+                        <span>50+ Countries</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="briefcase" class="w-5 h-5"></i>
+                        <span>800+ Jobs</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="map-pin" class="w-5 h-5"></i>
+                        <span>Visa Sponsorship + Relocation Assistance</span>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <div class="bg-white shadow rounded-lg p-6 mb-8">
-            <div class="flex flex-wrap gap-4 mb-6">
-                <div class="w-full md:w-auto flex-grow">
-                    <label for="searchInput" class="block text-sm font-medium text-gray-700 mb-1">Search Jobs</label>
-                    <div class="relative">
-                        <input type="text" id="searchInput" 
-                            class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                            placeholder="Search by title, company or location">
-                        <div class="absolute inset-y-0 right-0 flex items-center pr-3">
-                            <i data-lucide="search" class="h-5 w-5 text-gray-400"></i>
+            <!-- Job Listings Section -->
+            <section>
+                <div class="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-8">
+                    <!-- Filters -->
+                    <div class="space-y-6">
+                        <div>
+                            <h2 class="text-xl font-semibold mb-4">Search Jobs</h2>
+                            <div class="relative">
+                                <input type="text" id="job-search"
+                                    class="block w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-300 focus:border-blue-300 text-gray-800"
+                                    placeholder="Search job titles...">
+                                <i data-lucide="search" class="absolute top-3 right-3 w-5 h-5 text-gray-400"></i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-xl font-semibold mb-4">Filter by Location</h2>
+                            <select id="location-filter"
+                                class="block w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-300 focus:border-blue-300 text-gray-800">
+                                <option value="">All Countries</option>
+                                <!-- Countries will be added dynamically -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Job Cards -->
+                    <div>
+                        <div class="mb-6 flex justify-between items-center">
+                            <h2 class="text-2xl font-semibold">Available Positions</h2>
+                            <div id="jobs-count" class="text-gray-600">Loading...</div>
+                        </div>
+
+                        <!-- Loading Indicator -->
+                        <div id="loading-indicator" class="flex justify-center my-8" style="display: none;">
+                            <div class="loader"></div>
+                        </div>
+
+                        <!-- Job Container -->
+                        <div id="job-container" class="grid grid-cols-1 gap-6">
+                            <!-- Jobs will be rendered here -->
                         </div>
                     </div>
                 </div>
-                <div class="w-full md:w-auto">
-                    <label for="locationFilter" class="block text-sm font-medium text-gray-700 mb-1">Location</label>
-                    <select id="locationFilter" 
-                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
-                        <option value="">All Locations</option>
-                    </select>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="py-8 px-4 border-t mt-16">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">About VisaJobs.xyz</h3>
+                    <p class="text-gray-600">Connecting global talent with opportunities abroad. We curate jobs that offer visa sponsorship and relocation assistance.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../" class="text-blue-500 hover:underline">Home</a></li>
+                        <li><a href="../visa-sponsored-jobs/" class="text-blue-500 hover:underline">Browse Jobs</a></li>
+                        <li><a href="https://airtable.com/shrnUCBHSQR6rsTzT" class="text-blue-500 hover:underline">Post a Job</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect</h3>
+                    <p class="text-gray-600">Find more opportunities and resources for global careers.</p>
                 </div>
             </div>
-
-            <div class="mb-4 flex flex-wrap gap-2" id="countryFilters">
-                <!-- Country filters will be populated here -->
+            <div class="text-center text-gray-600 mt-8">
+                &copy; 2025 VisaJobs.xyz. All rights reserved.
             </div>
+        </footer>
+    </div>
 
-            <div id="jobCount" class="text-sm text-gray-600 mb-4">Loading jobs...</div>
-
-            <div id="jobListings" class="space-y-6">
-                <!-- Job listings will be populated here -->
-            </div>
-        </div>
-    </main>
-
-    <footer class="bg-white border-t">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <p class="text-center text-gray-500 text-sm">© 2024 Relocate Jobs. All rights reserved.</p>
-        </div>
-    </footer>
-
+    <!-- JavaScript for Job Listings -->
     <script>
-        // Mobile menu toggle
-        document.getElementById('mobileMenuButton').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('hidden');
+        const jobContainer = document.getElementById('job-container');
+        const jobsCount = document.getElementById('jobs-count');
+        const searchInput = document.getElementById('job-search');
+        const locationFilter = document.getElementById('location-filter');
+        const loadingIndicator = document.getElementById('loading-indicator');
+        const dataSource = '../db.json'; // Ensure this points to your job data
+
+        let allJobs = [];
+        let filteredJobs = [];
+
+        // Function to show loading animation
+        function showLoadingEffect() {
+            loadingIndicator.style.display = 'flex';
+            jobContainer.style.opacity = '0.5';
+        }
+
+        // Function to hide loading animation
+        function hideLoadingEffect() {
+            loadingIndicator.style.display = 'none';
+            jobContainer.style.opacity = '1';
+        }
+
+        // Function to populate location filter dropdown with unique countries
+        function populateLocationDropdown(jobs) {
+            const countries = new Set();
+            jobs.forEach(job => {
+                const country = job.location.split(',').pop().trim();
+                if (country) countries.add(country);
+            });
+
+            const sortedCountries = Array.from(countries).sort();
+            sortedCountries.forEach(country => {
+                const option = document.createElement('option');
+                option.value = country.toLowerCase();
+                option.textContent = country;
+                locationFilter.appendChild(option);
+            });
+        }
+
+        // Function to render job cards
+        function renderJobs(jobs) {
+            hideLoadingEffect(); // Hide loading spinner
+            
+            if (jobs.length === 0) {
+                jobContainer.innerHTML = '<p class="text-center text-gray-600">No jobs match your search criteria.</p>';
+                jobsCount.textContent = '0 jobs found';
+                return;
+            }
+
+            jobsCount.textContent = `${jobs.length} jobs found`;
+            
+            jobContainer.innerHTML = '';
+            jobs.forEach(job => {
+                const jobCard = document.createElement('div');
+                jobCard.className = 'border rounded-lg p-6 bg-white shadow-sm hover:shadow-md transition-shadow duration-300';
+
+                const applyUrl = job.apply_url || '#';
+                
+                jobCard.innerHTML = `
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold">${job.position}</h3>
+                        <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">${job.job_type || 'Full-time'}</span>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex items-center gap-2 text-gray-600 mb-2">
+                            <i data-lucide="building" class="w-4 h-4"></i>
+                            <span>${job.company}</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-gray-600">
+                            <i data-lucide="map-pin" class="w-4 h-4"></i>
+                            <span>${job.location}</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        ${job.tags ? job.tags.map(tag => `<span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">${tag}</span>`).join('') : ''}
+                    </div>
+                    <div class="flex gap-4 mt-4">
+                        <a href="${applyUrl}" target="_blank" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 inline-flex items-center gap-2">
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                            Apply Now
+                        </a>
+                    </div>
+                `;
+
+                jobContainer.appendChild(jobCard);
+            });
+
+            lucide.createIcons(); // Reinitialize icons after rendering
+        }
+
+        // Function to filter jobs based on search and location
+        function filterJobs() {
+            const searchText = searchInput.value.toLowerCase();
+            const selectedCountry = locationFilter.value;
+
+            filteredJobs = allJobs.filter(job => {
+                const country = job.location.split(',').pop().trim().toLowerCase();
+                return (
+                    (searchText === '' || job.position.toLowerCase().includes(searchText)) &&
+                    (selectedCountry === '' || country.includes(selectedCountry))
+                );
+            });
+
+            renderJobs(filteredJobs);
+        }
+
+        // Fetch and load jobs
+        async function loadJobs() {
+            try {
+                showLoadingEffect(); // Show loading spinner
+                const response = await fetch(dataSource);
+                if (!response.ok) throw new Error('Failed to fetch jobs');
+                const jobs = await response.json();
+
+                console.log("Fetched jobs:", jobs); // Debug log
+                allJobs = jobs; // Store all jobs for filtering
+                filteredJobs = [...jobs]; // Initialize filtered jobs
+                populateLocationDropdown(jobs); // Populate location dropdown with countries
+                renderJobs(filteredJobs); // Render jobs
+            } catch (error) {
+                console.error('Error loading jobs:', error);
+                jobContainer.innerHTML = '<p class="text-center text-red-500">Failed to load jobs. Please try again later.</p>';
+            }
+        }
+
+        // Function to add debounce to other function   
+        function debounce (callback, wait) {
+            let timeout = null;
+            
+            return (...args) => {
+                window.clearTimeout(timeout);
+
+                timeout = window.setTimeout(() => {
+                    callback.apply(null, args);
+                }, wait);
+            };
+        }
+
+        // Wrap filter job function with debouncing
+        const debouncedFilterJobs = debounce(filterJobs, 500); // wait for 500ms until there's no change, then filter the jobs
+        
+        // Event listeners for search and filters
+        searchInput.addEventListener('input', () => {
+            showLoadingEffect();
+            debouncedFilterJobs();
         });
+        
+        locationFilter.addEventListener('change', () => {
+            showLoadingEffect();
+            debouncedFilterJobs();
+        });
+
+        // Initialize loading spinner CSS
+        const style = document.createElement('style');
+        style.innerHTML = `
+            .loader {
+                border: 4px solid #f3f3f3;
+                border-top: 4px solid #3498db;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                animation: spin 1s linear infinite;
+            }
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Load jobs on page load
+        document.addEventListener('DOMContentLoaded', loadJobs);
 
         // Initialize Lucide icons
         lucide.createIcons();
-
-        // Handle loading screen
-        window.addEventListener('load', function() {
-            const loadingScreen = document.getElementById('loadingScreen');
-            setTimeout(() => {
-                loadingScreen.style.opacity = '0';
-                setTimeout(() => {
-                    loadingScreen.style.visibility = 'hidden';
-                }, 500);
-            }, 800);
-        });
-
-        // Fetch and display job data
-        async function fetchJobs() {
-            try {
-                const response = await fetch('/db.json');
-                const jobs = await response.json();
-                
-                // Filter for jobs with relocation assistance
-                const relocateJobs = jobs.filter(job => job.reloc && job.reloc.includes('Relocation'));
-                
-                // Process and display jobs
-                processJobs(relocateJobs);
-            } catch (error) {
-                console.error('Error fetching jobs:', error);
-                document.getElementById('jobCount').textContent = 'Error loading jobs. Please try again later.';
-            }
-        }
-
-        function processJobs(jobs) {
-            const jobListings = document.getElementById('jobListings');
-            const jobCount = document.getElementById('jobCount');
-            const locationFilter = document.getElementById('locationFilter');
-            const countryFilters = document.getElementById('countryFilters');
-            const searchInput = document.getElementById('searchInput');
-            
-            // Track unique locations for the filter
-            const locations = new Set();
-            const countries = new Map();
-            
-            // Extract all locations and country emojis
-            jobs.forEach(job => {
-                const location = job.location;
-                locations.add(location);
-                
-                // Extract country emoji if present
-                const emojiMatch = location.match(/\p{Emoji_Flag_Sequence}$/u);
-                if (emojiMatch) {
-                    const emoji = emojiMatch[0];
-                    const country = location.split(',').pop().trim().replace(emoji, '').trim();
-                    if (!countries.has(emoji)) {
-                        countries.set(emoji, country);
-                    }
-                }
-            });
-            
-            // Populate location filter
-            const locationArray = Array.from(locations).sort();
-            locationArray.forEach(location => {
-                const option = document.createElement('option');
-                option.value = location;
-                option.textContent = location;
-                locationFilter.appendChild(option);
-            });
-            
-            // Create country filter buttons
-            countries.forEach((country, emoji) => {
-                const button = document.createElement('button');
-                button.className = 'country-filter px-3 py-1 rounded-full bg-gray-100 hover:bg-gray-200 text-sm flex items-center';
-                button.dataset.country = emoji;
-                button.innerHTML = `${emoji} <span class="ml-1">${country}</span>`;
-                countryFilters.appendChild(button);
-            });
-            
-            // Render all jobs initially
-            renderJobs(jobs);
-            
-            // Set up event listeners for filtering
-            searchInput.addEventListener('input', () => filterJobs());
-            locationFilter.addEventListener('change', () => filterJobs());
-            document.querySelectorAll('.country-filter').forEach(button => {
-                button.addEventListener('click', function() {
-                    this.classList.toggle('bg-blue-500');
-                    this.classList.toggle('text-white');
-                    this.classList.toggle('bg-gray-100');
-                    filterJobs();
-                });
-            });
-            
-            function filterJobs() {
-                const searchTerm = searchInput.value.toLowerCase();
-                const selectedLocation = locationFilter.value;
-                const selectedCountries = Array.from(document.querySelectorAll('.country-filter.bg-blue-500')).map(
-                    button => button.dataset.country
-                );
-                
-                const filteredJobs = jobs.filter(job => {
-                    // Search term filter
-                    const matchesSearch = searchTerm === '' || 
-                        job.position.toLowerCase().includes(searchTerm) ||
-                        job.company.toLowerCase().includes(searchTerm) ||
-                        job.location.toLowerCase().includes(searchTerm);
-                    
-                    // Location filter
-                    const matchesLocation = selectedLocation === '' || job.location === selectedLocation;
-                    
-                    // Country filter
-                    const matchesCountry = selectedCountries.length === 0 || 
-                        selectedCountries.some(country => job.location.includes(country));
-                    
-                    return matchesSearch && matchesLocation && matchesCountry;
-                });
-                
-                renderJobs(filteredJobs);
-            }
-            
-            function renderJobs(jobsToRender) {
-                // Update job count
-                jobCount.textContent = `Showing ${jobsToRender.length} relocate jobs`;
-                
-                // Clear current listings
-                jobListings.innerHTML = '';
-                
-                if (jobsToRender.length === 0) {
-                    jobListings.innerHTML = '<p class="text-center py-8 text-gray-500">No matching jobs found. Try adjusting your filters.</p>';
-                    return;
-                }
-                
-                // Render each job
-                jobsToRender.forEach(job => {
-                    const jobCard = document.createElement('div');
-                    jobCard.className = 'border rounded-lg p-4 hover:shadow-md transition-shadow bg-white';
-                    
-                    const logo = job.logo ? 
-                        `<img src="${job.logo}" alt="${job.company} logo" class="w-12 h-12 object-contain rounded">` : 
-                        `<div class="w-12 h-12 bg-gray-200 rounded flex items-center justify-center text-gray-500">${job.company.charAt(0)}</div>`;
-                    
-                    jobCard.innerHTML = `
-                        <div class="flex items-start gap-4">
-                            <div class="flex-shrink-0">
-                                ${logo}
-                            </div>
-                            <div class="flex-grow">
-                                <h3 class="font-semibold text-lg text-gray-900">${job.position}</h3>
-                                <p class="text-gray-700">${job.company}</p>
-                                <p class="text-gray-600 text-sm mt-1">${job.location}</p>
-                                <div class="flex flex-wrap gap-2 mt-2">
-                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
-                                        ${job.reloc}
-                                    </span>
-                                    ${job.visa ? `
-                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
-                                        ${job.visa}
-                                    </span>` : ''}
-                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
-                                        ${job.contract}
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="flex-shrink-0">
-                                <a href="${job.description}" target="_blank" rel="noopener noreferrer" 
-                                   class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                                    Apply
-                                </a>
-                            </div>
-                        </div>
-                    `;
-                    
-                    jobListings.appendChild(jobCard);
-                });
-            }
-        }
-        
-        // Initialize page
-        fetchJobs();
     </script>
+    <!-- 100% privacy-first analytics -->
+    <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+
 </body>
 </html> 
