@@ -94,6 +94,10 @@
         .dot3 {
             animation-delay: 0.6s;
         }
+
+        .group:hover .group-hover\:opacity-100 {
+            opacity: 1;
+        }
     </style>
 </head>
 
@@ -207,6 +211,9 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Connect</h3>
                     <p class="text-gray-600">Find more opportunities and resources for global careers.</p>
+                    <ul class="space-y-2 mt-4">
+                        <li><a href="../terms-of-service/" class="text-blue-500 hover:underline">Terms of Service</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="text-center text-gray-600 mt-8">
@@ -271,32 +278,36 @@
             jobContainer.innerHTML = '';
             jobs.forEach(job => {
                 const jobCard = document.createElement('div');
-                jobCard.className = 'border rounded-lg p-6 bg-white shadow-sm hover:shadow-md transition-shadow duration-300';
+                jobCard.className = 'border rounded-lg p-6 bg-white shadow-sm hover:shadow-md transition-shadow duration-300 relative group';
 
-                const applyUrl = job.apply_url || '#';
+                const applyUrl = job.description || '#';
+                
+                // Create visa and relocation badges
+                const visaBadge = job.visa ? `<span class="badge bg-green-200 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2">${job.visa}</span>` : '';
+                const relocBadge = job.reloc ? `<span class="badge bg-yellow-200 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">${job.reloc}</span>` : '';
                 
                 jobCard.innerHTML = `
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-xl font-bold">${job.position}</h3>
-                        <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">${job.job_type || 'Full-time'}</span>
-                    </div>
-                    <div class="mb-4">
-                        <div class="flex items-center gap-2 text-gray-600 mb-2">
-                            <i data-lucide="building" class="w-4 h-4"></i>
-                            <span>${job.company}</span>
+                    <div class="flex items-start gap-4">
+                        <img src="${job.logo || '../media/default-company.png'}" alt="${job.company}" class="w-12 h-12 rounded-lg" loading="lazy">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold mb-1">${job.position}</h3>
+                            <p class="text-gray-600 mb-2">${job.company}</p>
+                            <div class="flex items-center gap-4 text-sm text-gray-500">
+                                <span class="flex items-center gap-1">
+                                    <i data-lucide="map-pin" class="w-4 h-4"></i>
+                                    ${job.location}
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <i data-lucide="calendar" class="w-4 h-4"></i>
+                                    ${job.post_date || 'Recent'}
+                                </span>
+                            </div>
+                            <div class="mt-2">
+                                ${relocBadge} ${visaBadge} <span class="badge bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">${job.contract || job.job_type || 'Full-time'}</span>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-2 text-gray-600">
-                            <i data-lucide="map-pin" class="w-4 h-4"></i>
-                            <span>${job.location}</span>
-                        </div>
-                    </div>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        ${job.tags ? job.tags.map(tag => `<span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">${tag}</span>`).join('') : ''}
-                    </div>
-                    <div class="flex gap-4 mt-4">
-                        <a href="${applyUrl}" target="_blank" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 inline-flex items-center gap-2">
-                            <i data-lucide="external-link" class="w-4 h-4"></i>
-                            Apply Now
+                        <a href="${applyUrl}" target="_blank" class="px-4 py-2 bg-blue-500 text-white rounded-lg absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                            Apply
                         </a>
                     </div>
                 `;

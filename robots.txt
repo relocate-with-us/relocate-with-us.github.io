@@ -3,5 +3,6 @@ Allow: /
 Allow: /visa-sponsored-jobs/
 Allow: /relocation-jobs/
 Allow: /relocate-jobs/
+Allow: /terms-of-service/
 
 Sitemap: https://visajobs.xyz/sitemap.xml 
