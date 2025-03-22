@@ -1,5 +1,115 @@
 [
   {
+    "company": "Mistral AI",
+    "position": "AI Solution Architect, Deployment - France 🇫🇷, UK, USA 🇺🇸",
+    "location": "Paris 🇫🇷 / London 🇬🇧 / Palo Alto",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "March 22, 2025",
+    "logo": "/media/mistralai_logo.jpeg",
+    "description": "https://jobs.lever.co/mistral/df3d4b5c-4910-42c8-8fe8-5fd114b2961a"
+  },
+  {
+    "company": "Mistral AI",
+    "position": "Research Engineer - Paris/London",
+    "location": "Paris 🇫🇷 / London 🇬🇧",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "March 22, 2025",
+    "logo": "/media/mistralai_logo.jpeg",
+    "description": "https://jobs.lever.co/mistral/07447e1d-7900-46d4-b61b-186f2f76847f"
+  },
+  {
+    "company": "Mistral AI",
+    "position": "AI Scientist - Paris/London",
+    "location": "Paris 🇫🇷 / London 🇬🇧",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "March 22, 2025",
+    "logo": "/media/mistralai_logo.jpeg",
+    "description": "https://jobs.lever.co/mistral/675b7f06-a76b-4144-af0c-4dd3282ef489"
+  },
+  {
+    "company": "Mistral AI",
+    "position": "Software Engineer, Back-end - Palo Alto",
+    "location": "Palo Alto, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "March 22, 2025",
+    "logo": "/media/mistralai_logo.jpeg",
+    "description": "https://jobs.lever.co/mistral/ef2d793d-fe94-4707-9535-b662c5a8c59c"
+  },
+  {
+    "company": "Mistral AI",
+    "position": "Technical Program Manager, Engineering - Paris",
+    "location": "Paris, France 🇫🇷",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "March 22, 2025",
+    "logo": "/media/mistralai_logo.jpeg",
+    "description": "https://jobs.lever.co/mistral/a1854159-922e-4de7-adb6-7c1b608c147f"
+  },
+  {
+    "company": "Mistral AI",
+    "position": "Applied AI Engineer, Use-case - EMEA, Singapore",
+    "location": "Paris 🇫🇷 / London 🇬🇧 / Singapore",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "March 22, 2025",
+    "logo": "/media/mistralai_logo.jpeg",
+    "description": "https://jobs.lever.co/mistral/77f6fd1b-65cf-45d8-9b68-594c62732f62"
+  },
+  {
+    "company": "Mistral AI",
+    "position": "Staff Software Engineer, Security - Paris",
+    "location": "Paris, France",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "March 22, 2025",
+    "logo": "/media/mistralai_logo.jpeg",
+    "description": "https://jobs.lever.co/mistral/9f6e6513-fd9e-411b-b558-540bc12b2fe4"
+  },
+  {
+    "company": "Mistral AI",
+    "position": "Senior Software Engineer, Billing - Paris",
+    "location": "Paris, France 🇫🇷",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "March 22, 2025",
+    "logo": "/media/mistralai_logo.jpeg",
+    "description": "https://jobs.lever.co/mistral/e1a37c33-fdec-41cf-bb92-35646e283fa8"
+  },
+  {
+    "company": "Mistral AI",
+    "position": "Research Engineer - Palo Alto",
+    "location": "Palo Alto, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "March 22, 2025",
+    "logo": "/media/mistralai_logo.jpeg",
+    "description": "https://jobs.lever.co/mistral/3db45045-b1a5-4c5d-9608-0aa7fb66f2df"
+  },
+  {
+    "company": "Mistral AI",
+    "position": "AI Solution Architect, USA",
+    "location": "Palo Alto, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "March 22, 2025",
+    "logo": "/media/mistralai_logo.jpeg",
+    "description": "https://jobs.lever.co/mistral/b5b565a0-533a-43c3-b232-114138422cb0"
+  },
+  {
     "company": "Optiver",
     "position": "Windows Infrastructure – Software Engineer",
     "location": "Amsterdam, Netherlands 🇳🇱",
