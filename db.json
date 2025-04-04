@@ -1,5 +1,41 @@
 [
   {
+    "company": "Speakap",
+    "position": "Experienced Frontend Developer",
+    "location": "Amsterdam, Netherlands 🇳🇱",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "April 4, 2025",
+    "post_date": "Not specified",
+    "logo": "/media/speakap_logo.jpg",
+    "description": "https://jobs.speakap.com/o/frontend-developer"
+  },
+  {
+    "company": "N26",
+    "position": "Finance Business Partner - Investments",
+    "location": "Berlin, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "April 4, 2025",    
+    "post_date": "Not specified",
+    "logo": "/media/n26_logo.jpg",
+    "description": "https://n26.com/en-eu/careers/positions/6683900"
+  },
+  {
+    "company": "N26",
+    "position": "Backend Engineer - Memberships",
+    "location": "Berlin, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "April 4, 2025",
+    "post_date": "Not specified",
+    "logo": "/media/n26_logo.jpg",
+    "description": "https://n26.com/en-eu/careers/positions/6744192"
+  },
+  {
     "company": "Mistral AI",
     "position": "AI Solution Architect, Deployment - France 🇫🇷, UK, USA 🇺🇸",
     "location": "Paris 🇫🇷 / London 🇬🇧 / Palo Alto",
