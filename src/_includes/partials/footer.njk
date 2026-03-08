@@ -1,0 +1,74 @@
+<footer class="bg-gray-900 dark:bg-black text-gray-300 mt-auto">
+  <div class="max-w-6xl mx-auto px-4 py-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+      {# Brand #}
+      <div>
+        <a href="/" class="flex items-center gap-2 mb-4">
+          <i data-lucide="rocket" class="w-5 h-5 text-brand-400"></i>
+          <span class="text-lg font-bold text-white">visajobs<span class="text-brand-400">.xyz</span></span>
+        </a>
+        <p class="text-sm text-gray-400 leading-relaxed">
+          Helping tech professionals find international jobs with visa sponsorship and relocation support worldwide.
+        </p>
+      </div>
+
+      {# Quick Links #}
+      <div>
+        <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="/visa-sponsored-jobs/" class="text-gray-400 hover:text-white transition-colors">Browse Jobs</a></li>
+          <li><a href="/resources/" class="text-gray-400 hover:text-white transition-colors">Resources</a></li>
+          <li><a href="/blog/" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+          <li><a href="/faq/" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+          <li><a href="/about/" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+        </ul>
+      </div>
+
+      {# Resources #}
+      <div>
+        <h4 class="text-white font-semibold mb-4">Resources</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="/resources/country-guides/" class="text-gray-400 hover:text-white transition-colors">Country Guides</a></li>
+          <li><a href="/resources/visa-information/" class="text-gray-400 hover:text-white transition-colors">Visa Information</a></li>
+          <li><a href="/resources/relocation-tips/" class="text-gray-400 hover:text-white transition-colors">Relocation Tips</a></li>
+          <li><a href="/terms-of-service/" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+          <li><a href="/privacy-policy/" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      {# Newsletter + Social #}
+      <div>
+        <h4 class="text-white font-semibold mb-4">Stay Updated</h4>
+        <form action="{{ site.mailchimp.action }}" method="post" target="_blank" novalidate class="mb-6">
+          <div class="flex">
+            <input type="email" name="EMAIL" placeholder="Your email" required
+              class="flex-1 min-w-0 px-3 py-2 bg-gray-800 border border-gray-700 rounded-l-lg text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-brand-500 focus:border-brand-500 outline-none">
+            <button type="submit"
+              class="px-4 py-2 bg-brand-500 text-white text-sm font-medium rounded-r-lg hover:bg-brand-600 transition-colors shrink-0">
+              Join
+            </button>
+          </div>
+          <div style="position:absolute;left:-5000px" aria-hidden="true">
+            <input type="text" name="{{ site.mailchimp.honeypot }}" tabindex="-1" value="">
+          </div>
+        </form>
+        <div class="flex items-center gap-4">
+          <a href="{{ site.social.linkedin }}" target="_blank" class="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
+            <i data-lucide="linkedin" class="w-5 h-5"></i>
+          </a>
+          <a href="{{ site.social.telegram }}" target="_blank" class="text-gray-400 hover:text-white transition-colors" aria-label="Telegram">
+            <i data-lucide="send" class="w-5 h-5"></i>
+          </a>
+          <a href="mailto:{{ site.email }}" class="text-gray-400 hover:text-white transition-colors" aria-label="Email">
+            <i data-lucide="mail" class="w-5 h-5"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
+      &copy; {% year %} {{ site.name }}. All rights reserved.
+    </div>
+  </div>
+</footer>

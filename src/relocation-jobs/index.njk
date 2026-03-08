@@ -1,0 +1,60 @@
+---
+layout: layouts/base.njk
+title: "Jobs with Relocation Assistance & Packages"
+description: "Find international jobs with relocation packages and assistance. Browse hundreds of career opportunities where companies provide relocation support worldwide."
+---
+
+{# Canonical handled in base.njk via page.url #}
+
+{% block head %}
+<link rel="canonical" href="{{ site.url }}/visa-sponsored-jobs/">
+{% endblock %}
+
+<section class="py-12">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Relocation Jobs</h1>
+    <p class="text-gray-600 dark:text-gray-400 mb-8">
+      Looking for jobs with relocation assistance? Browse our full collection of {{ jobs | length }}+ visa-sponsored positions.
+    </p>
+    <a href="/visa-sponsored-jobs/" class="btn-primary">
+      Browse All Jobs
+      <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+    </a>
+  </div>
+</section>
+
+{# Show same jobs for SEO but point users to main page #}
+<section class="py-8">
+  <div class="max-w-3xl mx-auto px-4">
+    <div class="space-y-4">
+      {% for job in jobs | limit(20) %}
+      <div class="job-card">
+        <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+          <img src="{{ job.logo }}" alt="{{ job.company }}" class="w-12 h-12 rounded-lg object-cover shrink-0" loading="lazy">
+          <div class="flex-1 min-w-0">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">{{ job.position }}</h3>
+            <p class="text-gray-600 dark:text-gray-400 mb-2">{{ job.company }}</p>
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-gray-500 dark:text-gray-400 mb-3">
+              <span class="flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> {{ job.location }}
+              </span>
+              <span class="flex items-center gap-1">
+                <i data-lucide="clock" class="w-3.5 h-3.5"></i> {{ job.post_date | timeAgo }}
+              </span>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              {% if job.reloc %}<span class="badge badge-reloc">{{ job.reloc }}</span>{% endif %}
+              {% if job.visa %}<span class="badge badge-visa">{{ job.visa }}</span>{% endif %}
+              <span class="badge badge-contract">{{ job.contract }}</span>
+            </div>
+          </div>
+          <a href="{{ job.description }}" target="_blank" rel="noopener" class="job-card-apply">Apply</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="text-center mt-8">
+      <a href="/visa-sponsored-jobs/" class="btn-primary">View All {{ jobs | length }}+ Jobs</a>
+    </div>
+  </div>
+</section>

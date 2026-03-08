@@ -1,0 +1,23 @@
+{
+  "name": "visajobs-xyz",
+  "version": "2.0.0",
+  "description": "Job board for visa-sponsored and relocation jobs worldwide",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i src/assets/css/input.css -o _site/assets/css/styles.css --minify",
+    "build:11ty": "ELEVENTY_ENV=production npx @11ty/eleventy",
+    "build:search": "npx pagefind --site _site",
+    "build": "npm run build:css && npm run build:11ty && npm run build:search",
+    "dev:css": "tailwindcss -i src/assets/css/input.css -o _site/assets/css/styles.css --watch",
+    "dev:11ty": "npx @11ty/eleventy --serve --watch",
+    "dev": "npm-run-all --parallel dev:css dev:11ty",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "tailwindcss": "^3.4.0",
+    "npm-run-all": "^4.1.5",
+    "pagefind": "^1.3.0",
+    "@11ty/eleventy-plugin-rss": "^2.0.2"
+  }
+}

@@ -1,0 +1,17 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {%- for page in collections.all %}
+  {%- if not page.data.eleventyExcludeFromCollections %}
+  <url>
+    <loc>{{ site.url }}{{ page.url }}</loc>
+    <lastmod>{{ page.date | isoDate }}</lastmod>
+    <changefreq>{% if page.url == '/' or '/visa-sponsored-jobs/' in page.url %}daily{% elif '/blog/' in page.url %}weekly{% else %}monthly{% endif %}</changefreq>
+    <priority>{% if page.url == '/' %}1.0{% elif '/visa-sponsored-jobs/' in page.url %}0.9{% elif '/blog/' in page.url %}0.7{% else %}0.6{% endif %}</priority>
+  </url>
+  {%- endif %}
+  {%- endfor %}
+</urlset>

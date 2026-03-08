@@ -1,0 +1,19 @@
+---
+permalink: /robots.txt
+eleventyExcludeFromCollections: true
+---
+User-agent: *
+Allow: /
+
+Sitemap: {{ site.url }}/sitemap.xml
+
+# Allow main content
+Allow: /visa-sponsored-jobs/
+Allow: /relocation-jobs/
+Allow: /blog/
+Allow: /resources/
+Allow: /about/
+Allow: /faq/
+
+# Block development files
+Disallow: /assets/js/

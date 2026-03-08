@@ -1,0 +1,209 @@
+---
+layout: layouts/base.njk
+title: "Relocation Jobs with Visa Sponsorship | Global Opportunities"
+description: "Find international jobs with relocation assistance and visa sponsorship. Browse hundreds of tech jobs with relocation packages across 50+ countries worldwide."
+---
+
+{# Hero Section #}
+<section class="relative overflow-hidden bg-gradient-to-br from-brand-50 via-white to-indigo-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950">
+  <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight tracking-tight text-gray-900 dark:text-white">
+      Jobs with
+      <span class="bg-yellow-200 dark:bg-yellow-500/20 dark:text-yellow-300 px-2 inline-block -skew-x-1">Visa Sponsorship</span>
+      &amp;
+      <span class="bg-yellow-200 dark:bg-yellow-500/20 dark:text-yellow-300 px-2 inline-block -skew-x-1">Relocation</span>
+    </h1>
+
+    <div class="flex flex-wrap items-center justify-center gap-6 mb-10 text-gray-600 dark:text-gray-400">
+      <div class="flex items-center gap-2">
+        <i data-lucide="globe" class="w-5 h-5 text-brand-500"></i>
+        <span>50+ Countries</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <i data-lucide="briefcase" class="w-5 h-5 text-brand-500"></i>
+        <span>{{ jobs | length }}+ Jobs</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <i data-lucide="shield-check" class="w-5 h-5 text-brand-500"></i>
+        <span>Verified Sponsors</span>
+      </div>
+    </div>
+
+    {# Search Bar #}
+    <div class="max-w-2xl mx-auto mb-8">
+      <div class="flex flex-col sm:flex-row gap-3">
+        <div class="relative flex-1">
+          <i data-lucide="search" class="w-5 h-5 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+          <input id="hero-search" type="text" placeholder="Search by job title, company, or keyword..."
+            class="input-field pl-10">
+        </div>
+        <a href="/visa-sponsored-jobs/" id="hero-search-btn" class="btn-primary">
+          Browse All Jobs
+          <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# Newsletter #}
+<section class="py-12 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-6xl mx-auto px-4">
+    {% include "partials/newsletter.njk" %}
+  </div>
+</section>
+
+{# Featured Jobs #}
+<section class="py-16">
+  <div class="max-w-3xl mx-auto px-4">
+    <div class="flex items-center justify-between mb-8">
+      <h2 class="section-heading">Latest Jobs</h2>
+      <a href="/visa-sponsored-jobs/" class="nav-link flex items-center gap-1 text-sm">
+        View all <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      </a>
+    </div>
+
+    <div id="featured-jobs" class="space-y-4">
+      {# Pre-rendered for SEO - first 10 jobs #}
+      {% for job in jobs | limit(10) %}
+      <div class="job-card" data-search="{{ job.position | lower }} {{ job.company | lower }} {{ job.location | lower }}">
+        <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+          <img src="{{ job.logo }}" alt="{{ job.company }}" class="w-12 h-12 rounded-lg object-cover shrink-0" loading="lazy">
+          <div class="flex-1 min-w-0">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">{{ job.position }}</h3>
+            <p class="text-gray-600 dark:text-gray-400 mb-2">{{ job.company }}</p>
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-gray-500 dark:text-gray-400 mb-3">
+              <span class="flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                {{ job.location }}
+              </span>
+              <span class="flex items-center gap-1">
+                <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+                {{ job.post_date | timeAgo }}
+              </span>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              {% if job.reloc %}<span class="badge badge-reloc">{{ job.reloc }}</span>{% endif %}
+              {% if job.visa %}<span class="badge badge-visa">{{ job.visa }}</span>{% endif %}
+              <span class="badge badge-contract">{{ job.contract }}</span>
+            </div>
+          </div>
+          <a href="{{ job.description }}" target="_blank" rel="noopener" class="job-card-apply">
+            Apply <i data-lucide="external-link" class="w-3.5 h-3.5 ml-1.5"></i>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="text-center mt-8">
+      <a href="/visa-sponsored-jobs/" class="btn-primary">
+        Browse All {{ jobs | length }}+ Jobs
+        <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+{# Stats Section #}
+<section class="py-16 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="section-heading text-center mb-12">Why Job Seekers Choose Us</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="card p-6 text-center">
+        <div class="w-12 h-12 bg-brand-100 dark:bg-brand-900/30 rounded-xl flex items-center justify-center mx-auto mb-4">
+          <i data-lucide="briefcase" class="w-6 h-6 text-brand-600 dark:text-brand-400"></i>
+        </div>
+        <div class="text-3xl font-bold text-gray-900 dark:text-white mb-1">{{ jobs | length }}+</div>
+        <div class="text-gray-600 dark:text-gray-400 text-sm">Active Job Listings</div>
+      </div>
+      <div class="card p-6 text-center">
+        <div class="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-xl flex items-center justify-center mx-auto mb-4">
+          <i data-lucide="globe" class="w-6 h-6 text-green-600 dark:text-green-400"></i>
+        </div>
+        <div class="text-3xl font-bold text-gray-900 dark:text-white mb-1">{{ jobs | uniqueCountries | length }}+</div>
+        <div class="text-gray-600 dark:text-gray-400 text-sm">Countries</div>
+      </div>
+      <div class="card p-6 text-center">
+        <div class="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center mx-auto mb-4">
+          <i data-lucide="shield-check" class="w-6 h-6 text-purple-600 dark:text-purple-400"></i>
+        </div>
+        <div class="text-3xl font-bold text-gray-900 dark:text-white mb-1">100%</div>
+        <div class="text-gray-600 dark:text-gray-400 text-sm">Visa Sponsored</div>
+      </div>
+      <div class="card p-6 text-center">
+        <div class="w-12 h-12 bg-yellow-100 dark:bg-yellow-900/30 rounded-xl flex items-center justify-center mx-auto mb-4">
+          <i data-lucide="users" class="w-6 h-6 text-yellow-600 dark:text-yellow-400"></i>
+        </div>
+        <div class="text-3xl font-bold text-gray-900 dark:text-white mb-1">30k+</div>
+        <div class="text-gray-600 dark:text-gray-400 text-sm">Newsletter Subscribers</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# Country Guides CTA #}
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="section-heading text-center mb-4">Popular Destinations</h2>
+    <p class="text-center text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
+      Explore our in-depth country guides with visa information, cost of living, and job market insights.
+    </p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      {% set countries = [
+        { name: "Germany", emoji: "🇩🇪", slug: "germany" },
+        { name: "United Kingdom", emoji: "🇬🇧", slug: "uk" },
+        { name: "Netherlands", emoji: "🇳🇱", slug: "netherlands" },
+        { name: "Canada", emoji: "🇨🇦", slug: "canada" },
+        { name: "Ireland", emoji: "🇮🇪", slug: "ireland" },
+        { name: "Sweden", emoji: "🇸🇪", slug: "sweden" },
+        { name: "Switzerland", emoji: "🇨🇭", slug: "switzerland" },
+        { name: "Australia", emoji: "🇦🇺", slug: "australia" }
+      ] %}
+      {% for country in countries %}
+      <a href="/resources/country-guides/{{ country.slug }}/" class="card p-5 text-center hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="text-4xl mb-2">{{ country.emoji }}</div>
+        <div class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">{{ country.name }}</div>
+      </a>
+      {% endfor %}
+    </div>
+    <div class="text-center mt-8">
+      <a href="/resources/country-guides/" class="btn-secondary">
+        View All Country Guides
+        <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+{# Telegram CTA #}
+<section class="py-16 bg-brand-50 dark:bg-brand-950/30">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <div class="w-16 h-16 bg-brand-100 dark:bg-brand-900/30 rounded-2xl flex items-center justify-center mx-auto mb-6">
+      <i data-lucide="send" class="w-8 h-8 text-brand-600 dark:text-brand-400"></i>
+    </div>
+    <h2 class="section-heading mb-4">Get Jobs on Telegram</h2>
+    <p class="text-gray-600 dark:text-gray-400 mb-8 max-w-lg mx-auto">
+      Join our Telegram channel and get the latest visa-sponsored jobs delivered directly to your phone.
+    </p>
+    <a href="{{ site.social.telegram }}" target="_blank" class="btn-primary text-lg px-8 py-3">
+      Join Channel
+      <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
+    </a>
+  </div>
+</section>
+
+{% block scripts %}
+<script>
+  // Hero search redirect
+  const heroSearch = document.getElementById('hero-search');
+  const heroBtn = document.getElementById('hero-search-btn');
+  if (heroSearch) {
+    heroSearch.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && heroSearch.value.trim()) {
+        window.location.href = '/visa-sponsored-jobs/?q=' + encodeURIComponent(heroSearch.value.trim());
+      }
+    });
+  }
+</script>
+{% endblock %}

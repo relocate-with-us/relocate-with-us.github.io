@@ -1,0 +1,48 @@
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-950/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800">
+  <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+    {# Logo #}
+    <a href="/" class="flex items-center gap-2 shrink-0">
+      <i data-lucide="rocket" class="w-6 h-6 text-brand-500"></i>
+      <span class="text-xl font-bold text-gray-900 dark:text-white">visajobs<span class="text-brand-500">.xyz</span></span>
+    </a>
+
+    {# Desktop Nav #}
+    <nav class="hidden md:flex items-center gap-6">
+      <a href="/" class="nav-link{% if page.url == '/' %} nav-link-active{% endif %}">Home</a>
+      <a href="/visa-sponsored-jobs/" class="nav-link{% if '/visa-sponsored-jobs/' in page.url %} nav-link-active{% endif %}">Jobs</a>
+      <a href="/resources/" class="nav-link{% if '/resources/' in page.url %} nav-link-active{% endif %}">Resources</a>
+      <a href="/blog/" class="nav-link{% if '/blog/' in page.url %} nav-link-active{% endif %}">Blog</a>
+      <a href="/faq/" class="nav-link{% if '/faq/' in page.url %} nav-link-active{% endif %}">FAQ</a>
+    </nav>
+
+    {# Actions #}
+    <div class="flex items-center gap-3">
+      {# Dark Mode Toggle #}
+      <button id="theme-toggle" type="button" class="p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle dark mode">
+        <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+        <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
+      </button>
+
+      <a href="{{ site.airtableForm }}" target="_blank" class="btn-primary hidden sm:inline-flex text-sm">
+        Post a Job
+      </a>
+
+      {# Mobile menu button #}
+      <button id="mobile-menu-btn" type="button" class="md:hidden p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800" aria-label="Open menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </div>
+
+  {# Mobile Menu #}
+  <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
+    <nav class="max-w-6xl mx-auto px-4 py-4 space-y-3">
+      <a href="/" class="block nav-link py-2">Home</a>
+      <a href="/visa-sponsored-jobs/" class="block nav-link py-2">Jobs</a>
+      <a href="/resources/" class="block nav-link py-2">Resources</a>
+      <a href="/blog/" class="block nav-link py-2">Blog</a>
+      <a href="/faq/" class="block nav-link py-2">FAQ</a>
+      <a href="{{ site.airtableForm }}" target="_blank" class="block btn-primary text-center mt-2">Post a Job</a>
+    </nav>
+  </div>
+</header>

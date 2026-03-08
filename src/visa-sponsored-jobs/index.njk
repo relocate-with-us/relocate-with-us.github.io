@@ -1,0 +1,221 @@
+---
+layout: layouts/base.njk
+title: "Visa Sponsored Jobs & Relocation Assistance"
+description: "Browse hundreds of international tech jobs with visa sponsorship and relocation assistance across 50+ countries. Find your next global career opportunity."
+---
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Visa Sponsored Jobs",
+  "description": "Browse international tech jobs with visa sponsorship and relocation assistance.",
+  "url": "{{ site.url }}/visa-sponsored-jobs/",
+  "publisher": { "@type": "Organization", "name": "{{ site.name }}" }
+}
+</script>
+{% endblock %}
+
+<section class="bg-gradient-to-b from-brand-50 to-white dark:from-gray-900 dark:to-gray-950 py-10">
+  <div class="max-w-3xl mx-auto px-4">
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
+      Visa Sponsored Jobs
+    </h1>
+    <p class="text-gray-600 dark:text-gray-400 mb-8">
+      {{ jobs | length }}+ opportunities with visa sponsorship and relocation assistance
+    </p>
+
+    {# Search & Filters #}
+    <div class="card p-4 mb-8">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <div class="relative sm:col-span-2">
+          <i data-lucide="search" class="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+          <input id="searchInput" type="text" placeholder="Search by title, company, or keyword..."
+            class="input-field pl-10 text-sm" autofocus>
+        </div>
+        <select id="countryFilter" class="input-field text-sm">
+          <option value="">All Countries</option>
+          {% for country in jobs | uniqueCountries %}
+          <option value="{{ country | lower }}">{{ country }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+
+    {# Results count #}
+    <div class="flex items-center justify-between mb-4">
+      <p id="results-count" class="text-sm text-gray-500 dark:text-gray-400">
+        Showing {{ jobs | length }} jobs
+      </p>
+      <select id="sortFilter" class="text-sm border rounded-lg px-3 py-1.5 bg-white dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300">
+        <option value="newest">Newest First</option>
+        <option value="oldest">Oldest First</option>
+        <option value="company">By Company</option>
+      </select>
+    </div>
+
+    {# Job Listings #}
+    <div id="jobContainer" class="space-y-4">
+      {% for job in jobs %}
+      <div class="job-card" data-position="{{ job.position | lower }}" data-company="{{ job.company | lower }}" data-location="{{ job.location | lower }}" data-date="{{ job.post_date }}">
+        <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+          <img src="{{ job.logo }}" alt="{{ job.company }}" class="w-12 h-12 rounded-lg object-cover shrink-0" loading="lazy" onerror="this.src='/favicon/android-chrome-192x192.png'">
+          <div class="flex-1 min-w-0">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">{{ job.position }}</h3>
+            <p class="text-gray-600 dark:text-gray-400 mb-2">{{ job.company }}</p>
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-gray-500 dark:text-gray-400 mb-3">
+              <span class="flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                {{ job.location }}
+              </span>
+              <span class="flex items-center gap-1">
+                <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+                {{ job.post_date | timeAgo }}
+              </span>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              {% if job.reloc %}<span class="badge badge-reloc">{{ job.reloc }}</span>{% endif %}
+              {% if job.visa %}<span class="badge badge-visa">{{ job.visa }}</span>{% endif %}
+              <span class="badge badge-contract">{{ job.contract }}</span>
+            </div>
+          </div>
+          <a href="{{ job.description }}" target="_blank" rel="noopener" class="job-card-apply">
+            Apply <i data-lucide="external-link" class="w-3.5 h-3.5 ml-1.5"></i>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    {# Load more / pagination #}
+    <div id="load-more-container" class="text-center mt-8">
+      <button id="load-more-btn" class="btn-secondary">
+        Load More Jobs
+        <i data-lucide="chevron-down" class="w-4 h-4 ml-2"></i>
+      </button>
+    </div>
+
+    {# No results #}
+    <div id="no-results" class="hidden text-center py-16">
+      <i data-lucide="search-x" class="w-12 h-12 text-gray-300 dark:text-gray-600 mx-auto mb-4"></i>
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">No jobs found</h3>
+      <p class="text-gray-500 dark:text-gray-400">Try adjusting your search or filter criteria.</p>
+    </div>
+  </div>
+</section>
+
+{# Newsletter #}
+<section class="py-16 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-6xl mx-auto px-4">
+    {% set newsletterTitle = "Never Miss a Job" %}
+    {% set newsletterSubtitle = "Get the latest visa-sponsored jobs delivered to your inbox weekly." %}
+    {% include "partials/newsletter.njk" %}
+  </div>
+</section>
+
+{% block scripts %}
+<script>
+(function() {
+  var container = document.getElementById('jobContainer');
+  var searchInput = document.getElementById('searchInput');
+  var countryFilter = document.getElementById('countryFilter');
+  var sortFilter = document.getElementById('sortFilter');
+  var resultsCount = document.getElementById('results-count');
+  var noResults = document.getElementById('no-results');
+  var loadMoreBtn = document.getElementById('load-more-btn');
+  var loadMoreContainer = document.getElementById('load-more-container');
+
+  if (!container || !searchInput) return;
+
+  var allCards = Array.from(container.querySelectorAll('.job-card'));
+  var ITEMS_PER_PAGE = 20;
+  var visibleCount = ITEMS_PER_PAGE;
+  var filteredCards = allCards.slice();
+
+  // Restore state from URL
+  var params = new URLSearchParams(window.location.search);
+  if (params.get('q')) searchInput.value = params.get('q');
+  if (params.get('country')) {
+    var cv = params.get('country').toLowerCase();
+    for (var i = 0; i < countryFilter.options.length; i++) {
+      if (countryFilter.options[i].value === cv) {
+        countryFilter.selectedIndex = i;
+        break;
+      }
+    }
+  }
+
+  function tokenMatch(haystack, query) {
+    var words = query.split(/\s+/);
+    for (var i = 0; i < words.length; i++) {
+      if (words[i] && !haystack.includes(words[i])) return false;
+    }
+    return true;
+  }
+
+  function filterAndSort() {
+    var query = searchInput.value.toLowerCase().trim();
+    var country = countryFilter.value.toLowerCase();
+    var sort = sortFilter.value;
+
+    filteredCards = allCards.filter(function(card) {
+      var searchable = (card.dataset.position || '') + ' ' +
+                       (card.dataset.company || '') + ' ' +
+                       (card.dataset.location || '');
+      var matchesSearch = !query || tokenMatch(searchable, query);
+      var matchesCountry = !country || (card.dataset.location || '').includes(country);
+      return matchesSearch && matchesCountry;
+    });
+
+    if (sort === 'oldest') {
+      filteredCards.sort(function(a, b) { return new Date(a.dataset.date) - new Date(b.dataset.date); });
+    } else if (sort === 'company') {
+      filteredCards.sort(function(a, b) { return (a.dataset.company || '').localeCompare(b.dataset.company || ''); });
+    } else {
+      filteredCards.sort(function(a, b) { return new Date(b.dataset.date) - new Date(a.dataset.date); });
+    }
+
+    visibleCount = ITEMS_PER_PAGE;
+    render();
+
+    var url = new URL(window.location);
+    if (query) url.searchParams.set('q', query); else url.searchParams.delete('q');
+    if (country) url.searchParams.set('country', country); else url.searchParams.delete('country');
+    history.replaceState(null, '', url);
+  }
+
+  function render() {
+    // Hide everything first
+    for (var i = 0; i < allCards.length; i++) allCards[i].style.display = 'none';
+
+    // Show filtered subset, re-appending to enforce sort order
+    var showing = Math.min(visibleCount, filteredCards.length);
+    for (var j = 0; j < showing; j++) {
+      filteredCards[j].style.display = '';
+      container.appendChild(filteredCards[j]);
+    }
+
+    resultsCount.textContent = 'Showing ' + showing + ' of ' + filteredCards.length + ' jobs';
+    noResults.classList.toggle('hidden', filteredCards.length > 0);
+    container.classList.toggle('hidden', filteredCards.length === 0);
+    loadMoreContainer.classList.toggle('hidden', visibleCount >= filteredCards.length);
+
+    if (window.lucide) lucide.createIcons();
+  }
+
+  var debouncedFilter = debounce(filterAndSort, 250);
+  searchInput.addEventListener('input', debouncedFilter);
+  countryFilter.addEventListener('change', filterAndSort);
+  sortFilter.addEventListener('change', filterAndSort);
+
+  loadMoreBtn.addEventListener('click', function() {
+    visibleCount += ITEMS_PER_PAGE;
+    render();
+  });
+
+  // Initial filter (handles ?q= and ?country= from URL)
+  filterAndSort();
+})();
+</script>
+{% endblock %}

@@ -1,0 +1,21 @@
+<div class="card p-8 max-w-lg mx-auto text-center">
+  <h2 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">
+    {{ newsletterTitle or "Find Your Dream Job Abroad" }}
+  </h2>
+  <p class="text-gray-600 dark:text-gray-400 mb-6">
+    {{ newsletterSubtitle or "Join 30,000+ professionals getting weekly visa-sponsored job alerts delivered to their inbox." }}
+  </p>
+  <form action="{{ site.mailchimp.action }}" method="post" target="_blank" novalidate>
+    <div class="flex flex-col sm:flex-row gap-3">
+      <input type="email" name="EMAIL" placeholder="Enter your email..." required
+        class="input-field flex-1">
+      <button type="submit" class="btn-primary whitespace-nowrap">
+        Subscribe Free
+      </button>
+    </div>
+    <div style="position:absolute;left:-5000px" aria-hidden="true">
+      <input type="text" name="{{ site.mailchimp.honeypot }}" tabindex="-1" value="">
+    </div>
+  </form>
+  <p class="text-xs text-gray-500 dark:text-gray-500 mt-3">No spam. Unsubscribe anytime.</p>
+</div>

@@ -1,0 +1,20 @@
+{
+  "name": "VisaJobs.xyz",
+  "url": "https://visajobs.xyz",
+  "description": "Find international jobs with relocation assistance and visa sponsorship. Browse 800+ tech jobs with relocation packages across 50+ countries worldwide.",
+  "email": "info@visajobs.xyz",
+  "author": "VisaJobs.xyz",
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/visasponsoredjobs/",
+    "telegram": "https://t.me/visa_sponsored_jobs"
+  },
+  "analytics": {
+    "ga": "G-E6NMFQFHMZ",
+    "adsense": "ca-pub-7578309605540082"
+  },
+  "mailchimp": {
+    "action": "https://aucegypt.us12.list-manage.com/subscribe/post?u=5f1327076a747496c7ce750c7&id=2c4880337f&f_id=005bbde0f0",
+    "honeypot": "b_5f1327076a747496c7ce750c7_2c4880337f"
+  },
+  "airtableForm": "https://airtable.com/shrnUCBHSQR6rsTzT"
+}

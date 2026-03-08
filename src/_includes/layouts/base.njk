@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {# Dark mode - prevent flash #}
+  <script>
+    (function(){
+      const t = localStorage.getItem('theme');
+      if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      }
+    })();
+  </script>
+
+  {# Primary Meta Tags #}
+  <title>{% if title %}{{ title }}{% if site.name not in title %} | {{ site.name }}{% endif %}{% else %}{{ site.name }}{% endif %}</title>
+  <meta name="title" content="{{ title or site.name }}">
+  <meta name="description" content="{{ description or site.description }}">
+
+  {# Open Graph #}
+  <meta property="og:type" content="{{ ogType or 'website' }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:title" content="{{ title or site.name }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:image" content="{{ ogImage or (site.url + '/favicon/android-chrome-512x512.png') }}">
+
+  {# Twitter #}
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="twitter:title" content="{{ title or site.name }}">
+  <meta property="twitter:description" content="{{ description or site.description }}">
+  <meta property="twitter:image" content="{{ ogImage or (site.url + '/favicon/android-chrome-512x512.png') }}">
+
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+  {# Favicon #}
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png">
+  <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+
+  {# Fonts #}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  {# Styles #}
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  {# Lucide Icons #}
+  <script defer src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+
+  {# Core JS utilities (debounce, timeAgo) — must load before page scripts #}
+  <script src="/assets/js/main.js"></script>
+
+  {# Pagefind #}
+  <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
+
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="google-adsense-account" content="{{ site.analytics.adsense }}">
+
+  {# Structured Data #}
+  {% block structuredData %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ site.name }}",
+    "url": "{{ site.url }}",
+    "description": "{{ site.description }}",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{{ site.url }}/visa-sponsored-jobs/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  {% endblock %}
+
+  {% block head %}{% endblock %}
+</head>
+
+<body class="min-h-screen flex flex-col font-sans">
+  {% include "partials/header.njk" %}
+
+  <main class="flex-1">
+    {{ content | safe }}
+  </main>
+
+  {% include "partials/footer.njk" %}
+
+  {% block scripts %}{% endblock %}
+
+  {# Analytics - only GA + SimpleAnalytics (dropped PostHog, Clearbit) #}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.ga }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.analytics.ga }}');
+  </script>
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.analytics.adsense }}" crossorigin="anonymous"></script>
+</body>
+</html>

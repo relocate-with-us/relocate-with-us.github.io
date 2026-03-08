@@ -1,0 +1,77 @@
+---
+layout: layouts/base.njk
+title: "Blog | Visa Jobs & Relocation Insights"
+description: "Tips, advice, and insights on relocating abroad, visa sponsorship, and international job opportunities. Learn how to navigate the global job market."
+---
+
+<section class="bg-gradient-to-b from-brand-50 to-white dark:from-gray-900 dark:to-gray-950 py-16">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-gray-900 dark:text-white tracking-tight">
+      Insights on Global
+      <span class="bg-yellow-200 dark:bg-yellow-500/20 dark:text-yellow-300 px-2 inline-block">Career Opportunities</span>
+    </h1>
+    <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
+      Expert advice, practical tips, and guides to help you navigate the international job market and relocate with confidence.
+    </p>
+  </div>
+</section>
+
+<section class="py-16">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {% for post in collections.blogPosts %}
+      <a href="{{ post.url }}" class="card overflow-hidden group">
+        {% if post.data.image %}
+        <div class="h-48 bg-gray-100 dark:bg-gray-800 overflow-hidden">
+          <img src="{{ post.data.image }}" alt="{{ post.data.title }}" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+        </div>
+        {% else %}
+        <div class="h-48 bg-gradient-to-br from-brand-100 to-indigo-100 dark:from-brand-900/30 dark:to-indigo-900/30 flex items-center justify-center">
+          <i data-lucide="file-text" class="w-12 h-12 text-brand-400"></i>
+        </div>
+        {% endif %}
+        <div class="p-6">
+          {% if post.data.featured %}
+          <span class="inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full bg-gradient-to-r from-brand-500 to-purple-500 text-white mb-3">FEATURED</span>
+          {% endif %}
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+            {{ post.data.title }}
+          </h2>
+          <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-2">
+            {{ post.data.excerpt or post.data.description }}
+          </p>
+          <div class="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-500">
+            <span class="flex items-center gap-1">
+              <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+              {{ post.date | dateDisplay }}
+            </span>
+            {% if post.data.readTime %}
+            <span class="flex items-center gap-1">
+              <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+              {{ post.data.readTime }}
+            </span>
+            {% endif %}
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+
+    {% if collections.blogPosts.length == 0 %}
+    <div class="text-center py-16">
+      <i data-lucide="pen-line" class="w-12 h-12 text-gray-300 dark:text-gray-600 mx-auto mb-4"></i>
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Blog posts coming soon</h3>
+      <p class="text-gray-500 dark:text-gray-400">We're working on great content about visa sponsorship and relocation.</p>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+{# Newsletter #}
+<section class="py-16 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-6xl mx-auto px-4">
+    {% set newsletterTitle = "Get Career Insights Delivered" %}
+    {% set newsletterSubtitle = "Join 30,000+ professionals receiving our weekly insights on global careers and relocation tips." %}
+    {% include "partials/newsletter.njk" %}
+  </div>
+</section>

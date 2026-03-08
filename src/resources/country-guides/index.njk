@@ -1,0 +1,92 @@
+---
+layout: layouts/base.njk
+title: "Country Guides for International Job Seekers"
+description: "Comprehensive country guides with visa information, cost of living, job markets, and practical advice for relocating to popular destinations."
+---
+
+<section class="bg-gradient-to-b from-brand-50 to-white dark:from-gray-900 dark:to-gray-950 py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/resources/" class="hover:text-brand-600">Resources</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-900 dark:text-white">Country Guides</span>
+    </nav>
+    <h1 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-4">Country Guides</h1>
+    <p class="text-gray-600 dark:text-gray-400 max-w-2xl">
+      In-depth guides covering visa processes, job markets, cost of living, and everything you need to know before relocating.
+    </p>
+  </div>
+</section>
+
+{# Search #}
+<section class="py-4 sticky top-16 z-40 bg-white/80 dark:bg-gray-950/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="relative max-w-md">
+      <i data-lucide="search" class="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+      <input id="country-search" type="text" placeholder="Search countries..." class="input-field pl-10 text-sm">
+    </div>
+  </div>
+</section>
+
+<section class="py-12">
+  <div class="max-w-6xl mx-auto px-4">
+    {% set allGuides = [
+      { name: "Germany", emoji: "🇩🇪", slug: "germany", region: "Western Europe", capital: "Berlin", visa: "EU Blue Card", desc: "Economic powerhouse with strong tech scene, excellent healthcare, and high quality of life." },
+      { name: "United Kingdom", emoji: "🇬🇧", slug: "uk", region: "Northern Europe", capital: "London", visa: "Skilled Worker Visa", desc: "Global financial and tech hub with diverse opportunities across multiple industries." },
+      { name: "Netherlands", emoji: "🇳🇱", slug: "netherlands", region: "Western Europe", capital: "Amsterdam", visa: "Highly Skilled Migrant", desc: "Known for the 30% tax ruling, cycling culture, and excellent English proficiency." },
+      { name: "Canada", emoji: "🇨🇦", slug: "canada", region: "North America", capital: "Ottawa", visa: "Express Entry", desc: "Welcoming immigration policies with multiple pathways for skilled workers." },
+      { name: "Ireland", emoji: "🇮🇪", slug: "ireland", region: "Northern Europe", capital: "Dublin", visa: "Critical Skills Permit", desc: "English-speaking European hub with major tech companies and friendly culture." },
+      { name: "Sweden", emoji: "🇸🇪", slug: "sweden", region: "Northern Europe", capital: "Stockholm", visa: "Work Permit", desc: "Innovation leader with excellent work-life balance and stunning nature." },
+      { name: "Switzerland", emoji: "🇨🇭", slug: "switzerland", region: "Western Europe", capital: "Bern", visa: "Work Permit B/L", desc: "Highest salaries in Europe with world-class quality of life in the Alps." },
+      { name: "Australia", emoji: "🇦🇺", slug: "australia", region: "Oceania", capital: "Canberra", visa: "Skilled Worker Visa", desc: "Points-based immigration system with great weather and lifestyle." }
+    ] %}
+
+    <div id="guides-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for guide in allGuides %}
+      <a href="/resources/country-guides/{{ guide.slug }}/" class="card overflow-hidden group"
+         data-name="{{ guide.name | lower }}" data-region="{{ guide.region | lower }}">
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-4xl">{{ guide.emoji }}</span>
+            <div>
+              <h2 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400">{{ guide.name }}</h2>
+              <span class="text-sm text-gray-500 dark:text-gray-500">{{ guide.region }}</span>
+            </div>
+          </div>
+          <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">{{ guide.desc }}</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge badge-visa">{{ guide.visa }}</span>
+            <span class="badge badge-contract">{{ guide.capital }}</span>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+
+    <div id="no-guides" class="hidden text-center py-16">
+      <i data-lucide="map" class="w-12 h-12 text-gray-300 dark:text-gray-600 mx-auto mb-4"></i>
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">No countries found</h3>
+      <p class="text-gray-500">Try a different search term.</p>
+    </div>
+  </div>
+</section>
+
+{% block scripts %}
+<script>
+  const searchInput = document.getElementById('country-search');
+  const grid = document.getElementById('guides-grid');
+  const cards = Array.from(grid.querySelectorAll('[data-name]'));
+  const noResults = document.getElementById('no-guides');
+
+  searchInput.addEventListener('input', debounce(() => {
+    const q = searchInput.value.toLowerCase().trim();
+    let visible = 0;
+    cards.forEach(card => {
+      const match = !q || card.dataset.name.includes(q) || card.dataset.region.includes(q);
+      card.style.display = match ? '' : 'none';
+      if (match) visible++;
+    });
+    noResults.classList.toggle('hidden', visible > 0);
+  }, 200));
+</script>
+{% endblock %}

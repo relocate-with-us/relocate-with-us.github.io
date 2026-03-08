@@ -1,0 +1,268 @@
+---
+layout: layouts/base.njk
+title: "Frequently Asked Questions | VisaJobs.xyz"
+description: "Find answers to common questions about visa sponsorship, relocation assistance, job applications, and how VisaJobs.xyz works."
+---
+
+<section class="bg-gradient-to-br from-brand-50 via-white to-indigo-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 py-16">
+  <div class="max-w-4xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400">Home</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-900 dark:text-white">FAQ</span>
+    </nav>
+    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4">
+      Frequently Asked Questions
+    </h1>
+    <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl">
+      Everything you need to know about visa-sponsored jobs, relocation, and how our platform works.
+    </p>
+  </div>
+</section>
+
+<section class="py-16">
+  <div class="max-w-3xl mx-auto px-4">
+    <div class="space-y-4" id="faq-list">
+
+      {# FAQ 1 #}
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">What is visa sponsorship?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>
+              Visa sponsorship means an employer is willing to support your work visa application for their country. The company acts as your sponsor, often handling the paperwork and fees required for you to legally work in their country.
+            </p>
+            <p>
+              On VisaJobs.xyz, all listed jobs include some form of visa sponsorship or relocation assistance. You can <a href="/visa-sponsored-jobs/">browse all visa-sponsored jobs</a> to find opportunities that match your skills.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {# FAQ 2 #}
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">How do I apply for jobs on VisaJobs.xyz?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>
+              Applying is straightforward: browse the <a href="/visa-sponsored-jobs/">job listings</a>, find a position that interests you, and click the "Apply" button. You'll be redirected to the employer's career page or the original job posting where you can submit your application directly.
+            </p>
+            <p>
+              We recommend tailoring your resume for each application and highlighting your willingness to relocate. Check out our <a href="/blog/">blog</a> for resume tips and interview advice for international jobs.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {# FAQ 3 #}
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Is VisaJobs.xyz free to use?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>
+              Yes, VisaJobs.xyz is completely free for job seekers. You can browse all job listings, access our <a href="/resources/">resources</a>, read our <a href="/blog/">blog articles</a>, and subscribe to our newsletter without paying anything.
+            </p>
+            <p>
+              We sustain the platform through advertising and employer partnerships. If you're an employer looking to post a job, please visit our <a href="{{ site.airtableForm }}" target="_blank" rel="noopener">post a job</a> page.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {# FAQ 4 #}
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">How often are jobs updated?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>
+              Our job listings are updated regularly — typically multiple times per week. We aggregate jobs from various sources and verify that each listing includes visa sponsorship or relocation assistance.
+            </p>
+            <p>
+              To stay on top of new listings, we recommend subscribing to our newsletter or joining our <a href="{{ site.social.telegram }}" target="_blank" rel="noopener">Telegram channel</a> for real-time updates.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {# FAQ 5 #}
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">What countries are covered?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>
+              We list jobs across 50+ countries, with a strong focus on popular tech destinations including Germany, the United Kingdom, the Netherlands, Canada, Ireland, Sweden, Switzerland, Australia, and many more.
+            </p>
+            <p>
+              Explore our <a href="/resources/country-guides/">country guides</a> for detailed information about visa processes, cost of living, and job markets in each country.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {# FAQ 6 #}
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">How can I post a job on VisaJobs.xyz?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>
+              If you're an employer or recruiter looking to list a visa-sponsored position, you can submit your job through our <a href="{{ site.airtableForm }}" target="_blank" rel="noopener">job posting form</a>. We review each submission to ensure it meets our quality standards and includes visa sponsorship details.
+            </p>
+            <p>
+              For questions about job posting or partnerships, reach out to us at <a href="mailto:{{ site.email }}">info@visajobs.xyz</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {# FAQ 7 #}
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">What is relocation assistance?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>
+              Relocation assistance is support provided by employers to help new hires move to a different city or country. This can include financial support for moving expenses, temporary housing, flights, help finding permanent accommodation, language classes, and sometimes support for accompanying family members.
+            </p>
+            <p>
+              The level of assistance varies by company and position. Jobs on VisaJobs.xyz are tagged with specific relocation benefits when available. For more practical advice, check our <a href="/resources/relocation-tips/">relocation tips</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {# FAQ 8 #}
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">How do I prepare for international interviews?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>
+              Preparing for international interviews requires some additional steps beyond regular job interviews:
+            </p>
+            <ul>
+              <li>Research the company's culture and the work culture of the country.</li>
+              <li>Be prepared to discuss your motivation for relocating and your timeline.</li>
+              <li>Practice interviewing across time zones — be flexible with scheduling.</li>
+              <li>Highlight any previous international experience or language skills.</li>
+              <li>Ask about the visa sponsorship process and relocation package during later interview rounds.</li>
+            </ul>
+            <p>
+              Visit our <a href="/blog/">blog</a> for detailed articles on interview preparation and resume tips for international roles.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {# FAQ 9 #}
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Do I need to speak the local language?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>
+              It depends on the country and the role. Many tech companies, especially in Northern and Western Europe, operate in English. Countries like the Netherlands, Germany, and the Nordics have a high level of English proficiency in the workplace.
+            </p>
+            <p>
+              However, learning the local language is highly recommended for daily life, social integration, and career advancement. Some countries (like France or Japan) may require local language skills for most positions.
+            </p>
+            <p>
+              Check our <a href="/resources/country-guides/">country guides</a> for language requirements in specific destinations.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {# FAQ 10 #}
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">How long does visa processing take?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>
+              Visa processing times vary significantly depending on the country, visa type, and your nationality. Here are some general estimates:
+            </p>
+            <ul>
+              <li><strong>EU Blue Card (Germany):</strong> 4–12 weeks</li>
+              <li><strong>UK Skilled Worker Visa:</strong> 3–8 weeks</li>
+              <li><strong>Canada Express Entry:</strong> 6–12 months (full process)</li>
+              <li><strong>US H-1B Visa:</strong> 3–6 months (if selected in lottery)</li>
+              <li><strong>Australia Skilled Worker:</strong> 6–18 months</li>
+            </ul>
+            <p>
+              We recommend starting the process early and having all documents prepared. Visit our <a href="/resources/visa-information/">visa information page</a> for detailed guidance on different visa types and their requirements.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{# Still Have Questions #}
+<section class="py-16 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <div class="w-16 h-16 bg-brand-100 dark:bg-brand-900/30 rounded-2xl flex items-center justify-center mx-auto mb-6">
+      <i data-lucide="message-circle" class="w-8 h-8 text-brand-600 dark:text-brand-400"></i>
+    </div>
+    <h2 class="section-heading mb-4">Still Have Questions?</h2>
+    <p class="text-gray-600 dark:text-gray-400 mb-8 max-w-lg mx-auto">
+      Can't find what you're looking for? Reach out to us directly and we'll be happy to help.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="mailto:{{ site.email }}" class="btn-primary">
+        <i data-lucide="mail" class="w-4 h-4 mr-2"></i>
+        Email Us
+      </a>
+      <a href="{{ site.social.telegram }}" target="_blank" rel="noopener" class="btn-secondary">
+        <i data-lucide="send" class="w-4 h-4 mr-2"></i>
+        Ask on Telegram
+      </a>
+    </div>
+  </div>
+</section>
+
+{% block scripts %}
+<script>
+(function() {
+  document.querySelectorAll('.faq-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = btn.closest('.faq-item');
+      var content = item.querySelector('.faq-content');
+      var icon = item.querySelector('.faq-icon');
+      var isOpen = !content.classList.contains('hidden');
+
+      content.classList.toggle('hidden', isOpen);
+      icon.style.transform = isOpen ? '' : 'rotate(180deg)';
+      btn.setAttribute('aria-expanded', !isOpen);
+    });
+  });
+})();
+</script>
+{% endblock %}

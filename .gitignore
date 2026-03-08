@@ -1,9 +1,18 @@
+node_modules/
+_site/
+.cache/
+.DS_Store
+
+# Old files
 unavailable_jobs.json
 checkJob.py
 lunr.html
 map.html
 privacy.html
 terms.html
-unavailable_jobs.json
-.vscode
 test.py
+
+# IDE
+.vscode/
+*.swp
+*.swo

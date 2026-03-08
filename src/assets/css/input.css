@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-visa {
+    @apply bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400;
+  }
+
+  .badge-reloc {
+    @apply bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-400;
+  }
+
+  .badge-contract {
+    @apply bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-300;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-5 py-2.5 bg-brand-500 text-white font-medium rounded-lg
+           hover:bg-brand-600 focus:ring-4 focus:ring-brand-300 dark:focus:ring-brand-800
+           transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-5 py-2.5 bg-white text-gray-900 font-medium rounded-lg
+           border border-gray-300 hover:bg-gray-50 dark:bg-gray-800 dark:text-gray-100
+           dark:border-gray-600 dark:hover:bg-gray-700 transition-colors duration-200;
+  }
+
+  .card {
+    @apply bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl
+           shadow-sm hover:shadow-md transition-shadow duration-200;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2.5 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600
+           rounded-lg text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500
+           focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-colors;
+  }
+
+  .nav-link {
+    @apply text-gray-600 dark:text-gray-300 hover:text-brand-600 dark:hover:text-brand-400
+           transition-colors duration-200 font-medium;
+  }
+
+  .nav-link-active {
+    @apply text-brand-600 dark:text-brand-400 font-semibold;
+  }
+
+  .section-heading {
+    @apply text-3xl font-bold text-gray-900 dark:text-white;
+  }
+
+  .job-card {
+    @apply card p-5 sm:p-6 relative;
+  }
+
+  .job-card-apply {
+    @apply btn-primary absolute top-5 right-5 opacity-0 transition-opacity text-sm;
+  }
+
+  .job-card:hover .job-card-apply {
+    opacity: 1;
+  }
+
+  .skeleton {
+    @apply animate-pulse bg-gray-200 dark:bg-gray-700 rounded;
+  }
+
+  .prose-custom h2 {
+    @apply text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white;
+  }
+  .prose-custom h3 {
+    @apply text-xl font-semibold mt-6 mb-3 text-gray-900 dark:text-white;
+  }
+  .prose-custom p {
+    @apply mb-4 leading-relaxed text-gray-700 dark:text-gray-300;
+  }
+  .prose-custom ul, .prose-custom ol {
+    @apply mb-4 pl-5 space-y-2;
+  }
+  .prose-custom li {
+    @apply text-gray-700 dark:text-gray-300;
+  }
+  .prose-custom a {
+    @apply text-brand-600 dark:text-brand-400 hover:underline;
+  }
+  .prose-custom blockquote {
+    @apply border-l-4 border-brand-300 dark:border-brand-700 pl-4 italic my-6 text-gray-600 dark:text-gray-400;
+  }
+  .prose-custom table {
+    @apply w-full border-collapse mb-6;
+  }
+  .prose-custom th {
+    @apply bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-4 py-2 text-left font-semibold;
+  }
+  .prose-custom td {
+    @apply border border-gray-200 dark:border-gray-700 px-4 py-2;
+  }
+}

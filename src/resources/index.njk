@@ -1,0 +1,83 @@
+---
+layout: layouts/base.njk
+title: "Global Relocation Resources | Visa Guides & Country Information"
+description: "Access comprehensive relocation resources including country guides, visa information, job markets, and practical advice for relocating internationally."
+---
+
+<section class="bg-gradient-to-r from-brand-500 to-indigo-600 text-white py-16">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Global Relocation Resources</h1>
+    <p class="text-xl max-w-3xl mx-auto text-brand-100">
+      Everything you need to know about relocating internationally — from visa guides to country information.
+    </p>
+  </div>
+</section>
+
+{# Resource Categories #}
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="section-heading text-center mb-12">Browse Resources By Category</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <a href="/resources/country-guides/" class="card overflow-hidden group hover:border-brand-300 dark:hover:border-brand-700">
+        <div class="h-40 bg-brand-50 dark:bg-brand-900/20 flex items-center justify-center">
+          <i data-lucide="globe" class="w-16 h-16 text-brand-500 dark:text-brand-400 transition-transform group-hover:scale-110"></i>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Country Guides</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">Comprehensive guides for popular destination countries with visa, cost of living, and job market info.</p>
+        </div>
+      </a>
+
+      <a href="/resources/visa-information/" class="card overflow-hidden group hover:border-green-300 dark:hover:border-green-700">
+        <div class="h-40 bg-green-50 dark:bg-green-900/20 flex items-center justify-center">
+          <i data-lucide="stamp" class="w-16 h-16 text-green-500 dark:text-green-400 transition-transform group-hover:scale-110"></i>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Visa Information</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">Learn about different visa types, application processes, requirements, and tips for success.</p>
+        </div>
+      </a>
+
+      <a href="/resources/relocation-tips/" class="card overflow-hidden group hover:border-purple-300 dark:hover:border-purple-700">
+        <div class="h-40 bg-purple-50 dark:bg-purple-900/20 flex items-center justify-center">
+          <i data-lucide="luggage" class="w-16 h-16 text-purple-500 dark:text-purple-400 transition-transform group-hover:scale-110"></i>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Relocation Tips</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">Practical advice on moving abroad, finding accommodation, banking, healthcare, and adapting.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+{# Popular Countries #}
+<section class="py-16 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="section-heading text-center mb-12">Popular Country Guides</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      {% set guides = [
+        { name: "Germany", emoji: "🇩🇪", slug: "germany", desc: "EU Blue Card, strong tech scene" },
+        { name: "United Kingdom", emoji: "🇬🇧", slug: "uk", desc: "Skilled Worker visa, global hub" },
+        { name: "Netherlands", emoji: "🇳🇱", slug: "netherlands", desc: "30% ruling, high quality of life" },
+        { name: "Canada", emoji: "🇨🇦", slug: "canada", desc: "Express Entry, welcoming policies" },
+        { name: "Ireland", emoji: "🇮🇪", slug: "ireland", desc: "Critical Skills permit, English-speaking" },
+        { name: "Sweden", emoji: "🇸🇪", slug: "sweden", desc: "Work-life balance, innovation hub" },
+        { name: "Switzerland", emoji: "🇨🇭", slug: "switzerland", desc: "Highest salaries in Europe" },
+        { name: "Australia", emoji: "🇦🇺", slug: "australia", desc: "Points-based system, great lifestyle" }
+      ] %}
+      {% for guide in guides %}
+      <a href="/resources/country-guides/{{ guide.slug }}/" class="card p-5 text-center group hover:border-brand-300 dark:hover:border-brand-700">
+        <div class="text-4xl mb-3">{{ guide.emoji }}</div>
+        <div class="font-semibold text-gray-900 dark:text-white mb-1 group-hover:text-brand-600 dark:group-hover:text-brand-400">{{ guide.name }}</div>
+        <div class="text-xs text-gray-500 dark:text-gray-500">{{ guide.desc }}</div>
+      </a>
+      {% endfor %}
+    </div>
+    <div class="text-center mt-8">
+      <a href="/resources/country-guides/" class="btn-secondary">
+        View All Country Guides <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+      </a>
+    </div>
+  </div>
+</section>
