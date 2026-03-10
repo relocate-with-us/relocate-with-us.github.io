@@ -12,8 +12,9 @@ privacy.html
 terms.html
 test.py
 
-# LinkedIn posts (local only)
+# Social media posts (local only)
 linkedin-posts-*.md
+twitter-posts-*.md
 
 # IDE
 .vscode/
