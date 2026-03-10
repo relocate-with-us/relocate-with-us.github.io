@@ -1,0 +1,548 @@
+---
+layout: layouts/base.njk
+title: "EU Blue Card Eligibility Checker | Check If You Qualify"
+description: "Check your eligibility for the EU Blue Card work permit. Answer a few questions to find out if you qualify for Europe's fast-track skilled worker visa."
+---
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "EU Blue Card Eligibility Checker",
+  "url": "{{ site.url }}{{ page.url }}",
+  "description": "{{ description }}",
+  "applicationCategory": "Utility",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "author": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the EU Blue Card?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The EU Blue Card is a work and residence permit for highly skilled non-EU citizens. It provides fast-track access to 25 EU member states, allows your spouse to work immediately, and offers a path to permanent residence in as little as 21 months."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the salary threshold for the EU Blue Card?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The general salary threshold is €45,300 per year. For shortage occupations such as IT, engineering, and medicine, the reduced threshold is €41,042 per year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a university degree for the EU Blue Card?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you typically need a recognized university degree. However, some EU countries now accept equivalent professional qualifications or extensive work experience (usually 5+ years) in lieu of a formal degree."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does EU Blue Card processing take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Processing typically takes 4-8 weeks from the date of application. Some countries may process faster depending on your nationality and the completeness of your application."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I change employers with an EU Blue Card?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "During the first two years, you need approval from the immigration authority to change employers. After two years, you can change jobs freely as long as the new position meets the Blue Card requirements."
+      }
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+<section class="bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-950 py-16">
+  <div class="max-w-4xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400">Home</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <a href="/tools/" class="hover:text-brand-600 dark:hover:text-brand-400">Tools</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-900 dark:text-white">EU Blue Card Checker</span>
+    </nav>
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-14 h-14 bg-blue-100 dark:bg-blue-900/40 rounded-2xl flex items-center justify-center">
+        <i data-lucide="shield-check" class="w-7 h-7 text-blue-600 dark:text-blue-400"></i>
+      </div>
+      <div>
+        <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white">EU Blue Card Eligibility Checker</h1>
+      </div>
+    </div>
+    <p class="text-lg text-gray-600 dark:text-gray-400 max-w-3xl">
+      Answer a few quick questions to find out if you qualify for Europe's fast-track skilled worker visa. Get instant results with personalized recommendations.
+    </p>
+  </div>
+</section>
+
+<section class="py-12">
+  <div class="max-w-4xl mx-auto px-4">
+
+    {# Benefits cards #}
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+      <div class="card p-4 text-center">
+        <div class="w-10 h-10 bg-green-100 dark:bg-green-900/30 rounded-xl flex items-center justify-center mx-auto mb-2">
+          <i data-lucide="zap" class="w-5 h-5 text-green-600 dark:text-green-400"></i>
+        </div>
+        <p class="font-semibold text-gray-900 dark:text-white text-sm">Fast-Track PR</p>
+        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">21 months with B1 German</p>
+      </div>
+      <div class="card p-4 text-center">
+        <div class="w-10 h-10 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center mx-auto mb-2">
+          <i data-lucide="users" class="w-5 h-5 text-purple-600 dark:text-purple-400"></i>
+        </div>
+        <p class="font-semibold text-gray-900 dark:text-white text-sm">Spouse Works</p>
+        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Unrestricted from day one</p>
+      </div>
+      <div class="card p-4 text-center">
+        <div class="w-10 h-10 bg-amber-100 dark:bg-amber-900/30 rounded-xl flex items-center justify-center mx-auto mb-2">
+          <i data-lucide="globe" class="w-5 h-5 text-amber-600 dark:text-amber-400"></i>
+        </div>
+        <p class="font-semibold text-gray-900 dark:text-white text-sm">EU Mobility</p>
+        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Portable after 18 months</p>
+      </div>
+      <div class="card p-4 text-center">
+        <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mx-auto mb-2">
+          <i data-lucide="clock" class="w-5 h-5 text-blue-600 dark:text-blue-400"></i>
+        </div>
+        <p class="font-semibold text-gray-900 dark:text-white text-sm">4-8 Weeks</p>
+        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Fast processing time</p>
+      </div>
+    </div>
+
+    {# Quiz container #}
+    <div id="bc-checker" class="card p-6 md:p-8">
+      {# Progress #}
+      <div class="mb-8">
+        <div class="flex justify-between items-center mb-2">
+          <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Progress</span>
+          <span id="bc-step-label" class="text-sm font-medium text-brand-600 dark:text-brand-400">Step 1 of 5</span>
+        </div>
+        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+          <div id="bc-progress" class="bg-brand-600 h-2.5 rounded-full transition-all duration-500 ease-out" style="width: 20%"></div>
+        </div>
+      </div>
+
+      {# Steps #}
+      <div id="bc-steps">
+        {# Step 1 #}
+        <div class="bc-step" data-step="1">
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Do you have a university degree?</h2>
+          <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">A recognized bachelor's or master's degree, or equivalent professional qualification.</p>
+          <div class="space-y-3">
+            <button onclick="bcAnswer(1,'yes')" class="w-full text-left p-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 hover:border-brand-500 dark:hover:border-brand-400 transition-colors flex items-center gap-3 group">
+              <div class="w-8 h-8 rounded-full border-2 border-gray-300 dark:border-gray-600 group-hover:border-brand-500 flex items-center justify-center shrink-0">
+                <i data-lucide="check" class="w-4 h-4 text-transparent group-hover:text-brand-500"></i>
+              </div>
+              <div>
+                <span class="font-semibold text-gray-900 dark:text-white">Yes, I have a recognized degree</span>
+                <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Bachelor's, Master's, or PhD from a recognized institution</p>
+              </div>
+            </button>
+            <button onclick="bcAnswer(1,'equivalent')" class="w-full text-left p-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 hover:border-brand-500 dark:hover:border-brand-400 transition-colors flex items-center gap-3 group">
+              <div class="w-8 h-8 rounded-full border-2 border-gray-300 dark:border-gray-600 group-hover:border-brand-500 flex items-center justify-center shrink-0">
+                <i data-lucide="check" class="w-4 h-4 text-transparent group-hover:text-brand-500"></i>
+              </div>
+              <div>
+                <span class="font-semibold text-gray-900 dark:text-white">I have equivalent qualifications</span>
+                <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">5+ years professional experience or professional certifications</p>
+              </div>
+            </button>
+            <button onclick="bcAnswer(1,'no')" class="w-full text-left p-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 hover:border-brand-500 dark:hover:border-brand-400 transition-colors flex items-center gap-3 group">
+              <div class="w-8 h-8 rounded-full border-2 border-gray-300 dark:border-gray-600 group-hover:border-brand-500 flex items-center justify-center shrink-0">
+                <i data-lucide="x" class="w-4 h-4 text-transparent group-hover:text-red-500"></i>
+              </div>
+              <div>
+                <span class="font-semibold text-gray-900 dark:text-white">No</span>
+                <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">No degree or equivalent qualification</p>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        {# Step 2 #}
+        <div class="bc-step hidden" data-step="2">
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Do you have a job offer in an EU country?</h2>
+          <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">A concrete job offer or employment contract from an employer in an EU member state.</p>
+          <div class="space-y-3">
+            <button onclick="bcAnswer(2,'yes')" class="w-full text-left p-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 hover:border-brand-500 dark:hover:border-brand-400 transition-colors flex items-center gap-3 group">
+              <div class="w-8 h-8 rounded-full border-2 border-gray-300 dark:border-gray-600 group-hover:border-brand-500 flex items-center justify-center shrink-0">
+                <i data-lucide="check" class="w-4 h-4 text-transparent group-hover:text-brand-500"></i>
+              </div>
+              <div>
+                <span class="font-semibold text-gray-900 dark:text-white">Yes, I have a job offer</span>
+              </div>
+            </button>
+            <button onclick="bcAnswer(2,'notyet')" class="w-full text-left p-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 hover:border-brand-500 dark:hover:border-brand-400 transition-colors flex items-center gap-3 group">
+              <div class="w-8 h-8 rounded-full border-2 border-gray-300 dark:border-gray-600 group-hover:border-brand-500 flex items-center justify-center shrink-0">
+                <i data-lucide="minus" class="w-4 h-4 text-transparent group-hover:text-amber-500"></i>
+              </div>
+              <div>
+                <span class="font-semibold text-gray-900 dark:text-white">Not yet, but I'm looking</span>
+              </div>
+            </button>
+            <button onclick="bcAnswer(2,'no')" class="w-full text-left p-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 hover:border-brand-500 dark:hover:border-brand-400 transition-colors flex items-center gap-3 group">
+              <div class="w-8 h-8 rounded-full border-2 border-gray-300 dark:border-gray-600 group-hover:border-brand-500 flex items-center justify-center shrink-0">
+                <i data-lucide="x" class="w-4 h-4 text-transparent group-hover:text-red-500"></i>
+              </div>
+              <div>
+                <span class="font-semibold text-gray-900 dark:text-white">No</span>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        {# Step 3 #}
+        <div class="bc-step hidden" data-step="3">
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-2">What is the annual gross salary offered?</h2>
+          <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Enter the annual gross salary in euros. The general threshold is €45,300; shortage occupations require €41,042.</p>
+          <div class="space-y-4">
+            <div class="relative">
+              <span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400 font-semibold">€</span>
+              <input id="bc-salary" type="number" min="0" step="1000" placeholder="e.g. 55000" class="input-field pl-8 text-lg" />
+            </div>
+            <div class="flex gap-2 flex-wrap">
+              <button onclick="document.getElementById('bc-salary').value='35000'" class="badge hover:bg-gray-200 dark:hover:bg-gray-600 cursor-pointer">€35,000</button>
+              <button onclick="document.getElementById('bc-salary').value='42000'" class="badge hover:bg-gray-200 dark:hover:bg-gray-600 cursor-pointer">€42,000</button>
+              <button onclick="document.getElementById('bc-salary').value='50000'" class="badge hover:bg-gray-200 dark:hover:bg-gray-600 cursor-pointer">€50,000</button>
+              <button onclick="document.getElementById('bc-salary').value='65000'" class="badge hover:bg-gray-200 dark:hover:bg-gray-600 cursor-pointer">€65,000</button>
+              <button onclick="document.getElementById('bc-salary').value='80000'" class="badge hover:bg-gray-200 dark:hover:bg-gray-600 cursor-pointer">€80,000</button>
+            </div>
+            <button onclick="bcAnswer(3, document.getElementById('bc-salary').value)" class="btn-primary mt-2">
+              Continue <i data-lucide="arrow-right" class="w-4 h-4 ml-1 inline"></i>
+            </button>
+          </div>
+        </div>
+
+        {# Step 4 #}
+        <div class="bc-step hidden" data-step="4">
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Is your role in a shortage occupation?</h2>
+          <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Shortage occupations have a lower salary threshold (€41,042 instead of €45,300).</p>
+          <div class="space-y-3">
+            <button onclick="bcAnswer(4,'yes')" class="w-full text-left p-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 hover:border-brand-500 dark:hover:border-brand-400 transition-colors flex items-center gap-3 group">
+              <div class="w-8 h-8 rounded-full border-2 border-gray-300 dark:border-gray-600 group-hover:border-brand-500 flex items-center justify-center shrink-0">
+                <i data-lucide="check" class="w-4 h-4 text-transparent group-hover:text-brand-500"></i>
+              </div>
+              <div>
+                <span class="font-semibold text-gray-900 dark:text-white">Yes — IT, Engineering, Medicine, or Science</span>
+                <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Software development, data science, electrical engineering, doctors, pharmacists, etc.</p>
+              </div>
+            </button>
+            <button onclick="bcAnswer(4,'no')" class="w-full text-left p-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 hover:border-brand-500 dark:hover:border-brand-400 transition-colors flex items-center gap-3 group">
+              <div class="w-8 h-8 rounded-full border-2 border-gray-300 dark:border-gray-600 group-hover:border-brand-500 flex items-center justify-center shrink-0">
+                <i data-lucide="minus" class="w-4 h-4 text-transparent group-hover:text-amber-500"></i>
+              </div>
+              <div>
+                <span class="font-semibold text-gray-900 dark:text-white">No / Not sure</span>
+                <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Other occupations, general roles</p>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        {# Step 5 #}
+        <div class="bc-step hidden" data-step="5">
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Which EU country?</h2>
+          <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Select the country where you would apply for the EU Blue Card.</p>
+          <select id="bc-country" class="input-field text-lg mb-4">
+            <option value="">Select a country...</option>
+            <option value="germany">Germany</option>
+            <option value="france">France</option>
+            <option value="netherlands">Netherlands</option>
+            <option value="spain">Spain</option>
+            <option value="italy">Italy</option>
+            <option value="poland">Poland</option>
+            <option value="austria">Austria</option>
+            <option value="belgium">Belgium</option>
+            <option value="czechia">Czech Republic</option>
+            <option value="portugal">Portugal</option>
+            <option value="finland">Finland</option>
+            <option value="sweden">Sweden</option>
+            <option value="ireland">Ireland</option>
+            <option value="other">Other EU country</option>
+          </select>
+          <button onclick="bcAnswer(5, document.getElementById('bc-country').value)" class="btn-primary">
+            Check My Eligibility <i data-lucide="arrow-right" class="w-4 h-4 ml-1 inline"></i>
+          </button>
+        </div>
+      </div>
+
+      {# Results #}
+      <div id="bc-results" class="hidden">
+      </div>
+
+      {# Back button #}
+      <div id="bc-back" class="mt-6 hidden">
+        <button onclick="bcBack()" class="btn-secondary text-sm">
+          <i data-lucide="arrow-left" class="w-4 h-4 mr-1 inline"></i> Back
+        </button>
+      </div>
+    </div>
+
+    {# Restart #}
+    <div id="bc-restart" class="text-center mt-6 hidden">
+      <button onclick="bcRestart()" class="btn-secondary">
+        <i data-lucide="rotate-ccw" class="w-4 h-4 mr-1 inline"></i> Start Over
+      </button>
+    </div>
+  </div>
+</section>
+
+{# FAQ Section #}
+<section class="py-16 bg-gray-50 dark:bg-gray-900">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="section-heading text-center mb-10">Frequently Asked Questions</h2>
+    <div class="space-y-4">
+      <details class="card p-0 group">
+        <summary class="flex items-center justify-between p-5 cursor-pointer">
+          <span class="font-semibold text-gray-900 dark:text-white">What is the EU Blue Card?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"></i>
+        </summary>
+        <div class="px-5 pb-5 text-gray-600 dark:text-gray-400 text-sm">
+          The EU Blue Card is a work and residence permit for highly skilled non-EU citizens. It provides fast-track access to 25 EU member states, allows your spouse to work immediately, and offers a path to permanent residence in as little as 21 months.
+        </div>
+      </details>
+      <details class="card p-0 group">
+        <summary class="flex items-center justify-between p-5 cursor-pointer">
+          <span class="font-semibold text-gray-900 dark:text-white">What is the salary threshold for the EU Blue Card?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"></i>
+        </summary>
+        <div class="px-5 pb-5 text-gray-600 dark:text-gray-400 text-sm">
+          The general salary threshold is €45,300 per year. For shortage occupations such as IT, engineering, and medicine, the reduced threshold is €41,042 per year. These thresholds are reviewed annually.
+        </div>
+      </details>
+      <details class="card p-0 group">
+        <summary class="flex items-center justify-between p-5 cursor-pointer">
+          <span class="font-semibold text-gray-900 dark:text-white">Do I need a university degree for the EU Blue Card?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"></i>
+        </summary>
+        <div class="px-5 pb-5 text-gray-600 dark:text-gray-400 text-sm">
+          Yes, you typically need a recognized university degree. However, some EU countries now accept equivalent professional qualifications or extensive work experience (usually 5+ years) in IT and other shortage occupations.
+        </div>
+      </details>
+      <details class="card p-0 group">
+        <summary class="flex items-center justify-between p-5 cursor-pointer">
+          <span class="font-semibold text-gray-900 dark:text-white">How long does EU Blue Card processing take?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"></i>
+        </summary>
+        <div class="px-5 pb-5 text-gray-600 dark:text-gray-400 text-sm">
+          Processing typically takes 4–8 weeks. Some countries may process faster depending on your nationality and the completeness of your application.
+        </div>
+      </details>
+      <details class="card p-0 group">
+        <summary class="flex items-center justify-between p-5 cursor-pointer">
+          <span class="font-semibold text-gray-900 dark:text-white">Can I change employers with an EU Blue Card?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"></i>
+        </summary>
+        <div class="px-5 pb-5 text-gray-600 dark:text-gray-400 text-sm">
+          During the first two years you need approval from the immigration authority to change employers. After two years, you can change jobs freely as long as the new position meets the Blue Card requirements.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+{# Share Section #}
+<section class="py-12">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-4">Share this tool</h2>
+    <div class="flex justify-center gap-3">
+      <a href="https://twitter.com/intent/tweet?text=Check%20if%20you%20qualify%20for%20the%20EU%20Blue%20Card%20with%20this%20free%20eligibility%20checker&url={{ site.url }}/tools/blue-card-checker/" target="_blank" rel="noopener" class="btn-secondary text-sm">
+        <i data-lucide="twitter" class="w-4 h-4 mr-1 inline"></i> Twitter
+      </a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}/tools/blue-card-checker/" target="_blank" rel="noopener" class="btn-secondary text-sm">
+        <i data-lucide="linkedin" class="w-4 h-4 mr-1 inline"></i> LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  const visaTypes = {{ visaTypes | dump | safe }};
+
+  const state = { step: 1, answers: {} };
+
+  window.bcAnswer = function(step, value) {
+    if (step === 3 && (!value || isNaN(Number(value)) || Number(value) <= 0)) {
+      alert('Please enter a valid salary amount.');
+      return;
+    }
+    if (step === 5 && !value) {
+      alert('Please select a country.');
+      return;
+    }
+    state.answers[step] = value;
+    if (step < 5) {
+      state.step = step + 1;
+      renderStep();
+    } else {
+      showResults();
+    }
+  };
+
+  window.bcBack = function() {
+    if (state.step > 1) {
+      state.step--;
+      renderStep();
+    }
+  };
+
+  window.bcRestart = function() {
+    state.step = 1;
+    state.answers = {};
+    document.getElementById('bc-results').classList.add('hidden');
+    document.getElementById('bc-results').innerHTML = '';
+    document.getElementById('bc-steps').classList.remove('hidden');
+    document.getElementById('bc-restart').classList.add('hidden');
+    renderStep();
+  };
+
+  function renderStep() {
+    const steps = document.querySelectorAll('.bc-step');
+    steps.forEach(s => s.classList.add('hidden'));
+    const current = document.querySelector(`.bc-step[data-step="${state.step}"]`);
+    if (current) current.classList.remove('hidden');
+
+    const pct = (state.step / 5) * 100;
+    document.getElementById('bc-progress').style.width = pct + '%';
+    document.getElementById('bc-step-label').textContent = `Step ${state.step} of 5`;
+
+    const backBtn = document.getElementById('bc-back');
+    if (state.step > 1) backBtn.classList.remove('hidden');
+    else backBtn.classList.add('hidden');
+
+    if (window.lucide) lucide.createIcons();
+  }
+
+  function showResults() {
+    document.getElementById('bc-steps').classList.add('hidden');
+    document.getElementById('bc-back').classList.add('hidden');
+    document.getElementById('bc-restart').classList.remove('hidden');
+    document.getElementById('bc-progress').style.width = '100%';
+    document.getElementById('bc-step-label').textContent = 'Complete';
+
+    const a = state.answers;
+    const salary = Number(a[3]) || 0;
+    const isShortage = a[4] === 'yes';
+    const threshold = isShortage ? 41042 : 45300;
+
+    const checks = [
+      { label: 'University degree or equivalent qualification', met: a[1] === 'yes' || a[1] === 'equivalent', note: a[1] === 'equivalent' ? 'Some countries accept equivalent qualifications — verify with the local authority' : '' },
+      { label: 'Job offer in an EU country', met: a[2] === 'yes', note: a[2] === 'notyet' ? 'You can still prepare — start applying to visa-sponsoring companies' : '' },
+      { label: `Salary meets threshold (€${threshold.toLocaleString()})`, met: salary >= threshold, note: salary > 0 && salary < threshold ? `Your salary of €${salary.toLocaleString()} is €${(threshold - salary).toLocaleString()} below the threshold` : '' },
+      { label: 'Role in shortage occupation (lower threshold)', met: isShortage, note: !isShortage ? 'General threshold of €45,300 applies' : 'Reduced threshold of €41,042 applies' },
+    ];
+
+    const metCount = checks.filter(c => c.met).length;
+    const hasDegree = a[1] !== 'no';
+    const hasOffer = a[2] === 'yes';
+    const meetsSalary = salary >= threshold;
+
+    let status, statusColor, statusIcon, statusBg;
+    if (hasDegree && hasOffer && meetsSalary) {
+      status = 'Likely Eligible';
+      statusColor = 'text-green-700 dark:text-green-400';
+      statusBg = 'bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800';
+      statusIcon = 'check-circle';
+    } else if (hasDegree && (hasOffer || a[2] === 'notyet') && (meetsSalary || salary === 0)) {
+      status = 'Potentially Eligible';
+      statusColor = 'text-amber-700 dark:text-amber-400';
+      statusBg = 'bg-amber-50 dark:bg-amber-900/20 border-amber-200 dark:border-amber-800';
+      statusIcon = 'alert-circle';
+    } else {
+      status = 'Not Eligible';
+      statusColor = 'text-red-700 dark:text-red-400';
+      statusBg = 'bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800';
+      statusIcon = 'x-circle';
+    }
+
+    let html = `
+      <div class="border rounded-xl p-6 mb-6 ${statusBg}">
+        <div class="flex items-center gap-3 mb-2">
+          <i data-lucide="${statusIcon}" class="w-8 h-8 ${statusColor}"></i>
+          <h2 class="text-2xl font-extrabold ${statusColor}">${status}</h2>
+        </div>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Based on your answers, ${metCount} of 4 key requirements are met.</p>
+      </div>
+      <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-4">Requirements Breakdown</h3>
+      <div class="space-y-3 mb-8">
+    `;
+
+    checks.forEach(c => {
+      const icon = c.met ? 'check-circle' : 'x-circle';
+      const color = c.met ? 'text-green-500' : 'text-red-500';
+      html += `
+        <div class="flex items-start gap-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-800/50">
+          <i data-lucide="${icon}" class="w-5 h-5 ${color} shrink-0 mt-0.5"></i>
+          <div>
+            <span class="font-medium text-gray-900 dark:text-white text-sm">${c.label}</span>
+            ${c.note ? `<p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">${c.note}</p>` : ''}
+          </div>
+        </div>
+      `;
+    });
+    html += '</div>';
+
+    if (status !== 'Not Eligible') {
+      html += `
+        <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 p-4 rounded-r-lg mb-6">
+          <h4 class="font-semibold text-blue-800 dark:text-blue-300 mb-1">Next Steps</h4>
+          <ul class="text-sm text-blue-700 dark:text-blue-400 space-y-1 list-disc list-inside">
+            <li>Get your degree <a href="https://anabin.kmk.org/" target="_blank" rel="noopener" class="underline">recognized via anabin</a> (for Germany)</li>
+            <li><a href="/visa-sponsored-jobs/" class="underline">Browse visa-sponsoring companies</a> on our job board</li>
+            <li>Read the <a href="https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card" target="_blank" rel="noopener" class="underline">official EU Blue Card guide</a></li>
+            <li>Check the <a href="/resources/country-guides/germany/" class="underline">Germany country guide</a> for detailed info</li>
+          </ul>
+        </div>
+      `;
+    }
+
+    if (status === 'Not Eligible') {
+      const alternatives = visaTypes.filter(v => v.slug !== 'eu-blue-card' && v.slug !== 'us-h1b');
+      html += `
+        <div class="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 p-4 rounded-r-lg mb-6">
+          <h4 class="font-semibold text-yellow-800 dark:text-yellow-300 mb-1">Don't give up — consider these alternatives</h4>
+          <p class="text-sm text-yellow-700 dark:text-yellow-400 mb-3">You may qualify for other visa types depending on your situation.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+      `;
+      alternatives.slice(0, 4).forEach(v => {
+        html += `
+          <div class="card p-4">
+            <h4 class="font-bold text-gray-900 dark:text-white text-sm mb-1">${v.name}</h4>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">${v.country} · ${v.processingTime}</p>
+            <p class="text-xs text-gray-600 dark:text-gray-400 mb-2">Salary: ${v.salaryThreshold}</p>
+            <a href="${v.officialUrl}" target="_blank" rel="noopener" class="text-xs text-brand-600 dark:text-brand-400 hover:underline">Learn more &rarr;</a>
+          </div>
+        `;
+      });
+      html += '</div>';
+      html += `<p class="text-sm text-gray-600 dark:text-gray-400"><a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">Browse all visa-sponsored jobs &rarr;</a></p>`;
+    }
+
+    const container = document.getElementById('bc-results');
+    container.innerHTML = html;
+    container.classList.remove('hidden');
+    if (window.lucide) lucide.createIcons();
+  }
+
+  renderStep();
+})();
+</script>

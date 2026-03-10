@@ -1,0 +1,241 @@
+---
+layout: layouts/base.njk
+title: "Free Tools for International Job Seekers | Visa, Salary, Relocation"
+description: "13 free tools to help you find jobs abroad, check visa sponsorship, calculate salary after tax, compare cost of living, and plan your international relocation."
+---
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Free Relocation & Visa Tools",
+  "description": "{{ description }}",
+  "url": "{{ site.url }}/tools/",
+  "publisher": { "@type": "Organization", "name": "{{ site.name }}" },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": 13,
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Visa Sponsorship Company Checker", "url": "{{ site.url }}/tools/visa-checker/" },
+      { "@type": "ListItem", "position": 2, "name": "Salary After Tax Calculator", "url": "{{ site.url }}/tools/salary-calculator/" },
+      { "@type": "ListItem", "position": 3, "name": "Cost of Living Comparison", "url": "{{ site.url }}/tools/cost-of-living/" },
+      { "@type": "ListItem", "position": 4, "name": "EU Blue Card Eligibility Checker", "url": "{{ site.url }}/tools/blue-card-checker/" },
+      { "@type": "ListItem", "position": 5, "name": "International Resume Adapter", "url": "{{ site.url }}/tools/resume-adapter/" },
+      { "@type": "ListItem", "position": 6, "name": "Where Should I Relocate? Quiz", "url": "{{ site.url }}/tools/relocation-quiz/" },
+      { "@type": "ListItem", "position": 7, "name": "Visa Processing Time Tracker", "url": "{{ site.url }}/tools/visa-tracker/" },
+      { "@type": "ListItem", "position": 8, "name": "Relocation Cost Estimator", "url": "{{ site.url }}/tools/relocation-calculator/" },
+      { "@type": "ListItem", "position": 9, "name": "Tech Interview Prep by Company", "url": "{{ site.url }}/tools/interview-prep/" },
+      { "@type": "ListItem", "position": 10, "name": "Work Visa Comparison Table", "url": "{{ site.url }}/tools/visa-comparison/" },
+      { "@type": "ListItem", "position": 11, "name": "Relocation Checklist Generator", "url": "{{ site.url }}/tools/relocation-checklist/" },
+      { "@type": "ListItem", "position": 12, "name": "Job Posting Red Flags Checker", "url": "{{ site.url }}/tools/red-flags-checker/" },
+      { "@type": "ListItem", "position": 13, "name": "Networking Event Finder", "url": "{{ site.url }}/tools/events/" }
+    ]
+  }
+}
+</script>
+{% endblock %}
+
+{# Hero #}
+<section class="bg-gradient-to-b from-brand-50 to-white dark:from-gray-900 dark:to-gray-950 py-16">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <nav class="text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600">Home</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900 dark:text-white">Tools</span>
+    </nav>
+    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4">
+      Free Tools for Job Seekers
+    </h1>
+    <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+      Everything you need to plan your international career move. All free, no sign-up required.
+    </p>
+  </div>
+</section>
+
+{# Featured Tools #}
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="section-heading mb-4">Most Popular</h2>
+    <p class="text-gray-600 dark:text-gray-400 mb-8">The tools people use most when planning a move abroad.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+      <a href="/tools/visa-checker/" class="card p-6 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-xl flex items-center justify-center shrink-0">
+            <i data-lucide="shield-check" class="w-6 h-6 text-green-600 dark:text-green-400"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors mb-1">Visa Sponsorship Company Checker</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Search 25+ verified companies to check if they sponsor work visas and in which countries.</p>
+            <span class="inline-flex items-center text-xs text-brand-600 dark:text-brand-400 mt-2 font-medium">Try it free <i data-lucide="arrow-right" class="w-3 h-3 ml-1"></i></span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/tools/salary-calculator/" class="card p-6 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center shrink-0">
+            <i data-lucide="calculator" class="w-6 h-6 text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors mb-1">Salary After Tax Calculator</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Calculate take-home pay in 10 countries. Compare net salary side-by-side.</p>
+            <span class="inline-flex items-center text-xs text-brand-600 dark:text-brand-400 mt-2 font-medium">Try it free <i data-lucide="arrow-right" class="w-3 h-3 ml-1"></i></span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/tools/blue-card-checker/" class="card p-6 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/30 rounded-xl flex items-center justify-center shrink-0">
+            <i data-lucide="credit-card" class="w-6 h-6 text-indigo-600 dark:text-indigo-400"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors mb-1">EU Blue Card Eligibility Checker</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Answer 5 questions to find out if you qualify for Europe's fast-track work permit.</p>
+            <span class="inline-flex items-center text-xs text-brand-600 dark:text-brand-400 mt-2 font-medium">Try it free <i data-lucide="arrow-right" class="w-3 h-3 ml-1"></i></span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/tools/relocation-quiz/" class="card p-6 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center shrink-0">
+            <i data-lucide="compass" class="w-6 h-6 text-purple-600 dark:text-purple-400"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors mb-1">Where Should I Relocate? Quiz</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Take our 8-question quiz to find your ideal city based on lifestyle and career goals.</p>
+            <span class="inline-flex items-center text-xs text-brand-600 dark:text-brand-400 mt-2 font-medium">Take the quiz <i data-lucide="arrow-right" class="w-3 h-3 ml-1"></i></span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    {# Visa & Immigration Tools #}
+    <h2 class="section-heading mb-4">Visa & Immigration</h2>
+    <p class="text-gray-600 dark:text-gray-400 mb-8">Understand visa requirements and compare work permits.</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+      <a href="/tools/visa-comparison/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="w-10 h-10 bg-yellow-100 dark:bg-yellow-900/30 rounded-lg flex items-center justify-center mb-3">
+          <i data-lucide="scale" class="w-5 h-5 text-yellow-600 dark:text-yellow-400"></i>
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors mb-1">Work Visa Comparison</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Compare 9 visa types across processing time, salary thresholds, and PR paths.</p>
+      </a>
+
+      <a href="/tools/visa-tracker/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="w-10 h-10 bg-orange-100 dark:bg-orange-900/30 rounded-lg flex items-center justify-center mb-3">
+          <i data-lucide="clock" class="w-5 h-5 text-orange-600 dark:text-orange-400"></i>
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors mb-1">Visa Processing Tracker</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">See current processing times and step-by-step timelines for each visa type.</p>
+      </a>
+
+      <a href="/tools/visa-checker/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="w-10 h-10 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center mb-3">
+          <i data-lucide="building-2" class="w-5 h-5 text-green-600 dark:text-green-400"></i>
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors mb-1">Company Visa Checker</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Check if a specific company sponsors visas and which countries they operate in.</p>
+      </a>
+    </div>
+
+    {# Career & Job Search Tools #}
+    <h2 class="section-heading mb-4">Career & Job Search</h2>
+    <p class="text-gray-600 dark:text-gray-400 mb-8">Prepare your applications and research companies.</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+      <a href="/tools/resume-adapter/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="w-10 h-10 bg-teal-100 dark:bg-teal-900/30 rounded-lg flex items-center justify-center mb-3">
+          <i data-lucide="file-text" class="w-5 h-5 text-teal-600 dark:text-teal-400"></i>
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors mb-1">Resume Adapter</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Get a country-specific checklist to adapt your CV for international applications.</p>
+      </a>
+
+      <a href="/tools/interview-prep/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="w-10 h-10 bg-violet-100 dark:bg-violet-900/30 rounded-lg flex items-center justify-center mb-3">
+          <i data-lucide="message-square" class="w-5 h-5 text-violet-600 dark:text-violet-400"></i>
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors mb-1">Interview Prep</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Learn interview processes, tech stacks, and tips for top visa-sponsoring companies.</p>
+      </a>
+
+      <a href="/tools/red-flags-checker/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="w-10 h-10 bg-red-100 dark:bg-red-900/30 rounded-lg flex items-center justify-center mb-3">
+          <i data-lucide="alert-triangle" class="w-5 h-5 text-red-600 dark:text-red-400"></i>
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors mb-1">Red Flags Checker</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Paste a job posting to detect scam signals and employer warning signs.</p>
+      </a>
+    </div>
+
+    {# Relocation Planning Tools #}
+    <h2 class="section-heading mb-4">Relocation Planning</h2>
+    <p class="text-gray-600 dark:text-gray-400 mb-8">Plan and budget your international move.</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a href="/tools/cost-of-living/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="w-10 h-10 bg-cyan-100 dark:bg-cyan-900/30 rounded-lg flex items-center justify-center mb-3">
+          <i data-lucide="bar-chart-3" class="w-5 h-5 text-cyan-600 dark:text-cyan-400"></i>
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors mb-1">Cost of Living Comparison</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Compare rent, groceries, and dining costs across 14 major tech cities.</p>
+      </a>
+
+      <a href="/tools/relocation-calculator/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="w-10 h-10 bg-amber-100 dark:bg-amber-900/30 rounded-lg flex items-center justify-center mb-3">
+          <i data-lucide="wallet" class="w-5 h-5 text-amber-600 dark:text-amber-400"></i>
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors mb-1">Relocation Cost Estimator</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Calculate the total cost of moving abroad — flights, deposits, insurance, and more.</p>
+      </a>
+
+      <a href="/tools/relocation-checklist/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900/30 rounded-lg flex items-center justify-center mb-3">
+          <i data-lucide="list-checks" class="w-5 h-5 text-emerald-600 dark:text-emerald-400"></i>
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors mb-1">Relocation Checklist</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Generate a country-specific, phased checklist for your move abroad.</p>
+      </a>
+
+      <a href="/tools/events/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="w-10 h-10 bg-pink-100 dark:bg-pink-900/30 rounded-lg flex items-center justify-center mb-3">
+          <i data-lucide="users" class="w-5 h-5 text-pink-600 dark:text-pink-400"></i>
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors mb-1">Networking Events</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Find tech meetups, expat groups, and coworking spaces in 14 cities.</p>
+      </a>
+
+      <a href="/tools/salary-calculator/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center mb-3">
+          <i data-lucide="calculator" class="w-5 h-5 text-blue-600 dark:text-blue-400"></i>
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors mb-1">Salary Calculator</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">See your take-home pay after tax in any country. Compare side by side.</p>
+      </a>
+
+      <a href="/tools/relocation-quiz/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="w-10 h-10 bg-purple-100 dark:bg-purple-900/30 rounded-lg flex items-center justify-center mb-3">
+          <i data-lucide="compass" class="w-5 h-5 text-purple-600 dark:text-purple-400"></i>
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors mb-1">Relocation Quiz</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Not sure where to go? Take our quiz to find your perfect city.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+{# CTA #}
+<section class="py-16 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h2 class="section-heading mb-4">Ready to Find Your Next Job?</h2>
+    <p class="text-gray-600 dark:text-gray-400 mb-8">
+      Browse {{ jobs | length }}+ visa-sponsored jobs across {{ jobs | uniqueCountries | length }}+ countries.
+    </p>
+    <a href="/visa-sponsored-jobs/" class="btn-primary text-lg px-8 py-3">
+      Browse All Jobs
+      <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+    </a>
+  </div>
+</section>

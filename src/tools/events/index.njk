@@ -1,0 +1,747 @@
+---
+layout: layouts/base.njk
+title: "Tech Networking Events for Expats | Meetups & Communities by City"
+description: "Find tech meetups, expat communities, and networking events in Berlin, Amsterdam, London, Stockholm, and 10 more cities. Connect with fellow international professionals."
+---
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Networking Event Finder for Expats",
+  "url": "{{ site.url }}{{ page.url }}",
+  "description": "{{ description }}",
+  "applicationCategory": "SocialNetworkingApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "publisher": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can I meet other expats and tech professionals in a new city?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The best ways include attending local tech meetups (Meetup.com is great for this), joining expat networks like InterNations, visiting coworking spaces, participating in language exchange events, and connecting through Reddit and Facebook groups for your city." }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the best tech meetups in Berlin?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Popular Berlin tech meetups include Berlin.js (monthly JavaScript meetup), PyBerlin (Python community), Berlin Tech Meetup (general networking), and Rust Berlin. The city also hosts numerous startup events and hackathons throughout the year." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are coworking spaces good for networking?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, coworking spaces are excellent for networking. They often host events, workshops, and social gatherings. Spaces like Factory Berlin, TQ Amsterdam, and Epicenter Stockholm specifically focus on building tech communities and facilitating connections between members." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is InterNations worth joining as an expat?",
+      "acceptedAnswer": { "@type": "Answer", "text": "InterNations is one of the largest expat networks worldwide with communities in most major cities. The free membership gives access to online forums and some events. The paid Albatross membership unlocks all events and features. It's especially useful when you first arrive in a new city." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I find language exchange partners?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Look for language exchange events on Meetup.com, Tandem app, or search for 'Stammtisch' events (in German-speaking countries). Many cities have regular language café events at local bars or community centers. Facebook groups for language exchange in your city are also popular." }
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+<section class="relative overflow-hidden bg-gradient-to-br from-brand-50 via-white to-indigo-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 py-16 md:py-20">
+  <div class="max-w-5xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6" aria-label="Breadcrumb">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400">Home</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span>Tools</span>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-900 dark:text-white">Networking Events</span>
+    </nav>
+
+    <div class="text-center">
+      <div class="w-16 h-16 bg-brand-100 dark:bg-brand-900/30 rounded-2xl flex items-center justify-center mx-auto mb-6">
+        <i data-lucide="users" class="w-8 h-8 text-brand-600 dark:text-brand-400"></i>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 leading-tight">
+        Tech <span class="bg-yellow-200 dark:bg-yellow-500/20 dark:text-yellow-300 px-2 inline-block -skew-x-1">Networking</span> Events & Communities
+      </h1>
+      <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-8">
+        Find meetups, expat groups, coworking spaces, and professional communities in your city. Build your network from day one.
+      </p>
+
+      <div class="max-w-md mx-auto">
+        <label for="city-select" class="sr-only">Select a city</label>
+        <select id="city-select" class="input-field text-lg py-3">
+          <option value="">Jump to a city…</option>
+          {% for city in costOfLiving.cities %}
+          <option value="{{ city.slug }}">{{ city.emoji }} {{ city.name }}, {{ city.country }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-12">
+  <div class="max-w-5xl mx-auto px-4 space-y-16">
+
+    {# ── Berlin ── #}
+    <div id="berlin" class="scroll-mt-24">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-4xl">🇩🇪</span>
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Berlin</h2>
+          <p class="text-gray-500 dark:text-gray-400 text-sm">Germany's startup capital and largest tech hub</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="code" class="w-4 h-4 text-brand-500"></i> Tech Meetups</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://berlinjs.org/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Berlin.js</a><p class="text-gray-500 dark:text-gray-400">Monthly JavaScript meetup</p></li>
+            <li><a href="https://www.meetup.com/PyBerlin/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">PyBerlin</a><p class="text-gray-500 dark:text-gray-400">Python community meetup</p></li>
+            <li><a href="https://www.meetup.com/berlin-tech-meetup/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Berlin Tech Meetup</a><p class="text-gray-500 dark:text-gray-400">General tech networking</p></li>
+            <li><a href="https://www.meetup.com/rust-berlin/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Rust Berlin</a><p class="text-gray-500 dark:text-gray-400">Rust programming meetup</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="globe" class="w-4 h-4 text-green-500"></i> Expat Communities</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.internations.org/berlin-expats" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">InterNations Berlin</a><p class="text-gray-500 dark:text-gray-400">Largest expat network</p></li>
+            <li><a href="https://reddit.com/r/berlin" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">r/berlin</a><p class="text-gray-500 dark:text-gray-400">Reddit community for Berlin</p></li>
+            <li><a href="https://allaboutberlin.com/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">All About Berlin</a><p class="text-gray-500 dark:text-gray-400">Comprehensive Berlin guide for expats</p></li>
+            <li><a href="https://www.toytowngermany.com/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Toytown Germany</a><p class="text-gray-500 dark:text-gray-400">English-speaking forum for Germany</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="building-2" class="w-4 h-4 text-purple-500"></i> Coworking Spaces</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://factoryberlin.com/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Factory Berlin</a><p class="text-gray-500 dark:text-gray-400">Startup-focused coworking</p></li>
+            <li><a href="https://www.betahaus.com/berlin" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">betahaus</a><p class="text-gray-500 dark:text-gray-400">Creative coworking space</p></li>
+            <li><a href="https://www.wework.com/l/berlin" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">WeWork Berlin</a><p class="text-gray-500 dark:text-gray-400">Multiple locations across Berlin</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-4"><a href="/resources/country-guides/germany/" class="text-sm text-brand-600 dark:text-brand-400 hover:underline inline-flex items-center gap-1"><i data-lucide="arrow-right" class="w-4 h-4"></i> Read the Germany Country Guide</a></div>
+    </div>
+
+    {# ── Munich ── #}
+    <div id="munich" class="scroll-mt-24">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-4xl">🇩🇪</span>
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Munich</h2>
+          <p class="text-gray-500 dark:text-gray-400 text-sm">Bavaria's tech powerhouse — home to BMW, Siemens, and a thriving startup scene</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="code" class="w-4 h-4 text-brand-500"></i> Tech Meetups</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.meetup.com/munichjs/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">MunichJS</a><p class="text-gray-500 dark:text-gray-400">JavaScript community meetup</p></li>
+            <li><a href="https://www.meetup.com/Munich-Datageeks/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Munich Datageeks</a><p class="text-gray-500 dark:text-gray-400">Data science and ML meetup</p></li>
+            <li><a href="https://www.meetup.com/Munich-DevOps-Meetup/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Munich DevOps</a><p class="text-gray-500 dark:text-gray-400">DevOps and cloud infrastructure</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="globe" class="w-4 h-4 text-green-500"></i> Expat Communities</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.internations.org/munich-expats" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">InterNations Munich</a><p class="text-gray-500 dark:text-gray-400">Expat network and events</p></li>
+            <li><a href="https://reddit.com/r/Munich" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">r/Munich</a><p class="text-gray-500 dark:text-gray-400">Reddit community</p></li>
+            <li><a href="https://www.muenchen.de/int/en" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Munich City Portal</a><p class="text-gray-500 dark:text-gray-400">Official newcomer information</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="building-2" class="w-4 h-4 text-purple-500"></i> Coworking Spaces</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.werk1.com/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">WERK1</a><p class="text-gray-500 dark:text-gray-400">Startup-focused coworking</p></li>
+            <li><a href="https://www.smartvillage.com/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Smartvillage</a><p class="text-gray-500 dark:text-gray-400">Tech community workspace</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-4"><a href="/resources/country-guides/germany/" class="text-sm text-brand-600 dark:text-brand-400 hover:underline inline-flex items-center gap-1"><i data-lucide="arrow-right" class="w-4 h-4"></i> Read the Germany Country Guide</a></div>
+    </div>
+
+    {# ── Amsterdam ── #}
+    <div id="amsterdam" class="scroll-mt-24">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-4xl">🇳🇱</span>
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Amsterdam</h2>
+          <p class="text-gray-500 dark:text-gray-400 text-sm">Europe's most international tech hub with the 30% ruling tax benefit</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="code" class="w-4 h-4 text-brand-500"></i> Tech Meetups</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.meetup.com/amsterdam-rb/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Amsterdam.rb</a><p class="text-gray-500 dark:text-gray-400">Ruby meetup</p></li>
+            <li><a href="https://amsterdamjs.com/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">AmsterdamJS</a><p class="text-gray-500 dark:text-gray-400">JavaScript community</p></li>
+            <li><a href="https://www.meetup.com/dutch-data-science/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Dutch Data Science</a><p class="text-gray-500 dark:text-gray-400">Data science community</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="globe" class="w-4 h-4 text-green-500"></i> Expat Communities</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.internations.org/amsterdam-expats" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">InterNations Amsterdam</a><p class="text-gray-500 dark:text-gray-400">Expat network</p></li>
+            <li><a href="https://www.iamsterdam.com/en/living/newcomers" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">I amsterdam</a><p class="text-gray-500 dark:text-gray-400">Official newcomer guide</p></li>
+            <li><a href="https://reddit.com/r/Amsterdam" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">r/Amsterdam</a><p class="text-gray-500 dark:text-gray-400">Reddit community</p></li>
+            <li><a href="https://dutchreview.com/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">DutchReview</a><p class="text-gray-500 dark:text-gray-400">Expat-focused news and guides</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="building-2" class="w-4 h-4 text-purple-500"></i> Coworking Spaces</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://tq.co/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">TQ</a><p class="text-gray-500 dark:text-gray-400">Tech coworking by The Next Web</p></li>
+            <li><a href="https://www.spacesworks.com/amsterdam/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Spaces Amsterdam</a><p class="text-gray-500 dark:text-gray-400">Creative workspaces</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-4"><a href="/resources/country-guides/netherlands/" class="text-sm text-brand-600 dark:text-brand-400 hover:underline inline-flex items-center gap-1"><i data-lucide="arrow-right" class="w-4 h-4"></i> Read the Netherlands Country Guide</a></div>
+    </div>
+
+    {# ── London ── #}
+    <div id="london" class="scroll-mt-24">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-4xl">🇬🇧</span>
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white">London</h2>
+          <p class="text-gray-500 dark:text-gray-400 text-sm">Europe's largest tech ecosystem and financial capital</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="code" class="w-4 h-4 text-brand-500"></i> Tech Meetups</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.meetup.com/London-JavaScript-Community/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">London.js</a><p class="text-gray-500 dark:text-gray-400">JavaScript community</p></li>
+            <li><a href="https://www.meetup.com/LondonGophers/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">London Gophers</a><p class="text-gray-500 dark:text-gray-400">Go programming meetup</p></li>
+            <li><a href="https://silicondrinkabout.com/london" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Silicon Drinkabout</a><p class="text-gray-500 dark:text-gray-400">Casual tech networking</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="globe" class="w-4 h-4 text-green-500"></i> Expat Communities</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.internations.org/london-expats" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">InterNations London</a><p class="text-gray-500 dark:text-gray-400">Expat network</p></li>
+            <li><a href="https://reddit.com/r/london" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">r/london</a><p class="text-gray-500 dark:text-gray-400">Reddit community</p></li>
+            <li><a href="https://www.timeout.com/london" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Time Out London</a><p class="text-gray-500 dark:text-gray-400">City guide and events</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="building-2" class="w-4 h-4 text-purple-500"></i> Coworking Spaces</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://secondhome.io/london/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Second Home</a><p class="text-gray-500 dark:text-gray-400">Design-focused workspace</p></li>
+            <li><a href="https://www.huckletree.com/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Huckletree</a><p class="text-gray-500 dark:text-gray-400">Innovation workspace</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-4"><a href="/resources/country-guides/uk/" class="text-sm text-brand-600 dark:text-brand-400 hover:underline inline-flex items-center gap-1"><i data-lucide="arrow-right" class="w-4 h-4"></i> Read the UK Country Guide</a></div>
+    </div>
+
+    {# ── Dublin ── #}
+    <div id="dublin" class="scroll-mt-24">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-4xl">🇮🇪</span>
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Dublin</h2>
+          <p class="text-gray-500 dark:text-gray-400 text-sm">European headquarters for Google, Meta, and many US tech giants</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="code" class="w-4 h-4 text-brand-500"></i> Tech Meetups</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.meetup.com/Dublin-js/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Dublin.js</a><p class="text-gray-500 dark:text-gray-400">JavaScript meetup</p></li>
+            <li><a href="https://www.meetup.com/pythonireland/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Python Ireland</a><p class="text-gray-500 dark:text-gray-400">Python community</p></li>
+            <li><a href="https://www.meetup.com/Dublin-Tech-Talks/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Dublin Tech Talks</a><p class="text-gray-500 dark:text-gray-400">General tech networking</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="globe" class="w-4 h-4 text-green-500"></i> Expat Communities</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.internations.org/dublin-expats" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">InterNations Dublin</a><p class="text-gray-500 dark:text-gray-400">Expat network</p></li>
+            <li><a href="https://reddit.com/r/dublin" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">r/dublin</a><p class="text-gray-500 dark:text-gray-400">Reddit community</p></li>
+            <li><a href="https://www.citizensinformation.ie/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Citizens Information</a><p class="text-gray-500 dark:text-gray-400">Official government resource for newcomers</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="building-2" class="w-4 h-4 text-purple-500"></i> Coworking Spaces</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://dogpatchlabs.com/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Dogpatch Labs</a><p class="text-gray-500 dark:text-gray-400">Startup coworking at CHQ</p></li>
+            <li><a href="https://www.wework.com/l/dublin" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">WeWork Dublin</a><p class="text-gray-500 dark:text-gray-400">Multiple city-center locations</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-4"><a href="/resources/country-guides/ireland/" class="text-sm text-brand-600 dark:text-brand-400 hover:underline inline-flex items-center gap-1"><i data-lucide="arrow-right" class="w-4 h-4"></i> Read the Ireland Country Guide</a></div>
+    </div>
+
+    {# ── Stockholm ── #}
+    <div id="stockholm" class="scroll-mt-24">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-4xl">🇸🇪</span>
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Stockholm</h2>
+          <p class="text-gray-500 dark:text-gray-400 text-sm">Unicorn factory — birthplace of Spotify, Klarna, and King</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="code" class="w-4 h-4 text-brand-500"></i> Tech Meetups</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.meetup.com/Stockholm-JavaScript/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Stockholm.js</a><p class="text-gray-500 dark:text-gray-400">JavaScript meetup</p></li>
+            <li><a href="https://www.meetup.com/STHLM-Tech-Meetup/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">STHLM Tech Meetup</a><p class="text-gray-500 dark:text-gray-400">General tech meetup</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="globe" class="w-4 h-4 text-green-500"></i> Expat Communities</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.thelocal.se/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">The Local Sweden</a><p class="text-gray-500 dark:text-gray-400">English-language news</p></li>
+            <li><a href="https://reddit.com/r/sweden" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">r/sweden</a><p class="text-gray-500 dark:text-gray-400">Reddit community</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="building-2" class="w-4 h-4 text-purple-500"></i> Coworking Spaces</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://epicenterstockholm.com/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Epicenter Stockholm</a><p class="text-gray-500 dark:text-gray-400">House of digital business</p></li>
+            <li><a href="https://sup46.com/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">SUP46</a><p class="text-gray-500 dark:text-gray-400">Startup hub</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-4"><a href="/resources/country-guides/sweden/" class="text-sm text-brand-600 dark:text-brand-400 hover:underline inline-flex items-center gap-1"><i data-lucide="arrow-right" class="w-4 h-4"></i> Read the Sweden Country Guide</a></div>
+    </div>
+
+    {# ── Zurich ── #}
+    <div id="zurich" class="scroll-mt-24">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-4xl">🇨🇭</span>
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Zurich</h2>
+          <p class="text-gray-500 dark:text-gray-400 text-sm">Home to Google's largest engineering office outside the US and ETH Zurich</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="code" class="w-4 h-4 text-brand-500"></i> Tech Meetups</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.meetup.com/Zurich-js/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Zurich.js</a><p class="text-gray-500 dark:text-gray-400">JavaScript meetup</p></li>
+            <li><a href="https://www.meetup.com/Zurich-Scala/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Zurich Scala</a><p class="text-gray-500 dark:text-gray-400">Scala programming community</p></li>
+            <li><a href="https://www.meetup.com/SwissML/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Swiss ML</a><p class="text-gray-500 dark:text-gray-400">Machine learning community</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="globe" class="w-4 h-4 text-green-500"></i> Expat Communities</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.internations.org/zurich-expats" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">InterNations Zurich</a><p class="text-gray-500 dark:text-gray-400">Expat network</p></li>
+            <li><a href="https://www.englishforum.ch/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">English Forum Switzerland</a><p class="text-gray-500 dark:text-gray-400">English-speaking community</p></li>
+            <li><a href="https://reddit.com/r/zurich" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">r/zurich</a><p class="text-gray-500 dark:text-gray-400">Reddit community</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="building-2" class="w-4 h-4 text-purple-500"></i> Coworking Spaces</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.impacthub.ch/zurich/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Impact Hub Zurich</a><p class="text-gray-500 dark:text-gray-400">Social impact workspace</p></li>
+            <li><a href="https://www.wework.com/l/zurich" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">WeWork Zurich</a><p class="text-gray-500 dark:text-gray-400">Flexible workspaces</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-4"><a href="/resources/country-guides/switzerland/" class="text-sm text-brand-600 dark:text-brand-400 hover:underline inline-flex items-center gap-1"><i data-lucide="arrow-right" class="w-4 h-4"></i> Read the Switzerland Country Guide</a></div>
+    </div>
+
+    {# ── Paris ── #}
+    <div id="paris" class="scroll-mt-24">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-4xl">🇫🇷</span>
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Paris</h2>
+          <p class="text-gray-500 dark:text-gray-400 text-sm">France's booming tech scene — home to Station F, the world's largest startup campus</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="code" class="w-4 h-4 text-brand-500"></i> Tech Meetups</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.meetup.com/Paris-js/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Paris.js</a><p class="text-gray-500 dark:text-gray-400">JavaScript meetup</p></li>
+            <li><a href="https://www.meetup.com/PyParis/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">PyParis</a><p class="text-gray-500 dark:text-gray-400">Python community</p></li>
+            <li><a href="https://www.meetup.com/La-French-Tech-Paris/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">La French Tech</a><p class="text-gray-500 dark:text-gray-400">French tech ecosystem events</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="globe" class="w-4 h-4 text-green-500"></i> Expat Communities</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.internations.org/paris-expats" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">InterNations Paris</a><p class="text-gray-500 dark:text-gray-400">Expat network</p></li>
+            <li><a href="https://reddit.com/r/paris" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">r/paris</a><p class="text-gray-500 dark:text-gray-400">Reddit community</p></li>
+            <li><a href="https://www.thelocal.fr/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">The Local France</a><p class="text-gray-500 dark:text-gray-400">English-language news for France</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="building-2" class="w-4 h-4 text-purple-500"></i> Coworking Spaces</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://stationf.co/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Station F</a><p class="text-gray-500 dark:text-gray-400">World's largest startup campus</p></li>
+            <li><a href="https://www.wework.com/l/paris" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">WeWork Paris</a><p class="text-gray-500 dark:text-gray-400">Multiple locations</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {# ── Tallinn ── #}
+    <div id="tallinn" class="scroll-mt-24">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-4xl">🇪🇪</span>
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Tallinn</h2>
+          <p class="text-gray-500 dark:text-gray-400 text-sm">Digital pioneer — birthplace of Skype and the e-Residency program</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="code" class="w-4 h-4 text-brand-500"></i> Tech Meetups</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.meetup.com/tallinn-tech-meetup/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Tallinn Tech Meetup</a><p class="text-gray-500 dark:text-gray-400">Tech community</p></li>
+            <li><a href="https://startupestonia.ee/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Startup Estonia</a><p class="text-gray-500 dark:text-gray-400">Startup ecosystem</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="globe" class="w-4 h-4 text-green-500"></i> Expat Communities</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.internations.org/tallinn-expats" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">InterNations Tallinn</a><p class="text-gray-500 dark:text-gray-400">Expat network</p></li>
+            <li><a href="https://e-estonia.com/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">e-Residency Community</a><p class="text-gray-500 dark:text-gray-400">Digital Estonia community</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="building-2" class="w-4 h-4 text-purple-500"></i> Coworking Spaces</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.lift99.co/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Lift99</a><p class="text-gray-500 dark:text-gray-400">Startup-focused coworking</p></li>
+            <li><a href="https://springhub.ee/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Spring Hub</a><p class="text-gray-500 dark:text-gray-400">Tech coworking space</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {# ── Lisbon ── #}
+    <div id="lisbon" class="scroll-mt-24">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-4xl">🇵🇹</span>
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Lisbon</h2>
+          <p class="text-gray-500 dark:text-gray-400 text-sm">Southern Europe's rising tech hub — host of Web Summit</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="code" class="w-4 h-4 text-brand-500"></i> Tech Meetups</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.meetup.com/require-lx/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">require('lx')</a><p class="text-gray-500 dark:text-gray-400">JavaScript meetup</p></li>
+            <li><a href="https://www.meetup.com/Lisbon-Data-Science-Starters-Academy/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Lisbon Data Science</a><p class="text-gray-500 dark:text-gray-400">Data science community</p></li>
+            <li><a href="https://websummit.com/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Web Summit</a><p class="text-gray-500 dark:text-gray-400">Major annual tech conference</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="globe" class="w-4 h-4 text-green-500"></i> Expat Communities</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.internations.org/lisbon-expats" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">InterNations Lisbon</a><p class="text-gray-500 dark:text-gray-400">Expat network</p></li>
+            <li><a href="https://reddit.com/r/portugal" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">r/portugal</a><p class="text-gray-500 dark:text-gray-400">Reddit community</p></li>
+            <li><a href="https://www.expatica.com/pt/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Expatica Portugal</a><p class="text-gray-500 dark:text-gray-400">Expat guides and community</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="building-2" class="w-4 h-4 text-purple-500"></i> Coworking Spaces</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.secondhome.io/lisbon" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Second Home Lisbon</a><p class="text-gray-500 dark:text-gray-400">Beautiful creative workspace</p></li>
+            <li><a href="https://www.heden.com/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Heden</a><p class="text-gray-500 dark:text-gray-400">Modern coworking space</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {# ── Sydney ── #}
+    <div id="sydney" class="scroll-mt-24">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-4xl">🇦🇺</span>
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Sydney</h2>
+          <p class="text-gray-500 dark:text-gray-400 text-sm">Australia's largest tech hub and home to Atlassian and Canva</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="code" class="w-4 h-4 text-brand-500"></i> Tech Meetups</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.meetup.com/SydJS/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">SydJS</a><p class="text-gray-500 dark:text-gray-400">Sydney JavaScript meetup</p></li>
+            <li><a href="https://www.meetup.com/Sydney-Python/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">SyPy</a><p class="text-gray-500 dark:text-gray-400">Python community</p></li>
+            <li><a href="https://www.meetup.com/sydney-tech-leaders/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Sydney Tech Leaders</a><p class="text-gray-500 dark:text-gray-400">Leadership and networking</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="globe" class="w-4 h-4 text-green-500"></i> Expat Communities</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.internations.org/sydney-expats" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">InterNations Sydney</a><p class="text-gray-500 dark:text-gray-400">Expat network</p></li>
+            <li><a href="https://reddit.com/r/sydney" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">r/sydney</a><p class="text-gray-500 dark:text-gray-400">Reddit community</p></li>
+            <li><a href="https://www.expatica.com/au/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Expatica Australia</a><p class="text-gray-500 dark:text-gray-400">Expat guides</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="building-2" class="w-4 h-4 text-purple-500"></i> Coworking Spaces</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.fishburners.org/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Fishburners</a><p class="text-gray-500 dark:text-gray-400">Australia's largest startup space</p></li>
+            <li><a href="https://www.wework.com/l/sydney" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">WeWork Sydney</a><p class="text-gray-500 dark:text-gray-400">Multiple locations across Sydney</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-4"><a href="/resources/country-guides/australia/" class="text-sm text-brand-600 dark:text-brand-400 hover:underline inline-flex items-center gap-1"><i data-lucide="arrow-right" class="w-4 h-4"></i> Read the Australia Country Guide</a></div>
+    </div>
+
+    {# ── Toronto ── #}
+    <div id="toronto" class="scroll-mt-24">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-4xl">🇨🇦</span>
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Toronto</h2>
+          <p class="text-gray-500 dark:text-gray-400 text-sm">Canada's tech capital and one of the most multicultural cities in the world</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="code" class="w-4 h-4 text-brand-500"></i> Tech Meetups</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.meetup.com/torontojs/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">TorontoJS</a><p class="text-gray-500 dark:text-gray-400">JavaScript community</p></li>
+            <li><a href="https://www.meetup.com/Toronto-Tech-Meetup/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Toronto Tech Meetup</a><p class="text-gray-500 dark:text-gray-400">General tech networking</p></li>
+            <li><a href="https://www.meetup.com/Toronto-Machine-Learning-Society/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Toronto ML Society</a><p class="text-gray-500 dark:text-gray-400">Machine learning community</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="globe" class="w-4 h-4 text-green-500"></i> Expat Communities</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.internations.org/toronto-expats" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">InterNations Toronto</a><p class="text-gray-500 dark:text-gray-400">Expat network</p></li>
+            <li><a href="https://reddit.com/r/toronto" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">r/toronto</a><p class="text-gray-500 dark:text-gray-400">Reddit community</p></li>
+            <li><a href="https://www.settlementgta.org/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Settlement.org GTA</a><p class="text-gray-500 dark:text-gray-400">Newcomer settlement services</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="building-2" class="w-4 h-4 text-purple-500"></i> Coworking Spaces</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.marsdd.com/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">MaRS Discovery District</a><p class="text-gray-500 dark:text-gray-400">Innovation hub</p></li>
+            <li><a href="https://www.wework.com/l/toronto" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">WeWork Toronto</a><p class="text-gray-500 dark:text-gray-400">Multiple downtown locations</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-4"><a href="/resources/country-guides/canada/" class="text-sm text-brand-600 dark:text-brand-400 hover:underline inline-flex items-center gap-1"><i data-lucide="arrow-right" class="w-4 h-4"></i> Read the Canada Country Guide</a></div>
+    </div>
+
+    {# ── Cork ── #}
+    <div id="cork" class="scroll-mt-24">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-4xl">🇮🇪</span>
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Cork</h2>
+          <p class="text-gray-500 dark:text-gray-400 text-sm">Ireland's second city — growing tech hub with Apple and Johnson & Johnson</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="code" class="w-4 h-4 text-brand-500"></i> Tech Meetups</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.meetup.com/cork-js/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">CorkJS</a><p class="text-gray-500 dark:text-gray-400">JavaScript meetup</p></li>
+            <li><a href="https://www.meetup.com/it-cork/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">IT@Cork</a><p class="text-gray-500 dark:text-gray-400">Regional tech community</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="globe" class="w-4 h-4 text-green-500"></i> Expat Communities</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.internations.org/cork-expats" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">InterNations Cork</a><p class="text-gray-500 dark:text-gray-400">Expat network</p></li>
+            <li><a href="https://reddit.com/r/cork" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">r/cork</a><p class="text-gray-500 dark:text-gray-400">Reddit community</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="building-2" class="w-4 h-4 text-purple-500"></i> Coworking Spaces</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.republic-of-work.com/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Republic of Work</a><p class="text-gray-500 dark:text-gray-400">Cork's largest coworking space</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-4"><a href="/resources/country-guides/ireland/" class="text-sm text-brand-600 dark:text-brand-400 hover:underline inline-flex items-center gap-1"><i data-lucide="arrow-right" class="w-4 h-4"></i> Read the Ireland Country Guide</a></div>
+    </div>
+
+    {# ── Krakow ── #}
+    <div id="krakow" class="scroll-mt-24">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-4xl">🇵🇱</span>
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Krakow</h2>
+          <p class="text-gray-500 dark:text-gray-400 text-sm">Poland's tech talent hub with a thriving outsourcing and product scene</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="code" class="w-4 h-4 text-brand-500"></i> Tech Meetups</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.meetup.com/KraijsJS/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">KrakówJS</a><p class="text-gray-500 dark:text-gray-400">JavaScript community</p></li>
+            <li><a href="https://www.meetup.com/Krakow-Java-Developers/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Kraków Java Developers</a><p class="text-gray-500 dark:text-gray-400">Java community</p></li>
+            <li><a href="https://www.meetup.com/PyData-Krakow/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">PyData Kraków</a><p class="text-gray-500 dark:text-gray-400">Python data science meetup</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="globe" class="w-4 h-4 text-green-500"></i> Expat Communities</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.internations.org/krakow-expats" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">InterNations Kraków</a><p class="text-gray-500 dark:text-gray-400">Expat network</p></li>
+            <li><a href="https://reddit.com/r/krakow" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">r/krakow</a><p class="text-gray-500 dark:text-gray-400">Reddit community</p></li>
+            <li><a href="https://www.krakowpost.com/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Kraków Post</a><p class="text-gray-500 dark:text-gray-400">English-language local news</p></li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="building-2" class="w-4 h-4 text-purple-500"></i> Coworking Spaces</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://www.hubhub.com/en/locations/krakow/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">HubHub Kraków</a><p class="text-gray-500 dark:text-gray-400">Modern coworking space</p></li>
+            <li><a href="https://www.clustercowork.com/" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Cluster Cowork</a><p class="text-gray-500 dark:text-gray-400">Community-focused workspace</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="py-12 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 p-4 rounded-r-lg mb-8">
+      <div class="flex gap-3">
+        <i data-lucide="info" class="w-5 h-5 text-blue-500 shrink-0 mt-0.5"></i>
+        <div>
+          <p class="text-sm font-medium text-blue-800 dark:text-blue-300">Looking for a job first?</p>
+          <p class="text-sm text-blue-700 dark:text-blue-400 mt-1">Browse our <a href="/visa-sponsored-jobs/" class="underline hover:no-underline font-medium">visa-sponsored jobs board</a> to find opportunities with relocation support. Read our <a href="/blog/posts/top-european-tech-hubs/" class="underline hover:no-underline font-medium">guide to top European tech hubs</a> for more insights.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <a href="/visa-sponsored-jobs/" class="card p-6 hover:shadow-lg transition-shadow group">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-brand-100 dark:bg-brand-900/30 rounded-xl flex items-center justify-center shrink-0">
+            <i data-lucide="briefcase" class="w-6 h-6 text-brand-600 dark:text-brand-400"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Browse Visa-Sponsored Jobs</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Find jobs with relocation support</p>
+          </div>
+        </div>
+      </a>
+      <a href="/resources/country-guides/" class="card p-6 hover:shadow-lg transition-shadow group">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-xl flex items-center justify-center shrink-0">
+            <i data-lucide="map" class="w-6 h-6 text-green-600 dark:text-green-400"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors">Country Guides</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Everything you need to know about each country</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="card p-6 md:p-8 mb-8">
+      <div class="flex items-center gap-3 mb-6">
+        <i data-lucide="share-2" class="w-5 h-5 text-brand-500"></i>
+        <h2 class="text-lg font-bold text-gray-900 dark:text-white">Share This Tool</h2>
+      </div>
+      <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Know someone moving abroad? Help them find their community.</p>
+      <div class="flex flex-wrap gap-3">
+        <a href="https://twitter.com/intent/tweet?text=Find%20tech%20meetups%20and%20expat%20communities%20in%20your%20new%20city&url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener" class="btn-secondary text-sm">
+          <i data-lucide="twitter" class="w-4 h-4 mr-1"></i> Twitter
+        </a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener" class="btn-secondary text-sm">
+          <i data-lucide="linkedin" class="w-4 h-4 mr-1"></i> LinkedIn
+        </a>
+        <button id="copy-link-btn" class="btn-secondary text-sm">
+          <i data-lucide="link" class="w-4 h-4 mr-1"></i> Copy Link
+        </button>
+      </div>
+    </div>
+
+    <div class="card p-6 md:p-8">
+      <h2 class="section-heading mb-6">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        <details class="group border border-gray-200 dark:border-gray-700 rounded-lg">
+          <summary class="flex items-center justify-between p-4 cursor-pointer font-medium text-gray-900 dark:text-white">
+            How can I meet other expats and tech professionals in a new city?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-4 pb-4 text-gray-600 dark:text-gray-400 text-sm">
+            The best ways include attending local tech meetups (Meetup.com is great for this), joining expat networks like InterNations, visiting coworking spaces, participating in language exchange events, and connecting through Reddit and Facebook groups for your city.
+          </div>
+        </details>
+        <details class="group border border-gray-200 dark:border-gray-700 rounded-lg">
+          <summary class="flex items-center justify-between p-4 cursor-pointer font-medium text-gray-900 dark:text-white">
+            What are the best tech meetups in Berlin?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-4 pb-4 text-gray-600 dark:text-gray-400 text-sm">
+            Popular Berlin tech meetups include Berlin.js (monthly JavaScript meetup), PyBerlin (Python community), Berlin Tech Meetup (general networking), and Rust Berlin. The city also hosts numerous startup events and hackathons throughout the year.
+          </div>
+        </details>
+        <details class="group border border-gray-200 dark:border-gray-700 rounded-lg">
+          <summary class="flex items-center justify-between p-4 cursor-pointer font-medium text-gray-900 dark:text-white">
+            Are coworking spaces good for networking?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-4 pb-4 text-gray-600 dark:text-gray-400 text-sm">
+            Yes, coworking spaces are excellent for networking. They often host events, workshops, and social gatherings. Spaces like Factory Berlin, TQ Amsterdam, and Epicenter Stockholm specifically focus on building tech communities and facilitating connections between members.
+          </div>
+        </details>
+        <details class="group border border-gray-200 dark:border-gray-700 rounded-lg">
+          <summary class="flex items-center justify-between p-4 cursor-pointer font-medium text-gray-900 dark:text-white">
+            Is InterNations worth joining as an expat?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-4 pb-4 text-gray-600 dark:text-gray-400 text-sm">
+            InterNations is one of the largest expat networks worldwide with communities in most major cities. The free membership gives access to online forums and some events. The paid Albatross membership unlocks all events and features. It's especially useful when you first arrive in a new city.
+          </div>
+        </details>
+        <details class="group border border-gray-200 dark:border-gray-700 rounded-lg">
+          <summary class="flex items-center justify-between p-4 cursor-pointer font-medium text-gray-900 dark:text-white">
+            How do I find language exchange partners?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-4 pb-4 text-gray-600 dark:text-gray-400 text-sm">
+            Look for language exchange events on Meetup.com, Tandem app, or search for "Stammtisch" events (in German-speaking countries). Many cities have regular language café events at local bars or community centers. Facebook groups for language exchange in your city are also popular.
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var citySelect = document.getElementById('city-select');
+  var copyLinkBtn = document.getElementById('copy-link-btn');
+
+  citySelect.addEventListener('change', function() {
+    var slug = citySelect.value;
+    if (!slug) return;
+    var el = document.getElementById(slug);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      el.classList.add('ring-2', 'ring-brand-500', 'ring-offset-4', 'dark:ring-offset-gray-950', 'rounded-xl');
+      setTimeout(function() {
+        el.classList.remove('ring-2', 'ring-brand-500', 'ring-offset-4', 'dark:ring-offset-gray-950', 'rounded-xl');
+      }, 2000);
+    }
+  });
+
+  if (copyLinkBtn) {
+    copyLinkBtn.addEventListener('click', function() {
+      navigator.clipboard.writeText(window.location.href).then(function() {
+        copyLinkBtn.innerHTML = '<i data-lucide="check" class="w-4 h-4 mr-1"></i> Copied!';
+        if (window.lucide) lucide.createIcons();
+        setTimeout(function() {
+          copyLinkBtn.innerHTML = '<i data-lucide="link" class="w-4 h-4 mr-1"></i> Copy Link';
+          if (window.lucide) lucide.createIcons();
+        }, 2000);
+      });
+    });
+  }
+});
+</script>

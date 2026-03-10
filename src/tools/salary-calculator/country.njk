@@ -1,0 +1,265 @@
+---
+pagination:
+  data: salaryData.countries
+  size: 1
+  alias: country
+permalink: "/tools/salary-calculator/{{ country.slug }}/index.html"
+layout: layouts/base.njk
+eleventyComputed:
+  title: "{{ country.name }} Salary After Tax Calculator | Take-Home Pay {{ country.name }}"
+  description: "Calculate your take-home salary in {{ country.name }}. See income tax, social security deductions, and net pay for any gross salary. Average tech salaries: Junior {{ country.currencySymbol }}{{ country.avgTechSalary.junior | localeString }}, Senior {{ country.currencySymbol }}{{ country.avgTechSalary.senior | localeString }}."
+---
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the income tax rate in {{ country.name }}?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ country.name }} uses progressive tax brackets. {{ country.notes }}"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the average tech salary in {{ country.name }}?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Average tech salaries in {{ country.name }}: Junior {{ country.currencySymbol }}{{ country.avgTechSalary.junior }}, Mid-level {{ country.currencySymbol }}{{ country.avgTechSalary.mid }}, Senior {{ country.currencySymbol }}{{ country.avgTechSalary.senior }}."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much tax do I pay on {{ country.currencySymbol }}75,000 in {{ country.name }}?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use our salary calculator above to get an exact breakdown for {{ country.currencySymbol }}75,000 in {{ country.name }}, including income tax, social security, and net take-home pay."
+      }
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+<section class="bg-gradient-to-b from-brand-50 to-white dark:from-gray-900 dark:to-gray-950 py-12">
+  <div class="max-w-3xl mx-auto px-4">
+    <nav class="text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600">Home</a>
+      <span class="mx-2">/</span>
+      <a href="/tools/" class="hover:text-brand-600">Tools</a>
+      <span class="mx-2">/</span>
+      <a href="/tools/salary-calculator/" class="hover:text-brand-600">Salary Calculator</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900 dark:text-white">{{ country.name }}</span>
+    </nav>
+
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">
+      {{ country.name }} Salary After Tax Calculator
+    </h1>
+    <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
+      Calculate your take-home pay in {{ country.name }}. Enter your gross salary to see income tax, social security deductions, and net salary.
+    </p>
+
+    {# Calculator #}
+    <div class="card p-6 mb-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Annual Gross Salary ({{ country.currencySymbol }})</label>
+          <input type="number" id="salary-input" class="input-field" placeholder="e.g. {{ country.avgTechSalary.mid }}">
+        </div>
+        <div class="flex items-end">
+          <button id="calc-btn" class="btn-primary w-full">Calculate</button>
+        </div>
+      </div>
+      <div id="result" class="hidden mt-6">
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4">
+          <div class="text-center p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+            <div class="text-xs text-gray-500 dark:text-gray-400">Gross</div>
+            <div id="r-gross" class="text-lg font-bold text-gray-900 dark:text-white"></div>
+          </div>
+          <div class="text-center p-3 bg-red-50 dark:bg-red-900/20 rounded-lg">
+            <div class="text-xs text-gray-500 dark:text-gray-400">Income Tax</div>
+            <div id="r-tax" class="text-lg font-bold text-red-600 dark:text-red-400"></div>
+          </div>
+          <div class="text-center p-3 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
+            <div class="text-xs text-gray-500 dark:text-gray-400">Social Security</div>
+            <div id="r-ss" class="text-lg font-bold text-orange-600 dark:text-orange-400"></div>
+          </div>
+          <div class="text-center p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
+            <div class="text-xs text-gray-500 dark:text-gray-400">Net Salary</div>
+            <div id="r-net" class="text-lg font-bold text-green-600 dark:text-green-400"></div>
+          </div>
+        </div>
+        <div class="text-center text-sm text-gray-600 dark:text-gray-400">
+          Monthly take-home: <strong id="r-monthly" class="text-gray-900 dark:text-white"></strong> &middot; Effective tax rate: <strong id="r-rate" class="text-gray-900 dark:text-white"></strong>
+        </div>
+        {# Visual bar #}
+        <div class="mt-4 h-6 rounded-full overflow-hidden flex">
+          <div id="bar-net" class="bg-green-500 transition-all" style="width: 0%"></div>
+          <div id="bar-tax" class="bg-red-400 transition-all" style="width: 0%"></div>
+          <div id="bar-ss" class="bg-orange-400 transition-all" style="width: 0%"></div>
+        </div>
+        <div class="flex justify-between text-xs text-gray-500 mt-1">
+          <span>Net</span><span>Tax</span><span>Social</span>
+        </div>
+      </div>
+    </div>
+
+    {# Tax Brackets #}
+    <div class="card p-6 mb-8">
+      <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-4">{{ country.name }} Tax Brackets</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+              <th class="text-left py-2 text-gray-600 dark:text-gray-400">Income Range</th>
+              <th class="text-right py-2 text-gray-600 dark:text-gray-400">Tax Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for b in country.brackets %}
+            <tr class="border-b border-gray-100 dark:border-gray-800">
+              <td class="py-2 text-gray-900 dark:text-white">
+                {{ country.currencySymbol }}{{ b.min | localeString }}
+                {% if b.max %} – {{ country.currencySymbol }}{{ b.max | localeString }}{% else %}+{% endif %}
+              </td>
+              <td class="py-2 text-right font-medium text-gray-900 dark:text-white">{{ b.rate }}%</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% if country.socialSecurity > 0 %}
+      <p class="text-sm text-gray-600 dark:text-gray-400 mt-4">Social security: {{ country.socialSecurity }}% employee contribution{% if country.socialSecurityCap %} (capped at {{ country.currencySymbol }}{{ country.socialSecurityCap | localeString }}){% endif %}</p>
+      {% endif %}
+    </div>
+
+    {# Notes #}
+    <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 p-4 rounded-r-lg mb-8">
+      <h3 class="font-semibold text-blue-800 dark:text-blue-300 mb-1">Important Notes</h3>
+      <p class="text-blue-700 dark:text-blue-400 text-sm">{{ country.notes }}</p>
+    </div>
+
+    {# Special Rules #}
+    {% if country.specialRules | length > 0 %}
+    <div class="mb-8">
+      <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Special Tax Rules for Expats</h2>
+      {% for rule in country.specialRules %}
+      <div class="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 p-4 rounded-r-lg mb-4">
+        <h3 class="font-semibold text-yellow-800 dark:text-yellow-300 mb-1">{{ rule.name }}</h3>
+        <p class="text-yellow-700 dark:text-yellow-400 text-sm mb-2">{{ rule.description }}</p>
+        <p class="text-yellow-600 dark:text-yellow-500 text-xs"><strong>Eligibility:</strong> {{ rule.eligible }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {# Average Salaries #}
+    <div class="card p-6 mb-8">
+      <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Average Tech Salaries in {{ country.name }}</h2>
+      <div class="grid grid-cols-3 gap-4 text-center">
+        <div>
+          <div class="text-sm text-gray-500 dark:text-gray-400 mb-1">Junior</div>
+          <div class="text-xl font-bold text-gray-900 dark:text-white">{{ country.currencySymbol }}{{ country.avgTechSalary.junior | localeString }}</div>
+        </div>
+        <div>
+          <div class="text-sm text-gray-500 dark:text-gray-400 mb-1">Mid-level</div>
+          <div class="text-xl font-bold text-gray-900 dark:text-white">{{ country.currencySymbol }}{{ country.avgTechSalary.mid | localeString }}</div>
+        </div>
+        <div>
+          <div class="text-sm text-gray-500 dark:text-gray-400 mb-1">Senior</div>
+          <div class="text-xl font-bold text-gray-900 dark:text-white">{{ country.currencySymbol }}{{ country.avgTechSalary.senior | localeString }}</div>
+        </div>
+      </div>
+    </div>
+
+    {# Links #}
+    <div class="flex flex-col sm:flex-row gap-3 mb-12">
+      {% if country.guideUrl %}
+      <a href="{{ country.guideUrl }}" class="btn-primary">
+        {{ country.name }} Country Guide
+        <i data-lucide="book-open" class="w-4 h-4 ml-2"></i>
+      </a>
+      {% endif %}
+      <a href="/visa-sponsored-jobs/" class="btn-secondary">
+        Browse Jobs in {{ country.name }}
+        <i data-lucide="briefcase" class="w-4 h-4 ml-2"></i>
+      </a>
+      <a href="/tools/cost-of-living/" class="btn-secondary">
+        Cost of Living
+        <i data-lucide="bar-chart-3" class="w-4 h-4 ml-2"></i>
+      </a>
+    </div>
+
+    {# FAQ #}
+    <h2 class="section-heading mb-6">Frequently Asked Questions</h2>
+    <div class="space-y-4 mb-12">
+      <div class="card p-5">
+        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">What is the income tax rate in {{ country.name }}?</h3>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">{{ country.name }} uses progressive tax brackets ranging from {{ country.brackets[0].rate }}% to {{ country.brackets[country.brackets.length - 1].rate }}%. {{ country.notes }}</p>
+      </div>
+      <div class="card p-5">
+        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">What is the average tech salary in {{ country.name }}?</h3>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">Average tech salaries: Junior {{ country.currencySymbol }}{{ country.avgTechSalary.junior | localeString }}, Mid-level {{ country.currencySymbol }}{{ country.avgTechSalary.mid | localeString }}, Senior {{ country.currencySymbol }}{{ country.avgTechSalary.senior | localeString }}.</p>
+      </div>
+    </div>
+
+    <a href="/tools/salary-calculator/" class="inline-flex items-center text-brand-600 dark:text-brand-400 hover:underline">
+      <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+      Compare all countries
+    </a>
+  </div>
+</section>
+
+<script>
+(function() {
+  var brackets = {{ country.brackets | jsonify | safe }};
+  var ssRate = {{ country.socialSecurity }};
+  var ssCap = {{ country.socialSecurityCap or 0 }};
+  var sym = "{{ country.currencySymbol }}";
+
+  function calcTax(gross) {
+    var tax = 0;
+    for (var i = 0; i < brackets.length; i++) {
+      var b = brackets[i];
+      var max = b.max || Infinity;
+      if (gross > b.min) {
+        var taxable = Math.min(gross, max) - b.min;
+        tax += taxable * (b.rate / 100);
+      }
+    }
+    return tax;
+  }
+
+  function fmt(n) {
+    return sym + Math.round(n).toLocaleString();
+  }
+
+  document.getElementById("calc-btn").addEventListener("click", function() {
+    var gross = parseFloat(document.getElementById("salary-input").value);
+    if (!gross || gross <= 0) return;
+
+    var tax = calcTax(gross);
+    var ssBase = ssCap > 0 ? Math.min(gross, ssCap) : gross;
+    var ss = ssBase * (ssRate / 100);
+    var net = gross - tax - ss;
+
+    document.getElementById("r-gross").textContent = fmt(gross);
+    document.getElementById("r-tax").textContent = "-" + fmt(tax);
+    document.getElementById("r-ss").textContent = "-" + fmt(ss);
+    document.getElementById("r-net").textContent = fmt(net);
+    document.getElementById("r-monthly").textContent = fmt(net / 12) + "/month";
+    document.getElementById("r-rate").textContent = ((1 - net / gross) * 100).toFixed(1) + "%";
+
+    document.getElementById("bar-net").style.width = (net / gross * 100) + "%";
+    document.getElementById("bar-tax").style.width = (tax / gross * 100) + "%";
+    document.getElementById("bar-ss").style.width = (ss / gross * 100) + "%";
+
+    document.getElementById("result").classList.remove("hidden");
+  });
+})();
+</script>

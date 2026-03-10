@@ -1,0 +1,190 @@
+---
+pagination:
+  data: companies
+  size: 1
+  alias: company
+permalink: "/tools/visa-checker/{{ company.slug }}/index.html"
+layout: layouts/base.njk
+eleventyComputed:
+  title: "Does {{ company.name }} Sponsor Visas? | Visa Sponsorship Check"
+  description: "Check if {{ company.name }} sponsors work visas. {{ company.name }} offers visa sponsorship in {{ company.countries | join(', ') }}. See visa types, relocation details, and open positions."
+---
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does {{ company.name }} sponsor work visas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{% if company.sponsors %}Yes, {{ company.name }} sponsors work visas in {{ company.countries | join(', ') }}. Visa types include {{ company.visaTypes | join(', ') }}.{% else %}Based on our data, {{ company.name }} does not currently sponsor work visas.{% endif %}"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does {{ company.name }} offer relocation assistance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{% if company.relocation %}Yes, {{ company.name }} offers relocation assistance. {{ company.relocationDetails }}{% else %}We do not have confirmed information about relocation assistance at {{ company.name }}.{% endif %}"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What countries does {{ company.name }} sponsor visas in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ company.name }} sponsors work visas in: {{ company.countries | join(', ') }}."
+      }
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+<section class="bg-gradient-to-b from-brand-50 to-white dark:from-gray-900 dark:to-gray-950 py-12">
+  <div class="max-w-3xl mx-auto px-4">
+    <nav class="text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600">Home</a>
+      <span class="mx-2">/</span>
+      <a href="/tools/" class="hover:text-brand-600">Tools</a>
+      <span class="mx-2">/</span>
+      <a href="/tools/visa-checker/" class="hover:text-brand-600">Visa Checker</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900 dark:text-white">{{ company.name }}</span>
+    </nav>
+
+    <div class="flex items-center gap-4 mb-6">
+      <div class="w-16 h-16 bg-gray-100 dark:bg-gray-800 rounded-xl flex items-center justify-center">
+        <i data-lucide="building-2" class="w-8 h-8 text-gray-400"></i>
+      </div>
+      <div>
+        <h1 class="text-3xl font-bold text-gray-900 dark:text-white">Does {{ company.name }} Sponsor Visas?</h1>
+        <p class="text-gray-600 dark:text-gray-400">{{ company.hq }} &middot; {{ company.industry }}</p>
+      </div>
+    </div>
+
+    {# Answer #}
+    {% if company.sponsors %}
+    <div class="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-6 rounded-r-lg mb-8">
+      <div class="flex items-center gap-3 mb-2">
+        <i data-lucide="check-circle" class="w-6 h-6 text-green-600 dark:text-green-400"></i>
+        <h2 class="text-xl font-bold text-green-800 dark:text-green-300">Yes, {{ company.name }} sponsors work visas</h2>
+      </div>
+      <p class="text-green-700 dark:text-green-400">Verified as of {{ company.verified }}. {{ company.name }} actively sponsors visas for international employees.</p>
+    </div>
+    {% else %}
+    <div class="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 rounded-r-lg mb-8">
+      <div class="flex items-center gap-3 mb-2">
+        <i data-lucide="x-circle" class="w-6 h-6 text-red-600 dark:text-red-400"></i>
+        <h2 class="text-xl font-bold text-red-800 dark:text-red-300">{{ company.name }} does not appear to sponsor visas</h2>
+      </div>
+      <p class="text-red-700 dark:text-red-400">Based on our current data. Contact the company directly for the latest information.</p>
+    </div>
+    {% endif %}
+
+    {# Details Grid #}
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+      <div class="card p-5">
+        <div class="flex items-center gap-2 mb-3">
+          <i data-lucide="globe" class="w-5 h-5 text-brand-500"></i>
+          <h3 class="font-semibold text-gray-900 dark:text-white">Countries</h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          {% for c in company.countries %}
+          <span class="badge bg-brand-100 text-brand-800 dark:bg-brand-900/30 dark:text-brand-400">{{ c }}</span>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="card p-5">
+        <div class="flex items-center gap-2 mb-3">
+          <i data-lucide="stamp" class="w-5 h-5 text-brand-500"></i>
+          <h3 class="font-semibold text-gray-900 dark:text-white">Visa Types</h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          {% for v in company.visaTypes %}
+          <span class="badge bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400">{{ v }}</span>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="card p-5">
+        <div class="flex items-center gap-2 mb-3">
+          <i data-lucide="users" class="w-5 h-5 text-brand-500"></i>
+          <h3 class="font-semibold text-gray-900 dark:text-white">Company Size</h3>
+        </div>
+        <p class="text-gray-700 dark:text-gray-300">{{ company.size }} employees</p>
+      </div>
+
+      <div class="card p-5">
+        <div class="flex items-center gap-2 mb-3">
+          <i data-lucide="plane" class="w-5 h-5 text-brand-500"></i>
+          <h3 class="font-semibold text-gray-900 dark:text-white">Relocation</h3>
+        </div>
+        {% if company.relocation %}
+        <p class="text-green-700 dark:text-green-400 text-sm">{{ company.relocationDetails }}</p>
+        {% else %}
+        <p class="text-gray-500 dark:text-gray-400 text-sm">No relocation details available.</p>
+        {% endif %}
+      </div>
+    </div>
+
+    {# Notes #}
+    {% if company.notes %}
+    <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 p-4 rounded-r-lg mb-8">
+      <p class="text-blue-800 dark:text-blue-300 text-sm">{{ company.notes }}</p>
+    </div>
+    {% endif %}
+
+    {# Actions #}
+    <div class="flex flex-col sm:flex-row gap-3 mb-12">
+      <a href="{{ company.careers }}" target="_blank" rel="noopener" class="btn-primary">
+        View Careers at {{ company.name }}
+        <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
+      </a>
+      <a href="/visa-sponsored-jobs/?q={{ company.name | urlencode }}" class="btn-secondary">
+        See {{ company.name }} Jobs on Our Board
+        <i data-lucide="search" class="w-4 h-4 ml-2"></i>
+      </a>
+    </div>
+
+    {# Related Country Guides #}
+    <h2 class="section-heading mb-4">Related Guides</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
+      {% for c in company.countries %}
+      {% set guideSlug = c | lower | replace(" ", "-") | replace("united kingdom", "uk") %}
+      <a href="/resources/country-guides/{{ guideSlug }}/" class="card p-4 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <span class="font-medium text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors">{{ c }} Country Guide</span>
+        <span class="block text-sm text-gray-500 dark:text-gray-400 mt-1">Visa info, cost of living, and more</span>
+      </a>
+      {% endfor %}
+    </div>
+
+    {# FAQ #}
+    <h2 class="section-heading mb-6">Frequently Asked Questions</h2>
+    <div class="space-y-4 mb-12">
+      <div class="card p-5">
+        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Does {{ company.name }} sponsor work visas?</h3>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">{% if company.sponsors %}Yes, {{ company.name }} sponsors work visas in {{ company.countries | join(', ') }}. They support {{ company.visaTypes | join(', ') }} visa types.{% else %}We do not have confirmed visa sponsorship data for {{ company.name }}.{% endif %}</p>
+      </div>
+      <div class="card p-5">
+        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Does {{ company.name }} offer relocation assistance?</h3>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">{% if company.relocation %}Yes. {{ company.relocationDetails }}{% else %}Contact {{ company.name }} directly for information about relocation support.{% endif %}</p>
+      </div>
+      <div class="card p-5">
+        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">How do I apply for a job at {{ company.name }}?</h3>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">Visit <a href="{{ company.careers }}" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline">{{ company.name }}'s careers page</a> or check our <a href="/visa-sponsored-jobs/?q={{ company.name | urlencode }}" class="text-brand-600 dark:text-brand-400 hover:underline">job board for current openings</a>.</p>
+      </div>
+    </div>
+
+    {# Back link #}
+    <a href="/tools/visa-checker/" class="inline-flex items-center text-brand-600 dark:text-brand-400 hover:underline">
+      <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+      Check another company
+    </a>
+  </div>
+</section>

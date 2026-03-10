@@ -1,0 +1,559 @@
+---
+layout: layouts/base.njk
+title: "Salary After Tax Calculator for Expats | Compare Take-Home Pay Across Countries"
+description: "Calculate your take-home salary in Germany, Netherlands, UK, Sweden, Ireland, Switzerland, France, Australia, Canada, and Estonia. Compare net pay across countries instantly."
+---
+
+{# Structured Data #}
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Salary After Tax Calculator for Expats",
+  "url": "{{ site.url }}/tools/salary-calculator/",
+  "description": "{{ description }}",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "publisher": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which European country has the lowest taxes for tech workers?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Estonia has one of the lowest tax burdens in the EU with a flat 20% income tax rate. Switzerland also offers competitive rates depending on the canton. The Netherlands 30% ruling can significantly reduce the effective tax rate for qualifying expats." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Netherlands 30% ruling?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The 30% ruling allows qualifying expats recruited from abroad to receive 30% of their gross salary tax-free for up to 5 years. You must have specific expertise and meet a minimum salary threshold of €46,107 (or €35,048 if under 30 with an MSc)." }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the EU Blue Card affect my taxes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The EU Blue Card itself does not provide tax benefits — you pay the standard tax rates of the country you work in. However, some countries like Germany, Netherlands, and France offer separate tax incentives for highly skilled foreign workers." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I pay social security as an expat?",
+      "acceptedAnswer": { "@type": "Answer", "text": "In most countries, yes. Social security contributions are mandatory for employed workers. Rates vary significantly: France charges ~22% employee share, while Australia and Estonia have minimal employee contributions. Some bilateral agreements prevent double contributions." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this calculator accurate?",
+      "acceptedAnswer": { "@type": "Answer", "text": "This calculator provides estimates based on standard tax brackets and rates for 2025/2026. Actual take-home pay may vary based on personal circumstances, deductions, credits, marital status, and local taxes (especially in Switzerland, Canada, and Sweden). Always consult a local tax advisor for precise calculations." }
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block head %}
+<style>
+  .tax-bar { transition: width 0.6s ease-out; }
+  .compare-col { min-width: 280px; }
+</style>
+{% endblock %}
+
+{# Hero #}
+<section class="relative overflow-hidden bg-gradient-to-br from-brand-50 via-white to-indigo-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 py-16 md:py-20">
+  <div class="max-w-4xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400">Home</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span>Tools</span>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-900 dark:text-white">Salary Calculator</span>
+    </nav>
+
+    <div class="text-center">
+      <div class="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-2xl flex items-center justify-center mx-auto mb-6">
+        <i data-lucide="calculator" class="w-8 h-8 text-green-600 dark:text-green-400"></i>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 leading-tight">
+        Salary After Tax <span class="bg-yellow-200 dark:bg-yellow-500/20 dark:text-yellow-300 px-2 inline-block -skew-x-1">Calculator</span>
+      </h1>
+      <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        Calculate your take-home pay and compare net salaries across 10 countries. Perfect for expats planning a move.
+      </p>
+    </div>
+  </div>
+</section>
+
+{# Calculator #}
+<section class="py-12">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="card p-6 md:p-8">
+      <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-6">Calculate Your Take-Home Pay</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div>
+          <label for="salary-input" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Annual Gross Salary</label>
+          <input id="salary-input" type="number" placeholder="e.g. 60000" class="input-field" min="0" step="1000">
+        </div>
+        <div>
+          <label for="country-select" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Country</label>
+          <select id="country-select" class="input-field">
+            <option value="">Select a country</option>
+            {% for country in salaryData.countries %}
+            <option value="{{ country.slug }}">{{ country.name }} ({{ country.currencySymbol }})</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="flex items-end">
+          <button id="calculate-btn" class="btn-primary w-full">
+            <i data-lucide="calculator" class="w-4 h-4 mr-2"></i>Calculate
+          </button>
+        </div>
+      </div>
+
+      {# Single result #}
+      <div id="single-result" class="hidden">
+        <div class="border-t border-gray-200 dark:border-gray-700 pt-6">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+            <div class="text-center p-4 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
+              <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Gross Salary</p>
+              <p class="text-xl font-bold text-gray-900 dark:text-white" id="res-gross">-</p>
+            </div>
+            <div class="text-center p-4 bg-red-50 dark:bg-red-900/20 rounded-xl">
+              <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Income Tax</p>
+              <p class="text-xl font-bold text-red-600 dark:text-red-400" id="res-tax">-</p>
+            </div>
+            <div class="text-center p-4 bg-orange-50 dark:bg-orange-900/20 rounded-xl">
+              <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Social Security</p>
+              <p class="text-xl font-bold text-orange-600 dark:text-orange-400" id="res-social">-</p>
+            </div>
+            <div class="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-xl">
+              <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Net Salary</p>
+              <p class="text-xl font-bold text-green-600 dark:text-green-400" id="res-net">-</p>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Tax Breakdown</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400">Effective rate: <strong id="res-effective">-</strong></span>
+            </div>
+            <div class="w-full h-8 rounded-full overflow-hidden flex bg-gray-200 dark:bg-gray-700">
+              <div id="bar-net" class="tax-bar bg-green-500 h-full" style="width:0%"></div>
+              <div id="bar-tax" class="tax-bar bg-red-400 h-full" style="width:0%"></div>
+              <div id="bar-social" class="tax-bar bg-orange-400 h-full" style="width:0%"></div>
+            </div>
+            <div class="flex items-center gap-4 mt-2 text-xs text-gray-500 dark:text-gray-400">
+              <span class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-green-500 inline-block"></span> Net</span>
+              <span class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-red-400 inline-block"></span> Income Tax</span>
+              <span class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-orange-400 inline-block"></span> Social Security</span>
+            </div>
+          </div>
+
+          <div id="res-monthly" class="p-4 bg-brand-50 dark:bg-brand-900/20 rounded-xl mb-4">
+            <p class="text-sm text-gray-600 dark:text-gray-400">Monthly take-home: <strong class="text-gray-900 dark:text-white" id="res-monthly-val">-</strong></p>
+          </div>
+
+          <div id="res-special-rules" class="hidden mb-4"></div>
+
+          <div id="res-avg-salary" class="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-xl mb-4">
+            <p class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Average Tech Salaries in <span id="res-country-name">-</span></p>
+            <div class="grid grid-cols-3 gap-3 text-center">
+              <div>
+                <p class="text-xs text-gray-500 dark:text-gray-400">Junior</p>
+                <p class="font-semibold text-gray-900 dark:text-white" id="avg-junior">-</p>
+              </div>
+              <div>
+                <p class="text-xs text-gray-500 dark:text-gray-400">Mid-level</p>
+                <p class="font-semibold text-gray-900 dark:text-white" id="avg-mid">-</p>
+              </div>
+              <div>
+                <p class="text-xs text-gray-500 dark:text-gray-400">Senior</p>
+                <p class="font-semibold text-gray-900 dark:text-white" id="avg-senior">-</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="res-guide-link" class="hidden">
+            <a id="guide-link-anchor" href="#" class="text-sm text-brand-600 dark:text-brand-400 hover:underline flex items-center gap-1">
+              <i data-lucide="book-open" class="w-4 h-4"></i>
+              Read the full country guide
+            </a>
+          </div>
+
+          <p class="text-xs text-gray-400 dark:text-gray-500 mt-4" id="res-notes"></p>
+        </div>
+      </div>
+    </div>
+
+    {# Comparison Mode #}
+    <div class="card p-6 md:p-8 mt-8">
+      <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Compare Countries Side-by-Side</h2>
+      <p class="text-sm text-gray-600 dark:text-gray-400 mb-6">Enter a salary and select up to 3 countries to compare net pay.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+        <div>
+          <label for="compare-salary" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Gross Salary</label>
+          <input id="compare-salary" type="number" placeholder="e.g. 70000" class="input-field" min="0" step="1000">
+        </div>
+        <div>
+          <label for="compare-c1" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Country 1</label>
+          <select id="compare-c1" class="input-field">
+            <option value="">Select</option>
+            {% for country in salaryData.countries %}
+            <option value="{{ country.slug }}">{{ country.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div>
+          <label for="compare-c2" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Country 2</label>
+          <select id="compare-c2" class="input-field">
+            <option value="">Select</option>
+            {% for country in salaryData.countries %}
+            <option value="{{ country.slug }}">{{ country.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div>
+          <label for="compare-c3" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Country 3 <span class="text-gray-400">(optional)</span></label>
+          <select id="compare-c3" class="input-field">
+            <option value="">Select</option>
+            {% for country in salaryData.countries %}
+            <option value="{{ country.slug }}">{{ country.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+
+      <button id="compare-btn" class="btn-primary">
+        <i data-lucide="bar-chart-3" class="w-4 h-4 mr-2"></i>Compare
+      </button>
+
+      <div id="compare-results" class="hidden mt-8">
+        <div id="compare-cards" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+
+        <div class="mt-8">
+          <h3 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-4">Net Salary Comparison</h3>
+          <div id="compare-bars" class="space-y-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# Related Links #}
+<section class="py-12 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="section-heading mb-6">Explore Country Guides</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      {% set destinations = [
+        { name: "Germany", emoji: "🇩🇪", slug: "germany" },
+        { name: "United Kingdom", emoji: "🇬🇧", slug: "uk" },
+        { name: "Netherlands", emoji: "🇳🇱", slug: "netherlands" },
+        { name: "Sweden", emoji: "🇸🇪", slug: "sweden" },
+        { name: "Ireland", emoji: "🇮🇪", slug: "ireland" },
+        { name: "Switzerland", emoji: "🇨🇭", slug: "switzerland" },
+        { name: "Canada", emoji: "🇨🇦", slug: "canada" },
+        { name: "Australia", emoji: "🇦🇺", slug: "australia" }
+      ] %}
+      {% for d in destinations %}
+      <a href="/resources/country-guides/{{ d.slug }}/" class="card p-4 text-center hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="text-3xl mb-1">{{ d.emoji }}</div>
+        <div class="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">{{ d.name }}</div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# FAQ #}
+<section class="py-16">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="section-heading text-center mb-10">Frequently Asked Questions</h2>
+    <div class="space-y-4" id="faq-list">
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Which European country has the lowest taxes for tech workers?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>Estonia has one of the lowest tax burdens in the EU with a flat 20% income tax rate. Switzerland also offers competitive rates depending on the canton. The Netherlands <a href="/resources/country-guides/netherlands/">30% ruling</a> can significantly reduce the effective tax rate for qualifying expats.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">What is the Netherlands 30% ruling?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>The 30% ruling allows qualifying expats recruited from abroad to receive 30% of their gross salary tax-free for up to 5 years. You must have specific expertise and meet a minimum salary threshold of &euro;46,107 (or &euro;35,048 if under 30 with an MSc). Learn more in our <a href="/resources/country-guides/netherlands/">Netherlands guide</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">How does the EU Blue Card affect my taxes?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>The EU Blue Card itself does not provide tax benefits — you pay the standard tax rates of the country you work in. However, some countries like Germany, Netherlands, and France offer separate tax incentives for highly skilled foreign workers. See our <a href="/resources/country-guides/germany/">Germany guide</a> for details.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Do I pay social security as an expat?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>In most countries, yes. Social security contributions are mandatory for employed workers. Rates vary significantly: France charges ~22% employee share, while Australia and Estonia have minimal employee contributions. Some bilateral agreements prevent double contributions.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Is this calculator accurate?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>This calculator provides estimates based on standard tax brackets and rates for 2025/2026. Actual take-home pay may vary based on personal circumstances, deductions, credits, marital status, and local taxes (especially in Switzerland, Canada, and Sweden). Always consult a local tax advisor for precise calculations.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{# Share #}
+<section class="py-12 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h2 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Share this tool</h2>
+    <div class="flex items-center justify-center gap-4">
+      <a href="https://twitter.com/intent/tweet?text=Compare%20your%20salary%20after%20tax%20across%2010%20countries%20with%20this%20free%20calculator&url={{ site.url }}/tools/salary-calculator/" target="_blank" rel="noopener" class="btn-secondary text-sm">
+        <i data-lucide="twitter" class="w-4 h-4 mr-2"></i>Share on X
+      </a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}/tools/salary-calculator/" target="_blank" rel="noopener" class="btn-secondary text-sm">
+        <i data-lucide="linkedin" class="w-4 h-4 mr-2"></i>Share on LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+{% block scripts %}
+<script>
+(function() {
+  var salaryData = {{ salaryData | jsonify | safe }};
+  var countriesMap = {};
+  salaryData.countries.forEach(function(c) { countriesMap[c.slug] = c; });
+
+  function calculateTax(gross, brackets) {
+    var tax = 0;
+    for (var i = 0; i < brackets.length; i++) {
+      var b = brackets[i];
+      var max = b.max || Infinity;
+      if (gross > b.min) {
+        var taxable = Math.min(gross, max) - b.min;
+        tax += taxable * (b.rate / 100);
+      }
+    }
+    return tax;
+  }
+
+  function calculateSocial(gross, country) {
+    if (!country.socialSecurity) return 0;
+    var base = gross;
+    if (country.socialSecurityCap) {
+      base = Math.min(gross, country.socialSecurityCap);
+    }
+    if (country.slug === 'uk') {
+      var social = 0;
+      var min = country.socialSecurityMin || 0;
+      var max = country.socialSecurityMax || Infinity;
+      if (gross > min) {
+        social += (Math.min(gross, max) - min) * (country.socialSecurity / 100);
+      }
+      if (gross > max && country.socialSecurityAbove) {
+        social += (gross - max) * (country.socialSecurityAbove / 100);
+      }
+      return social;
+    }
+    return base * (country.socialSecurity / 100);
+  }
+
+  function calculateUSC(gross, uscBrackets) {
+    if (!uscBrackets) return 0;
+    var usc = 0;
+    for (var i = 0; i < uscBrackets.length; i++) {
+      var b = uscBrackets[i];
+      var max = b.max || Infinity;
+      if (gross > b.min) {
+        var taxable = Math.min(gross, max) - b.min;
+        usc += taxable * (b.rate / 100);
+      }
+    }
+    return usc;
+  }
+
+  function fullCalc(gross, countrySlug) {
+    var c = countriesMap[countrySlug];
+    if (!c) return null;
+    var incomeTax = calculateTax(gross, c.brackets);
+    var socialSec = calculateSocial(gross, c);
+    var usc = calculateUSC(gross, c.usc);
+    var totalDeductions = incomeTax + socialSec + usc;
+    var net = gross - totalDeductions;
+    return {
+      country: c,
+      gross: gross,
+      incomeTax: incomeTax,
+      socialSecurity: socialSec + usc,
+      net: Math.max(0, net),
+      effectiveRate: gross > 0 ? ((totalDeductions / gross) * 100) : 0
+    };
+  }
+
+  function fmt(val, symbol) {
+    return symbol + Math.round(val).toLocaleString();
+  }
+
+  // Single calculation
+  var calcBtn = document.getElementById('calculate-btn');
+  calcBtn.addEventListener('click', function() {
+    var gross = parseFloat(document.getElementById('salary-input').value);
+    var slug = document.getElementById('country-select').value;
+    if (!gross || !slug) return;
+
+    var result = fullCalc(gross, slug);
+    if (!result) return;
+    var c = result.country;
+    var s = c.currencySymbol;
+
+    document.getElementById('res-gross').textContent = fmt(result.gross, s);
+    document.getElementById('res-tax').textContent = '-' + fmt(result.incomeTax, s);
+    document.getElementById('res-social').textContent = '-' + fmt(result.socialSecurity, s);
+    document.getElementById('res-net').textContent = fmt(result.net, s);
+    document.getElementById('res-effective').textContent = result.effectiveRate.toFixed(1) + '%';
+    document.getElementById('res-monthly-val').textContent = fmt(result.net / 12, s) + '/month';
+
+    var netPct = (result.net / result.gross * 100).toFixed(1);
+    var taxPct = (result.incomeTax / result.gross * 100).toFixed(1);
+    var socPct = (result.socialSecurity / result.gross * 100).toFixed(1);
+    document.getElementById('bar-net').style.width = netPct + '%';
+    document.getElementById('bar-tax').style.width = taxPct + '%';
+    document.getElementById('bar-social').style.width = socPct + '%';
+
+    document.getElementById('res-country-name').textContent = c.name;
+    document.getElementById('avg-junior').textContent = fmt(c.avgTechSalary.junior, s);
+    document.getElementById('avg-mid').textContent = fmt(c.avgTechSalary.mid, s);
+    document.getElementById('avg-senior').textContent = fmt(c.avgTechSalary.senior, s);
+    document.getElementById('res-notes').textContent = c.notes || '';
+
+    var specialDiv = document.getElementById('res-special-rules');
+    if (c.specialRules && c.specialRules.length > 0) {
+      var html = '';
+      c.specialRules.forEach(function(rule) {
+        html += '<div class="p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-xl border border-yellow-200 dark:border-yellow-800 mb-3">' +
+          '<p class="font-semibold text-yellow-800 dark:text-yellow-300 mb-1 flex items-center gap-2"><i data-lucide="sparkles" class="w-4 h-4"></i>' + rule.name + '</p>' +
+          '<p class="text-sm text-yellow-700 dark:text-yellow-400">' + rule.description + '</p>' +
+          '<p class="text-xs text-yellow-600 dark:text-yellow-500 mt-1">Eligibility: ' + rule.eligible + '</p></div>';
+      });
+      specialDiv.innerHTML = html;
+      specialDiv.classList.remove('hidden');
+    } else {
+      specialDiv.classList.add('hidden');
+    }
+
+    var guideDiv = document.getElementById('res-guide-link');
+    if (c.guideUrl) {
+      document.getElementById('guide-link-anchor').href = c.guideUrl;
+      guideDiv.classList.remove('hidden');
+    } else {
+      guideDiv.classList.add('hidden');
+    }
+
+    document.getElementById('single-result').classList.remove('hidden');
+    if (window.lucide) lucide.createIcons();
+  });
+
+  // Comparison
+  var compareBtn = document.getElementById('compare-btn');
+  compareBtn.addEventListener('click', function() {
+    var gross = parseFloat(document.getElementById('compare-salary').value);
+    var slugs = [
+      document.getElementById('compare-c1').value,
+      document.getElementById('compare-c2').value,
+      document.getElementById('compare-c3').value
+    ].filter(Boolean);
+
+    if (!gross || slugs.length < 2) return;
+
+    var results = slugs.map(function(slug) { return fullCalc(gross, slug); }).filter(Boolean);
+    if (results.length < 2) return;
+
+    var maxNet = Math.max.apply(null, results.map(function(r) { return r.net; }));
+
+    var cardsHtml = results.map(function(r) {
+      var s = r.country.currencySymbol;
+      var isBest = r.net === maxNet;
+      return '<div class="card p-6 compare-col' + (isBest ? ' ring-2 ring-green-500' : '') + '">' +
+        (isBest ? '<span class="badge badge-visa mb-3">Best Net Pay</span>' : '') +
+        '<h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">' + r.country.name + '</h3>' +
+        '<div class="space-y-3">' +
+          '<div class="flex justify-between"><span class="text-sm text-gray-500 dark:text-gray-400">Gross</span><span class="font-medium text-gray-900 dark:text-white">' + fmt(r.gross, s) + '</span></div>' +
+          '<div class="flex justify-between"><span class="text-sm text-gray-500 dark:text-gray-400">Income Tax</span><span class="font-medium text-red-600 dark:text-red-400">-' + fmt(r.incomeTax, s) + '</span></div>' +
+          '<div class="flex justify-between"><span class="text-sm text-gray-500 dark:text-gray-400">Social Security</span><span class="font-medium text-orange-600 dark:text-orange-400">-' + fmt(r.socialSecurity, s) + '</span></div>' +
+          '<div class="border-t border-gray-200 dark:border-gray-700 pt-3 flex justify-between"><span class="text-sm font-semibold text-gray-700 dark:text-gray-300">Net Salary</span><span class="text-xl font-bold text-green-600 dark:text-green-400">' + fmt(r.net, s) + '</span></div>' +
+          '<div class="flex justify-between"><span class="text-sm text-gray-500 dark:text-gray-400">Effective Rate</span><span class="font-medium text-gray-900 dark:text-white">' + r.effectiveRate.toFixed(1) + '%</span></div>' +
+          '<div class="flex justify-between"><span class="text-sm text-gray-500 dark:text-gray-400">Monthly Net</span><span class="font-medium text-gray-900 dark:text-white">' + fmt(r.net / 12, s) + '</span></div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+    document.getElementById('compare-cards').innerHTML = cardsHtml;
+
+    var barsMaxNet = Math.max.apply(null, results.map(function(r) { return r.net; }));
+    var barsHtml = results.map(function(r) {
+      var pct = barsMaxNet > 0 ? (r.net / barsMaxNet * 100) : 0;
+      return '<div class="flex items-center gap-4">' +
+        '<span class="text-sm font-medium text-gray-700 dark:text-gray-300 w-28 shrink-0">' + r.country.name + '</span>' +
+        '<div class="flex-1 bg-gray-200 dark:bg-gray-700 rounded-full h-6 overflow-hidden">' +
+          '<div class="tax-bar bg-green-500 h-full rounded-full flex items-center justify-end pr-2" style="width:' + pct + '%">' +
+            '<span class="text-xs font-medium text-white">' + fmt(r.net, r.country.currencySymbol) + '</span>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+    document.getElementById('compare-bars').innerHTML = barsHtml;
+
+    document.getElementById('compare-results').classList.remove('hidden');
+    if (window.lucide) lucide.createIcons();
+  });
+
+  // FAQ toggles
+  document.querySelectorAll('.faq-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = btn.closest('.faq-item');
+      var content = item.querySelector('.faq-content');
+      var icon = item.querySelector('.faq-icon');
+      var isOpen = !content.classList.contains('hidden');
+      content.classList.toggle('hidden', isOpen);
+      icon.style.transform = isOpen ? '' : 'rotate(180deg)';
+      btn.setAttribute('aria-expanded', !isOpen);
+    });
+  });
+})();
+</script>
+{% endblock %}

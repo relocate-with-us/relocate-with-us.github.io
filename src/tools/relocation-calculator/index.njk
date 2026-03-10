@@ -1,0 +1,598 @@
+---
+layout: layouts/base.njk
+title: "Relocation Cost Estimator | How Much Does It Cost to Move Abroad?"
+description: "Estimate the total cost of relocating internationally. Calculate visa fees, flights, housing deposits, health insurance, and more for your move abroad."
+---
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Relocation Cost Estimator",
+      "url": "{{ site.url }}/tools/relocation-calculator/",
+      "description": "{{ description }}",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "publisher": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does it cost to relocate abroad for a tech job?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The total cost of relocating abroad for a tech job typically ranges from €5,000 to €25,000 depending on the destination city, family size, and shipping needs. Major cost factors include flights (€400-€1,200), first month rent plus deposit (2-3 months rent), visa fees (€100-€2,500), health insurance, and initial living expenses."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should my employer cover in a relocation package?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A good employer relocation package typically covers visa sponsorship fees, flights for you and your family, temporary housing (1-3 months), moving or shipping allowance, and sometimes a lump-sum relocation bonus. Top companies like Zalando, Booking.com, and Spotify offer comprehensive packages."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I reduce the cost of relocating abroad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can reduce relocation costs by negotiating a better relocation package, shipping only essentials, staying in temporary furnished housing before committing to a lease, using shared housing initially, and taking advantage of tax benefits like the Netherlands 30% ruling or Germany's relocation expense deductions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much emergency fund should I have when relocating?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Financial advisors recommend having at least 2-3 months of living expenses saved as an emergency fund when relocating abroad. This covers unexpected costs, delays in first salary payment, and provides a safety net while you settle into your new city."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+<section class="bg-gradient-to-br from-brand-50 via-white to-emerald-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 py-16">
+  <div class="max-w-4xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400">Home</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-600 dark:text-gray-300">Tools</span>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-900 dark:text-white">Relocation Cost Estimator</span>
+    </nav>
+    <div class="flex items-center gap-4 mb-4">
+      <div class="w-14 h-14 bg-emerald-100 dark:bg-emerald-900/30 rounded-2xl flex items-center justify-center">
+        <i data-lucide="calculator" class="w-7 h-7 text-emerald-600 dark:text-emerald-400"></i>
+      </div>
+      <div>
+        <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white">Relocation Cost Estimator</h1>
+        <p class="text-gray-600 dark:text-gray-400 mt-1">Calculate the true cost of moving abroad</p>
+      </div>
+    </div>
+    <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl">
+      Planning an international move? Use our calculator to estimate visa fees, flights, housing deposits, insurance, and living expenses for your destination city.
+    </p>
+  </div>
+</section>
+
+<section class="py-12">
+  <div class="max-w-4xl mx-auto px-4">
+    <div id="calculator-form" class="card p-6 md:p-8">
+      <div id="step-indicators" class="flex items-center justify-between mb-8">
+        <div class="flex items-center gap-2">
+          <span class="step-dot active w-8 h-8 rounded-full bg-brand-600 text-white flex items-center justify-center text-sm font-semibold" data-step="1">1</span>
+          <span class="text-sm font-medium text-gray-900 dark:text-white hidden sm:inline">Destination</span>
+        </div>
+        <div class="flex-1 h-0.5 bg-gray-200 dark:bg-gray-700 mx-2"></div>
+        <div class="flex items-center gap-2">
+          <span class="step-dot w-8 h-8 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-500 flex items-center justify-center text-sm font-semibold" data-step="2">2</span>
+          <span class="text-sm font-medium text-gray-500 hidden sm:inline">Origin</span>
+        </div>
+        <div class="flex-1 h-0.5 bg-gray-200 dark:bg-gray-700 mx-2"></div>
+        <div class="flex items-center gap-2">
+          <span class="step-dot w-8 h-8 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-500 flex items-center justify-center text-sm font-semibold" data-step="3">3</span>
+          <span class="text-sm font-medium text-gray-500 hidden sm:inline">Family</span>
+        </div>
+        <div class="flex-1 h-0.5 bg-gray-200 dark:bg-gray-700 mx-2"></div>
+        <div class="flex items-center gap-2">
+          <span class="step-dot w-8 h-8 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-500 flex items-center justify-center text-sm font-semibold" data-step="4">4</span>
+          <span class="text-sm font-medium text-gray-500 hidden sm:inline">Shipping</span>
+        </div>
+      </div>
+
+      {# Step 1: Destination #}
+      <div id="step-1" class="step-panel">
+        <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Where are you moving to?</h2>
+        <p class="text-gray-600 dark:text-gray-400 mb-6">Select your destination city to calculate local costs.</p>
+        <label for="destination" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Destination City</label>
+        <select id="destination" class="input-field w-full">
+          <option value="">Select a city...</option>
+          {% for city in costOfLiving.cities %}
+          <option value="{{ city.slug }}">{{ city.emoji }} {{ city.name }}, {{ city.country }}</option>
+          {% endfor %}
+        </select>
+        <div class="flex justify-end mt-8">
+          <button type="button" class="btn-primary step-next" data-next="2" disabled>Next <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i></button>
+        </div>
+      </div>
+
+      {# Step 2: Origin #}
+      <div id="step-2" class="step-panel hidden">
+        <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Where are you moving from?</h2>
+        <p class="text-gray-600 dark:text-gray-400 mb-6">Your origin region helps us estimate flight costs.</p>
+        <label for="origin" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Origin Region</label>
+        <select id="origin" class="input-field w-full">
+          <option value="">Select a region...</option>
+          <option value="europe">Europe</option>
+          <option value="asia">Asia</option>
+          <option value="north-america">North America</option>
+          <option value="south-america">South America</option>
+          <option value="africa">Africa</option>
+          <option value="middle-east">Middle East</option>
+          <option value="oceania">Oceania</option>
+        </select>
+        <div class="flex justify-between mt-8">
+          <button type="button" class="btn-secondary step-prev" data-prev="1"><i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i> Back</button>
+          <button type="button" class="btn-primary step-next" data-next="3" disabled>Next <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i></button>
+        </div>
+      </div>
+
+      {# Step 3: Family #}
+      <div id="step-3" class="step-panel hidden">
+        <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Who's coming with you?</h2>
+        <p class="text-gray-600 dark:text-gray-400 mb-6">Family size affects housing, insurance, and flight costs.</p>
+        <label for="family" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Family Size</label>
+        <select id="family" class="input-field w-full">
+          <option value="single">Single</option>
+          <option value="couple">Couple</option>
+          <option value="family">Family with kids</option>
+        </select>
+        <div id="kids-input" class="mt-4 hidden">
+          <label for="kids-count" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Number of children</label>
+          <input type="number" id="kids-count" class="input-field w-full" min="1" max="6" value="1">
+        </div>
+        <div class="flex justify-between mt-8">
+          <button type="button" class="btn-secondary step-prev" data-prev="2"><i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i> Back</button>
+          <button type="button" class="btn-primary step-next" data-next="4">Next <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i></button>
+        </div>
+      </div>
+
+      {# Step 4: Shipping #}
+      <div id="step-4" class="step-panel hidden">
+        <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-2">How much are you bringing?</h2>
+        <p class="text-gray-600 dark:text-gray-400 mb-6">Shipping costs vary dramatically based on volume.</p>
+        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">Shipping Needs</label>
+        <div class="space-y-3">
+          <label class="flex items-start gap-3 p-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 cursor-pointer hover:border-brand-300 dark:hover:border-brand-600 transition-colors shipping-option">
+            <input type="radio" name="shipping" value="minimal" class="mt-1" checked>
+            <div>
+              <span class="font-semibold text-gray-900 dark:text-white">Minimal — suitcases only</span>
+              <p class="text-sm text-gray-500 dark:text-gray-400">Just personal items and carry-on luggage</p>
+            </div>
+          </label>
+          <label class="flex items-start gap-3 p-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 cursor-pointer hover:border-brand-300 dark:hover:border-brand-600 transition-colors shipping-option">
+            <input type="radio" name="shipping" value="medium" class="mt-1">
+            <div>
+              <span class="font-semibold text-gray-900 dark:text-white">Medium — some boxes</span>
+              <p class="text-sm text-gray-500 dark:text-gray-400">A few boxes of personal belongings and small items</p>
+            </div>
+          </label>
+          <label class="flex items-start gap-3 p-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 cursor-pointer hover:border-brand-300 dark:hover:border-brand-600 transition-colors shipping-option">
+            <input type="radio" name="shipping" value="full" class="mt-1">
+            <div>
+              <span class="font-semibold text-gray-900 dark:text-white">Full household move</span>
+              <p class="text-sm text-gray-500 dark:text-gray-400">Furniture, appliances, and full household contents</p>
+            </div>
+          </label>
+        </div>
+        <div class="flex justify-between mt-8">
+          <button type="button" class="btn-secondary step-prev" data-prev="3"><i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i> Back</button>
+          <button type="button" id="calculate-btn" class="btn-primary">
+            <i data-lucide="calculator" class="w-4 h-4 mr-2"></i> Calculate Costs
+          </button>
+        </div>
+      </div>
+    </div>
+
+    {# Results #}
+    <div id="results" class="hidden mt-8 space-y-6">
+      <div class="card p-6 md:p-8">
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Your Estimated Relocation Costs</h2>
+          <button type="button" id="recalculate-btn" class="btn-secondary text-sm">
+            <i data-lucide="refresh-cw" class="w-4 h-4 mr-1"></i> Recalculate
+          </button>
+        </div>
+        <div id="result-summary" class="mb-6 p-4 bg-brand-50 dark:bg-brand-900/20 rounded-xl border border-brand-200 dark:border-brand-800">
+          <p class="text-sm text-brand-700 dark:text-brand-300" id="result-summary-text"></p>
+        </div>
+        <div id="cost-breakdown" class="space-y-4"></div>
+        <div id="cost-total" class="mt-6 pt-6 border-t-2 border-gray-200 dark:border-gray-700"></div>
+      </div>
+
+      {# Employer Coverage #}
+      <div class="card p-6 md:p-8">
+        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+          <i data-lucide="building-2" class="w-5 h-5 text-brand-600 dark:text-brand-400"></i>
+          What Your Employer Should Cover
+        </h3>
+        <p class="text-gray-600 dark:text-gray-400 mb-4">Top visa-sponsoring companies typically include these in their relocation package:</p>
+        <div class="grid sm:grid-cols-2 gap-3">
+          <label class="flex items-center gap-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-800/50">
+            <input type="checkbox" checked disabled class="w-4 h-4 text-brand-600">
+            <span class="text-gray-700 dark:text-gray-300">Visa sponsorship fees</span>
+          </label>
+          <label class="flex items-center gap-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-800/50">
+            <input type="checkbox" checked disabled class="w-4 h-4 text-brand-600">
+            <span class="text-gray-700 dark:text-gray-300">Flight tickets (you + family)</span>
+          </label>
+          <label class="flex items-center gap-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-800/50">
+            <input type="checkbox" checked disabled class="w-4 h-4 text-brand-600">
+            <span class="text-gray-700 dark:text-gray-300">Temporary housing (1-3 months)</span>
+          </label>
+          <label class="flex items-center gap-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-800/50">
+            <input type="checkbox" checked disabled class="w-4 h-4 text-brand-600">
+            <span class="text-gray-700 dark:text-gray-300">Moving / shipping allowance</span>
+          </label>
+          <label class="flex items-center gap-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-800/50">
+            <input type="checkbox" disabled class="w-4 h-4">
+            <span class="text-gray-700 dark:text-gray-300">Lump-sum relocation bonus</span>
+          </label>
+          <label class="flex items-center gap-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-800/50">
+            <input type="checkbox" disabled class="w-4 h-4">
+            <span class="text-gray-700 dark:text-gray-300">Language courses</span>
+          </label>
+          <label class="flex items-center gap-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-800/50">
+            <input type="checkbox" disabled class="w-4 h-4">
+            <span class="text-gray-700 dark:text-gray-300">Real estate agent assistance</span>
+          </label>
+          <label class="flex items-center gap-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-800/50">
+            <input type="checkbox" disabled class="w-4 h-4">
+            <span class="text-gray-700 dark:text-gray-300">Tax advice / filing support</span>
+          </label>
+        </div>
+        <p class="mt-4 text-sm text-gray-500 dark:text-gray-400">
+          <i data-lucide="info" class="w-4 h-4 inline mr-1"></i>
+          Always negotiate your relocation package — many companies are flexible. Browse
+          <a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">companies that sponsor visas</a>.
+        </p>
+      </div>
+
+      {# Tips #}
+      <div class="card p-6 md:p-8">
+        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+          <i data-lucide="lightbulb" class="w-5 h-5 text-amber-500"></i>
+          Tips for Reducing Relocation Costs
+        </h3>
+        <div class="space-y-4">
+          <div class="flex gap-3">
+            <span class="shrink-0 w-7 h-7 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center text-sm font-bold text-emerald-700 dark:text-emerald-400">1</span>
+            <div>
+              <p class="font-medium text-gray-900 dark:text-white">Negotiate before signing</p>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Ask for relocation support during offer negotiations. Even companies without formal packages may offer a lump sum.</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <span class="shrink-0 w-7 h-7 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center text-sm font-bold text-emerald-700 dark:text-emerald-400">2</span>
+            <div>
+              <p class="font-medium text-gray-900 dark:text-white">Sell furniture, buy local</p>
+              <p class="text-sm text-gray-600 dark:text-gray-400">International shipping is expensive. Sell large items and buy second-hand at your destination (Facebook Marketplace, eBay Kleinanzeigen).</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <span class="shrink-0 w-7 h-7 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center text-sm font-bold text-emerald-700 dark:text-emerald-400">3</span>
+            <div>
+              <p class="font-medium text-gray-900 dark:text-white">Use temporary housing first</p>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Don't commit to a long-term lease remotely. Use furnished short-term rentals for 1-2 months while you explore neighborhoods.</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <span class="shrink-0 w-7 h-7 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center text-sm font-bold text-emerald-700 dark:text-emerald-400">4</span>
+            <div>
+              <p class="font-medium text-gray-900 dark:text-white">Take advantage of tax benefits</p>
+              <p class="text-sm text-gray-600 dark:text-gray-400">The Netherlands 30% ruling, Germany's relocation deductions, and France's expat tax regime can save you thousands per year.</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <span class="shrink-0 w-7 h-7 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center text-sm font-bold text-emerald-700 dark:text-emerald-400">5</span>
+            <div>
+              <p class="font-medium text-gray-900 dark:text-white">Open a local bank account early</p>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Use services like <a href="/visa-sponsored-jobs/?q=wise" class="text-brand-600 dark:text-brand-400 hover:underline">Wise</a> or N26 to avoid costly international transfer fees during the transition.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {# Links #}
+      <div class="grid sm:grid-cols-2 gap-4">
+        <a href="/resources/country-guides/" class="card p-5 flex items-center gap-4 hover:border-brand-300 dark:hover:border-brand-600 transition-colors group">
+          <div class="w-10 h-10 bg-brand-100 dark:bg-brand-900/30 rounded-xl flex items-center justify-center">
+            <i data-lucide="map" class="w-5 h-5 text-brand-600 dark:text-brand-400"></i>
+          </div>
+          <div class="flex-1">
+            <p class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600">Country Guides</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Detailed guides for each destination</p>
+          </div>
+          <i data-lucide="arrow-right" class="w-4 h-4 text-gray-400 group-hover:text-brand-600 transition-colors"></i>
+        </a>
+        <a href="/visa-sponsored-jobs/" class="card p-5 flex items-center gap-4 hover:border-brand-300 dark:hover:border-brand-600 transition-colors group">
+          <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl flex items-center justify-center">
+            <i data-lucide="briefcase" class="w-5 h-5 text-emerald-600 dark:text-emerald-400"></i>
+          </div>
+          <div class="flex-1">
+            <p class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600">Browse Jobs</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Find visa-sponsored positions</p>
+          </div>
+          <i data-lucide="arrow-right" class="w-4 h-4 text-gray-400 group-hover:text-brand-600 transition-colors"></i>
+        </a>
+      </div>
+
+      {# Share #}
+      <div class="flex items-center gap-3 justify-center pt-4">
+        <span class="text-sm text-gray-500 dark:text-gray-400">Share this tool:</span>
+        <a href="https://twitter.com/intent/tweet?url={{ site.url }}/tools/relocation-calculator/&text=Calculate%20the%20true%20cost%20of%20relocating%20abroad%20with%20this%20free%20tool" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-brand-100 dark:hover:bg-brand-900/30 transition-colors">
+          <i data-lucide="twitter" class="w-4 h-4 text-gray-600 dark:text-gray-400"></i>
+        </a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}/tools/relocation-calculator/" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-brand-100 dark:hover:bg-brand-900/30 transition-colors">
+          <i data-lucide="linkedin" class="w-4 h-4 text-gray-600 dark:text-gray-400"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# FAQ #}
+<section class="py-16 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="section-heading text-center mb-8">Frequently Asked Questions</h2>
+    <div class="space-y-4" id="faq-list">
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">How much does it cost to relocate abroad for a tech job?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <p class="text-gray-600 dark:text-gray-400">The total cost typically ranges from €5,000 to €25,000 depending on the destination city, family size, and shipping needs. Major cost factors include flights (€400–€1,200), first month rent plus deposit (2-3 months rent), visa fees (€100–€2,500), health insurance, and initial living expenses. Cities like Tallinn and Krakow are on the lower end, while London, Zurich, and Sydney are significantly more expensive.</p>
+        </div>
+      </div>
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">What should my employer cover in a relocation package?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <p class="text-gray-600 dark:text-gray-400">A good relocation package typically covers visa sponsorship fees, flights for you and your family, temporary housing (1-3 months), a moving or shipping allowance, and sometimes a lump-sum relocation bonus. Companies like Zalando, Booking.com, Mollie, and Spotify offer comprehensive packages. Always negotiate — many companies are flexible even if the initial offer seems fixed.</p>
+        </div>
+      </div>
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">How can I reduce the cost of relocating abroad?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <p class="text-gray-600 dark:text-gray-400">Negotiate a better relocation package, ship only essentials (sell furniture and buy locally), stay in temporary furnished housing before committing to a lease, and take advantage of tax benefits like the Netherlands 30% ruling or Germany's relocation expense deductions. Using services like Wise for money transfers also saves on international fees.</p>
+        </div>
+      </div>
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">How much emergency fund should I have when relocating?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <p class="text-gray-600 dark:text-gray-400">Financial advisors recommend having at least 2-3 months of living expenses saved. This covers unexpected costs, delays in your first salary payment, security deposits, and provides a safety net while you settle into your new city. The exact amount depends on your destination — budget €3,000–€5,000 for affordable cities and €8,000–€15,000 for expensive ones.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% block scripts %}
+<script>
+(function() {
+  var cities = {{ costOfLiving.cities | jsonify | safe }};
+  var visaTypes = {{ visaTypes | jsonify | safe }};
+
+  var flightCosts = {
+    'europe': { base: 200, label: 'Within Europe' },
+    'asia': { base: 600, label: 'Asia' },
+    'north-america': { base: 800, label: 'North America' },
+    'south-america': { base: 900, label: 'South America' },
+    'africa': { base: 700, label: 'Africa' },
+    'middle-east': { base: 500, label: 'Middle East' },
+    'oceania': { base: 1100, label: 'Oceania' }
+  };
+
+  var visaFeesByCountry = {
+    'Germany': { fee: 150, name: 'EU Blue Card' },
+    'United Kingdom': { fee: 1500, name: 'Skilled Worker Visa' },
+    'Netherlands': { fee: 350, name: 'HSM Visa' },
+    'United States': { fee: 2500, name: 'H-1B Visa' },
+    'Canada': { fee: 450, name: 'Global Talent Stream' },
+    'Australia': { fee: 1400, name: 'TSS Visa 482' },
+    'Ireland': { fee: 1000, name: 'Critical Skills Permit' },
+    'Sweden': { fee: 250, name: 'Work Permit' },
+    'France': { fee: 300, name: 'Passeport Talent' },
+    'Switzerland': { fee: 200, name: 'Work Permit' },
+    'Estonia': { fee: 160, name: 'Residence Permit' },
+    'Portugal': { fee: 200, name: 'Work Visa' },
+    'Poland': { fee: 150, name: 'Work Permit' }
+  };
+
+  var shippingCosts = { minimal: 200, medium: 1500, full: 5000 };
+  var healthInsurancePerMonth = 250;
+  var currentStep = 1;
+
+  function showStep(n) {
+    for (var i = 1; i <= 4; i++) {
+      var panel = document.getElementById('step-' + i);
+      var dot = document.querySelector('.step-dot[data-step="' + i + '"]');
+      if (i === n) {
+        panel.classList.remove('hidden');
+        dot.classList.add('bg-brand-600', 'text-white');
+        dot.classList.remove('bg-gray-200', 'dark:bg-gray-700', 'text-gray-500');
+      } else {
+        panel.classList.add('hidden');
+        if (i < n) {
+          dot.classList.add('bg-brand-600', 'text-white');
+          dot.classList.remove('bg-gray-200', 'dark:bg-gray-700', 'text-gray-500');
+        } else {
+          dot.classList.remove('bg-brand-600', 'text-white');
+          dot.classList.add('bg-gray-200', 'dark:bg-gray-700', 'text-gray-500');
+        }
+      }
+    }
+    currentStep = n;
+    if (window.lucide) lucide.createIcons();
+  }
+
+  document.querySelectorAll('.step-next').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var next = parseInt(this.getAttribute('data-next'));
+      showStep(next);
+    });
+  });
+
+  document.querySelectorAll('.step-prev').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var prev = parseInt(this.getAttribute('data-prev'));
+      showStep(prev);
+    });
+  });
+
+  var destSelect = document.getElementById('destination');
+  var originSelect = document.getElementById('origin');
+  var step1Next = document.querySelector('#step-1 .step-next');
+  var step2Next = document.querySelector('#step-2 .step-next');
+
+  destSelect.addEventListener('change', function() {
+    step1Next.disabled = !this.value;
+  });
+  originSelect.addEventListener('change', function() {
+    step2Next.disabled = !this.value;
+  });
+
+  var familySelect = document.getElementById('family');
+  var kidsInput = document.getElementById('kids-input');
+  familySelect.addEventListener('change', function() {
+    kidsInput.classList.toggle('hidden', this.value !== 'family');
+  });
+
+  document.querySelectorAll('.shipping-option').forEach(function(label) {
+    label.addEventListener('click', function() {
+      document.querySelectorAll('.shipping-option').forEach(function(l) {
+        l.classList.remove('border-brand-500', 'dark:border-brand-500', 'bg-brand-50', 'dark:bg-brand-900/10');
+      });
+      this.classList.add('border-brand-500', 'dark:border-brand-500', 'bg-brand-50', 'dark:bg-brand-900/10');
+    });
+  });
+
+  function fmt(n) {
+    return '€' + Math.round(n).toLocaleString('en-US');
+  }
+
+  function getCityData(slug) {
+    for (var i = 0; i < cities.length; i++) {
+      if (cities[i].slug === slug) return cities[i];
+    }
+    return null;
+  }
+
+  function makeLine(icon, label, amount, note) {
+    return '<div class="flex items-center justify-between py-3 border-b border-gray-100 dark:border-gray-800">' +
+      '<div class="flex items-center gap-3">' +
+      '<i data-lucide="' + icon + '" class="w-5 h-5 text-gray-400"></i>' +
+      '<div><p class="font-medium text-gray-900 dark:text-white">' + label + '</p>' +
+      (note ? '<p class="text-xs text-gray-500 dark:text-gray-400">' + note + '</p>' : '') +
+      '</div></div>' +
+      '<span class="font-semibold text-gray-900 dark:text-white">' + fmt(amount) + '</span></div>';
+  }
+
+  document.getElementById('calculate-btn').addEventListener('click', function() {
+    var city = getCityData(destSelect.value);
+    if (!city) return;
+    var origin = originSelect.value;
+    var familyType = familySelect.value;
+    var kidsCount = parseInt(document.getElementById('kids-count').value) || 1;
+    var shipping = document.querySelector('input[name="shipping"]:checked').value;
+
+    var people = familyType === 'single' ? 1 : familyType === 'couple' ? 2 : 2 + kidsCount;
+
+    var flightPerPerson = flightCosts[origin] ? flightCosts[origin].base : 600;
+    var flights = flightPerPerson * people;
+
+    var visaInfo = visaFeesByCountry[city.country] || { fee: 300, name: 'Work Visa' };
+    var visaFee = visaInfo.fee * (familyType === 'single' ? 1 : people);
+
+    var rent = familyType === 'single' ? city.rent1bed : city.rent3bed;
+    var depositMonths = 2.5;
+    var housing = rent + (rent * depositMonths);
+
+    var insurance = healthInsurancePerMonth * people * 3;
+
+    var monthlyLiving = city.groceries + city.transport + city.utilities + city.internet;
+    var livingExpenses = monthlyLiving * (familyType === 'single' ? 1 : (people * 0.7));
+
+    var shippingCost = shippingCosts[shipping] * (familyType === 'single' ? 1 : 1.5);
+
+    var emergencyFund = (rent + monthlyLiving) * 2;
+
+    var total = flights + visaFee + housing + insurance + livingExpenses + shippingCost + emergencyFund;
+
+    var html = '';
+    html += makeLine('plane', 'Flights (' + people + ' ' + (people === 1 ? 'person' : 'people') + ')', flights, 'From ' + (flightCosts[origin] ? flightCosts[origin].label : origin) + ' to ' + city.name);
+    html += makeLine('stamp', 'Visa Fees — ' + visaInfo.name, visaFee, city.country + (people > 1 ? ' (including dependents)' : ''));
+    html += makeLine('home', 'First Month Rent + Deposit', housing, fmt(rent) + '/month rent + ' + depositMonths + ' months deposit in ' + city.name);
+    html += makeLine('heart-pulse', 'Health Insurance (3 months)', insurance, fmt(healthInsurancePerMonth) + '/person/month for ' + people + ' ' + (people === 1 ? 'person' : 'people'));
+    html += makeLine('shopping-cart', 'First Month Living Expenses', livingExpenses, 'Groceries, transport, utilities, internet');
+    html += makeLine('package', 'Shipping (' + shipping + ')', shippingCost, shipping === 'minimal' ? 'Extra luggage fees' : shipping === 'medium' ? 'Courier boxes' : 'International movers');
+    html += makeLine('shield', 'Emergency Fund (2 months)', emergencyFund, 'Recommended safety net');
+
+    document.getElementById('cost-breakdown').innerHTML = html;
+    document.getElementById('cost-total').innerHTML =
+      '<div class="flex items-center justify-between">' +
+      '<div><p class="text-xl font-bold text-gray-900 dark:text-white">Total Estimated Cost</p>' +
+      '<p class="text-sm text-gray-500 dark:text-gray-400">For relocating to ' + city.name + ', ' + city.country + '</p></div>' +
+      '<span class="text-3xl font-extrabold text-brand-600 dark:text-brand-400">' + fmt(total) + '</span></div>';
+
+    document.getElementById('result-summary-text').textContent =
+      'Moving to ' + city.name + ' as a ' + (familyType === 'family' ? 'family of ' + people : familyType) +
+      ' from ' + (flightCosts[origin] ? flightCosts[origin].label : origin) +
+      ' with ' + shipping + ' shipping — here is your estimated cost breakdown.';
+
+    document.getElementById('calculator-form').classList.add('hidden');
+    document.getElementById('results').classList.remove('hidden');
+    window.scrollTo({ top: document.getElementById('results').offsetTop - 100, behavior: 'smooth' });
+    if (window.lucide) lucide.createIcons();
+  });
+
+  document.getElementById('recalculate-btn').addEventListener('click', function() {
+    document.getElementById('results').classList.add('hidden');
+    document.getElementById('calculator-form').classList.remove('hidden');
+    showStep(1);
+    window.scrollTo({ top: document.getElementById('calculator-form').offsetTop - 100, behavior: 'smooth' });
+  });
+
+  document.querySelectorAll('.faq-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = btn.closest('.faq-item');
+      var content = item.querySelector('.faq-content');
+      var icon = item.querySelector('.faq-icon');
+      var isOpen = !content.classList.contains('hidden');
+      content.classList.toggle('hidden', isOpen);
+      icon.style.transform = isOpen ? '' : 'rotate(180deg)';
+      btn.setAttribute('aria-expanded', !isOpen);
+    });
+  });
+})();
+</script>
+{% endblock %}

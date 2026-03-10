@@ -1,0 +1,367 @@
+---
+layout: layouts/base.njk
+title: "Where Should I Relocate? | Find Your Perfect City Quiz"
+description: "Take our free quiz to discover which city matches your lifestyle, career goals, and preferences. Get personalized relocation recommendations with visa info and job listings."
+---
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Where Should I Relocate? Quiz",
+  "url": "{{ site.url }}{{ page.url }}",
+  "description": "{{ description }}",
+  "applicationCategory": "Utility",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "author": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" }
+}
+</script>
+{% endblock %}
+
+<section class="bg-gradient-to-b from-emerald-50 to-white dark:from-gray-900 dark:to-gray-950 py-16">
+  <div class="max-w-4xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400">Home</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <a href="/tools/" class="hover:text-brand-600 dark:hover:text-brand-400">Tools</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-900 dark:text-white">Relocation Quiz</span>
+    </nav>
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-14 h-14 bg-emerald-100 dark:bg-emerald-900/40 rounded-2xl flex items-center justify-center">
+        <i data-lucide="compass" class="w-7 h-7 text-emerald-600 dark:text-emerald-400"></i>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white">Where Should I Relocate?</h1>
+    </div>
+    <p class="text-lg text-gray-600 dark:text-gray-400 max-w-3xl">
+      Answer 8 quick questions and we'll match you with the best cities based on your lifestyle, career goals, and preferences.
+    </p>
+  </div>
+</section>
+
+<section class="py-12">
+  <div class="max-w-3xl mx-auto px-4">
+
+    {# Quiz container #}
+    <div id="quiz-box" class="card p-6 md:p-8">
+      {# Progress #}
+      <div class="mb-8">
+        <div class="flex justify-between items-center mb-2">
+          <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Question</span>
+          <span id="quiz-step-label" class="text-sm font-medium text-brand-600 dark:text-brand-400">1 of 8</span>
+        </div>
+        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+          <div id="quiz-progress" class="bg-brand-600 h-2.5 rounded-full transition-all duration-500 ease-out" style="width: 12.5%"></div>
+        </div>
+      </div>
+
+      {# Question area #}
+      <div id="quiz-question"></div>
+
+      {# Navigation #}
+      <div class="flex justify-between mt-8">
+        <button id="quiz-back-btn" onclick="quizBack()" class="btn-secondary text-sm hidden">
+          <i data-lucide="arrow-left" class="w-4 h-4 mr-1 inline"></i> Back
+        </button>
+        <div></div>
+      </div>
+    </div>
+
+    {# Results #}
+    <div id="quiz-results" class="hidden"></div>
+
+    {# Restart #}
+    <div id="quiz-restart" class="text-center mt-6 hidden">
+      <button onclick="quizRestart()" class="btn-secondary">
+        <i data-lucide="rotate-ccw" class="w-4 h-4 mr-1 inline"></i> Take Quiz Again
+      </button>
+    </div>
+  </div>
+</section>
+
+{# Share Section #}
+<section class="py-12">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-4">Share this quiz</h2>
+    <div class="flex justify-center gap-3">
+      <a href="https://twitter.com/intent/tweet?text=Find%20out%20which%20city%20you%20should%20relocate%20to%20with%20this%20free%20quiz!&url={{ site.url }}/tools/relocation-quiz/" target="_blank" rel="noopener" class="btn-secondary text-sm">
+        <i data-lucide="twitter" class="w-4 h-4 mr-1 inline"></i> Twitter
+      </a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}/tools/relocation-quiz/" target="_blank" rel="noopener" class="btn-secondary text-sm">
+        <i data-lucide="linkedin" class="w-4 h-4 mr-1 inline"></i> LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  const costData = {{ costOfLiving.cities | dump | safe }};
+
+  const cities = {
+    berlin:    { name: 'Berlin',     country: 'Germany',     emoji: '\u{1F1E9}\u{1F1EA}', avgSalary: '€60,000', rent: '€1,100/mo', visa: 'EU Blue Card', guideUrl: '/resources/country-guides/germany/', jobFilter: 'germany' },
+    amsterdam: { name: 'Amsterdam',  country: 'Netherlands', emoji: '\u{1F1F3}\u{1F1F1}', avgSalary: '€58,000', rent: '€1,600/mo', visa: 'HSM Visa',     guideUrl: '/resources/country-guides/netherlands/', jobFilter: 'netherlands' },
+    london:    { name: 'London',     country: 'UK',          emoji: '\u{1F1EC}\u{1F1E7}', avgSalary: '£55,000', rent: '£2,100/mo', visa: 'Skilled Worker', guideUrl: '/resources/country-guides/uk/', jobFilter: 'united-kingdom' },
+    stockholm: { name: 'Stockholm',  country: 'Sweden',      emoji: '\u{1F1F8}\u{1F1EA}', avgSalary: 'kr550,000', rent: '€1,400/mo', visa: 'Work Permit', guideUrl: '/resources/country-guides/sweden/', jobFilter: 'sweden' },
+    zurich:    { name: 'Zurich',     country: 'Switzerland', emoji: '\u{1F1E8}\u{1F1ED}', avgSalary: 'CHF 110,000', rent: 'CHF 2,200/mo', visa: 'Work Permit', guideUrl: '/resources/country-guides/switzerland/', jobFilter: 'switzerland' },
+    tallinn:   { name: 'Tallinn',    country: 'Estonia',     emoji: '\u{1F1EA}\u{1F1EA}', avgSalary: '€42,000', rent: '€700/mo',  visa: 'Residence Permit', guideUrl: '', jobFilter: 'estonia' },
+    dublin:    { name: 'Dublin',     country: 'Ireland',     emoji: '\u{1F1EE}\u{1F1EA}', avgSalary: '€60,000', rent: '€1,900/mo', visa: 'Critical Skills', guideUrl: '/resources/country-guides/ireland/', jobFilter: 'ireland' },
+    paris:     { name: 'Paris',      country: 'France',      emoji: '\u{1F1EB}\u{1F1F7}', avgSalary: '€50,000', rent: '€1,400/mo', visa: 'Passeport Talent', guideUrl: '', jobFilter: 'france' },
+    sydney:    { name: 'Sydney',     country: 'Australia',   emoji: '\u{1F1E6}\u{1F1FA}', avgSalary: 'A$110,000', rent: 'A$2,400/mo', visa: 'TSS 482', guideUrl: '/resources/country-guides/australia/', jobFilter: 'australia' },
+    toronto:   { name: 'Toronto',    country: 'Canada',      emoji: '\u{1F1E8}\u{1F1E6}', avgSalary: 'C$85,000', rent: 'C$2,100/mo', visa: 'Global Talent Stream', guideUrl: '/resources/country-guides/canada/', jobFilter: 'canada' },
+    lisbon:    { name: 'Lisbon',     country: 'Portugal',    emoji: '\u{1F1F5}\u{1F1F9}', avgSalary: '€35,000', rent: '€1,100/mo', visa: 'Tech Visa', guideUrl: '', jobFilter: 'portugal' },
+    munich:    { name: 'Munich',     country: 'Germany',     emoji: '\u{1F1E9}\u{1F1EA}', avgSalary: '€70,000', rent: '€1,500/mo', visa: 'EU Blue Card', guideUrl: '/resources/country-guides/germany/', jobFilter: 'germany' },
+    cork:      { name: 'Cork',       country: 'Ireland',     emoji: '\u{1F1EE}\u{1F1EA}', avgSalary: '€55,000', rent: '€1,500/mo', visa: 'Critical Skills', guideUrl: '/resources/country-guides/ireland/', jobFilter: 'ireland' },
+    krakow:    { name: 'Krakow',     country: 'Poland',      emoji: '\u{1F1F5}\u{1F1F1}', avgSalary: '€30,000', rent: '€650/mo',  visa: 'Work Permit', guideUrl: '', jobFilter: 'poland' }
+  };
+
+  const questions = [
+    {
+      text: "What's most important to you?",
+      subtitle: "Choose the factor that matters most for your next chapter.",
+      options: [
+        { label: 'Highest salary', icon: 'banknote', weights: { zurich: 10, london: 8, sydney: 7, munich: 7, dublin: 6, toronto: 5, amsterdam: 5, stockholm: 4, paris: 3, berlin: 3, cork: 4, lisbon: 1, tallinn: 2, krakow: 1 }},
+        { label: 'Best work-life balance', icon: 'sunset', weights: { stockholm: 10, amsterdam: 9, berlin: 7, lisbon: 8, munich: 6, zurich: 5, cork: 7, tallinn: 5, paris: 4, dublin: 4, toronto: 4, london: 2, sydney: 5, krakow: 6 }},
+        { label: 'Lowest cost of living', icon: 'piggy-bank', weights: { krakow: 10, tallinn: 9, lisbon: 8, berlin: 6, cork: 4, paris: 2, munich: 1, amsterdam: 2, dublin: 1, stockholm: 2, toronto: 1, london: 0, zurich: 0, sydney: 1 }},
+        { label: 'Career growth', icon: 'trending-up', weights: { london: 10, berlin: 8, amsterdam: 7, dublin: 7, munich: 7, zurich: 5, paris: 6, toronto: 6, sydney: 5, stockholm: 4, tallinn: 5, cork: 3, lisbon: 3, krakow: 5 }},
+        { label: 'Quality of life', icon: 'heart', weights: { zurich: 10, stockholm: 9, munich: 8, amsterdam: 8, sydney: 8, lisbon: 7, cork: 7, vienna: 7, berlin: 5, toronto: 5, dublin: 4, paris: 6, london: 3, tallinn: 4, krakow: 4 }}
+      ]
+    },
+    {
+      text: "What's your weather preference?",
+      subtitle: "Climate can make or break your happiness abroad.",
+      options: [
+        { label: 'Warm & sunny', icon: 'sun', weights: { lisbon: 10, sydney: 10, paris: 4, london: 1, amsterdam: 2, berlin: 2, munich: 3, dublin: 1, cork: 1, stockholm: 0, zurich: 3, tallinn: 0, toronto: 1, krakow: 2 }},
+        { label: 'Mild & moderate', icon: 'cloud-sun', weights: { dublin: 8, cork: 8, london: 7, amsterdam: 7, paris: 7, zurich: 5, munich: 4, berlin: 4, toronto: 3, sydney: 4, lisbon: 5, stockholm: 2, tallinn: 2, krakow: 3 }},
+        { label: "Don't mind cold winters", icon: 'snowflake', weights: { stockholm: 8, tallinn: 8, krakow: 7, munich: 6, zurich: 6, berlin: 6, toronto: 7, amsterdam: 5, london: 5, dublin: 5, paris: 5, cork: 5, lisbon: 5, sydney: 5 }}
+      ]
+    },
+    {
+      text: "Are you willing to learn a new language?",
+      subtitle: "Some countries are very English-friendly, others less so.",
+      options: [
+        { label: 'Yes, excited to!', icon: 'book-open', weights: { berlin: 8, munich: 8, paris: 8, zurich: 7, stockholm: 6, amsterdam: 6, lisbon: 7, krakow: 7, tallinn: 5, london: 5, dublin: 5, cork: 5, sydney: 5, toronto: 5 }},
+        { label: 'Prefer English-only', icon: 'message-circle', weights: { london: 10, dublin: 10, cork: 9, sydney: 9, toronto: 9, amsterdam: 7, stockholm: 6, tallinn: 5, berlin: 4, zurich: 3, munich: 3, lisbon: 3, paris: 1, krakow: 2 }},
+        { label: 'Some basics are OK', icon: 'languages', weights: { amsterdam: 9, berlin: 7, stockholm: 7, tallinn: 6, munich: 6, zurich: 5, lisbon: 5, dublin: 8, cork: 8, london: 8, sydney: 7, toronto: 7, paris: 4, krakow: 4 }}
+      ]
+    },
+    {
+      text: "What's your family situation?",
+      subtitle: "Family-friendliness varies a lot between cities.",
+      options: [
+        { label: 'Single', icon: 'user', weights: { berlin: 9, london: 8, amsterdam: 8, lisbon: 8, tallinn: 7, paris: 7, dublin: 6, krakow: 7, munich: 5, sydney: 6, toronto: 6, stockholm: 5, zurich: 4, cork: 5 }},
+        { label: 'With partner', icon: 'users', weights: { amsterdam: 8, stockholm: 8, berlin: 7, munich: 7, zurich: 7, lisbon: 7, london: 6, paris: 7, dublin: 6, sydney: 7, toronto: 7, cork: 6, tallinn: 5, krakow: 5 }},
+        { label: 'With kids', icon: 'baby', weights: { munich: 9, stockholm: 9, zurich: 9, amsterdam: 7, cork: 7, sydney: 7, toronto: 7, dublin: 5, berlin: 5, paris: 5, london: 4, lisbon: 4, tallinn: 4, krakow: 4 }}
+      ]
+    },
+    {
+      text: "What's your career stage?",
+      subtitle: "Some cities are better for early-career, others for senior roles.",
+      options: [
+        { label: 'Junior (0–2 years)', icon: 'rocket', weights: { berlin: 9, london: 8, amsterdam: 7, dublin: 7, lisbon: 6, tallinn: 6, krakow: 7, paris: 5, toronto: 5, munich: 4, cork: 5, stockholm: 4, sydney: 4, zurich: 2 }},
+        { label: 'Mid-level (3–5 years)', icon: 'briefcase', weights: { amsterdam: 8, berlin: 8, london: 8, dublin: 7, munich: 7, toronto: 7, paris: 6, stockholm: 6, sydney: 6, zurich: 5, cork: 5, tallinn: 5, lisbon: 4, krakow: 5 }},
+        { label: 'Senior (6+ years)', icon: 'award', weights: { london: 9, zurich: 9, munich: 8, amsterdam: 7, sydney: 8, toronto: 7, dublin: 7, stockholm: 7, paris: 6, berlin: 5, cork: 5, tallinn: 4, lisbon: 3, krakow: 3 }},
+        { label: 'Leadership', icon: 'crown', weights: { london: 10, zurich: 9, munich: 8, amsterdam: 7, sydney: 8, toronto: 7, dublin: 6, paris: 6, stockholm: 6, berlin: 5, cork: 4, tallinn: 3, lisbon: 2, krakow: 2 }}
+      ]
+    },
+    {
+      text: "Which industry are you in?",
+      subtitle: "Different cities specialize in different sectors.",
+      options: [
+        { label: 'FinTech', icon: 'landmark', weights: { london: 10, amsterdam: 9, berlin: 7, dublin: 7, stockholm: 6, zurich: 6, tallinn: 5, toronto: 5, paris: 4, munich: 3, sydney: 4, cork: 3, lisbon: 2, krakow: 3 }},
+        { label: 'E-commerce', icon: 'shopping-cart', weights: { berlin: 9, amsterdam: 8, london: 7, munich: 5, paris: 5, dublin: 5, toronto: 5, sydney: 4, stockholm: 4, tallinn: 3, zurich: 2, cork: 3, lisbon: 3, krakow: 4 }},
+        { label: 'AI / Machine Learning', icon: 'brain', weights: { london: 9, paris: 9, berlin: 7, zurich: 7, amsterdam: 6, toronto: 7, munich: 6, dublin: 5, sydney: 5, stockholm: 5, tallinn: 3, cork: 2, lisbon: 3, krakow: 3 }},
+        { label: 'General tech', icon: 'code', weights: { berlin: 8, amsterdam: 8, london: 8, dublin: 8, stockholm: 7, munich: 7, toronto: 7, tallinn: 6, sydney: 6, zurich: 5, paris: 5, cork: 6, lisbon: 5, krakow: 5 }},
+        { label: 'Automotive', icon: 'car', weights: { munich: 10, berlin: 5, zurich: 4, stockholm: 4, paris: 3, london: 3, amsterdam: 2, toronto: 3, sydney: 2, dublin: 1, cork: 1, tallinn: 1, lisbon: 1, krakow: 3 }},
+        { label: 'Enterprise', icon: 'building', weights: { munich: 8, london: 7, amsterdam: 6, dublin: 6, zurich: 6, paris: 5, toronto: 6, sydney: 5, berlin: 5, stockholm: 5, cork: 4, tallinn: 3, lisbon: 2, krakow: 3 }}
+      ]
+    },
+    {
+      text: "What city size do you prefer?",
+      subtitle: "From buzzing metropolises to compact, walkable cities.",
+      options: [
+        { label: 'Major metropolis', icon: 'building-2', weights: { london: 10, paris: 9, sydney: 8, toronto: 8, berlin: 7, munich: 5, amsterdam: 4, dublin: 3, stockholm: 4, zurich: 3, lisbon: 3, tallinn: 1, cork: 1, krakow: 2 }},
+        { label: 'Mid-size city', icon: 'home', weights: { amsterdam: 9, munich: 8, stockholm: 8, dublin: 7, zurich: 7, lisbon: 7, berlin: 6, toronto: 5, krakow: 6, cork: 5, paris: 4, sydney: 4, tallinn: 5, london: 3 }},
+        { label: 'Smaller & walkable', icon: 'footprints', weights: { tallinn: 10, cork: 9, krakow: 8, lisbon: 7, zurich: 6, amsterdam: 5, stockholm: 5, dublin: 5, munich: 4, berlin: 3, paris: 3, toronto: 2, sydney: 2, london: 1 }}
+      ]
+    },
+    {
+      text: "What's your budget priority?",
+      subtitle: "How do you want to balance savings and lifestyle?",
+      options: [
+        { label: 'Save maximum', icon: 'vault', weights: { krakow: 10, tallinn: 9, lisbon: 7, berlin: 6, zurich: 5, cork: 4, munich: 3, amsterdam: 3, stockholm: 3, dublin: 2, toronto: 2, paris: 2, london: 1, sydney: 1 }},
+        { label: 'Balance comfort & savings', icon: 'scale', weights: { berlin: 8, amsterdam: 7, munich: 7, stockholm: 7, cork: 7, dublin: 6, toronto: 5, tallinn: 6, lisbon: 6, paris: 5, krakow: 6, zurich: 4, london: 4, sydney: 4 }},
+        { label: 'Comfortable lifestyle', icon: 'gem', weights: { zurich: 10, london: 8, sydney: 8, munich: 7, amsterdam: 7, paris: 7, stockholm: 7, dublin: 6, toronto: 6, berlin: 5, cork: 5, lisbon: 5, tallinn: 4, krakow: 3 }}
+      ]
+    }
+  ];
+
+  let currentStep = 0;
+  const answers = [];
+
+  function renderQuestion() {
+    const q = questions[currentStep];
+    const pct = ((currentStep + 1) / questions.length) * 100;
+    document.getElementById('quiz-progress').style.width = pct + '%';
+    document.getElementById('quiz-step-label').textContent = `${currentStep + 1} of ${questions.length}`;
+
+    const backBtn = document.getElementById('quiz-back-btn');
+    if (currentStep > 0) backBtn.classList.remove('hidden');
+    else backBtn.classList.add('hidden');
+
+    let html = `
+      <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-1">${q.text}</h2>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">${q.subtitle}</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    `;
+    q.options.forEach((opt, i) => {
+      html += `
+        <button onclick="quizAnswer(${i})" class="text-left p-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 hover:border-brand-500 dark:hover:border-brand-400 hover:shadow-md transition-all flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-xl bg-gray-100 dark:bg-gray-800 group-hover:bg-brand-50 dark:group-hover:bg-brand-900/30 flex items-center justify-center shrink-0 transition-colors">
+            <i data-lucide="${opt.icon}" class="w-5 h-5 text-gray-500 dark:text-gray-400 group-hover:text-brand-600 dark:group-hover:text-brand-400"></i>
+          </div>
+          <span class="font-semibold text-gray-900 dark:text-white text-sm">${opt.label}</span>
+        </button>
+      `;
+    });
+    html += '</div>';
+
+    document.getElementById('quiz-question').innerHTML = html;
+    if (window.lucide) lucide.createIcons();
+  }
+
+  window.quizAnswer = function(optionIndex) {
+    answers[currentStep] = optionIndex;
+    if (currentStep < questions.length - 1) {
+      currentStep++;
+      renderQuestion();
+    } else {
+      showResults();
+    }
+  };
+
+  window.quizBack = function() {
+    if (currentStep > 0) {
+      currentStep--;
+      renderQuestion();
+    }
+  };
+
+  window.quizRestart = function() {
+    currentStep = 0;
+    answers.length = 0;
+    document.getElementById('quiz-box').classList.remove('hidden');
+    document.getElementById('quiz-results').classList.add('hidden');
+    document.getElementById('quiz-results').innerHTML = '';
+    document.getElementById('quiz-restart').classList.add('hidden');
+    renderQuestion();
+  };
+
+  function showResults() {
+    document.getElementById('quiz-box').classList.add('hidden');
+    document.getElementById('quiz-restart').classList.remove('hidden');
+
+    const scores = {};
+    Object.keys(cities).forEach(c => scores[c] = 0);
+
+    answers.forEach((optIdx, qIdx) => {
+      const weights = questions[qIdx].options[optIdx].weights;
+      Object.entries(weights).forEach(([city, w]) => {
+        if (scores[city] !== undefined) scores[city] += w;
+      });
+    });
+
+    const maxPossible = questions.length * 10;
+    const sorted = Object.entries(scores).sort((a, b) => b[1] - a[1]).slice(0, 3);
+
+    let html = `
+      <div class="text-center mb-8">
+        <div class="w-16 h-16 bg-emerald-100 dark:bg-emerald-900/40 rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <i data-lucide="map-pin" class="w-8 h-8 text-emerald-600 dark:text-emerald-400"></i>
+        </div>
+        <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-2">Your Top Cities</h2>
+        <p class="text-gray-500 dark:text-gray-400">Based on your answers, here are your best matches.</p>
+      </div>
+    `;
+
+    const medals = ['🥇', '🥈', '🥉'];
+    const borderColors = ['border-yellow-400', 'border-gray-400', 'border-amber-600'];
+
+    sorted.forEach(([key, score], i) => {
+      const city = cities[key];
+      const pct = Math.round((score / maxPossible) * 100);
+      const costCity = costData.find(c => c.slug === key);
+      const monthlyRent = costCity ? '€' + costCity.rent1bed.toLocaleString() : city.rent;
+
+      html += `
+        <div class="card p-6 mb-4 border-l-4 ${borderColors[i]}">
+          <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-3">
+              <span class="text-3xl">${medals[i]}</span>
+              <div>
+                <h3 class="text-xl font-extrabold text-gray-900 dark:text-white">${city.emoji} ${city.name}</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400">${city.country}</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="text-2xl font-extrabold text-brand-600 dark:text-brand-400">${pct}%</span>
+              <p class="text-xs text-gray-500 dark:text-gray-400">match</p>
+            </div>
+          </div>
+
+          <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mb-5">
+            <div class="bg-brand-600 h-2 rounded-full" style="width: ${pct}%"></div>
+          </div>
+
+          <div class="grid grid-cols-3 gap-4 mb-5">
+            <div class="text-center">
+              <div class="flex items-center justify-center gap-1 text-sm font-bold text-gray-900 dark:text-white">
+                <i data-lucide="banknote" class="w-4 h-4 text-green-500"></i> ${city.avgSalary}
+              </div>
+              <p class="text-xs text-gray-500 dark:text-gray-400">Avg. tech salary</p>
+            </div>
+            <div class="text-center">
+              <div class="flex items-center justify-center gap-1 text-sm font-bold text-gray-900 dark:text-white">
+                <i data-lucide="home" class="w-4 h-4 text-blue-500"></i> ${monthlyRent}
+              </div>
+              <p class="text-xs text-gray-500 dark:text-gray-400">1-bed rent</p>
+            </div>
+            <div class="text-center">
+              <div class="flex items-center justify-center gap-1 text-sm font-bold text-gray-900 dark:text-white">
+                <i data-lucide="file-check" class="w-4 h-4 text-purple-500"></i> ${city.visa}
+              </div>
+              <p class="text-xs text-gray-500 dark:text-gray-400">Main visa</p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2">
+            ${city.guideUrl ? `<a href="${city.guideUrl}" class="btn-secondary text-xs"><i data-lucide="book-open" class="w-3.5 h-3.5 mr-1 inline"></i>Country Guide</a>` : ''}
+            <a href="/visa-sponsored-jobs/" class="btn-primary text-xs"><i data-lucide="briefcase" class="w-3.5 h-3.5 mr-1 inline"></i>View Jobs</a>
+          </div>
+        </div>
+      `;
+    });
+
+    html += `
+      <div class="flex flex-wrap justify-center gap-3 mt-8">
+        <a href="https://twitter.com/intent/tweet?text=I%20took%20the%20relocation%20quiz%20and%20my%20top%20city%20is%20${encodeURIComponent(cities[sorted[0][0]].name)}!%20Find%20your%20match%3A&url={{ site.url }}/tools/relocation-quiz/" target="_blank" rel="noopener" class="btn-secondary text-sm">
+          <i data-lucide="twitter" class="w-4 h-4 mr-1 inline"></i> Share on Twitter
+        </a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}/tools/relocation-quiz/" target="_blank" rel="noopener" class="btn-secondary text-sm">
+          <i data-lucide="linkedin" class="w-4 h-4 mr-1 inline"></i> Share on LinkedIn
+        </a>
+      </div>
+    `;
+
+    const container = document.getElementById('quiz-results');
+    container.innerHTML = html;
+    container.classList.remove('hidden');
+    if (window.lucide) lucide.createIcons();
+    window.scrollTo({ top: container.offsetTop - 80, behavior: 'smooth' });
+  }
+
+  renderQuestion();
+})();
+</script>

@@ -1,0 +1,463 @@
+---
+layout: layouts/base.njk
+title: "International Resume Adapter | Customize Your CV for Any Country"
+description: "Adapt your resume for international job applications. Get country-specific requirements, format guidelines, and a personalized checklist for Germany, UK, Netherlands, and more."
+---
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "International Resume Adapter",
+  "url": "{{ site.url }}{{ page.url }}",
+  "description": "{{ description }}",
+  "applicationCategory": "Utility",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "author": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Should I include a photo on my international resume?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the country. Germany and Switzerland expect a professional photo. France considers it common practice. The UK, Ireland, Australia, and Canada strongly advise against photos due to anti-discrimination laws."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the ideal CV length for international applications?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most countries expect 1-2 pages. France prefers a single page. Switzerland allows 2-3 pages. Australia and Canada allow 2-3 pages for senior roles. Always prioritize relevance over length."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a cover letter for European job applications?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most European countries expect a cover letter. In Germany it's called an Anschreiben, in the Netherlands a motivatiebrief, and in France a lettre de motivation. The UK and Ireland also expect cover letters. In some countries, especially for tech roles, it may be optional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What date format should I use on my international resume?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the local format: DD.MM.YYYY for Germany and Switzerland, DD/MM/YYYY for the UK, Ireland, France, and Australia. Canada uses YYYY-MM-DD (ISO format) or MM/DD/YYYY depending on the region."
+      }
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+<section class="bg-gradient-to-b from-indigo-50 to-white dark:from-gray-900 dark:to-gray-950 py-16">
+  <div class="max-w-4xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400">Home</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <a href="/tools/" class="hover:text-brand-600 dark:hover:text-brand-400">Tools</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-900 dark:text-white">Resume Adapter</span>
+    </nav>
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-14 h-14 bg-indigo-100 dark:bg-indigo-900/40 rounded-2xl flex items-center justify-center">
+        <i data-lucide="file-text" class="w-7 h-7 text-indigo-600 dark:text-indigo-400"></i>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white">International Resume Adapter</h1>
+    </div>
+    <p class="text-lg text-gray-600 dark:text-gray-400 max-w-3xl">
+      Select your target country and get a tailored checklist of formatting rules, cultural expectations, and must-have sections for your CV.
+    </p>
+  </div>
+</section>
+
+<section class="py-12">
+  <div class="max-w-4xl mx-auto px-4">
+
+    {# Country selector #}
+    <div class="card p-6 mb-8">
+      <label for="ra-country" class="block text-sm font-semibold text-gray-900 dark:text-white mb-2">Select your target country</label>
+      <select id="ra-country" class="input-field text-lg">
+        <option value="">Choose a country...</option>
+        <option value="germany">Germany</option>
+        <option value="uk">United Kingdom</option>
+        <option value="netherlands">Netherlands</option>
+        <option value="ireland">Ireland</option>
+        <option value="sweden">Sweden</option>
+        <option value="switzerland">Switzerland</option>
+        <option value="france">France</option>
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+      </select>
+    </div>
+
+    {# Results #}
+    <div id="ra-results" class="hidden">
+      {# Progress bar #}
+      <div class="card p-6 mb-6">
+        <div class="flex justify-between items-center mb-2">
+          <span class="text-sm font-semibold text-gray-900 dark:text-white">Checklist Progress</span>
+          <span id="ra-pct" class="text-sm font-bold text-brand-600 dark:text-brand-400">0%</span>
+        </div>
+        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
+          <div id="ra-bar" class="bg-brand-600 h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
+        </div>
+      </div>
+
+      {# Country info header #}
+      <div id="ra-header" class="card p-6 mb-6"></div>
+
+      {# Checklist #}
+      <div id="ra-checklist" class="space-y-3 mb-8"></div>
+
+      {# Action buttons #}
+      <div class="flex flex-wrap gap-3 mb-8">
+        <button onclick="window.print()" class="btn-primary">
+          <i data-lucide="printer" class="w-4 h-4 mr-1 inline"></i> Print Checklist
+        </button>
+        <a href="/blog/posts/resume-tips-for-international-jobs/" class="btn-secondary">
+          <i data-lucide="book-open" class="w-4 h-4 mr-1 inline"></i> Read Our Resume Guide
+        </a>
+      </div>
+
+      {# Resources #}
+      <div id="ra-resources" class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 p-4 rounded-r-lg mb-6"></div>
+    </div>
+  </div>
+</section>
+
+{# FAQ Section #}
+<section class="py-16 bg-gray-50 dark:bg-gray-900">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="section-heading text-center mb-10">Frequently Asked Questions</h2>
+    <div class="space-y-4">
+      <details class="card p-0 group">
+        <summary class="flex items-center justify-between p-5 cursor-pointer">
+          <span class="font-semibold text-gray-900 dark:text-white">Should I include a photo on my international resume?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"></i>
+        </summary>
+        <div class="px-5 pb-5 text-gray-600 dark:text-gray-400 text-sm">
+          It depends on the country. Germany and Switzerland expect a professional photo. France considers it common practice. The UK, Ireland, Australia, and Canada strongly advise against photos due to anti-discrimination laws.
+        </div>
+      </details>
+      <details class="card p-0 group">
+        <summary class="flex items-center justify-between p-5 cursor-pointer">
+          <span class="font-semibold text-gray-900 dark:text-white">What is the ideal CV length for international applications?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"></i>
+        </summary>
+        <div class="px-5 pb-5 text-gray-600 dark:text-gray-400 text-sm">
+          Most countries expect 1–2 pages. France prefers a single page. Switzerland allows 2–3 pages. Australia and Canada allow 2–3 pages for senior roles.
+        </div>
+      </details>
+      <details class="card p-0 group">
+        <summary class="flex items-center justify-between p-5 cursor-pointer">
+          <span class="font-semibold text-gray-900 dark:text-white">Do I need a cover letter for European job applications?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"></i>
+        </summary>
+        <div class="px-5 pb-5 text-gray-600 dark:text-gray-400 text-sm">
+          Most European countries expect a cover letter. In Germany it's called an <em>Anschreiben</em>, in the Netherlands a <em>motivatiebrief</em>, and in France a <em>lettre de motivation</em>. For tech roles it may sometimes be optional.
+        </div>
+      </details>
+      <details class="card p-0 group">
+        <summary class="flex items-center justify-between p-5 cursor-pointer">
+          <span class="font-semibold text-gray-900 dark:text-white">What date format should I use on my international resume?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"></i>
+        </summary>
+        <div class="px-5 pb-5 text-gray-600 dark:text-gray-400 text-sm">
+          Use the local format: DD.MM.YYYY for Germany and Switzerland, DD/MM/YYYY for the UK, Ireland, France, and Australia. Canada uses YYYY-MM-DD (ISO) or MM/DD/YYYY depending on the region.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+{# Share Section #}
+<section class="py-12">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-4">Share this tool</h2>
+    <div class="flex justify-center gap-3">
+      <a href="https://twitter.com/intent/tweet?text=Adapt%20your%20resume%20for%20any%20country%20with%20this%20free%20checklist%20tool&url={{ site.url }}/tools/resume-adapter/" target="_blank" rel="noopener" class="btn-secondary text-sm">
+        <i data-lucide="twitter" class="w-4 h-4 mr-1 inline"></i> Twitter
+      </a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}/tools/resume-adapter/" target="_blank" rel="noopener" class="btn-secondary text-sm">
+        <i data-lucide="linkedin" class="w-4 h-4 mr-1 inline"></i> LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  const countryData = {
+    germany: {
+      name: 'Germany',
+      flag: '\u{1F1E9}\u{1F1EA}',
+      guideUrl: '/resources/country-guides/germany/',
+      items: [
+        { id: 'de-photo', category: 'Format', label: 'Include a professional photo', detail: 'A passport-style headshot in the top-right corner is expected in Germany. Use a professional photographer.', required: true },
+        { id: 'de-dob', category: 'Personal Info', label: 'Add date of birth', detail: 'Standard practice in German CVs (Lebenslauf). Include day, month, and year.', required: true },
+        { id: 'de-nationality', category: 'Personal Info', label: 'Include nationality', detail: 'Helps employers assess visa requirements early. Required for the Lebenslauf format.', required: true },
+        { id: 'de-marital', category: 'Personal Info', label: 'Marital status (optional but common)', detail: 'Frequently included in German CVs. Write "ledig" (single), "verheiratet" (married), etc.', required: false },
+        { id: 'de-length', category: 'Format', label: 'Keep CV to 1–2 pages', detail: 'German employers expect a concise, well-structured Lebenslauf. Avoid exceeding 2 pages.', required: true },
+        { id: 'de-lang', category: 'Language', label: 'CV in German preferred, English accepted for tech', detail: 'International tech companies accept English. Traditional companies prefer German.', required: false },
+        { id: 'de-cover', category: 'Cover Letter', label: 'Write an Anschreiben (cover letter)', detail: 'A tailored cover letter in German is strongly expected. Address it to the hiring manager by name if possible.', required: true },
+        { id: 'de-date', category: 'Format', label: 'Use DD.MM.YYYY date format', detail: 'Standard date format in Germany. Example: 15.03.2024', required: true },
+        { id: 'de-reverse', category: 'Format', label: 'Reverse chronological order', detail: 'List most recent experience first. Include exact months for each position.', required: true },
+        { id: 'de-certs', category: 'Tip', label: 'Include certificates & Zeugnisse', detail: 'Germans value formal references (Arbeitszeugnisse). Mention them or offer to provide on request.', required: false },
+        { id: 'de-diff', category: 'Key Difference', label: 'No "objective statement" — use a profile summary instead', detail: 'German CVs don\'t use objective statements. A brief 2–3 sentence professional profile is acceptable for international roles.', required: false }
+      ],
+      resources: [
+        { name: 'Europass CV Builder', url: 'https://europa.eu/europass/en/create-europass-cv' },
+        { name: 'Lebenslauf.de Templates', url: 'https://www.lebenslauf.de/' },
+        { name: 'Make it in Germany', url: 'https://www.make-it-in-germany.com/en/' }
+      ]
+    },
+    uk: {
+      name: 'United Kingdom',
+      flag: '\u{1F1EC}\u{1F1E7}',
+      guideUrl: '/resources/country-guides/uk/',
+      items: [
+        { id: 'uk-nophoto', category: 'Format', label: 'Do NOT include a photo', detail: 'UK anti-discrimination law (Equality Act 2010) means photos are strongly discouraged and may cause your CV to be rejected.', required: true },
+        { id: 'uk-noage', category: 'Personal Info', label: 'Do NOT include age, date of birth, or marital status', detail: 'Protected characteristics under UK law. Only include name, phone, email, and location (city).', required: true },
+        { id: 'uk-length', category: 'Format', label: 'Keep CV to 2 pages maximum', detail: 'UK recruiters expect concise CVs. One page for graduates, two pages for experienced professionals.', required: true },
+        { id: 'uk-profile', category: 'Format', label: 'Start with a personal profile/summary', detail: 'A 3–4 sentence professional summary at the top highlighting key skills and career goals.', required: true },
+        { id: 'uk-cover', category: 'Cover Letter', label: 'Write a cover letter', detail: 'Expected for most roles. Address the specific job requirements. Keep to one page.', required: true },
+        { id: 'uk-date', category: 'Format', label: 'Use DD/MM/YYYY date format', detail: 'Standard UK date format. Example: 15/03/2024', required: true },
+        { id: 'uk-refs', category: 'Tip', label: '"References available on request" is sufficient', detail: 'Don\'t include referee details on the CV itself. Simply note that references are available.', required: false },
+        { id: 'uk-lang', category: 'Language', label: 'Write in British English', detail: 'Use British spellings (organisation, colour, etc.) and terminology.', required: true },
+        { id: 'uk-diff', category: 'Key Difference', label: 'Use "CV" not "resume"', detail: 'In the UK, it\'s always called a CV (curriculum vitae), not a resume.', required: false }
+      ],
+      resources: [
+        { name: 'GOV.UK CV Tips', url: 'https://nationalcareers.service.gov.uk/get-a-job/cv-sections' },
+        { name: 'Overleaf CV Templates', url: 'https://www.overleaf.com/gallery/tagged/cv' }
+      ]
+    },
+    netherlands: {
+      name: 'Netherlands',
+      flag: '\u{1F1F3}\u{1F1F1}',
+      guideUrl: '/resources/country-guides/netherlands/',
+      items: [
+        { id: 'nl-photo', category: 'Format', label: 'Photo is optional', detail: 'Including a photo is acceptable but not required. If included, use a professional headshot.', required: false },
+        { id: 'nl-length', category: 'Format', label: 'Keep CV to 1–2 pages', detail: 'Concise CVs are preferred. Focus on relevant experience.', required: true },
+        { id: 'nl-lang', category: 'Language', label: 'English or Dutch', detail: 'For tech and international companies, English is standard. Traditional Dutch companies may expect Dutch.', required: true },
+        { id: 'nl-cover', category: 'Cover Letter', label: 'Write a motivatiebrief (motivation letter)', detail: 'A cover letter explaining your motivation is expected. Be direct and specific about why you want the role.', required: true },
+        { id: 'nl-date', category: 'Format', label: 'Use DD-MM-YYYY or DD/MM/YYYY date format', detail: 'Both formats are acceptable in the Netherlands.', required: true },
+        { id: 'nl-personal', category: 'Personal Info', label: 'Include nationality and date of birth (optional)', detail: 'Not required by law but commonly included. Helps with visa assessment.', required: false },
+        { id: 'nl-direct', category: 'Tip', label: 'Be direct and factual', detail: 'Dutch culture values directness. Avoid flowery language. State achievements with numbers.', required: false },
+        { id: 'nl-skills', category: 'Tip', label: 'Highlight language skills prominently', detail: 'Multilingual candidates are valued. List language proficiency levels clearly.', required: false },
+        { id: 'nl-diff', category: 'Key Difference', label: 'Hobbies/interests section is common', detail: 'Dutch employers value cultural fit. Including hobbies shows personality and is appreciated.', required: false }
+      ],
+      resources: [
+        { name: 'IND Work Visa Info', url: 'https://ind.nl/en/residence-permits/work/highly-skilled-migrant' },
+        { name: 'Europass CV Builder', url: 'https://europa.eu/europass/en/create-europass-cv' }
+      ]
+    },
+    ireland: {
+      name: 'Ireland',
+      flag: '\u{1F1EE}\u{1F1EA}',
+      guideUrl: '/resources/country-guides/ireland/',
+      items: [
+        { id: 'ie-nophoto', category: 'Format', label: 'Do NOT include a photo', detail: 'Irish anti-discrimination law discourages photos on CVs. Focus on qualifications instead.', required: true },
+        { id: 'ie-length', category: 'Format', label: 'Keep CV to 2 pages', detail: 'Two pages is standard. Graduates may use one page.', required: true },
+        { id: 'ie-lang', category: 'Language', label: 'Write in English', detail: 'English is the standard language for CVs in Ireland.', required: true },
+        { id: 'ie-cover', category: 'Cover Letter', label: 'Write a cover letter', detail: 'Expected for most applications. Tailor it to the specific role and company.', required: true },
+        { id: 'ie-date', category: 'Format', label: 'Use DD/MM/YYYY date format', detail: 'Standard Irish date format.', required: true },
+        { id: 'ie-nodetails', category: 'Personal Info', label: 'Do NOT include age, marital status, or nationality', detail: 'Only include name, contact details, and LinkedIn profile.', required: true },
+        { id: 'ie-profile', category: 'Format', label: 'Include a professional summary', detail: 'Start with a brief profile summarizing your experience and career goals.', required: true },
+        { id: 'ie-diff', category: 'Key Difference', label: 'PPSN is NOT required on CV', detail: 'Never include your PPS number on a CV. This is only needed after you receive a job offer.', required: false }
+      ],
+      resources: [
+        { name: 'Citizens Information', url: 'https://www.citizensinformation.ie/en/employment/starting-work/' },
+        { name: 'Jobs.ie CV Advice', url: 'https://www.jobs.ie/job-talk/cv-advice/' }
+      ]
+    },
+    sweden: {
+      name: 'Sweden',
+      flag: '\u{1F1F8}\u{1F1EA}',
+      guideUrl: '/resources/country-guides/sweden/',
+      items: [
+        { id: 'se-photo', category: 'Format', label: 'Photo is optional', detail: 'Photos are not expected but not frowned upon. Include one only if it adds professionalism.', required: false },
+        { id: 'se-length', category: 'Format', label: 'Keep CV to 2 pages maximum', detail: 'Concise and focused CVs are preferred in Sweden.', required: true },
+        { id: 'se-lang', category: 'Language', label: 'English for tech roles', detail: 'English CVs are standard for tech and international companies. Some roles may require Swedish.', required: true },
+        { id: 'se-cover', category: 'Cover Letter', label: 'Cover letter (personligt brev) expected', detail: 'A personal letter explaining why you\'re a good fit. Keep it concise and genuine.', required: true },
+        { id: 'se-personnummer', category: 'Personal Info', label: 'Personnummer is NOT required', detail: 'Never include your Swedish personal identity number on a CV. This is handled during onboarding.', required: true },
+        { id: 'se-date', category: 'Format', label: 'Use YYYY-MM-DD date format', detail: 'Sweden uses the ISO date format. Example: 2024-03-15', required: true },
+        { id: 'se-equal', category: 'Tip', label: 'Emphasize teamwork and flat hierarchy fit', detail: 'Swedish work culture values consensus and collaboration. Highlight team achievements.', required: false },
+        { id: 'se-diff', category: 'Key Difference', label: 'References are important — have 2–3 ready', detail: 'Swedish employers commonly contact references. Include them or note "available on request".', required: false }
+      ],
+      resources: [
+        { name: 'Swedish Migration Agency', url: 'https://www.migrationsverket.se/English/Private-individuals/Working-in-Sweden.html' },
+        { name: 'Arbetsförmedlingen CV Tips', url: 'https://arbetsformedlingen.se/other-languages/english-engelska' }
+      ]
+    },
+    switzerland: {
+      name: 'Switzerland',
+      flag: '\u{1F1E8}\u{1F1ED}',
+      guideUrl: '/resources/country-guides/switzerland/',
+      items: [
+        { id: 'ch-photo', category: 'Format', label: 'Include a professional photo', detail: 'A professional headshot is expected on Swiss CVs. Place it in the header.', required: true },
+        { id: 'ch-length', category: 'Format', label: 'CV can be 2–3 pages', detail: 'Switzerland allows longer CVs than most countries. Senior professionals may use 3 pages.', required: true },
+        { id: 'ch-lang', category: 'Language', label: 'German, French, or English depending on canton', detail: 'Zurich/Bern: German. Geneva/Lausanne: French. International companies: English.', required: true },
+        { id: 'ch-cover', category: 'Cover Letter', label: 'Cover letter expected', detail: 'Tailor the language to match the canton. German-speaking: Bewerbungsschreiben. French-speaking: lettre de motivation.', required: true },
+        { id: 'ch-dob', category: 'Personal Info', label: 'Include date of birth and nationality', detail: 'Standard practice in Swiss CVs. Important for work permit assessment.', required: true },
+        { id: 'ch-date', category: 'Format', label: 'Use DD.MM.YYYY date format', detail: 'Standard Swiss date format across all language regions.', required: true },
+        { id: 'ch-refs', category: 'Tip', label: 'Include work references (Arbeitszeugnisse)', detail: 'Like Germany, Switzerland values formal reference letters from previous employers.', required: false },
+        { id: 'ch-diff', category: 'Key Difference', label: 'Include exact addresses for previous employers', detail: 'Swiss CVs often include the city and company name for each position held.', required: false }
+      ],
+      resources: [
+        { name: 'ch.ch Working in Switzerland', url: 'https://www.ch.ch/en/working/' },
+        { name: 'Overleaf CV Templates', url: 'https://www.overleaf.com/gallery/tagged/cv' }
+      ]
+    },
+    france: {
+      name: 'France',
+      flag: '\u{1F1EB}\u{1F1F7}',
+      guideUrl: '',
+      items: [
+        { id: 'fr-photo', category: 'Format', label: 'Include a professional photo', detail: 'A professional photo is common practice in France, though not legally required.', required: true },
+        { id: 'fr-length', category: 'Format', label: 'Keep CV to 1 page preferred', detail: 'French employers prefer one-page CVs. Only senior professionals should use two pages.', required: true },
+        { id: 'fr-lang', category: 'Language', label: 'Write in French', detail: 'French CVs should be in French unless the company explicitly uses English. Tech startups may accept English.', required: true },
+        { id: 'fr-cover', category: 'Cover Letter', label: 'Write a lettre de motivation', detail: 'A formal cover letter in French is strongly expected. Follow French business letter conventions.', required: true },
+        { id: 'fr-personal', category: 'Personal Info', label: 'Include date of birth and nationality', detail: 'Commonly included on French CVs.', required: true },
+        { id: 'fr-date', category: 'Format', label: 'Use DD/MM/YYYY date format', detail: 'Standard French date format. Example: 15/03/2024', required: true },
+        { id: 'fr-education', category: 'Tip', label: 'Highlight education (formation) prominently', detail: 'French employers place strong emphasis on educational background. List your Grande École or university prominently.', required: false },
+        { id: 'fr-diff', category: 'Key Difference', label: 'Use "Compétences" section for skills', detail: 'A dedicated skills section is standard in French CVs. Include both technical and soft skills.', required: false }
+      ],
+      resources: [
+        { name: 'Pôle Emploi CV Tips', url: 'https://www.pole-emploi.fr/' },
+        { name: 'Europass CV Builder', url: 'https://europa.eu/europass/en/create-europass-cv' }
+      ]
+    },
+    australia: {
+      name: 'Australia',
+      flag: '\u{1F1E6}\u{1F1FA}',
+      guideUrl: '/resources/country-guides/australia/',
+      items: [
+        { id: 'au-nophoto', category: 'Format', label: 'Do NOT include a photo', detail: 'Australian anti-discrimination law means photos should not be included on CVs.', required: true },
+        { id: 'au-length', category: 'Format', label: 'CV can be 2–3 pages', detail: 'Australians are comfortable with longer CVs. 2 pages for mid-level, 3 for senior roles.', required: true },
+        { id: 'au-lang', category: 'Language', label: 'Write in English', detail: 'English is the only expected language for Australian CVs.', required: true },
+        { id: 'au-cover', category: 'Cover Letter', label: 'Cover letter expected', detail: 'A tailored cover letter addressing the selection criteria is important.', required: true },
+        { id: 'au-criteria', category: 'Format', label: 'Address selection criteria if listed', detail: 'Government and some private roles require you to address specific selection criteria. This is unique to Australia.', required: true },
+        { id: 'au-date', category: 'Format', label: 'Use DD/MM/YYYY date format', detail: 'Standard Australian date format.', required: true },
+        { id: 'au-nodetails', category: 'Personal Info', label: 'Do NOT include personal details (age, marital status)', detail: 'Only include name, phone, email, LinkedIn, and city.', required: true },
+        { id: 'au-achievements', category: 'Tip', label: 'Focus on achievements with metrics', detail: 'Australian employers value quantifiable achievements. Use numbers and percentages.', required: false },
+        { id: 'au-diff', category: 'Key Difference', label: '"Referees" section is common', detail: 'Include 2–3 professional referees with full contact details, or note "available on request".', required: false }
+      ],
+      resources: [
+        { name: 'Australian Government Jobs', url: 'https://www.apsjobs.gov.au/' },
+        { name: 'Seek Career Advice', url: 'https://www.seek.com.au/career-advice/category/resumes-and-cover-letters' }
+      ]
+    },
+    canada: {
+      name: 'Canada',
+      flag: '\u{1F1E8}\u{1F1E6}',
+      guideUrl: '/resources/country-guides/canada/',
+      items: [
+        { id: 'ca-nophoto', category: 'Format', label: 'Do NOT include a photo', detail: 'Canadian human rights laws prohibit discrimination. Photos are strongly discouraged.', required: true },
+        { id: 'ca-length', category: 'Format', label: 'Keep CV to 2 pages', detail: 'Two pages is standard. One page for entry-level. Never exceed three.', required: true },
+        { id: 'ca-lang', category: 'Language', label: 'English or French (depending on province)', detail: 'English in most provinces. French in Quebec. Bilingual CVs may be requested by federal employers.', required: true },
+        { id: 'ca-cover', category: 'Cover Letter', label: 'Cover letter expected', detail: 'A cover letter is standard for most applications. Tailor it to the specific job posting.', required: true },
+        { id: 'ca-nodetails', category: 'Personal Info', label: 'Do NOT include personal details', detail: 'No age, marital status, religion, SIN, or photo. Only name, phone, email, LinkedIn, and city/province.', required: true },
+        { id: 'ca-date', category: 'Format', label: 'Use YYYY-MM-DD date format (ISO standard)', detail: 'Canada officially uses the ISO format. MM/DD/YYYY is also common in English Canada.', required: true },
+        { id: 'ca-achievements', category: 'Tip', label: 'Use action verbs and quantified achievements', detail: 'Canadian employers value results-oriented CVs. Start bullets with action verbs.', required: false },
+        { id: 'ca-ats', category: 'Tip', label: 'Optimize for ATS (Applicant Tracking Systems)', detail: 'Many Canadian companies use ATS. Use standard section headings and include keywords from the job posting.', required: false },
+        { id: 'ca-diff', category: 'Key Difference', label: 'Use "resume" not "CV" (unless academic)', detail: 'In Canada, it\'s called a "resume" for most jobs. "CV" is only used for academic or research positions.', required: false }
+      ],
+      resources: [
+        { name: 'Job Bank Canada', url: 'https://www.jobbank.gc.ca/home' },
+        { name: 'Canada.ca Immigration', url: 'https://www.canada.ca/en/immigration-refugees-citizenship.html' }
+      ]
+    }
+  };
+
+  const checkedItems = new Set();
+
+  document.getElementById('ra-country').addEventListener('change', function() {
+    const key = this.value;
+    const container = document.getElementById('ra-results');
+    if (!key || !countryData[key]) {
+      container.classList.add('hidden');
+      return;
+    }
+    checkedItems.clear();
+    render(countryData[key], key);
+    container.classList.remove('hidden');
+  });
+
+  function render(data, key) {
+    const header = document.getElementById('ra-header');
+    header.innerHTML = `
+      <div class="flex items-center gap-3 mb-3">
+        <span class="text-4xl">${data.flag}</span>
+        <div>
+          <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white">${data.name}</h2>
+          ${data.guideUrl ? `<a href="${data.guideUrl}" class="text-sm text-brand-600 dark:text-brand-400 hover:underline">View country guide &rarr;</a>` : ''}
+        </div>
+      </div>
+      <p class="text-sm text-gray-500 dark:text-gray-400">${data.items.length} items to review. Check off each item as you update your CV.</p>
+    `;
+
+    const cl = document.getElementById('ra-checklist');
+    const categories = {};
+    data.items.forEach(item => {
+      if (!categories[item.category]) categories[item.category] = [];
+      categories[item.category].push(item);
+    });
+
+    let html = '';
+    Object.entries(categories).forEach(([cat, items]) => {
+      html += `<h3 class="text-sm font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider mt-6 mb-3 first:mt-0">${cat}</h3>`;
+      items.forEach(item => {
+        html += `
+          <label class="card p-4 flex items-start gap-3 cursor-pointer hover:ring-2 hover:ring-brand-500/30 transition-all">
+            <input type="checkbox" id="${item.id}" class="ra-check mt-1 w-5 h-5 rounded border-gray-300 dark:border-gray-600 text-brand-600 focus:ring-brand-500 shrink-0" />
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap">
+                <span class="font-semibold text-gray-900 dark:text-white text-sm">${item.label}</span>
+                ${item.required ? '<span class="text-xs font-medium text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-900/30 px-1.5 py-0.5 rounded">Required</span>' : '<span class="text-xs font-medium text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded">Optional</span>'}
+              </div>
+              <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">${item.detail}</p>
+            </div>
+          </label>
+        `;
+      });
+    });
+    cl.innerHTML = html;
+
+    const res = document.getElementById('ra-resources');
+    let resHtml = '<h4 class="font-semibold text-blue-800 dark:text-blue-300 mb-2"><i data-lucide="link" class="w-4 h-4 inline mr-1"></i>Useful Resources</h4><ul class="space-y-1">';
+    data.resources.forEach(r => {
+      resHtml += `<li><a href="${r.url}" target="_blank" rel="noopener" class="text-sm text-blue-700 dark:text-blue-400 hover:underline">${r.name} &rarr;</a></li>`;
+    });
+    resHtml += '</ul>';
+    res.innerHTML = resHtml;
+
+    document.querySelectorAll('.ra-check').forEach(cb => {
+      cb.addEventListener('change', function() {
+        if (this.checked) checkedItems.add(this.id);
+        else checkedItems.delete(this.id);
+        updateProgress(data.items.length);
+      });
+    });
+
+    updateProgress(data.items.length);
+    if (window.lucide) lucide.createIcons();
+  }
+
+  function updateProgress(total) {
+    const pct = Math.round((checkedItems.size / total) * 100);
+    document.getElementById('ra-pct').textContent = pct + '%';
+    document.getElementById('ra-bar').style.width = pct + '%';
+  }
+})();
+</script>

@@ -1,0 +1,349 @@
+---
+layout: layouts/base.njk
+title: "Tech Interview Prep by Company | What to Expect at Top Employers"
+description: "Prepare for tech interviews at visa-sponsoring companies. Learn about interview processes, rounds, tech stacks, and tips for Zalando, Spotify, Revolut, and more."
+---
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Tech Interview Prep by Company",
+      "url": "{{ site.url }}/tools/interview-prep/",
+      "description": "{{ description }}",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Any",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "publisher": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How many interview rounds do top tech companies have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most top visa-sponsoring tech companies have 3-5 interview rounds. This typically includes a recruiter screen, one or two technical interviews (coding and/or system design), and a team fit or culture interview. Companies like Revolut may have 5 rounds, while Bolt and Form3 often complete the process in 3 rounds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does the interview process take at visa-sponsoring companies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The interview timeline typically ranges from 2-5 weeks. Fast companies like Bolt and Wise can complete the process in 2-3 weeks. Spotify and Datadog may take 3-5 weeks. The visa sponsorship process adds additional time after you receive an offer, typically 2-8 weeks depending on the country."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I prepare for a system design interview?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For system design interviews, practice designing scalable distributed systems. Focus on: load balancing, database sharding, caching strategies, message queues, and microservices architecture. For e-commerce companies (Zalando, Booking.com), prepare for high-traffic scenarios. For fintech (Revolut, Adyen), focus on consistency and reliability in financial systems."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to mention visa sponsorship during interviews?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You should be transparent about your visa requirements early in the process, ideally during the recruiter screen. All companies listed on VisaJobs.xyz already sponsor visas, so this won't disqualify you. Being upfront helps both parties plan the timeline and avoids surprises later in the process."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+<section class="bg-gradient-to-br from-brand-50 via-white to-violet-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 py-16">
+  <div class="max-w-5xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400">Home</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-600 dark:text-gray-300">Tools</span>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-900 dark:text-white">Interview Prep</span>
+    </nav>
+    <div class="flex items-center gap-4 mb-4">
+      <div class="w-14 h-14 bg-violet-100 dark:bg-violet-900/30 rounded-2xl flex items-center justify-center">
+        <i data-lucide="message-square-code" class="w-7 h-7 text-violet-600 dark:text-violet-400"></i>
+      </div>
+      <div>
+        <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white">Interview Prep by Company</h1>
+        <p class="text-gray-600 dark:text-gray-400 mt-1">Know what to expect before you apply</p>
+      </div>
+    </div>
+    <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mb-8">
+      Get insider knowledge on interview processes at top visa-sponsoring companies. Learn the number of rounds, tech stacks, timelines, and tips to ace your interviews.
+    </p>
+    <div class="max-w-xl">
+      <div class="relative">
+        <i data-lucide="search" class="w-5 h-5 absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+        <input type="text" id="company-search" class="input-field w-full pl-12 pr-4 py-3" placeholder="Search for a company (e.g., Spotify, Zalando, Revolut)..." autocomplete="off">
+      </div>
+      <div id="search-suggestions" class="hidden absolute z-20 w-full max-w-xl mt-1 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-lg overflow-hidden"></div>
+    </div>
+  </div>
+</section>
+
+{# Selected company detail #}
+<section id="company-detail" class="py-12 hidden">
+  <div class="max-w-5xl mx-auto px-4">
+    <div id="company-card" class="card p-6 md:p-8"></div>
+  </div>
+</section>
+
+{# Server-rendered grid for SEO #}
+<section class="py-12">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="section-heading mb-8">All Companies with Interview Guides</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4" id="company-grid">
+      {% for company in companies %}
+      <div class="card p-5 hover:border-brand-300 dark:hover:border-brand-600 transition-colors cursor-pointer company-grid-item" data-slug="{{ company.slug }}">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="/media/{{ company.slug }}_logo.jpg" alt="{{ company.name }}" class="w-10 h-10 rounded-lg object-cover" loading="lazy" onerror="this.src='/favicon/android-chrome-192x192.png'">
+          <div>
+            <h3 class="font-semibold text-gray-900 dark:text-white">{{ company.name }}</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">{{ company.hq }}</p>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">{{ company.industry }}</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge">{{ company.size }} employees</span>
+          {% if company.relocation %}<span class="badge" style="background:rgb(220 252 231);color:rgb(22 101 52)"><i data-lucide="check-circle" class="w-3 h-3 inline mr-1"></i>Relocation</span>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# Share #}
+<section class="py-8">
+  <div class="max-w-5xl mx-auto px-4 flex items-center gap-3 justify-center">
+    <span class="text-sm text-gray-500 dark:text-gray-400">Share this tool:</span>
+    <a href="https://twitter.com/intent/tweet?url={{ site.url }}/tools/interview-prep/&text=Prepare%20for%20tech%20interviews%20at%20visa-sponsoring%20companies%20with%20this%20free%20tool" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-brand-100 dark:hover:bg-brand-900/30 transition-colors">
+      <i data-lucide="twitter" class="w-4 h-4 text-gray-600 dark:text-gray-400"></i>
+    </a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}/tools/interview-prep/" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-brand-100 dark:hover:bg-brand-900/30 transition-colors">
+      <i data-lucide="linkedin" class="w-4 h-4 text-gray-600 dark:text-gray-400"></i>
+    </a>
+  </div>
+</section>
+
+{# FAQ #}
+<section class="py-16 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="section-heading text-center mb-8">Frequently Asked Questions</h2>
+    <div class="space-y-4" id="faq-list">
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">How many interview rounds do top tech companies have?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <p class="text-gray-600 dark:text-gray-400">Most top visa-sponsoring tech companies have 3-5 interview rounds. This typically includes a recruiter screen, one or two technical interviews (coding and/or system design), and a team fit or culture interview. Companies like Revolut may have 5 rounds, while Bolt and Form3 often complete the process in 3 rounds.</p>
+        </div>
+      </div>
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">How long does the interview process take?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <p class="text-gray-600 dark:text-gray-400">The interview timeline typically ranges from 2-5 weeks. Fast companies like Bolt and Wise can complete the process in 2-3 weeks. Spotify and Datadog may take 3-5 weeks. The visa sponsorship process adds additional time after you receive an offer, typically 2-8 weeks depending on the country.</p>
+        </div>
+      </div>
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">What should I prepare for a system design interview?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <p class="text-gray-600 dark:text-gray-400">Practice designing scalable distributed systems. Focus on load balancing, database sharding, caching strategies, message queues, and microservices architecture. For e-commerce companies (Zalando, Booking.com), prepare for high-traffic scenarios. For fintech (Revolut, Adyen), focus on consistency and reliability in financial systems. Use resources like <a href="/blog/posts/resume-tips-for-international-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">our interview tips blog</a> for more guidance.</p>
+        </div>
+      </div>
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Do I need to mention visa sponsorship during interviews?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <p class="text-gray-600 dark:text-gray-400">Be transparent about your visa requirements early in the process, ideally during the recruiter screen. All companies listed on <a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">our job board</a> already sponsor visas, so this won't disqualify you. Being upfront helps both parties plan the timeline and avoids surprises later.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% block scripts %}
+<script>
+(function() {
+  var companies = {{ companies | jsonify | safe }};
+
+  var interviewData = {
+    "zalando": { rounds: 4, timeline: "3-4 weeks", process: ["Recruiter call (30 min)", "Technical screen \u2014 coding (60 min)", "System design interview (60 min)", "Team fit / hiring manager (45 min)"], stack: "Scala, Java, Python, AWS, Kubernetes", tips: "Strong computer science fundamentals. Scala experience is a plus but not required. Practice system design for e-commerce scale." },
+    "spotify": { rounds: 4, timeline: "3-5 weeks", process: ["Recruiter screen (30 min)", "Technical phone screen (60 min)", "On-site: coding + system design (2x 60 min)", "Culture / values interview (45 min)"], stack: "Java, Python, GCP, Kubernetes, microservices", tips: "Focus on distributed systems. Spotify values autonomy and collaboration. Be ready to discuss trade-offs." },
+    "revolut": { rounds: 5, timeline: "2-4 weeks", process: ["Recruiter call (20 min)", "Online coding test (90 min)", "Technical interview (60 min)", "System design (60 min)", "Final \u2014 VP/CTO (30 min)"], stack: "Java, Kotlin, Spring Boot, PostgreSQL, Kafka", tips: "Fast-paced process. Strong coding skills essential. Prepare for high-throughput financial systems questions." },
+    "adyen": { rounds: 4, timeline: "4 weeks", process: ["Recruiter screen (30 min)", "Take-home coding assignment (3-4 hours)", "Technical deep-dive on assignment (90 min)", "Team fit interview (45 min)"], stack: "Java, Kubernetes, on-premise infrastructure, big data", tips: "Adyen runs its own data centers. Understanding of infrastructure and networking is valued." },
+    "booking": { rounds: 4, timeline: "3-4 weeks", process: ["Recruiter call (30 min)", "Online coding test (90 min)", "Technical interview \u2014 algorithms + design (120 min)", "Behavioral interview (45 min)"], stack: "Java, Perl, Python, AWS, machine learning", tips: "Heavy focus on A/B testing and data-driven decisions. Prepare for questions about experimentation at scale." },
+    "canva": { rounds: 4, timeline: "3-4 weeks", process: ["Recruiter screen (30 min)", "Technical phone screen (45 min)", "Pair programming session (90 min)", "Values and team interview (60 min)"], stack: "Java, TypeScript, React, AWS, microservices", tips: "Canva values collaboration. Pair programming is real \u2014 practice thinking aloud. Focus on clean, maintainable code." },
+    "datadog": { rounds: 4, timeline: "3-5 weeks", process: ["Recruiter call (30 min)", "Technical screen \u2014 coding (60 min)", "On-site: system design + coding (2x 60 min)", "Hiring manager interview (45 min)"], stack: "Go, Python, Kubernetes, distributed systems", tips: "Strong systems programming focus. Know your way around monitoring, observability, and distributed tracing." },
+    "wise": { rounds: 4, timeline: "2-3 weeks", process: ["Recruiter call (30 min)", "Take-home task (3-4 hours)", "Technical review + live coding (90 min)", "Team and values interview (60 min)"], stack: "Java, Spring Boot, React, Kafka, PostgreSQL", tips: "Wise values simplicity and transparency. Show how you break down complex problems into simple solutions." },
+    "bolt": { rounds: 3, timeline: "2-3 weeks", process: ["Recruiter screen (30 min)", "Technical interview \u2014 coding + design (90 min)", "Team fit + hiring manager (60 min)"], stack: "Go, Python, Kotlin, AWS, Kubernetes, microservices", tips: "Fast process. Bolt values speed and pragmatism. Focus on scalable solutions for high-traffic systems." },
+    "form3": { rounds: 3, timeline: "2-3 weeks", process: ["Recruiter call (30 min)", "Pair programming in Go (90 min)", "Architecture discussion + team fit (60 min)"], stack: "Go, Terraform, AWS, GCP, Kubernetes, CockroachDB", tips: "Go experience is a strong plus. TDD is central to their culture. Practice test-driven development." }
+  };
+
+  var searchInput = document.getElementById('company-search');
+  var suggestionsEl = document.getElementById('search-suggestions');
+  var detailSection = document.getElementById('company-detail');
+  var companyCard = document.getElementById('company-card');
+
+  function getCompanyBySlug(slug) {
+    for (var i = 0; i < companies.length; i++) {
+      if (companies[i].slug === slug) return companies[i];
+    }
+    return null;
+  }
+
+  function showSuggestions(query) {
+    if (!query) { suggestionsEl.classList.add('hidden'); return; }
+    var q = query.toLowerCase();
+    var matches = companies.filter(function(c) {
+      return c.name.toLowerCase().indexOf(q) !== -1 || c.industry.toLowerCase().indexOf(q) !== -1 || c.hq.toLowerCase().indexOf(q) !== -1;
+    });
+    if (!matches.length) {
+      suggestionsEl.innerHTML = '<div class="p-4 text-sm text-gray-500 dark:text-gray-400">No companies found matching "' + query + '"</div>';
+      suggestionsEl.classList.remove('hidden');
+      return;
+    }
+    var html = '';
+    matches.forEach(function(c) {
+      var hasGuide = !!interviewData[c.slug];
+      html += '<button class="suggestion-item w-full flex items-center gap-3 px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-700/50 text-left transition-colors" data-slug="' + c.slug + '">' +
+        '<img src="/media/' + c.slug + '_logo.jpg" alt="' + c.name + '" class="w-8 h-8 rounded-lg object-cover" onerror="this.src=\'/favicon/android-chrome-192x192.png\'">' +
+        '<div class="flex-1 min-w-0"><p class="font-medium text-gray-900 dark:text-white truncate">' + c.name + '</p>' +
+        '<p class="text-xs text-gray-500 dark:text-gray-400">' + c.hq + ' · ' + c.industry + '</p></div>' +
+        (hasGuide ? '<span class="badge text-xs" style="background:rgb(220 252 231);color:rgb(22 101 52)">Guide</span>' : '') +
+        '</button>';
+    });
+    suggestionsEl.innerHTML = html;
+    suggestionsEl.classList.remove('hidden');
+    suggestionsEl.querySelectorAll('.suggestion-item').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        selectCompany(this.getAttribute('data-slug'));
+        suggestionsEl.classList.add('hidden');
+        searchInput.value = '';
+      });
+    });
+  }
+
+  searchInput.addEventListener('input', debounce(function() {
+    showSuggestions(this.value.trim());
+  }, 200));
+
+  searchInput.addEventListener('focus', function() {
+    if (this.value.trim()) showSuggestions(this.value.trim());
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!suggestionsEl.contains(e.target) && e.target !== searchInput) {
+      suggestionsEl.classList.add('hidden');
+    }
+  });
+
+  function selectCompany(slug) {
+    var company = getCompanyBySlug(slug);
+    if (!company) return;
+    var interview = interviewData[slug];
+    var html = '';
+
+    html += '<div class="flex flex-col md:flex-row md:items-start gap-6 mb-6">';
+    html += '<img src="/media/' + slug + '_logo.jpg" alt="' + company.name + '" class="w-16 h-16 rounded-2xl object-cover" onerror="this.src=\'/favicon/android-chrome-192x192.png\'">';
+    html += '<div class="flex-1"><h2 class="text-2xl font-bold text-gray-900 dark:text-white">' + company.name + '</h2>';
+    html += '<p class="text-gray-600 dark:text-gray-400 mt-1">' + company.industry + ' · ' + company.hq + ' · ' + company.size + ' employees</p>';
+    html += '<div class="flex flex-wrap gap-2 mt-3">';
+    company.visaTypes.forEach(function(v) {
+      html += '<span class="badge">' + v + '</span>';
+    });
+    if (company.relocation) html += '<span class="badge" style="background:rgb(220 252 231);color:rgb(22 101 52)"><i data-lucide="check-circle" class="w-3 h-3 inline mr-1"></i>Relocation Support</span>';
+    html += '</div></div></div>';
+
+    html += '<p class="text-gray-700 dark:text-gray-300 mb-6">' + company.notes + '</p>';
+
+    if (interview) {
+      html += '<div class="grid md:grid-cols-3 gap-4 mb-6">';
+      html += '<div class="p-4 bg-violet-50 dark:bg-violet-900/20 rounded-xl text-center"><p class="text-3xl font-extrabold text-violet-600 dark:text-violet-400">' + interview.rounds + '</p><p class="text-sm text-gray-600 dark:text-gray-400">Rounds</p></div>';
+      html += '<div class="p-4 bg-brand-50 dark:bg-brand-900/20 rounded-xl text-center"><p class="text-lg font-bold text-brand-600 dark:text-brand-400">' + interview.timeline + '</p><p class="text-sm text-gray-600 dark:text-gray-400">Timeline</p></div>';
+      html += '<div class="p-4 bg-emerald-50 dark:bg-emerald-900/20 rounded-xl text-center"><p class="text-lg font-bold text-emerald-600 dark:text-emerald-400">' + interview.stack.split(', ').length + ' techs</p><p class="text-sm text-gray-600 dark:text-gray-400">In stack</p></div>';
+      html += '</div>';
+
+      html += '<div class="mb-6"><h3 class="font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2"><i data-lucide="list-ordered" class="w-5 h-5 text-violet-500"></i> Interview Process</h3>';
+      html += '<div class="space-y-3">';
+      interview.process.forEach(function(step, i) {
+        html += '<div class="flex items-start gap-3">';
+        html += '<span class="shrink-0 w-7 h-7 rounded-full bg-violet-100 dark:bg-violet-900/30 flex items-center justify-center text-sm font-bold text-violet-700 dark:text-violet-400">' + (i + 1) + '</span>';
+        html += '<p class="text-gray-700 dark:text-gray-300 pt-0.5">' + step + '</p>';
+        html += '</div>';
+      });
+      html += '</div></div>';
+
+      html += '<div class="mb-6"><h3 class="font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="code-2" class="w-5 h-5 text-brand-500"></i> Tech Stack</h3>';
+      html += '<div class="flex flex-wrap gap-2">';
+      interview.stack.split(', ').forEach(function(tech) {
+        html += '<span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-300">' + tech + '</span>';
+      });
+      html += '</div></div>';
+
+      html += '<div class="mb-6 p-4 bg-amber-50 dark:bg-amber-900/10 border border-amber-200 dark:border-amber-800 rounded-xl">';
+      html += '<h3 class="font-bold text-gray-900 dark:text-white mb-2 flex items-center gap-2"><i data-lucide="lightbulb" class="w-5 h-5 text-amber-500"></i> Tips</h3>';
+      html += '<p class="text-gray-700 dark:text-gray-300">' + interview.tips + '</p>';
+      html += '</div>';
+    } else {
+      html += '<div class="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-xl mb-6">';
+      html += '<p class="text-gray-600 dark:text-gray-400"><i data-lucide="info" class="w-4 h-4 inline mr-1"></i> Detailed interview guide coming soon. In the meantime, research the company on Glassdoor and Blind for interview experiences.</p>';
+      html += '</div>';
+    }
+
+    if (company.relocation) {
+      html += '<div class="mb-6"><h3 class="font-bold text-gray-900 dark:text-white mb-2 flex items-center gap-2"><i data-lucide="plane" class="w-5 h-5 text-emerald-500"></i> Relocation Package</h3>';
+      html += '<p class="text-gray-700 dark:text-gray-300">' + company.relocationDetails + '</p></div>';
+    }
+
+    html += '<div class="flex flex-col sm:flex-row gap-3 pt-4 border-t border-gray-200 dark:border-gray-700">';
+    html += '<a href="' + company.careers + '" target="_blank" rel="noopener" class="btn-primary"><i data-lucide="external-link" class="w-4 h-4 mr-2"></i> Careers Page</a>';
+    html += '<a href="/visa-sponsored-jobs/?q=' + encodeURIComponent(company.name) + '" class="btn-secondary"><i data-lucide="briefcase" class="w-4 h-4 mr-2"></i> Jobs on Our Board</a>';
+    html += '</div>';
+
+    companyCard.innerHTML = html;
+    detailSection.classList.remove('hidden');
+    window.scrollTo({ top: detailSection.offsetTop - 100, behavior: 'smooth' });
+    if (window.lucide) lucide.createIcons();
+  }
+
+  document.querySelectorAll('.company-grid-item').forEach(function(item) {
+    item.addEventListener('click', function() {
+      selectCompany(this.getAttribute('data-slug'));
+    });
+  });
+
+  document.querySelectorAll('.faq-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = btn.closest('.faq-item');
+      var content = item.querySelector('.faq-content');
+      var icon = item.querySelector('.faq-icon');
+      var isOpen = !content.classList.contains('hidden');
+      content.classList.toggle('hidden', isOpen);
+      icon.style.transform = isOpen ? '' : 'rotate(180deg)';
+      btn.setAttribute('aria-expanded', !isOpen);
+    });
+  });
+})();
+</script>
+{% endblock %}

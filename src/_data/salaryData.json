@@ -1,0 +1,200 @@
+{
+  "countries": [
+    {
+      "name": "Germany",
+      "slug": "germany",
+      "currency": "EUR",
+      "currencySymbol": "€",
+      "brackets": [
+        { "min": 0, "max": 11784, "rate": 0 },
+        { "min": 11784, "max": 17005, "rate": 14 },
+        { "min": 17005, "max": 66760, "rate": 24 },
+        { "min": 66760, "max": 277825, "rate": 42 },
+        { "min": 277825, "max": null, "rate": 45 }
+      ],
+      "socialSecurity": 20.5,
+      "socialSecurityCap": 90600,
+      "solidaritySurcharge": 5.5,
+      "solidaritySurchargeThreshold": 18130,
+      "churchTax": 8,
+      "churchTaxOptional": true,
+      "notes": "Solidarity surcharge applies at 5.5% of income tax above threshold. Church tax is optional (8-9% of income tax). Social security includes pension (9.3%), health (7.3%), care (1.7%), unemployment (1.3%).",
+      "specialRules": [],
+      "avgTechSalary": { "junior": 45000, "mid": 60000, "senior": 78000 },
+      "guideUrl": "/resources/country-guides/germany/"
+    },
+    {
+      "name": "Netherlands",
+      "slug": "netherlands",
+      "currency": "EUR",
+      "currencySymbol": "€",
+      "brackets": [
+        { "min": 0, "max": 38098, "rate": 36.97 },
+        { "min": 38098, "max": 75518, "rate": 36.97 },
+        { "min": 75518, "max": null, "rate": 49.50 }
+      ],
+      "socialSecurity": 0,
+      "socialSecurityCap": 0,
+      "notes": "Social security is included in the income tax brackets. The 30% ruling allows qualifying expats to receive 30% of salary tax-free for up to 5 years.",
+      "specialRules": [
+        { "name": "30% Ruling", "description": "Qualifying expats receive 30% of gross salary tax-free for up to 5 years. Effective tax rate drops significantly.", "eligible": "Recruited from abroad, specific expertise, minimum salary threshold of €46,107 (or €35,048 under 30 with MSc)" }
+      ],
+      "avgTechSalary": { "junior": 42000, "mid": 58000, "senior": 80000 },
+      "guideUrl": "/resources/country-guides/netherlands/"
+    },
+    {
+      "name": "United Kingdom",
+      "slug": "uk",
+      "currency": "GBP",
+      "currencySymbol": "£",
+      "brackets": [
+        { "min": 0, "max": 12570, "rate": 0 },
+        { "min": 12570, "max": 50270, "rate": 20 },
+        { "min": 50270, "max": 125140, "rate": 40 },
+        { "min": 125140, "max": null, "rate": 45 }
+      ],
+      "socialSecurity": 8,
+      "socialSecurityMin": 12570,
+      "socialSecurityMax": 50270,
+      "socialSecurityAbove": 2,
+      "notes": "National Insurance: 8% on earnings between £12,570-£50,270, then 2% above. Personal allowance (£12,570) tapers for income over £100,000.",
+      "specialRules": [],
+      "avgTechSalary": { "junior": 35000, "mid": 55000, "senior": 80000 },
+      "guideUrl": "/resources/country-guides/uk/"
+    },
+    {
+      "name": "Sweden",
+      "slug": "sweden",
+      "currency": "SEK",
+      "currencySymbol": "kr",
+      "brackets": [
+        { "min": 0, "max": 614000, "rate": 32 },
+        { "min": 614000, "max": null, "rate": 52 }
+      ],
+      "socialSecurity": 0,
+      "notes": "Municipal tax averages 32%. State tax of 20% applies to income above SEK 614,000. Employer pays 31.42% social security on top of gross salary. Expert tax relief available for qualifying foreign workers.",
+      "specialRules": [
+        { "name": "Expert Tax Relief", "description": "Qualifying foreign researchers and key personnel can exempt 25% of salary from income tax for the first 7 years.", "eligible": "Monthly salary above SEK 103,800, or specific research/expert roles" }
+      ],
+      "avgTechSalary": { "junior": 400000, "mid": 550000, "senior": 720000 },
+      "guideUrl": "/resources/country-guides/sweden/"
+    },
+    {
+      "name": "Ireland",
+      "slug": "ireland",
+      "currency": "EUR",
+      "currencySymbol": "€",
+      "brackets": [
+        { "min": 0, "max": 42000, "rate": 20 },
+        { "min": 42000, "max": null, "rate": 40 }
+      ],
+      "socialSecurity": 4,
+      "usc": [
+        { "min": 0, "max": 12012, "rate": 0.5 },
+        { "min": 12012, "max": 25760, "rate": 2 },
+        { "min": 25760, "max": 70044, "rate": 4 },
+        { "min": 70044, "max": null, "rate": 8 }
+      ],
+      "notes": "Universal Social Charge (USC) applies in addition to income tax and PRSI (social security at 4%). Tax credits reduce effective tax rate.",
+      "specialRules": [
+        { "name": "SARP Relief", "description": "Special Assignee Relief Programme exempts 30% of income above €75,000 from income tax for up to 5 years.", "eligible": "Assigned to Ireland by an employer from abroad, minimum base salary €75,000" }
+      ],
+      "avgTechSalary": { "junior": 40000, "mid": 60000, "senior": 85000 },
+      "guideUrl": "/resources/country-guides/ireland/"
+    },
+    {
+      "name": "Switzerland",
+      "slug": "switzerland",
+      "currency": "CHF",
+      "currencySymbol": "CHF",
+      "brackets": [
+        { "min": 0, "max": 18800, "rate": 0 },
+        { "min": 18800, "max": 31600, "rate": 0.77 },
+        { "min": 31600, "max": 41400, "rate": 0.88 },
+        { "min": 41400, "max": 55200, "rate": 2.64 },
+        { "min": 55200, "max": 72500, "rate": 2.97 },
+        { "min": 72500, "max": 78100, "rate": 5.94 },
+        { "min": 78100, "max": 103600, "rate": 6.60 },
+        { "min": 103600, "max": 134600, "rate": 8.80 },
+        { "min": 134600, "max": 176000, "rate": 11.0 },
+        { "min": 176000, "max": null, "rate": 13.2 }
+      ],
+      "socialSecurity": 6.4,
+      "notes": "Federal tax brackets shown. Cantonal and municipal taxes vary significantly (Zurich ~24% total, Zug ~14% total). Social security: AHV/IV/EO 5.3% + ALV 1.1%. Mandatory health insurance is separate (CHF 300-500/month).",
+      "specialRules": [],
+      "avgTechSalary": { "junior": 85000, "mid": 110000, "senior": 140000 },
+      "guideUrl": "/resources/country-guides/switzerland/"
+    },
+    {
+      "name": "France",
+      "slug": "france",
+      "currency": "EUR",
+      "currencySymbol": "€",
+      "brackets": [
+        { "min": 0, "max": 11294, "rate": 0 },
+        { "min": 11294, "max": 28797, "rate": 11 },
+        { "min": 28797, "max": 82341, "rate": 30 },
+        { "min": 82341, "max": 177106, "rate": 41 },
+        { "min": 177106, "max": null, "rate": 45 }
+      ],
+      "socialSecurity": 22,
+      "notes": "Social security contributions are approximately 22% of gross salary (employee share). France uses a household quotient system for tax calculation. The Passeport Talent visa offers favorable conditions for tech workers.",
+      "specialRules": [
+        { "name": "Impatriate Regime", "description": "Qualifying expatriates can exempt the relocation premium (up to 50% of total compensation) from income tax for up to 8 years.", "eligible": "Recruited directly from abroad by a French company, not tax resident in France for the previous 5 years" }
+      ],
+      "avgTechSalary": { "junior": 38000, "mid": 50000, "senior": 70000 },
+      "guideUrl": ""
+    },
+    {
+      "name": "Australia",
+      "slug": "australia",
+      "currency": "AUD",
+      "currencySymbol": "A$",
+      "brackets": [
+        { "min": 0, "max": 18200, "rate": 0 },
+        { "min": 18200, "max": 45000, "rate": 19 },
+        { "min": 45000, "max": 120000, "rate": 32.5 },
+        { "min": 120000, "max": 180000, "rate": 37 },
+        { "min": 180000, "max": null, "rate": 45 }
+      ],
+      "socialSecurity": 0,
+      "notes": "Medicare levy of 2% applies to taxable income. Employer pays 11.5% superannuation (retirement) on top of salary. No social security deductions from employee. Temporary residents are not eligible for the tax-free threshold in the first year.",
+      "specialRules": [],
+      "avgTechSalary": { "junior": 75000, "mid": 110000, "senior": 150000 },
+      "guideUrl": "/resources/country-guides/australia/"
+    },
+    {
+      "name": "Canada",
+      "slug": "canada",
+      "currency": "CAD",
+      "currencySymbol": "C$",
+      "brackets": [
+        { "min": 0, "max": 55867, "rate": 15 },
+        { "min": 55867, "max": 111733, "rate": 20.5 },
+        { "min": 111733, "max": 154906, "rate": 26 },
+        { "min": 154906, "max": 220000, "rate": 29 },
+        { "min": 220000, "max": null, "rate": 33 }
+      ],
+      "socialSecurity": 5.95,
+      "socialSecurityCap": 68500,
+      "notes": "Federal tax brackets shown. Provincial tax is additional (Ontario ~5-13%, BC ~5-20%, Quebec ~15-25%). CPP contribution is 5.95% up to $68,500. EI premium is 1.58% up to $63,200. Basic personal amount of $15,705 is tax-free.",
+      "specialRules": [],
+      "avgTechSalary": { "junior": 60000, "mid": 85000, "senior": 120000 },
+      "guideUrl": "/resources/country-guides/canada/"
+    },
+    {
+      "name": "Estonia",
+      "slug": "estonia",
+      "currency": "EUR",
+      "currencySymbol": "€",
+      "brackets": [
+        { "min": 0, "max": null, "rate": 20 }
+      ],
+      "socialSecurity": 1.6,
+      "notes": "Flat 20% income tax rate. Basic exemption of €7,848/year reduces effective rate. Social security: unemployment insurance 1.6% (employee). Employer pays 33% social tax on top of gross salary. One of the lowest tax burdens in the EU.",
+      "specialRules": [],
+      "avgTechSalary": { "junior": 28000, "mid": 42000, "senior": 60000 },
+      "guideUrl": ""
+    }
+  ]
+}

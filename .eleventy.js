@@ -111,6 +111,12 @@ module.exports = function (eleventyConfig) {
     return arr ? arr.length : 0;
   });
 
+  // Format numbers with locale
+  eleventyConfig.addFilter("localeString", (num) => {
+    if (num === null || num === undefined) return "";
+    return Number(num).toLocaleString("en-US");
+  });
+
   // Year for copyright
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 

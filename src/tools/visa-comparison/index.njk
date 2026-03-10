@@ -1,0 +1,642 @@
+---
+layout: layouts/base.njk
+title: "Work Visa Comparison | Compare Work Permits Worldwide"
+description: "Compare work visa requirements, processing times, salary thresholds, and paths to permanent residence across 9 countries. EU Blue Card vs UK Skilled Worker vs H-1B and more."
+---
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Work Visa Comparison Tool",
+      "url": "{{ site.url }}/tools/visa-comparison/",
+      "description": "{{ description }}",
+      "applicationCategory": "ReferenceApplication",
+      "operatingSystem": "Any",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "publisher": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which work visa is easiest to get?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Netherlands Highly Skilled Migrant (HSM) visa is often considered the easiest to obtain for tech workers. It has the fastest processing time (2-4 weeks), no language requirement, no labor market test, and no lottery system. The EU Blue Card (Germany) and Canada Global Talent Stream are also relatively straightforward if you meet the salary threshold."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which work visa has the fastest processing time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Canada Global Talent Stream targets 2-week processing, making it the fastest work visa program. The Netherlands HSM visa (2-4 weeks) and France Passeport Talent (2-6 weeks) are also very fast. For premium processing, the US H-1B offers 15-day processing for an additional fee."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which visa offers the fastest path to permanent residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The EU Blue Card (Germany) offers the fastest path to permanent residence — just 21 months if you have B1 German language skills, or 33 months without. Ireland's Critical Skills Permit leads to unrestricted Stamp 4 in just 2 years. Canada's Express Entry can grant permanent residence in 6-12 months after obtaining a work permit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do all work visas allow my spouse to work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most modern work visa programs allow spouses to work. The EU Blue Card, UK Skilled Worker, Netherlands HSM, and Australia TSS all grant full work rights to spouses. The US H-1B is the notable exception — spouses on H-4 visas can only work if the H-1B holder has an approved I-140 petition, which typically takes years."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a lottery for work visas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The US H-1B is the only major work visa that requires a lottery. With approximately 25% selection rate and an annual cap of 85,000 visas, it's the most uncertain path. All other major work visas (EU Blue Card, UK Skilled Worker, Netherlands HSM, Canada GTS, Australia TSS, etc.) are deterministic — if you meet the requirements, you get the visa."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+<section class="bg-gradient-to-br from-brand-50 via-white to-sky-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 py-16">
+  <div class="max-w-7xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400">Home</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-600 dark:text-gray-300">Tools</span>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-900 dark:text-white">Visa Comparison</span>
+    </nav>
+    <div class="flex items-center gap-4 mb-4">
+      <div class="w-14 h-14 bg-sky-100 dark:bg-sky-900/30 rounded-2xl flex items-center justify-center">
+        <i data-lucide="scale" class="w-7 h-7 text-sky-600 dark:text-sky-400"></i>
+      </div>
+      <div>
+        <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white">Work Visa Comparison</h1>
+        <p class="text-gray-600 dark:text-gray-400 mt-1">Compare work permits across 9 countries side-by-side</p>
+      </div>
+    </div>
+    <p class="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mb-8">
+      EU Blue Card vs UK Skilled Worker vs H-1B — which visa is right for you? Sort, filter, and compare processing times, salary thresholds, spouse work rights, and paths to permanent residence.
+    </p>
+
+    {# Filters #}
+    <div class="flex flex-wrap gap-3 mb-4">
+      <div>
+        <label for="filter-country" class="sr-only">Filter by country</label>
+        <select id="filter-country" class="input-field text-sm py-2">
+          <option value="">All Countries</option>
+          {% set countrySet = [] %}
+          {% for visa in visaTypes %}
+            {% if visa.country not in countrySet %}
+              {% set countrySet = (countrySet.push(visa.country), countrySet) %}
+              <option value="{{ visa.country }}">{{ visa.country }}</option>
+            {% endif %}
+          {% endfor %}
+        </select>
+      </div>
+      <div>
+        <label for="filter-speed" class="sr-only">Processing speed</label>
+        <select id="filter-speed" class="input-field text-sm py-2">
+          <option value="">All Processing Speeds</option>
+          <option value="fast">Fast (under 4 weeks)</option>
+          <option value="medium">Medium (4-8 weeks)</option>
+          <option value="slow">Slow (2+ months)</option>
+        </select>
+      </div>
+      <div>
+        <label for="filter-spouse" class="sr-only">Spouse work rights</label>
+        <select id="filter-spouse" class="input-field text-sm py-2">
+          <option value="">Spouse Work Rights</option>
+          <option value="yes">Unrestricted</option>
+          <option value="limited">Limited / Conditional</option>
+        </select>
+      </div>
+      <button id="clear-filters" class="btn-secondary text-sm py-2 hidden">
+        <i data-lucide="x" class="w-4 h-4 mr-1"></i> Clear Filters
+      </button>
+    </div>
+
+    {# Compare mode #}
+    <div id="compare-bar" class="hidden sticky top-16 z-30 bg-brand-600 dark:bg-brand-700 text-white rounded-xl p-4 mb-4 flex items-center justify-between shadow-lg">
+      <div class="flex items-center gap-2">
+        <i data-lucide="git-compare" class="w-5 h-5"></i>
+        <span id="compare-count">0</span> visas selected for comparison
+      </div>
+      <div class="flex gap-2">
+        <button id="compare-btn" class="px-4 py-2 bg-white text-brand-600 font-semibold rounded-lg hover:bg-brand-50 transition-colors text-sm">Compare Now</button>
+        <button id="clear-compare" class="px-4 py-2 bg-brand-500 rounded-lg hover:bg-brand-400 transition-colors text-sm">Clear</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# Table #}
+<section class="py-8">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="overflow-x-auto">
+      <table class="w-full text-left" id="visa-table">
+        <thead>
+          <tr class="border-b-2 border-gray-200 dark:border-gray-700">
+            <th class="p-3 w-10">
+              <span class="sr-only">Compare</span>
+            </th>
+            <th class="p-3 font-semibold text-gray-900 dark:text-white cursor-pointer hover:text-brand-600 dark:hover:text-brand-400 transition-colors sortable whitespace-nowrap" data-sort="name">
+              Visa Name <i data-lucide="arrow-up-down" class="w-4 h-4 inline ml-1 opacity-40"></i>
+            </th>
+            <th class="p-3 font-semibold text-gray-900 dark:text-white cursor-pointer hover:text-brand-600 dark:hover:text-brand-400 transition-colors sortable whitespace-nowrap" data-sort="country">
+              Country <i data-lucide="arrow-up-down" class="w-4 h-4 inline ml-1 opacity-40"></i>
+            </th>
+            <th class="p-3 font-semibold text-gray-900 dark:text-white cursor-pointer hover:text-brand-600 dark:hover:text-brand-400 transition-colors sortable whitespace-nowrap" data-sort="processing">
+              Processing <i data-lucide="arrow-up-down" class="w-4 h-4 inline ml-1 opacity-40"></i>
+            </th>
+            <th class="p-3 font-semibold text-gray-900 dark:text-white cursor-pointer hover:text-brand-600 dark:hover:text-brand-400 transition-colors sortable whitespace-nowrap" data-sort="salary">
+              Salary Threshold <i data-lucide="arrow-up-down" class="w-4 h-4 inline ml-1 opacity-40"></i>
+            </th>
+            <th class="p-3 font-semibold text-gray-900 dark:text-white whitespace-nowrap">Spouse Work</th>
+            <th class="p-3 font-semibold text-gray-900 dark:text-white whitespace-nowrap">Path to PR</th>
+            <th class="p-3 font-semibold text-gray-900 dark:text-white whitespace-nowrap">Lottery</th>
+            <th class="p-3 w-10"><span class="sr-only">Expand</span></th>
+          </tr>
+        </thead>
+        <tbody id="visa-tbody">
+          {% for visa in visaTypes %}
+          <tr class="visa-row border-b border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"
+              data-slug="{{ visa.slug }}"
+              data-country="{{ visa.country }}"
+              data-processing="{{ visa.processingTime }}"
+              data-spouse="{{ visa.spouseWork }}"
+              data-salary="{{ visa.salaryThreshold }}"
+              data-lottery="{{ visa.lottery }}">
+            <td class="p-3">
+              <input type="checkbox" class="compare-check w-4 h-4 rounded border-gray-300 text-brand-600 focus:ring-brand-500" data-slug="{{ visa.slug }}">
+            </td>
+            <td class="p-3">
+              <span class="font-semibold text-gray-900 dark:text-white">{{ visa.name }}</span>
+              <span class="block text-xs text-gray-500 dark:text-gray-400">{{ visa.category }}</span>
+            </td>
+            <td class="p-3 text-gray-700 dark:text-gray-300">{{ visa.country }}</td>
+            <td class="p-3">
+              {% set ptime = visa.processingTime %}
+              {% if "2 week" in ptime or "2-4 week" in ptime or "2-6 week" in ptime %}
+                <span class="badge" style="background:rgb(220 252 231);color:rgb(22 101 52)">{{ ptime }}</span>
+              {% elif "3-6 month" in ptime or "1-4 month" in ptime %}
+                <span class="badge" style="background:rgb(254 243 199);color:rgb(146 64 14)">{{ ptime }}</span>
+              {% else %}
+                <span class="badge" style="background:rgb(219 234 254);color:rgb(30 64 175)">{{ ptime }}</span>
+              {% endif %}
+            </td>
+            <td class="p-3 text-sm text-gray-700 dark:text-gray-300">{{ visa.salaryThreshold }}</td>
+            <td class="p-3">
+              {% if "unrestricted" in visa.spouseWork.toLowerCase() or "Yes, unrestricted" in visa.spouseWork or "Yes, full" in visa.spouseWork or "automatic" in visa.spouseWork.toLowerCase() %}
+                <span class="text-emerald-600 dark:text-emerald-400 flex items-center gap-1 text-sm"><i data-lucide="check-circle" class="w-4 h-4"></i> Yes</span>
+              {% elif "Yes" in visa.spouseWork %}
+                <span class="text-amber-600 dark:text-amber-400 flex items-center gap-1 text-sm"><i data-lucide="check-circle" class="w-4 h-4"></i> Conditional</span>
+              {% else %}
+                <span class="text-red-600 dark:text-red-400 flex items-center gap-1 text-sm"><i data-lucide="x-circle" class="w-4 h-4"></i> Limited</span>
+              {% endif %}
+            </td>
+            <td class="p-3 text-sm text-gray-700 dark:text-gray-300">{{ visa.pathToPR }}</td>
+            <td class="p-3">
+              {% if visa.lottery %}
+                <span class="badge" style="background:rgb(254 226 226);color:rgb(153 27 27)">Yes</span>
+              {% else %}
+                <span class="badge" style="background:rgb(220 252 231);color:rgb(22 101 52)">No</span>
+              {% endif %}
+            </td>
+            <td class="p-3">
+              <button class="expand-btn p-1 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" data-slug="{{ visa.slug }}">
+                <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 expand-icon transition-transform duration-200"></i>
+              </button>
+            </td>
+          </tr>
+          <tr class="visa-detail hidden" data-detail="{{ visa.slug }}">
+            <td colspan="9" class="p-0">
+              <div class="p-6 bg-gray-50 dark:bg-gray-800/50 border-b border-gray-200 dark:border-gray-700">
+                <div class="grid md:grid-cols-3 gap-6">
+                  <div>
+                    <h4 class="font-semibold text-gray-900 dark:text-white mb-2 flex items-center gap-2"><i data-lucide="list-checks" class="w-4 h-4 text-brand-500"></i> Requirements</h4>
+                    <ul class="space-y-1">
+                      {% for req in visa.requirements %}
+                      <li class="text-sm text-gray-600 dark:text-gray-400 flex items-start gap-2">
+                        <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500 shrink-0 mt-0.5"></i>
+                        {{ req }}
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 dark:text-white mb-2 flex items-center gap-2"><i data-lucide="thumbs-up" class="w-4 h-4 text-emerald-500"></i> Pros</h4>
+                    <ul class="space-y-1">
+                      {% for pro in visa.pros %}
+                      <li class="text-sm text-gray-600 dark:text-gray-400 flex items-start gap-2">
+                        <i data-lucide="plus" class="w-3.5 h-3.5 text-emerald-500 shrink-0 mt-0.5"></i>
+                        {{ pro }}
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 dark:text-white mb-2 flex items-center gap-2"><i data-lucide="thumbs-down" class="w-4 h-4 text-red-500"></i> Cons</h4>
+                    <ul class="space-y-1">
+                      {% for con in visa.cons %}
+                      <li class="text-sm text-gray-600 dark:text-gray-400 flex items-start gap-2">
+                        <i data-lucide="minus" class="w-3.5 h-3.5 text-red-500 shrink-0 mt-0.5"></i>
+                        {{ con }}
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+                <div class="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                  <span class="text-sm text-gray-600 dark:text-gray-400"><strong>Validity:</strong> {{ visa.validity }}</span>
+                  <span class="text-sm text-gray-600 dark:text-gray-400">|</span>
+                  <span class="text-sm text-gray-600 dark:text-gray-400"><strong>Spouse:</strong> {{ visa.spouseWork }}</span>
+                </div>
+                <div class="flex gap-3 mt-4">
+                  <a href="{{ visa.officialUrl }}" target="_blank" rel="noopener" class="btn-primary text-sm">
+                    <i data-lucide="external-link" class="w-4 h-4 mr-1"></i> Official Page
+                  </a>
+                  <a href="/visa-sponsored-jobs/" class="btn-secondary text-sm">
+                    <i data-lucide="briefcase" class="w-4 h-4 mr-1"></i> Find Jobs
+                  </a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    {# Comparison panel #}
+    <div id="compare-panel" class="hidden mt-8">
+      <div class="card p-6 md:p-8">
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
+            <i data-lucide="git-compare" class="w-5 h-5 text-brand-600 dark:text-brand-400"></i>
+            Side-by-Side Comparison
+          </h2>
+          <button id="close-compare" class="btn-secondary text-sm"><i data-lucide="x" class="w-4 h-4 mr-1"></i> Close</button>
+        </div>
+        <div id="compare-content" class="overflow-x-auto"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# Links #}
+<section class="py-8">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid sm:grid-cols-3 gap-4">
+      <a href="/resources/country-guides/" class="card p-5 flex items-center gap-4 hover:border-brand-300 dark:hover:border-brand-600 transition-colors group">
+        <div class="w-10 h-10 bg-brand-100 dark:bg-brand-900/30 rounded-xl flex items-center justify-center">
+          <i data-lucide="map" class="w-5 h-5 text-brand-600 dark:text-brand-400"></i>
+        </div>
+        <div class="flex-1">
+          <p class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600">Country Guides</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">In-depth destination info</p>
+        </div>
+      </a>
+      <a href="/visa-sponsored-jobs/" class="card p-5 flex items-center gap-4 hover:border-brand-300 dark:hover:border-brand-600 transition-colors group">
+        <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl flex items-center justify-center">
+          <i data-lucide="briefcase" class="w-5 h-5 text-emerald-600 dark:text-emerald-400"></i>
+        </div>
+        <div class="flex-1">
+          <p class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600">Browse Jobs</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Find visa-sponsored positions</p>
+        </div>
+      </a>
+      <a href="/blog/posts/visa-sponsorship-explained/" class="card p-5 flex items-center gap-4 hover:border-brand-300 dark:hover:border-brand-600 transition-colors group">
+        <div class="w-10 h-10 bg-violet-100 dark:bg-violet-900/30 rounded-xl flex items-center justify-center">
+          <i data-lucide="book-open" class="w-5 h-5 text-violet-600 dark:text-violet-400"></i>
+        </div>
+        <div class="flex-1">
+          <p class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600">Visa Sponsorship Guide</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Everything explained</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+{# Share #}
+<section class="py-4">
+  <div class="max-w-7xl mx-auto px-4 flex items-center gap-3 justify-center">
+    <span class="text-sm text-gray-500 dark:text-gray-400">Share this tool:</span>
+    <a href="https://twitter.com/intent/tweet?url={{ site.url }}/tools/visa-comparison/&text=Compare%20work%20visas%20across%209%20countries%20side-by-side%20with%20this%20free%20tool" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-brand-100 dark:hover:bg-brand-900/30 transition-colors">
+      <i data-lucide="twitter" class="w-4 h-4 text-gray-600 dark:text-gray-400"></i>
+    </a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}/tools/visa-comparison/" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-brand-100 dark:hover:bg-brand-900/30 transition-colors">
+      <i data-lucide="linkedin" class="w-4 h-4 text-gray-600 dark:text-gray-400"></i>
+    </a>
+  </div>
+</section>
+
+{# FAQ #}
+<section class="py-16 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="section-heading text-center mb-8">Frequently Asked Questions</h2>
+    <div class="space-y-4" id="faq-list">
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Which work visa is easiest to get?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <p class="text-gray-600 dark:text-gray-400">The <a href="/resources/country-guides/netherlands/" class="text-brand-600 dark:text-brand-400 hover:underline">Netherlands HSM visa</a> is often considered the easiest for tech workers — fast processing (2-4 weeks), no language requirement, no labor market test, and no lottery. The EU Blue Card (Germany) and Canada Global Talent Stream are also relatively straightforward if you meet the salary threshold.</p>
+        </div>
+      </div>
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Which visa has the fastest processing?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <p class="text-gray-600 dark:text-gray-400">The <a href="/resources/country-guides/canada/" class="text-brand-600 dark:text-brand-400 hover:underline">Canada Global Talent Stream</a> targets 2-week processing. The Netherlands HSM visa (2-4 weeks) and France Passeport Talent (2-6 weeks) are also very fast. The US H-1B offers 15-day premium processing for an additional fee, but the lottery adds months of uncertainty.</p>
+        </div>
+      </div>
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Which visa offers the fastest path to permanent residence?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <p class="text-gray-600 dark:text-gray-400">The <a href="/resources/country-guides/germany/" class="text-brand-600 dark:text-brand-400 hover:underline">EU Blue Card (Germany)</a> offers the fastest path — just 21 months with B1 German language skills. Ireland's Critical Skills Permit leads to unrestricted Stamp 4 in 2 years. Canada's Express Entry can grant PR in 6-12 months after obtaining a work permit.</p>
+        </div>
+      </div>
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Do all work visas allow my spouse to work?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <p class="text-gray-600 dark:text-gray-400">Most modern work visas grant full spouse work rights — EU Blue Card, UK Skilled Worker, Netherlands HSM, and Australia TSS all do. The US H-1B is the notable exception: spouses on H-4 visas can only work if the H-1B holder has an approved I-140 petition, which typically takes years.</p>
+        </div>
+      </div>
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Is there a lottery for work visas?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <p class="text-gray-600 dark:text-gray-400">The US H-1B is the only major work visa with a lottery (roughly 25% selection rate, 85,000 annual cap). All other major work visas are deterministic — if you meet the requirements, you get the visa. This is one of the main reasons many tech workers choose Europe, Canada, or Australia over the US.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% block scripts %}
+<script>
+(function() {
+  var visaData = {{ visaTypes | jsonify | safe }};
+
+  var rows = document.querySelectorAll('.visa-row');
+  var filterCountry = document.getElementById('filter-country');
+  var filterSpeed = document.getElementById('filter-speed');
+  var filterSpouse = document.getElementById('filter-spouse');
+  var clearFiltersBtn = document.getElementById('clear-filters');
+  var compareBar = document.getElementById('compare-bar');
+  var compareCountEl = document.getElementById('compare-count');
+  var comparePanel = document.getElementById('compare-panel');
+  var compareContent = document.getElementById('compare-content');
+  var selected = {};
+
+  function getProcessingWeeks(str) {
+    var m = str.match(/(\d+)/);
+    if (!m) return 99;
+    var n = parseInt(m[1]);
+    if (str.indexOf('month') !== -1) return n * 4;
+    if (str.indexOf('day') !== -1) return Math.ceil(n / 7);
+    return n;
+  }
+
+  function classifySpeed(str) {
+    var weeks = getProcessingWeeks(str);
+    if (weeks <= 4) return 'fast';
+    if (weeks <= 8) return 'medium';
+    return 'slow';
+  }
+
+  function classifySpouse(str) {
+    var lower = str.toLowerCase();
+    if (lower.indexOf('unrestricted') !== -1 || lower.indexOf('full work') !== -1 || lower.indexOf('automatic') !== -1 || lower.indexOf('open work') !== -1) return 'yes';
+    return 'limited';
+  }
+
+  function applyFilters() {
+    var country = filterCountry.value;
+    var speed = filterSpeed.value;
+    var spouse = filterSpouse.value;
+    var anyActive = country || speed || spouse;
+    clearFiltersBtn.classList.toggle('hidden', !anyActive);
+
+    rows.forEach(function(row) {
+      var show = true;
+      if (country && row.getAttribute('data-country') !== country) show = false;
+      if (speed && classifySpeed(row.getAttribute('data-processing')) !== speed) show = false;
+      if (spouse && classifySpouse(row.getAttribute('data-spouse')) !== spouse) show = false;
+
+      row.classList.toggle('hidden', !show);
+      var detail = document.querySelector('tr[data-detail="' + row.getAttribute('data-slug') + '"]');
+      if (!show && detail) detail.classList.add('hidden');
+    });
+  }
+
+  filterCountry.addEventListener('change', applyFilters);
+  filterSpeed.addEventListener('change', applyFilters);
+  filterSpouse.addEventListener('change', applyFilters);
+  clearFiltersBtn.addEventListener('click', function() {
+    filterCountry.value = '';
+    filterSpeed.value = '';
+    filterSpouse.value = '';
+    applyFilters();
+  });
+
+  // Sorting
+  var sortState = { col: null, asc: true };
+  document.querySelectorAll('.sortable').forEach(function(th) {
+    th.addEventListener('click', function() {
+      var col = this.getAttribute('data-sort');
+      if (sortState.col === col) {
+        sortState.asc = !sortState.asc;
+      } else {
+        sortState.col = col;
+        sortState.asc = true;
+      }
+      sortTable(col, sortState.asc);
+    });
+  });
+
+  function sortTable(col, asc) {
+    var tbody = document.getElementById('visa-tbody');
+    var pairs = [];
+    rows.forEach(function(row) {
+      var detail = document.querySelector('tr[data-detail="' + row.getAttribute('data-slug') + '"]');
+      pairs.push({ row: row, detail: detail });
+    });
+
+    pairs.sort(function(a, b) {
+      var va, vb;
+      if (col === 'name') {
+        va = a.row.querySelector('td:nth-child(2)').textContent.trim().toLowerCase();
+        vb = b.row.querySelector('td:nth-child(2)').textContent.trim().toLowerCase();
+      } else if (col === 'country') {
+        va = a.row.getAttribute('data-country').toLowerCase();
+        vb = b.row.getAttribute('data-country').toLowerCase();
+      } else if (col === 'processing') {
+        va = getProcessingWeeks(a.row.getAttribute('data-processing'));
+        vb = getProcessingWeeks(b.row.getAttribute('data-processing'));
+      } else if (col === 'salary') {
+        va = a.row.getAttribute('data-salary').toLowerCase();
+        vb = b.row.getAttribute('data-salary').toLowerCase();
+      }
+      if (va < vb) return asc ? -1 : 1;
+      if (va > vb) return asc ? 1 : -1;
+      return 0;
+    });
+
+    pairs.forEach(function(p) {
+      tbody.appendChild(p.row);
+      if (p.detail) tbody.appendChild(p.detail);
+    });
+  }
+
+  // Expand rows
+  document.querySelectorAll('.expand-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var slug = this.getAttribute('data-slug');
+      var detail = document.querySelector('tr[data-detail="' + slug + '"]');
+      var icon = this.querySelector('.expand-icon');
+      var isOpen = !detail.classList.contains('hidden');
+      detail.classList.toggle('hidden', isOpen);
+      icon.style.transform = isOpen ? '' : 'rotate(180deg)';
+      if (!isOpen && window.lucide) lucide.createIcons();
+    });
+  });
+
+  // Compare mode
+  document.querySelectorAll('.compare-check').forEach(function(cb) {
+    cb.addEventListener('change', function() {
+      var slug = this.getAttribute('data-slug');
+      if (this.checked) {
+        if (Object.keys(selected).length >= 3) {
+          this.checked = false;
+          return;
+        }
+        selected[slug] = true;
+      } else {
+        delete selected[slug];
+      }
+      var count = Object.keys(selected).length;
+      compareCountEl.textContent = count;
+      compareBar.classList.toggle('hidden', count === 0);
+    });
+  });
+
+  document.getElementById('clear-compare').addEventListener('click', function() {
+    selected = {};
+    document.querySelectorAll('.compare-check').forEach(function(cb) { cb.checked = false; });
+    compareBar.classList.add('hidden');
+    comparePanel.classList.add('hidden');
+  });
+
+  document.getElementById('close-compare').addEventListener('click', function() {
+    comparePanel.classList.add('hidden');
+  });
+
+  document.getElementById('compare-btn').addEventListener('click', function() {
+    var slugs = Object.keys(selected);
+    if (slugs.length < 2) return;
+    var visas = slugs.map(function(s) {
+      for (var i = 0; i < visaData.length; i++) {
+        if (visaData[i].slug === s) return visaData[i];
+      }
+      return null;
+    }).filter(Boolean);
+
+    var fields = [
+      { key: 'country', label: 'Country', icon: 'map-pin' },
+      { key: 'processingTime', label: 'Processing Time', icon: 'clock' },
+      { key: 'validity', label: 'Validity', icon: 'calendar' },
+      { key: 'salaryThreshold', label: 'Salary Threshold', icon: 'banknote' },
+      { key: 'spouseWork', label: 'Spouse Work Rights', icon: 'users' },
+      { key: 'pathToPR', label: 'Path to PR', icon: 'flag' },
+      { key: 'lottery', label: 'Lottery Required', icon: 'dice-1' }
+    ];
+
+    var html = '<table class="w-full text-left text-sm">';
+    html += '<thead><tr><th class="p-3 font-semibold text-gray-500 dark:text-gray-400"></th>';
+    visas.forEach(function(v) {
+      html += '<th class="p-3 font-bold text-gray-900 dark:text-white">' + v.name + '</th>';
+    });
+    html += '</tr></thead><tbody>';
+
+    fields.forEach(function(f) {
+      html += '<tr class="border-t border-gray-100 dark:border-gray-800">';
+      html += '<td class="p-3 font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap"><i data-lucide="' + f.icon + '" class="w-4 h-4 inline mr-2 text-gray-400"></i>' + f.label + '</td>';
+      visas.forEach(function(v) {
+        var val = v[f.key];
+        if (f.key === 'lottery') val = val ? '<span class="text-red-600 dark:text-red-400 font-semibold">Yes</span>' : '<span class="text-emerald-600 dark:text-emerald-400 font-semibold">No</span>';
+        html += '<td class="p-3 text-gray-600 dark:text-gray-400">' + val + '</td>';
+      });
+      html += '</tr>';
+    });
+
+    html += '<tr class="border-t border-gray-100 dark:border-gray-800">';
+    html += '<td class="p-3 font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap"><i data-lucide="thumbs-up" class="w-4 h-4 inline mr-2 text-emerald-500"></i>Key Pros</td>';
+    visas.forEach(function(v) {
+      html += '<td class="p-3"><ul class="space-y-1">';
+      v.pros.forEach(function(p) {
+        html += '<li class="text-gray-600 dark:text-gray-400 flex items-start gap-1"><i data-lucide="plus" class="w-3 h-3 text-emerald-500 shrink-0 mt-0.5"></i>' + p + '</li>';
+      });
+      html += '</ul></td>';
+    });
+    html += '</tr>';
+
+    html += '<tr class="border-t border-gray-100 dark:border-gray-800">';
+    html += '<td class="p-3 font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap"><i data-lucide="thumbs-down" class="w-4 h-4 inline mr-2 text-red-500"></i>Key Cons</td>';
+    visas.forEach(function(v) {
+      html += '<td class="p-3"><ul class="space-y-1">';
+      v.cons.forEach(function(c) {
+        html += '<li class="text-gray-600 dark:text-gray-400 flex items-start gap-1"><i data-lucide="minus" class="w-3 h-3 text-red-500 shrink-0 mt-0.5"></i>' + c + '</li>';
+      });
+      html += '</ul></td>';
+    });
+    html += '</tr>';
+
+    html += '</tbody></table>';
+
+    compareContent.innerHTML = html;
+    comparePanel.classList.remove('hidden');
+    window.scrollTo({ top: comparePanel.offsetTop - 100, behavior: 'smooth' });
+    if (window.lucide) lucide.createIcons();
+  });
+
+  // FAQ toggles
+  document.querySelectorAll('.faq-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = btn.closest('.faq-item');
+      var content = item.querySelector('.faq-content');
+      var icon = item.querySelector('.faq-icon');
+      var isOpen = !content.classList.contains('hidden');
+      content.classList.toggle('hidden', isOpen);
+      icon.style.transform = isOpen ? '' : 'rotate(180deg)';
+      btn.setAttribute('aria-expanded', !isOpen);
+    });
+  });
+})();
+</script>
+{% endblock %}

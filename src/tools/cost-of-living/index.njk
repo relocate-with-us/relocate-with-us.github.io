@@ -1,0 +1,488 @@
+---
+layout: layouts/base.njk
+title: "Cost of Living Comparison for Expats | Compare Cities Worldwide"
+description: "Compare cost of living between 14 major tech cities worldwide. See rent, groceries, transport, and dining costs side-by-side for Berlin, Amsterdam, London, and more."
+---
+
+{# Structured Data #}
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Cost of Living Comparison for Expats",
+  "url": "{{ site.url }}/tools/cost-of-living/",
+  "description": "{{ description }}",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "publisher": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the cheapest European city for tech workers?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Krakow, Poland and Tallinn, Estonia are among the most affordable European tech cities. Monthly costs for a single person start around €1,200-1,400, compared to €2,500+ in cities like Amsterdam or London. Both cities have growing tech sectors with visa sponsorship opportunities." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does rent cost in Berlin vs London?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A one-bedroom apartment in Berlin city center averages around €1,100/month, while the same in London costs approximately £2,100/month. Berlin rent is roughly 48% cheaper than London, making it one of the most attractive major European tech hubs for affordability." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I consider cost of living when choosing a relocation destination?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. A higher salary doesn't always mean more purchasing power. For example, Zurich offers the highest tech salaries in Europe, but its cost of living is also the highest. Compare net salary (after tax) with living costs to understand your true financial situation." }
+    },
+    {
+      "@type": "Question",
+      "name": "What costs should I budget for when relocating?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Key costs include: rent (usually 30-40% of income), groceries, transportation, utilities, internet, health insurance, and dining. Don't forget one-time relocation costs like deposit (often 2-3 months rent), furniture, and registration fees. Many employers cover initial relocation expenses." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are these cost of living figures accurate?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Our data represents average costs as of early 2026 and is sourced from aggregated living cost databases. Actual costs vary by neighborhood, lifestyle, and personal choices. Use these figures as a starting point for planning, and research specific neighborhoods in your target city." }
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block head %}
+<style>
+  .cost-bar { transition: width 0.5s ease-out; }
+  .diff-positive { color: #16a34a; }
+  .diff-negative { color: #dc2626; }
+  .dark .diff-positive { color: #4ade80; }
+  .dark .diff-negative { color: #f87171; }
+</style>
+{% endblock %}
+
+{# Hero #}
+<section class="relative overflow-hidden bg-gradient-to-br from-brand-50 via-white to-indigo-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 py-16 md:py-20">
+  <div class="max-w-4xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400">Home</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span>Tools</span>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-900 dark:text-white">Cost of Living</span>
+    </nav>
+
+    <div class="text-center">
+      <div class="w-16 h-16 bg-purple-100 dark:bg-purple-900/30 rounded-2xl flex items-center justify-center mx-auto mb-6">
+        <i data-lucide="map-pin" class="w-8 h-8 text-purple-600 dark:text-purple-400"></i>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 leading-tight">
+        Cost of Living <span class="bg-yellow-200 dark:bg-yellow-500/20 dark:text-yellow-300 px-2 inline-block -skew-x-1">Comparison</span>
+      </h1>
+      <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        Compare living costs across {{ costOfLiving.cities | length }} major tech cities. See rent, groceries, transport, and dining costs side-by-side.
+      </p>
+    </div>
+  </div>
+</section>
+
+{# Comparison Tool #}
+<section class="py-12">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="card p-6 md:p-8">
+      <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-6">Compare Two Cities</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div>
+          <label for="city-a" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">City A</label>
+          <select id="city-a" class="input-field">
+            <option value="">Select a city</option>
+            {% for city in costOfLiving.cities %}
+            <option value="{{ city.slug }}">{{ city.emoji }} {{ city.name }}, {{ city.country }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div>
+          <label for="city-b" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">City B</label>
+          <select id="city-b" class="input-field">
+            <option value="">Select a city</option>
+            {% for city in costOfLiving.cities %}
+            <option value="{{ city.slug }}">{{ city.emoji }} {{ city.name }}, {{ city.country }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="flex items-end">
+          <button id="compare-btn" class="btn-primary w-full">
+            <i data-lucide="bar-chart-3" class="w-4 h-4 mr-2"></i>Compare
+          </button>
+        </div>
+      </div>
+
+      {# Comparison Results #}
+      <div id="comparison-result" class="hidden">
+        <div class="border-t border-gray-200 dark:border-gray-700 pt-6">
+          <div class="grid grid-cols-3 gap-4 mb-6 text-center">
+            <div class="p-4 bg-brand-50 dark:bg-brand-900/20 rounded-xl">
+              <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Monthly Total</p>
+              <p class="text-xl font-bold text-gray-900 dark:text-white" id="total-a">-</p>
+              <p class="text-sm text-gray-500 dark:text-gray-400" id="name-a">-</p>
+            </div>
+            <div class="flex items-center justify-center">
+              <div class="text-center">
+                <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Difference</p>
+                <p class="text-2xl font-bold" id="total-diff">-</p>
+              </div>
+            </div>
+            <div class="p-4 bg-brand-50 dark:bg-brand-900/20 rounded-xl">
+              <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Monthly Total</p>
+              <p class="text-xl font-bold text-gray-900 dark:text-white" id="total-b">-</p>
+              <p class="text-sm text-gray-500 dark:text-gray-400" id="name-b">-</p>
+            </div>
+          </div>
+
+          {# Monthly bar comparison #}
+          <div class="mb-8">
+            <h3 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-4">Monthly Cost Comparison</h3>
+            <div class="flex items-end gap-6 justify-center h-48">
+              <div class="flex flex-col items-center">
+                <div id="vis-bar-a" class="w-24 bg-brand-500 rounded-t-lg transition-all duration-500" style="height:0px"></div>
+                <p class="text-sm font-medium text-gray-700 dark:text-gray-300 mt-2" id="vis-name-a">-</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <div id="vis-bar-b" class="w-24 bg-purple-500 rounded-t-lg transition-all duration-500" style="height:0px"></div>
+                <p class="text-sm font-medium text-gray-700 dark:text-gray-300 mt-2" id="vis-name-b">-</p>
+              </div>
+            </div>
+          </div>
+
+          {# Category Table #}
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="border-b border-gray-200 dark:border-gray-700">
+                  <th class="text-left py-3 px-4 font-semibold text-gray-700 dark:text-gray-300">Category</th>
+                  <th class="text-right py-3 px-4 font-semibold text-gray-700 dark:text-gray-300" id="th-a">City A</th>
+                  <th class="text-right py-3 px-4 font-semibold text-gray-700 dark:text-gray-300" id="th-b">City B</th>
+                  <th class="text-right py-3 px-4 font-semibold text-gray-700 dark:text-gray-300">Difference</th>
+                </tr>
+              </thead>
+              <tbody id="comparison-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# All Cities Table (server-rendered for SEO) #}
+<section class="py-16 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="section-heading text-center mb-4">All Cities at a Glance</h2>
+    <p class="text-center text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
+      Monthly cost estimates for a single person across {{ costOfLiving.cities | length }} major tech cities. Click column headers to sort.
+    </p>
+
+    <div class="card overflow-x-auto">
+      <table class="w-full text-sm" id="cities-table">
+        <thead>
+          <tr class="border-b border-gray-200 dark:border-gray-700">
+            <th class="text-left py-3 px-4 font-semibold text-gray-700 dark:text-gray-300 cursor-pointer hover:text-brand-600 dark:hover:text-brand-400" data-sort="name">City <i data-lucide="arrow-up-down" class="w-3 h-3 inline"></i></th>
+            <th class="text-left py-3 px-4 font-semibold text-gray-700 dark:text-gray-300">Country</th>
+            <th class="text-right py-3 px-4 font-semibold text-gray-700 dark:text-gray-300 cursor-pointer hover:text-brand-600 dark:hover:text-brand-400" data-sort="rent1bed">Rent (1br) <i data-lucide="arrow-up-down" class="w-3 h-3 inline"></i></th>
+            <th class="text-right py-3 px-4 font-semibold text-gray-700 dark:text-gray-300 cursor-pointer hover:text-brand-600 dark:hover:text-brand-400" data-sort="groceries">Groceries <i data-lucide="arrow-up-down" class="w-3 h-3 inline"></i></th>
+            <th class="text-right py-3 px-4 font-semibold text-gray-700 dark:text-gray-300 cursor-pointer hover:text-brand-600 dark:hover:text-brand-400" data-sort="transport">Transport <i data-lucide="arrow-up-down" class="w-3 h-3 inline"></i></th>
+            <th class="text-right py-3 px-4 font-semibold text-gray-700 dark:text-gray-300 cursor-pointer hover:text-brand-600 dark:hover:text-brand-400" data-sort="total">Total <i data-lucide="arrow-up-down" class="w-3 h-3 inline"></i></th>
+            <th class="py-3 px-4"></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% set countryGuides = {
+            "Germany": "/resources/country-guides/germany/",
+            "Netherlands": "/resources/country-guides/netherlands/",
+            "United Kingdom": "/resources/country-guides/uk/",
+            "Ireland": "/resources/country-guides/ireland/",
+            "Sweden": "/resources/country-guides/sweden/",
+            "Switzerland": "/resources/country-guides/switzerland/",
+            "Australia": "/resources/country-guides/australia/",
+            "Canada": "/resources/country-guides/canada/"
+          } %}
+          {% for city in costOfLiving.cities %}
+          {% set monthlyTotal = city.rent1bed + city.groceries + city.transport + city.utilities + city.internet %}
+          <tr class="border-b border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800/50"
+              data-name="{{ city.name }}" data-rent1bed="{{ city.rent1bed }}" data-groceries="{{ city.groceries }}" data-transport="{{ city.transport }}" data-total="{{ monthlyTotal }}">
+            <td class="py-3 px-4 font-medium text-gray-900 dark:text-white">{{ city.emoji }} {{ city.name }}</td>
+            <td class="py-3 px-4 text-gray-600 dark:text-gray-400">{{ city.country }}</td>
+            <td class="py-3 px-4 text-right text-gray-900 dark:text-white">&euro;{{ city.rent1bed | round }}</td>
+            <td class="py-3 px-4 text-right text-gray-900 dark:text-white">&euro;{{ city.groceries | round }}</td>
+            <td class="py-3 px-4 text-right text-gray-900 dark:text-white">&euro;{{ city.transport | round }}</td>
+            <td class="py-3 px-4 text-right font-semibold text-gray-900 dark:text-white">&euro;{{ monthlyTotal | round }}</td>
+            <td class="py-3 px-4 text-right">
+              {% if countryGuides[city.country] %}
+              <a href="{{ countryGuides[city.country] }}" class="text-brand-600 dark:text-brand-400 hover:underline text-xs">Guide</a>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+{# Related Links #}
+<section class="py-12">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="section-heading mb-6">Plan Your Move</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <a href="/tools/salary-calculator/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <i data-lucide="calculator" class="w-5 h-5 text-brand-500 mb-2"></i>
+        <div class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Salary Calculator</div>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Calculate your take-home pay after tax</p>
+      </a>
+      <a href="/tools/visa-checker/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <i data-lucide="shield-check" class="w-5 h-5 text-brand-500 mb-2"></i>
+        <div class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Visa Checker</div>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Check if a company sponsors visas</p>
+      </a>
+      <a href="/resources/relocation-tips/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <i data-lucide="lightbulb" class="w-5 h-5 text-brand-500 mb-2"></i>
+        <div class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Relocation Tips</div>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Practical advice for moving abroad</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+{# FAQ #}
+<section class="py-16 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="section-heading text-center mb-10">Frequently Asked Questions</h2>
+    <div class="space-y-4" id="faq-list">
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">What is the cheapest European city for tech workers?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>Krakow, Poland and Tallinn, Estonia are among the most affordable European tech cities. Monthly costs for a single person start around &euro;1,200-1,400, compared to &euro;2,500+ in cities like Amsterdam or London. Both cities have growing tech sectors with <a href="/visa-sponsored-jobs/">visa sponsorship opportunities</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">How much does rent cost in Berlin vs London?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>A one-bedroom apartment in Berlin city center averages around &euro;1,100/month, while the same in London costs approximately &pound;2,100/month. Berlin rent is roughly 48% cheaper than London, making it one of the most attractive major European tech hubs for affordability. See our <a href="/resources/country-guides/germany/">Germany guide</a> for more details.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Should I consider cost of living when choosing a relocation destination?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>Absolutely. A higher salary doesn't always mean more purchasing power. For example, Zurich offers the highest tech salaries in Europe, but its cost of living is also the highest. Use our <a href="/tools/salary-calculator/">salary calculator</a> alongside this tool to compare net salary with living costs for a complete picture.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">What costs should I budget for when relocating?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>Key costs include: rent (usually 30-40% of income), groceries, transportation, utilities, internet, health insurance, and dining. Don't forget one-time relocation costs like deposit (often 2-3 months rent), furniture, and registration fees. Many employers cover initial relocation expenses — check our <a href="/resources/relocation-tips/">relocation tips</a> for more.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Are these cost of living figures accurate?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>Our data represents average costs as of early 2026 and is sourced from aggregated living cost databases. Actual costs vary by neighborhood, lifestyle, and personal choices. Use these figures as a starting point for planning, and research specific neighborhoods in your target city.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{# Share #}
+<section class="py-12">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h2 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Share this tool</h2>
+    <div class="flex items-center justify-center gap-4">
+      <a href="https://twitter.com/intent/tweet?text=Compare%20cost%20of%20living%20across%2014%20tech%20cities%20worldwide&url={{ site.url }}/tools/cost-of-living/" target="_blank" rel="noopener" class="btn-secondary text-sm">
+        <i data-lucide="twitter" class="w-4 h-4 mr-2"></i>Share on X
+      </a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}/tools/cost-of-living/" target="_blank" rel="noopener" class="btn-secondary text-sm">
+        <i data-lucide="linkedin" class="w-4 h-4 mr-2"></i>Share on LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+{% block scripts %}
+<script>
+(function() {
+  var cities = {{ costOfLiving.cities | jsonify | safe }};
+  var cityMap = {};
+  cities.forEach(function(c) { cityMap[c.slug] = c; });
+
+  var categories = [
+    { key: 'rent1bed', label: 'Rent (1-bed apartment)', icon: 'home' },
+    { key: 'rent3bed', label: 'Rent (3-bed apartment)', icon: 'building' },
+    { key: 'groceries', label: 'Groceries (monthly)', icon: 'shopping-cart' },
+    { key: 'transport', label: 'Public Transport (monthly pass)', icon: 'train-front' },
+    { key: 'utilities', label: 'Utilities (monthly)', icon: 'zap' },
+    { key: 'internet', label: 'Internet', icon: 'wifi' },
+    { key: 'gym', label: 'Gym membership', icon: 'dumbbell' },
+    { key: 'coffee', label: 'Coffee (cappuccino)', icon: 'coffee' },
+    { key: 'meal', label: 'Lunch (casual restaurant)', icon: 'utensils' },
+    { key: 'restaurant', label: 'Dinner for two (mid-range)', icon: 'utensils-crossed' },
+    { key: 'beer', label: 'Beer (0.5l draught)', icon: 'beer' }
+  ];
+
+  function monthlyTotal(city) {
+    return city.rent1bed + city.groceries + city.transport + city.utilities + city.internet;
+  }
+
+  function diffPct(a, b) {
+    if (b === 0) return 0;
+    return ((a - b) / b * 100);
+  }
+
+  function diffLabel(a, b, catLabel, cityAName, cityBName) {
+    var pct = diffPct(a, b);
+    if (Math.abs(pct) < 1) return '<span class="text-gray-500 dark:text-gray-400">Similar</span>';
+    var cls = pct > 0 ? 'diff-negative' : 'diff-positive';
+    var dir = pct > 0 ? 'more' : 'less';
+    return '<span class="' + cls + ' font-medium">' + Math.abs(Math.round(pct)) + '% ' + dir + '</span>';
+  }
+
+  document.getElementById('compare-btn').addEventListener('click', function() {
+    var slugA = document.getElementById('city-a').value;
+    var slugB = document.getElementById('city-b').value;
+    if (!slugA || !slugB || slugA === slugB) return;
+
+    var a = cityMap[slugA];
+    var b = cityMap[slugB];
+    if (!a || !b) return;
+
+    var totalA = monthlyTotal(a);
+    var totalB = monthlyTotal(b);
+
+    document.getElementById('total-a').textContent = '€' + totalA.toLocaleString();
+    document.getElementById('total-b').textContent = '€' + totalB.toLocaleString();
+    document.getElementById('name-a').textContent = a.name;
+    document.getElementById('name-b').textContent = b.name;
+    document.getElementById('th-a').textContent = a.name;
+    document.getElementById('th-b').textContent = b.name;
+
+    var totalDiff = diffPct(totalA, totalB);
+    var diffEl = document.getElementById('total-diff');
+    if (Math.abs(totalDiff) < 1) {
+      diffEl.textContent = 'Similar costs';
+      diffEl.className = 'text-2xl font-bold text-gray-500';
+    } else {
+      var cheaper = totalA < totalB ? a.name : b.name;
+      diffEl.innerHTML = '<span class="' + (totalA < totalB ? 'diff-positive' : 'diff-negative') + '">' + Math.abs(Math.round(totalDiff)) + '%</span>';
+      diffEl.className = 'text-2xl font-bold';
+    }
+
+    // Visual bars
+    var maxTotal = Math.max(totalA, totalB);
+    var maxH = 160;
+    document.getElementById('vis-bar-a').style.height = (totalA / maxTotal * maxH) + 'px';
+    document.getElementById('vis-bar-b').style.height = (totalB / maxTotal * maxH) + 'px';
+    document.getElementById('vis-name-a').textContent = a.name + ' (€' + totalA.toLocaleString() + ')';
+    document.getElementById('vis-name-b').textContent = b.name + ' (€' + totalB.toLocaleString() + ')';
+
+    // Category breakdown table
+    var tbody = document.getElementById('comparison-tbody');
+    var rows = '';
+    categories.forEach(function(cat) {
+      var valA = a[cat.key];
+      var valB = b[cat.key];
+      var diff = diffLabel(valA, valB, cat.label, a.name, b.name);
+      rows += '<tr class="border-b border-gray-100 dark:border-gray-800">' +
+        '<td class="py-3 px-4 text-gray-700 dark:text-gray-300 flex items-center gap-2"><i data-lucide="' + cat.icon + '" class="w-4 h-4 text-gray-400"></i>' + cat.label + '</td>' +
+        '<td class="py-3 px-4 text-right font-medium text-gray-900 dark:text-white">€' + valA.toLocaleString() + '</td>' +
+        '<td class="py-3 px-4 text-right font-medium text-gray-900 dark:text-white">€' + valB.toLocaleString() + '</td>' +
+        '<td class="py-3 px-4 text-right">' + diff + '</td>' +
+      '</tr>';
+    });
+
+    rows += '<tr class="border-t-2 border-gray-300 dark:border-gray-600 font-semibold">' +
+      '<td class="py-3 px-4 text-gray-900 dark:text-white">Monthly Total (essentials)</td>' +
+      '<td class="py-3 px-4 text-right text-gray-900 dark:text-white">€' + totalA.toLocaleString() + '</td>' +
+      '<td class="py-3 px-4 text-right text-gray-900 dark:text-white">€' + totalB.toLocaleString() + '</td>' +
+      '<td class="py-3 px-4 text-right">' + diffLabel(totalA, totalB) + '</td>' +
+    '</tr>';
+
+    tbody.innerHTML = rows;
+    document.getElementById('comparison-result').classList.remove('hidden');
+    if (window.lucide) lucide.createIcons();
+  });
+
+  // Table sorting
+  var table = document.getElementById('cities-table');
+  var sortHeaders = table.querySelectorAll('th[data-sort]');
+  var sortDir = {};
+
+  sortHeaders.forEach(function(th) {
+    th.addEventListener('click', function() {
+      var key = th.getAttribute('data-sort');
+      sortDir[key] = !sortDir[key];
+      var tbody = table.querySelector('tbody');
+      var rows = Array.from(tbody.querySelectorAll('tr'));
+      rows.sort(function(a, b) {
+        var aVal, bVal;
+        if (key === 'name') {
+          aVal = a.getAttribute('data-name');
+          bVal = b.getAttribute('data-name');
+          return sortDir[key] ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+        }
+        aVal = parseFloat(a.getAttribute('data-' + key));
+        bVal = parseFloat(b.getAttribute('data-' + key));
+        return sortDir[key] ? aVal - bVal : bVal - aVal;
+      });
+      rows.forEach(function(row) { tbody.appendChild(row); });
+    });
+  });
+
+  // FAQ toggles
+  document.querySelectorAll('.faq-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = btn.closest('.faq-item');
+      var content = item.querySelector('.faq-content');
+      var icon = item.querySelector('.faq-icon');
+      var isOpen = !content.classList.contains('hidden');
+      content.classList.toggle('hidden', isOpen);
+      icon.style.transform = isOpen ? '' : 'rotate(180deg)';
+      btn.setAttribute('aria-expanded', !isOpen);
+    });
+  });
+})();
+</script>
+{% endblock %}

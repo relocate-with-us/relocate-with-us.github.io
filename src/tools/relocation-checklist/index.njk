@@ -1,0 +1,781 @@
+---
+layout: layouts/base.njk
+title: "Relocation Checklist Generator | Your Complete Moving Abroad Checklist"
+description: "Generate a personalized relocation checklist for your move abroad. Get a step-by-step timeline with country-specific tasks for Germany, UK, Netherlands, and 7 more countries."
+---
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Relocation Checklist Generator",
+  "url": "{{ site.url }}{{ page.url }}",
+  "description": "{{ description }}",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "publisher": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How far in advance should I start planning my relocation?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ideally 2-3 months before your move date. Visa processing alone can take 2-8 weeks depending on the country. Starting early gives you time for document apostille, housing research, and proper notice to your current employer." }
+    },
+    {
+      "@type": "Question",
+      "name": "What documents do I need to relocate abroad for work?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Common documents include: valid passport, signed employment contract, university degree (often apostilled), birth certificate, health insurance proof, passport photos, and proof of accommodation. Requirements vary by country." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to register my address when moving to a new country?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, most countries require address registration within days or weeks of arrival. In Germany it's Anmeldung (within 14 days), in the Netherlands you register at the municipality to get your BSN, and in Sweden you register with Skatteverket for your personnummer." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I open a local bank account before or after moving?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It's recommended to have an international-friendly account (like Wise or Revolut) before moving, and then open a local bank account within the first week of arrival. You'll typically need your address registration and ID to open a local account." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Anmeldung in Germany?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Anmeldung is the mandatory address registration in Germany. You must register at the local Bürgeramt within 14 days of moving in. You'll need your passport, rental contract, and a landlord confirmation form (Wohnungsgeberbestätigung). This is required for almost everything else—bank accounts, tax ID, insurance." }
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+<section class="relative overflow-hidden bg-gradient-to-br from-brand-50 via-white to-indigo-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 py-16 md:py-20">
+  <div class="max-w-4xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6" aria-label="Breadcrumb">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400">Home</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span>Tools</span>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-900 dark:text-white">Relocation Checklist</span>
+    </nav>
+
+    <div class="text-center">
+      <div class="w-16 h-16 bg-brand-100 dark:bg-brand-900/30 rounded-2xl flex items-center justify-center mx-auto mb-6">
+        <i data-lucide="clipboard-check" class="w-8 h-8 text-brand-600 dark:text-brand-400"></i>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 leading-tight">
+        Relocation <span class="bg-yellow-200 dark:bg-yellow-500/20 dark:text-yellow-300 px-2 inline-block -skew-x-1">Checklist</span> Generator
+      </h1>
+      <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-8">
+        Get a personalized, step-by-step checklist for your international move. Country-specific tasks, phased timeline, and progress tracking included.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="py-12">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="card p-6 md:p-8 mb-8">
+      <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
+        <i data-lucide="settings" class="w-5 h-5 text-brand-500"></i>
+        Configure Your Checklist
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div>
+          <label for="country-select" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Destination Country</label>
+          <select id="country-select" class="input-field">
+            <option value="">Select a country…</option>
+            <option value="germany">🇩🇪 Germany</option>
+            <option value="uk">🇬🇧 United Kingdom</option>
+            <option value="netherlands">🇳🇱 Netherlands</option>
+            <option value="ireland">🇮🇪 Ireland</option>
+            <option value="sweden">🇸🇪 Sweden</option>
+            <option value="switzerland">🇨🇭 Switzerland</option>
+            <option value="france">🇫🇷 France</option>
+            <option value="australia">🇦🇺 Australia</option>
+            <option value="canada">🇨🇦 Canada</option>
+            <option value="estonia">🇪🇪 Estonia</option>
+          </select>
+        </div>
+        <div>
+          <label for="timeline-select" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Move Timeline</label>
+          <select id="timeline-select" class="input-field">
+            <option value="3">3 months before move</option>
+            <option value="2">2 months before move</option>
+            <option value="1">1 month before move</option>
+          </select>
+        </div>
+      </div>
+      <button id="generate-btn" class="btn-primary w-full md:w-auto">
+        <i data-lucide="list-checks" class="w-5 h-5 mr-2"></i>
+        Generate My Checklist
+      </button>
+    </div>
+
+    <div id="checklist-container" class="hidden">
+      <div class="card p-6 md:p-8 mb-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+          <div>
+            <h2 id="checklist-title" class="text-xl font-bold text-gray-900 dark:text-white"></h2>
+            <p id="checklist-subtitle" class="text-sm text-gray-500 dark:text-gray-400 mt-1"></p>
+          </div>
+          <div class="flex gap-3">
+            <button id="print-btn" class="btn-secondary text-sm">
+              <i data-lucide="printer" class="w-4 h-4 mr-1"></i> Print
+            </button>
+            <button id="reset-btn" class="btn-secondary text-sm text-red-600 dark:text-red-400 border-red-200 dark:border-red-800 hover:bg-red-50 dark:hover:bg-red-900/20">
+              <i data-lucide="rotate-ccw" class="w-4 h-4 mr-1"></i> Reset
+            </button>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <div class="flex items-center justify-between text-sm mb-2">
+            <span class="font-medium text-gray-700 dark:text-gray-300">Overall Progress</span>
+            <span id="progress-text" class="font-semibold text-brand-600 dark:text-brand-400">0%</span>
+          </div>
+          <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 overflow-hidden">
+            <div id="progress-bar" class="bg-gradient-to-r from-brand-500 to-indigo-500 h-3 rounded-full transition-all duration-500 ease-out" style="width:0%"></div>
+          </div>
+        </div>
+
+        <div id="phases-container" class="space-y-8"></div>
+      </div>
+    </div>
+
+    <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 p-4 rounded-r-lg mb-6">
+      <div class="flex gap-3">
+        <i data-lucide="info" class="w-5 h-5 text-blue-500 shrink-0 mt-0.5"></i>
+        <div>
+          <p class="text-sm font-medium text-blue-800 dark:text-blue-300">Your progress is saved automatically</p>
+          <p class="text-sm text-blue-700 dark:text-blue-400 mt-1">Check off items as you complete them. Your progress is stored locally in your browser and will persist between visits.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 p-4 rounded-r-lg mb-6">
+      <div class="flex gap-3">
+        <i data-lucide="alert-triangle" class="w-5 h-5 text-yellow-500 shrink-0 mt-0.5"></i>
+        <div>
+          <p class="text-sm font-medium text-yellow-800 dark:text-yellow-300">Disclaimer</p>
+          <p class="text-sm text-yellow-700 dark:text-yellow-400 mt-1">This checklist is a general guide. Requirements may change—always verify with official government sources and your employer's HR team.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+      <a href="/visa-sponsored-jobs/" class="card p-6 hover:shadow-lg transition-shadow group">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-brand-100 dark:bg-brand-900/30 rounded-xl flex items-center justify-center shrink-0">
+            <i data-lucide="briefcase" class="w-6 h-6 text-brand-600 dark:text-brand-400"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Browse Visa-Sponsored Jobs</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Find jobs with relocation support</p>
+          </div>
+        </div>
+      </a>
+      <a href="/resources/country-guides/" class="card p-6 hover:shadow-lg transition-shadow group">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-xl flex items-center justify-center shrink-0">
+            <i data-lucide="map" class="w-6 h-6 text-green-600 dark:text-green-400"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors">Country Guides</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Detailed guides for each destination</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="card p-6 md:p-8 mb-8">
+      <div class="flex items-center gap-3 mb-6">
+        <i data-lucide="share-2" class="w-5 h-5 text-brand-500"></i>
+        <h2 class="text-lg font-bold text-gray-900 dark:text-white">Share This Tool</h2>
+      </div>
+      <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Know someone planning to move abroad? Share this checklist generator with them.</p>
+      <div class="flex flex-wrap gap-3">
+        <a href="https://twitter.com/intent/tweet?text=Planning%20to%20relocate%20abroad%3F%20Generate%20a%20personalized%20checklist%20with%20this%20free%20tool&url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener" class="btn-secondary text-sm">
+          <i data-lucide="twitter" class="w-4 h-4 mr-1"></i> Twitter
+        </a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener" class="btn-secondary text-sm">
+          <i data-lucide="linkedin" class="w-4 h-4 mr-1"></i> LinkedIn
+        </a>
+        <button id="copy-link-btn" class="btn-secondary text-sm">
+          <i data-lucide="link" class="w-4 h-4 mr-1"></i> Copy Link
+        </button>
+      </div>
+    </div>
+
+    <div class="card p-6 md:p-8">
+      <h2 class="section-heading mb-6">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        <details class="group border border-gray-200 dark:border-gray-700 rounded-lg">
+          <summary class="flex items-center justify-between p-4 cursor-pointer font-medium text-gray-900 dark:text-white">
+            How far in advance should I start planning my relocation?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-4 pb-4 text-gray-600 dark:text-gray-400 text-sm">
+            Ideally 2–3 months before your move date. Visa processing alone can take 2–8 weeks depending on the country. Starting early gives you time for document apostille, housing research, and proper notice to your current employer.
+          </div>
+        </details>
+        <details class="group border border-gray-200 dark:border-gray-700 rounded-lg">
+          <summary class="flex items-center justify-between p-4 cursor-pointer font-medium text-gray-900 dark:text-white">
+            What documents do I need to relocate abroad for work?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-4 pb-4 text-gray-600 dark:text-gray-400 text-sm">
+            Common documents include: valid passport, signed employment contract, university degree (often apostilled), birth certificate, health insurance proof, passport photos, and proof of accommodation. Requirements vary by country.
+          </div>
+        </details>
+        <details class="group border border-gray-200 dark:border-gray-700 rounded-lg">
+          <summary class="flex items-center justify-between p-4 cursor-pointer font-medium text-gray-900 dark:text-white">
+            Do I need to register my address when moving to a new country?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-4 pb-4 text-gray-600 dark:text-gray-400 text-sm">
+            Yes, most countries require address registration within days or weeks of arrival. In Germany it's Anmeldung (within 14 days), in the Netherlands you register at the municipality to get your BSN, and in Sweden you register with Skatteverket for your personnummer.
+          </div>
+        </details>
+        <details class="group border border-gray-200 dark:border-gray-700 rounded-lg">
+          <summary class="flex items-center justify-between p-4 cursor-pointer font-medium text-gray-900 dark:text-white">
+            Should I open a local bank account before or after moving?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-4 pb-4 text-gray-600 dark:text-gray-400 text-sm">
+            It's recommended to have an international-friendly account (like Wise or Revolut) before moving, and then open a local bank account within the first week of arrival. You'll typically need your address registration and ID to open a local account.
+          </div>
+        </details>
+        <details class="group border border-gray-200 dark:border-gray-700 rounded-lg">
+          <summary class="flex items-center justify-between p-4 cursor-pointer font-medium text-gray-900 dark:text-white">
+            What is the Anmeldung in Germany?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-4 pb-4 text-gray-600 dark:text-gray-400 text-sm">
+            Anmeldung is the mandatory address registration in Germany. You must register at the local Bürgeramt within 14 days of moving in. You'll need your passport, rental contract, and a landlord confirmation form (Wohnungsgeberbestätigung). This is required for almost everything else—bank accounts, tax ID, insurance.
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media print {
+    header, footer, #generate-btn, #print-btn, #reset-btn, .btn-secondary, .bg-blue-50, .bg-yellow-50, nav[aria-label="Breadcrumb"] { display: none !important; }
+    .card { box-shadow: none !important; border: 1px solid #e5e7eb !important; }
+    section:first-of-type { padding-top: 1rem !important; background: none !important; }
+    #checklist-container { display: block !important; }
+  }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var STORAGE_KEY = 'relocation-checklist-state';
+
+  var countryData = {
+    germany: {
+      name: 'Germany', emoji: '🇩🇪', guideUrl: '/resources/country-guides/germany/',
+      phase1Extra: [
+        'Apply for EU Blue Card or national visa at German embassy',
+        'Get health insurance (public: TK, AOK, or private)',
+        'Get degree apostilled and translated (sworn translator)',
+        'Prepare Wohnungsgeberbestätigung (landlord confirmation) template'
+      ],
+      phase2: [
+        'Complete Anmeldung (address registration) at Bürgeramt — within 14 days',
+        'Open German bank account (N26, DKB, or Commerzbank)',
+        'Get local SIM card (Telekom, O2, or Vodafone)',
+        'Activate health insurance with German address',
+        'Receive Steuer-ID (tax ID) by mail — arrives ~2 weeks after Anmeldung',
+        'Get monthly transport pass (Deutschlandticket €49/month)'
+      ],
+      phase3: [
+        'Find permanent apartment (use ImmobilienScout24, WG-Gesucht)',
+        'Register for GEZ (broadcasting fee, ~€18.36/month)',
+        'Apply for Schufa credit report',
+        'Collect residence permit (eAT card) from Ausländerbehörde',
+        'Set up utilities (electricity, internet)',
+        'Join expat communities (Toytown Germany, InterNations)',
+        'Register with your home country embassy (optional)',
+        'If relocating with family: research Elterngeld and Kindergeld eligibility'
+      ],
+      phase4Extra: [
+        'Complete Probezeit (probation) milestones — typically 6 months',
+        'File Steuererklärung (tax return) or hire a Steuerberater',
+        'Get permanent phone contract',
+        'Build professional network — attend Berlin.js, PyBerlin, etc.',
+        'Explore the city and surrounding areas'
+      ]
+    },
+    uk: {
+      name: 'United Kingdom', emoji: '🇬🇧', guideUrl: '/resources/country-guides/uk/',
+      phase1Extra: [
+        'Apply for Skilled Worker Visa with Certificate of Sponsorship from employer',
+        'Pay Immigration Health Surcharge (IHS)',
+        'Get TB test certificate if required for your nationality',
+        'Prepare proof of English language ability (if needed)'
+      ],
+      phase2: [
+        'Collect BRP (Biometric Residence Permit) from post office within 10 days',
+        'Apply for National Insurance (NI) number — call the NI helpline',
+        'Open UK bank account (Monzo, Starling, or high-street bank)',
+        'Get UK SIM card (Three, Giffgaff, or EE)',
+        'Register with NHS GP (local doctor)',
+        'Get Oyster card or contactless transport setup'
+      ],
+      phase3: [
+        'Find permanent housing (Rightmove, Zoopla, OpenRent)',
+        'Register for Council Tax at your local council',
+        'Set up utilities (gas, electricity, water, broadband)',
+        'Collect BRP if not done yet',
+        'Join expat communities (InterNations, meetup groups)',
+        'Register with your home country embassy (optional)'
+      ],
+      phase4Extra: [
+        'Complete probation period milestones',
+        'Register for Self Assessment if needed (HMRC)',
+        'Get permanent phone contract',
+        'Build professional network',
+        'Explore the city and travel around the UK'
+      ]
+    },
+    netherlands: {
+      name: 'Netherlands', emoji: '🇳🇱', guideUrl: '/resources/country-guides/netherlands/',
+      phase1Extra: [
+        'Apply for MVV entry visa (if required) or TWV work permit',
+        'Employer initiates 30% ruling application (tax benefit)',
+        'Arrange Dutch health insurance (mandatory from day 1)',
+        'Get degree legalized/apostilled if needed'
+      ],
+      phase2: [
+        'Register at municipality (gemeente) to get BSN (Burgerservicenummer)',
+        'Open Dutch bank account (ING, ABN AMRO, Bunq)',
+        'Get Dutch SIM card (KPN, T-Mobile, Vodafone)',
+        'Activate Dutch health insurance (Zilveren Kruis, CZ, etc.)',
+        'Apply for DigiD (digital identity for government services)',
+        'Get OV-chipkaart for public transport'
+      ],
+      phase3: [
+        'Find permanent housing (Funda, Pararius, Kamernet)',
+        'Pay water board tax (waterschapsbelasting)',
+        'Collect residence permit card from IND',
+        'Set up utilities (electricity, gas, internet)',
+        'Join expat communities (DutchReview, I amsterdam)',
+        'Register with your home country embassy (optional)'
+      ],
+      phase4Extra: [
+        'Complete probation milestones',
+        'Ensure 30% ruling is approved — check with employer',
+        'File tax registration with Belastingdienst',
+        'Get permanent phone plan',
+        'Build professional network — Amsterdam.rb, AmsterdamJS',
+        'Explore the Netherlands by bike and train'
+      ]
+    },
+    ireland: {
+      name: 'Ireland', emoji: '🇮🇪', guideUrl: '/resources/country-guides/ireland/',
+      phase1Extra: [
+        'Apply for employment permit or Critical Skills Permit',
+        'Arrange health insurance (or register for public healthcare)',
+        'Get documents apostilled as needed',
+        'Research GHIC (General Health Insurance Card) eligibility'
+      ],
+      phase2: [
+        'Apply for PPS Number (Personal Public Service) at local Intreo centre',
+        'Open Irish bank account (AIB, Bank of Ireland, Revolut IE)',
+        'Get Irish SIM card (Three, Vodafone, Eir)',
+        'Register with Revenue (revenue.ie) for tax',
+        'Register for myGovID',
+        'Get Leap Card for public transport'
+      ],
+      phase3: [
+        'Find permanent housing (Daft.ie, Rent.ie)',
+        'Register with IRP (Immigration Registration Office) — GNIB appointment',
+        'Set up utilities (ESB, Bord Gáis, broadband)',
+        'Join expat communities (InterNations, meetup groups)',
+        'Register with your home country embassy (optional)',
+        'Register with a GP'
+      ],
+      phase4Extra: [
+        'Complete probation milestones',
+        'File any tax registrations',
+        'Get permanent phone plan',
+        'Build professional network',
+        'Explore Ireland'
+      ]
+    },
+    sweden: {
+      name: 'Sweden', emoji: '🇸🇪', guideUrl: '/resources/country-guides/sweden/',
+      phase1Extra: [
+        'Apply for work permit through Swedish Migration Agency (Migrationsverket)',
+        'Employer must post the position with union and Swedish Public Employment Service',
+        'Arrange Swedish health insurance coverage',
+        'Prepare employment contract meeting Swedish labor standards'
+      ],
+      phase2: [
+        'Register with Skatteverket (Tax Agency) for personnummer — critical for everything',
+        'Open Swedish bank account (requires personnummer — Nordea, SEB, Handelsbanken)',
+        'Get Swedish SIM card (Telia, Tele2, Tre)',
+        'Get Försäkringskassan (Social Insurance Agency) registration',
+        'Apply for BankID (digital identity — needed for almost all services)',
+        'Get SL card or regional transport pass'
+      ],
+      phase3: [
+        'Find permanent housing (Blocket, Hemnet, Qasa)',
+        'Register at Skatteverket if not done',
+        'Collect residence permit card',
+        'Set up utilities (electricity, internet)',
+        'Join expat communities (The Local Sweden, Stockholm Expats)',
+        'Register with your home country embassy (optional)'
+      ],
+      phase4Extra: [
+        'Complete probation milestones',
+        'File tax registration with Skatteverket',
+        'Get permanent phone plan',
+        'Build professional network — STHLM Tech Meetup',
+        'Explore Sweden'
+      ]
+    },
+    switzerland: {
+      name: 'Switzerland', emoji: '🇨🇭', guideUrl: '/resources/country-guides/switzerland/',
+      phase1Extra: [
+        'Employer applies for work permit (Aufenthaltsbewilligung / Permis de séjour)',
+        'Arrange mandatory Swiss health insurance (must be done within 3 months)',
+        'Get degree recognized by SERI if required',
+        'Research canton-specific requirements'
+      ],
+      phase2: [
+        'Register at Einwohnerkontrolle (residents\' registration office)',
+        'Open Swiss bank account (UBS, Credit Suisse, PostFinance, Neon)',
+        'Get Swiss SIM card (Swisscom, Sunrise, Salt)',
+        'Get AHV/AVS number (social security)',
+        'Activate health insurance',
+        'Get SBB Half Fare card or GA travel pass'
+      ],
+      phase3: [
+        'Find permanent housing (Homegate, Comparis, Immoscout24.ch)',
+        'Register for Serafe (TV/radio fee)',
+        'Collect residence permit (Ausländerausweis)',
+        'Set up utilities (electricity, internet)',
+        'Join expat communities (English Forum Switzerland)',
+        'Register with your home country embassy (optional)'
+      ],
+      phase4Extra: [
+        'Complete probation milestones',
+        'File tax registration with cantonal tax office',
+        'Get permanent phone plan',
+        'Build professional network',
+        'Explore Switzerland'
+      ]
+    },
+    france: {
+      name: 'France', emoji: '🇫🇷',
+      phase1Extra: [
+        'Apply for visa at French consulate (Visa de long séjour / Passeport Talent)',
+        'Get documents translated by sworn translator (traducteur assermenté)',
+        'Arrange initial health coverage',
+        'Research CAF housing assistance eligibility'
+      ],
+      phase2: [
+        'Validate visa online at OFII website (within 3 months of arrival)',
+        'Open French bank account (BNP Paribas, Société Générale, Boursorama)',
+        'Get French SIM card (Orange, SFR, Free Mobile)',
+        'Register for Carte Vitale (health card) at CPAM',
+        'Get social security number (numéro de sécurité sociale)',
+        'Get Navigo pass for public transport (Île-de-France)'
+      ],
+      phase3: [
+        'Find permanent housing (SeLoger, LeBonCoin, PAP)',
+        'Apply for Titre de séjour (residence permit) at préfecture if needed',
+        'Register for CAF (housing benefit) if eligible',
+        'Set up utilities (EDF, Engie, internet)',
+        'Join expat communities (InterNations Paris, Meetup)',
+        'Register with your home country embassy (optional)'
+      ],
+      phase4Extra: [
+        'Complete probation milestones (période d\'essai)',
+        'File tax registration with Service des impôts',
+        'Get permanent phone plan',
+        'Build professional network',
+        'Explore France'
+      ]
+    },
+    australia: {
+      name: 'Australia', emoji: '🇦🇺', guideUrl: '/resources/country-guides/australia/',
+      phase1Extra: [
+        'Apply for work visa (subclass 482, 494, or 189/190)',
+        'Get skills assessment from relevant authority',
+        'Arrange health insurance or check Medicare eligibility',
+        'Get police clearance certificate from home country'
+      ],
+      phase2: [
+        'Apply for TFN (Tax File Number) online at ATO website',
+        'Open Australian bank account (Commonwealth, ANZ, Westpac, NAB)',
+        'Get Australian SIM card (Telstra, Optus, Vodafone)',
+        'Enroll in Medicare (if eligible on your visa)',
+        'Apply for tax file number if not done online',
+        'Get Opal card / Myki / Go card for public transport'
+      ],
+      phase3: [
+        'Find permanent housing (Domain, realestate.com.au, Flatmates)',
+        'Register with local council',
+        'Set up utilities (electricity, gas, internet)',
+        'Get Australian driver\'s license (convert existing)',
+        'Join expat communities (InterNations, Meetup)',
+        'Register with your home country embassy (optional)'
+      ],
+      phase4Extra: [
+        'Complete probation milestones',
+        'Lodge tax return with ATO',
+        'Get permanent phone plan',
+        'Build professional network',
+        'Explore Australia'
+      ]
+    },
+    canada: {
+      name: 'Canada', emoji: '🇨🇦', guideUrl: '/resources/country-guides/canada/',
+      phase1Extra: [
+        'Apply for work permit or permanent residency (Express Entry)',
+        'Get ECA (Educational Credential Assessment)',
+        'Arrange health coverage for initial period before provincial health kicks in',
+        'Get police clearance certificate'
+      ],
+      phase2: [
+        'Apply for SIN (Social Insurance Number) at Service Canada',
+        'Open Canadian bank account (RBC, TD, Scotiabank, BMO)',
+        'Get Canadian SIM card (Rogers, Bell, Telus)',
+        'Register for provincial health insurance (OHIP, MSP, etc.) — may have waiting period',
+        'Apply for SIN if not done at airport',
+        'Get PRESTO / Compass / Opus card for public transport'
+      ],
+      phase3: [
+        'Find permanent housing (Realtor.ca, Rentals.ca, Kijiji)',
+        'Get provincial driver\'s license',
+        'Set up utilities (electricity, gas, internet)',
+        'Join expat communities (InterNations, Reddit)',
+        'Register with your home country embassy/consulate (optional)',
+        'Register for GST/HST credit if eligible'
+      ],
+      phase4Extra: [
+        'Complete probation milestones',
+        'File CRA tax registration',
+        'Get permanent phone plan',
+        'Build professional network — Toronto Tech Meetup, etc.',
+        'Explore Canada'
+      ]
+    },
+    estonia: {
+      name: 'Estonia', emoji: '🇪🇪',
+      phase1Extra: [
+        'Apply for Estonian work visa or apply for Digital Nomad Visa',
+        'Employer registers employment in Estonian register',
+        'Arrange health insurance',
+        'Research e-Residency if applicable'
+      ],
+      phase2: [
+        'Register residence at local government office (within 30 days)',
+        'Open Estonian bank account (LHV, Swedbank, SEB)',
+        'Get Estonian SIM card (Telia, Elisa, Tele2)',
+        'Get personal identification code (isikukood)',
+        'Register for Estonian health insurance (Haigekassa)',
+        'Get Tallinn public transport card (free for residents)'
+      ],
+      phase3: [
+        'Find permanent housing (City24, KV.ee)',
+        'Collect residence permit from Police and Border Guard Board',
+        'Set up utilities (electricity, internet)',
+        'Join expat communities (e-Residency community, InterNations Tallinn)',
+        'Register with your home country embassy (optional)',
+        'Apply for Estonian ID card'
+      ],
+      phase4Extra: [
+        'Complete probation milestones',
+        'File tax registration with Estonian Tax and Customs Board',
+        'Get permanent phone plan',
+        'Build professional network — Tallinn Tech Meetup, Startup Estonia',
+        'Explore Estonia and the Baltics'
+      ]
+    }
+  };
+
+  var commonPhase1 = [
+    'Accept job offer and sign employment contract',
+    'Begin visa/work permit application',
+    'Arrange health insurance for transition period',
+    'Book flights to destination',
+    'Arrange temporary accommodation (2–4 weeks)',
+    'Notify current employer and serve notice period',
+    'Get important documents: apostilled degree, birth certificate, passport photos',
+    'Open international bank account (Wise, Revolut)',
+    'Research housing market in destination city',
+    'Start language learning (if applicable)'
+  ];
+
+  var countrySelect = document.getElementById('country-select');
+  var timelineSelect = document.getElementById('timeline-select');
+  var generateBtn = document.getElementById('generate-btn');
+  var container = document.getElementById('checklist-container');
+  var phasesContainer = document.getElementById('phases-container');
+  var progressBar = document.getElementById('progress-bar');
+  var progressText = document.getElementById('progress-text');
+  var printBtn = document.getElementById('print-btn');
+  var resetBtn = document.getElementById('reset-btn');
+  var copyLinkBtn = document.getElementById('copy-link-btn');
+
+  function getStorageData() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch(e) { return {}; }
+  }
+
+  function saveStorageData(data) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); } catch(e) {}
+  }
+
+  function updateProgress() {
+    var boxes = phasesContainer.querySelectorAll('input[type="checkbox"]');
+    if (!boxes.length) return;
+    var checked = 0;
+    boxes.forEach(function(cb) { if (cb.checked) checked++; });
+    var pct = Math.round((checked / boxes.length) * 100);
+    progressBar.style.width = pct + '%';
+    progressText.textContent = pct + '%';
+  }
+
+  function generateChecklist() {
+    var country = countrySelect.value;
+    var timeline = timelineSelect.value;
+    if (!country) {
+      countrySelect.focus();
+      countrySelect.classList.add('ring-2', 'ring-red-500');
+      setTimeout(function() { countrySelect.classList.remove('ring-2', 'ring-red-500'); }, 2000);
+      return;
+    }
+
+    var data = countryData[country];
+    var stored = getStorageData();
+    var key = country + '-' + timeline;
+
+    document.getElementById('checklist-title').textContent = data.emoji + ' ' + data.name + ' Relocation Checklist';
+    document.getElementById('checklist-subtitle').textContent = timeline + '-month timeline • ' + (new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' }));
+
+    var phases = [
+      {
+        icon: 'calendar',
+        title: 'Phase 1 — Before You Leave',
+        subtitle: timeline === '1' ? '30 days before' : (timeline === '2' ? '60–30 days before' : '90–30 days before'),
+        color: 'blue',
+        items: commonPhase1.concat(data.phase1Extra)
+      },
+      {
+        icon: 'plane-landing',
+        title: 'Phase 2 — First Week',
+        subtitle: 'Days 1–7 after arrival',
+        color: 'green',
+        items: data.phase2
+      },
+      {
+        icon: 'home',
+        title: 'Phase 3 — First Month',
+        subtitle: 'Weeks 2–4',
+        color: 'purple',
+        items: data.phase3
+      },
+      {
+        icon: 'trophy',
+        title: 'Phase 4 — First 3 Months',
+        subtitle: 'Months 1–3',
+        color: 'amber',
+        items: data.phase4Extra
+      }
+    ];
+
+    var colorMap = {
+      blue: 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400',
+      green: 'bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400',
+      purple: 'bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400',
+      amber: 'bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400'
+    };
+
+    var html = '';
+    var itemIdx = 0;
+    phases.forEach(function(phase) {
+      html += '<div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">';
+      html += '<div class="bg-gray-50 dark:bg-gray-800/50 px-5 py-4 flex items-center gap-3">';
+      html += '<div class="w-10 h-10 rounded-lg flex items-center justify-center ' + colorMap[phase.color] + '">';
+      html += '<i data-lucide="' + phase.icon + '" class="w-5 h-5"></i></div>';
+      html += '<div><h3 class="font-semibold text-gray-900 dark:text-white">' + phase.title + '</h3>';
+      html += '<p class="text-xs text-gray-500 dark:text-gray-400">' + phase.subtitle + '</p></div></div>';
+      html += '<div class="divide-y divide-gray-100 dark:divide-gray-800">';
+
+      phase.items.forEach(function(item) {
+        var id = 'item-' + itemIdx;
+        var checked = stored[key] && stored[key][id];
+        html += '<label for="' + id + '" class="flex items-start gap-3 px-5 py-3 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800/30 transition-colors">';
+        html += '<input type="checkbox" id="' + id + '" class="mt-1 h-4 w-4 rounded border-gray-300 text-brand-600 focus:ring-brand-500"' + (checked ? ' checked' : '') + '>';
+        html += '<span class="text-sm text-gray-700 dark:text-gray-300' + (checked ? ' line-through opacity-60' : '') + '">' + item + '</span>';
+        html += '</label>';
+        itemIdx++;
+      });
+
+      html += '</div></div>';
+    });
+
+    if (data.guideUrl) {
+      html += '<div class="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-400 p-4 rounded-r-lg mt-6">';
+      html += '<div class="flex gap-3"><i data-lucide="book-open" class="w-5 h-5 text-green-500 shrink-0 mt-0.5"></i>';
+      html += '<div><p class="text-sm font-medium text-green-800 dark:text-green-300">Read our full ' + data.name + ' guide</p>';
+      html += '<a href="' + data.guideUrl + '" class="text-sm text-green-600 dark:text-green-400 underline hover:no-underline">View the ' + data.name + ' Country Guide →</a></div></div></div>';
+    }
+
+    phasesContainer.innerHTML = html;
+    container.classList.remove('hidden');
+    if (window.lucide) lucide.createIcons();
+    updateProgress();
+
+    phasesContainer.querySelectorAll('input[type="checkbox"]').forEach(function(cb) {
+      cb.addEventListener('change', function() {
+        var st = getStorageData();
+        if (!st[key]) st[key] = {};
+        st[key][cb.id] = cb.checked;
+        saveStorageData(st);
+        var span = cb.nextElementSibling;
+        if (cb.checked) { span.classList.add('line-through', 'opacity-60'); }
+        else { span.classList.remove('line-through', 'opacity-60'); }
+        updateProgress();
+      });
+    });
+
+    container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  generateBtn.addEventListener('click', generateChecklist);
+
+  printBtn.addEventListener('click', function() { window.print(); });
+
+  resetBtn.addEventListener('click', function() {
+    var country = countrySelect.value;
+    var timeline = timelineSelect.value;
+    if (!country) return;
+    var key = country + '-' + timeline;
+    var st = getStorageData();
+    delete st[key];
+    saveStorageData(st);
+    generateChecklist();
+  });
+
+  copyLinkBtn.addEventListener('click', function() {
+    navigator.clipboard.writeText(window.location.href).then(function() {
+      copyLinkBtn.innerHTML = '<i data-lucide="check" class="w-4 h-4 mr-1"></i> Copied!';
+      if (window.lucide) lucide.createIcons();
+      setTimeout(function() {
+        copyLinkBtn.innerHTML = '<i data-lucide="link" class="w-4 h-4 mr-1"></i> Copy Link';
+        if (window.lucide) lucide.createIcons();
+      }, 2000);
+    });
+  });
+});
+</script>

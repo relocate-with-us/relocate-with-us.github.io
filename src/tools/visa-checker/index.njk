@@ -1,0 +1,379 @@
+---
+layout: layouts/base.njk
+title: "Visa Sponsorship Company Checker | Does Your Company Sponsor Visas?"
+description: "Check if a company sponsors work visas. Search 100+ verified tech companies that offer visa sponsorship and relocation assistance for international employees."
+---
+
+{# Structured Data #}
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Visa Sponsorship Company Checker",
+  "url": "{{ site.url }}/tools/visa-checker/",
+  "description": "{{ description }}",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "publisher": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I know if a company sponsors visas?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Check the company's careers page for mentions of visa sponsorship or relocation support. You can also use our checker above to search verified companies. In the UK, you can check the official Home Office sponsor register." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the UK sponsor register?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The UK sponsor register is a public list maintained by the Home Office showing all licensed sponsors authorized to issue Certificates of Sponsorship for Skilled Worker visas. Companies must be on this list to legally sponsor work visas in the UK." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the EU Blue Card?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The EU Blue Card is a work and residence permit for highly qualified non-EU nationals. It requires a recognized university degree and a binding job offer with a minimum salary threshold. Germany is the most popular destination for EU Blue Card holders." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do companies pay for visa sponsorship?",
+      "acceptedAnswer": { "@type": "Answer", "text": "In most cases, the sponsoring employer covers the visa application fees and legal costs. Many also provide full relocation packages including flights, temporary housing, and moving expenses. However, this varies by company and country." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I switch companies while on a sponsored visa?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, but the process depends on the country and visa type. In most cases, your new employer must also be an authorized sponsor and file a new sponsorship application. You typically cannot work for the new employer until the transfer is approved." }
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{# Hero #}
+<section class="relative overflow-hidden bg-gradient-to-br from-brand-50 via-white to-indigo-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 py-16 md:py-20">
+  <div class="max-w-4xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400">Home</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span>Tools</span>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-900 dark:text-white">Visa Checker</span>
+    </nav>
+
+    <div class="text-center">
+      <div class="w-16 h-16 bg-brand-100 dark:bg-brand-900/30 rounded-2xl flex items-center justify-center mx-auto mb-6">
+        <i data-lucide="shield-check" class="w-8 h-8 text-brand-600 dark:text-brand-400"></i>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 leading-tight">
+        Does Your Company <span class="bg-yellow-200 dark:bg-yellow-500/20 dark:text-yellow-300 px-2 inline-block -skew-x-1">Sponsor Visas</span>?
+      </h1>
+      <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-8">
+        Search our database of {{ companies | length }} verified companies that sponsor work visas and offer relocation assistance.
+      </p>
+
+      <div class="max-w-xl mx-auto">
+        <div class="relative">
+          <i data-lucide="search" class="w-5 h-5 absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+          <input id="company-search" type="text" placeholder="Type a company name (e.g. Zalando, Spotify, SAP...)"
+            class="input-field pl-12 text-lg py-4" autocomplete="off">
+        </div>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Try: Booking.com, Revolut, Canva, Delivery Hero</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# Search Results #}
+<section class="py-12">
+  <div class="max-w-4xl mx-auto px-4">
+    <div id="search-results" class="hidden">
+      <h2 class="section-heading mb-6">
+        <span id="results-count">0</span> Results
+      </h2>
+      <div id="results-container" class="space-y-6"></div>
+    </div>
+
+    <div id="no-results" class="hidden text-center py-12">
+      <div class="w-16 h-16 bg-gray-100 dark:bg-gray-800 rounded-2xl flex items-center justify-center mx-auto mb-4">
+        <i data-lucide="search-x" class="w-8 h-8 text-gray-400"></i>
+      </div>
+      <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">No companies found</h3>
+      <p class="text-gray-600 dark:text-gray-400 mb-4">We don't have data for that company yet. Try a different search or browse below.</p>
+      <a href="/visa-sponsored-jobs/" class="btn-secondary">
+        <i data-lucide="briefcase" class="w-4 h-4 mr-2"></i>
+        Browse Visa-Sponsored Jobs
+      </a>
+    </div>
+  </div>
+</section>
+
+{# All Companies Grid (server-rendered for SEO) #}
+<section class="py-16 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="section-heading text-center mb-4">All Verified Visa Sponsors</h2>
+    <p class="text-center text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
+      Browse {{ companies | length }} companies verified to sponsor work visas. Data updated March 2026.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="all-companies-grid">
+      {% for company in companies %}
+      <div class="card p-6" itemscope itemtype="https://schema.org/Organization">
+        <div class="flex items-start justify-between mb-3">
+          <div>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white" itemprop="name">{{ company.name }}</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400" itemprop="location">{{ company.hq }}</p>
+          </div>
+          {% if company.sponsors %}
+          <span class="badge badge-visa shrink-0">
+            <i data-lucide="check-circle" class="w-3.5 h-3.5 mr-1"></i>Sponsors
+          </span>
+          {% endif %}
+        </div>
+
+        <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">{{ company.industry }} &middot; {{ company.size }} employees</p>
+
+        <div class="flex flex-wrap gap-1.5 mb-3">
+          {% for country in company.countries %}
+          <span class="text-xs px-2 py-0.5 rounded-full bg-brand-50 dark:bg-brand-900/20 text-brand-700 dark:text-brand-300 border border-brand-200 dark:border-brand-800">{{ country }}</span>
+          {% endfor %}
+        </div>
+
+        <div class="flex flex-wrap gap-1.5 mb-3">
+          {% for visa in company.visaTypes %}
+          <span class="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">{{ visa }}</span>
+          {% endfor %}
+        </div>
+
+        {% if company.relocation %}
+        <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">
+          <i data-lucide="package" class="w-3 h-3 inline mr-1"></i>
+          {{ company.relocationDetails }}
+        </p>
+        {% endif %}
+
+        <a href="{{ company.careers }}" target="_blank" rel="noopener" class="text-sm text-brand-600 dark:text-brand-400 hover:underline flex items-center gap-1" itemprop="url">
+          View Careers <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="text-center mt-10">
+      <a href="/visa-sponsored-jobs/" class="btn-primary">
+        Browse All Visa-Sponsored Jobs
+        <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+{# Related Links #}
+<section class="py-12">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="section-heading mb-6">Related Resources</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <a href="/resources/visa-information/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <i data-lucide="file-text" class="w-5 h-5 text-brand-500 mb-2"></i>
+        <div class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Visa Information</div>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Detailed guides on visa types and requirements</p>
+      </a>
+      <a href="/resources/country-guides/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <i data-lucide="globe" class="w-5 h-5 text-brand-500 mb-2"></i>
+        <div class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Country Guides</div>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Everything you need to know about relocating</p>
+      </a>
+      <a href="/blog/posts/visa-sponsorship-explained/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <i data-lucide="book-open" class="w-5 h-5 text-brand-500 mb-2"></i>
+        <div class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Visa Sponsorship Explained</div>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">What it means and how to get sponsored</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+{# FAQ #}
+<section class="py-16 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="section-heading text-center mb-10">Common Questions About Visa Sponsorship</h2>
+    <div class="space-y-4" id="faq-list">
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">How do I know if a company sponsors visas?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>Check the company's careers page for mentions of visa sponsorship or relocation support. You can also use our checker above to search verified companies. In the UK, you can check the official <a href="https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers" target="_blank" rel="noopener">Home Office sponsor register</a>.</p>
+            <p>Additionally, browse our <a href="/visa-sponsored-jobs/">visa-sponsored job listings</a> to find positions that explicitly offer sponsorship.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">What is the UK sponsor register?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>The UK sponsor register is a public list maintained by the Home Office showing all licensed sponsors authorized to issue Certificates of Sponsorship for Skilled Worker visas. Companies must be on this list to legally sponsor work visas in the UK.</p>
+            <p>You can view the register on the <a href="https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers" target="_blank" rel="noopener">UK government website</a>. For more information, see our <a href="/resources/country-guides/uk/">UK country guide</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">What is the EU Blue Card?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>The EU Blue Card is a work and residence permit for highly qualified non-EU nationals. It requires a recognized university degree and a binding job offer with a minimum salary threshold. Germany is the most popular destination for EU Blue Card holders.</p>
+            <p>Learn more in our <a href="/resources/country-guides/germany/">Germany country guide</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Do companies pay for visa sponsorship?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>In most cases, the sponsoring employer covers the visa application fees and legal costs. Many also provide full relocation packages including flights, temporary housing, and moving expenses. However, this varies by company and country.</p>
+            <p>Check our <a href="/resources/relocation-tips/">relocation tips</a> for what to expect and how to negotiate a better package.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Can I switch companies while on a sponsored visa?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>Yes, but the process depends on the country and visa type. In most cases, your new employer must also be an authorized sponsor and file a new sponsorship application. You typically cannot work for the new employer until the transfer is approved.</p>
+            <p>For country-specific details, explore our <a href="/resources/country-guides/">country guides</a>.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{# Share #}
+<section class="py-12">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h2 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Share this tool</h2>
+    <div class="flex items-center justify-center gap-4">
+      <a href="https://twitter.com/intent/tweet?text=Check%20if%20a%20company%20sponsors%20work%20visas%20with%20this%20free%20tool&url={{ site.url }}/tools/visa-checker/" target="_blank" rel="noopener" class="btn-secondary text-sm">
+        <i data-lucide="twitter" class="w-4 h-4 mr-2"></i>Share on X
+      </a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}/tools/visa-checker/" target="_blank" rel="noopener" class="btn-secondary text-sm">
+        <i data-lucide="linkedin" class="w-4 h-4 mr-2"></i>Share on LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+{% block scripts %}
+<script>
+(function() {
+  var companies = {{ companies | jsonify | safe }};
+  var searchInput = document.getElementById('company-search');
+  var resultsSection = document.getElementById('search-results');
+  var resultsContainer = document.getElementById('results-container');
+  var resultsCount = document.getElementById('results-count');
+  var noResults = document.getElementById('no-results');
+
+  function renderCompanyCard(c) {
+    var countriesHtml = c.countries.map(function(country) {
+      return '<span class="text-xs px-2 py-0.5 rounded-full bg-brand-50 dark:bg-brand-900/20 text-brand-700 dark:text-brand-300 border border-brand-200 dark:border-brand-800">' + country + '</span>';
+    }).join('');
+
+    var visaHtml = c.visaTypes.map(function(v) {
+      return '<span class="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">' + v + '</span>';
+    }).join('');
+
+    var relocHtml = '';
+    if (c.relocation && c.relocationDetails) {
+      relocHtml = '<div class="mt-3 p-3 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800">' +
+        '<p class="text-sm text-green-800 dark:text-green-300 flex items-start gap-2">' +
+        '<i data-lucide="package" class="w-4 h-4 shrink-0 mt-0.5"></i>' +
+        '<span><strong>Relocation:</strong> ' + c.relocationDetails + '</span></p></div>';
+    }
+
+    return '<div class="card p-6">' +
+      '<div class="flex items-start justify-between mb-2">' +
+        '<div><h3 class="text-xl font-semibold text-gray-900 dark:text-white">' + c.name + '</h3>' +
+        '<p class="text-sm text-gray-500 dark:text-gray-400 mt-0.5">' + c.hq + ' &middot; ' + c.industry + ' &middot; ' + c.size + ' employees</p></div>' +
+        '<span class="badge badge-visa shrink-0"><i data-lucide="check-circle" class="w-3.5 h-3.5 mr-1"></i>Verified</span>' +
+      '</div>' +
+      '<div class="flex flex-wrap gap-1.5 mt-3"><strong class="text-xs text-gray-500 dark:text-gray-400 mr-1">Countries:</strong>' + countriesHtml + '</div>' +
+      '<div class="flex flex-wrap gap-1.5 mt-2"><strong class="text-xs text-gray-500 dark:text-gray-400 mr-1">Visa Types:</strong>' + visaHtml + '</div>' +
+      relocHtml +
+      (c.notes ? '<p class="text-sm text-gray-600 dark:text-gray-400 mt-3">' + c.notes + '</p>' : '') +
+      '<div class="mt-4 flex items-center gap-4">' +
+        '<a href="' + c.careers + '" target="_blank" rel="noopener" class="btn-primary text-sm">View Careers <i data-lucide="external-link" class="w-3.5 h-3.5 ml-1"></i></a>' +
+        '<a href="/visa-sponsored-jobs/" class="text-sm text-brand-600 dark:text-brand-400 hover:underline">See open jobs</a>' +
+      '</div>' +
+    '</div>';
+  }
+
+  function doSearch(query) {
+    query = query.trim().toLowerCase();
+    if (query.length < 2) {
+      resultsSection.classList.add('hidden');
+      noResults.classList.add('hidden');
+      return;
+    }
+
+    var matches = companies.filter(function(c) {
+      return c.name.toLowerCase().indexOf(query) !== -1 ||
+             c.industry.toLowerCase().indexOf(query) !== -1 ||
+             c.hq.toLowerCase().indexOf(query) !== -1 ||
+             c.countries.some(function(co) { return co.toLowerCase().indexOf(query) !== -1; });
+    });
+
+    if (matches.length > 0) {
+      resultsCount.textContent = matches.length;
+      resultsContainer.innerHTML = matches.map(renderCompanyCard).join('');
+      resultsSection.classList.remove('hidden');
+      noResults.classList.add('hidden');
+      if (window.lucide) lucide.createIcons();
+    } else {
+      resultsSection.classList.add('hidden');
+      noResults.classList.remove('hidden');
+      if (window.lucide) lucide.createIcons();
+    }
+  }
+
+  searchInput.addEventListener('input', debounce(function() {
+    doSearch(searchInput.value);
+  }, 250));
+
+  // FAQ toggles
+  document.querySelectorAll('.faq-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = btn.closest('.faq-item');
+      var content = item.querySelector('.faq-content');
+      var icon = item.querySelector('.faq-icon');
+      var isOpen = !content.classList.contains('hidden');
+      content.classList.toggle('hidden', isOpen);
+      icon.style.transform = isOpen ? '' : 'rotate(180deg)';
+      btn.setAttribute('aria-expanded', !isOpen);
+    });
+  });
+})();
+</script>
+{% endblock %}

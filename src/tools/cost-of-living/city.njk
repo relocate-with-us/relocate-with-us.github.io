@@ -1,0 +1,225 @@
+---
+pagination:
+  data: costOfLiving.cities
+  size: 1
+  alias: city
+permalink: "/tools/cost-of-living/{{ city.slug }}/index.html"
+layout: layouts/base.njk
+eleventyComputed:
+  title: "Cost of Living in {{ city.name }}, {{ city.country }} | Expat Guide"
+  description: "Complete cost of living breakdown for {{ city.name }}, {{ city.country }}. Rent from {{ city.currency }} {{ city.rent1bed }}/month, groceries {{ city.currency }} {{ city.groceries }}/month. Everything an expat needs to budget for {{ city.name }}."
+---
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does it cost to live in {{ city.name }}?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A single person in {{ city.name }} can expect monthly expenses of approximately {{ city.currency }} {{ city.rent1bed + city.groceries + city.transport + city.utilities + city.internet }}. This includes {{ city.currency }} {{ city.rent1bed }} for a 1-bedroom apartment, {{ city.currency }} {{ city.groceries }} for groceries, and {{ city.currency }} {{ city.transport }} for public transport."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much is rent in {{ city.name }}?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Average rent in {{ city.name }}: {{ city.currency }} {{ city.rent1bed }}/month for a 1-bedroom apartment in the city center, {{ city.currency }} {{ city.rent3bed }}/month for a 3-bedroom apartment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is {{ city.name }} expensive for expats?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ city.name }} has monthly costs of approximately {{ city.currency }} {{ city.rent1bed + city.groceries + city.transport + city.utilities + city.internet }} for a single person including rent. Compare with other cities using our cost of living comparison tool."
+      }
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+<section class="bg-gradient-to-b from-brand-50 to-white dark:from-gray-900 dark:to-gray-950 py-12">
+  <div class="max-w-3xl mx-auto px-4">
+    <nav class="text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600">Home</a>
+      <span class="mx-2">/</span>
+      <a href="/tools/" class="hover:text-brand-600">Tools</a>
+      <span class="mx-2">/</span>
+      <a href="/tools/cost-of-living/" class="hover:text-brand-600">Cost of Living</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900 dark:text-white">{{ city.name }}</span>
+    </nav>
+
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">
+      {{ city.emoji }} Cost of Living in {{ city.name }}
+    </h1>
+    <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
+      Monthly cost breakdown for expats moving to {{ city.name }}, {{ city.country }}. All prices in {{ city.currency }}.
+    </p>
+
+    {# Monthly Summary #}
+    {% set monthlyTotal = city.rent1bed + city.groceries + city.transport + city.utilities + city.internet + city.gym %}
+    <div class="card p-6 mb-8">
+      <div class="text-center mb-6">
+        <div class="text-sm text-gray-500 dark:text-gray-400 mb-1">Estimated Monthly Cost (Single Person)</div>
+        <div class="text-4xl font-bold text-brand-600 dark:text-brand-400">{{ city.currency }} {{ monthlyTotal | localeString }}</div>
+        <div class="text-sm text-gray-500 dark:text-gray-400 mt-1">Including rent, groceries, transport, utilities</div>
+      </div>
+    </div>
+
+    {# Detailed Breakdown #}
+    <div class="card p-6 mb-8">
+      <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Detailed Cost Breakdown</h2>
+      <div class="space-y-4">
+        <div class="flex justify-between items-center py-3 border-b border-gray-100 dark:border-gray-800">
+          <div class="flex items-center gap-3">
+            <i data-lucide="home" class="w-5 h-5 text-brand-500"></i>
+            <div>
+              <div class="font-medium text-gray-900 dark:text-white">Rent (1 Bedroom, City Center)</div>
+              <div class="text-xs text-gray-500">Average monthly rent</div>
+            </div>
+          </div>
+          <div class="font-bold text-gray-900 dark:text-white">{{ city.currency }} {{ city.rent1bed | localeString }}</div>
+        </div>
+
+        <div class="flex justify-between items-center py-3 border-b border-gray-100 dark:border-gray-800">
+          <div class="flex items-center gap-3">
+            <i data-lucide="home" class="w-5 h-5 text-gray-400"></i>
+            <div>
+              <div class="font-medium text-gray-900 dark:text-white">Rent (3 Bedroom, City Center)</div>
+              <div class="text-xs text-gray-500">For families</div>
+            </div>
+          </div>
+          <div class="font-bold text-gray-900 dark:text-white">{{ city.currency }} {{ city.rent3bed | localeString }}</div>
+        </div>
+
+        <div class="flex justify-between items-center py-3 border-b border-gray-100 dark:border-gray-800">
+          <div class="flex items-center gap-3">
+            <i data-lucide="shopping-cart" class="w-5 h-5 text-green-500"></i>
+            <div>
+              <div class="font-medium text-gray-900 dark:text-white">Groceries</div>
+              <div class="text-xs text-gray-500">Monthly average</div>
+            </div>
+          </div>
+          <div class="font-bold text-gray-900 dark:text-white">{{ city.currency }} {{ city.groceries }}</div>
+        </div>
+
+        <div class="flex justify-between items-center py-3 border-b border-gray-100 dark:border-gray-800">
+          <div class="flex items-center gap-3">
+            <i data-lucide="train-front" class="w-5 h-5 text-blue-500"></i>
+            <div>
+              <div class="font-medium text-gray-900 dark:text-white">Public Transport</div>
+              <div class="text-xs text-gray-500">Monthly pass</div>
+            </div>
+          </div>
+          <div class="font-bold text-gray-900 dark:text-white">{{ city.currency }} {{ city.transport }}</div>
+        </div>
+
+        <div class="flex justify-between items-center py-3 border-b border-gray-100 dark:border-gray-800">
+          <div class="flex items-center gap-3">
+            <i data-lucide="zap" class="w-5 h-5 text-yellow-500"></i>
+            <div>
+              <div class="font-medium text-gray-900 dark:text-white">Utilities</div>
+              <div class="text-xs text-gray-500">Electricity, heating, water</div>
+            </div>
+          </div>
+          <div class="font-bold text-gray-900 dark:text-white">{{ city.currency }} {{ city.utilities }}</div>
+        </div>
+
+        <div class="flex justify-between items-center py-3 border-b border-gray-100 dark:border-gray-800">
+          <div class="flex items-center gap-3">
+            <i data-lucide="wifi" class="w-5 h-5 text-purple-500"></i>
+            <div>
+              <div class="font-medium text-gray-900 dark:text-white">Internet</div>
+              <div class="text-xs text-gray-500">Broadband connection</div>
+            </div>
+          </div>
+          <div class="font-bold text-gray-900 dark:text-white">{{ city.currency }} {{ city.internet }}</div>
+        </div>
+
+        <div class="flex justify-between items-center py-3 border-b border-gray-100 dark:border-gray-800">
+          <div class="flex items-center gap-3">
+            <i data-lucide="dumbbell" class="w-5 h-5 text-orange-500"></i>
+            <div>
+              <div class="font-medium text-gray-900 dark:text-white">Gym Membership</div>
+              <div class="text-xs text-gray-500">Monthly fee</div>
+            </div>
+          </div>
+          <div class="font-bold text-gray-900 dark:text-white">{{ city.currency }} {{ city.gym }}</div>
+        </div>
+      </div>
+    </div>
+
+    {# Dining Out #}
+    <div class="card p-6 mb-8">
+      <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Dining & Drinks</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+        <div class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+          <i data-lucide="coffee" class="w-5 h-5 text-amber-600 mx-auto mb-1"></i>
+          <div class="text-xs text-gray-500">Coffee</div>
+          <div class="font-bold text-gray-900 dark:text-white">{{ city.currency }} {{ city.coffee }}</div>
+        </div>
+        <div class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+          <i data-lucide="utensils" class="w-5 h-5 text-red-500 mx-auto mb-1"></i>
+          <div class="text-xs text-gray-500">Lunch</div>
+          <div class="font-bold text-gray-900 dark:text-white">{{ city.currency }} {{ city.meal }}</div>
+        </div>
+        <div class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+          <i data-lucide="wine" class="w-5 h-5 text-purple-500 mx-auto mb-1"></i>
+          <div class="text-xs text-gray-500">Restaurant (2 ppl)</div>
+          <div class="font-bold text-gray-900 dark:text-white">{{ city.currency }} {{ city.restaurant }}</div>
+        </div>
+        <div class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+          <i data-lucide="beer" class="w-5 h-5 text-yellow-600 mx-auto mb-1"></i>
+          <div class="text-xs text-gray-500">Beer</div>
+          <div class="font-bold text-gray-900 dark:text-white">{{ city.currency }} {{ city.beer }}</div>
+        </div>
+      </div>
+    </div>
+
+    {# Actions #}
+    <div class="flex flex-col sm:flex-row gap-3 mb-12">
+      <a href="/tools/cost-of-living/" class="btn-primary">
+        Compare with Another City
+        <i data-lucide="bar-chart-3" class="w-4 h-4 ml-2"></i>
+      </a>
+      <a href="/tools/salary-calculator/" class="btn-secondary">
+        Salary Calculator
+        <i data-lucide="calculator" class="w-4 h-4 ml-2"></i>
+      </a>
+      <a href="/visa-sponsored-jobs/" class="btn-secondary">
+        Browse Jobs
+        <i data-lucide="briefcase" class="w-4 h-4 ml-2"></i>
+      </a>
+    </div>
+
+    {# FAQ #}
+    <h2 class="section-heading mb-6">Frequently Asked Questions</h2>
+    <div class="space-y-4 mb-12">
+      <div class="card p-5">
+        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">How much does it cost to live in {{ city.name }}?</h3>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">A single person in {{ city.name }} can expect monthly expenses of approximately {{ city.currency }} {{ monthlyTotal | localeString }}, including rent for a 1-bedroom apartment ({{ city.currency }} {{ city.rent1bed | localeString }}), groceries, transport, and utilities.</p>
+      </div>
+      <div class="card p-5">
+        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">How much is rent in {{ city.name }}?</h3>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">Average rent: {{ city.currency }} {{ city.rent1bed | localeString }}/month for a 1-bedroom apartment in the city center, or {{ city.currency }} {{ city.rent3bed | localeString }}/month for a 3-bedroom apartment.</p>
+      </div>
+      <div class="card p-5">
+        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Is {{ city.name }} a good city for tech workers?</h3>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">{{ city.name }} is a popular destination for international tech workers in {{ city.country }}. <a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">Browse visa-sponsored jobs</a> or check our <a href="/tools/relocation-quiz/" class="text-brand-600 dark:text-brand-400 hover:underline">relocation quiz</a> to see if it's the right fit.</p>
+      </div>
+    </div>
+
+    <a href="/tools/cost-of-living/" class="inline-flex items-center text-brand-600 dark:text-brand-400 hover:underline">
+      <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+      Back to cost of living comparison
+    </a>
+  </div>
+</section>

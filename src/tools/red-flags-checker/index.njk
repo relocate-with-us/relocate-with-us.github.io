@@ -1,0 +1,473 @@
+---
+layout: layouts/base.njk
+title: "Job Posting Red Flags Checker | Spot Scam Jobs & Bad Employers"
+description: "Paste any job posting and instantly identify red flags. Our free tool checks for missing salary info, vague visa promises, contract issues, and other warning signs."
+---
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Job Posting Red Flags Checker",
+  "url": "{{ site.url }}{{ page.url }}",
+  "description": "{{ description }}",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "publisher": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can I tell if a job posting is a scam?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Common scam indicators include: requests for upfront payment or fees, vague company descriptions, guaranteed visa approval claims, no interview required, and pressure to send money via wire transfer. Legitimate employers never ask candidates to pay for their own visa processing." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should a job posting include salary information?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Reputable employers increasingly include salary ranges in job postings. Many countries and jurisdictions now require salary transparency by law. A job posting without any compensation information is a yellow flag—it may indicate below-market pay or an unprofessional hiring process." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it normal for employers to ask candidates to pay for visa processing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. In virtually all legitimate employment scenarios, the sponsoring employer pays for visa application fees and related legal costs. If a company asks you to pay a processing fee, application fee, or any upfront cost, it is almost certainly a scam." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does 'visa sponsorship may be available' mean?",
+      "acceptedAnswer": { "@type": "Answer", "text": "This vague phrasing is a warning sign. Companies that genuinely sponsor visas typically state it clearly: 'We offer visa sponsorship' or specify the visa type (EU Blue Card, Skilled Worker visa, etc.). Vague language often means the company hasn't committed to sponsorship or may not follow through." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are commission-only jobs risky for visa holders?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Commission-only roles are risky for visa holders because most work visas require a minimum salary threshold. If your income is entirely commission-based, you may not meet visa requirements, and your income instability could jeopardize your immigration status." }
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+<section class="relative overflow-hidden bg-gradient-to-br from-brand-50 via-white to-indigo-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 py-16 md:py-20">
+  <div class="max-w-4xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6" aria-label="Breadcrumb">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400">Home</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span>Tools</span>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-900 dark:text-white">Red Flags Checker</span>
+    </nav>
+
+    <div class="text-center">
+      <div class="w-16 h-16 bg-red-100 dark:bg-red-900/30 rounded-2xl flex items-center justify-center mx-auto mb-6">
+        <i data-lucide="shield-alert" class="w-8 h-8 text-red-600 dark:text-red-400"></i>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 leading-tight">
+        Job Posting <span class="bg-red-200 dark:bg-red-500/20 dark:text-red-300 px-2 inline-block -skew-x-1">Red Flags</span> Checker
+      </h1>
+      <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-8">
+        Paste any job description below and we'll instantly scan it for red flags, scam indicators, and positive signals to help you make safer decisions.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="py-12">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="card p-6 md:p-8 mb-8">
+      <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+        <i data-lucide="scan-text" class="w-5 h-5 text-brand-500"></i>
+        Paste Job Description
+      </h2>
+      <textarea id="job-input" class="input-field min-h-[200px] resize-y" placeholder="Paste the full job posting text here…&#10;&#10;Include the job title, company name, description, requirements, benefits, and any visa/relocation information."></textarea>
+      <div class="flex items-center justify-between mt-4">
+        <span id="char-count" class="text-sm text-gray-400">0 characters</span>
+        <div class="flex gap-3">
+          <button id="clear-btn" class="btn-secondary text-sm">
+            <i data-lucide="eraser" class="w-4 h-4 mr-1"></i> Clear
+          </button>
+          <button id="analyze-btn" class="btn-primary">
+            <i data-lucide="scan" class="w-5 h-5 mr-2"></i> Analyze Job Posting
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="results-section" class="hidden space-y-6">
+      <div id="score-card" class="card p-6 md:p-8">
+        <div class="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
+          <div id="score-icon" class="w-16 h-16 rounded-2xl flex items-center justify-center shrink-0"></div>
+          <div>
+            <h2 id="score-title" class="text-2xl font-bold"></h2>
+            <p id="score-subtitle" class="text-gray-600 dark:text-gray-400 mt-1"></p>
+          </div>
+        </div>
+        <div id="score-summary" class="flex flex-wrap gap-4"></div>
+      </div>
+
+      <div id="danger-section" class="hidden">
+        <h3 class="flex items-center gap-2 text-lg font-bold text-red-600 dark:text-red-400 mb-4">
+          <i data-lucide="alert-octagon" class="w-5 h-5"></i> Danger Signs
+        </h3>
+        <div id="danger-list" class="space-y-3"></div>
+      </div>
+
+      <div id="warning-section" class="hidden">
+        <h3 class="flex items-center gap-2 text-lg font-bold text-yellow-600 dark:text-yellow-500 mb-4">
+          <i data-lucide="alert-triangle" class="w-5 h-5"></i> Warnings
+        </h3>
+        <div id="warning-list" class="space-y-3"></div>
+      </div>
+
+      <div id="positive-section" class="hidden">
+        <h3 class="flex items-center gap-2 text-lg font-bold text-green-600 dark:text-green-400 mb-4">
+          <i data-lucide="check-circle-2" class="w-5 h-5"></i> Positive Signals
+        </h3>
+        <div id="positive-list" class="space-y-3"></div>
+      </div>
+    </div>
+
+    <div class="card p-6 md:p-8 mt-8 mb-8">
+      <h2 class="section-heading mb-6 flex items-center gap-2">
+        <i data-lucide="book-open" class="w-5 h-5 text-brand-500"></i>
+        Common Job Scams Targeting International Workers
+      </h2>
+
+      <div class="space-y-6">
+        <div class="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-400 p-4 rounded-r-lg">
+          <h3 class="font-semibold text-red-800 dark:text-red-300 mb-2">Advance Fee Fraud</h3>
+          <p class="text-sm text-red-700 dark:text-red-400">Scammers pose as employers and ask you to pay upfront for visa processing, training materials, or equipment. Legitimate employers <strong>never</strong> charge candidates fees.</p>
+        </div>
+
+        <div class="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-400 p-4 rounded-r-lg">
+          <h3 class="font-semibold text-red-800 dark:text-red-300 mb-2">Fake Job Offers</h3>
+          <p class="text-sm text-red-700 dark:text-red-400">You receive a job offer without a proper interview process. The "company" may use a real company's name but communicate only via email or messaging apps, never official channels.</p>
+        </div>
+
+        <div class="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 p-4 rounded-r-lg">
+          <h3 class="font-semibold text-yellow-800 dark:text-yellow-300 mb-2">Vague Visa Promises</h3>
+          <p class="text-sm text-yellow-700 dark:text-yellow-400">Employers who say visa sponsorship "may be available" or is "under discussion" often don't follow through. Real sponsors state it clearly and specify the visa type.</p>
+        </div>
+
+        <div class="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 p-4 rounded-r-lg">
+          <h3 class="font-semibold text-yellow-800 dark:text-yellow-300 mb-2">Exploitative Contracts</h3>
+          <p class="text-sm text-yellow-700 dark:text-yellow-400">Some employers tie visa sponsorship to unreasonable contract terms—excessively long notice periods, salary clawbacks, or repayment clauses for sponsorship costs if you leave.</p>
+        </div>
+      </div>
+
+      <div class="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-400 p-4 rounded-r-lg mt-6">
+        <div class="flex gap-3">
+          <i data-lucide="shield-check" class="w-5 h-5 text-green-500 shrink-0 mt-0.5"></i>
+          <div>
+            <p class="text-sm font-medium text-green-800 dark:text-green-300">Stay safe — use verified sources</p>
+            <p class="text-sm text-green-700 dark:text-green-400 mt-1">Browse jobs from verified employers on our <a href="/visa-sponsored-jobs/" class="underline hover:no-underline font-medium">visa-sponsored jobs board</a>. All listings are curated and verified. Read our <a href="/blog/posts/visa-sponsorship-explained/" class="underline hover:no-underline font-medium">visa sponsorship guide</a> for more tips.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <a href="/visa-sponsored-jobs/" class="card p-6 hover:shadow-lg transition-shadow group">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-brand-100 dark:bg-brand-900/30 rounded-xl flex items-center justify-center shrink-0">
+            <i data-lucide="briefcase" class="w-6 h-6 text-brand-600 dark:text-brand-400"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Verified Visa-Sponsored Jobs</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Browse curated, safe job listings</p>
+          </div>
+        </div>
+      </a>
+      <a href="/blog/posts/resume-tips-for-international-jobs/" class="card p-6 hover:shadow-lg transition-shadow group">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center shrink-0">
+            <i data-lucide="file-text" class="w-6 h-6 text-purple-600 dark:text-purple-400"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">Resume Tips for International Jobs</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Stand out in global job markets</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="card p-6 md:p-8 mb-8">
+      <div class="flex items-center gap-3 mb-6">
+        <i data-lucide="share-2" class="w-5 h-5 text-brand-500"></i>
+        <h2 class="text-lg font-bold text-gray-900 dark:text-white">Share This Tool</h2>
+      </div>
+      <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Help others avoid job scams — share this red flags checker.</p>
+      <div class="flex flex-wrap gap-3">
+        <a href="https://twitter.com/intent/tweet?text=Check%20any%20job%20posting%20for%20red%20flags%20and%20scam%20indicators%20with%20this%20free%20tool&url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener" class="btn-secondary text-sm">
+          <i data-lucide="twitter" class="w-4 h-4 mr-1"></i> Twitter
+        </a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" target="_blank" rel="noopener" class="btn-secondary text-sm">
+          <i data-lucide="linkedin" class="w-4 h-4 mr-1"></i> LinkedIn
+        </a>
+        <button id="copy-link-btn" class="btn-secondary text-sm">
+          <i data-lucide="link" class="w-4 h-4 mr-1"></i> Copy Link
+        </button>
+      </div>
+    </div>
+
+    <div class="card p-6 md:p-8">
+      <h2 class="section-heading mb-6">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        <details class="group border border-gray-200 dark:border-gray-700 rounded-lg">
+          <summary class="flex items-center justify-between p-4 cursor-pointer font-medium text-gray-900 dark:text-white">
+            How can I tell if a job posting is a scam?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-4 pb-4 text-gray-600 dark:text-gray-400 text-sm">
+            Common scam indicators include: requests for upfront payment or fees, vague company descriptions, guaranteed visa approval claims, no interview required, and pressure to send money via wire transfer. Legitimate employers never ask candidates to pay for their own visa processing.
+          </div>
+        </details>
+        <details class="group border border-gray-200 dark:border-gray-700 rounded-lg">
+          <summary class="flex items-center justify-between p-4 cursor-pointer font-medium text-gray-900 dark:text-white">
+            Should a job posting include salary information?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-4 pb-4 text-gray-600 dark:text-gray-400 text-sm">
+            Reputable employers increasingly include salary ranges in job postings. Many countries and jurisdictions now require salary transparency by law. A job posting without any compensation information is a yellow flag—it may indicate below-market pay or an unprofessional hiring process.
+          </div>
+        </details>
+        <details class="group border border-gray-200 dark:border-gray-700 rounded-lg">
+          <summary class="flex items-center justify-between p-4 cursor-pointer font-medium text-gray-900 dark:text-white">
+            Is it normal for employers to ask candidates to pay for visa processing?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-4 pb-4 text-gray-600 dark:text-gray-400 text-sm">
+            No. In virtually all legitimate employment scenarios, the sponsoring employer pays for visa application fees and related legal costs. If a company asks you to pay a processing fee, application fee, or any upfront cost, it is almost certainly a scam.
+          </div>
+        </details>
+        <details class="group border border-gray-200 dark:border-gray-700 rounded-lg">
+          <summary class="flex items-center justify-between p-4 cursor-pointer font-medium text-gray-900 dark:text-white">
+            What does "visa sponsorship may be available" mean?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-4 pb-4 text-gray-600 dark:text-gray-400 text-sm">
+            This vague phrasing is a warning sign. Companies that genuinely sponsor visas typically state it clearly: "We offer visa sponsorship" or specify the visa type (EU Blue Card, Skilled Worker visa, etc.). Vague language often means the company hasn't committed to sponsorship or may not follow through.
+          </div>
+        </details>
+        <details class="group border border-gray-200 dark:border-gray-700 rounded-lg">
+          <summary class="flex items-center justify-between p-4 cursor-pointer font-medium text-gray-900 dark:text-white">
+            Are commission-only jobs risky for visa holders?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="px-4 pb-4 text-gray-600 dark:text-gray-400 text-sm">
+            Yes. Commission-only roles are risky for visa holders because most work visas require a minimum salary threshold. If your income is entirely commission-based, you may not meet visa requirements, and your income instability could jeopardize your immigration status.
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var jobInput = document.getElementById('job-input');
+  var analyzeBtn = document.getElementById('analyze-btn');
+  var clearBtn = document.getElementById('clear-btn');
+  var charCount = document.getElementById('char-count');
+  var resultsSection = document.getElementById('results-section');
+  var copyLinkBtn = document.getElementById('copy-link-btn');
+
+  var dangerRules = [
+    { pattern: /visa\s+sponsorship\s+(may|might|could)\s+be\s+available/i, msg: 'Vague visa language detected. Legitimate sponsors state it clearly—e.g., "We sponsor EU Blue Card" or "Skilled Worker visa provided."' },
+    { pattern: /visa\s+sponsorship\s+not\s+guaranteed/i, msg: 'Visa sponsorship is described as "not guaranteed." This is a significant risk—you could accept the role and still not receive sponsorship.' },
+    { pattern: /(processing|application|visa)\s+fee/i, msg: 'Mention of a processing or application fee. Legitimate employers NEVER ask candidates to pay for visa processing.' },
+    { pattern: /pay\s+for\s+(your\s+)?(own\s+)?visa/i, msg: 'Candidates are asked to pay for their own visa. This is a major red flag and likely a scam.' },
+    { pattern: /send\s+money/i, msg: 'Request to "send money" detected. Never send money to a prospective employer.' },
+    { pattern: /wire\s+transfer/i, msg: 'Wire transfer mentioned. Legitimate employers use standard payroll, not wire transfers from candidates.' },
+    { pattern: /western\s+union/i, msg: 'Western Union mentioned. This is a common method used by scammers. Legitimate employers never request money via Western Union.' },
+    { pattern: /guaranteed\s+visa/i, msg: 'Claims of "guaranteed visa." No employer or agency can guarantee visa approval—this is decided by immigration authorities only.' },
+    { pattern: /no\s+interview\s+(required|needed|necessary)/i, msg: 'No interview required. Legitimate employers always interview candidates before making an offer.' }
+  ];
+
+  var warningRules = [
+    { pattern: /commission[\s-]only/i, msg: 'Commission-only role. These are risky for visa holders who need to meet minimum salary thresholds for their work permit.' },
+    { pattern: /commission[\s-]based/i, msg: 'Commission-based compensation. Verify a guaranteed base salary meets visa requirements.' },
+    { pattern: /trial\s+period\s+unpaid/i, msg: 'Unpaid trial period. This may violate labor laws in many countries and is unusual for professional roles.' },
+    { pattern: /relocation\s+at\s+(your\s+)?own\s+expense/i, msg: 'Relocation at candidate\'s expense. Good employers typically cover relocation costs or provide a relocation package.' },
+    { pattern: /urgent(ly)?\s+hir(ing|e)/i, msg: 'Urgency language detected. "Urgent hiring" combined with limited details can be a pressure tactic.' }
+  ];
+
+  var positiveRules = [
+    { pattern: /eu\s+blue\s+card/i, msg: 'EU Blue Card mentioned — a specific, legitimate visa type for highly qualified professionals.' },
+    { pattern: /skilled\s+worker\s+visa/i, msg: 'Skilled Worker visa specified — indicates the employer is familiar with the sponsorship process.' },
+    { pattern: /work\s+permit/i, msg: 'Work permit explicitly mentioned — shows the employer has considered immigration requirements.' },
+    { pattern: /relocation\s+(package|assistance|support|bonus)/i, msg: 'Relocation support offered — a strong positive signal that the employer is committed to helping you move.' },
+    { pattern: /health\s+insurance/i, msg: 'Health insurance mentioned in benefits — standard for legitimate employers.' },
+    { pattern: /pension|retirement/i, msg: 'Pension or retirement benefits mentioned — indicates a well-structured benefits package.' },
+    { pattern: /visa\s+sponsorship\s+(provided|offered|available|included)/i, msg: 'Clear visa sponsorship commitment — the employer explicitly offers to sponsor your visa.' }
+  ];
+
+  function checkSalary(text) {
+    return /(\$|€|£|salary|compensation|package|pay\s*range|per\s+(year|annum|month)|k\s*\/\s*year|\d+[\s,.]?\d*\s*(usd|eur|gbp|chf|aud|cad|sek|nok|dkk))/i.test(text);
+  }
+
+  function checkCompanyName(text) {
+    var lines = text.split('\n').slice(0, 15);
+    var hasCompany = /(company|employer|about us|who we are|organization)/i.test(text);
+    var hasPropName = /\b[A-Z][a-zA-Z]+(\s+[A-Z][a-zA-Z]+)?\s+(Inc|Ltd|GmbH|AG|BV|AB|SAS|Pty|Corp)\b/.test(text);
+    return hasCompany || hasPropName;
+  }
+
+  function checkUnpaidVisa(text) {
+    return /(unpaid|volunteer)\b/i.test(text) && /visa/i.test(text);
+  }
+
+  function analyze() {
+    var text = jobInput.value.trim();
+    if (!text) {
+      jobInput.focus();
+      jobInput.classList.add('ring-2', 'ring-red-500');
+      setTimeout(function() { jobInput.classList.remove('ring-2', 'ring-red-500'); }, 2000);
+      return;
+    }
+
+    var dangers = [];
+    var warnings = [];
+    var positives = [];
+
+    dangerRules.forEach(function(rule) {
+      if (rule.pattern.test(text)) dangers.push(rule.msg);
+    });
+
+    warningRules.forEach(function(rule) {
+      if (rule.pattern.test(text)) warnings.push(rule.msg);
+    });
+
+    if (!checkSalary(text)) {
+      warnings.push('No salary information found. Legitimate job postings include compensation details or a salary range.');
+    }
+
+    if (checkUnpaidVisa(text)) {
+      warnings.push('Unpaid position combined with visa mention. Unpaid roles rarely qualify for work visa sponsorship.');
+    }
+
+    if (!checkCompanyName(text)) {
+      warnings.push('No clear company name identified. Legitimate postings clearly identify the employer.');
+    }
+
+    positiveRules.forEach(function(rule) {
+      if (rule.pattern.test(text)) positives.push(rule.msg);
+    });
+
+    if (checkSalary(text)) {
+      positives.push('Salary or compensation information included — a sign of transparency.');
+    }
+
+    if (checkCompanyName(text)) {
+      positives.push('Company name or employer clearly identified.');
+    }
+
+    renderResults(dangers, warnings, positives);
+  }
+
+  function renderResults(dangers, warnings, positives) {
+    var scoreCard = document.getElementById('score-card');
+    var scoreIcon = document.getElementById('score-icon');
+    var scoreTitle = document.getElementById('score-title');
+    var scoreSubtitle = document.getElementById('score-subtitle');
+    var scoreSummary = document.getElementById('score-summary');
+
+    var level, title, subtitle, iconName, iconBg, iconColor, titleColor;
+
+    if (dangers.length > 0) {
+      level = 'danger';
+      title = 'Major Red Flags Detected';
+      subtitle = 'This job posting contains serious warning signs. Proceed with extreme caution or avoid entirely.';
+      iconName = 'shield-x';
+      iconBg = 'bg-red-100 dark:bg-red-900/30';
+      iconColor = 'text-red-600 dark:text-red-400';
+      titleColor = 'text-red-600 dark:text-red-400';
+    } else if (warnings.length > 0) {
+      level = 'warning';
+      title = 'Some Concerns Found';
+      subtitle = 'This posting has some yellow flags. Research the company thoroughly before applying.';
+      iconName = 'alert-triangle';
+      iconBg = 'bg-yellow-100 dark:bg-yellow-900/30';
+      iconColor = 'text-yellow-600 dark:text-yellow-500';
+      titleColor = 'text-yellow-600 dark:text-yellow-500';
+    } else {
+      level = 'good';
+      title = 'Looks Good!';
+      subtitle = 'No major red flags detected. Always do your own research, but this posting appears legitimate.';
+      iconName = 'shield-check';
+      iconBg = 'bg-green-100 dark:bg-green-900/30';
+      iconColor = 'text-green-600 dark:text-green-400';
+      titleColor = 'text-green-600 dark:text-green-400';
+    }
+
+    scoreIcon.className = 'w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 ' + iconBg;
+    scoreIcon.innerHTML = '<i data-lucide="' + iconName + '" class="w-8 h-8 ' + iconColor + '"></i>';
+    scoreTitle.className = 'text-2xl font-bold ' + titleColor;
+    scoreTitle.textContent = title;
+    scoreSubtitle.textContent = subtitle;
+
+    scoreSummary.innerHTML =
+      '<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400"><i data-lucide="alert-octagon" class="w-4 h-4"></i>' + dangers.length + ' danger' + (dangers.length !== 1 ? 's' : '') + '</span>' +
+      '<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-500"><i data-lucide="alert-triangle" class="w-4 h-4"></i>' + warnings.length + ' warning' + (warnings.length !== 1 ? 's' : '') + '</span>' +
+      '<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400"><i data-lucide="check-circle-2" class="w-4 h-4"></i>' + positives.length + ' positive' + (positives.length !== 1 ? 's' : '') + '</span>';
+
+    renderList('danger', dangers);
+    renderList('warning', warnings);
+    renderList('positive', positives);
+
+    resultsSection.classList.remove('hidden');
+    if (window.lucide) lucide.createIcons();
+    resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function renderList(type, items) {
+    var section = document.getElementById(type + '-section');
+    var list = document.getElementById(type + '-list');
+    if (!items.length) { section.classList.add('hidden'); return; }
+    section.classList.remove('hidden');
+
+    var bgMap = { danger: 'bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800', warning: 'bg-yellow-50 dark:bg-yellow-900/20 border-yellow-200 dark:border-yellow-800', positive: 'bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800' };
+    var textMap = { danger: 'text-red-800 dark:text-red-300', warning: 'text-yellow-800 dark:text-yellow-300', positive: 'text-green-800 dark:text-green-300' };
+    var iconMap = { danger: 'alert-octagon', warning: 'alert-triangle', positive: 'check-circle-2' };
+    var iconColorMap = { danger: 'text-red-500', warning: 'text-yellow-500', positive: 'text-green-500' };
+
+    var html = '';
+    items.forEach(function(item) {
+      html += '<div class="flex items-start gap-3 p-4 rounded-lg border ' + bgMap[type] + '">';
+      html += '<i data-lucide="' + iconMap[type] + '" class="w-5 h-5 shrink-0 mt-0.5 ' + iconColorMap[type] + '"></i>';
+      html += '<p class="text-sm ' + textMap[type] + '">' + item + '</p>';
+      html += '</div>';
+    });
+    list.innerHTML = html;
+  }
+
+  jobInput.addEventListener('input', function() {
+    charCount.textContent = jobInput.value.length + ' characters';
+  });
+
+  analyzeBtn.addEventListener('click', analyze);
+
+  clearBtn.addEventListener('click', function() {
+    jobInput.value = '';
+    charCount.textContent = '0 characters';
+    resultsSection.classList.add('hidden');
+    jobInput.focus();
+  });
+
+  copyLinkBtn.addEventListener('click', function() {
+    navigator.clipboard.writeText(window.location.href).then(function() {
+      copyLinkBtn.innerHTML = '<i data-lucide="check" class="w-4 h-4 mr-1"></i> Copied!';
+      if (window.lucide) lucide.createIcons();
+      setTimeout(function() {
+        copyLinkBtn.innerHTML = '<i data-lucide="link" class="w-4 h-4 mr-1"></i> Copy Link';
+        if (window.lucide) lucide.createIcons();
+      }, 2000);
+    });
+  });
+});
+</script>

@@ -1,0 +1,499 @@
+---
+layout: layouts/base.njk
+title: "Visa Processing Time Tracker | How Long Does a Work Visa Take?"
+description: "Check current visa processing times for work permits worldwide. Compare processing times for EU Blue Card, UK Skilled Worker Visa, and more."
+---
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Visa Processing Time Tracker",
+  "url": "{{ site.url }}{{ page.url }}",
+  "description": "{{ description }}",
+  "applicationCategory": "Utility",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "author": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which work visa has the fastest processing time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Canada Global Talent Stream targets a 2-week processing time, making it the fastest work visa. The Netherlands HSM Visa (2-4 weeks) and France Passeport Talent (2-6 weeks) are also very fast options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does an EU Blue Card take to process?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The EU Blue Card typically takes 4-8 weeks to process from the date of application. Processing times may vary by country and the completeness of your application."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I speed up my visa processing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some visas offer premium processing for a fee. For example, the US H-1B offers premium processing with a 15-day turnaround. For other visas, ensuring your application is complete and all documents are properly prepared is the best way to avoid delays."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What factors affect visa processing time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Processing times are affected by the completeness of your application, your nationality, the country's current processing backlog, whether additional security checks are required, and the time of year (some periods are busier than others)."
+      }
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+<section class="bg-gradient-to-b from-purple-50 to-white dark:from-gray-900 dark:to-gray-950 py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400">Home</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <a href="/tools/" class="hover:text-brand-600 dark:hover:text-brand-400">Tools</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-900 dark:text-white">Visa Processing Tracker</span>
+    </nav>
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-14 h-14 bg-purple-100 dark:bg-purple-900/40 rounded-2xl flex items-center justify-center">
+        <i data-lucide="timer" class="w-7 h-7 text-purple-600 dark:text-purple-400"></i>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white">Visa Processing Time Tracker</h1>
+    </div>
+    <p class="text-lg text-gray-600 dark:text-gray-400 max-w-3xl">
+      Compare processing times for work visas worldwide. Sort, filter, and compare side-by-side to plan your timeline.
+    </p>
+  </div>
+</section>
+
+{# Server-rendered summary cards #}
+<section class="py-8">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+      <div class="card p-4 text-center">
+        <p class="text-2xl font-extrabold text-green-600 dark:text-green-400">2 wks</p>
+        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Fastest (Canada GTS)</p>
+      </div>
+      <div class="card p-4 text-center">
+        <p class="text-2xl font-extrabold text-amber-600 dark:text-amber-400">6 mo</p>
+        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Slowest (US H-1B)</p>
+      </div>
+      <div class="card p-4 text-center">
+        <p class="text-2xl font-extrabold text-blue-600 dark:text-blue-400">{{ visaTypes | length }}</p>
+        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Visa types tracked</p>
+      </div>
+      <div class="card p-4 text-center">
+        <p class="text-2xl font-extrabold text-purple-600 dark:text-purple-400">9</p>
+        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Countries covered</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pb-16">
+  <div class="max-w-6xl mx-auto px-4">
+
+    {# Controls #}
+    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+      <div class="flex-1">
+        <label for="vt-filter" class="block text-sm font-semibold text-gray-900 dark:text-white mb-1">Filter by country</label>
+        <select id="vt-filter" class="input-field">
+          <option value="">All countries</option>
+          {% for visa in visaTypes %}
+          <option value="{{ visa.country }}">{{ visa.country }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="flex-1">
+        <label for="vt-sort" class="block text-sm font-semibold text-gray-900 dark:text-white mb-1">Sort by</label>
+        <select id="vt-sort" class="input-field">
+          <option value="fastest">Fastest first</option>
+          <option value="slowest">Slowest first</option>
+          <option value="name">Name (A–Z)</option>
+        </select>
+      </div>
+      <div class="flex items-end">
+        <button id="vt-compare-btn" onclick="vtToggleCompare()" class="btn-secondary text-sm whitespace-nowrap" disabled>
+          <i data-lucide="columns-2" class="w-4 h-4 mr-1 inline"></i> Compare (<span id="vt-compare-count">0</span>)
+        </button>
+      </div>
+    </div>
+
+    {# Visa cards #}
+    <div id="vt-list" class="space-y-4">
+      {% for visa in visaTypes %}
+      <div class="vt-card card p-0 overflow-hidden" data-slug="{{ visa.slug }}" data-country="{{ visa.country }}" data-processing="{{ visa.processingTime }}">
+        <div class="p-5 cursor-pointer" onclick="vtToggle('{{ visa.slug }}')">
+          <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">{{ visa.name }}</h3>
+                <span class="vt-speed-badge badge text-xs" data-speed="{{ visa.processingTime }}"></span>
+              </div>
+              <p class="text-sm text-gray-500 dark:text-gray-400">{{ visa.country }} · {{ visa.category }}</p>
+            </div>
+            <div class="flex items-center gap-4 sm:gap-6">
+              <div class="text-center">
+                <p class="text-lg font-extrabold text-gray-900 dark:text-white">{{ visa.processingTime }}</p>
+                <p class="text-xs text-gray-500 dark:text-gray-400">Processing</p>
+              </div>
+              <div class="w-32 sm:w-48">
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
+                  <div class="vt-bar h-3 rounded-full transition-all" data-time="{{ visa.processingTime }}"></div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <label class="flex items-center gap-1 text-xs text-gray-500 dark:text-gray-400 cursor-pointer" onclick="event.stopPropagation()">
+                  <input type="checkbox" class="vt-compare-check rounded border-gray-300 dark:border-gray-600 text-brand-600 focus:ring-brand-500" data-slug="{{ visa.slug }}" onchange="vtUpdateCompare()" />
+                  Compare
+                </label>
+                <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform vt-chevron" id="vt-chevron-{{ visa.slug }}"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vt-details hidden border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50 p-5" id="vt-details-{{ visa.slug }}">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <h4 class="text-sm font-bold text-gray-900 dark:text-white mb-3">Requirements</h4>
+              <ul class="space-y-2">
+                {% for req in visa.requirements %}
+                <li class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-green-500 shrink-0 mt-0.5"></i>
+                  {{ req }}
+                </li>
+                {% endfor %}
+              </ul>
+              <div class="mt-4 space-y-2">
+                <div class="flex items-center gap-2 text-sm">
+                  <i data-lucide="coins" class="w-4 h-4 text-amber-500"></i>
+                  <span class="text-gray-600 dark:text-gray-400"><strong class="text-gray-900 dark:text-white">Salary:</strong> {{ visa.salaryThreshold }}</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm">
+                  <i data-lucide="calendar" class="w-4 h-4 text-blue-500"></i>
+                  <span class="text-gray-600 dark:text-gray-400"><strong class="text-gray-900 dark:text-white">Validity:</strong> {{ visa.validity }}</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm">
+                  <i data-lucide="users" class="w-4 h-4 text-purple-500"></i>
+                  <span class="text-gray-600 dark:text-gray-400"><strong class="text-gray-900 dark:text-white">Spouse work:</strong> {{ visa.spouseWork }}</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm">
+                  <i data-lucide="flag" class="w-4 h-4 text-green-500"></i>
+                  <span class="text-gray-600 dark:text-gray-400"><strong class="text-gray-900 dark:text-white">Path to PR:</strong> {{ visa.pathToPR }}</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-gray-900 dark:text-white mb-3">Pros & Cons</h4>
+              <div class="space-y-2 mb-4">
+                {% for pro in visa.pros %}
+                <div class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400">
+                  <i data-lucide="plus-circle" class="w-4 h-4 text-green-500 shrink-0 mt-0.5"></i>
+                  {{ pro }}
+                </div>
+                {% endfor %}
+              </div>
+              <div class="space-y-2 mb-4">
+                {% for con in visa.cons %}
+                <div class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400">
+                  <i data-lucide="minus-circle" class="w-4 h-4 text-red-500 shrink-0 mt-0.5"></i>
+                  {{ con }}
+                </div>
+                {% endfor %}
+              </div>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <a href="{{ visa.officialUrl }}" target="_blank" rel="noopener" class="btn-primary text-xs">
+                  <i data-lucide="external-link" class="w-3.5 h-3.5 mr-1 inline"></i> Official Page
+                </a>
+                <a href="/visa-sponsored-jobs/" class="btn-secondary text-xs">
+                  <i data-lucide="briefcase" class="w-3.5 h-3.5 mr-1 inline"></i> Find Jobs
+                </a>
+              </div>
+            </div>
+          </div>
+          {# Timeline steps #}
+          <div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+            <h4 class="text-sm font-bold text-gray-900 dark:text-white mb-4">Typical Process Timeline</h4>
+            <div class="flex flex-wrap gap-2">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full bg-brand-100 dark:bg-brand-900/30 flex items-center justify-center text-xs font-bold text-brand-600 dark:text-brand-400">1</div>
+                <span class="text-xs text-gray-600 dark:text-gray-400">Get job offer</span>
+                <i data-lucide="arrow-right" class="w-3 h-3 text-gray-400"></i>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full bg-brand-100 dark:bg-brand-900/30 flex items-center justify-center text-xs font-bold text-brand-600 dark:text-brand-400">2</div>
+                <span class="text-xs text-gray-600 dark:text-gray-400">Gather documents</span>
+                <i data-lucide="arrow-right" class="w-3 h-3 text-gray-400"></i>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full bg-brand-100 dark:bg-brand-900/30 flex items-center justify-center text-xs font-bold text-brand-600 dark:text-brand-400">3</div>
+                <span class="text-xs text-gray-600 dark:text-gray-400">Submit application</span>
+                <i data-lucide="arrow-right" class="w-3 h-3 text-gray-400"></i>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full bg-brand-100 dark:bg-brand-900/30 flex items-center justify-center text-xs font-bold text-brand-600 dark:text-brand-400">4</div>
+                <span class="text-xs text-gray-600 dark:text-gray-400">Processing ({{ visa.processingTime }})</span>
+                <i data-lucide="arrow-right" class="w-3 h-3 text-gray-400"></i>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-xs font-bold text-green-600 dark:text-green-400">5</div>
+                <span class="text-xs text-gray-600 dark:text-gray-400">Receive visa & relocate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    {# Comparison modal #}
+    <div id="vt-compare-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
+      <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-2xl max-w-5xl w-full max-h-[85vh] overflow-y-auto p-6">
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-xl font-extrabold text-gray-900 dark:text-white">Visa Comparison</h2>
+          <button onclick="vtCloseCompare()" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">
+            <i data-lucide="x" class="w-5 h-5 text-gray-500"></i>
+          </button>
+        </div>
+        <div id="vt-compare-body"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# FAQ Section #}
+<section class="py-16 bg-gray-50 dark:bg-gray-900">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="section-heading text-center mb-10">Frequently Asked Questions</h2>
+    <div class="space-y-4">
+      <details class="card p-0 group">
+        <summary class="flex items-center justify-between p-5 cursor-pointer">
+          <span class="font-semibold text-gray-900 dark:text-white">Which work visa has the fastest processing time?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"></i>
+        </summary>
+        <div class="px-5 pb-5 text-gray-600 dark:text-gray-400 text-sm">
+          The Canada Global Talent Stream targets a 2-week processing time. The Netherlands HSM Visa (2–4 weeks) and France Passeport Talent (2–6 weeks) are also very fast.
+        </div>
+      </details>
+      <details class="card p-0 group">
+        <summary class="flex items-center justify-between p-5 cursor-pointer">
+          <span class="font-semibold text-gray-900 dark:text-white">How long does an EU Blue Card take to process?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"></i>
+        </summary>
+        <div class="px-5 pb-5 text-gray-600 dark:text-gray-400 text-sm">
+          Typically 4–8 weeks. Processing times may vary by country and application completeness.
+        </div>
+      </details>
+      <details class="card p-0 group">
+        <summary class="flex items-center justify-between p-5 cursor-pointer">
+          <span class="font-semibold text-gray-900 dark:text-white">Can I speed up my visa processing?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"></i>
+        </summary>
+        <div class="px-5 pb-5 text-gray-600 dark:text-gray-400 text-sm">
+          Some visas offer premium processing. The US H-1B has a 15-day premium option. For others, ensure your application is complete with all required documents.
+        </div>
+      </details>
+      <details class="card p-0 group">
+        <summary class="flex items-center justify-between p-5 cursor-pointer">
+          <span class="font-semibold text-gray-900 dark:text-white">What factors affect visa processing time?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"></i>
+        </summary>
+        <div class="px-5 pb-5 text-gray-600 dark:text-gray-400 text-sm">
+          Application completeness, nationality, processing backlogs, security checks, and time of year all affect processing time.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+{# Share Section #}
+<section class="py-12">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-4">Share this tool</h2>
+    <div class="flex justify-center gap-3">
+      <a href="https://twitter.com/intent/tweet?text=Compare%20visa%20processing%20times%20for%20work%20permits%20worldwide&url={{ site.url }}/tools/visa-tracker/" target="_blank" rel="noopener" class="btn-secondary text-sm">
+        <i data-lucide="twitter" class="w-4 h-4 mr-1 inline"></i> Twitter
+      </a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}/tools/visa-tracker/" target="_blank" rel="noopener" class="btn-secondary text-sm">
+        <i data-lucide="linkedin" class="w-4 h-4 mr-1 inline"></i> LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  const visaData = {{ visaTypes | dump | safe }};
+
+  function parseWeeks(timeStr) {
+    const s = timeStr.toLowerCase();
+    const nums = s.match(/[\d.]+/g);
+    if (!nums) return 8;
+    if (s.includes('month')) return parseFloat(nums[nums.length - 1]) * 4.3;
+    if (s.includes('day')) return parseFloat(nums[nums.length - 1]) / 7;
+    return parseFloat(nums[nums.length - 1]);
+  }
+
+  function parseMinWeeks(timeStr) {
+    const s = timeStr.toLowerCase();
+    const nums = s.match(/[\d.]+/g);
+    if (!nums) return 4;
+    if (s.includes('month')) return parseFloat(nums[0]) * 4.3;
+    if (s.includes('day')) return parseFloat(nums[0]) / 7;
+    return parseFloat(nums[0]);
+  }
+
+  const maxWeeks = 26;
+
+  function initBars() {
+    document.querySelectorAll('.vt-bar').forEach(bar => {
+      const time = bar.dataset.time;
+      const minW = parseMinWeeks(time);
+      const maxW = parseWeeks(time);
+      const pct = Math.min((maxW / maxWeeks) * 100, 100);
+      bar.style.width = pct + '%';
+
+      if (maxW <= 3) bar.className = 'vt-bar h-3 rounded-full transition-all bg-green-500';
+      else if (maxW <= 8) bar.className = 'vt-bar h-3 rounded-full transition-all bg-blue-500';
+      else bar.className = 'vt-bar h-3 rounded-full transition-all bg-amber-500';
+    });
+
+    document.querySelectorAll('.vt-speed-badge').forEach(badge => {
+      const time = badge.dataset.speed;
+      const w = parseWeeks(time);
+      if (w <= 3) { badge.textContent = 'Fast'; badge.classList.add('bg-green-100', 'dark:bg-green-900/30', 'text-green-700', 'dark:text-green-400'); }
+      else if (w <= 8) { badge.textContent = 'Average'; badge.classList.add('bg-blue-100', 'dark:bg-blue-900/30', 'text-blue-700', 'dark:text-blue-400'); }
+      else { badge.textContent = 'Slow'; badge.classList.add('bg-amber-100', 'dark:bg-amber-900/30', 'text-amber-700', 'dark:text-amber-400'); }
+    });
+  }
+
+  window.vtToggle = function(slug) {
+    const details = document.getElementById('vt-details-' + slug);
+    const chevron = document.getElementById('vt-chevron-' + slug);
+    details.classList.toggle('hidden');
+    chevron.classList.toggle('rotate-180');
+  };
+
+  const selected = new Set();
+
+  window.vtUpdateCompare = function() {
+    selected.clear();
+    document.querySelectorAll('.vt-compare-check:checked').forEach(cb => selected.add(cb.dataset.slug));
+    document.getElementById('vt-compare-count').textContent = selected.size;
+    const btn = document.getElementById('vt-compare-btn');
+    btn.disabled = selected.size < 2;
+  };
+
+  window.vtToggleCompare = function() {
+    if (selected.size < 2) return;
+    const selectedVisas = visaData.filter(v => selected.has(v.slug));
+    renderCompare(selectedVisas);
+    document.getElementById('vt-compare-modal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    if (window.lucide) lucide.createIcons();
+  };
+
+  window.vtCloseCompare = function() {
+    document.getElementById('vt-compare-modal').classList.add('hidden');
+    document.body.style.overflow = '';
+  };
+
+  document.getElementById('vt-compare-modal').addEventListener('click', function(e) {
+    if (e.target === this) vtCloseCompare();
+  });
+
+  function renderCompare(visas) {
+    const fields = [
+      { key: 'country', label: 'Country' },
+      { key: 'category', label: 'Category' },
+      { key: 'processingTime', label: 'Processing Time' },
+      { key: 'validity', label: 'Validity' },
+      { key: 'salaryThreshold', label: 'Salary Threshold' },
+      { key: 'spouseWork', label: 'Spouse Work Rights' },
+      { key: 'pathToPR', label: 'Path to PR' },
+      { key: 'lottery', label: 'Lottery Required', transform: v => v ? 'Yes' : 'No' }
+    ];
+
+    let html = '<div class="overflow-x-auto"><table class="w-full text-sm"><thead><tr><th class="text-left p-3 text-gray-500 dark:text-gray-400 font-medium">Feature</th>';
+    visas.forEach(v => html += `<th class="text-left p-3 font-bold text-gray-900 dark:text-white">${v.name}</th>`);
+    html += '</tr></thead><tbody>';
+
+    fields.forEach((f, i) => {
+      const bg = i % 2 === 0 ? 'bg-gray-50 dark:bg-gray-800/50' : '';
+      html += `<tr class="${bg}"><td class="p-3 font-medium text-gray-700 dark:text-gray-300">${f.label}</td>`;
+      visas.forEach(v => {
+        let val = v[f.key];
+        if (f.transform) val = f.transform(val);
+        html += `<td class="p-3 text-gray-600 dark:text-gray-400">${val}</td>`;
+      });
+      html += '</tr>';
+    });
+
+    html += '<tr class="bg-gray-50 dark:bg-gray-800/50"><td class="p-3 font-medium text-gray-700 dark:text-gray-300">Pros</td>';
+    visas.forEach(v => {
+      html += '<td class="p-3"><ul class="space-y-1">';
+      v.pros.forEach(p => html += `<li class="flex items-start gap-1 text-xs text-gray-600 dark:text-gray-400"><i data-lucide="plus-circle" class="w-3 h-3 text-green-500 shrink-0 mt-0.5"></i>${p}</li>`);
+      html += '</ul></td>';
+    });
+    html += '</tr>';
+
+    html += '<tr><td class="p-3 font-medium text-gray-700 dark:text-gray-300">Cons</td>';
+    visas.forEach(v => {
+      html += '<td class="p-3"><ul class="space-y-1">';
+      v.cons.forEach(c => html += `<li class="flex items-start gap-1 text-xs text-gray-600 dark:text-gray-400"><i data-lucide="minus-circle" class="w-3 h-3 text-red-500 shrink-0 mt-0.5"></i>${c}</li>`);
+      html += '</ul></td>';
+    });
+    html += '</tr>';
+
+    html += '<tr class="bg-gray-50 dark:bg-gray-800/50"><td class="p-3 font-medium text-gray-700 dark:text-gray-300">Official Page</td>';
+    visas.forEach(v => {
+      html += `<td class="p-3"><a href="${v.officialUrl}" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline text-xs">Visit &rarr;</a></td>`;
+    });
+    html += '</tr></tbody></table></div>';
+
+    document.getElementById('vt-compare-body').innerHTML = html;
+  }
+
+  document.getElementById('vt-filter').addEventListener('change', applyFilters);
+  document.getElementById('vt-sort').addEventListener('change', applyFilters);
+
+  function applyFilters() {
+    const country = document.getElementById('vt-filter').value;
+    const sort = document.getElementById('vt-sort').value;
+    const list = document.getElementById('vt-list');
+    const cards = Array.from(list.querySelectorAll('.vt-card'));
+
+    cards.forEach(card => {
+      if (!country || card.dataset.country === country) card.classList.remove('hidden');
+      else card.classList.add('hidden');
+    });
+
+    cards.sort((a, b) => {
+      if (sort === 'name') return a.querySelector('h3').textContent.localeCompare(b.querySelector('h3').textContent);
+      const aW = parseWeeks(a.dataset.processing);
+      const bW = parseWeeks(b.dataset.processing);
+      return sort === 'fastest' ? aW - bW : bW - aW;
+    });
+
+    cards.forEach(card => list.appendChild(card));
+  }
+
+  initBars();
+  applyFilters();
+})();
+</script>
