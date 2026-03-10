@@ -12,6 +12,9 @@ privacy.html
 terms.html
 test.py
 
+# LinkedIn posts (local only)
+linkedin-posts-*.md
+
 # IDE
 .vscode/
 *.swp
