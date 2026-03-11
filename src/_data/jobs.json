@@ -1,5 +1,126 @@
 [
   {
+    "company": "Stripe",
+    "position": "Backend Engineer, Core Technology",
+    "location": "Dublin, Ireland 🇮🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 11, 2026",
+    "logo": "/media/stripe_logo.jpg",
+    "description": "https://stripe.com/jobs/search?query=backend+engineer"
+  },
+  {
+    "company": "Stripe",
+    "position": "Backend / API Engineer, Payouts",
+    "location": "London, United Kingdom 🇬🇧",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 11, 2026",
+    "logo": "/media/stripe_logo.jpg",
+    "description": "https://stripe.com/jobs/search?query=backend+engineer"
+  },
+  {
+    "company": "Ashby",
+    "position": "Senior Software Engineer, Product Engineering, EU",
+    "location": "Remote, Europe 🇪🇺",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 11, 2026",
+    "logo": "/media/ashby_logo.jpg",
+    "description": "https://www.ashbyhq.com/careers"
+  },
+  {
+    "company": "Ashby",
+    "position": "Staff Platform Engineer, EU",
+    "location": "Remote, Europe 🇪🇺",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 11, 2026",
+    "logo": "/media/ashby_logo.jpg",
+    "description": "https://www.ashbyhq.com/careers"
+  },
+  {
+    "company": "Snyk",
+    "position": "Senior Software Engineer",
+    "location": "London, United Kingdom 🇬🇧",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 11, 2026",
+    "logo": "/media/snyk_logo.jpg",
+    "description": "https://snyk.io/careers/engineering/"
+  },
+  {
+    "company": "Elastic",
+    "position": "Senior Software Engineer, Detections and Response",
+    "location": "Remote, Spain 🇪🇸",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 11, 2026",
+    "logo": "/media/elastic_logo.jpg",
+    "description": "https://jobs.elastic.co/jobs/engineering"
+  },
+  {
+    "company": "Elastic",
+    "position": "Senior Software Engineer, Generative AI",
+    "location": "Remote, Spain 🇪🇸",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 11, 2026",
+    "logo": "/media/elastic_logo.jpg",
+    "description": "https://jobs.elastic.co/jobs/engineering"
+  },
+  {
+    "company": "TravelPerk",
+    "position": "Senior Software Engineer",
+    "location": "Barcelona, Spain 🇪🇸",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 11, 2026",
+    "logo": "/media/travelperk_logo.jpg",
+    "description": "https://www.travelperk.com/careers/"
+  },
+  {
+    "company": "Bondaval",
+    "position": "Full Stack Engineer",
+    "location": "London, United Kingdom 🇬🇧",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 11, 2026",
+    "logo": "/media/bondaval_logo.jpg",
+    "description": "https://www.bondaval.com/careers"
+  },
+  {
+    "company": "MessageBird",
+    "position": "Senior Software Engineer (Go)",
+    "location": "Amsterdam, Netherlands 🇳🇱",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 11, 2026",
+    "logo": "/media/messagebird_logo.jpg",
+    "description": "https://www.messagebird.com/careers"
+  },
+  {
+    "company": "Spiich Labs",
+    "position": "Founding Fullstack Engineer",
+    "location": "Stockholm, Sweden 🇸🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 11, 2026",
+    "logo": "/media/spiich_labs_logo.jpg",
+    "description": "https://spiich.ai"
+  },
+  {
     "company": "Revolut",
     "position": "Software Engineer (Java) - Credit",
     "location": "Barcelona, Spain 🇪🇸",
