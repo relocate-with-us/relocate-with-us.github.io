@@ -44,17 +44,6 @@
     "description": "https://www.ashbyhq.com/careers"
   },
   {
-    "company": "Snyk",
-    "position": "Senior Software Engineer",
-    "location": "London, United Kingdom 🇬🇧",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "March 11, 2026",
-    "logo": "/media/snyk_logo.jpg",
-    "description": "https://snyk.io/careers/engineering/"
-  },
-  {
     "company": "Elastic",
     "position": "Senior Software Engineer, Detections and Response",
     "location": "Remote, Spain 🇪🇸",
@@ -121,39 +110,6 @@
     "description": "https://spiich.ai"
   },
   {
-    "company": "Revolut",
-    "position": "Software Engineer (Java) - Credit",
-    "location": "Barcelona, Spain 🇪🇸",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "March 10, 2026",
-    "logo": "/media/revolut_logo.jpg",
-    "description": "https://www.revolut.com/careers/engineering/"
-  },
-  {
-    "company": "Revolut",
-    "position": "Senior Software Engineer (DevOps) - Observability Platform",
-    "location": "Krakow, Poland 🇵🇱",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "March 10, 2026",
-    "logo": "/media/revolut_logo.jpg",
-    "description": "https://www.revolut.com/careers/engineering/"
-  },
-  {
-    "company": "Revolut",
-    "position": "Rev-celerator Graduate Programme 2026: iOS Software Engineer",
-    "location": "London, United Kingdom 🇬🇧",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "March 10, 2026",
-    "logo": "/media/revolut_logo.jpg",
-    "description": "https://www.revolut.com/en-US/graduate-programme/"
-  },
-  {
     "company": "NavVis",
     "position": "Lead Software Engineer - Developer Experience (F/M/D)",
     "location": "Munich, Germany 🇩🇪",
@@ -185,17 +141,6 @@
     "post_date": "March 9, 2026",
     "logo": "/media/pleo_logo.jpg",
     "description": "https://www.pleo.io/en/careers/jobs"
-  },
-  {
-    "company": "Pleo",
-    "position": "Software Engineer - Authentication and Authorization",
-    "location": "Copenhagen, Denmark 🇩🇰",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "March 8, 2026",
-    "logo": "/media/pleo_logo.jpg",
-    "description": "https://www.pleo.io/en/careers/jobs/6335256003"
   },
   {
     "company": "ABOUT YOU",
@@ -757,17 +702,6 @@
     "post_date": "August 4, 2025",
     "logo": "/media/k_tronik_gmbh_logo.jpeg",
     "description": "https://bewerbung.k-tronik.de/en/6896/development-engineer-m-f-d-aerospace-electronics"
-  },
-  {
-    "company": "Mistral AI",
-    "position": "AI Solution Architect, Deployment - France 🇫🇷, UK, USA 🇺🇸",
-    "location": "Paris 🇫🇷 / London 🇬🇧 / Palo Alto",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "March 22, 2025",
-    "logo": "/media/mistralai_logo.jpeg",
-    "description": "https://jobs.lever.co/mistral/df3d4b5c-4910-42c8-8fe8-5fd114b2961a"
   },
   {
     "company": "Mistral AI",
