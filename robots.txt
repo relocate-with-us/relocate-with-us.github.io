@@ -1,8 +1,8 @@
 User-agent: *
 Allow: /
-Allow: /visa-sponsored-jobs/
-Allow: /relocation-jobs/
-Allow: /relocate-jobs/
-Allow: /terms-of-service/
 
-Sitemap: https://visajobs.xyz/sitemap.xml 
+Disallow: /index.html
+Disallow: /relocation-jobs/index.html
+Disallow: /relocate-jobs/index.html
+
+Sitemap: https://visajobs.xyz/sitemap.xml

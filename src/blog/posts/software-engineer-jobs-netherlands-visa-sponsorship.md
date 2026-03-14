@@ -3,6 +3,7 @@ layout: layouts/base.njk
 title: "How to Get a Software Engineer Job in the Netherlands with Visa Sponsorship"
 description: "Complete guide to finding tech jobs in the Netherlands with visa sponsorship — from the 30% ruling tax benefit to the Highly Skilled Migrant visa and top companies hiring in Amsterdam and Rotterdam."
 date: 2026-03-11
+ogType: "article"
 readTime: "16 min read"
 tags: ["netherlands", "job-search", "visa"]
 excerpt: "The Netherlands offers the 30% ruling tax benefit, a fast-track Highly Skilled Migrant visa, and a booming tech scene. Here's how to get hired."

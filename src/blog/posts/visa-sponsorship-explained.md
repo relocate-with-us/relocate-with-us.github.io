@@ -3,6 +3,7 @@ layout: layouts/base.njk
 title: "Visa Sponsorship Explained: What It Is and How to Get It"
 description: "Everything you need to know about visa sponsorship — what it means, how it works, which countries offer it, and how to find companies that sponsor visas."
 date: 2025-05-28
+ogType: "article"
 readTime: "15 min read"
 tags: ["visa", "career-advice"]
 excerpt: "A complete guide to understanding visa sponsorship for international job seekers."

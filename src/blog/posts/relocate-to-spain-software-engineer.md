@@ -3,6 +3,7 @@ layout: layouts/base.njk
 title: "How to Relocate to Spain as a Software Engineer: Visa, Jobs, and Cost of Living Guide"
 description: "Complete guide to relocating to Spain as a software engineer — visa options, companies hiring with sponsorship in Barcelona and Madrid, salary expectations, and what daily life is really like."
 date: 2026-03-11
+ogType: "article"
 readTime: "15 min read"
 tags: ["spain", "job-search", "visa", "relocation"]
 excerpt: "Barcelona is becoming Europe's hottest tech hub. Here's everything you need to know about relocating to Spain as a software engineer with visa sponsorship."

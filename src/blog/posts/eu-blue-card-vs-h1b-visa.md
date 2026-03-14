@@ -3,6 +3,7 @@ layout: layouts/base.njk
 title: "EU Blue Card vs H-1B Visa: Why Software Engineers Are Choosing Europe in 2026"
 description: "A detailed comparison of the EU Blue Card and US H-1B visa for software engineers — processing times, salary thresholds, path to residency, and why Europe is winning in 2026."
 date: 2026-03-11
+ogType: "article"
 readTime: "18 min read"
 tags: ["visa", "career-advice", "europe"]
 excerpt: "The H-1B lottery has a ~25% approval rate. The EU Blue Card has no lottery at all. Here's why software engineers are choosing Europe."

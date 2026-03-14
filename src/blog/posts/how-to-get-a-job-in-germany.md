@@ -3,6 +3,7 @@ layout: layouts/base.njk
 title: "How to Find a Job in Germany with Visa Sponsorship"
 description: "A step-by-step guide to finding tech jobs in Germany as a foreigner, with links to job boards, visa information, and practical advice."
 date: 2025-06-10
+ogType: "article"
 readTime: "20 min read"
 featured: true
 tags: ["germany", "job-search", "visa"]

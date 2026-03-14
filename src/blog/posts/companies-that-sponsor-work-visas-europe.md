@@ -3,6 +3,7 @@ layout: layouts/base.njk
 title: "Companies That Sponsor Work Visas in Europe: The Complete 2026 List"
 description: "A curated list of 50+ tech companies in Europe that sponsor work visas and offer relocation packages — organized by country with salary ranges, tech stacks, and direct career links."
 date: 2026-03-11
+ogType: "article"
 readTime: "22 min read"
 featured: true
 tags: ["visa", "europe", "job-search"]

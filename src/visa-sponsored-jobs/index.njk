@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
-title: "Visa Sponsored Jobs & Relocation Assistance"
-description: "Browse hundreds of international tech jobs with visa sponsorship and relocation assistance across 50+ countries. Find your next global career opportunity."
+title: "Visa Sponsorship Jobs in Europe & Worldwide — {{ jobs | length }}+ Open Roles (2026)"
+description: "Browse {{ jobs | length }}+ verified tech jobs with visa sponsorship and relocation assistance. Companies like Stripe, Revolut, Cloudflare, and Spotify are hiring now. Updated weekly."
 ---
 
 {% block structuredData %}
@@ -9,10 +9,39 @@ description: "Browse hundreds of international tech jobs with visa sponsorship a
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "Visa Sponsored Jobs",
-  "description": "Browse international tech jobs with visa sponsorship and relocation assistance.",
+  "name": "Visa Sponsorship Jobs — {{ jobs | length }}+ Open Roles",
+  "description": "Browse verified tech jobs with visa sponsorship and relocation assistance across Europe and worldwide.",
   "url": "{{ site.url }}/visa-sponsored-jobs/",
-  "publisher": { "@type": "Organization", "name": "{{ site.name }}" }
+  "publisher": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": {{ jobs | length }},
+    "itemListElement": [
+      {% for job in jobs | limit(10) %}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index }},
+        "item": {
+          "@type": "JobPosting",
+          "title": "{{ job.position }}",
+          "datePosted": "{{ job.post_date }}",
+          "description": "{{ job.position }} at {{ job.company }} — {{ job.location }}. Visa sponsorship and relocation assistance included.",
+          "employmentType": "FULL_TIME",
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "{{ job.company }}",
+            "logo": "{{ site.url }}{{ job.logo }}"
+          },
+          "jobLocation": {
+            "@type": "Place",
+            "address": "{{ job.location }}"
+          },
+          "url": "{{ job.description }}"
+        }
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }
 }
 </script>
 {% endblock %}

@@ -3,6 +3,7 @@ layout: layouts/base.njk
 title: "Top 10 European Tech Hubs for International Job Seekers (2025)"
 description: "A comprehensive guide to the best European cities for tech professionals — with job boards, visa info, salary data, cost of living, and practical resources for each city."
 date: 2025-04-20
+ogType: "article"
 readTime: "25 min read"
 tags: ["europe", "tech-hubs", "relocation", "job-search"]
 excerpt: "An in-depth look at Europe's top 10 tech cities — with specific job boards, visa types, salary ranges, cost of living data, and government resources for each destination."

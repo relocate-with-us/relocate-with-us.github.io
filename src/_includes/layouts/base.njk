@@ -82,6 +82,29 @@
   </script>
   {% endblock %}
 
+  {# Article schema for blog posts #}
+  {% if date and readTime %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ title }}",
+    "description": "{{ description }}",
+    "datePublished": "{{ date | isoDate }}",
+    "dateModified": "{{ date | isoDate }}",
+    "author": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ site.name }}",
+      "url": "{{ site.url }}",
+      "logo": { "@type": "ImageObject", "url": "{{ site.url }}/favicon/android-chrome-512x512.png" }
+    },
+    "mainEntityOfPage": "{{ site.url }}{{ page.url }}",
+    "url": "{{ site.url }}{{ page.url }}"
+  }
+  </script>
+  {% endif %}
+
   {# Grow.me / Mediavine Journey #}
   <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTpkNjY3Y2RkMy1mMTM1LTQwYzYtYjRhNy02MTE5MjU5MTk4MzI=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
 

@@ -3,6 +3,7 @@ layout: layouts/base.njk
 title: "How to Write a Resume for International Jobs: A Complete Guide"
 description: "A comprehensive, country-by-country guide to writing resumes and CVs for international job applications — with real tools, templates, and ATS tips."
 date: 2025-05-15
+ogType: "article"
 readTime: "18 min read"
 featured: true
 tags: ["career-advice", "resume", "job-search"]
