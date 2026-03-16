@@ -177,17 +177,6 @@
   },
   {
     "company": "N26",
-    "position": "Senior Full Stack Engineer",
-    "location": "Berlin, Germany 🇩🇪",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "March 10, 2026",
-    "logo": "/media/n26_logo.jpg",
-    "description": "https://n26.com/en-eu/careers/positions/7577884"
-  },
-  {
-    "company": "N26",
     "position": "Senior Product Manager - Payments Platform",
     "location": "Barcelona, Spain 🇪🇸",
     "contract": "Full Time",
@@ -397,17 +386,6 @@
   },
   {
     "company": "Booking.com",
-    "position": "Senior Backend Developer",
-    "location": "Amsterdam, Netherlands 🇳🇱",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "March 6, 2026",
-    "logo": "/media/bookingcom_logo.jpeg",
-    "description": "https://jobs.booking.com/booking/jobs/27853?lang=en-us"
-  },
-  {
-    "company": "Booking.com",
     "position": "Machine Learning Scientist",
     "location": "Amsterdam, Netherlands 🇳🇱",
     "contract": "Full Time",
@@ -429,39 +407,6 @@
     "description": "https://job-boards.greenhouse.io/form3/jobs/6212418002"
   },
   {
-    "company": "Spotify",
-    "position": "Backend Engineer - Subscriptions",
-    "location": "London, United Kingdom 🇬🇧",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "March 5, 2026",
-    "logo": "/media/spotify_logo.jpg",
-    "description": "https://www.lifeatspotify.com/jobs/backend-engineer-subscriptions"
-  },
-  {
-    "company": "Spotify",
-    "position": "Backend Engineer - Core Infrastructure",
-    "location": "London, United Kingdom 🇬🇧",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "March 2, 2026",
-    "logo": "/media/spotify_logo.jpg",
-    "description": "https://www.lifeatspotify.com/jobs/backend-engineer-core-infrastructure"
-  },
-  {
-    "company": "Spotify",
-    "position": "Backend Engineer - Learning Infrastructure",
-    "location": "Stockholm, Sweden 🇸🇪",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "March 4, 2026",
-    "logo": "/media/spotify_logo.jpg",
-    "description": "https://www.lifeatspotify.com/jobs/backend-engineer-learning-infrastructure"
-  },
-  {
     "company": "Infineon Technologies",
     "position": "Verification Engineer - Chip Design",
     "location": "Cork, Ireland 🇮🇪",
@@ -471,17 +416,6 @@
     "post_date": "March 6, 2026",
     "logo": "/media/infineon_logo.jpg",
     "description": "https://jobs.infineon.com/careers/job/563808961484399-senior-verification-engineer-munich-germany-"
-  },
-  {
-    "company": "Datadog",
-    "position": "Senior Software Engineer - Observability/SRE",
-    "location": "Paris, France 🇫🇷",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "March 6, 2026",
-    "logo": "/media/datadog_logo.jpg",
-    "description": "https://careers.datadoghq.com/detail/7588866/?gh_jid=7588866"
   },
   {
     "company": "Wise",
@@ -515,17 +449,6 @@
     "post_date": "March 6, 2026",
     "logo": "/media/bolt_logo.jpg",
     "description": "https://bolt.eu/en/careers/positions/6832106002/"
-  },
-  {
-    "company": "Wolt",
-    "position": "Senior Software Engineer - Kotlin",
-    "location": "Tallinn, Estonia 🇪🇪",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "February 25, 2026",
-    "logo": "/media/wolt_logo.jpg",
-    "description": "https://careers.wolt.com/en/jobs/3092045"
   },
   {
     "company": "Mollie",
