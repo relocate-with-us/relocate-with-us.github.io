@@ -11,17 +11,6 @@
     "description": "https://stripe.com/jobs/listing/backend-engineer-core-technology/6623777"
   },
   {
-    "company": "Stripe",
-    "position": "Backend / API Engineer, Payouts",
-    "location": "London, United Kingdom 🇬🇧",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "March 11, 2026",
-    "logo": "/media/stripe_logo.jpg",
-    "description": "https://stripe.com/jobs/listing/backend-api-engineer-payouts/7369543"
-  },
-  {
     "company": "Ashby",
     "position": "Senior Software Engineer, Product Engineering, EU",
     "location": "Remote, Europe 🇪🇺",
@@ -517,17 +506,6 @@
     "description": "https://jobs.lever.co/mistral/77f6fd1b-65cf-45d8-9b68-594c62732f62"
   },
   {
-    "company": "Mistral AI",
-    "position": "Staff Software Engineer, Security - Paris",
-    "location": "Paris, France",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "March 22, 2025",
-    "logo": "/media/mistralai_logo.jpeg",
-    "description": "https://jobs.lever.co/mistral/9f6e6513-fd9e-411b-b558-540bc12b2fe4"
-  },
-  {
     "company": "Optiver",
     "position": "Windows Infrastructure – Software Engineer",
     "location": "Amsterdam, Netherlands 🇳🇱",
@@ -537,28 +515,6 @@
     "post_date": "February 28, 2025",
     "logo": "/media/optiver_logo.jpg",
     "description": "https://optiver.com/working-at-optiver/career-opportunities/7475519002/"
-  },
-  {
-    "company": "Robin AI",
-    "position": "Staff Machine Learning Engineer",
-    "location": "London , United Kingdom 🇬🇧",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "February 28, 2025",
-    "logo": "/media/robinai_logo.jpg",
-    "description": "https://www.robinai.com/open-positions?ashby_jid=0c8ba130-9f6a-4a32-8d1f-08b3364f9e8c/"
-  },
-  {
-    "company": "Robin AI",
-    "position": "Senior Machine Learning Engineer",
-    "location": "London , United Kingdom 🇬🇧",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "February 28, 2025",
-    "logo": "/media/robinai_logo.jpg",
-    "description": "https://www.robinai.com/open-positions?ashby_jid=19292bff-1586-4bbd-b593-69b5a0c5263e/"
   },
   {
     "company": "Optiver",
@@ -757,17 +713,6 @@
     "post_date": "January 25, 2025",
     "logo": "/media/qualcomm_logo.jpg",
     "description": "https://careers.qualcomm.com/careers/job/446703622802?hl=en-US&domain=qualcomm.com"
-  },
-  {
-    "company": "Mistral AI",
-    "position": "Software Engineer, Security",
-    "location": "Paris, France 🇫🇷",
-    "reloc": "Relocation Assistance",
-    "visa": "",
-    "contract": "Full Time",
-    "post_date": "January 20, 2025",
-    "logo": "/media/mistralai_logo.jpeg",
-    "description": "https://jobs.lever.co/mistral/9f6e6513-fd9e-411b-b558-540bc12b2fe4"
   },
   {
     "company": "Mistral AI",
