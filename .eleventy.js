@@ -54,6 +54,42 @@ module.exports = function (eleventyConfig) {
     return text;
   });
 
+  // Extract city from location string (before the comma)
+  eleventyConfig.addFilter("extractCity", (location) => {
+    if (!location) return "";
+    const parts = location.split(",");
+    return parts[0].trim();
+  });
+
+  // Map country name to ISO 3166-1 alpha-2 code
+  eleventyConfig.addFilter("countryCode", (location) => {
+    if (!location) return "";
+    const cleaned = location.replace(
+      /[\u{1F1E0}-\u{1F1FF}\u{1F600}-\u{1F64F}\u{1F300}-\u{1F5FF}\u{1F680}-\u{1F6FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu,
+      ""
+    );
+    const parts = cleaned.split(",");
+    const country = parts[parts.length - 1].trim();
+    const codes = {
+      "Germany": "DE", "Netherlands": "NL", "United Kingdom": "GB", "UK": "GB",
+      "Spain": "ES", "Ireland": "IE", "Sweden": "SE", "Switzerland": "CH",
+      "Portugal": "PT", "Poland": "PL", "Denmark": "DK", "Czech Republic": "CZ",
+      "France": "FR", "Austria": "AT", "Belgium": "BE", "Finland": "FI",
+      "Italy": "IT", "Norway": "NO", "Bulgaria": "BG", "Romania": "RO",
+      "Europe": "EU", "Canada": "CA", "Australia": "AU", "Japan": "JP",
+      "New Zealand": "NZ", "UAE": "AE", "Singapore": "SG", "Qatar": "QA",
+    };
+    return codes[country] || "EU";
+  });
+
+  // Generate validThrough date (90 days after post_date) in ISO format
+  eleventyConfig.addFilter("validThrough", (dateStr) => {
+    const date = new Date(dateStr);
+    if (isNaN(date.getTime())) return new Date(Date.now() + 90 * 86400000).toISOString().split("T")[0];
+    date.setDate(date.getDate() + 90);
+    return date.toISOString().split("T")[0];
+  });
+
   // Extract country from location string
   eleventyConfig.addFilter("extractCountry", (location) => {
     if (!location) return "";

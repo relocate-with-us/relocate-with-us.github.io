@@ -25,6 +25,7 @@ description: "Browse {{ jobs | length }}+ verified tech jobs with visa sponsorsh
           "@type": "JobPosting",
           "title": "{{ job.position }}",
           "datePosted": "{{ job.post_date }}",
+          "validThrough": "{{ job.post_date | validThrough }}",
           "description": "{{ job.position }} at {{ job.company }} — {{ job.location }}. Visa sponsorship and relocation assistance included.",
           "employmentType": "FULL_TIME",
           "hiringOrganization": {
@@ -34,7 +35,14 @@ description: "Browse {{ jobs | length }}+ verified tech jobs with visa sponsorsh
           },
           "jobLocation": {
             "@type": "Place",
-            "address": "{{ job.location }}"
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "",
+              "addressLocality": "{{ job.location | extractCity }}",
+              "addressRegion": "{{ job.location | extractCity }}",
+              "postalCode": "",
+              "addressCountry": "{{ job.location | countryCode }}"
+            }
           },
           "url": "{{ job.description }}"
         }

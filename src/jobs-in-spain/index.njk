@@ -42,6 +42,7 @@ permalink: /jobs-in-spain/
           "@type": "JobPosting",
           "title": "{{ job.position }}",
           "datePosted": "{{ job.post_date }}",
+          "validThrough": "{{ job.post_date | validThrough }}",
           "description": "{{ job.position }} at {{ job.company }} in {{ job.location }}. Visa sponsorship and relocation assistance included.",
           "employmentType": "FULL_TIME",
           "hiringOrganization": {
@@ -51,7 +52,14 @@ permalink: /jobs-in-spain/
           },
           "jobLocation": {
             "@type": "Place",
-            "address": { "@type": "PostalAddress", "addressCountry": "ES", "addressLocality": "{{ job.location }}" }
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "",
+              "addressLocality": "{{ job.location | extractCity }}",
+              "addressRegion": "{{ job.location | extractCity }}",
+              "postalCode": "",
+              "addressCountry": "ES"
+            }
           },
           "url": "{{ job.description }}"
         }
