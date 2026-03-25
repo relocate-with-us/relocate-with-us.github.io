@@ -1,0 +1,273 @@
+---
+layout: layouts/base.njk
+title: "Visa Sponsored Tech Jobs in Sweden | Software Engineering & More"
+description: "Find visa-sponsored tech jobs in Sweden with relocation assistance. Browse software engineering, data science, and product roles in Stockholm, Gothenburg, Malmö and more."
+permalink: /jobs-in-sweden/
+---
+
+{% set country_name = "Sweden" %}
+{% set country_flag = "🇸🇪" %}
+{% set grouped = jobs | groupByCountry %}
+{% set countryJobs = grouped["Sweden"] or [] %}
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+    { "@type": "ListItem", "position": 2, "name": "Jobs by Country", "item": "{{ site.url }}/jobs-by-country/" },
+    { "@type": "ListItem", "position": 3, "name": "Sweden", "item": "{{ site.url }}/jobs-in-sweden/" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Visa Sponsored Tech Jobs in Sweden",
+  "description": "Find visa-sponsored tech jobs in Sweden with relocation assistance.",
+  "url": "{{ site.url }}/jobs-in-sweden/",
+  "publisher": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": {{ countryJobs | length }},
+    "itemListElement": [
+      {% for job in countryJobs | limit(10) %}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index }},
+        "item": {
+          "@type": "JobPosting",
+          "title": "{{ job.position }}",
+          "datePosted": "{{ job.post_date }}",
+          "description": "{{ job.position }} at {{ job.company }} in {{ job.location }}. Visa sponsorship and relocation assistance included.",
+          "employmentType": "FULL_TIME",
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "{{ job.company }}",
+            "logo": "{{ site.url }}{{ job.logo }}"
+          },
+          "jobLocation": {
+            "@type": "Place",
+            "address": { "@type": "PostalAddress", "addressCountry": "SE", "addressLocality": "{{ job.location }}" }
+          },
+          "url": "{{ job.description }}"
+        }
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }
+}
+</script>
+{% endblock %}
+
+{# Hero #}
+<section class="bg-gradient-to-b from-brand-50 to-white dark:from-gray-900 dark:to-gray-950 py-12 md:py-16">
+  <div class="max-w-3xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Home</a>
+      <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+      <a href="/jobs-by-country/" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Jobs by Country</a>
+      <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+      <span class="text-gray-900 dark:text-white font-medium">Sweden</span>
+    </nav>
+    <div class="flex items-center gap-4 mb-4">
+      <span class="text-5xl">{{ country_flag }}</span>
+      <div>
+        <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+          Tech Jobs in Sweden
+        </h1>
+        <p class="text-gray-600 dark:text-gray-400 mt-1">
+          {{ countryJobs | length }} visa-sponsored positions with relocation assistance
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-wrap gap-3 mt-6">
+      <span class="badge badge-visa">Visa Sponsorship</span>
+      <span class="badge badge-reloc">Relocation Assistance</span>
+      <span class="inline-flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400">
+        <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+        Stockholm, Gothenburg, Malmö & more
+      </span>
+    </div>
+  </div>
+</section>
+
+{# Job Listings #}
+<section class="py-12">
+  <div class="max-w-3xl mx-auto px-4">
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="section-heading">All Positions</h2>
+      <span class="text-sm text-gray-500 dark:text-gray-400">{{ countryJobs | length }} jobs</span>
+    </div>
+
+    <div class="space-y-4">
+      {% for job in jobs %}
+      {% if "Sweden" in job.location %}
+      <div class="job-card">
+        <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+          <img src="{{ job.logo }}" alt="{{ job.company }}" class="w-12 h-12 rounded-lg object-cover shrink-0" loading="lazy" onerror="this.src='/favicon/android-chrome-192x192.png'">
+          <div class="flex-1 min-w-0">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">{{ job.position }}</h3>
+            <p class="text-gray-600 dark:text-gray-400 mb-2">{{ job.company }}</p>
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-gray-500 dark:text-gray-400 mb-3">
+              <span class="flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                {{ job.location }}
+              </span>
+              <span class="flex items-center gap-1">
+                <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+                {{ job.post_date | timeAgo }}
+              </span>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              {% if job.reloc %}<span class="badge badge-reloc">{{ job.reloc }}</span>{% endif %}
+              {% if job.visa %}<span class="badge badge-visa">{{ job.visa }}</span>{% endif %}
+              <span class="badge badge-contract">{{ job.contract }}</span>
+            </div>
+          </div>
+          <a href="{{ job.description }}" target="_blank" rel="noopener" class="job-card-apply">
+            Apply <i data-lucide="external-link" class="w-3.5 h-3.5 ml-1.5"></i>
+          </a>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    {% if countryJobs | length == 0 %}
+    <div class="text-center py-12">
+      <i data-lucide="search" class="w-12 h-12 text-gray-300 dark:text-gray-600 mx-auto mb-4"></i>
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">No jobs currently listed</h3>
+      <p class="text-gray-500 dark:text-gray-400 mb-6">New positions are added weekly. Subscribe to get notified when Sweden jobs are posted.</p>
+      <a href="/visa-sponsored-jobs/" class="btn-primary">Browse All Jobs</a>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+{# SEO Content #}
+<section class="py-12 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-3xl mx-auto px-4 prose dark:prose-invert max-w-none">
+    <h2 class="section-heading">Working in Sweden as a Tech Professional</h2>
+    <p>
+      Sweden is one of the world's most innovative countries, having produced an extraordinary number of successful tech companies relative to its size. Stockholm alone has given rise to Spotify, Klarna, King (Candy Crush), iZettle, and dozens of other tech unicorns. Gothenburg hosts a growing gaming and automotive-tech scene, while Malmö benefits from its proximity to Copenhagen's tech ecosystem.
+    </p>
+    <p>
+      Sweden's work permit is obtained through Migrationsverket (the Swedish Migration Agency). Your employer applies on your behalf, and the process typically takes 1–4 months. Key requirements include a job offer with terms matching Swedish collective agreements (including insurance and pension) and a minimum salary threshold. Sweden also offers a researcher/specialist fast-track for certain tech roles.
+    </p>
+    <p>
+      Swedish work culture is renowned for its flat hierarchies, emphasis on work-life balance, and generous social benefits including 480 days of paid parental leave (shared between parents), 25 vacation days, and universal healthcare. English is widely spoken in tech environments, though learning Swedish opens up social connections and long-term integration. Sweden consistently ranks among the top countries for quality of life.
+    </p>
+  </div>
+</section>
+
+{# Useful Tools #}
+<section class="py-12">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="section-heading mb-6">Useful Tools for Relocating to Sweden</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <a href="/tools/salary-calculator/" class="card p-4 hover:border-brand-300 dark:hover:border-brand-700 group text-center">
+        <i data-lucide="calculator" class="w-6 h-6 text-brand-500 mx-auto mb-2"></i>
+        <span class="font-medium text-gray-900 dark:text-white text-sm group-hover:text-brand-600 transition-colors">Salary Calculator</span>
+      </a>
+      <a href="/tools/cost-of-living/" class="card p-4 hover:border-brand-300 dark:hover:border-brand-700 group text-center">
+        <i data-lucide="home" class="w-6 h-6 text-green-500 mx-auto mb-2"></i>
+        <span class="font-medium text-gray-900 dark:text-white text-sm group-hover:text-brand-600 transition-colors">Cost of Living</span>
+      </a>
+      <a href="/tools/visa-checker/" class="card p-4 hover:border-brand-300 dark:hover:border-brand-700 group text-center">
+        <i data-lucide="shield-check" class="w-6 h-6 text-purple-500 mx-auto mb-2"></i>
+        <span class="font-medium text-gray-900 dark:text-white text-sm group-hover:text-brand-600 transition-colors">Visa Checker</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+{# Related Countries #}
+<section class="py-12 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="section-heading mb-6">Jobs in Other Countries</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+      <a href="/jobs-in-germany/" class="card p-4 text-center hover:border-brand-300 dark:hover:border-brand-700 group">
+        <span class="text-2xl block mb-1">🇩🇪</span>
+        <span class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors">Germany</span>
+      </a>
+      <a href="/jobs-in-netherlands/" class="card p-4 text-center hover:border-brand-300 dark:hover:border-brand-700 group">
+        <span class="text-2xl block mb-1">🇳🇱</span>
+        <span class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors">Netherlands</span>
+      </a>
+      <a href="/jobs-in-uk/" class="card p-4 text-center hover:border-brand-300 dark:hover:border-brand-700 group">
+        <span class="text-2xl block mb-1">🇬🇧</span>
+        <span class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors">United Kingdom</span>
+      </a>
+      <a href="/jobs-in-spain/" class="card p-4 text-center hover:border-brand-300 dark:hover:border-brand-700 group">
+        <span class="text-2xl block mb-1">🇪🇸</span>
+        <span class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors">Spain</span>
+      </a>
+      <a href="/jobs-in-ireland/" class="card p-4 text-center hover:border-brand-300 dark:hover:border-brand-700 group">
+        <span class="text-2xl block mb-1">🇮🇪</span>
+        <span class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors">Ireland</span>
+      </a>
+      <a href="/jobs-by-country/" class="card p-4 text-center hover:border-brand-300 dark:hover:border-brand-700 group">
+        <span class="text-2xl block mb-1">🌍</span>
+        <span class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors">All Countries</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+{# FAQ #}
+<section class="py-12">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="section-heading mb-8">Frequently Asked Questions</h2>
+    <div class="space-y-4">
+      <details class="card p-5 group" open>
+        <summary class="flex items-center justify-between cursor-pointer font-semibold text-gray-900 dark:text-white">
+          What makes Sweden attractive for tech professionals?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+        </summary>
+        <p class="mt-3 text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+          Sweden produces more unicorn startups per capita than almost any other country. The tech ecosystem is mature and innovative, with companies like Spotify, Klarna, and King headquartered in Stockholm. Add world-class work-life balance, generous parental leave (480 days), 25 vacation days, and a strong social safety net — Sweden offers an exceptional combination of career growth and quality of life.
+        </p>
+      </details>
+      <details class="card p-5 group">
+        <summary class="flex items-center justify-between cursor-pointer font-semibold text-gray-900 dark:text-white">
+          Do I need to speak Swedish to work in tech?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+        </summary>
+        <p class="mt-3 text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+          English is widely spoken in Sweden, and most tech companies use English as their working language. Sweden consistently ranks among the top countries globally for English proficiency. However, learning Swedish is strongly recommended for social integration and daily life — free Swedish language courses (SFI) are available to all residents.
+        </p>
+      </details>
+      <details class="card p-5 group">
+        <summary class="flex items-center justify-between cursor-pointer font-semibold text-gray-900 dark:text-white">
+          How does the Swedish work permit process work?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+        </summary>
+        <p class="mt-3 text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+          Your employer applies for a work permit through Migrationsverket (Swedish Migration Agency). The job must offer terms in line with Swedish collective agreements, including adequate salary, insurance, and pension. Processing takes 1–4 months. The permit is initially issued for 2 years and can be renewed. After 4 years, you can apply for permanent residency.
+        </p>
+      </details>
+      <details class="card p-5 group">
+        <summary class="flex items-center justify-between cursor-pointer font-semibold text-gray-900 dark:text-white">
+          What is the cost of living in Stockholm?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i>
+        </summary>
+        <p class="mt-3 text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+          Stockholm is comparable to other Nordic capitals. Expect to pay SEK 12,000–18,000 (€1,100–€1,600) per month for a one-bedroom apartment. The housing market can be challenging — many rely on subletting initially. Gothenburg and Malmö offer lower costs. Swedish taxes are higher than most countries but fund excellent public services. Use our <a href="/tools/cost-of-living/" class="text-brand-600 dark:text-brand-400 hover:underline">Cost of Living Calculator</a> for comparisons.
+        </p>
+      </details>
+    </div>
+  </div>
+</section>
+
+{# Newsletter #}
+<section class="py-16 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-6xl mx-auto px-4">
+    {% set newsletterTitle = "Get Sweden Tech Jobs by Email" %}
+    {% set newsletterSubtitle = "Subscribe to receive the latest visa-sponsored jobs in Sweden delivered to your inbox." %}
+    {% include "partials/newsletter.njk" %}
+  </div>
+</section>

@@ -1,0 +1,215 @@
+---
+layout: layouts/base.njk
+title: "Visa Sponsored Jobs by Country | Find Tech Jobs Abroad"
+description: "Browse visa-sponsored tech jobs organized by country. Find software engineering, data science, and other tech roles with relocation support in Europe and beyond."
+permalink: /jobs-by-country/
+---
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Visa Sponsored Jobs by Country",
+  "description": "Browse visa-sponsored tech jobs organized by country across Europe and worldwide.",
+  "url": "{{ site.url }}/jobs-by-country/",
+  "publisher": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {% set grouped = jobs | groupByCountry %}
+      {% set idx = 1 %}
+      {% for country, countryJobs in grouped %}
+      {
+        "@type": "ListItem",
+        "position": {{ idx }},
+        "name": "Visa Sponsored Jobs in {{ country }}",
+        "url": "{{ site.url }}/jobs-by-country/"
+      }{% if not loop.last %},{% endif %}
+      {% set idx = idx + 1 %}
+      {% endfor %}
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+    { "@type": "ListItem", "position": 2, "name": "Jobs by Country", "item": "{{ site.url }}/jobs-by-country/" }
+  ]
+}
+</script>
+{% endblock %}
+
+{# Hero #}
+<section class="bg-gradient-to-b from-brand-50 to-white dark:from-gray-900 dark:to-gray-950 py-12 md:py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Home</a>
+      <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+      <span class="text-gray-900 dark:text-white font-medium">Jobs by Country</span>
+    </nav>
+    <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 tracking-tight">
+      Visa Sponsored Jobs by Country
+    </h1>
+    <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl">
+      Browse {{ jobs | length }}+ tech jobs with visa sponsorship and relocation assistance, organized by destination country. Find your next opportunity abroad.
+    </p>
+  </div>
+</section>
+
+{# Country Grid #}
+<section class="py-12 md:py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="section-heading mb-8">All Countries</h2>
+
+    {% set flagMap = {
+      "Germany": "🇩🇪",
+      "Netherlands": "🇳🇱",
+      "United Kingdom": "🇬🇧",
+      "UK": "🇬🇧",
+      "Spain": "🇪🇸",
+      "USA": "🇺🇸",
+      "France": "🇫🇷",
+      "Portugal": "🇵🇹",
+      "Ireland": "🇮🇪",
+      "Estonia": "🇪🇪",
+      "Switzerland": "🇨🇭",
+      "Sweden": "🇸🇪",
+      "Bulgaria": "🇧🇬",
+      "Canada": "🇨🇦",
+      "Denmark": "🇩🇰",
+      "Czech Republic": "🇨🇿",
+      "Poland": "🇵🇱",
+      "Luxembourg": "🇱🇺",
+      "Hungary": "🇭🇺",
+      "Australia": "🇦🇺",
+      "Croatia": "🇭🇷",
+      "Romania": "🇷🇴",
+      "Europe": "🇪🇺",
+      "New Zealand": "🇳🇿"
+    } %}
+
+    {% set landingPages = {
+      "Germany": "/jobs-in-germany/",
+      "Netherlands": "/jobs-in-netherlands/",
+      "United Kingdom": "/jobs-in-uk/",
+      "UK": "/jobs-in-uk/",
+      "Spain": "/jobs-in-spain/",
+      "Ireland": "/jobs-in-ireland/",
+      "Sweden": "/jobs-in-sweden/"
+    } %}
+
+    {% set grouped = jobs | groupByCountry %}
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {% for country, countryJobs in grouped %}
+      {% set flag = flagMap[country] or "🌍" %}
+      {% set link = landingPages[country] or ("/visa-sponsored-jobs/?country=" + country | lower | urlencode) %}
+      <a href="{{ link }}" class="card p-5 sm:p-6 hover:border-brand-300 dark:hover:border-brand-700 group transition-all">
+        <div class="flex items-center gap-4">
+          <span class="text-4xl">{{ flag }}</span>
+          <div class="flex-1 min-w-0">
+            <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors text-lg">
+              {{ country }}
+            </h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-0.5">
+              {{ countryJobs | length }} open position{{ "s" if countryJobs | length != 1 }}
+            </p>
+          </div>
+          <i data-lucide="arrow-right" class="w-5 h-5 text-gray-400 group-hover:text-brand-500 transition-colors shrink-0"></i>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# Featured Destinations #}
+<section class="py-12 md:py-16 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="section-heading text-center mb-4">Popular Destinations for Tech Professionals</h2>
+    <p class="text-center text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
+      These countries are the most popular destinations for tech professionals seeking visa sponsorship and relocation packages.
+    </p>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      {% set featured = [
+        { name: "Germany", emoji: "🇩🇪", slug: "jobs-in-germany", desc: "Europe's largest tech hub" },
+        { name: "Netherlands", emoji: "🇳🇱", slug: "jobs-in-netherlands", desc: "30% ruling tax benefits" },
+        { name: "United Kingdom", emoji: "🇬🇧", slug: "jobs-in-uk", desc: "Fintech & startup capital" },
+        { name: "Spain", emoji: "🇪🇸", slug: "jobs-in-spain", desc: "Growing tech ecosystem" },
+        { name: "Ireland", emoji: "🇮🇪", slug: "jobs-in-ireland", desc: "EU HQ of big tech" },
+        { name: "Sweden", emoji: "🇸🇪", slug: "jobs-in-sweden", desc: "Innovation & quality of life" }
+      ] %}
+      {% for dest in featured %}
+      <a href="/{{ dest.slug }}/" class="card p-6 text-center hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="text-4xl mb-3">{{ dest.emoji }}</div>
+        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors mb-1">{{ dest.name }}</h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400">{{ dest.desc }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# Browse by Role CTA #}
+<section class="py-12 md:py-16">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="section-heading mb-4">Looking for a Specific Role?</h2>
+    <p class="text-gray-600 dark:text-gray-400 mb-8 max-w-lg mx-auto">
+      Browse visa-sponsored jobs organized by role type — software engineering, data science, DevOps, and more.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="/jobs-by-role/" class="btn-primary">
+        Browse Jobs by Role
+        <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+      </a>
+      <a href="/visa-sponsored-jobs/" class="btn-secondary">
+        View All Jobs
+        <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+{# Useful Tools #}
+<section class="py-12 md:py-16 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="section-heading text-center mb-8">Tools to Help Your Move</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <a href="/tools/visa-checker/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="flex items-center gap-3 mb-2">
+          <i data-lucide="shield-check" class="w-5 h-5 text-brand-500"></i>
+          <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors">Visa Checker</h3>
+        </div>
+        <p class="text-sm text-gray-500 dark:text-gray-400">Check visa requirements for your destination country.</p>
+      </a>
+      <a href="/tools/salary-calculator/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="flex items-center gap-3 mb-2">
+          <i data-lucide="calculator" class="w-5 h-5 text-green-500"></i>
+          <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors">Salary Calculator</h3>
+        </div>
+        <p class="text-sm text-gray-500 dark:text-gray-400">Compare salaries and purchasing power across countries.</p>
+      </a>
+      <a href="/tools/cost-of-living/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="flex items-center gap-3 mb-2">
+          <i data-lucide="home" class="w-5 h-5 text-purple-500"></i>
+          <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors">Cost of Living</h3>
+        </div>
+        <p class="text-sm text-gray-500 dark:text-gray-400">Compare cost of living between cities worldwide.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+{# Newsletter #}
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    {% set newsletterTitle = "Get New Jobs by Email" %}
+    {% set newsletterSubtitle = "Subscribe to receive the latest visa-sponsored tech jobs delivered to your inbox weekly." %}
+    {% include "partials/newsletter.njk" %}
+  </div>
+</section>

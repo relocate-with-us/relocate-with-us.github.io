@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 title: "Free Tools for International Job Seekers | Visa, Salary, Relocation"
-description: "13 free tools to help you find jobs abroad, check visa sponsorship, calculate salary after tax, compare cost of living, and plan your international relocation."
+description: "16 free tools to help you find jobs abroad, check visa sponsorship, calculate salary after tax, compare cost of living, and plan your international relocation."
 ---
 
 {% block structuredData %}
@@ -15,7 +15,7 @@ description: "13 free tools to help you find jobs abroad, check visa sponsorship
   "publisher": { "@type": "Organization", "name": "{{ site.name }}" },
   "mainEntity": {
     "@type": "ItemList",
-    "numberOfItems": 13,
+    "numberOfItems": 16,
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Visa Sponsorship Company Checker", "url": "{{ site.url }}/tools/visa-checker/" },
       { "@type": "ListItem", "position": 2, "name": "Salary After Tax Calculator", "url": "{{ site.url }}/tools/salary-calculator/" },
@@ -29,7 +29,10 @@ description: "13 free tools to help you find jobs abroad, check visa sponsorship
       { "@type": "ListItem", "position": 10, "name": "Work Visa Comparison Table", "url": "{{ site.url }}/tools/visa-comparison/" },
       { "@type": "ListItem", "position": 11, "name": "Relocation Checklist Generator", "url": "{{ site.url }}/tools/relocation-checklist/" },
       { "@type": "ListItem", "position": 12, "name": "Job Posting Red Flags Checker", "url": "{{ site.url }}/tools/red-flags-checker/" },
-      { "@type": "ListItem", "position": 13, "name": "Networking Event Finder", "url": "{{ site.url }}/tools/events/" }
+      { "@type": "ListItem", "position": 13, "name": "Networking Event Finder", "url": "{{ site.url }}/tools/events/" },
+      { "@type": "ListItem", "position": 14, "name": "Income Tax Comparison Calculator", "url": "{{ site.url }}/tools/tax-calculator/" },
+      { "@type": "ListItem", "position": 15, "name": "Language Requirements Guide", "url": "{{ site.url }}/tools/language-guide/" },
+      { "@type": "ListItem", "position": 16, "name": "Healthcare Systems Comparison", "url": "{{ site.url }}/tools/healthcare-guide/" }
     ]
   }
 }
@@ -221,6 +224,30 @@ description: "13 free tools to help you find jobs abroad, check visa sponsorship
         </div>
         <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors mb-1">Relocation Quiz</h3>
         <p class="text-sm text-gray-600 dark:text-gray-400">Not sure where to go? Take our quiz to find your perfect city.</p>
+      </a>
+
+      <a href="/tools/tax-calculator/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="w-10 h-10 bg-indigo-100 dark:bg-indigo-900/30 rounded-lg flex items-center justify-center mb-3">
+          <i data-lucide="receipt" class="w-5 h-5 text-indigo-600 dark:text-indigo-400"></i>
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors mb-1">Tax Comparison Calculator</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Compare income tax rates and net pay across 10 European countries side by side.</p>
+      </a>
+
+      <a href="/tools/language-guide/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="w-10 h-10 bg-rose-100 dark:bg-rose-900/30 rounded-lg flex items-center justify-center mb-3">
+          <i data-lucide="languages" class="w-5 h-5 text-rose-600 dark:text-rose-400"></i>
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors mb-1">Language Requirements Guide</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Check if you need the local language for tech jobs, visa, and daily life in 12 countries.</p>
+      </a>
+
+      <a href="/tools/healthcare-guide/" class="card p-5 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="w-10 h-10 bg-sky-100 dark:bg-sky-900/30 rounded-lg flex items-center justify-center mb-3">
+          <i data-lucide="heart-pulse" class="w-5 h-5 text-sky-600 dark:text-sky-400"></i>
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 transition-colors mb-1">Healthcare Comparison</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Compare healthcare systems, insurance costs, and quality ratings across European countries.</p>
       </a>
     </div>
   </div>

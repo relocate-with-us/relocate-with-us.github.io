@@ -1,0 +1,836 @@
+---
+layout: layouts/base.njk
+title: "Income Tax Comparison Calculator | Compare Tax Rates in Europe"
+description: "Compare income tax rates across 10 European countries. See effective tax rates, social contributions, and net income for tech professionals relocating abroad."
+---
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Income Tax Comparison Calculator",
+  "url": "{{ site.url }}{{ page.url }}",
+  "description": "{{ description }}",
+  "applicationCategory": "Utility",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "author": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which European country has the lowest income tax for tech workers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bulgaria has one of the lowest flat income tax rates in Europe at 10%. However, total tax burden includes social contributions. Switzerland also offers competitive rates that vary by canton."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do social contributions affect my take-home pay in Europe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Social contributions (pension, healthcare, unemployment) can add 10-22% on top of income tax. In Germany, employee social contributions are about 20% of gross salary. In the Netherlands, they're built into the tax brackets."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the 30% ruling in the Netherlands reduce my tax?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, the Dutch 30% ruling allows qualifying expats to receive 30% of their salary tax-free for up to 5 years, significantly reducing effective tax rates for highly skilled migrants."
+      }
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block head %}
+<style>
+  .tax-bar { transition: width 0.6s ease-out; }
+  .compare-col { min-width: 260px; }
+  .country-check:checked + label { border-color: #6366f1; background: #eef2ff; }
+  .dark .country-check:checked + label { border-color: #818cf8; background: rgba(99,102,241,0.15); }
+  .toggle-track { transition: background-color 0.2s; }
+  .toggle-thumb { transition: transform 0.2s; }
+</style>
+{% endblock %}
+
+{# Hero #}
+<section class="relative overflow-hidden bg-gradient-to-br from-brand-50 via-white to-indigo-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 py-16 md:py-20">
+  <div class="max-w-4xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400">Home</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <a href="/tools/" class="hover:text-brand-600 dark:hover:text-brand-400">Tools</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-900 dark:text-white">Tax Comparison</span>
+    </nav>
+
+    <div class="text-center">
+      <div class="w-16 h-16 bg-indigo-100 dark:bg-indigo-900/30 rounded-2xl flex items-center justify-center mx-auto mb-6">
+        <i data-lucide="calculator" class="w-8 h-8 text-indigo-600 dark:text-indigo-400"></i>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 leading-tight">
+        Income Tax <span class="bg-yellow-200 dark:bg-yellow-500/20 dark:text-yellow-300 px-2 inline-block -skew-x-1">Comparison</span>
+      </h1>
+      <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        Compare income tax rates, social contributions, and net pay across 10 European countries. Find the best destination for your take-home salary.
+      </p>
+    </div>
+  </div>
+</section>
+
+{# Summary Stats #}
+<section class="py-8">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="card p-4 text-center">
+        <p class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">10</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400">Countries</p>
+      </div>
+      <div class="card p-4 text-center">
+        <p class="text-2xl font-bold text-green-600 dark:text-green-400">10%</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400">Lowest Flat Rate</p>
+      </div>
+      <div class="card p-4 text-center">
+        <p class="text-2xl font-bold text-red-600 dark:text-red-400">52%</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400">Highest Top Rate</p>
+      </div>
+      <div class="card p-4 text-center">
+        <p class="text-2xl font-bold text-amber-600 dark:text-amber-400">10-22%</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400">Social Contributions</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# Calculator Form #}
+<section class="py-8">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="card p-6 md:p-8">
+      <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-6">Configure Your Comparison</h2>
+
+      {# Salary & Options Row #}
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div>
+          <label for="tc-salary" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Annual Gross Salary (&euro;)</label>
+          <input id="tc-salary" type="number" placeholder="e.g. 70000" class="input-field" min="0" step="1000" value="70000">
+          <p class="text-xs text-gray-400 dark:text-gray-500 mt-1" id="tc-salary-note">All amounts shown in EUR</p>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Filing Status</label>
+          <select id="tc-status" class="input-field">
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Display</label>
+          <select id="tc-period" class="input-field">
+            <option value="annual">Annual</option>
+            <option value="monthly">Monthly</option>
+          </select>
+        </div>
+      </div>
+
+      {# 30% Ruling Toggle #}
+      <div id="tc-ruling-wrap" class="hidden mb-6 p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-xl border border-yellow-200 dark:border-yellow-800">
+        <div class="flex items-center gap-3">
+          <button type="button" id="tc-ruling-toggle" class="relative inline-flex h-6 w-11 shrink-0 rounded-full border-2 border-transparent bg-gray-300 dark:bg-gray-600 toggle-track cursor-pointer" role="switch" aria-checked="false">
+            <span class="pointer-events-none inline-block h-5 w-5 rounded-full bg-white shadow ring-0 toggle-thumb translate-x-0"></span>
+          </button>
+          <div>
+            <p class="text-sm font-medium text-yellow-800 dark:text-yellow-300 flex items-center gap-1">
+              <i data-lucide="sparkles" class="w-4 h-4"></i> Apply Netherlands 30% Ruling
+            </p>
+            <p class="text-xs text-yellow-700 dark:text-yellow-400">30% of salary becomes tax-free for qualifying expats (up to 5 years)</p>
+          </div>
+        </div>
+      </div>
+
+      {# Country Selection #}
+      <div class="mb-6">
+        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">Select 2-4 Countries to Compare</label>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3" id="tc-countries">
+          <input type="checkbox" id="chk-de" value="de" class="country-check sr-only" data-name="Germany">
+          <label for="chk-de" class="card p-3 text-center cursor-pointer hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors">
+            <span class="text-2xl block mb-1">&#127465;&#127466;</span>
+            <span class="text-xs font-medium text-gray-700 dark:text-gray-300">Germany</span>
+          </label>
+
+          <input type="checkbox" id="chk-nl" value="nl" class="country-check sr-only" data-name="Netherlands">
+          <label for="chk-nl" class="card p-3 text-center cursor-pointer hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors">
+            <span class="text-2xl block mb-1">&#127475;&#127473;</span>
+            <span class="text-xs font-medium text-gray-700 dark:text-gray-300">Netherlands</span>
+          </label>
+
+          <input type="checkbox" id="chk-uk" value="uk" class="country-check sr-only" data-name="United Kingdom">
+          <label for="chk-uk" class="card p-3 text-center cursor-pointer hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors">
+            <span class="text-2xl block mb-1">&#127468;&#127463;</span>
+            <span class="text-xs font-medium text-gray-700 dark:text-gray-300">UK</span>
+          </label>
+
+          <input type="checkbox" id="chk-es" value="es" class="country-check sr-only" data-name="Spain">
+          <label for="chk-es" class="card p-3 text-center cursor-pointer hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors">
+            <span class="text-2xl block mb-1">&#127466;&#127480;</span>
+            <span class="text-xs font-medium text-gray-700 dark:text-gray-300">Spain</span>
+          </label>
+
+          <input type="checkbox" id="chk-ie" value="ie" class="country-check sr-only" data-name="Ireland">
+          <label for="chk-ie" class="card p-3 text-center cursor-pointer hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors">
+            <span class="text-2xl block mb-1">&#127470;&#127466;</span>
+            <span class="text-xs font-medium text-gray-700 dark:text-gray-300">Ireland</span>
+          </label>
+
+          <input type="checkbox" id="chk-se" value="se" class="country-check sr-only" data-name="Sweden">
+          <label for="chk-se" class="card p-3 text-center cursor-pointer hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors">
+            <span class="text-2xl block mb-1">&#127480;&#127466;</span>
+            <span class="text-xs font-medium text-gray-700 dark:text-gray-300">Sweden</span>
+          </label>
+
+          <input type="checkbox" id="chk-ch" value="ch" class="country-check sr-only" data-name="Switzerland">
+          <label for="chk-ch" class="card p-3 text-center cursor-pointer hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors">
+            <span class="text-2xl block mb-1">&#127464;&#127469;</span>
+            <span class="text-xs font-medium text-gray-700 dark:text-gray-300">Switzerland</span>
+          </label>
+
+          <input type="checkbox" id="chk-pt" value="pt" class="country-check sr-only" data-name="Portugal">
+          <label for="chk-pt" class="card p-3 text-center cursor-pointer hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors">
+            <span class="text-2xl block mb-1">&#127477;&#127481;</span>
+            <span class="text-xs font-medium text-gray-700 dark:text-gray-300">Portugal</span>
+          </label>
+
+          <input type="checkbox" id="chk-pl" value="pl" class="country-check sr-only" data-name="Poland">
+          <label for="chk-pl" class="card p-3 text-center cursor-pointer hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors">
+            <span class="text-2xl block mb-1">&#127477;&#127473;</span>
+            <span class="text-xs font-medium text-gray-700 dark:text-gray-300">Poland</span>
+          </label>
+
+          <input type="checkbox" id="chk-dk" value="dk" class="country-check sr-only" data-name="Denmark">
+          <label for="chk-dk" class="card p-3 text-center cursor-pointer hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors">
+            <span class="text-2xl block mb-1">&#127465;&#127472;</span>
+            <span class="text-xs font-medium text-gray-700 dark:text-gray-300">Denmark</span>
+          </label>
+        </div>
+        <p class="text-xs text-gray-400 dark:text-gray-500 mt-2" id="tc-selection-hint">Selected: <span id="tc-count">0</span>/4 countries</p>
+      </div>
+
+      <button id="tc-calculate" class="btn-primary">
+        <i data-lucide="calculator" class="w-4 h-4 mr-2"></i>Compare Tax Rates
+      </button>
+    </div>
+  </div>
+</section>
+
+{# Results #}
+<section id="tc-results-section" class="hidden py-8">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-6">Comparison Results</h2>
+
+    {# Comparison Cards #}
+    <div id="tc-cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8"></div>
+
+    {# Visual Bar Chart #}
+    <div class="card p-6 md:p-8 mb-8">
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Effective Tax Rate Comparison</h3>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Total deductions as a percentage of gross salary (income tax + social contributions)</p>
+      <div id="tc-bars" class="space-y-4"></div>
+    </div>
+
+    {# Net Salary Bar Chart #}
+    <div class="card p-6 md:p-8">
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Net Salary Comparison</h3>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Take-home pay after all deductions</p>
+      <div id="tc-net-bars" class="space-y-4"></div>
+    </div>
+  </div>
+</section>
+
+{# Related Tools #}
+<section class="py-12 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="section-heading mb-6">Related Tools</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <a href="/tools/salary-calculator/" class="card p-6 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="w-10 h-10 bg-green-100 dark:bg-green-900/30 rounded-xl flex items-center justify-center mb-3">
+          <i data-lucide="calculator" class="w-5 h-5 text-green-600 dark:text-green-400"></i>
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors mb-1">Salary Calculator</h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400">Calculate take-home pay in detail for a single country.</p>
+      </a>
+      <a href="/tools/cost-of-living/" class="card p-6 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="w-10 h-10 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center mb-3">
+          <i data-lucide="map-pin" class="w-5 h-5 text-purple-600 dark:text-purple-400"></i>
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors mb-1">Cost of Living</h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400">Compare living costs across major European tech cities.</p>
+      </a>
+      <a href="/tools/visa-comparison/" class="card p-6 hover:border-brand-300 dark:hover:border-brand-700 group">
+        <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-3">
+          <i data-lucide="git-compare" class="w-5 h-5 text-blue-600 dark:text-blue-400"></i>
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors mb-1">Visa Comparison</h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400">Compare work visa requirements across countries.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+{# FAQ #}
+<section class="py-16">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="section-heading text-center mb-10">Frequently Asked Questions</h2>
+    <div class="space-y-4" id="faq-list">
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Which European country has the lowest income tax for tech workers?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>Bulgaria has one of the lowest flat income tax rates in Europe at 10%. However, total tax burden includes social contributions. Switzerland also offers competitive rates that vary by canton, and Poland's 12% first bracket is very favorable for moderate incomes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">How do social contributions affect my take-home pay in Europe?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>Social contributions (pension, healthcare, unemployment insurance) can add 10-22% on top of income tax. In Germany, employee social contributions are about 20% of gross salary. In the Netherlands, they're largely built into the income tax brackets. In Switzerland, contributions are around 6% of salary. Always factor in both income tax <em>and</em> social contributions when comparing countries.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Does the 30% ruling in the Netherlands reduce my tax?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>Yes, the Dutch 30% ruling allows qualifying expats to receive 30% of their salary tax-free for up to 5 years, significantly reducing effective tax rates for highly skilled migrants. You must be recruited from abroad, have specific expertise, and meet a minimum salary threshold of &euro;46,107 (or &euro;35,048 if under 30 with an MSc). Learn more in our <a href="/resources/country-guides/netherlands/">Netherlands guide</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">How accurate is this calculator?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>This calculator provides estimates based on standard tax brackets and social contribution rates for 2025/2026. Actual take-home pay varies based on personal circumstances, deductions, credits, municipal tax rates (especially in Sweden, Switzerland, and Denmark), and marital status. Always consult a local tax advisor for precise calculations before making relocation decisions.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">What about special tax regimes for expats?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>Several countries offer special tax regimes for incoming expats: the Netherlands 30% ruling, Portugal's NHR (Non-Habitual Resident) regime with a flat 20% rate for qualifying professions, Spain's Beckham Law with a flat 24% for the first &euro;600,000, and Italy's regime offering 70% income tax exemption. These programs have specific eligibility criteria and durations. This calculator currently supports the Netherlands 30% ruling toggle.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{# Share #}
+<section class="py-12 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h2 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Share this tool</h2>
+    <div class="flex items-center justify-center gap-4">
+      <a href="https://twitter.com/intent/tweet?text=Compare%20income%20tax%20rates%20across%2010%20European%20countries%20with%20this%20free%20calculator&url={{ site.url }}/tools/tax-calculator/" target="_blank" rel="noopener" class="btn-secondary text-sm">
+        <i data-lucide="twitter" class="w-4 h-4 mr-2"></i>Share on X
+      </a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}/tools/tax-calculator/" target="_blank" rel="noopener" class="btn-secondary text-sm">
+        <i data-lucide="linkedin" class="w-4 h-4 mr-2"></i>Share on LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+{% block scripts %}
+<script>
+(function() {
+  var countries = {
+    de: {
+      name: 'Germany', emoji: '\u{1F1E9}\u{1F1EA}', currency: 'EUR', symbol: '\u20AC',
+      brackets: [
+        { min: 0, max: 11784, rate: 0 },
+        { min: 11784, max: 17005, rate: 14 },
+        { min: 17005, max: 66760, rate: 24 },
+        { min: 66760, max: 277825, rate: 42 },
+        { min: 277825, max: Infinity, rate: 45 }
+      ],
+      socialRate: 20.2,
+      socialCap: 90600,
+      solidaritySurcharge: 5.5,
+      solidarityThreshold: 18130,
+      marriedFactor: 2,
+      notes: 'Includes solidarity surcharge (5.5% of income tax above threshold). Social contributions capped at ~\u20AC90,600. Married couples benefit from income splitting (Ehegattensplitting).'
+    },
+    nl: {
+      name: 'Netherlands', emoji: '\u{1F1F3}\u{1F1F1}', currency: 'EUR', symbol: '\u20AC',
+      brackets: [
+        { min: 0, max: 38441, rate: 36.97 },
+        { min: 38441, max: 75518, rate: 36.97 },
+        { min: 75518, max: Infinity, rate: 49.50 }
+      ],
+      socialRate: 0,
+      ruling30: true,
+      marriedFactor: 1,
+      notes: 'Social contributions are included in the tax brackets. The 30% ruling allows qualifying expats to receive 30% of salary tax-free for up to 5 years.'
+    },
+    uk: {
+      name: 'United Kingdom', emoji: '\u{1F1EC}\u{1F1E7}', currency: 'GBP', symbol: '\u00A3', eurRate: 1.17,
+      brackets: [
+        { min: 0, max: 12570, rate: 0 },
+        { min: 12570, max: 50270, rate: 20 },
+        { min: 50270, max: 125140, rate: 40 },
+        { min: 125140, max: Infinity, rate: 45 }
+      ],
+      niRate: 8,
+      niMin: 12570,
+      niMax: 50270,
+      niAboveRate: 2,
+      marriedFactor: 1,
+      notes: 'Amounts in GBP. National Insurance: 8% (\u00A312,571-\u00A350,270), 2% above. Personal allowance tapers above \u00A3100,000.'
+    },
+    es: {
+      name: 'Spain', emoji: '\u{1F1EA}\u{1F1F8}', currency: 'EUR', symbol: '\u20AC',
+      brackets: [
+        { min: 0, max: 12450, rate: 19 },
+        { min: 12450, max: 20200, rate: 24 },
+        { min: 20200, max: 35200, rate: 30 },
+        { min: 35200, max: 60000, rate: 37 },
+        { min: 60000, max: 300000, rate: 45 },
+        { min: 300000, max: Infinity, rate: 47 }
+      ],
+      socialRate: 6.35,
+      socialCap: 56844,
+      marriedFactor: 1,
+      notes: 'Social security ~6.35% capped at ~\u20AC56,844/year. Regional surcharges may vary. Beckham Law may apply for new residents (not modeled here).'
+    },
+    ie: {
+      name: 'Ireland', emoji: '\u{1F1EE}\u{1F1EA}', currency: 'EUR', symbol: '\u20AC',
+      brackets: [
+        { min: 0, max: 42000, rate: 20 },
+        { min: 42000, max: Infinity, rate: 40 }
+      ],
+      prsi: 4,
+      usc: [
+        { min: 0, max: 12012, rate: 0.5 },
+        { min: 12012, max: 25760, rate: 2 },
+        { min: 25760, max: 70044, rate: 4 },
+        { min: 70044, max: Infinity, rate: 8 }
+      ],
+      marriedFactor: 1,
+      marriedBracketIncrease: 51000,
+      notes: 'Includes PRSI (4%) and USC (0.5-8%). Married couples may have the standard rate band increased to \u20AC51,000.'
+    },
+    se: {
+      name: 'Sweden', emoji: '\u{1F1F8}\u{1F1EA}', currency: 'SEK', symbol: 'kr', eurRate: 0.087,
+      brackets: [
+        { min: 0, max: 614942, rate: 32 },
+        { min: 614942, max: Infinity, rate: 52 }
+      ],
+      socialRate: 7,
+      socialCap: 614942,
+      marriedFactor: 1,
+      notes: 'Amounts in SEK. Municipal tax ~32% (average). State tax 20% above ~615,000 SEK. Employee pension contribution ~7% capped. No joint filing.'
+    },
+    ch: {
+      name: 'Switzerland', emoji: '\u{1F1E8}\u{1F1ED}', currency: 'CHF', symbol: 'CHF ', eurRate: 1.05,
+      brackets: [
+        { min: 0, max: 18900, rate: 0 },
+        { min: 18900, max: 32800, rate: 2 },
+        { min: 32800, max: 42900, rate: 4 },
+        { min: 42900, max: 56500, rate: 6 },
+        { min: 56500, max: 73600, rate: 8 },
+        { min: 73600, max: 98000, rate: 10 },
+        { min: 98000, max: 128400, rate: 12 },
+        { min: 128400, max: 176000, rate: 14 },
+        { min: 176000, max: Infinity, rate: 17.5 }
+      ],
+      socialRate: 6.4,
+      marriedFactor: 1,
+      notes: 'Amounts in CHF. Rates represent Zurich canton (federal + cantonal + municipal). Actual rates vary significantly by canton. Social contributions ~6.4% (AHV/IV/EO + ALV).'
+    },
+    pt: {
+      name: 'Portugal', emoji: '\u{1F1F5}\u{1F1F9}', currency: 'EUR', symbol: '\u20AC',
+      brackets: [
+        { min: 0, max: 7703, rate: 14.5 },
+        { min: 7703, max: 11623, rate: 21 },
+        { min: 11623, max: 16472, rate: 26.5 },
+        { min: 16472, max: 21321, rate: 28.5 },
+        { min: 21321, max: 27146, rate: 35 },
+        { min: 27146, max: 39791, rate: 37 },
+        { min: 39791, max: 51997, rate: 43.5 },
+        { min: 51997, max: 81199, rate: 45 },
+        { min: 81199, max: Infinity, rate: 48 }
+      ],
+      socialRate: 11,
+      marriedFactor: 1,
+      notes: 'Social security ~11%. NHR (Non-Habitual Resident) regime offers a flat 20% for qualifying professions for 10 years (not modeled here).'
+    },
+    pl: {
+      name: 'Poland', emoji: '\u{1F1F5}\u{1F1F1}', currency: 'PLN', symbol: 'z\u0142', eurRate: 0.233,
+      brackets: [
+        { min: 0, max: 30000, rate: 0 },
+        { min: 30000, max: 120000, rate: 12 },
+        { min: 120000, max: Infinity, rate: 32 }
+      ],
+      socialRate: 13.71,
+      socialCap: 234720,
+      healthRate: 9,
+      marriedFactor: 2,
+      notes: 'Amounts in PLN. Tax-free allowance 30,000 PLN. Social contributions ~13.71% + 9% health insurance (not tax-deductible). Joint filing available for married couples.'
+    },
+    dk: {
+      name: 'Denmark', emoji: '\u{1F1E9}\u{1F1F0}', currency: 'DKK', symbol: 'kr', eurRate: 0.134,
+      brackets: [
+        { min: 0, max: 49700, rate: 0 },
+        { min: 49700, max: 588900, rate: 37.09 },
+        { min: 588900, max: Infinity, rate: 52.07 }
+      ],
+      laborMarket: 8,
+      socialRate: 0,
+      marriedFactor: 1,
+      notes: 'Amounts in DKK. Labour market contribution (AM-bidrag) 8% off the top. Personal deduction ~49,700 DKK. Top tax 15% applies above ~588,900 DKK (combined ~52%).'
+    }
+  };
+
+  var eurRates = { EUR: 1, GBP: 1.17, SEK: 0.087, CHF: 1.05, PLN: 0.233, DKK: 0.134 };
+
+  function toLocal(eurAmount, country) {
+    var c = countries[country];
+    if (!c || c.currency === 'EUR') return eurAmount;
+    return eurAmount * c.eurRate ? (eurAmount / eurRates[c.currency]) : eurAmount;
+  }
+
+  function convertToEur(localAmount, currency) {
+    return localAmount * (eurRates[currency] || 1);
+  }
+
+  function calcTax(gross, brackets) {
+    var tax = 0;
+    for (var i = 0; i < brackets.length; i++) {
+      var b = brackets[i];
+      var upper = b.max === Infinity ? gross : b.max;
+      if (gross > b.min) {
+        tax += (Math.min(gross, upper) - b.min) * (b.rate / 100);
+      }
+    }
+    return tax;
+  }
+
+  function calculate(grossEur, countryId, status, apply30) {
+    var c = countries[countryId];
+    if (!c) return null;
+
+    var localGross = grossEur;
+    if (c.currency !== 'EUR') {
+      localGross = grossEur / eurRates[c.currency];
+    }
+
+    var taxableIncome = localGross;
+    var applied30 = false;
+
+    // Denmark: labour market contribution is deducted before income tax
+    var laborMarketTax = 0;
+    if (c.laborMarket) {
+      laborMarketTax = localGross * (c.laborMarket / 100);
+      taxableIncome = localGross - laborMarketTax;
+    }
+
+    // Netherlands 30% ruling
+    if (countryId === 'nl' && apply30) {
+      taxableIncome = localGross * 0.7;
+      applied30 = true;
+    }
+
+    // Married income splitting (Germany, Poland)
+    var effectiveIncome = taxableIncome;
+    if (status === 'married' && c.marriedFactor === 2) {
+      effectiveIncome = taxableIncome / 2;
+    }
+
+    // Ireland married bracket increase
+    var brackets = c.brackets;
+    if (countryId === 'ie' && status === 'married' && c.marriedBracketIncrease) {
+      brackets = [
+        { min: 0, max: c.marriedBracketIncrease, rate: 20 },
+        { min: c.marriedBracketIncrease, max: Infinity, rate: 40 }
+      ];
+    }
+
+    var incomeTax = calcTax(effectiveIncome, brackets);
+
+    // Germany: married splitting - double the tax on half income
+    if (status === 'married' && c.marriedFactor === 2) {
+      incomeTax = incomeTax * 2;
+    }
+
+    // Germany: solidarity surcharge
+    var solidarity = 0;
+    if (c.solidaritySurcharge && incomeTax > c.solidarityThreshold) {
+      solidarity = (incomeTax - c.solidarityThreshold) * (c.solidaritySurcharge / 100);
+    }
+    incomeTax += solidarity;
+
+    // Social contributions
+    var socialContrib = 0;
+    if (c.socialRate) {
+      var socialBase = localGross;
+      if (c.socialCap) socialBase = Math.min(localGross, c.socialCap);
+      socialContrib = socialBase * (c.socialRate / 100);
+    }
+
+    // UK National Insurance
+    if (c.niRate) {
+      if (localGross > c.niMin) {
+        var niBase = Math.min(localGross, c.niMax) - c.niMin;
+        socialContrib = niBase * (c.niRate / 100);
+        if (localGross > c.niMax && c.niAboveRate) {
+          socialContrib += (localGross - c.niMax) * (c.niAboveRate / 100);
+        }
+      }
+    }
+
+    // Ireland PRSI + USC
+    if (c.prsi) {
+      socialContrib = localGross * (c.prsi / 100);
+    }
+    if (c.usc) {
+      socialContrib += calcTax(localGross, c.usc);
+    }
+
+    // Poland health insurance
+    if (c.healthRate) {
+      socialContrib += (localGross - socialContrib) * (c.healthRate / 100);
+    }
+
+    // Denmark labor market tax counted as social
+    socialContrib += laborMarketTax;
+
+    var totalDeductions = incomeTax + socialContrib;
+    var netLocal = Math.max(0, localGross - totalDeductions);
+    var netEur = c.currency === 'EUR' ? netLocal : netLocal * eurRates[c.currency];
+    var grossLocal = localGross;
+
+    return {
+      countryId: countryId,
+      country: c,
+      grossLocal: grossLocal,
+      grossEur: grossEur,
+      incomeTaxLocal: incomeTax,
+      socialLocal: socialContrib,
+      netLocal: netLocal,
+      netEur: netEur,
+      totalDeductions: totalDeductions,
+      effectiveRate: grossLocal > 0 ? (totalDeductions / grossLocal * 100) : 0,
+      applied30: applied30
+    };
+  }
+
+  function fmt(val, sym) {
+    var rounded = Math.round(val);
+    var formatted = rounded.toLocaleString('en-US');
+    if (sym && sym.length > 1) return sym + formatted;
+    return (sym || '') + formatted;
+  }
+
+  function fmtEur(val) { return '\u20AC' + Math.round(val).toLocaleString('en-US'); }
+
+  // Country checkbox logic
+  var checkboxes = document.querySelectorAll('.country-check');
+  var countSpan = document.getElementById('tc-count');
+  var rulingWrap = document.getElementById('tc-ruling-wrap');
+
+  function updateSelectionCount() {
+    var checked = document.querySelectorAll('.country-check:checked');
+    countSpan.textContent = checked.length;
+
+    var nlChecked = document.getElementById('chk-nl').checked;
+    rulingWrap.classList.toggle('hidden', !nlChecked);
+
+    if (checked.length >= 4) {
+      checkboxes.forEach(function(cb) {
+        if (!cb.checked) cb.disabled = true;
+      });
+    } else {
+      checkboxes.forEach(function(cb) { cb.disabled = false; });
+    }
+  }
+
+  checkboxes.forEach(function(cb) {
+    cb.addEventListener('change', updateSelectionCount);
+  });
+
+  // 30% ruling toggle
+  var rulingToggle = document.getElementById('tc-ruling-toggle');
+  var ruling30Active = false;
+
+  rulingToggle.addEventListener('click', function() {
+    ruling30Active = !ruling30Active;
+    rulingToggle.setAttribute('aria-checked', ruling30Active);
+    if (ruling30Active) {
+      rulingToggle.classList.remove('bg-gray-300', 'dark:bg-gray-600');
+      rulingToggle.classList.add('bg-indigo-600');
+      rulingToggle.querySelector('.toggle-thumb').style.transform = 'translateX(1.25rem)';
+    } else {
+      rulingToggle.classList.add('bg-gray-300', 'dark:bg-gray-600');
+      rulingToggle.classList.remove('bg-indigo-600');
+      rulingToggle.querySelector('.toggle-thumb').style.transform = 'translateX(0)';
+    }
+  });
+
+  // Main calculation
+  document.getElementById('tc-calculate').addEventListener('click', function() {
+    var grossEur = parseFloat(document.getElementById('tc-salary').value);
+    if (!grossEur || grossEur <= 0) return;
+
+    var status = document.getElementById('tc-status').value;
+    var period = document.getElementById('tc-period').value;
+    var divisor = period === 'monthly' ? 12 : 1;
+    var periodLabel = period === 'monthly' ? '/mo' : '/yr';
+
+    var selected = [];
+    checkboxes.forEach(function(cb) {
+      if (cb.checked) selected.push(cb.value);
+    });
+    if (selected.length < 2) {
+      alert('Please select at least 2 countries to compare.');
+      return;
+    }
+
+    var results = selected.map(function(id) {
+      return calculate(grossEur, id, status, ruling30Active);
+    }).filter(Boolean);
+
+    if (results.length < 2) return;
+
+    results.sort(function(a, b) { return a.effectiveRate - b.effectiveRate; });
+
+    var bestNet = Math.max.apply(null, results.map(function(r) { return r.netEur; }));
+    var maxRate = Math.max.apply(null, results.map(function(r) { return r.effectiveRate; }));
+
+    // Render comparison cards
+    var cardsContainer = document.getElementById('tc-cards');
+    cardsContainer.className = 'grid grid-cols-1 gap-6 mb-8';
+    if (results.length === 2) cardsContainer.className += ' md:grid-cols-2';
+    else if (results.length === 3) cardsContainer.className += ' md:grid-cols-3';
+    else cardsContainer.className += ' md:grid-cols-2 lg:grid-cols-4';
+
+    var cardsHtml = results.map(function(r) {
+      var isBest = r.netEur === bestNet;
+      var s = r.country.symbol;
+      var currNote = r.country.currency !== 'EUR' ? '<span class="text-xs text-gray-400">(' + fmtEur(r.netEur / divisor) + periodLabel + ')</span>' : '';
+      var rulingBadge = r.applied30 ? '<span class="inline-block text-xs bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 px-2 py-0.5 rounded-full mb-2">30% Ruling Applied</span><br>' : '';
+
+      return '<div class="card p-6 compare-col' + (isBest ? ' ring-2 ring-green-500 dark:ring-green-400' : '') + '">' +
+        (isBest ? '<span class="inline-block text-xs font-semibold bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 px-2.5 py-1 rounded-full mb-3"><i data-lucide="trophy" class="w-3 h-3 inline mr-1"></i>Best Net Pay</span>' : '') +
+        '<div class="flex items-center gap-2 mb-4">' +
+          '<span class="text-2xl">' + r.country.emoji + '</span>' +
+          '<h3 class="text-lg font-semibold text-gray-900 dark:text-white">' + r.country.name + '</h3>' +
+        '</div>' +
+        rulingBadge +
+        '<div class="space-y-3">' +
+          '<div class="flex justify-between"><span class="text-sm text-gray-500 dark:text-gray-400">Gross Salary</span><span class="font-medium text-gray-900 dark:text-white">' + fmt(r.grossLocal / divisor, s) + '</span></div>' +
+          '<div class="flex justify-between"><span class="text-sm text-gray-500 dark:text-gray-400">Income Tax</span><span class="font-medium text-red-600 dark:text-red-400">-' + fmt(r.incomeTaxLocal / divisor, s) + '</span></div>' +
+          '<div class="flex justify-between"><span class="text-sm text-gray-500 dark:text-gray-400">Social Contributions</span><span class="font-medium text-orange-600 dark:text-orange-400">-' + fmt(r.socialLocal / divisor, s) + '</span></div>' +
+          '<div class="border-t border-gray-200 dark:border-gray-700 pt-3 flex justify-between">' +
+            '<span class="text-sm font-semibold text-gray-700 dark:text-gray-300">Net Salary</span>' +
+            '<div class="text-right"><span class="text-xl font-bold text-green-600 dark:text-green-400">' + fmt(r.netLocal / divisor, s) + '</span> ' + currNote + '</div>' +
+          '</div>' +
+          '<div class="flex justify-between"><span class="text-sm text-gray-500 dark:text-gray-400">Effective Tax Rate</span><span class="font-semibold text-gray-900 dark:text-white">' + r.effectiveRate.toFixed(1) + '%</span></div>' +
+        '</div>' +
+        '<div class="mt-4">' +
+          '<div class="w-full h-3 rounded-full overflow-hidden flex bg-gray-200 dark:bg-gray-700">' +
+            '<div class="bg-green-500 h-full tax-bar" style="width:' + ((r.netLocal / r.grossLocal) * 100).toFixed(1) + '%"></div>' +
+            '<div class="bg-red-400 h-full tax-bar" style="width:' + ((r.incomeTaxLocal / r.grossLocal) * 100).toFixed(1) + '%"></div>' +
+            '<div class="bg-orange-400 h-full tax-bar" style="width:' + ((r.socialLocal / r.grossLocal) * 100).toFixed(1) + '%"></div>' +
+          '</div>' +
+          '<div class="flex gap-3 mt-1.5 text-xs text-gray-400 dark:text-gray-500">' +
+            '<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-green-500 inline-block"></span>Net</span>' +
+            '<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-red-400 inline-block"></span>Tax</span>' +
+            '<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-orange-400 inline-block"></span>Social</span>' +
+          '</div>' +
+        '</div>' +
+        '<p class="text-xs text-gray-400 dark:text-gray-500 mt-3 leading-relaxed">' + (r.country.notes || '') + '</p>' +
+      '</div>';
+    }).join('');
+    cardsContainer.innerHTML = cardsHtml;
+
+    // Effective tax rate bars
+    var barsHtml = results.map(function(r) {
+      var pct = maxRate > 0 ? (r.effectiveRate / 60 * 100) : 0;
+      pct = Math.min(pct, 100);
+      var barColor = r.effectiveRate < 25 ? 'bg-green-500' : r.effectiveRate < 35 ? 'bg-yellow-500' : r.effectiveRate < 45 ? 'bg-orange-500' : 'bg-red-500';
+      return '<div class="flex items-center gap-4">' +
+        '<span class="text-sm font-medium text-gray-700 dark:text-gray-300 w-32 shrink-0 flex items-center gap-2"><span>' + r.country.emoji + '</span> ' + r.country.name + '</span>' +
+        '<div class="flex-1 bg-gray-200 dark:bg-gray-700 rounded-full h-7 overflow-hidden">' +
+          '<div class="tax-bar ' + barColor + ' h-full rounded-full flex items-center justify-end pr-3" style="width:' + pct + '%;min-width:3rem">' +
+            '<span class="text-xs font-semibold text-white">' + r.effectiveRate.toFixed(1) + '%</span>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+    document.getElementById('tc-bars').innerHTML = barsHtml;
+
+    // Net salary bars (in EUR for fair comparison)
+    var maxNetEur = Math.max.apply(null, results.map(function(r) { return r.netEur; }));
+    var netBarsHtml = results.map(function(r) {
+      var pct = maxNetEur > 0 ? (r.netEur / maxNetEur * 100) : 0;
+      var isBest = r.netEur === bestNet;
+      return '<div class="flex items-center gap-4">' +
+        '<span class="text-sm font-medium text-gray-700 dark:text-gray-300 w-32 shrink-0 flex items-center gap-2"><span>' + r.country.emoji + '</span> ' + r.country.name + '</span>' +
+        '<div class="flex-1 bg-gray-200 dark:bg-gray-700 rounded-full h-7 overflow-hidden">' +
+          '<div class="tax-bar ' + (isBest ? 'bg-green-500' : 'bg-indigo-500') + ' h-full rounded-full flex items-center justify-end pr-3" style="width:' + pct + '%;min-width:3rem">' +
+            '<span class="text-xs font-semibold text-white">' + fmtEur(r.netEur / divisor) + periodLabel + '</span>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+    document.getElementById('tc-net-bars').innerHTML = netBarsHtml;
+
+    document.getElementById('tc-results-section').classList.remove('hidden');
+    document.getElementById('tc-results-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (window.lucide) lucide.createIcons();
+  });
+
+  // FAQ toggles
+  document.querySelectorAll('.faq-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = btn.closest('.faq-item');
+      var content = item.querySelector('.faq-content');
+      var icon = item.querySelector('.faq-icon');
+      var isOpen = !content.classList.contains('hidden');
+      content.classList.toggle('hidden', isOpen);
+      icon.style.transform = isOpen ? '' : 'rotate(180deg)';
+      btn.setAttribute('aria-expanded', !isOpen);
+    });
+  });
+})();
+</script>
+{% endblock %}

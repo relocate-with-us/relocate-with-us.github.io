@@ -1,0 +1,670 @@
+---
+layout: layouts/base.njk
+title: "Language Requirements for Tech Jobs in Europe | Country Guide"
+description: "Do you need to speak the local language to work in tech in Europe? Check language requirements for work visas, daily life, and tech jobs in 12 European countries."
+---
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Language Requirements Guide for Tech Jobs in Europe",
+      "url": "{{ site.url }}/tools/language-guide/",
+      "description": "{{ description }}",
+      "applicationCategory": "ReferenceApplication",
+      "operatingSystem": "Any",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "publisher": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need to speak the local language to get a tech job in Europe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In most cases, no. The majority of European tech companies use English as their working language, especially startups and international companies. Countries like the Netherlands, Germany, Sweden, and Denmark have thriving English-speaking tech scenes. However, learning the local language significantly improves daily life, social integration, and long-term career prospects."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which European countries are the most English-friendly for tech workers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Netherlands, Sweden, Denmark, and Ireland are the most English-friendly countries for tech workers. In the Netherlands and Scandinavian countries, over 90% of the population speaks English fluently. The UK and Ireland are native English-speaking countries. Germany and Poland also have strong English-speaking tech sectors, though daily life may require some local language."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a language requirement for European work visas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most European work visas for tech workers (EU Blue Card, national work permits) do not require language proficiency at the application stage. Exceptions include some long-term residence permits and citizenship applications, which may require A1-B1 level proficiency. France's Passeport Talent and the Netherlands' HSM visa have no language requirement at all."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What language level do I need for daily life in Europe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For comfortable daily life, A2-B1 level in the local language is recommended in most countries. This covers grocery shopping, doctor visits, and basic social interactions. In highly English-friendly countries like the Netherlands or Sweden, you can manage with English alone, though locals appreciate any effort to learn their language. For government paperwork, having B1 level or a translator is advisable."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block head %}
+<style>
+  .star-filled { color: #f59e0b; }
+  .star-empty { color: #d1d5db; }
+  .dark .star-empty { color: #4b5563; }
+  .country-btn { transition: all 0.2s ease; }
+  .country-btn.active { ring: 2px; }
+  .compare-col { min-width: 220px; }
+  .fade-in { animation: fadeIn 0.3s ease-out; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+{% endblock %}
+
+<section class="relative overflow-hidden bg-gradient-to-br from-brand-50 via-white to-violet-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 py-16 md:py-20">
+  <div class="max-w-4xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400">Home</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <a href="/tools/" class="hover:text-brand-600 dark:hover:text-brand-400">Tools</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-900 dark:text-white">Language Guide</span>
+    </nav>
+
+    <div class="text-center">
+      <div class="w-16 h-16 bg-violet-100 dark:bg-violet-900/30 rounded-2xl flex items-center justify-center mx-auto mb-6">
+        <i data-lucide="languages" class="w-8 h-8 text-violet-600 dark:text-violet-400"></i>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 leading-tight">
+        Language Requirements <span class="bg-violet-200 dark:bg-violet-500/20 dark:text-violet-300 px-2 inline-block -skew-x-1">Guide</span>
+      </h1>
+      <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        Do you need to speak the local language to work in tech in Europe? Explore language requirements for work visas, daily life, and tech jobs across 12 countries.
+      </p>
+    </div>
+  </div>
+</section>
+
+{# Summary cards #}
+<section class="py-10">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4" id="summary-cards">
+      <div class="card p-6 text-center">
+        <div class="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl flex items-center justify-center mx-auto mb-3">
+          <i data-lucide="check-circle" class="w-6 h-6 text-emerald-600 dark:text-emerald-400"></i>
+        </div>
+        <p class="text-3xl font-extrabold text-gray-900 dark:text-white" id="english-count">—</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">English-only friendly</p>
+      </div>
+      <div class="card p-6 text-center">
+        <div class="w-12 h-12 bg-amber-100 dark:bg-amber-900/30 rounded-xl flex items-center justify-center mx-auto mb-3">
+          <i data-lucide="message-circle" class="w-6 h-6 text-amber-600 dark:text-amber-400"></i>
+        </div>
+        <p class="text-3xl font-extrabold text-gray-900 dark:text-white" id="helpful-count">—</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Local language helpful</p>
+      </div>
+      <div class="card p-6 text-center">
+        <div class="w-12 h-12 bg-violet-100 dark:bg-violet-900/30 rounded-xl flex items-center justify-center mx-auto mb-3">
+          <i data-lucide="globe" class="w-6 h-6 text-violet-600 dark:text-violet-400"></i>
+        </div>
+        <p class="text-3xl font-extrabold text-gray-900 dark:text-white" id="countries-count">—</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Countries covered</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# Country selector #}
+<section class="py-4">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="section-heading mb-6">Select a Country</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3" id="country-grid"></div>
+  </div>
+</section>
+
+{# Country detail panel #}
+<section class="py-8">
+  <div class="max-w-5xl mx-auto px-4">
+    <div id="country-detail" class="hidden"></div>
+  </div>
+</section>
+
+{# Comparison mode #}
+<section class="py-4">
+  <div class="max-w-5xl mx-auto px-4">
+    <div id="compare-bar" class="hidden card p-4 flex flex-col sm:flex-row items-center justify-between gap-3 border-violet-300 dark:border-violet-600 bg-violet-50 dark:bg-violet-900/20">
+      <div class="flex items-center gap-2 text-violet-700 dark:text-violet-300">
+        <i data-lucide="git-compare" class="w-5 h-5"></i>
+        <span><strong id="compare-count">0</strong> countries selected for comparison</span>
+      </div>
+      <div class="flex gap-2">
+        <button id="compare-btn" class="btn-primary text-sm">Compare Now</button>
+        <button id="clear-compare" class="btn-secondary text-sm">Clear</button>
+      </div>
+    </div>
+    <div id="compare-panel" class="hidden mt-6"></div>
+  </div>
+</section>
+
+{# FAQ #}
+<section class="py-16 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="section-heading text-center mb-8">Frequently Asked Questions</h2>
+    <div class="space-y-4" id="faq-list">
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Do I need to speak the local language to get a tech job in Europe?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <p class="text-gray-600 dark:text-gray-400">In most cases, no. The majority of European tech companies use English as their working language, especially startups and international companies. Countries like the Netherlands, Germany, Sweden, and Denmark have thriving English-speaking tech scenes. However, learning the local language significantly improves daily life, social integration, and long-term career prospects.</p>
+        </div>
+      </div>
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Which European countries are the most English-friendly for tech workers?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <p class="text-gray-600 dark:text-gray-400">The <a href="/resources/country-guides/netherlands/" class="text-brand-600 dark:text-brand-400 hover:underline">Netherlands</a>, Sweden, Denmark, and Ireland are the most English-friendly. In the Netherlands and Scandinavian countries, over 90% of the population speaks English. The UK and Ireland are native English-speaking. Germany and Poland also have strong English-speaking tech sectors, though daily life may require some local language.</p>
+        </div>
+      </div>
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Is there a language requirement for European work visas?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <p class="text-gray-600 dark:text-gray-400">Most European work visas for tech workers (EU Blue Card, national work permits) do not require language proficiency at the application stage. Exceptions include some long-term residence permits and citizenship applications, which may require A1-B1 level. France's Passeport Talent and the Netherlands' HSM visa have no language requirement at all.</p>
+        </div>
+      </div>
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">What language level do I need for daily life in Europe?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <p class="text-gray-600 dark:text-gray-400">For comfortable daily life, A2-B1 level in the local language is recommended in most countries. This covers grocery shopping, doctor visits, and basic social interactions. In highly English-friendly countries like the Netherlands or Sweden, you can manage with English alone, though locals appreciate any effort. For government paperwork, B1 level or a translator is advisable.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# Share #}
+<section class="py-6">
+  <div class="max-w-5xl mx-auto px-4 flex items-center gap-3 justify-center">
+    <span class="text-sm text-gray-500 dark:text-gray-400">Share this tool:</span>
+    <a href="https://twitter.com/intent/tweet?url={{ site.url }}/tools/language-guide/&text=Do%20you%20need%20to%20speak%20the%20local%20language%20to%20work%20in%20tech%20in%20Europe%3F%20Check%20this%20free%20guide" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-brand-100 dark:hover:bg-brand-900/30 transition-colors">
+      <i data-lucide="twitter" class="w-4 h-4 text-gray-600 dark:text-gray-400"></i>
+    </a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}/tools/language-guide/" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-brand-100 dark:hover:bg-brand-900/30 transition-colors">
+      <i data-lucide="linkedin" class="w-4 h-4 text-gray-600 dark:text-gray-400"></i>
+    </a>
+    <button id="copy-link-btn" class="w-9 h-9 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-brand-100 dark:hover:bg-brand-900/30 transition-colors" title="Copy link">
+      <i data-lucide="link" class="w-4 h-4 text-gray-600 dark:text-gray-400"></i>
+    </button>
+  </div>
+</section>
+
+{# Related tools #}
+<section class="py-8">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="grid sm:grid-cols-3 gap-4">
+      <a href="/tools/cost-of-living/" class="card p-5 flex items-center gap-4 hover:border-brand-300 dark:hover:border-brand-600 transition-colors group">
+        <div class="w-10 h-10 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center">
+          <i data-lucide="map-pin" class="w-5 h-5 text-purple-600 dark:text-purple-400"></i>
+        </div>
+        <div class="flex-1">
+          <p class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600">Cost of Living</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Compare cities worldwide</p>
+        </div>
+      </a>
+      <a href="/tools/visa-comparison/" class="card p-5 flex items-center gap-4 hover:border-brand-300 dark:hover:border-brand-600 transition-colors group">
+        <div class="w-10 h-10 bg-sky-100 dark:bg-sky-900/30 rounded-xl flex items-center justify-center">
+          <i data-lucide="scale" class="w-5 h-5 text-sky-600 dark:text-sky-400"></i>
+        </div>
+        <div class="flex-1">
+          <p class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600">Visa Comparison</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Compare work permits</p>
+        </div>
+      </a>
+      <a href="/visa-sponsored-jobs/" class="card p-5 flex items-center gap-4 hover:border-brand-300 dark:hover:border-brand-600 transition-colors group">
+        <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl flex items-center justify-center">
+          <i data-lucide="briefcase" class="w-5 h-5 text-emerald-600 dark:text-emerald-400"></i>
+        </div>
+        <div class="flex-1">
+          <p class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600">Browse Jobs</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Find visa-sponsored roles</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+{% block scripts %}
+<script>
+(function() {
+  var countries = [
+    {
+      id: 'germany', name: 'Germany', flag: '🇩🇪', language: 'German',
+      englishFriendly: true,
+      visaLanguage: { requirement: 'None for work visa', detail: 'No German required for the EU Blue Card or national work permit. B1 German needed for permanent residence (after 21-33 months). A1 required for spouse visa (with exceptions for skilled workers\u2019 spouses).' },
+      workplace: { summary: 'English common in tech', detail: 'Most Berlin startups and international companies operate in English. Larger German corporations (SAP, Siemens) may use German internally. English-only roles are widely available, especially in Berlin, Munich, and Hamburg.' },
+      dailyLife: { rating: 3, detail: 'Supermarkets and restaurants often have English-speaking staff in major cities. Government offices (Ausländerbehörde, Bürgeramt) typically require German — bring a translator or German-speaking friend. Landlords strongly prefer German speakers.' },
+      government: 'Most bureaucratic interactions require German. Official forms and letters are in German only. Many Ausländerbehörde offices have limited English support. Consider hiring a relocation agent for initial setup.',
+      recommendedLevel: 'B1',
+      resources: ['Goethe-Institut', 'DW Learn German (free)', 'VHS (Volkshochschule) courses', 'Tandem language exchange apps'],
+      tips: ['Berlin is the most English-friendly city by far', 'Learn key bureaucracy phrases first: Anmeldung, Termin, Aufenthaltstitel', 'Join expat communities — many operate in English', 'German TV with subtitles is great for learning']
+    },
+    {
+      id: 'netherlands', name: 'Netherlands', flag: '🇳🇱', language: 'Dutch',
+      englishFriendly: true,
+      visaLanguage: { requirement: 'None', detail: 'No Dutch required for the Highly Skilled Migrant (HSM) visa or any work permit. Dutch language (A2) is only required for permanent residence after 5 years or citizenship.' },
+      workplace: { summary: 'English is standard', detail: 'The Netherlands has one of the highest English proficiency rates in the world. Most tech companies, especially in Amsterdam and Eindhoven, operate entirely in English. Even Dutch companies often switch to English when a non-Dutch speaker joins.' },
+      dailyLife: { rating: 5, detail: 'Almost everyone speaks fluent English. You can handle all daily tasks — shopping, dining, healthcare — in English with no issues. The Netherlands is arguably the easiest non-English-speaking country to live in without the local language.' },
+      government: 'Most government services are available in English. The IND (immigration) website and services are fully in English. Municipality services often have English options. Tax filings can be done in English via the 30% ruling.',
+      recommendedLevel: 'A1',
+      resources: ['Duolingo Dutch', 'Gemeente-sponsored free Dutch courses', 'TaalUnion resources', 'NOS Jeugdjournaal (simple news)'],
+      tips: ['Dutch people switch to English immediately — you have to insist on Dutch to practice', 'Learning Dutch is still recommended for social integration', 'Amsterdam, Rotterdam, and Eindhoven are the main tech hubs', 'The 30% ruling tax benefit makes the Netherlands very attractive financially']
+    },
+    {
+      id: 'uk', name: 'United Kingdom', flag: '🇬🇧', language: 'English',
+      englishFriendly: true,
+      visaLanguage: { requirement: 'B1 English (CEFR)', detail: 'The Skilled Worker visa requires proof of English at B1 level (IELTS, TOEFL, or degree taught in English). Citizens of majority-English-speaking countries are exempt. This is usually easy for tech workers to meet.' },
+      workplace: { summary: 'English (native)', detail: 'English is the native and sole working language. London is one of the world\'s largest tech hubs. No language barrier whatsoever in professional settings.' },
+      dailyLife: { rating: 5, detail: 'Native English-speaking country. No language barrier in any aspect of daily life.' },
+      government: 'All government services are in English. The visa application process (gov.uk) is fully in English. NHS, banking, and all official interactions are in English.',
+      recommendedLevel: 'N/A (English native)',
+      resources: ['N/A — English is the local language'],
+      tips: ['London has the largest tech job market in Europe', 'Consider cities like Manchester, Edinburgh, and Bristol for lower cost of living', 'Post-Brexit visa rules require sponsorship — check the Skilled Worker visa', 'NHS healthcare is included with your visa']
+    },
+    {
+      id: 'spain', name: 'Spain', flag: '🇪🇸', language: 'Spanish',
+      englishFriendly: false,
+      visaLanguage: { requirement: 'None for work visa', detail: 'No Spanish required for the work visa or the Digital Nomad visa. A2 Spanish is typically required for permanent residence after 5 years. Citizenship requires passing a Spanish language and culture test.' },
+      workplace: { summary: 'Spanish often needed', detail: 'English-only roles exist mainly at international companies and startups in Barcelona and Madrid. Many Spanish companies conduct business in Spanish. The startup scene in Barcelona has more English-speaking roles than elsewhere.' },
+      dailyLife: { rating: 2, detail: 'Outside major tourist areas, English proficiency is limited. Daily tasks like visiting a doctor, dealing with landlords, or talking to neighbors typically require Spanish. Younger people in cities tend to speak more English.' },
+      government: 'Government offices operate almost exclusively in Spanish. Immigration appointments (Extranjería), police stations, and social security offices rarely have English-speaking staff. A gestor (administrative agent) is highly recommended.',
+      recommendedLevel: 'B1',
+      resources: ['Instituto Cervantes', 'SpanishPod101', 'Language exchanges in Madrid/Barcelona', 'Official EOI (Escuela Oficial de Idiomas) free/cheap courses'],
+      tips: ['Barcelona has the strongest English-speaking tech scene', 'Learning Spanish opens up many more job opportunities', 'A gestor can handle most bureaucratic tasks for you (€50-200 per task)', 'Spain has excellent quality of life — many expats learn Spanish fast through immersion']
+    },
+    {
+      id: 'ireland', name: 'Ireland', flag: '🇮🇪', language: 'English',
+      englishFriendly: true,
+      visaLanguage: { requirement: 'None (English-speaking country)', detail: 'Ireland is a native English-speaking country. The Critical Skills Employment Permit and General Employment Permit have no language requirement beyond what is naturally needed for work.' },
+      workplace: { summary: 'English (native)', detail: 'English is the primary language of business. Dublin is a major European tech hub hosting headquarters of Google, Meta, Stripe, and many others. All workplace interactions are in English.' },
+      dailyLife: { rating: 5, detail: 'Native English-speaking country. No language barrier in any aspect of daily life. Irish (Gaelic) exists as a second official language but is rarely needed.' },
+      government: 'All government services are in English. Immigration (INIS), Revenue (tax), and all public services operate in English. Straightforward administrative processes.',
+      recommendedLevel: 'N/A (English native)',
+      resources: ['N/A — English is the local language'],
+      tips: ['Dublin has the highest concentration of tech jobs but also highest rents', 'Cork, Galway, and Limerick are growing tech hubs with lower costs', 'The Critical Skills Permit leads to permanent residence in 2 years', 'Ireland is a gateway to the EU for US tech companies']
+    },
+    {
+      id: 'sweden', name: 'Sweden', flag: '🇸🇪', language: 'Swedish',
+      englishFriendly: true,
+      visaLanguage: { requirement: 'None', detail: 'No Swedish required for any work permit. There is no formal language requirement for permanent residence either, though Swedish knowledge helps with the integration process. Citizenship requires demonstrated integration but no formal language test (as of 2025).' },
+      workplace: { summary: 'English is standard', detail: 'Sweden has exceptionally high English proficiency. Most tech companies, especially in Stockholm, use English as the working language. Spotify, Klarna, King, and many startups operate in English. Smaller or traditional Swedish companies may prefer Swedish.' },
+      dailyLife: { rating: 4, detail: 'Almost all Swedes speak excellent English. You can navigate daily life — shopping, healthcare, dining — in English with ease. Some government communications and letters arrive in Swedish.' },
+      government: 'The Migration Agency (Migrationsverket) has excellent English services. Tax agency (Skatteverket) provides English support. Some official letters and forms are in Swedish only, but translation services are available.',
+      recommendedLevel: 'A2',
+      resources: ['SFI (Swedish For Immigrants) — free government courses', 'SVT Nyheter på lätt svenska', 'Duolingo Swedish', 'Folkuniversitetet courses'],
+      tips: ['Stockholm is the startup capital of Europe per capita', 'SFI courses are free and available in all municipalities', 'Swedes are friendly but can be reserved — language helps break the ice', 'Fika culture (coffee breaks) is a great way to practice Swedish']
+    },
+    {
+      id: 'switzerland', name: 'Switzerland', flag: '🇨🇭', language: 'German/French/Italian',
+      englishFriendly: false,
+      visaLanguage: { requirement: 'None for work permit', detail: 'No language required for the work permit (B permit). For permanent residence (C permit), language skills at a minimum of A2 oral and A1 written in a national language are required. Citizenship requires B1 oral and A2 written.' },
+      workplace: { summary: 'Varies by region', detail: 'Zurich and Basel (German-speaking) have many English-friendly tech roles. Geneva and Lausanne (French-speaking) tend to require more French. International organizations and large multinationals often operate in English. Google Zurich, for example, is fully English-speaking.' },
+      dailyLife: { rating: 2, detail: 'Daily life language needs depend heavily on the region. In German-speaking Switzerland, Swiss German (Schwiizerdütsch) is spoken, which differs significantly from standard German. In French-speaking areas, French is essential. Urban areas have more English speakers.' },
+      government: 'Government services are in the regional official language. Canton offices, tax authorities, and immigration services typically operate in German, French, or Italian depending on the region. English support is limited.',
+      recommendedLevel: 'B1',
+      resources: ['Migros Klubschule', 'Alliance Française (for French regions)', 'Goethe-Institut (for German regions)', 'Municipality-sponsored integration courses'],
+      tips: ['Zurich offers the highest tech salaries in Europe', 'Swiss German is very different from standard German — expect a learning curve', 'The canton you live in determines which language you need', 'Many expats live in English bubbles but learning the local language greatly improves quality of life']
+    },
+    {
+      id: 'portugal', name: 'Portugal', flag: '🇵🇹', language: 'Portuguese',
+      englishFriendly: false,
+      visaLanguage: { requirement: 'None for work visa', detail: 'No Portuguese required for the Tech Visa or general work permit. A2 Portuguese is required for permanent residence after 5 years. Citizenship requires A2 level Portuguese.' },
+      workplace: { summary: 'English growing fast', detail: 'Lisbon\'s tech scene is booming and increasingly international. Many startups and scale-ups (Farfetch, Talkdesk, OutSystems) operate in English. Traditional Portuguese companies still work in Portuguese. Porto\'s tech scene is also growing with English-speaking roles.' },
+      dailyLife: { rating: 3, detail: 'Portuguese people in Lisbon and Porto increasingly speak English, especially younger generations. Outside major cities, English is less common. Daily tasks like grocery shopping work fine, but interacting with landlords, mechanics, or local businesses may require Portuguese.' },
+      government: 'Government offices (SEF/AIMA, Finanças) primarily operate in Portuguese. The bureaucracy can be challenging even for Portuguese speakers. Hiring an accountant or immigration lawyer is strongly recommended. Some services are being digitized with English options.',
+      recommendedLevel: 'A2',
+      resources: ['IEFP-funded Portuguese courses (free for residents)', 'Practice Portuguese podcast', 'Instituto Camões', 'Language exchanges in Lisbon/Porto'],
+      tips: ['Lisbon and Porto are the main tech hubs', 'Portuguese people are incredibly welcoming to those who try to learn', 'The NHR tax regime can be very beneficial for tech workers', 'The startup ecosystem is growing rapidly with many English-speaking roles']
+    },
+    {
+      id: 'poland', name: 'Poland', flag: '🇵🇱', language: 'Polish',
+      englishFriendly: false,
+      visaLanguage: { requirement: 'None', detail: 'No Polish required for work permits or the EU Blue Card. For permanent residence, basic Polish knowledge is assessed informally. Citizenship requires B1 Polish and passing a civic knowledge test.' },
+      workplace: { summary: 'English in tech, Polish elsewhere', detail: 'The tech sector in Warsaw, Krakow, and Wroclaw operates largely in English. International companies and outsourcing firms use English as the default. Polish companies outside tech tend to require Polish.' },
+      dailyLife: { rating: 2, detail: 'English proficiency varies significantly. Young people in cities speak good English, but older generations and rural areas have limited English. Shopping and restaurants in city centers work in English, but doctor visits, car services, and government offices often require Polish.' },
+      government: 'Government offices operate in Polish. Immigration offices (Urząd Wojewódzki) have limited English support. Official documents and letters are in Polish. An immigration lawyer or translator is recommended for permit applications.',
+      recommendedLevel: 'A2',
+      resources: ['Polish language schools in major cities', 'PolishPod101', 'Duolingo Polish', 'University-affiliated language courses'],
+      tips: ['Krakow and Warsaw have thriving English-speaking tech communities', 'Poland offers excellent value — high tech salaries relative to cost of living', 'Polish is a difficult language to learn but locals are very appreciative of any effort', 'The expat community is growing rapidly, especially in Krakow']
+    },
+    {
+      id: 'denmark', name: 'Denmark', flag: '🇩🇰', language: 'Danish',
+      englishFriendly: true,
+      visaLanguage: { requirement: 'None for work permit', detail: 'No Danish required for the Positive List work permit or Pay Limit scheme. For permanent residence (after 4 years), you must pass Danish language test level 2 (PD2). Citizenship requires PD3 level.' },
+      workplace: { summary: 'English is standard', detail: 'Danes have near-native English fluency. Most tech companies in Copenhagen use English as the working language. Startups, scale-ups, and international companies operate entirely in English. Some traditional Danish companies prefer Danish.' },
+      dailyLife: { rating: 4, detail: 'Almost everyone speaks excellent English. You can handle all daily tasks in English. Some government communications arrive in Danish, and the Digital Post (e-Boks) system is primarily in Danish.' },
+      government: 'SIRI (immigration agency) provides English services. Borger.dk has some English content. Tax agency (SKAT) has English support. Most official letters are in Danish but can be translated through services provided to expats.',
+      recommendedLevel: 'A2',
+      resources: ['Sprogskole (municipality language schools — free for certain visa holders)', 'Danish classes at Studieskolen', 'DR Nyheder (news in simple Danish)', 'Duolingo Danish'],
+      tips: ['Copenhagen is the main tech hub with companies like Zendesk, Unity, and Maersk', 'Danish pronunciation is notoriously difficult — don\'t get discouraged', 'Free language courses (sprogskole) are available for work permit holders', 'Danes socialize differently — join clubs and sports to make friends']
+    },
+    {
+      id: 'czech-republic', name: 'Czech Republic', flag: '🇨🇿', language: 'Czech',
+      englishFriendly: false,
+      visaLanguage: { requirement: 'None', detail: 'No Czech required for work permits or the EU Blue Card. For permanent residence after 5 years, you must pass a Czech language exam at A1 level. Citizenship requires B1 level Czech.' },
+      workplace: { summary: 'English common in tech', detail: 'Prague\'s tech scene is English-friendly, especially at international companies and startups. Many global companies have offices in Prague (Microsoft, Oracle, JetBrains). Czech companies outside the tech bubble generally require Czech.' },
+      dailyLife: { rating: 2, detail: 'English is spoken by younger people in Prague, but less so in other cities and among older generations. Daily tasks like visiting a doctor, dealing with landlords, or navigating public services often require Czech. Restaurant and shop staff in central Prague usually speak some English.' },
+      government: 'Government offices operate in Czech. Immigration offices (OAMP) have limited English support. Official documents and administrative processes are in Czech. A Czech-speaking friend or immigration consultant is very helpful.',
+      recommendedLevel: 'A2',
+      resources: ['Czech language courses at Charles University', 'Local language schools (Akcent, Czech Courses)', 'CzechClass101', 'Tandem language exchange meetups in Prague'],
+      tips: ['Prague has the strongest tech job market and most English-friendly environment', 'Brno is an emerging tech hub with lower costs', 'Czech is a Slavic language — easier if you know Polish, Slovak, or Russian', 'The cost of living is very affordable compared to Western Europe']
+    },
+    {
+      id: 'france', name: 'France', flag: '🇫🇷', language: 'French',
+      englishFriendly: false,
+      visaLanguage: { requirement: 'None for Passeport Talent', detail: 'No French required for the Passeport Talent visa (for skilled workers and tech). For permanent residence (carte de résident), A2 French is required. Citizenship requires B1 French oral and written, plus a civic knowledge test.' },
+      workplace: { summary: 'French often expected', detail: 'While Paris\'s startup ecosystem (Station F, La French Tech) has many English-speaking companies, French is still the dominant business language. International companies and English-friendly startups exist, but they\'re a smaller percentage than in the Netherlands or Germany. Lyon and other cities tend to require more French.' },
+      dailyLife: { rating: 2, detail: 'Despite its international reputation, France has lower English proficiency than Northern European countries. In Paris, many people speak some English, but outside the capital, French is essential. Daily interactions — shopping, healthcare, services — are much easier with French.' },
+      government: 'Government services are conducted in French. Préfecture appointments, social security (CPAM), and tax services operate in French. Online services at service-public.fr are in French. Some international offices in Paris have limited English support.',
+      recommendedLevel: 'B1',
+      resources: ['Alliance Française (worldwide)', 'OFII-sponsored integration courses', 'TV5Monde (free learning resources)', 'France Langue schools'],
+      tips: ['Paris has the largest tech ecosystem in France (Station F, La French Tech)', 'French people appreciate any effort to speak French — even basic phrases go a long way', 'The Passeport Talent visa is very attractive with no language requirement', 'Learn French if you plan to stay long-term — it opens many more opportunities']
+    }
+  ];
+
+  var selectedCountry = null;
+  var compareSet = {};
+
+  function renderStars(rating) {
+    var html = '';
+    for (var i = 1; i <= 5; i++) {
+      html += '<i data-lucide="star" class="w-4 h-4 inline ' + (i <= rating ? 'star-filled fill-amber-400' : 'star-empty') + '"></i>';
+    }
+    return html;
+  }
+
+  function renderSummary() {
+    var englishCount = 0;
+    var helpfulCount = 0;
+    countries.forEach(function(c) {
+      if (c.englishFriendly) englishCount++;
+      else helpfulCount++;
+    });
+    document.getElementById('english-count').textContent = englishCount;
+    document.getElementById('helpful-count').textContent = helpfulCount;
+    document.getElementById('countries-count').textContent = countries.length;
+  }
+
+  function renderCountryGrid() {
+    var grid = document.getElementById('country-grid');
+    var html = '';
+    countries.forEach(function(c) {
+      html += '<button class="country-btn card p-4 text-center hover:border-violet-300 dark:hover:border-violet-600 transition-all cursor-pointer group" data-country="' + c.id + '">';
+      html += '<span class="text-3xl block mb-2">' + c.flag + '</span>';
+      html += '<span class="font-semibold text-sm text-gray-900 dark:text-white group-hover:text-violet-600 dark:group-hover:text-violet-400 block">' + c.name + '</span>';
+      html += '<span class="text-xs text-gray-500 dark:text-gray-400 block mt-1">' + c.language + '</span>';
+      if (c.englishFriendly) {
+        html += '<span class="badge text-xs mt-2 inline-block" style="background:rgb(220 252 231);color:rgb(22 101 52)">English-friendly</span>';
+      }
+      html += '</button>';
+    });
+    grid.innerHTML = html;
+
+    grid.querySelectorAll('.country-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var id = this.getAttribute('data-country');
+        selectCountry(id);
+      });
+    });
+  }
+
+  function selectCountry(id) {
+    var c = countries.find(function(x) { return x.id === id; });
+    if (!c) return;
+    selectedCountry = id;
+
+    document.querySelectorAll('.country-btn').forEach(function(btn) {
+      var isActive = btn.getAttribute('data-country') === id;
+      btn.classList.toggle('border-violet-400', isActive);
+      btn.classList.toggle('dark:border-violet-500', isActive);
+      btn.classList.toggle('bg-violet-50', isActive);
+      btn.classList.toggle('dark:bg-violet-900/20', isActive);
+    });
+
+    var panel = document.getElementById('country-detail');
+    var html = '<div class="card p-6 md:p-8 fade-in">';
+    html += '<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">';
+    html += '<div class="flex items-center gap-4">';
+    html += '<span class="text-4xl">' + c.flag + '</span>';
+    html += '<div>';
+    html += '<h2 class="text-2xl font-bold text-gray-900 dark:text-white">' + c.name + '</h2>';
+    html += '<p class="text-gray-500 dark:text-gray-400">Language: ' + c.language + '</p>';
+    html += '</div></div>';
+    html += '<button class="add-compare-btn btn-secondary text-sm" data-country="' + c.id + '"><i data-lucide="git-compare" class="w-4 h-4 mr-1"></i> ' + (compareSet[c.id] ? 'Remove from comparison' : 'Add to comparison') + '</button>';
+    html += '</div>';
+
+    html += '<div class="grid md:grid-cols-2 gap-6">';
+
+    html += '<div class="space-y-5">';
+    html += '<div>';
+    html += '<h3 class="font-semibold text-gray-900 dark:text-white flex items-center gap-2 mb-2"><i data-lucide="file-text" class="w-4 h-4 text-violet-500"></i> Work Visa Language Requirement</h3>';
+    html += '<p class="badge inline-block mb-2" style="background:rgb(220 252 231);color:rgb(22 101 52)">' + c.visaLanguage.requirement + '</p>';
+    html += '<p class="text-sm text-gray-600 dark:text-gray-400">' + c.visaLanguage.detail + '</p>';
+    html += '</div>';
+
+    html += '<div>';
+    html += '<h3 class="font-semibold text-gray-900 dark:text-white flex items-center gap-2 mb-2"><i data-lucide="building-2" class="w-4 h-4 text-sky-500"></i> Workplace Language</h3>';
+    html += '<p class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">' + c.workplace.summary + '</p>';
+    html += '<p class="text-sm text-gray-600 dark:text-gray-400">' + c.workplace.detail + '</p>';
+    html += '</div>';
+
+    html += '<div>';
+    html += '<h3 class="font-semibold text-gray-900 dark:text-white flex items-center gap-2 mb-2"><i data-lucide="coffee" class="w-4 h-4 text-amber-500"></i> Daily Life Language Needs</h3>';
+    html += '<div class="flex items-center gap-2 mb-1">' + renderStars(c.dailyLife.rating) + ' <span class="text-sm text-gray-500 dark:text-gray-400">' + c.dailyLife.rating + '/5 (English sufficiency)</span></div>';
+    html += '<p class="text-sm text-gray-600 dark:text-gray-400">' + c.dailyLife.detail + '</p>';
+    html += '</div>';
+    html += '</div>';
+
+    html += '<div class="space-y-5">';
+    html += '<div>';
+    html += '<h3 class="font-semibold text-gray-900 dark:text-white flex items-center gap-2 mb-2"><i data-lucide="landmark" class="w-4 h-4 text-red-500"></i> Government &amp; Admin</h3>';
+    html += '<p class="text-sm text-gray-600 dark:text-gray-400">' + c.government + '</p>';
+    html += '</div>';
+
+    html += '<div>';
+    html += '<h3 class="font-semibold text-gray-900 dark:text-white flex items-center gap-2 mb-2"><i data-lucide="target" class="w-4 h-4 text-emerald-500"></i> Recommended Language Level</h3>';
+    html += '<span class="badge inline-block" style="background:rgb(219 234 254);color:rgb(30 64 175)">' + c.recommendedLevel + '</span>';
+    html += '<p class="text-xs text-gray-500 dark:text-gray-400 mt-1">For comfortable daily life and long-term stay</p>';
+    html += '</div>';
+
+    html += '<div>';
+    html += '<h3 class="font-semibold text-gray-900 dark:text-white flex items-center gap-2 mb-2"><i data-lucide="book-open" class="w-4 h-4 text-violet-500"></i> Language Learning Resources</h3>';
+    html += '<ul class="space-y-1">';
+    c.resources.forEach(function(r) {
+      html += '<li class="text-sm text-gray-600 dark:text-gray-400 flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500 shrink-0 mt-0.5"></i> ' + r + '</li>';
+    });
+    html += '</ul></div>';
+
+    html += '<div>';
+    html += '<h3 class="font-semibold text-gray-900 dark:text-white flex items-center gap-2 mb-2"><i data-lucide="lightbulb" class="w-4 h-4 text-amber-500"></i> Tips for Getting By</h3>';
+    html += '<ul class="space-y-1">';
+    c.tips.forEach(function(t) {
+      html += '<li class="text-sm text-gray-600 dark:text-gray-400 flex items-start gap-2"><i data-lucide="arrow-right" class="w-3.5 h-3.5 text-violet-500 shrink-0 mt-0.5"></i> ' + t + '</li>';
+    });
+    html += '</ul></div>';
+    html += '</div>';
+
+    html += '</div></div>';
+
+    panel.innerHTML = html;
+    panel.classList.remove('hidden');
+
+    panel.querySelector('.add-compare-btn').addEventListener('click', function() {
+      toggleCompare(this.getAttribute('data-country'));
+    });
+
+    if (window.lucide) lucide.createIcons();
+    panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function toggleCompare(id) {
+    if (compareSet[id]) {
+      delete compareSet[id];
+    } else {
+      if (Object.keys(compareSet).length >= 3) return;
+      compareSet[id] = true;
+    }
+    updateCompareBar();
+    if (selectedCountry) selectCountry(selectedCountry);
+  }
+
+  function updateCompareBar() {
+    var keys = Object.keys(compareSet);
+    var bar = document.getElementById('compare-bar');
+    document.getElementById('compare-count').textContent = keys.length;
+    bar.classList.toggle('hidden', keys.length === 0);
+  }
+
+  function renderComparison() {
+    var keys = Object.keys(compareSet);
+    if (keys.length < 2) return;
+
+    var selected = keys.map(function(id) {
+      return countries.find(function(c) { return c.id === id; });
+    }).filter(Boolean);
+
+    var panel = document.getElementById('compare-panel');
+    var html = '<div class="card p-6 md:p-8 fade-in">';
+    html += '<div class="flex items-center justify-between mb-6">';
+    html += '<h2 class="text-xl font-bold text-gray-900 dark:text-white flex items-center gap-2"><i data-lucide="git-compare" class="w-5 h-5 text-violet-600 dark:text-violet-400"></i> Side-by-Side Comparison</h2>';
+    html += '<button id="close-compare-panel" class="btn-secondary text-sm"><i data-lucide="x" class="w-4 h-4 mr-1"></i> Close</button>';
+    html += '</div>';
+
+    html += '<div class="overflow-x-auto"><table class="w-full text-left text-sm">';
+    html += '<thead><tr><th class="p-3 font-semibold text-gray-500 dark:text-gray-400 min-w-[140px]"></th>';
+    selected.forEach(function(c) {
+      html += '<th class="p-3 compare-col"><span class="text-2xl mr-2">' + c.flag + '</span><span class="font-bold text-gray-900 dark:text-white">' + c.name + '</span></th>';
+    });
+    html += '</tr></thead><tbody>';
+
+    var rows = [
+      { label: 'Language', icon: 'languages', key: function(c) { return c.language; } },
+      { label: 'Visa Requirement', icon: 'file-text', key: function(c) { return c.visaLanguage.requirement; } },
+      { label: 'Workplace', icon: 'building-2', key: function(c) { return c.workplace.summary; } },
+      { label: 'English Sufficiency', icon: 'coffee', key: function(c) { return renderStars(c.dailyLife.rating) + ' ' + c.dailyLife.rating + '/5'; } },
+      { label: 'Recommended Level', icon: 'target', key: function(c) { return '<span class="badge" style="background:rgb(219 234 254);color:rgb(30 64 175)">' + c.recommendedLevel + '</span>'; } },
+      { label: 'English-Friendly', icon: 'check-circle', key: function(c) { return c.englishFriendly ? '<span class="text-emerald-600 dark:text-emerald-400 font-semibold flex items-center gap-1"><i data-lucide="check-circle" class="w-4 h-4"></i> Yes</span>' : '<span class="text-amber-600 dark:text-amber-400 font-semibold flex items-center gap-1"><i data-lucide="alert-circle" class="w-4 h-4"></i> Limited</span>'; } }
+    ];
+
+    rows.forEach(function(row) {
+      html += '<tr class="border-t border-gray-100 dark:border-gray-800">';
+      html += '<td class="p-3 font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap"><i data-lucide="' + row.icon + '" class="w-4 h-4 inline mr-2 text-gray-400"></i>' + row.label + '</td>';
+      selected.forEach(function(c) {
+        html += '<td class="p-3 text-gray-600 dark:text-gray-400 compare-col">' + row.key(c) + '</td>';
+      });
+      html += '</tr>';
+    });
+
+    html += '<tr class="border-t border-gray-100 dark:border-gray-800">';
+    html += '<td class="p-3 font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap"><i data-lucide="lightbulb" class="w-4 h-4 inline mr-2 text-amber-500"></i>Top Tips</td>';
+    selected.forEach(function(c) {
+      html += '<td class="p-3 compare-col"><ul class="space-y-1">';
+      c.tips.slice(0, 3).forEach(function(t) {
+        html += '<li class="text-sm text-gray-600 dark:text-gray-400 flex items-start gap-1"><i data-lucide="arrow-right" class="w-3 h-3 text-violet-500 shrink-0 mt-0.5"></i>' + t + '</li>';
+      });
+      html += '</ul></td>';
+    });
+    html += '</tr>';
+
+    html += '<tr class="border-t border-gray-100 dark:border-gray-800">';
+    html += '<td class="p-3 font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap"><i data-lucide="book-open" class="w-4 h-4 inline mr-2 text-violet-500"></i>Resources</td>';
+    selected.forEach(function(c) {
+      html += '<td class="p-3 compare-col"><ul class="space-y-1">';
+      c.resources.forEach(function(r) {
+        html += '<li class="text-sm text-gray-600 dark:text-gray-400 flex items-start gap-1"><i data-lucide="check" class="w-3 h-3 text-emerald-500 shrink-0 mt-0.5"></i>' + r + '</li>';
+      });
+      html += '</ul></td>';
+    });
+    html += '</tr>';
+
+    html += '</tbody></table></div></div>';
+
+    panel.innerHTML = html;
+    panel.classList.remove('hidden');
+
+    document.getElementById('close-compare-panel').addEventListener('click', function() {
+      panel.classList.add('hidden');
+    });
+
+    if (window.lucide) lucide.createIcons();
+    panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // Init
+  renderSummary();
+  renderCountryGrid();
+
+  document.getElementById('compare-btn').addEventListener('click', renderComparison);
+  document.getElementById('clear-compare').addEventListener('click', function() {
+    compareSet = {};
+    updateCompareBar();
+    document.getElementById('compare-panel').classList.add('hidden');
+    if (selectedCountry) selectCountry(selectedCountry);
+  });
+
+  // FAQ toggles
+  document.querySelectorAll('.faq-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = btn.closest('.faq-item');
+      var content = item.querySelector('.faq-content');
+      var icon = item.querySelector('.faq-icon');
+      var isOpen = !content.classList.contains('hidden');
+      content.classList.toggle('hidden', isOpen);
+      icon.style.transform = isOpen ? '' : 'rotate(180deg)';
+      btn.setAttribute('aria-expanded', !isOpen);
+    });
+  });
+
+  // Copy link
+  document.getElementById('copy-link-btn').addEventListener('click', function() {
+    navigator.clipboard.writeText(window.location.href).then(function() {
+      var btn = document.getElementById('copy-link-btn');
+      btn.innerHTML = '<i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>';
+      if (window.lucide) lucide.createIcons();
+      setTimeout(function() {
+        btn.innerHTML = '<i data-lucide="link" class="w-4 h-4 text-gray-600 dark:text-gray-400"></i>';
+        if (window.lucide) lucide.createIcons();
+      }, 2000);
+    });
+  });
+
+  // URL hash support for direct linking
+  if (window.location.hash) {
+    var hashId = window.location.hash.substring(1);
+    var match = countries.find(function(c) { return c.id === hashId; });
+    if (match) setTimeout(function() { selectCountry(hashId); }, 100);
+  }
+})();
+</script>
+{% endblock %}

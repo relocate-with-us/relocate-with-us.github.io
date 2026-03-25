@@ -1,0 +1,696 @@
+---
+layout: layouts/base.njk
+title: "Healthcare Systems in Europe Compared | Guide for Expats"
+description: "Compare healthcare systems across 10 European countries. Understand insurance requirements, costs, quality ratings, and what's covered for tech workers relocating abroad."
+---
+
+{# Structured Data #}
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Healthcare Systems Comparison Guide for Expats",
+  "url": "{{ site.url }}/tools/healthcare-guide/",
+  "description": "{{ description }}",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "publisher": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need health insurance as a tech worker relocating to Europe?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, nearly every European country requires residents to have health insurance. In most EU countries, employed tech workers are automatically enrolled in the public system through payroll deductions. In some countries like Germany and the Netherlands, registration with a specific insurer is mandatory within your first few months. Switzerland requires you to purchase private basic insurance independently within 3 months of arrival." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which European country has the best healthcare for expats?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The Netherlands, Denmark, and France consistently rank among the best for expat healthcare. The Netherlands offers an efficient, English-friendly system with short wait times. Denmark provides completely tax-funded healthcare with no out-of-pocket GP visits. France is rated #1 by the WHO for overall system quality, with excellent specialist access and generous reimbursement rates." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does health insurance cost for expats in Europe?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Costs vary significantly by country. In tax-funded systems like the UK, Denmark, and Sweden, healthcare is essentially free at the point of use (funded through taxes). In Germany, public insurance costs around 14.6% of gross salary (split with employer). In the Netherlands, basic insurance runs €120-150/month. Switzerland is the most expensive at €300-500/month for mandatory private insurance." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use my home country's health insurance in Europe?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Generally no — most countries require you to enroll in their local system once you become a resident and start working. Travel insurance or home-country insurance may cover you temporarily during your first weeks, but it's not a long-term solution. EU citizens can use the European Health Insurance Card (EHIC) for temporary stays, but not as a substitute for local insurance once residing in a new country." }
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block head %}
+<style>
+  .rating-bar { transition: width 0.5s ease-out; }
+  .country-toggle { transition: all 0.15s ease; }
+  .country-toggle.active { box-shadow: 0 0 0 2px var(--brand-color, #6366f1); }
+  .detail-card { animation: fadeInUp 0.3s ease-out; }
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .sort-active { color: #6366f1; }
+  .dark .sort-active { color: #818cf8; }
+  .rating-star { color: #f59e0b; }
+  .rating-empty { color: #d1d5db; }
+  .dark .rating-empty { color: #4b5563; }
+</style>
+{% endblock %}
+
+{# Hero #}
+<section class="relative overflow-hidden bg-gradient-to-br from-brand-50 via-white to-indigo-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 py-16 md:py-20">
+  <div class="max-w-4xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400">Home</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <a href="/tools/" class="hover:text-brand-600 dark:hover:text-brand-400">Tools</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-900 dark:text-white">Healthcare Guide</span>
+    </nav>
+
+    <div class="text-center">
+      <div class="w-16 h-16 bg-rose-100 dark:bg-rose-900/30 rounded-2xl flex items-center justify-center mx-auto mb-6">
+        <i data-lucide="heart-pulse" class="w-8 h-8 text-rose-600 dark:text-rose-400"></i>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 leading-tight">
+        Healthcare Systems <span class="bg-yellow-200 dark:bg-yellow-500/20 dark:text-yellow-300 px-2 inline-block -skew-x-1">Compared</span>
+      </h1>
+      <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        Compare healthcare systems across 10 European countries. Understand insurance, costs, and coverage before you relocate.
+      </p>
+    </div>
+  </div>
+</section>
+
+{# Summary Cards #}
+<section class="py-12">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4" id="summary-cards">
+      <div class="card p-6 text-center">
+        <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl flex items-center justify-center mx-auto mb-3">
+          <i data-lucide="shield-check" class="w-5 h-5 text-emerald-600 dark:text-emerald-400"></i>
+        </div>
+        <p class="text-3xl font-extrabold text-gray-900 dark:text-white" id="universal-count">—</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Countries with universal healthcare</p>
+      </div>
+      <div class="card p-6 text-center">
+        <div class="w-10 h-10 bg-amber-100 dark:bg-amber-900/30 rounded-xl flex items-center justify-center mx-auto mb-3">
+          <i data-lucide="star" class="w-5 h-5 text-amber-600 dark:text-amber-400"></i>
+        </div>
+        <p class="text-3xl font-extrabold text-gray-900 dark:text-white" id="avg-quality">—</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Average quality score (out of 10)</p>
+      </div>
+      <div class="card p-6 text-center">
+        <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mx-auto mb-3">
+          <i data-lucide="globe" class="w-5 h-5 text-blue-600 dark:text-blue-400"></i>
+        </div>
+        <p class="text-3xl font-extrabold text-gray-900 dark:text-white">10</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Countries covered</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# Country Toggles #}
+<section class="py-8">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="card p-6 md:p-8">
+      <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Select Countries to Compare</h2>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Toggle countries on or off. Click a country name below the table to see full details.</p>
+
+      <div class="flex flex-wrap gap-2 mb-6" id="country-toggles"></div>
+
+      <div class="flex items-center gap-3 mb-6">
+        <button id="select-all-btn" class="btn-secondary text-xs">Select All</button>
+        <button id="clear-all-btn" class="btn-secondary text-xs">Clear All</button>
+      </div>
+
+      {# Comparison Table #}
+      <div class="overflow-x-auto -mx-6 md:-mx-8 px-6 md:px-8">
+        <table class="w-full text-sm" id="comparison-table">
+          <thead>
+            <tr class="border-b border-gray-200 dark:border-gray-700" id="table-header"></tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# Country Detail Cards #}
+<section class="py-12 bg-gray-50 dark:bg-gray-900/50">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="section-heading text-center mb-4">Country Details</h2>
+    <p class="text-center text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
+      Click on a country name in the table above, or select one below to see full healthcare details.
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-2 mb-8" id="detail-country-btns"></div>
+
+    <div id="detail-panel" class="hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6" id="detail-grid"></div>
+    </div>
+  </div>
+</section>
+
+{# FAQ #}
+<section class="py-16 bg-white dark:bg-gray-950">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="section-heading text-center mb-10">Frequently Asked Questions</h2>
+    <div class="space-y-4" id="faq-list">
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Do I need health insurance as a tech worker relocating to Europe?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>Yes, nearly every European country requires residents to have health insurance. In most EU countries, employed tech workers are automatically enrolled in the public system through payroll deductions. In some countries like Germany and the Netherlands, registration with a specific insurer is mandatory within your first few months. Switzerland requires you to purchase private basic insurance independently within 3 months of arrival.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Which European country has the best healthcare for expats?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>The Netherlands, Denmark, and France consistently rank among the best for expat healthcare. The Netherlands offers an efficient, English-friendly system with short wait times. Denmark provides completely tax-funded healthcare with no out-of-pocket GP visits. France is rated #1 by the WHO for overall system quality. See our <a href="/resources/country-guides/netherlands/">Netherlands guide</a> for more details.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">How much does health insurance cost for expats in Europe?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>Costs vary significantly by country. In tax-funded systems like the UK, Denmark, and Sweden, healthcare is essentially free at the point of use (funded through taxes). In Germany, public insurance costs around 14.6% of gross salary (split with employer). In the Netherlands, basic insurance runs &euro;120-150/month. Switzerland is the most expensive at &euro;300-500/month for mandatory private insurance. Use our <a href="/tools/salary-calculator/">salary calculator</a> to factor in these costs.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card overflow-hidden faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+          <span class="font-semibold text-gray-900 dark:text-white pr-4">Can I use my home country's health insurance in Europe?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 shrink-0 faq-icon transition-transform duration-200"></i>
+        </button>
+        <div class="faq-content hidden px-6 pb-6">
+          <div class="prose-custom">
+            <p>Generally no — most countries require you to enroll in their local system once you become a resident and start working. Travel insurance or home-country insurance may cover you temporarily during your first weeks, but it's not a long-term solution. EU citizens can use the European Health Insurance Card (EHIC) for temporary stays, but not as a substitute for local insurance once residing in a new country.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{# Share #}
+<section class="py-12">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h2 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Share this tool</h2>
+    <div class="flex items-center justify-center gap-4">
+      <a href="https://twitter.com/intent/tweet?text=Compare%20healthcare%20systems%20across%2010%20European%20countries%20-%20essential%20guide%20for%20tech%20workers%20relocating%20abroad&url={{ site.url }}/tools/healthcare-guide/" target="_blank" rel="noopener" class="btn-secondary text-sm">
+        <i data-lucide="twitter" class="w-4 h-4 mr-2"></i>Share on X
+      </a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}/tools/healthcare-guide/" target="_blank" rel="noopener" class="btn-secondary text-sm">
+        <i data-lucide="linkedin" class="w-4 h-4 mr-2"></i>Share on LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+{% block scripts %}
+<script>
+(function() {
+  var countries = [
+    {
+      id: 'germany', name: 'Germany', emoji: '🇩🇪',
+      systemType: 'Statutory (public) + Private',
+      insuranceRequired: 'Yes — mandatory for all residents',
+      monthlyCost: '€350–450 (employee share)',
+      qualityRating: 8.5,
+      whoRank: 25,
+      gpWait: '1–3 days',
+      specialistWait: '3–6 weeks',
+      emergencyQuality: 'Excellent',
+      dentalCoverage: 'Partial (basic covered, crowns/implants extra)',
+      mentalHealth: 'Covered (referral often needed)',
+      prescriptionCosts: '€5–10 co-pay per item',
+      expatFriendly: 7.5,
+      howItWorks: 'Germany uses a dual system: public statutory insurance (Gesetzliche Krankenversicherung/GKV) and private insurance (PKV). Employees earning under €69,300/year must use public insurance. Contributions are ~14.6% of gross salary, split 50/50 with your employer. Most tech workers start on public and can switch to private if they earn above the threshold.',
+      covered: ['GP and specialist visits', 'Hospital stays', 'Prescription medications (with co-pay)', 'Basic dental care', 'Mental health therapy', 'Maternity and pediatric care', 'Preventive checkups', 'Sick leave pay (up to 6 weeks full pay from employer)'],
+      notCovered: ['Vision (glasses/contacts)', 'Advanced dental (implants, cosmetic)', 'Alternative medicine (mostly)', 'Single/premium hospital rooms (without supplementary insurance)', 'Some vaccinations for travel'],
+      costRange: '€350–450/month (employee share of public) or €250–700/month (private, varies by age/health)',
+      tips: ['Register with a Krankenkasse (public insurer) like TK, AOK, or Barmer within 2 weeks of starting work.', 'Your employer handles payroll deductions automatically.', 'Get supplementary dental insurance (Zahnzusatzversicherung) — it is affordable and very worthwhile.', 'For private insurance, compare carefully: switching back to public is difficult after age 55.'],
+      contacts: ['Federal Ministry of Health: bundesgesundheitsministerium.de', 'TK (Techniker Krankenkasse): tk.de/en', 'AOK: aok.de']
+    },
+    {
+      id: 'netherlands', name: 'Netherlands', emoji: '🇳🇱',
+      systemType: 'Mandatory private basic + supplementary',
+      insuranceRequired: 'Yes — must purchase within 4 months',
+      monthlyCost: '€120–160',
+      qualityRating: 9.0,
+      whoRank: 17,
+      gpWait: 'Same day – 2 days',
+      specialistWait: '2–6 weeks',
+      emergencyQuality: 'Excellent',
+      dentalCoverage: 'Not included (supplementary needed)',
+      mentalHealth: 'Covered (GP referral required)',
+      prescriptionCosts: 'Covered after €385 deductible',
+      expatFriendly: 9.0,
+      howItWorks: 'The Netherlands has a unique system where everyone must purchase basic health insurance (basisverzekering) from a private insurer. The government regulates what basic insurance must cover, so all plans offer the same core package. You pay a monthly premium plus an annual deductible (eigen risico) of €385. Employers pay an income-dependent contribution through payroll. Most people also buy supplementary insurance for dental and physiotherapy.',
+      covered: ['GP visits (no deductible applies)', 'Hospital care and surgery', 'Specialist consultations', 'Prescription medications', 'Mental healthcare (up to sessions per year)', 'Maternity care', 'Ambulance and emergency', 'Physical therapy (limited sessions)'],
+      notCovered: ['Dental care for adults (need supplementary)', 'Physiotherapy (first sessions — varies by plan)', 'Cosmetic procedures', 'Alternative medicine (most plans)', 'Glasses/contact lenses (some supplementary plans cover)'],
+      costRange: '€120–160/month for basic insurance + €15–60/month supplementary',
+      tips: ['Register with a GP (huisarts) immediately — they are your gatekeeper to all specialist care.', 'Compare plans on independer.nl or zorgwijzer.nl each year during open enrollment (November–January).', 'If you earn under a threshold, you qualify for zorgtoeslag (healthcare allowance) from the government.', 'Many insurers offer English-language support: Zilveren Kruis, CZ, and ONVZ are popular with expats.'],
+      contacts: ['Government health info: government.nl/topics/health-insurance', 'CAK (healthcare authority): hetcak.nl', 'Zorginstituut Nederland: zorginstituutnederland.nl']
+    },
+    {
+      id: 'uk', name: 'United Kingdom', emoji: '🇬🇧',
+      systemType: 'National Health Service (NHS) — tax-funded',
+      insuranceRequired: 'No — funded through taxes/Immigration Health Surcharge',
+      monthlyCost: '€0 (tax-funded) + IHS visa fee',
+      qualityRating: 7.5,
+      whoRank: 18,
+      gpWait: '1–2 weeks',
+      specialistWait: '4–18 weeks',
+      emergencyQuality: 'Good',
+      dentalCoverage: 'Partial (NHS dental, with co-pays)',
+      mentalHealth: 'Covered (long wait times)',
+      prescriptionCosts: '£9.90 per item (free in Scotland/Wales)',
+      expatFriendly: 8.0,
+      howItWorks: 'The UK runs the National Health Service (NHS), a fully tax-funded system providing healthcare free at the point of use. As a visa holder, you pay the Immigration Health Surcharge (IHS) of £1,035/year as part of your visa application, which gives you full NHS access. Once in the UK, you register with a local GP surgery and access all services through them. Many tech companies also offer private health insurance as a benefit.',
+      covered: ['GP consultations', 'Hospital treatment and surgery', 'A&E (emergency) care', 'Maternity services', 'Mental health services', 'Prescriptions (with co-pay in England)', 'Some dental treatments (banded charges)'],
+      notCovered: ['Most dental care beyond basics (private recommended)', 'Optical care (eye tests free for some groups)', 'Cosmetic procedures', 'Some fertility treatments vary by region', 'Private rooms in hospital'],
+      costRange: '£0/month (funded via taxes and IHS visa surcharge of £1,035/year)',
+      tips: ['Register with a GP immediately — you need this for all non-emergency care.', 'Ask your employer about private health insurance benefits — most UK tech companies offer Bupa or Vitality.', 'Use NHS 111 for non-emergency medical advice (phone or online).', 'Prescriptions are free in Scotland, Wales, and Northern Ireland.'],
+      contacts: ['NHS: nhs.uk', 'Find a GP: nhs.uk/service-search/find-a-gp', 'NHS 111 (non-emergency): 111']
+    },
+    {
+      id: 'spain', name: 'Spain', emoji: '🇪🇸',
+      systemType: 'Universal public (SNS) + private options',
+      insuranceRequired: 'Yes — via employment or private for visa',
+      monthlyCost: '€0 (public) or €50–150 (private)',
+      qualityRating: 8.0,
+      whoRank: 7,
+      gpWait: '1–5 days',
+      specialistWait: '4–12 weeks',
+      emergencyQuality: 'Very good',
+      dentalCoverage: 'Very limited (extractions only)',
+      mentalHealth: 'Covered (limited sessions)',
+      prescriptionCosts: '40% co-pay (10% for low income)',
+      expatFriendly: 7.0,
+      howItWorks: 'Spain has a universal public healthcare system (Sistema Nacional de Salud) funded through taxes and social security contributions. Once you are employed and paying into social security, you and your dependents get a health card (tarjeta sanitaria). The system is managed regionally, so quality can vary between communities. Many expats also take out private insurance (Sanitas, Adeslas, Cigna) for faster access and English-speaking doctors.',
+      covered: ['GP and specialist visits', 'Emergency care', 'Hospital stays and surgery', 'Prescriptions (with co-pay)', 'Maternity care', 'Pediatric care', 'Basic mental health', 'Rehabilitation'],
+      notCovered: ['Dental care (only extractions in emergencies)', 'Optical care', 'Cosmetic procedures', 'Many mental health therapies (limited public sessions)', 'Podiatry', 'Advanced physiotherapy sessions'],
+      costRange: '€0/month (public, covered by social security) or €50–150/month for comprehensive private insurance',
+      tips: ['Get your tarjeta sanitaria from your local health center (centro de salud) once you have your social security number.', 'Private insurance is very affordable in Spain — Sanitas and Adeslas are popular and offer English-speaking doctors.', 'Public specialist wait times can be long; private insurance significantly speeds this up.', 'If you work remotely or are self-employed, you may need private insurance for your visa.'],
+      contacts: ['Ministry of Health: sanidad.gob.es', 'Social Security: seg-social.es', 'Sanitas (private): sanitas.es']
+    },
+    {
+      id: 'ireland', name: 'Ireland', emoji: '🇮🇪',
+      systemType: 'Two-tier public/private (HSE)',
+      insuranceRequired: 'Not mandatory but strongly recommended',
+      monthlyCost: '€50–70 (public GP) or €100–200 (private)',
+      qualityRating: 7.5,
+      whoRank: 19,
+      gpWait: '1–3 days',
+      specialistWait: '6–18 months (public)',
+      emergencyQuality: 'Good',
+      dentalCoverage: 'Limited (PRSI-based entitlements)',
+      mentalHealth: 'Covered (significant wait times)',
+      prescriptionCosts: '€80/month cap (Drug Payment Scheme)',
+      expatFriendly: 7.5,
+      howItWorks: 'Ireland has a two-tier system with public healthcare provided by the Health Service Executive (HSE) and a significant private sector. Everyone is entitled to public hospital care, but you pay charges unless you have a Medical Card (income-tested). GP visits are not free for most workers (€50-70 per visit). Over 46% of the population has private health insurance (VHI, Laya, Irish Life Health) for faster hospital access and private rooms.',
+      covered: ['Public hospital care (with charges)', 'Emergency department (€100 charge without referral)', 'Maternity care (public scheme)', 'Child health services', 'Mental health services (public, with waits)', 'Prescriptions (Drug Payment Scheme caps costs)'],
+      notCovered: ['GP visits (unless Medical Card holder)', 'Dental care (limited PRSI entitlements)', 'Optical care (limited)', 'Private hospital rooms (without insurance)', 'Many therapies have long public waits', 'Routine adult vaccinations'],
+      costRange: '€50–70 per GP visit (public) or €100–200/month for private health insurance',
+      tips: ['Most tech companies in Ireland offer private health insurance — Laya, VHI, or Irish Life Health.', 'Register for a PPS number (social security) immediately; it is needed for healthcare entitlements.', 'GP visits cost €50-70 each without a Medical Card, so private insurance or a GP visit card saves money.', 'Ask your employer about their health insurance benefit — it is a very common perk in Irish tech.'],
+      contacts: ['HSE: hse.ie', 'Health Insurance Authority: hia.ie', 'Citizens Information: citizensinformation.ie/en/health/']
+    },
+    {
+      id: 'sweden', name: 'Sweden', emoji: '🇸🇪',
+      systemType: 'Universal tax-funded (regions)',
+      insuranceRequired: 'No — covered through tax/residency',
+      monthlyCost: '€0 (tax-funded, small co-pays)',
+      qualityRating: 8.5,
+      whoRank: 23,
+      gpWait: '1–7 days',
+      specialistWait: '4–12 weeks (90-day guarantee)',
+      emergencyQuality: 'Excellent',
+      dentalCoverage: 'Subsidized (dental care allowance)',
+      mentalHealth: 'Covered (vårdcentral referral)',
+      prescriptionCosts: 'Subsidized (max ~€240/year cap)',
+      expatFriendly: 8.0,
+      howItWorks: 'Sweden provides universal healthcare funded through regional taxes. Once you have a personnummer (personal identity number) and are registered with Försäkringskassan (Social Insurance Agency), you have full access. Care is provided by regional health authorities (regioner). You pay small patient fees: ~200 SEK (€18) for a GP visit, with an annual cap of 1,200 SEK (€110). Prescriptions are subsidized with an annual cap of ~2,600 SEK (€240).',
+      covered: ['GP and specialist visits (small co-pay)', 'Hospital care', 'Emergency care', 'Maternity and child health (free)', 'Mental health services', 'Prescription subsidies', 'Dental (subsidized via tandvårdsbidrag)', 'Rehabilitation'],
+      notCovered: ['Full dental costs (only partially subsidized)', 'Vision/glasses', 'Some elective procedures', 'Complementary/alternative medicine', 'Cosmetic treatments'],
+      costRange: '€0/month (tax-funded) + ~€18 per GP visit (capped at ~€110/year)',
+      tips: ['Getting a personnummer is critical — apply at Skatteverket (Tax Agency) as soon as you arrive.', 'Register at your local vårdcentral (health center) for a primary care doctor.', 'Sweden has a "care guarantee" (vårdgaranti): GP within 7 days, specialist within 90 days.', 'Use 1177.se for health information and to book appointments online (available in English).'],
+      contacts: ['1177 Vårdguiden: 1177.se', 'Försäkringskassan: forsakringskassan.se', 'Skatteverket: skatteverket.se']
+    },
+    {
+      id: 'switzerland', name: 'Switzerland', emoji: '🇨🇭',
+      systemType: 'Mandatory private insurance',
+      insuranceRequired: 'Yes — must purchase within 3 months',
+      monthlyCost: '€300–500',
+      qualityRating: 9.0,
+      whoRank: 20,
+      gpWait: 'Same day – 3 days',
+      specialistWait: '1–4 weeks',
+      emergencyQuality: 'Excellent',
+      dentalCoverage: 'Not covered (separate insurance needed)',
+      mentalHealth: 'Covered (with referral)',
+      prescriptionCosts: '10% co-pay (after deductible)',
+      expatFriendly: 8.5,
+      howItWorks: 'Switzerland requires all residents to purchase basic health insurance (Grundversicherung/LAMal) from a private insurer within 3 months of arrival. Unlike most European countries, premiums are not income-based — everyone in the same region and age group pays similar rates. You choose a deductible (franchise) of CHF 300–2,500/year; higher deductible means lower premium. Employers do not contribute to premiums. Many people add supplementary insurance for dental, alternative medicine, or private hospital rooms.',
+      covered: ['GP and specialist consultations', 'Hospital care (general ward)', 'Emergency care', 'Maternity care (no deductible/co-pay)', 'Prescription medications', 'Mental health therapy', 'Physiotherapy (with prescription)', 'Preventive care and vaccinations'],
+      notCovered: ['Dental care (not covered at all)', 'Glasses/contact lenses (limited)', 'Alternative medicine (basic plan excludes most)', 'Private/semi-private hospital rooms', 'Cosmetic procedures', 'Gym memberships or wellness'],
+      costRange: '€300–500/month depending on canton, age, and deductible choice',
+      tips: ['Compare insurance on priminfo.admin.ch or comparis.ch — prices vary hugely by canton.', 'Choose a higher deductible (CHF 2,500) if you are young and healthy to save on premiums.', 'Premiums are NOT tax-deductible but low-income residents can apply for premium subsidies (Prämienverbilligung).', 'Get separate dental insurance immediately — Swiss dental care is extremely expensive without it.'],
+      contacts: ['Federal Office of Public Health: bag.admin.ch', 'Comparis (comparison): comparis.ch', 'Priminfo (official comparison): priminfo.admin.ch']
+    },
+    {
+      id: 'portugal', name: 'Portugal', emoji: '🇵🇹',
+      systemType: 'Universal public (SNS) + private',
+      insuranceRequired: 'No — SNS access with residency',
+      monthlyCost: '€0 (public) or €30–100 (private)',
+      qualityRating: 7.5,
+      whoRank: 12,
+      gpWait: '1–14 days',
+      specialistWait: '4–16 weeks',
+      emergencyQuality: 'Good',
+      dentalCoverage: 'Very limited (cheque-dentista program)',
+      mentalHealth: 'Covered (limited availability)',
+      prescriptionCosts: 'Subsidized (37–90% covered)',
+      expatFriendly: 7.0,
+      howItWorks: 'Portugal has a universal National Health Service (Serviço Nacional de Saúde/SNS) available to all residents. Once you register at your local health center (centro de saúde) with your NIF (tax number) and proof of address, you get an SNS user number. Public healthcare is free or low-cost, with small fees (taxas moderadoras) for some services. Many expats in Lisbon and Porto also get private insurance for faster access.',
+      covered: ['GP visits (small fee or free)', 'Emergency care', 'Hospital care and surgery', 'Maternity care', 'Vaccinations', 'Prescription subsidies', 'Mental health (public)', 'Pediatric care'],
+      notCovered: ['Most dental care (limited cheque-dentista)', 'Vision/glasses', 'Elective cosmetic procedures', 'Some specialized therapies', 'Private hospital rooms', 'Alternative medicine'],
+      costRange: '€0/month (public SNS) or €30–100/month for private insurance (Médis, Multicare, AdvanceCare)',
+      tips: ['Register at your local centro de saúde for an assigned family doctor (médico de família) — waits for assignment can be long.', 'Private insurance is very affordable in Portugal and gives much faster access to specialists.', 'SNS user fees (taxas moderadoras) were largely eliminated in 2024 — most public care is now free.', 'The SNS 24 hotline (808 24 24 24) provides health advice and can triage your needs.'],
+      contacts: ['SNS Portal: sns.gov.pt', 'SNS 24 Hotline: 808 24 24 24', 'IEFP (for NIF/registration): iefp.pt']
+    },
+    {
+      id: 'denmark', name: 'Denmark', emoji: '🇩🇰',
+      systemType: 'Universal tax-funded',
+      insuranceRequired: 'No — covered through taxes/CPR',
+      monthlyCost: '€0 (tax-funded)',
+      qualityRating: 9.0,
+      whoRank: 34,
+      gpWait: 'Same day – 2 days',
+      specialistWait: '2–8 weeks (30-day guarantee)',
+      emergencyQuality: 'Excellent',
+      dentalCoverage: 'Partial subsidy (adults pay ~60%)',
+      mentalHealth: 'Covered (referral from GP)',
+      prescriptionCosts: 'Subsidized (tiered reimbursement)',
+      expatFriendly: 9.0,
+      howItWorks: 'Denmark provides universal, tax-funded healthcare through five administrative regions. Once you get a CPR number (personal registration) and a yellow health card (sundhedskort), you have full access to the system. You choose a GP who becomes your primary doctor for all non-emergency care. GP visits, hospital stays, and most treatments are completely free. Denmark has an extended free choice model: if wait times exceed 30 days, you can choose treatment at a private hospital at public expense.',
+      covered: ['GP visits (completely free)', 'Hospital care and surgery', 'Emergency care', 'Specialist consultations (with referral)', 'Maternity care', 'Mental health care', 'Rehabilitation', 'Home nursing', 'Partial dental subsidy'],
+      notCovered: ['Most adult dental costs (subsidy covers ~40%)', 'Glasses and contact lenses', 'Cosmetic surgery', 'Some physiotherapy (limited free sessions)', 'Alternative/complementary medicine', 'Most vaccinations for adults (some exceptions)'],
+      costRange: '€0/month — fully tax-funded. Budget ~€50–100/month for dental and supplementary private (Danmark/sygeforsikring)',
+      tips: ['Getting your CPR number and yellow health card is your first priority — visit your local International Citizen Service.', 'Choose your GP carefully — you can switch, but only twice per year without special reason.', 'Use sundhed.dk for booking appointments and accessing your health records online.', 'Consider "danmark" (sygeforsikring) supplementary insurance for dental and medicine subsidies — very affordable.'],
+      contacts: ['Sundhed.dk (health portal): sundhed.dk', 'International Citizen Service: icitizen.dk', 'Borger.dk: borger.dk/sundhed']
+    },
+    {
+      id: 'france', name: 'France', emoji: '🇫🇷',
+      systemType: 'Universal public (Sécurité Sociale) + mutuelle',
+      insuranceRequired: 'Yes — Sécurité Sociale + complementary (mutuelle)',
+      monthlyCost: '€0 (public) + €30–80 (mutuelle)',
+      qualityRating: 9.5,
+      whoRank: 1,
+      gpWait: '1–5 days',
+      specialistWait: '2–8 weeks',
+      emergencyQuality: 'Excellent',
+      dentalCoverage: 'Good (100% Santé for basic prosthetics)',
+      mentalHealth: 'Covered (MonParcoursPsy program)',
+      prescriptionCosts: '15–100% reimbursed depending on medication',
+      expatFriendly: 7.5,
+      howItWorks: 'France has the WHO\'s #1 ranked healthcare system. It operates on a reimbursement model through Sécurité Sociale (public health insurance). When you visit a doctor, you typically pay upfront and get reimbursed 70% by the state. A complementary insurance (mutuelle) — often provided by employers — covers the remaining 30% plus extras. Since 2016, employers must provide a mutuelle to all employees. The system offers excellent quality, freedom of choice, and relatively short wait times.',
+      covered: ['GP and specialist visits (70% reimbursed)', 'Hospital care (80% reimbursed, 100% after 30 days)', 'Prescription medications (15–100% reimbursed)', 'Maternity care (100% from 6th month)', 'Mental health (MonParcoursPsy: 8 free sessions/year)', 'Dental (100% Santé for essential prosthetics)', 'Vision (100% Santé for glasses every 2 years)', 'Physiotherapy (with prescription)'],
+      notCovered: ['30% co-payment without mutuelle', 'Premium dental/vision beyond 100% Santé', 'Many alternative therapies', 'Cosmetic procedures', 'Some comfort items and non-essential medications'],
+      costRange: '€0/month for Sécurité Sociale (payroll deduction) + €30–80/month for mutuelle (often employer-paid)',
+      tips: ['Register with CPAM (Caisse Primaire d\'Assurance Maladie) to get your carte vitale — your health insurance card.', 'Your employer is legally required to provide a mutuelle — check what it covers on day one.', 'Choose a médecin traitant (primary doctor) and declare them to maximize reimbursement rates.', 'Use Doctolib.fr to find English-speaking doctors and book appointments easily — it is extremely popular.'],
+      contacts: ['Ameli.fr (health insurance portal): ameli.fr', 'CPAM: ameli.fr/assure', 'Doctolib (appointments): doctolib.fr']
+    }
+  ];
+
+  var tableRows = [
+    { key: 'systemType', label: 'System Type', icon: 'building-2' },
+    { key: 'insuranceRequired', label: 'Insurance Required?', icon: 'shield-check' },
+    { key: 'monthlyCost', label: 'Monthly Cost', icon: 'wallet' },
+    { key: 'qualityRating', label: 'Quality Rating', icon: 'star', isRating: true },
+    { key: 'whoRank', label: 'WHO Rank', icon: 'trophy', isNumeric: true, sortAsc: true },
+    { key: 'gpWait', label: 'GP Wait Time', icon: 'clock' },
+    { key: 'specialistWait', label: 'Specialist Wait Time', icon: 'hourglass' },
+    { key: 'emergencyQuality', label: 'Emergency Quality', icon: 'siren' },
+    { key: 'dentalCoverage', label: 'Dental Coverage', icon: 'smile' },
+    { key: 'mentalHealth', label: 'Mental Health Coverage', icon: 'brain' },
+    { key: 'prescriptionCosts', label: 'Prescription Costs', icon: 'pill' },
+    { key: 'expatFriendly', label: 'Expat-Friendly Rating', icon: 'globe', isRating: true }
+  ];
+
+  var activeCountries = {};
+  countries.forEach(function(c) { activeCountries[c.id] = true; });
+
+  function renderStars(val, max) {
+    max = max || 10;
+    var full = Math.floor(val);
+    var half = val % 1 >= 0.5;
+    var stars = '';
+    var scale5 = val / 2;
+    var fullStars = Math.floor(scale5);
+    var halfStar = scale5 % 1 >= 0.25;
+    for (var i = 0; i < 5; i++) {
+      if (i < fullStars) stars += '<i data-lucide="star" class="w-3.5 h-3.5 inline rating-star fill-current"></i>';
+      else if (i === fullStars && halfStar) stars += '<i data-lucide="star-half" class="w-3.5 h-3.5 inline rating-star fill-current"></i>';
+      else stars += '<i data-lucide="star" class="w-3.5 h-3.5 inline rating-empty"></i>';
+    }
+    return '<span class="inline-flex items-center gap-0.5">' + stars + ' <span class="ml-1 text-gray-600 dark:text-gray-400">' + val + '</span></span>';
+  }
+
+  function getActive() {
+    return countries.filter(function(c) { return activeCountries[c.id]; });
+  }
+
+  function renderToggles() {
+    var container = document.getElementById('country-toggles');
+    container.innerHTML = '';
+    countries.forEach(function(c) {
+      var btn = document.createElement('button');
+      btn.className = 'country-toggle px-3 py-2 rounded-lg text-sm font-medium border transition-colors ' +
+        (activeCountries[c.id]
+          ? 'bg-brand-50 dark:bg-brand-900/30 border-brand-300 dark:border-brand-700 text-brand-700 dark:text-brand-300 active'
+          : 'bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400');
+      btn.textContent = c.emoji + ' ' + c.name;
+      btn.addEventListener('click', function() {
+        activeCountries[c.id] = !activeCountries[c.id];
+        renderToggles();
+        renderTable();
+      });
+      container.appendChild(btn);
+    });
+  }
+
+  var currentSort = { key: null, asc: true };
+
+  function renderTable() {
+    var active = getActive();
+    if (active.length === 0) {
+      document.getElementById('table-header').innerHTML = '<th class="text-left py-3 px-4 text-gray-500 dark:text-gray-400" colspan="2">Select at least one country to compare</th>';
+      document.getElementById('table-body').innerHTML = '';
+      return;
+    }
+
+    var headerHtml = '<th class="text-left py-3 px-4 font-semibold text-gray-700 dark:text-gray-300 sticky left-0 bg-white dark:bg-gray-800 z-10 min-w-[180px]">Metric</th>';
+    active.forEach(function(c) {
+      headerHtml += '<th class="text-center py-3 px-4 font-semibold text-gray-700 dark:text-gray-300 min-w-[140px] cursor-pointer hover:text-brand-600 dark:hover:text-brand-400" data-country-detail="' + c.id + '">' +
+        '<span class="block text-lg mb-0.5">' + c.emoji + '</span>' + c.name + '</th>';
+    });
+    document.getElementById('table-header').innerHTML = headerHtml;
+
+    var sortedRows = tableRows.slice();
+    if (currentSort.key) {
+      sortedRows.sort(function(a, b) { return 0; });
+    }
+
+    var bodyHtml = '';
+    sortedRows.forEach(function(row, idx) {
+      var bgClass = idx % 2 === 0 ? 'bg-gray-50/50 dark:bg-gray-800/30' : '';
+      bodyHtml += '<tr class="border-b border-gray-100 dark:border-gray-800 ' + bgClass + ' hover:bg-gray-100/50 dark:hover:bg-gray-800/50">';
+      bodyHtml += '<td class="py-3 px-4 font-medium text-gray-700 dark:text-gray-300 sticky left-0 bg-inherit z-10 whitespace-nowrap">' +
+        '<span class="inline-flex items-center gap-2"><i data-lucide="' + row.icon + '" class="w-4 h-4 text-gray-400 shrink-0"></i>' + row.label + '</span></td>';
+
+      active.forEach(function(c) {
+        var val = c[row.key];
+        var cellContent;
+        if (row.isRating) {
+          cellContent = renderStars(val);
+        } else if (row.key === 'whoRank') {
+          cellContent = '<span class="badge">#' + val + '</span>';
+        } else if (row.key === 'emergencyQuality') {
+          var eqColor = val === 'Excellent' ? 'text-emerald-600 dark:text-emerald-400' : 'text-blue-600 dark:text-blue-400';
+          cellContent = '<span class="font-medium ' + eqColor + '">' + val + '</span>';
+        } else {
+          cellContent = '<span class="text-gray-900 dark:text-white">' + val + '</span>';
+        }
+        bodyHtml += '<td class="py-3 px-4 text-center text-sm">' + cellContent + '</td>';
+      });
+      bodyHtml += '</tr>';
+    });
+
+    document.getElementById('table-body').innerHTML = bodyHtml;
+
+    document.querySelectorAll('[data-country-detail]').forEach(function(th) {
+      th.addEventListener('click', function() {
+        showDetail(th.getAttribute('data-country-detail'));
+      });
+    });
+
+    if (window.lucide) lucide.createIcons();
+  }
+
+  function renderDetailButtons() {
+    var container = document.getElementById('detail-country-btns');
+    container.innerHTML = '';
+    countries.forEach(function(c) {
+      var btn = document.createElement('button');
+      btn.className = 'btn-secondary text-xs';
+      btn.textContent = c.emoji + ' ' + c.name;
+      btn.addEventListener('click', function() { showDetail(c.id); });
+      container.appendChild(btn);
+    });
+  }
+
+  function showDetail(countryId) {
+    var c = countries.find(function(x) { return x.id === countryId; });
+    if (!c) return;
+
+    var panel = document.getElementById('detail-panel');
+    panel.classList.remove('hidden');
+
+    var coveredHtml = c.covered.map(function(item) {
+      return '<li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 mt-0.5 shrink-0"></i><span>' + item + '</span></li>';
+    }).join('');
+
+    var notCoveredHtml = c.notCovered.map(function(item) {
+      return '<li class="flex items-start gap-2"><i data-lucide="x-circle" class="w-4 h-4 text-red-400 mt-0.5 shrink-0"></i><span>' + item + '</span></li>';
+    }).join('');
+
+    var tipsHtml = c.tips.map(function(tip) {
+      return '<li class="flex items-start gap-2"><i data-lucide="lightbulb" class="w-4 h-4 text-amber-500 mt-0.5 shrink-0"></i><span>' + tip + '</span></li>';
+    }).join('');
+
+    var contactsHtml = c.contacts.map(function(contact) {
+      return '<li class="flex items-start gap-2"><i data-lucide="link" class="w-4 h-4 text-brand-500 mt-0.5 shrink-0"></i><span>' + contact + '</span></li>';
+    }).join('');
+
+    var html = '<div class="lg:col-span-2 detail-card">' +
+      '<div class="card p-6 md:p-8">' +
+        '<div class="flex items-center gap-3 mb-6">' +
+          '<span class="text-4xl">' + c.emoji + '</span>' +
+          '<div>' +
+            '<h3 class="text-2xl font-bold text-gray-900 dark:text-white">' + c.name + '</h3>' +
+            '<p class="text-sm text-gray-500 dark:text-gray-400">' + c.systemType + ' · WHO Rank #' + c.whoRank + '</p>' +
+          '</div>' +
+        '</div>' +
+
+        '<div class="mb-6">' +
+          '<h4 class="font-semibold text-gray-900 dark:text-white mb-2 flex items-center gap-2"><i data-lucide="info" class="w-4 h-4 text-brand-500"></i>How It Works for Expats</h4>' +
+          '<p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">' + c.howItWorks + '</p>' +
+        '</div>' +
+
+        '<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">' +
+          '<div>' +
+            '<h4 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>What\'s Covered</h4>' +
+            '<ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">' + coveredHtml + '</ul>' +
+          '</div>' +
+          '<div>' +
+            '<h4 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="x-circle" class="w-4 h-4 text-red-400"></i>What\'s NOT Covered</h4>' +
+            '<ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">' + notCoveredHtml + '</ul>' +
+          '</div>' +
+        '</div>' +
+
+        '<div class="p-4 bg-brand-50 dark:bg-brand-900/20 rounded-xl mb-6">' +
+          '<h4 class="font-semibold text-gray-900 dark:text-white mb-1 flex items-center gap-2"><i data-lucide="wallet" class="w-4 h-4 text-brand-500"></i>Estimated Monthly Cost</h4>' +
+          '<p class="text-gray-700 dark:text-gray-300 text-sm">' + c.costRange + '</p>' +
+        '</div>' +
+
+        '<div class="grid grid-cols-1 md:grid-cols-2 gap-6">' +
+          '<div>' +
+            '<h4 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="lightbulb" class="w-4 h-4 text-amber-500"></i>Tips for Navigating the System</h4>' +
+            '<ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">' + tipsHtml + '</ul>' +
+          '</div>' +
+          '<div>' +
+            '<h4 class="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-brand-500"></i>Key Contacts & Resources</h4>' +
+            '<ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">' + contactsHtml + '</ul>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
+
+    document.getElementById('detail-grid').innerHTML = html;
+    if (window.lucide) lucide.createIcons();
+
+    panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function updateSummary() {
+    var universalCount = countries.filter(function(c) {
+      return c.monthlyCost.indexOf('€0') === 0 || c.systemType.toLowerCase().indexOf('tax-funded') !== -1 || c.systemType.toLowerCase().indexOf('universal') !== -1 || c.systemType.indexOf('NHS') !== -1;
+    }).length;
+    document.getElementById('universal-count').textContent = universalCount + ' of 10';
+
+    var totalQuality = countries.reduce(function(sum, c) { return sum + c.qualityRating; }, 0);
+    document.getElementById('avg-quality').textContent = (totalQuality / countries.length).toFixed(1) + '/10';
+  }
+
+  document.getElementById('select-all-btn').addEventListener('click', function() {
+    countries.forEach(function(c) { activeCountries[c.id] = true; });
+    renderToggles();
+    renderTable();
+  });
+
+  document.getElementById('clear-all-btn').addEventListener('click', function() {
+    countries.forEach(function(c) { activeCountries[c.id] = false; });
+    renderToggles();
+    renderTable();
+  });
+
+  document.querySelectorAll('.faq-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = btn.closest('.faq-item');
+      var content = item.querySelector('.faq-content');
+      var icon = item.querySelector('.faq-icon');
+      var isOpen = !content.classList.contains('hidden');
+      content.classList.toggle('hidden', isOpen);
+      icon.style.transform = isOpen ? '' : 'rotate(180deg)';
+      btn.setAttribute('aria-expanded', !isOpen);
+    });
+  });
+
+  updateSummary();
+  renderToggles();
+  renderTable();
+  renderDetailButtons();
+})();
+</script>
+{% endblock %}
