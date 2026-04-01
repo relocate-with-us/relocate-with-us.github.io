@@ -1,8 +1,0 @@
-User-agent: *
-Allow: /
-
-Disallow: /index.html
-Disallow: /relocation-jobs/index.html
-Disallow: /relocate-jobs/index.html
-
-Sitemap: https://visajobs.xyz/sitemap.xml

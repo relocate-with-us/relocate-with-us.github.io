@@ -389,6 +389,16 @@ excerpt: "Everything you need to know about finding a tech job in Germany with v
         <li>[3] Cost of living data from <a href="https://www.numbeo.com/cost-of-living/" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline">Numbeo</a>, updated February 2025.</li>
         <li>[4] Tax brackets from <a href="https://www.bundesfinanzministerium.de/en/" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline">Federal Ministry of Finance (BMF)</a>, tax year 2024.</li>
       </ol>
+
+      <hr class="my-10 border-gray-200 dark:border-gray-700">
+      <h2>Related Articles</h2>
+      <div class="grid gap-4 sm:grid-cols-2">
+        <a href="/blog/posts/eu-blue-card-vs-h1b-visa/" class="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-brand-400 dark:hover:border-brand-400 transition-colors"><span class="text-brand-600 dark:text-brand-400 font-medium">EU Blue Card vs H-1B Visa: Which Is Better?</span></a>
+        <a href="/blog/posts/companies-that-sponsor-work-visas-europe/" class="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-brand-400 dark:hover:border-brand-400 transition-colors"><span class="text-brand-600 dark:text-brand-400 font-medium">Companies That Sponsor Work Visas in Europe</span></a>
+        <a href="/blog/posts/resume-tips-for-international-jobs/" class="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-brand-400 dark:hover:border-brand-400 transition-colors"><span class="text-brand-600 dark:text-brand-400 font-medium">Resume Tips for International Job Applications</span></a>
+        <a href="/blog/posts/top-european-tech-hubs/" class="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-brand-400 dark:hover:border-brand-400 transition-colors"><span class="text-brand-600 dark:text-brand-400 font-medium">Top European Tech Hubs for Software Engineers</span></a>
+      </div>
+
     </div>
   </div>
 </article>

@@ -383,6 +383,16 @@ excerpt: "An in-depth look at Europe's top 10 tech cities — with specific job 
         <li id="fn1">[1] Salary data compiled from <a href="https://www.levels.fyi/" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline">Levels.fyi</a>, <a href="https://www.glassdoor.com/Salaries/" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline">Glassdoor Salaries</a>, and <a href="https://germantechjobs.de/salary-guide" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline">GermanTechJobs Salary Guide</a>. Ranges reflect mid-level to senior roles for software engineers and related positions, 2024–2025.</li>
         <li id="fn2">[2] Cost of living data from <a href="https://www.numbeo.com/cost-of-living/" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline">Numbeo Cost of Living Index</a>, updated February 2025. Rental prices are for a 1-bedroom apartment in the city centre.</li>
       </ol>
+
+      <hr class="my-10 border-gray-200 dark:border-gray-700">
+      <h2>Related Articles</h2>
+      <div class="grid gap-4 sm:grid-cols-2">
+        <a href="/blog/posts/relocate-to-spain-software-engineer/" class="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-brand-400 dark:hover:border-brand-400 transition-colors"><span class="text-brand-600 dark:text-brand-400 font-medium">How to Relocate to Spain as a Software Engineer</span></a>
+        <a href="/blog/posts/software-engineer-jobs-france-visa-sponsorship/" class="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-brand-400 dark:hover:border-brand-400 transition-colors"><span class="text-brand-600 dark:text-brand-400 font-medium">Software Engineer Jobs in France with Visa Sponsorship</span></a>
+        <a href="/blog/posts/how-to-get-a-job-in-germany/" class="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-brand-400 dark:hover:border-brand-400 transition-colors"><span class="text-brand-600 dark:text-brand-400 font-medium">How to Get a Software Engineer Job in Germany</span></a>
+        <a href="/blog/posts/software-engineer-jobs-netherlands-visa-sponsorship/" class="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-brand-400 dark:hover:border-brand-400 transition-colors"><span class="text-brand-600 dark:text-brand-400 font-medium">Software Engineer Jobs in the Netherlands</span></a>
+      </div>
+
     </div>
   </div>
 </article>

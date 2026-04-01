@@ -5,12 +5,12 @@ eleventyExcludeFromCollections: true
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {%- for page in collections.all %}
-  {%- if not page.data.eleventyExcludeFromCollections %}
+  {%- if not page.data.eleventyExcludeFromCollections and '/relocation-jobs/' not in page.url and '/relocate-jobs/' not in page.url and '/privacy-policy/' not in page.url and '/terms-of-service/' not in page.url %}
   <url>
     <loc>{{ site.url }}{{ page.url }}</loc>
     <lastmod>{{ page.date | isoDate }}</lastmod>
     <changefreq>{% if page.url == '/' or '/visa-sponsored-jobs/' in page.url %}daily{% elif '/blog/' in page.url %}weekly{% elif '/tools/' in page.url %}weekly{% else %}monthly{% endif %}</changefreq>
-    <priority>{% if page.url == '/' %}1.0{% elif '/visa-sponsored-jobs/' in page.url %}0.9{% elif page.url == '/tools/' %}0.9{% elif '/tools/' in page.url %}0.8{% elif '/blog/' in page.url %}0.7{% else %}0.6{% endif %}</priority>
+    <priority>{% if page.url == '/' %}1.0{% elif '/visa-sponsored-jobs/' in page.url %}0.9{% elif page.url == '/tools/' %}0.9{% elif '/tools/' in page.url %}0.8{% elif '/blog/' in page.url %}0.7{% elif '/jobs-by-country/' in page.url %}0.8{% elif '/jobs-by-role/' in page.url %}0.8{% else %}0.6{% endif %}</priority>
   </url>
   {%- endif %}
   {%- endfor %}

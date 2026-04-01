@@ -20,3 +20,5 @@ twitter-posts-*.md
 .vscode/
 *.swp
 *.swo
+ph-screenshots/
+*.zip

@@ -7,13 +7,10 @@ Allow: /
 
 Sitemap: {{ site.url }}/sitemap.xml
 
-# Allow main content
-Allow: /visa-sponsored-jobs/
-Allow: /relocation-jobs/
-Allow: /blog/
-Allow: /resources/
-Allow: /about/
-Allow: /faq/
+# Block legacy duplicate pages
+Disallow: /index.html
+Disallow: /relocation-jobs/
+Disallow: /relocate-jobs/
 
 # Block development files
 Disallow: /assets/js/

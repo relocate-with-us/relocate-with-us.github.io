@@ -536,6 +536,16 @@ excerpt: "Barcelona is becoming Europe's hottest tech hub. Here's everything you
         <li>[3] Visa information from <a href="https://www.inclusion.gob.es/" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline">Spanish Ministry of Inclusion, Social Security, and Migration</a> and <a href="https://www.exteriores.gob.es/" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline">Spanish Ministry of Foreign Affairs</a>, 2025–2026.</li>
         <li>[4] Barcelona tech ecosystem data from <a href="https://barcelonatech.city/" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline">Barcelona Tech City</a> and <a href="https://dealroom.co/" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline">Dealroom</a>, 2025.</li>
       </ol>
+
+      <hr class="my-10 border-gray-200 dark:border-gray-700">
+      <h2>Related Articles</h2>
+      <div class="grid gap-4 sm:grid-cols-2">
+        <a href="/blog/posts/software-engineer-jobs-france-visa-sponsorship/" class="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-brand-400 dark:hover:border-brand-400 transition-colors"><span class="text-brand-600 dark:text-brand-400 font-medium">Software Engineer Jobs in France with Visa Sponsorship</span></a>
+        <a href="/blog/posts/remote-jobs-europe-visa-sponsorship/" class="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-brand-400 dark:hover:border-brand-400 transition-colors"><span class="text-brand-600 dark:text-brand-400 font-medium">Remote Jobs in Europe with Visa Sponsorship</span></a>
+        <a href="/blog/posts/companies-that-sponsor-work-visas-europe/" class="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-brand-400 dark:hover:border-brand-400 transition-colors"><span class="text-brand-600 dark:text-brand-400 font-medium">Companies That Sponsor Work Visas in Europe</span></a>
+        <a href="/blog/posts/top-european-tech-hubs/" class="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-brand-400 dark:hover:border-brand-400 transition-colors"><span class="text-brand-600 dark:text-brand-400 font-medium">Top European Tech Hubs for Software Engineers</span></a>
+      </div>
+
     </div>
   </div>
 </article>
