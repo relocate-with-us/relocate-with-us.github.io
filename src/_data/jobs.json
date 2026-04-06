@@ -253,28 +253,6 @@
     "description": "https://careers.soundcloud.com/"
   },
   {
-    "company": "Klarna",
-    "position": "Senior Software Engineer, Python - Identification",
-    "location": "Berlin, Germany 🇩🇪",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "March 25, 2026",
-    "logo": "/media/klarna_logo.jpg",
-    "description": "https://www.klarna.com/careers/our-competences/engineering/"
-  },
-  {
-    "company": "Klarna",
-    "position": "Senior Fullstack Engineer, JavaScript",
-    "location": "Stockholm, Sweden 🇸🇪",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "March 25, 2026",
-    "logo": "/media/klarna_logo.jpg",
-    "description": "https://www.klarna.com/careers/our-competences/engineering/"
-  },
-  {
     "company": "Qonto",
     "position": "Senior Ruby Backend Engineer",
     "location": "Barcelona, Spain 🇪🇸",
