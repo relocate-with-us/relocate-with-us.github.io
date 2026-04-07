@@ -1,55 +1,11 @@
 [
   {
-    "company": "Aiven",
-    "position": "Senior Software Engineer",
-    "location": "Helsinki, Finland 🇫🇮",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "April 7, 2026",
-    "logo": "/media/aiven_logo.jpg",
-    "description": "https://aiven.io/careers/job/4715459101"
-  },
-  {
-    "company": "Aiven",
-    "position": "Software Engineer",
-    "location": "Helsinki, Finland 🇫🇮",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "April 7, 2026",
-    "logo": "/media/aiven_logo.jpg",
-    "description": "https://aiven.io/careers/job/4715443101"
-  },
-  {
-    "company": "Aiven",
-    "position": "Senior Backend Engineer",
-    "location": "Helsinki, Finland 🇫🇮",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "April 7, 2026",
-    "logo": "/media/aiven_logo.jpg",
-    "description": "https://aiven.io/careers/job/4695614101"
-  },
-  {
-    "company": "Aiven",
-    "position": "Senior Full Stack Software Engineer",
-    "location": "Helsinki, Finland 🇫🇮",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "April 7, 2026",
-    "logo": "/media/aiven_logo.jpg",
-    "description": "https://aiven.io/careers/job/4785710101"
-  },
-  {
     "company": "Trade Republic",
     "position": "Backend Engineer",
     "location": "Berlin, Germany 🇩🇪",
     "contract": "Full Time",
     "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
+    "visa": "",
     "post_date": "April 7, 2026",
     "logo": "/media/trade_republic_logo.jpg",
     "description": "https://jobs.weekday.works/trade-republic-backend-engineer-%E2%80%93-berlin"
@@ -60,7 +16,7 @@
     "location": "Berlin, Germany 🇩🇪",
     "contract": "Full Time",
     "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
+    "visa": "",
     "post_date": "April 7, 2026",
     "logo": "/media/trade_republic_logo.jpg",
     "description": "https://jobs.weekday.works/trade-republic-data-engineer---berlin"
