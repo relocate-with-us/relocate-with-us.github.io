@@ -1,0 +1,143 @@
+---
+layout: layouts/base.njk
+title: "Relocation Savings Calculator | How Much to Save Before Moving Abroad"
+description: "Calculate how much money to save before relocating for a tech job: monthly runway, one-time moving costs, emergency buffer, and visa fees. Free planner for international moves."
+---
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Relocation Savings Calculator",
+      "url": "{{ site.url }}{{ page.url }}",
+      "description": "{{ description }}",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "publisher": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much should I save before moving abroad for work?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A practical target is three to six months of living expenses in your destination city, plus one-time costs: flights, visa fees, rental deposit (often two to three months rent), first month of insurance, and a €2,000–€5,000 contingency for delays in your first paycheck." }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I include my employer relocation package in this calculation?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Subtract lump-sum relocation payments and reimbursed visa costs from the total you need to self-fund. Keep an emergency buffer anyway — reimbursements can arrive after you have already paid deposits." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+<section class="bg-gradient-to-br from-amber-50 via-white to-orange-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 py-16">
+  <div class="max-w-4xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400">Home</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <a href="/tools/" class="hover:text-brand-600 dark:hover:text-brand-400">Tools</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-900 dark:text-white">Relocation Savings</span>
+    </nav>
+    <div class="flex items-center gap-4 mb-4">
+      <div class="w-14 h-14 bg-amber-100 dark:bg-amber-900/30 rounded-2xl flex items-center justify-center">
+        <i data-lucide="piggy-bank" class="w-7 h-7 text-amber-600 dark:text-amber-400"></i>
+      </div>
+      <div>
+        <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white">Relocation Savings Calculator</h1>
+        <p class="text-gray-600 dark:text-gray-400 mt-1">Plan your cash buffer before you move</p>
+      </div>
+    </div>
+    <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl">
+      Enter monthly costs <strong>in your destination city</strong> (rent, food, transport). We add one-time setup costs and an optional employer relocation offset.
+    </p>
+  </div>
+</section>
+
+<section class="py-12">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="card p-6 md:p-8 mb-8">
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Monthly living cost (destination)</label>
+          <input type="number" id="monthly" class="input-field" min="0" step="100" value="2800" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Months of runway to save</label>
+          <input type="number" id="months" class="input-field" min="1" max="24" step="1" value="4" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">One-time: flights + moving (total)</label>
+          <input type="number" id="move" class="input-field" min="0" step="100" value="1200" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Housing deposit + first rent</label>
+          <input type="number" id="housing" class="input-field" min="0" step="100" value="4500" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Visa & legal fees (your share)</label>
+          <input type="number" id="visa" class="input-field" min="0" step="50" value="400" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Extra contingency buffer</label>
+          <input type="number" id="buffer" class="input-field" min="0" step="100" value="2500" />
+        </div>
+        <div class="sm:col-span-2">
+          <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Employer relocation lump sum (subtracts from target)</label>
+          <input type="number" id="employer" class="input-field" min="0" step="100" value="0" />
+        </div>
+      </div>
+      <button type="button" id="calc-btn" class="btn-primary mt-6 w-full sm:w-auto">
+        <i data-lucide="calculator" class="w-5 h-5 mr-2"></i> Calculate savings target
+      </button>
+    </div>
+
+    <div id="out" class="hidden card p-8 bg-gradient-to-br from-brand-50 to-white dark:from-gray-800 dark:to-gray-900 border-2 border-brand-200 dark:border-brand-800">
+      <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Suggested savings target</h2>
+      <p id="total-line" class="text-4xl font-extrabold text-brand-600 dark:text-brand-400 mb-4"></p>
+      <ul id="breakdown" class="text-sm text-gray-600 dark:text-gray-400 space-y-2 mb-6"></ul>
+      <p class="text-sm text-gray-500 dark:text-gray-400">If your first paycheck is delayed by 6–8 weeks, runway covers rent and food while you settle in. Pair this with our <a href="/tools/relocation-calculator/" class="text-brand-600 dark:text-brand-400 hover:underline">relocation cost estimator</a>.</p>
+    </div>
+
+    <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 p-4 rounded-r-lg mt-10">
+      <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Find sponsored roles</strong> — <a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">Browse visa-sponsored jobs</a> with relocation support.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+(function () {
+  function n(id) { return parseFloat(document.getElementById(id).value) || 0; }
+  document.getElementById("calc-btn").addEventListener("click", function () {
+    var monthly = n("monthly");
+    var months = n("months");
+    var runway = monthly * months;
+    var move = n("move");
+    var housing = n("housing");
+    var visa = n("visa");
+    var buffer = n("buffer");
+    var employer = n("employer");
+    var subtotal = runway + move + housing + visa + buffer;
+    var total = Math.max(0, subtotal - employer);
+    document.getElementById("out").classList.remove("hidden");
+    document.getElementById("total-line").textContent = "€" + Math.round(total).toLocaleString();
+    document.getElementById("breakdown").innerHTML =
+      "<li>Living runway (" + months + " × €" + monthly.toLocaleString() + "): €" + Math.round(runway).toLocaleString() + "</li>" +
+      "<li>Moving & flights: €" + Math.round(move).toLocaleString() + "</li>" +
+      "<li>Housing deposit / first month: €" + Math.round(housing).toLocaleString() + "</li>" +
+      "<li>Visa & legal: €" + Math.round(visa).toLocaleString() + "</li>" +
+      "<li>Contingency: €" + Math.round(buffer).toLocaleString() + "</li>" +
+      (employer > 0 ? "<li class='text-green-600 dark:text-green-400'>Minus employer package: −€" + Math.round(employer).toLocaleString() + "</li>" : "");
+    if (window.lucide) lucide.createIcons();
+  });
+})();
+</script>

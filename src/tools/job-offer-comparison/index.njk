@@ -1,0 +1,197 @@
+---
+layout: layouts/base.njk
+title: "International Job Offer Comparison Tool | Compare Two Relocation Offers"
+description: "Compare two international tech job offers side by side: base salary, bonus, equity, relocation package, visa sponsorship, and cost of living. Free calculator for engineers relocating abroad."
+---
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "International Job Offer Comparison Tool",
+  "url": "{{ site.url }}{{ page.url }}",
+  "description": "{{ description }}",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+  "publisher": { "@type": "Organization", "name": "{{ site.name }}", "url": "{{ site.url }}" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I compare two job offers in different countries?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Convert both offers to a common currency, estimate net pay after tax using country-specific rates, add the value of equity and annual bonus, then subtract higher cost-of-living for the more expensive city. Factor in non-cash benefits: relocation lump sum, visa sponsorship, healthcare, vacation days, and pension contributions." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I prioritize salary or visa certainty?",
+      "acceptedAnswer": { "@type": "Answer", "text": "For international moves, written confirmation of visa sponsorship and a specific work permit type (e.g. EU Blue Card, Skilled Worker visa) is often more important than a slightly higher salary. A vague 'we may sponsor' clause is a red flag compared to a clear relocation and immigration process." }
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+<section class="bg-gradient-to-br from-brand-50 via-white to-violet-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400">Home</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <a href="/tools/" class="hover:text-brand-600 dark:hover:text-brand-400">Tools</a>
+      <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      <span class="text-gray-900 dark:text-white">Job Offer Comparison</span>
+    </nav>
+    <div class="flex items-center gap-4 mb-4">
+      <div class="w-14 h-14 bg-violet-100 dark:bg-violet-900/30 rounded-2xl flex items-center justify-center">
+        <i data-lucide="git-compare" class="w-7 h-7 text-violet-600 dark:text-violet-400"></i>
+      </div>
+      <div>
+        <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white">Job Offer Comparison</h1>
+        <p class="text-gray-600 dark:text-gray-400 mt-1">Side-by-side for international relocations</p>
+      </div>
+    </div>
+    <p class="text-lg text-gray-600 dark:text-gray-400 max-w-3xl">
+      Enter numbers in the same currency (EUR recommended). The tool estimates a simple <strong>total compensation score</strong> so you can compare apples to apples when choosing between two countries.
+    </p>
+  </div>
+</section>
+
+<section class="py-12">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
+      <div class="card p-6">
+        <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+          <span class="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 flex items-center justify-center text-sm font-bold">A</span>
+          Offer A
+        </h2>
+        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Label (e.g. Berlin)</label>
+        <input type="text" id="a-label" class="input-field mb-3" value="Offer A" />
+        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Base salary (annual)</label>
+        <input type="number" id="a-base" class="input-field mb-3" min="0" step="1000" value="80000" />
+        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Target bonus (% of base, 0 if none)</label>
+        <input type="number" id="a-bonus" class="input-field mb-3" min="0" max="100" step="1" value="10" />
+        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Equity / RSU (annual estimate)</label>
+        <input type="number" id="a-equity" class="input-field mb-3" min="0" step="500" value="15000" />
+        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Relocation lump sum (one-time, spread over 2 years)</label>
+        <input type="number" id="a-relo" class="input-field mb-3" min="0" step="500" value="5000" />
+        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Cost-of-living index (100 = average EU hub)</label>
+        <input type="number" id="a-col" class="input-field mb-3" min="50" max="200" step="5" value="95" title="Higher = more expensive city" />
+        <label class="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300 mb-2">
+          <input type="checkbox" id="a-visa" class="rounded border-gray-300" checked />
+          Confirmed visa sponsorship in writing
+        </label>
+        <label class="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+          <input type="checkbox" id="a-hc" class="rounded border-gray-300" checked />
+          Strong healthcare / pension (typical EU employment)
+        </label>
+      </div>
+
+      <div class="card p-6">
+        <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+          <span class="w-8 h-8 rounded-lg bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 flex items-center justify-center text-sm font-bold">B</span>
+          Offer B
+        </h2>
+        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Label (e.g. London)</label>
+        <input type="text" id="b-label" class="input-field mb-3" value="Offer B" />
+        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Base salary (annual)</label>
+        <input type="number" id="b-base" class="input-field mb-3" min="0" step="1000" value="95000" />
+        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Target bonus (% of base)</label>
+        <input type="number" id="b-bonus" class="input-field mb-3" min="0" max="100" step="1" value="12" />
+        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Equity / RSU (annual estimate)</label>
+        <input type="number" id="b-equity" class="input-field mb-3" min="0" step="500" value="20000" />
+        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Relocation lump sum (÷2 years)</label>
+        <input type="number" id="b-relo" class="input-field mb-3" min="0" step="500" value="8000" />
+        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Cost-of-living index</label>
+        <input type="number" id="b-col" class="input-field mb-3" min="50" max="200" step="5" value="125" />
+        <label class="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300 mb-2">
+          <input type="checkbox" id="b-visa" class="rounded border-gray-300" checked />
+          Confirmed visa sponsorship in writing
+        </label>
+        <label class="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+          <input type="checkbox" id="b-hc" class="rounded border-gray-300" checked />
+          Strong healthcare / pension
+        </label>
+      </div>
+    </div>
+
+    <div class="flex justify-center mb-8">
+      <button type="button" id="compare-btn" class="btn-primary text-lg px-8 py-3">
+        <i data-lucide="scale" class="w-5 h-5 mr-2"></i> Compare offers
+      </button>
+    </div>
+
+    <div id="result-card" class="hidden card p-8 border-2 border-brand-200 dark:border-brand-800">
+      <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Adjusted comparison</h2>
+      <p class="text-sm text-gray-600 dark:text-gray-400 mb-6">
+        We compute <strong>nominal total comp</strong> (base + bonus + equity + half the relocation grant per year), then divide by a cost-of-living factor so expensive cities are penalized. Visa and benefits add small bonuses to reflect immigration risk and cash you would otherwise spend privately.
+      </p>
+      <div class="grid sm:grid-cols-2 gap-6 mb-6">
+        <div id="box-a" class="p-4 rounded-xl bg-blue-50 dark:bg-blue-900/20"></div>
+        <div id="box-b" class="p-4 rounded-xl bg-emerald-50 dark:bg-emerald-900/20"></div>
+      </div>
+      <p id="verdict" class="text-lg font-semibold text-gray-900 dark:text-white"></p>
+    </div>
+
+    <div class="prose-custom mt-12 max-w-3xl">
+      <h2>How to use this for real decisions</h2>
+      <p>This is a planning aid, not tax advice. Use our <a href="/tools/salary-calculator/" class="text-brand-600 dark:text-brand-400 hover:underline">salary calculator</a> and <a href="/tools/cost-of-living/" class="text-brand-600 dark:text-brand-400 hover:underline">cost of living</a> tools for deeper numbers. Always confirm visa type, notice period, and equity vesting before you sign.</p>
+      <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 p-4 rounded-r-lg mt-6">
+        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Ready to apply?</strong> <a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">Browse visa-sponsored tech jobs</a> with direct application links.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+(function () {
+  function num(id) { return parseFloat(document.getElementById(id).value) || 0; }
+  function score(label, base, bonusPct, equity, relo, col, visa, hc) {
+    var bonus = base * (bonusPct / 100);
+    var reloAnnual = relo / 2;
+    var total = base + bonus + equity + reloAnnual;
+    var adjusted = total / (col / 100);
+    if (visa) adjusted += 3000;
+    if (hc) adjusted += 2000;
+    return { total: total, adjusted: adjusted, label: label };
+  }
+  document.getElementById("compare-btn").addEventListener("click", function () {
+    var a = score(
+      document.getElementById("a-label").value || "Offer A",
+      num("a-base"), num("a-bonus"), num("a-equity"), num("a-relo"), num("a-col"),
+      document.getElementById("a-visa").checked,
+      document.getElementById("a-hc").checked
+    );
+    var b = score(
+      document.getElementById("b-label").value || "Offer B",
+      num("b-base"), num("b-bonus"), num("b-equity"), num("b-relo"), num("b-col"),
+      document.getElementById("b-visa").checked,
+      document.getElementById("b-hc").checked
+    );
+    document.getElementById("result-card").classList.remove("hidden");
+    document.getElementById("box-a").innerHTML =
+      "<div class='font-bold text-blue-800 dark:text-blue-200'>" + a.label + "</div>" +
+      "<div class='text-2xl font-extrabold mt-2 text-gray-900 dark:text-white'>" + Math.round(a.adjusted).toLocaleString() + "</div>" +
+      "<div class='text-sm text-gray-600 dark:text-gray-400 mt-1'>Adjusted score (higher = better buying power + benefits)</div>" +
+      "<div class='text-xs text-gray-500 mt-2'>Nominal total ≈ €" + Math.round(a.total).toLocaleString() + "/yr</div>";
+    document.getElementById("box-b").innerHTML =
+      "<div class='font-bold text-emerald-800 dark:text-emerald-200'>" + b.label + "</div>" +
+      "<div class='text-2xl font-extrabold mt-2 text-gray-900 dark:text-white'>" + Math.round(b.adjusted).toLocaleString() + "</div>" +
+      "<div class='text-sm text-gray-600 dark:text-gray-400 mt-1'>Adjusted score</div>" +
+      "<div class='text-xs text-gray-500 mt-2'>Nominal total ≈ €" + Math.round(b.total).toLocaleString() + "/yr</div>";
+    var diff = Math.abs(a.adjusted - b.adjusted);
+    var winner = a.adjusted >= b.adjusted ? a.label : b.label;
+    if (Math.abs(a.adjusted - b.adjusted) < 500) {
+      document.getElementById("verdict").textContent = "These offers are very close on our model — decide based on career growth, team, and visa clarity.";
+    } else {
+      document.getElementById("verdict").textContent = "On this model, \"" + winner + "\" has roughly €" + Math.round(diff).toLocaleString() + " more adjusted value per year. Validate with net salary and your personal expenses.";
+    }
+    if (window.lucide) lucide.createIcons();
+  });
+})();
+</script>
