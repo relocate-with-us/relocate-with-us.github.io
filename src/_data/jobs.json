@@ -176,17 +176,6 @@
     "description": "https://business.trustpilot.com/jobs/7267789?gh_jid=7267789"
   },
   {
-    "company": "Lunar",
-    "position": "(Senior) Backend Engineer",
-    "location": "Copenhagen, Denmark 🇩🇰",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "April 1, 2026",
-    "logo": "/media/lunar_logo.jpg",
-    "description": "https://jobs.lunar.app/jobs/7012654-senior-backend-engineer"
-  },
-  {
     "company": "Deezer",
     "position": "Senior Backend Engineer - Customer & Monetization (m/f/d)",
     "location": "Paris, France 🇫🇷",
@@ -548,28 +537,6 @@
     "post_date": "March 7, 2026",
     "logo": "/media/awork_logo.jpg",
     "description": "https://www.awork.com/jobs/senior-software-engineer-frontend"
-  },
-  {
-    "company": "Zalando",
-    "position": "Junior Frontend Software Engineer (all genders)",
-    "location": "Berlin, Germany 🇩🇪",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "February 28, 2026",
-    "logo": "/media/zalando_logo.jpg",
-    "description": "https://jobs.zalando.com/en/jobs/2722824-Junior-Frontend-Software-Engineer"
-  },
-  {
-    "company": "Zalando",
-    "position": "Senior Machine Learning Engineer (all genders)",
-    "location": "Berlin, Germany 🇩🇪",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "February 25, 2026",
-    "logo": "/media/zalando_logo.jpg",
-    "description": "https://jobs.zalando.com/de/jobs/2723350-Senior-Machine-Learning-Engineer"
   },
   {
     "company": "Delivery Hero",
@@ -969,17 +936,6 @@
   },
   {
     "company": "MODE Recruitment",
-    "position": "Senior System Administrator",
-    "location": "Frankfurt, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "February 10, 2025",
-    "logo": "/media/moderecruitmentltd_logo.jpg",
-    "description": "https://www.linkedin.com/jobs/view/4148245932"
-  },
-  {
-    "company": "MODE Recruitment",
     "position": "Senior System Engineer",
     "location": "Frankfurt, Germany 🇩🇪",
     "reloc": "Relocation Assistance",
@@ -999,17 +955,6 @@
     "post_date": "February 10, 2025",
     "logo": "/media/moderecruitmentltd_logo.jpg",
     "description": "https://www.linkedin.com/jobs/view/4148246703"
-  },
-  {
-    "company": "Sunday GmbH",
-    "position": "Forward Deployed Engineer",
-    "location": "Hamburg, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "January 25, 2025",
-    "logo": "/media/sunday_gmbh_logo.jpeg",
-    "description": "https://join.com/companies/sunday/13429301-marketing-artist-f-m-d"
   },
   {
     "company": "OpenAI",
