@@ -1,0 +1,401 @@
+---
+layout: layouts/base.njk
+title: "Pro Access — Visa Sponsor Database & Application Toolkit"
+description: "30+ verified visa-sponsoring companies with recruiter contacts, salary data, and PostHog-style application tips. Plus LaTeX resume template and AI prompts."
+noindex: true
+permalink: /pro/
+---
+
+{% block scripts %}
+<script src="/assets/js/paywall.js" defer></script>
+{% endblock %}
+
+{# ─── PAYWALL GATE ─────────────────────────────────────────────────────────── #}
+<div id="paywall-gate" class="fixed inset-0 z-50 flex items-center justify-center bg-gray-950/95 backdrop-blur-sm">
+  <div class="w-full max-w-md mx-4 bg-white dark:bg-gray-900 rounded-2xl shadow-2xl p-8 text-center">
+    <div class="w-16 h-16 bg-brand-100 dark:bg-brand-900 rounded-2xl flex items-center justify-center mx-auto mb-5">
+      <svg class="w-8 h-8 text-brand-600 dark:text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+      </svg>
+    </div>
+    <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Pro Access Required</h1>
+    <p class="text-gray-500 dark:text-gray-400 mb-6 text-sm leading-relaxed">
+      Enter the password you received after purchase to access the Visa Sponsor Database.
+    </p>
+    <div class="space-y-3">
+      <input
+        id="paywall-input"
+        type="password"
+        placeholder="Enter your access password"
+        class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent text-center text-lg tracking-widest"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <p id="paywall-error" class="text-red-500 text-sm hidden">Incorrect password. Check your purchase confirmation email.</p>
+      <button
+        id="paywall-submit"
+        class="w-full py-3 bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-xl transition-colors"
+      >
+        Unlock Access
+      </button>
+    </div>
+    <p class="text-xs text-gray-400 dark:text-gray-600 mt-5">
+      Don't have access yet? <a href="https://visajobs.xyz" class="text-brand-500 hover:underline">Go to visajobs.xyz</a>
+    </p>
+  </div>
+</div>
+
+{# ─── PRO CONTENT (hidden until unlocked) ─────────────────────────────────── #}
+<div id="pro-content" class="hidden">
+
+  {# Hero #}
+  <section class="bg-gradient-to-b from-brand-50 to-white dark:from-gray-900 dark:to-gray-950 py-12 border-b border-gray-100 dark:border-gray-800">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-100 dark:bg-brand-900 text-brand-700 dark:text-brand-300 text-xs font-semibold uppercase tracking-wide">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          Pro Access
+        </span>
+        <span class="text-xs text-gray-500 dark:text-gray-400">Updated May 2026</span>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">
+        Visa Sponsor Database <span class="text-brand-600">+ Application Toolkit</span>
+      </h1>
+      <p class="text-gray-600 dark:text-gray-400 text-lg max-w-2xl">
+        {{ premiumSponsors | length }} verified companies that sponsor visas — with salary ranges, insider application tips, and the specific person to contact at each company.
+      </p>
+      <div class="flex flex-wrap gap-4 mt-6">
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3">
+          <div class="text-2xl font-bold text-gray-900 dark:text-white">{{ premiumSponsors | length }}</div>
+          <div class="text-xs text-gray-500 dark:text-gray-400">Companies</div>
+        </div>
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3">
+          <div class="text-2xl font-bold text-gray-900 dark:text-white">8</div>
+          <div class="text-xs text-gray-500 dark:text-gray-400">Countries</div>
+        </div>
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3">
+          <div class="text-2xl font-bold text-gray-900 dark:text-white">3</div>
+          <div class="text-xs text-gray-500 dark:text-gray-400">Bonus downloads</div>
+        </div>
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-4 py-3">
+          <div class="text-2xl font-bold text-gray-900 dark:text-white">Updated</div>
+          <div class="text-xs text-gray-500 dark:text-gray-400">Monthly</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {# Country tabs + company cards #}
+  <section class="max-w-5xl mx-auto px-4 py-10">
+
+    {# Tab bar #}
+    {% set countries = premiumSponsors | uniqueField("country") %}
+    <div class="flex flex-wrap gap-2 mb-8" id="country-tabs">
+      <button data-country="all" class="country-tab active px-4 py-2 rounded-xl text-sm font-medium bg-brand-600 text-white" onclick="filterCountry('all')">
+        All ({{ premiumSponsors | length }})
+      </button>
+      {% for country in countries %}
+      {% set count = premiumSponsors | countByField("country", country) %}
+      <button data-country="{{ country }}" class="country-tab px-4 py-2 rounded-xl text-sm font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-brand-50 dark:hover:bg-brand-900 transition-colors" onclick="filterCountry('{{ country }}')">
+        {{ country }} ({{ count }})
+      </button>
+      {% endfor %}
+    </div>
+
+    {# Company grid #}
+    <div id="company-grid" class="space-y-4">
+      {% for co in premiumSponsors %}
+      <div class="company-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden" data-country="{{ co.country }}">
+        <div class="p-5">
+          <div class="flex items-start gap-4">
+            {# Logo or initials #}
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center overflow-hidden">
+              {% if co.logo %}
+              <img src="{{ co.logo }}" alt="{{ co.name }}" class="w-10 h-10 object-contain" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+              <span style="display:none" class="w-full h-full items-center justify-center text-lg font-bold text-brand-600">{{ co.name[0] }}</span>
+              {% else %}
+              <span class="text-lg font-bold text-brand-600">{{ co.name[0] }}</span>
+              {% endif %}
+            </div>
+
+            {# Company info #}
+            <div class="flex-1 min-w-0">
+              <div class="flex flex-wrap items-center gap-2 mb-1">
+                <h3 class="text-base font-bold text-gray-900 dark:text-white">{{ co.name }}</h3>
+                <span class="px-2 py-0.5 text-xs rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 font-medium border border-blue-100 dark:border-blue-800">{{ co.visa }}</span>
+                <span class="px-2 py-0.5 text-xs rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">{{ co.industry }}</span>
+              </div>
+              <div class="text-sm text-gray-500 dark:text-gray-400 flex flex-wrap gap-3">
+                <span>📍 {{ co.city }}</span>
+                <span>👥 {{ co.size }}</span>
+                {% if co.salaryRange %}
+                <span>💰 Senior: <strong class="text-gray-700 dark:text-gray-300">{{ co.salaryRange.senior }}</strong></span>
+                {% endif %}
+              </div>
+            </div>
+
+            {# Careers link #}
+            <a href="{{ co.careers }}" target="_blank" rel="noopener" class="flex-shrink-0 px-4 py-2 text-sm font-semibold text-brand-600 dark:text-brand-400 border border-brand-200 dark:border-brand-800 rounded-xl hover:bg-brand-50 dark:hover:bg-brand-900 transition-colors">
+              Open Roles ↗
+            </a>
+          </div>
+
+          {# Application Tip — the PostHog-style section #}
+          <div class="mt-4">
+            <button class="tip-toggle flex items-center gap-2 text-sm font-semibold text-amber-700 dark:text-amber-400 hover:text-amber-800 dark:hover:text-amber-300 transition-colors" data-slug="{{ co.slug }}">
+              <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.976.284-2.03.784-3H7.216c.5.97.769 2.024.784 3h4z"/></svg>
+              How to actually get hired here
+              <svg class="tip-chevron w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="tip-content hidden mt-3 p-4 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/50 rounded-xl text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+              {{ co.applicationTip }}
+              {% if co.interviewProcess %}
+              <div class="mt-3 pt-3 border-t border-amber-200 dark:border-amber-800/50">
+                <span class="font-semibold text-gray-900 dark:text-white">Interview process:</span> {{ co.interviewProcess }}
+              </div>
+              {% endif %}
+              {% if co.techStack %}
+              <div class="mt-2 flex flex-wrap gap-1">
+                {% for tech in co.techStack %}
+                <span class="px-2 py-0.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded text-xs text-gray-600 dark:text-gray-400">{{ tech }}</span>
+                {% endfor %}
+              </div>
+              {% endif %}
+            </div>
+          </div>
+
+          {# Recruiter contacts #}
+          <div class="mt-4 pt-4 border-t border-gray-100 dark:border-gray-800">
+            <p class="text-xs font-semibold text-gray-500 dark:text-gray-500 uppercase tracking-wide mb-2">Recruiter Contacts</p>
+            <div class="space-y-2">
+              {% for rec in co.recruiters %}
+              <div class="flex items-center gap-3">
+                <div class="w-7 h-7 rounded-full bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center flex-shrink-0">
+                  <span class="text-xs font-bold text-white">{{ rec.name[0] if rec.name != "Add from LinkedIn search" else "?" }}</span>
+                </div>
+                <div class="flex-1 min-w-0">
+                  {% if rec.name != "Add from LinkedIn search" %}
+                  <span class="text-sm font-medium text-gray-900 dark:text-white">{{ rec.name }}</span>
+                  <span class="text-xs text-gray-500 dark:text-gray-400 ml-2">{{ rec.title }}</span>
+                  {% else %}
+                  <span class="text-sm text-gray-500 dark:text-gray-400 italic">Recruiter contact to be added</span>
+                  {% endif %}
+                  {% if rec.note %}
+                  <p class="text-xs text-gray-400 dark:text-gray-600 mt-0.5">💡 {{ rec.note }}</p>
+                  {% endif %}
+                </div>
+                {% if rec.linkedin %}
+                <a href="{{ rec.linkedin }}" target="_blank" rel="noopener" class="flex-shrink-0 px-3 py-1 text-xs font-medium bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors">
+                  LinkedIn
+                </a>
+                {% endif %}
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  {# ─── BONUS SECTION ──────────────────────────────────────────────────────── #}
+  <section class="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 py-12">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Bonus: Your Application Toolkit</h2>
+      <p class="text-gray-500 dark:text-gray-400 mb-8">Three assets to use alongside the company database.</p>
+      <div class="grid md:grid-cols-3 gap-6">
+
+        {# LaTeX Resume #}
+        <div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6">
+          <div class="w-10 h-10 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          </div>
+          <h3 class="font-bold text-gray-900 dark:text-white mb-2">ATS-Ready LaTeX Resume</h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Clean, ATS-friendly LaTeX template used by senior engineers at FAANG and EU tech companies.</p>
+          <a href="/pro/downloads/resume-template.tex" download class="inline-flex items-center gap-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold rounded-xl transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            Download .tex
+          </a>
+        </div>
+
+        {# AI Prompts #}
+        <div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6">
+          <div class="w-10 h-10 bg-green-100 dark:bg-green-900/30 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="font-bold text-gray-900 dark:text-white mb-2">Resume Tailoring AI Prompts</h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">6 exact prompts to customize your resume for each job in under 10 minutes — ATS pass, keyword injection, skills reframe.</p>
+          <a href="/pro/downloads/ai-prompts.md" download class="inline-flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm font-semibold rounded-xl transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            Download prompts
+          </a>
+        </div>
+
+        {# Outreach Templates #}
+        <div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6">
+          <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+          </div>
+          <h3 class="font-bold text-gray-900 dark:text-white mb-2">Recruiter Outreach Templates</h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">11 proven LinkedIn and email templates for cold outreach, referral requests, follow-ups, and salary negotiation.</p>
+          <a href="/pro/downloads/outreach-templates.md" download class="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-xl transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            Download templates
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {# ─── HOW TO APPLY GUIDE ─────────────────────────────────────────────────── #}
+  <section class="max-w-5xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">How to Actually Get the Job</h2>
+    <p class="text-gray-500 dark:text-gray-400 mb-8">This is the section most job seekers skip. Don't.</p>
+
+    <div class="space-y-4">
+
+      {# Step cards #}
+      {% set steps = [
+        {
+          "num": "01",
+          "title": "Never apply to a company cold without researching it first",
+          "body": "Spend 20 minutes on each company before applying. Read their engineering blog (most big tech companies have one). Find 2–3 posts about problems they've solved. Find a name that worked there on LinkedIn. Look at recent Glassdoor reviews to see what's changed in the last 6 months. You're not job hunting — you're choosing a country to move to. These 20 minutes are free due diligence.",
+          "color": "brand"
+        },
+        {
+          "num": "02",
+          "title": "Match your resume to the job description, not to your ego",
+          "body": "Your resume describes what you've done. The JD describes what they need. These are rarely the same words, even if they mean the same thing. For each application: (1) paste the JD into Claude/ChatGPT, (2) paste your master resume, (3) ask it to list keywords in the JD not in your resume. Add the missing ones — honestly. ATS systems reject 75% of applications before a human reads them. The first reader is a bot.",
+          "color": "green"
+        },
+        {
+          "num": "03",
+          "title": "Apply to the team, not the company",
+          "body": "Booking.com has 200+ open engineering roles. So does Zalando. Amazon has thousands. Applying to 'Software Engineer – Platform' is meaningless. Find the specific team, find a specific recruiter who posted in that team's area, find someone on LinkedIn who works in that team. Your application should land in the inbox of someone who knows what 'platform engineering' means at Booking.com specifically — not in a pile of 800.",
+          "color": "blue"
+        },
+        {
+          "num": "04",
+          "title": "Contact the recruiter before or right after applying",
+          "body": "In 2026, most recruiters check LinkedIn after seeing a resume. Being connected on LinkedIn before they see your application means a face and a name, not just a PDF. The outreach template in your downloads is simple: 3 sentences, specific role, specific reason you want the company, asks for nothing except to flag that you applied. 30% of successful international hires say the recruiter message was the thing that got their resume pulled from the pile.",
+          "color": "amber"
+        },
+        {
+          "num": "05",
+          "title": "Prepare one story per Amazon Leadership Principle (even for non-Amazon jobs)",
+          "body": "Every tech company has behavioural values even if they don't call them Leadership Principles. 'Ownership', 'Customer focus', 'Dive deep', 'Bias for action' — these themes appear everywhere. Write 8 STAR stories. Each should be < 90 seconds when told. Practice them out loud. You'll reuse the same 8 stories in 80% of your interviews, just selecting the most relevant one per question.",
+          "color": "purple"
+        },
+        {
+          "num": "06",
+          "title": "Treat the visa question as a sales objection, not a confession",
+          "body": "When you mention you need sponsorship, recruiters mentally calculate: HR overhead, legal fees, timeline risk. Pre-empt this by making it easy for them: 'I need a Skilled Worker Visa / EU Blue Card. I've done this before / the process is straightforward for your location / I can provide all documents within one week of an offer.' Show you know the process better than their in-house team. Companies that sponsor routinely have done it hundreds of times — you just need to signal you won't be difficult.",
+          "color": "red"
+        },
+        {
+          "num": "07",
+          "title": "System design is learnable in 4 weeks if you focus",
+          "body": "Most senior engineers fail system design not because they can't design systems but because they can't communicate the design clearly under pressure. The framework is: (1) clarify requirements for 3 minutes, (2) estimate scale/load, (3) draw the high-level components, (4) go deep on the bottleneck the interviewer cares about, (5) discuss tradeoffs explicitly. Practice with 'Designing Data-Intensive Applications' (Kleppmann) + ByteByteGo. One session per day for 30 days gets most people to the bar.",
+          "color": "teal"
+        },
+        {
+          "num": "08",
+          "title": "Negotiate. Every offer is negotiable. The first number is not the final number.",
+          "body": "For international roles, the company knows you're comparing offers across currencies and COL. Use that. 'I have a competing offer in [city] for [higher number]' is the strongest negotiating position. Even without a competing offer, 'Based on Levels.fyi data for this role and city, I was expecting [X]' is a legitimate anchor. Companies that sponsor visas have already decided they want you — a counter-offer rarely rescinds a sponsorship agreement.",
+          "color": "indigo"
+        }
+      ] %}
+
+      {% for step in steps %}
+      <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl p-6">
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-{{ step.color }}-100 dark:bg-{{ step.color }}-900/30 flex items-center justify-center">
+            <span class="text-sm font-bold text-{{ step.color }}-700 dark:text-{{ step.color }}-400">{{ step.num }}</span>
+          </div>
+          <div>
+            <h3 class="font-bold text-gray-900 dark:text-white mb-2">{{ step.title }}</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{{ step.body }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  {# ─── SALARY REFERENCE ───────────────────────────────────────────────────── #}
+  <section class="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 py-12">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Salary Benchmarks by Country</h2>
+      <p class="text-gray-500 dark:text-gray-400 mb-6">Total compensation ranges for Senior Software Engineers (5–8 YOE) at tech companies that sponsor visas.</p>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+              <th class="text-left py-3 pr-4 font-semibold text-gray-700 dark:text-gray-300">Country</th>
+              <th class="text-left py-3 pr-4 font-semibold text-gray-700 dark:text-gray-300">Senior TC Range</th>
+              <th class="text-left py-3 pr-4 font-semibold text-gray-700 dark:text-gray-300">Visa Type</th>
+              <th class="text-left py-3 pr-4 font-semibold text-gray-700 dark:text-gray-300">Salary Check</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100 dark:divide-gray-800">
+            {% set salaryRows = [
+              { "country": "🇩🇪 Germany", "range": "€80–130k", "visa": "EU Blue Card", "link": "https://www.levels.fyi/?compare=SAP,Zalando,Delivery+Hero&track=Software+Engineer" },
+              { "country": "🇳🇱 Netherlands", "range": "€85–145k", "visa": "Highly Skilled Migrant", "link": "https://www.levels.fyi/?compare=Booking.com,Adyen,Mollie&track=Software+Engineer" },
+              { "country": "🇬🇧 United Kingdom", "range": "£85–175k", "visa": "Skilled Worker", "link": "https://www.levels.fyi/?compare=Revolut,Wise,Monzo&track=Software+Engineer" },
+              { "country": "🇫🇷 France", "range": "€75–165k", "visa": "Passeport Talent", "link": "https://www.levels.fyi/?compare=Datadog,Mistral+AI&track=Software+Engineer" },
+              { "country": "🇸🇪 Sweden", "range": "SEK 850k–1.3m", "visa": "Swedish Work Permit", "link": "https://www.levels.fyi/?compare=Spotify,Klarna&track=Software+Engineer" },
+              { "country": "🇨🇭 Switzerland", "range": "CHF 185–320k", "visa": "Swiss B-permit", "link": "https://www.levels.fyi/?compare=Google,Amazon&track=Software+Engineer&location=Zurich%2C+Switzerland" },
+              { "country": "🇮🇪 Ireland", "range": "€90–190k", "visa": "Critical Skills Permit", "link": "https://www.levels.fyi/?compare=Stripe,Salesforce,Meta&track=Software+Engineer&location=Dublin%2C+Ireland" },
+              { "country": "🇦🇺 Australia", "range": "AUD 145–250k", "visa": "TSS Visa (482)", "link": "https://www.levels.fyi/?compare=Canva,Atlassian&track=Software+Engineer" }
+            ] %}
+            {% for row in salaryRows %}
+            <tr class="hover:bg-gray-50 dark:hover:bg-gray-800/50">
+              <td class="py-3 pr-4 font-medium text-gray-900 dark:text-white">{{ row.country }}</td>
+              <td class="py-3 pr-4 text-gray-700 dark:text-gray-300 font-mono">{{ row.range }}</td>
+              <td class="py-3 pr-4">
+                <span class="px-2 py-0.5 text-xs rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-100 dark:border-blue-800">{{ row.visa }}</span>
+              </td>
+              <td class="py-3">
+                <a href="{{ row.link }}" target="_blank" rel="noopener" class="text-brand-600 dark:text-brand-400 hover:underline text-xs">Levels.fyi ↗</a>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-gray-400 dark:text-gray-600 mt-4">* TC = Total Compensation including base + bonus + equity (annualised). Ranges reflect mid-to-senior titles at visa-sponsoring tech companies. Source: Levels.fyi, Glassdoor, company offers shared in communities.</p>
+    </div>
+  </section>
+
+</div>{# end #pro-content #}
+
+<script>
+function filterCountry(country) {
+  document.querySelectorAll('.country-tab').forEach(btn => {
+    if (btn.dataset.country === country) {
+      btn.classList.add('bg-brand-600', 'text-white');
+      btn.classList.remove('bg-gray-100', 'dark:bg-gray-800', 'text-gray-700', 'dark:text-gray-300');
+    } else {
+      btn.classList.remove('bg-brand-600', 'text-white');
+      btn.classList.add('bg-gray-100', 'text-gray-700');
+    }
+  });
+  document.querySelectorAll('.company-card').forEach(card => {
+    if (country === 'all' || card.dataset.country === country) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+document.querySelectorAll('.tip-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const content = btn.nextElementSibling;
+    const chevron = btn.querySelector('.tip-chevron');
+    content.classList.toggle('hidden');
+    chevron.classList.toggle('rotate-180');
+  });
+});
+</script>

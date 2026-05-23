@@ -1,0 +1,662 @@
+[
+  {
+    "name": "Zalando",
+    "slug": "zalando",
+    "logo": "/media/zalando_logo.png",
+    "hq": "Berlin, Germany",
+    "country": "Germany",
+    "city": "Berlin",
+    "industry": "E-commerce",
+    "size": "17,000+",
+    "visa": "EU Blue Card",
+    "salaryRange": { "mid": "€75–95k", "senior": "€95–130k", "staff": "€130–165k" },
+    "relocationPackage": "Flights, moving expenses, temp housing, visa lawyer",
+    "careers": "https://jobs.zalando.com/en/jobs/",
+    "applicationTip": "Apply to a specific team — Zalando has 30+ engineering domains (ML, Logistics, Platform, Fashion). Generic applications to 'Engineering' rarely land. Find the team's page first, then apply to their open req. They A/B test their own hiring funnel and expect candidates to understand product metrics.",
+    "interviewProcess": "Recruiter screen → HM screen → 2 tech rounds (coding + system design) → values round. ~3 weeks.",
+    "techStack": ["Go", "Kotlin", "Python", "Kafka", "Kubernetes", "AWS"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Tech Recruiter", "linkedin": "", "focus": "Engineering", "note": "Search: 'Recruiter Zalando' on LinkedIn → filter Current company" }
+    ]
+  },
+  {
+    "name": "N26",
+    "slug": "n26",
+    "logo": "/media/n26_logo.jpg",
+    "hq": "Berlin, Germany",
+    "country": "Germany",
+    "city": "Berlin",
+    "industry": "Fintech",
+    "size": "1,500+",
+    "visa": "EU Blue Card",
+    "salaryRange": { "mid": "€70–90k", "senior": "€90–125k", "staff": "€125–155k" },
+    "relocationPackage": "Visa sponsorship, relocation assistance",
+    "careers": "https://n26.com/en-eu/careers",
+    "applicationTip": "N26 values ownership and speed — their interview process explicitly tests 'bias for action'. When answering behavioural questions, use examples where *you* initiated something rather than waiting for direction. They've slowed hiring since 2023 but still take senior+ engineers who can build autonomously.",
+    "interviewProcess": "Recruiter screen → tech assessment (take-home) → 2 live technical rounds → leadership round. ~4 weeks.",
+    "techStack": ["Kotlin", "Java", "Python", "PostgreSQL", "GCP", "Kubernetes"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Senior Technical Recruiter", "linkedin": "", "focus": "Engineering", "note": "Search: 'Technical Recruiter N26 Berlin' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Delivery Hero",
+    "slug": "delivery-hero",
+    "logo": "/media/deliveryhero_logo.png",
+    "hq": "Berlin, Germany",
+    "country": "Germany",
+    "city": "Berlin",
+    "industry": "Marketplace / Logistics",
+    "size": "53,000+",
+    "visa": "EU Blue Card",
+    "salaryRange": { "mid": "€72–90k", "senior": "€90–125k", "staff": "€120–155k" },
+    "relocationPackage": "Onboarding support, visa sponsorship, housing help",
+    "careers": "https://careers.deliveryhero.com/",
+    "applicationTip": "Delivery Hero operates in 70+ countries — if you have international experience or have worked on multi-region systems, lead with that. Their engineering teams are split into vertical product squads (Logistics, Consumer, Merchant). Look at the specific squad JD; generic 'backend' applications are filtered by the squad not the central team.",
+    "interviewProcess": "Recruiter screen → tech screen → system design → behavioural. ~3 weeks.",
+    "techStack": ["Go", "Python", "Java", "Kafka", "GCP", "Kubernetes", "PostgreSQL"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Tech Recruiter", "linkedin": "", "focus": "Engineering", "note": "Search: 'Talent Acquisition Delivery Hero' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "HelloFresh",
+    "slug": "hellofresh",
+    "logo": "/media/hellofresh_logo.png",
+    "hq": "Berlin, Germany",
+    "country": "Germany",
+    "city": "Berlin",
+    "industry": "Food Tech",
+    "size": "20,000+",
+    "visa": "EU Blue Card",
+    "salaryRange": { "mid": "€68–88k", "senior": "€88–120k", "staff": "€115–150k" },
+    "relocationPackage": "Visa sponsorship, relocation support, German language courses",
+    "careers": "https://careers.hellofresh.com/global/en/germany",
+    "applicationTip": "HelloFresh is a data-heavy company — their business model lives and dies on supply-chain and demand forecasting accuracy. If you have data engineering, ML, or analytics experience, quantify predictions or models you've shipped. They hire across tech but the highest-sponsorship-willingness is in data and logistics engineering.",
+    "interviewProcess": "Recruiter screen → take-home case study (data/ML roles) or coding challenge → technical round → HM round. ~3–4 weeks.",
+    "techStack": ["Python", "Go", "Scala", "Spark", "dbt", "Airflow", "GCP", "BigQuery"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Technical Recruiter", "linkedin": "", "focus": "Engineering / Data", "note": "Search: 'Recruiter HelloFresh Berlin' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "SAP",
+    "slug": "sap",
+    "logo": "/media/sap_logo.png",
+    "hq": "Walldorf, Germany",
+    "country": "Germany",
+    "city": "Walldorf / Berlin / Munich",
+    "industry": "Enterprise Software",
+    "size": "107,000+",
+    "visa": "EU Blue Card",
+    "salaryRange": { "mid": "€70–90k", "senior": "€88–120k", "staff": "€115–155k" },
+    "relocationPackage": "Full: visa support, moving allowance, temp housing",
+    "careers": "https://jobs.sap.com/",
+    "applicationTip": "SAP is more process-driven than Berlin startups — their ATS flags candidates who have 'SAP' or 'S/4HANA' or 'ABAP' in their resume even for cloud-native roles. If you've touched anything enterprise (ERP, integrations, B2B SaaS), call it out. Large company processes mean it's slower, but sponsorship approval is easier — HR knows the paperwork cold.",
+    "interviewProcess": "Recruiter screen → online assessments → 2 technical interviews → HR round. Can take 4–8 weeks.",
+    "techStack": ["Java", "Python", "ABAP", "Kubernetes", "SAP BTP", "Cloud Foundry", "AWS"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Talent Acquisition Partner", "linkedin": "", "focus": "Engineering", "note": "Search: 'Talent Acquisition SAP Walldorf OR Berlin' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Personio",
+    "slug": "personio",
+    "logo": "/media/personio_logo.png",
+    "hq": "Munich, Germany",
+    "country": "Germany",
+    "city": "Munich",
+    "industry": "HR Tech",
+    "size": "2,000+",
+    "visa": "EU Blue Card",
+    "salaryRange": { "mid": "€78–98k", "senior": "€98–135k", "staff": "€130–170k" },
+    "relocationPackage": "Relocation support, visa sponsorship across EU offices",
+    "careers": "https://www.personio.com/about-personio/careers/",
+    "applicationTip": "Personio is focused on mid-market SMBs — when they ask 'tell me about a hard technical problem' they value solutions that balanced speed and quality, not just elegance. They're building for scale but not at Google scale; candidates who have shipped in resource-constrained environments tend to do well. Also check their Munich and Amsterdam offices — both actively sponsor.",
+    "interviewProcess": "Recruiter screen → take-home coding → tech interview → bar raiser. ~3–4 weeks.",
+    "techStack": ["Elixir", "TypeScript", "React", "PostgreSQL", "AWS", "Kubernetes"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Senior Recruiter – Engineering", "linkedin": "", "focus": "Engineering", "note": "Search: 'Recruiter Personio Munich' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Contentful",
+    "slug": "contentful",
+    "logo": "/media/contentful_logo.png",
+    "hq": "Berlin, Germany",
+    "country": "Germany",
+    "city": "Berlin",
+    "industry": "SaaS / CMS",
+    "size": "800+",
+    "visa": "EU Blue Card",
+    "salaryRange": { "mid": "€80–100k", "senior": "€100–135k", "staff": "€130–165k" },
+    "relocationPackage": "Visa sponsorship, relocation assistance",
+    "careers": "https://www.contentful.com/careers/",
+    "applicationTip": "Contentful competes in the composable content space and the interviewers know their market well — mention if you've built on top of Contentful (or a comparable headless CMS) and what the DX was like. They respect opinions. The values round specifically looks for 'be bold' — interviewers want examples where you pushed back on a bad technical decision or proposed a significant change.",
+    "interviewProcess": "Recruiter call → skills assessment → technical interview → final round with team. ~3 weeks.",
+    "techStack": ["TypeScript", "Node.js", "React", "AWS", "GraphQL", "Elasticsearch"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Talent Partner", "linkedin": "", "focus": "Engineering", "note": "Search: 'Recruiter Contentful Berlin' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "SumUp",
+    "slug": "sumup",
+    "logo": "/media/sumup_logo.png",
+    "hq": "Berlin, Germany",
+    "country": "Germany",
+    "city": "Berlin",
+    "industry": "Fintech / Payments",
+    "size": "3,000+",
+    "visa": "EU Blue Card",
+    "salaryRange": { "mid": "€72–92k", "senior": "€90–125k", "staff": "€120–155k" },
+    "relocationPackage": "Visa sponsorship, relocation support, yoga/German classes (yes, really)",
+    "careers": "https://www.sumup.com/careers/",
+    "applicationTip": "SumUp has 93 nationalities on staff — this isn't tokenism, it's structurally international. They explicitly look for candidates who've worked across cultures. In interviews, lean into cross-border experience. Payments domain knowledge is valued but not required; they hire across the stack.",
+    "interviewProcess": "Recruiter screen → code challenge (Codility or HackerRank) → technical interview × 2 → values interview. ~3 weeks.",
+    "techStack": ["Go", "Ruby", "TypeScript", "React Native", "Kafka", "Kubernetes", "GCP"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Tech Recruiter", "linkedin": "", "focus": "Engineering", "note": "Search: 'Recruiter SumUp Berlin' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Grammarly",
+    "slug": "grammarly",
+    "logo": "/media/grammarly_logo.png",
+    "hq": "San Francisco / Berlin",
+    "country": "Germany",
+    "city": "Berlin",
+    "industry": "AI / NLP",
+    "size": "1,000+",
+    "visa": "EU Blue Card",
+    "salaryRange": { "mid": "€85–110k", "senior": "€110–150k", "staff": "€150–195k" },
+    "relocationPackage": "Full relocation package, visa support, hybrid",
+    "careers": "https://www.grammarly.com/jobs/engineering",
+    "applicationTip": "Grammarly's Berlin office is an engineering hub, not a satellite — the teams own full products. They move at US tech speed in a European city. In technical interviews, they value precision: 'what were the constraints' and 'how did you measure success' matter more than high-level architecture. NLP/LLM background is a tiebreaker but not required.",
+    "interviewProcess": "Recruiter screen → tech screen (algo) → system design → cross-functional. ~3–4 weeks.",
+    "techStack": ["Rust", "Python", "TypeScript", "Kubernetes", "GCP", "ML/NLP stack"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Senior Technical Recruiter", "linkedin": "", "focus": "Engineering – Berlin", "note": "Search: 'Technical Recruiter Grammarly Berlin' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Adyen",
+    "slug": "adyen",
+    "logo": "/media/adyen_logo.png",
+    "hq": "Amsterdam, Netherlands",
+    "country": "Netherlands",
+    "city": "Amsterdam",
+    "industry": "Payments",
+    "size": "4,000+",
+    "visa": "Highly Skilled Migrant",
+    "salaryRange": { "mid": "€80–105k", "senior": "€105–145k", "staff": "€145–195k" },
+    "relocationPackage": "Visa sponsorship, health insurance, commute allowance, office lunch",
+    "careers": "https://careers.adyen.com/vacancies/",
+    "applicationTip": "Adyen published their company values publicly — 'We build' is the key one. They strongly prefer engineers who have actually built financial infrastructure (payments, ledgers, reconciliation, fraud), not just consumed payment APIs. In the system design round, depth on consistency models, distributed transactions, and idempotency scores high. They don't hire high volumes — the bar is genuinely high.",
+    "interviewProcess": "Application screening → 2 technical interviews → system design → team fit. ~4 weeks.",
+    "techStack": ["Java", "Python", "Go", "PostgreSQL", "Kafka", "Kubernetes", "AWS"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Talent Acquisition Specialist", "linkedin": "", "focus": "Engineering", "note": "Search: 'Recruiter Adyen Amsterdam' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Mollie",
+    "slug": "mollie",
+    "logo": "/media/mollie_logo.png",
+    "hq": "Amsterdam, Netherlands",
+    "country": "Netherlands",
+    "city": "Amsterdam",
+    "industry": "Payments / Fintech",
+    "size": "800+",
+    "visa": "Highly Skilled Migrant",
+    "salaryRange": { "mid": "€75–95k", "senior": "€95–130k", "staff": "€125–160k" },
+    "relocationPackage": "Flights, moving expenses, temp housing, visa services, real estate agent",
+    "careers": "https://jobs.mollie.com/",
+    "applicationTip": "Mollie has the most detailed relocation package of any mid-size European fintech — they cover real estate agents, which most don't. The engineering team is fairly small and highly senior; they've been selective post-2023. Your application should demonstrate a history of high ownership — show something you took from 0 to production without heavy process.",
+    "interviewProcess": "Recruiter call → take-home → 2 technical rounds → HM round. ~3 weeks.",
+    "techStack": ["PHP", "Go", "TypeScript", "React", "Kubernetes", "AWS", "Kafka"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Technical Recruiter", "linkedin": "", "focus": "Engineering", "note": "Search: 'Technical Recruiter Mollie Amsterdam' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Booking.com",
+    "slug": "booking",
+    "logo": "/media/booking_logo.png",
+    "hq": "Amsterdam, Netherlands",
+    "country": "Netherlands",
+    "city": "Amsterdam",
+    "industry": "Travel Tech",
+    "size": "20,000+",
+    "visa": "Highly Skilled Migrant",
+    "salaryRange": { "mid": "€78–100k", "senior": "€100–140k", "staff": "€135–175k" },
+    "relocationPackage": "Full relocation, visa sponsorship, housing support",
+    "careers": "https://jobs.booking.com/",
+    "applicationTip": "Booking.com runs 1,000+ A/B experiments per year. In any interview — technical or behavioural — they want to see that you make data-driven decisions and can explain the tradeoffs. The system design round will likely involve large-scale read-heavy systems. They have a specific culture around 'being direct' and will probe for disagreement/conflict stories.",
+    "interviewProcess": "Online assessment → recruiter screen → technical × 2 → behavioural round. ~4–5 weeks.",
+    "techStack": ["Perl", "Java", "Python", "Go", "Kubernetes", "Cassandra", "Kafka", "AWS"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Tech Recruiter", "linkedin": "", "focus": "Engineering", "note": "Search: 'Technical Recruiter Booking.com Amsterdam' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Optiver",
+    "slug": "optiver",
+    "logo": "/media/optiver_logo.png",
+    "hq": "Amsterdam, Netherlands",
+    "country": "Netherlands",
+    "city": "Amsterdam",
+    "industry": "Trading / HFT",
+    "size": "2,000+",
+    "visa": "Highly Skilled Migrant",
+    "salaryRange": { "mid": "€120–160k", "senior": "€160–250k", "staff": "€250k+" },
+    "relocationPackage": "Full relocation, legal support, housing support",
+    "careers": "https://optiver.com/working-at-optiver/career-opportunities/",
+    "applicationTip": "Optiver pays the highest engineering salaries in Europe. The bar is extreme — expect brain teasers, probability puzzles, and very low-level systems questions (CPU architecture, network latency, memory models). C++ performance is almost always a topic even for non-C++ roles. Prepare with Jane Street / HRT -style interview prep material, not standard LC grind.",
+    "interviewProcess": "Online test (math + coding) → phone screen → 2 technical rounds → trading simulation. Very selective.",
+    "techStack": ["C++", "Python", "FPGA", "Linux internals", "networking", "co-located systems"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Recruiter", "linkedin": "", "focus": "Software Development / Quantitative", "note": "Search: 'Recruiter Optiver Amsterdam' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Catawiki",
+    "slug": "catawiki",
+    "logo": "/media/catawiki_logo.png",
+    "hq": "Amsterdam, Netherlands",
+    "country": "Netherlands",
+    "city": "Amsterdam",
+    "industry": "Marketplace / E-commerce",
+    "size": "800+",
+    "visa": "Highly Skilled Migrant",
+    "salaryRange": { "mid": "€72–92k", "senior": "€90–125k", "staff": "€120–155k" },
+    "relocationPackage": "Visa sponsorship, relocation support",
+    "careers": "https://catawiki.careers/",
+    "applicationTip": "Catawiki is a marketplace with unique trust and fraud challenges — they auction valuable objects from 80,000+ seller experts. If you have any marketplace, trust & safety, or search/ranking experience, lead with that. They have an unusually transparent careers page — read it before the first call.",
+    "interviewProcess": "Recruiter screen → technical screen → 2 technical rounds → team fit. ~3 weeks.",
+    "techStack": ["Ruby on Rails", "React", "TypeScript", "Python", "Elasticsearch", "GCP"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Talent Acquisition", "linkedin": "", "focus": "Engineering", "note": "Search: 'Recruiter Catawiki Amsterdam' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Revolut",
+    "slug": "revolut",
+    "logo": "/media/revolut_logo.png",
+    "hq": "London, UK",
+    "country": "United Kingdom",
+    "city": "London",
+    "industry": "Fintech / Banking",
+    "size": "8,000+",
+    "visa": "Skilled Worker",
+    "salaryRange": { "mid": "£75–95k", "senior": "£95–130k", "staff": "£125–175k" },
+    "relocationPackage": "Visa assistance, travel costs, first month accommodation",
+    "careers": "https://www.revolut.com/careers/engineering/",
+    "applicationTip": "Revolut is infamous for a high-intensity culture and very specific values — they explicitly test for them. Their values page reads 'get things done', 'dream big', 'never settle'. The behavioural round will probe for pace — 'tell me about a time you moved faster than anyone expected'. Being methodical and cautious tends to score lower than bias-for-action stories, even if they resulted in some mistakes.",
+    "interviewProcess": "Hackerrank screen → recruiter call → technical × 2 → values interview. Fast — often 2 weeks.",
+    "techStack": ["Kotlin", "Java", "Python", "PostgreSQL", "Kafka", "AWS", "Kubernetes"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Senior Technical Recruiter", "linkedin": "", "focus": "Engineering", "note": "Search: 'Technical Recruiter Revolut London' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Cloudflare",
+    "slug": "cloudflare",
+    "logo": "/media/cloudflare_logo.png",
+    "hq": "San Francisco / London / Lisbon",
+    "country": "United Kingdom",
+    "city": "London",
+    "industry": "Infrastructure / Security",
+    "size": "4,000+",
+    "visa": "Skilled Worker",
+    "salaryRange": { "mid": "£85–110k", "senior": "£110–160k", "staff": "£155–220k" },
+    "relocationPackage": "Visa sponsorship, relocation support",
+    "careers": "https://www.cloudflare.com/careers/jobs/",
+    "applicationTip": "Cloudflare publishes an extraordinary technical blog — read 3–5 recent posts in the domain you're applying to before your first call. Interviewers often reference their own blog posts. They care deeply about the 'why' of systems decisions — expect to defend tradeoffs rather than just describe what you built. Rust and C++ experience is a tiebreaker; Go is table stakes in infra roles.",
+    "interviewProcess": "Recruiter screen → technical screen → systems design → coding × 2 → bar raiser. 4–5 weeks.",
+    "techStack": ["Rust", "Go", "C++", "Lua", "Workers (V8)", "distributed systems"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Technical Recruiter", "linkedin": "", "focus": "Engineering", "note": "Search: 'Technical Recruiter Cloudflare London' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Monzo",
+    "slug": "monzo",
+    "logo": "/media/monzo_logo.png",
+    "hq": "London, UK",
+    "country": "United Kingdom",
+    "city": "London",
+    "industry": "Fintech / Banking",
+    "size": "3,000+",
+    "visa": "Skilled Worker",
+    "salaryRange": { "mid": "£78–98k", "senior": "£98–135k", "staff": "£130–175k" },
+    "relocationPackage": "Visa sponsorship, relocation support",
+    "careers": "https://monzo.com/careers/",
+    "applicationTip": "Monzo is arguably the most transparent company in UK tech — they publish their interview process, values, and even salary bands. Read everything on their careers site before applying; interviewers notice when you haven't. They specifically value 'genuine curiosity' — ask interesting questions, not just polite ones. Financial regulatory experience (PSD2, FCA) is a plus but not required.",
+    "interviewProcess": "Application → technical screen → coding challenge (Go preferred) → systems design → values round. 3–4 weeks.",
+    "techStack": ["Go", "Kubernetes", "Cassandra", "Kafka", "GCP", "React"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Technical Recruiter", "linkedin": "", "focus": "Engineering", "note": "Search: 'Recruiter Monzo London' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Wise",
+    "slug": "wise",
+    "logo": "/media/wise_logo.png",
+    "hq": "London / Tallinn",
+    "country": "United Kingdom",
+    "city": "London",
+    "industry": "Fintech",
+    "size": "6,000+",
+    "visa": "Skilled Worker",
+    "salaryRange": { "mid": "£78–98k", "senior": "£98–140k", "staff": "£135–180k" },
+    "relocationPackage": "Visa sponsorship for experienced roles, relocation support",
+    "careers": "https://wise.jobs/",
+    "applicationTip": "Wise has a specific note on their careers page: the graduate program does NOT sponsor visas — experienced roles do. Lead your application with 3+ years of relevant experience. Their culture is mission-driven ('money without borders'); candidates who connect their motivation to the mission in cover letters outperform those who don't. Their Tallinn office is also actively hiring — lower cost of living, same Wise mission.",
+    "interviewProcess": "Recruiter call → technical screen → system design → team interview. 3 weeks.",
+    "techStack": ["Java", "Python", "TypeScript", "Kubernetes", "GCP", "PostgreSQL", "Kafka"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Talent Acquisition Partner", "linkedin": "", "focus": "Engineering", "note": "Search: 'Recruiter Wise London OR Tallinn' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Snyk",
+    "slug": "snyk",
+    "logo": "/media/snyk_logo.png",
+    "hq": "London, UK",
+    "country": "United Kingdom",
+    "city": "London",
+    "industry": "DevSecOps",
+    "size": "1,000+",
+    "visa": "Skilled Worker",
+    "salaryRange": { "mid": "£85–110k", "senior": "£110–155k", "staff": "£150–200k" },
+    "relocationPackage": "Visa sponsorship, relocation support",
+    "careers": "https://snyk.io/careers/engineering/",
+    "applicationTip": "Snyk's product is developer-first security — they want engineers who think like attackers. In technical discussions, showing knowledge of OWASP top 10, common vulnerability classes, or supply-chain security elevates you even for non-security-specific roles. They're a PLG company — understanding of developer experience and adoption metrics scores high.",
+    "interviewProcess": "Recruiter screen → take-home exercise → technical discussion → team fit. 3 weeks.",
+    "techStack": ["TypeScript", "Node.js", "Go", "Kubernetes", "AWS", "MongoDB"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Tech Recruiter", "linkedin": "", "focus": "Engineering", "note": "Search: 'Recruiter Snyk London' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Stripe",
+    "slug": "stripe",
+    "logo": "/media/stripe_logo.png",
+    "hq": "San Francisco / Dublin / London",
+    "country": "United Kingdom",
+    "city": "London",
+    "industry": "Payments",
+    "size": "8,000+",
+    "visa": "Skilled Worker",
+    "salaryRange": { "mid": "£95–130k", "senior": "£130–190k", "staff": "£185–260k" },
+    "relocationPackage": "Full relocation, visa fees covered, competitive package",
+    "careers": "https://stripe.com/jobs/search",
+    "applicationTip": "Stripe is known for one of the most rigorous engineering interviews in London. They specifically care about 'how do you think' not just 'do you know the answer'. In systems design, they'll keep pushing: 'what happens when X fails?', 'how would you scale this 10×?'. Read their API documentation before interviewing — understanding how they think about API design shapes how you'll be evaluated.",
+    "interviewProcess": "Recruiter screen → tech screen → coding × 2 → systems design × 2 → hiring manager. 5–6 weeks.",
+    "techStack": ["Ruby", "Go", "Java", "Scala", "Hadoop", "Kafka", "AWS", "custom infra"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Senior Technical Recruiter", "linkedin": "", "focus": "Engineering", "note": "Search: 'Technical Recruiter Stripe London OR Dublin' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Mistral AI",
+    "slug": "mistral-ai",
+    "logo": "/media/mistralai_logo.jpeg",
+    "hq": "Paris, France",
+    "country": "France",
+    "city": "Paris",
+    "industry": "AI / LLM",
+    "size": "600+",
+    "visa": "Passeport Talent / Talent Passport",
+    "salaryRange": { "mid": "€85–115k", "senior": "€115–165k", "staff": "€165k+" },
+    "relocationPackage": "Visa sponsorship, relocation support",
+    "careers": "https://mistral.ai/careers/",
+    "applicationTip": "Mistral is one of the hottest AI companies in Europe. The bar for applied AI roles is frontier-level — expect questions on transformer architectures, training dynamics, and inference optimization. Research roles require publications or demonstrated open-source impact. Non-research engineering roles (infra, platform, developer tools) are where international candidates without publications have a realistic shot.",
+    "interviewProcess": "Recruiter screen → technical screen → deep technical × 2 → leadership. 3–4 weeks (moves fast when interested).",
+    "techStack": ["Python", "C++", "CUDA", "PyTorch", "Triton", "Kubernetes", "GCP"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Talent Acquisition", "linkedin": "", "focus": "Engineering / Research", "note": "Search: 'Recruiter Mistral AI Paris' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Datadog",
+    "slug": "datadog",
+    "logo": "/media/datadog_logo.png",
+    "hq": "New York / Paris",
+    "country": "France",
+    "city": "Paris",
+    "industry": "Observability / Cloud",
+    "size": "6,000+",
+    "visa": "Passeport Talent",
+    "salaryRange": { "mid": "€75–100k", "senior": "€100–145k", "staff": "€140–195k" },
+    "relocationPackage": "Visa sponsorship, relocation support, hybrid",
+    "careers": "https://careers.datadoghq.com/",
+    "applicationTip": "Datadog's Paris office has significant hiring autonomy — it's not just a support hub. Their engineering culture values observability of their own systems (meta, but true). When answering how you've handled incidents or on-call, be specific about SLO/SLA, MTTR, and how you reduced alert fatigue. Candidates who have operated large distributed systems in production and have war stories score high.",
+    "interviewProcess": "Recruiter screen → technical screen → coding × 2 → systems design. 3–4 weeks.",
+    "techStack": ["Go", "Python", "Java", "Kafka", "Kubernetes", "custom agents in C++"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Technical Recruiter", "linkedin": "", "focus": "Engineering – Paris", "note": "Search: 'Technical Recruiter Datadog Paris' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Spotify",
+    "slug": "spotify",
+    "logo": "/media/spotify_logo.png",
+    "hq": "Stockholm, Sweden",
+    "country": "Sweden",
+    "city": "Stockholm",
+    "industry": "Music / Media",
+    "size": "10,000+",
+    "visa": "Swedish Work Permit",
+    "salaryRange": { "mid": "SEK 700–900k", "senior": "SEK 900k–1.2m", "staff": "SEK 1.1m–1.5m" },
+    "relocationPackage": "Full relocation package, visa sponsorship, hybrid",
+    "careers": "https://www.lifeatspotify.com/jobs",
+    "applicationTip": "Spotify invented the 'squad model' — it's deeply embedded in how their teams work. In behavioural interviews, frame your experience around product team ownership (not 'I was assigned a ticket' but 'my squad owned the discovery surface'). They value engineers who understand the full product loop, not just the implementation. The engineering blog is genuinely written by the people who will interview you — read it.",
+    "interviewProcess": "Recruiter screen → technical screen → coding × 2 → systems design → bar raiser. 4–5 weeks.",
+    "techStack": ["Java", "Python", "Go", "Kubernetes", "GCP", "BigQuery", "Bigtable"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Talent Partner", "linkedin": "", "focus": "Engineering", "note": "Search: 'Talent Partner Spotify Stockholm' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Klarna",
+    "slug": "klarna",
+    "logo": "/media/klarna_logo.png",
+    "hq": "Stockholm, Sweden",
+    "country": "Sweden",
+    "city": "Stockholm",
+    "industry": "Fintech / BNPL",
+    "size": "5,000+",
+    "visa": "Swedish Work Permit",
+    "salaryRange": { "mid": "SEK 700–900k", "senior": "SEK 900k–1.2m", "staff": "SEK 1.1m–1.5m" },
+    "relocationPackage": "Visa sponsorship, relocation support",
+    "careers": "https://www.klarna.com/careers/",
+    "applicationTip": "Klarna is deep into AI automation — they publicly reduced their engineering headcount by ~30% in 2023 via AI tooling. The expectation of remaining engineers is higher productivity per person. In interviews, demonstrate you've used AI tools in your workflow (Copilot, Cursor, Claude for code) and show concrete productivity gains. They want engineers who multiply their own output.",
+    "interviewProcess": "Recruiter screen → technical interview → system design → team fit. 3 weeks.",
+    "techStack": ["Java", "Python", "TypeScript", "React", "AWS", "PostgreSQL", "Kafka"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Senior Technical Recruiter", "linkedin": "", "focus": "Engineering", "note": "Search: 'Recruiter Klarna Stockholm' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Bolt",
+    "slug": "bolt",
+    "logo": "/media/bolt_logo.png",
+    "hq": "Tallinn, Estonia",
+    "country": "Estonia",
+    "city": "Tallinn",
+    "industry": "Mobility / Super-app",
+    "size": "5,000+",
+    "visa": "Estonian D-visa + Residence Permit",
+    "salaryRange": { "mid": "€60–80k", "senior": "€80–115k", "staff": "€110–150k" },
+    "relocationPackage": "Relocation and visa support to Tallinn",
+    "careers": "https://bolt.eu/en/careers/",
+    "applicationTip": "Bolt is the most international company in the Baltics — 50+ nationalities. Estonia has one of the fastest and most digital-first immigration systems in the world; your visa process will be largely online. Bolt moves fast and values engineers who thrive in ambiguity. In systems design, multi-region and multi-country (with different regulatory requirements per market) is a frequent angle — they operate in 50+ countries.",
+    "interviewProcess": "Recruiter screen → technical screen → live coding + systems design → values. 2–3 weeks.",
+    "techStack": ["Go", "Python", "Java", "Kotlin", "Kubernetes", "PostgreSQL", "Kafka"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Technical Recruiter", "linkedin": "", "focus": "Engineering", "note": "Search: 'Technical Recruiter Bolt Tallinn' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Wise (Tallinn)",
+    "slug": "wise-tallinn",
+    "logo": "/media/wise_logo.png",
+    "hq": "Tallinn, Estonia",
+    "country": "Estonia",
+    "city": "Tallinn",
+    "industry": "Fintech",
+    "size": "6,000+",
+    "visa": "Estonian D-visa + Residence Permit",
+    "salaryRange": { "mid": "€58–78k", "senior": "€78–115k", "staff": "€110–150k" },
+    "relocationPackage": "Relocation support, visa assistance",
+    "careers": "https://wise.jobs/",
+    "applicationTip": "Tallinn office is Wise's largest engineering hub. Same interview process as London but lower living costs and a tight-knit tech community. Estonia's digital residency and e-government is world-class — adapting quickly to digital systems is a real advantage. Note: Tallinn salaries are lower than London, but so are taxes (flat 20%) and cost of living.",
+    "interviewProcess": "Same as London Wise — see Wise UK entry.",
+    "techStack": ["Java", "Python", "TypeScript", "Kubernetes", "GCP", "PostgreSQL"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Talent Acquisition Partner", "linkedin": "", "focus": "Engineering – Tallinn", "note": "Search: 'Recruiter Wise Tallinn' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "TravelPerk",
+    "slug": "travelperk",
+    "logo": "/media/travelperk_logo.png",
+    "hq": "Barcelona, Spain",
+    "country": "Spain",
+    "city": "Barcelona",
+    "industry": "Travel / SaaS",
+    "size": "1,400+",
+    "visa": "Highly Qualified Professional",
+    "salaryRange": { "mid": "€55–75k", "senior": "€75–105k", "staff": "€100–140k" },
+    "relocationPackage": "Relocation bonus, visa support, international team",
+    "careers": "https://www.travelperk.com/careers/",
+    "applicationTip": "TravelPerk is headquartered in Barcelona and is probably the highest-profile sponsor for the Spanish market. They operate under Spain's Beckham Law (24% flat tax for 6 years for eligible new residents) — mention in your application that you've researched this; it shows you're serious about the move. Their engineering values center on pragmatism — the best solution is the one that ships and works, not the most elegant one.",
+    "interviewProcess": "Recruiter screen → technical screen → take-home or live coding → team interview. 3 weeks.",
+    "techStack": ["Python", "Django", "React", "TypeScript", "PostgreSQL", "Kubernetes", "AWS"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Tech Recruiter", "linkedin": "", "focus": "Engineering", "note": "Search: 'Technical Recruiter TravelPerk Barcelona' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Form3",
+    "slug": "form3",
+    "logo": "/media/form3_logo.png",
+    "hq": "London, UK",
+    "country": "United Kingdom",
+    "city": "London (remote)",
+    "industry": "Payments",
+    "size": "400+",
+    "visa": "Skilled Worker",
+    "salaryRange": { "mid": "£80–105k", "senior": "£105–150k", "staff": "£145–195k" },
+    "relocationPackage": "Visa sponsorship, 100% remote after relocation",
+    "careers": "https://www.form3.tech/careers",
+    "applicationTip": "Form3 is fully remote and sponsors in the UK, Netherlands, and Germany — pick the country that suits your situation best and say so in your application. Their whole stack is Go and Kubernetes; if you have strong Go experience, lead with that. They have a clear engineering blog — referencing a recent post shows you've done your homework.",
+    "interviewProcess": "Recruiter call → take-home exercise (Go) → technical review → culture fit. 3 weeks.",
+    "techStack": ["Go", "Kubernetes", "AWS", "PostgreSQL", "gRPC", "Terraform"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Talent Partner", "linkedin": "", "focus": "Engineering", "note": "Search: 'Recruiter Form3 London' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Amazon",
+    "slug": "amazon",
+    "logo": "/media/amazon_logo.png",
+    "hq": "Seattle, USA",
+    "country": "United States",
+    "city": "Seattle / NYC / Austin / Bay Area",
+    "industry": "E-commerce / Cloud",
+    "size": "1,500,000+",
+    "visa": "H-1B",
+    "salaryRange": { "mid": "$140–180k", "senior": "$180–270k", "staff": "$250–380k" },
+    "relocationPackage": "Full relocation, visa fees covered, structured package",
+    "careers": "https://amazon.jobs/",
+    "applicationTip": "Amazon is the #1 H-1B sponsor in the US (15,000+ LCAs per year). The interview is LP-driven — you need a STAR story for each of the 16 Leadership Principles, specifically the ones Amazon weights for your level. 'Customer Obsession' and 'Ownership' come up in nearly every loop. Reference the LP by name in your answers — interviewers grade against it. Bar Raiser is real and independent — they override HM preference.",
+    "interviewProcess": "OA (algo) → phone screen → onsite loop (4–6 rounds: coding, design, LPs). 4–6 weeks.",
+    "techStack": ["Java", "Python", "C++", "Rust", "AWS (everything)", "internal frameworks"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Technical Recruiter", "linkedin": "", "focus": "SDE / Infra / ML", "note": "Search: 'Technical Recruiter Amazon Seattle' on LinkedIn — Amazon has hundreds of tech recruiters; find one who posts in your domain" }
+    ]
+  },
+  {
+    "name": "Microsoft",
+    "slug": "microsoft",
+    "logo": "/media/microsoft_logo.png",
+    "hq": "Redmond, USA",
+    "country": "United States",
+    "city": "Redmond / Seattle",
+    "industry": "Cloud / Software",
+    "size": "220,000+",
+    "visa": "H-1B",
+    "salaryRange": { "mid": "$155–200k", "senior": "$200–290k", "staff": "$280–420k" },
+    "relocationPackage": "Full relocation, visa fees covered",
+    "careers": "https://careers.microsoft.com/",
+    "applicationTip": "Microsoft is the #4 H-1B sponsor. Unlike Amazon, they don't have a rigid LP framework — they interview around 'growth mindset' (Carol Dweck's concept, which Satya Nadella made central to MS culture). Show adaptability and curiosity over all-knowing expertise. The Azure/cloud orgs are the fastest-growing; AI/ML orgs are hiring aggressively for Copilot and related. Their onboarding for international hires is very mature.",
+    "interviewProcess": "Recruiter screen → online assessment → phone screen → virtual onsite (4 rounds). 4–6 weeks.",
+    "techStack": ["C#", "C++", "TypeScript", "Python", "Azure (everything)", "Rust (growing)"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Technical Recruiter", "linkedin": "", "focus": "Azure / AI / GitHub / Xbox", "note": "Search: 'Technical Recruiter Microsoft Redmond' on LinkedIn — find one in your specific org" }
+    ]
+  },
+  {
+    "name": "Canva",
+    "slug": "canva",
+    "logo": "/media/canva_logo.png",
+    "hq": "Sydney, Australia",
+    "country": "Australia",
+    "city": "Sydney",
+    "industry": "Design SaaS",
+    "size": "5,000+",
+    "visa": "TSS Visa (Subclass 482)",
+    "salaryRange": { "mid": "AUD 150–185k", "senior": "AUD 185–250k", "staff": "AUD 240–330k" },
+    "relocationPackage": "Visa fees fully covered, relocation bonus, temp housing, equity",
+    "careers": "https://www.lifeatcanva.com/en/jobs/",
+    "applicationTip": "Canva covers all visa fees upfront — it's one of the most generous packages in Australia. They specifically look for engineers who can build products that feel 'magical' to non-technical users. Their interview values 'purpose' — 'empowering the world to design' is not just marketing for them. Candidates who connect their work to user impact rather than technical cleverness tend to do better. Big design intuition is a real differentiator.",
+    "interviewProcess": "Recruiter screen → technical screen → systems design → values round → offer. 3–4 weeks.",
+    "techStack": ["TypeScript", "React", "Kotlin", "Java", "GCP", "Kubernetes", "internal rendering engine"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Technical Recruiter", "linkedin": "", "focus": "Engineering", "note": "Search: 'Technical Recruiter Canva Sydney' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Stripe (Dublin)",
+    "slug": "stripe-dublin",
+    "logo": "/media/stripe_logo.png",
+    "hq": "Dublin, Ireland",
+    "country": "Ireland",
+    "city": "Dublin",
+    "industry": "Payments",
+    "size": "8,000+",
+    "visa": "Critical Skills Employment Permit",
+    "salaryRange": { "mid": "€95–130k", "senior": "€130–190k", "staff": "€185–260k" },
+    "relocationPackage": "Full relocation, visa fees covered, spouse work permit support",
+    "careers": "https://stripe.com/jobs/search",
+    "applicationTip": "Stripe Dublin is the EU HQ and a major engineering hub — not a satellite office. Same interview process as the US/London (see UK entry). Ireland's CSEP process is fast (6–8 weeks) and Stripe has done it hundreds of times. If you're choosing between Stripe London and Stripe Dublin, Dublin has a faster visa timeline and Ireland's pathway to EU citizenship is one of the best (5 years residency, EU passport).",
+    "interviewProcess": "Same as Stripe UK — 5–6 weeks.",
+    "techStack": ["Ruby", "Go", "Java", "Scala", "AWS", "Kafka", "custom infra"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Senior Technical Recruiter", "linkedin": "", "focus": "Engineering – Dublin", "note": "Search: 'Technical Recruiter Stripe Dublin' on LinkedIn" }
+    ]
+  },
+  {
+    "name": "Google (Zurich)",
+    "slug": "google-zurich",
+    "logo": "/media/google_logo.png",
+    "hq": "Mountain View / Zurich",
+    "country": "Switzerland",
+    "city": "Zurich",
+    "industry": "Big Tech",
+    "size": "180,000+ (global)",
+    "visa": "Swiss B-permit",
+    "salaryRange": { "mid": "CHF 180–230k", "senior": "CHF 230–320k", "staff": "CHF 300–450k+" },
+    "relocationPackage": "Full relocation, visa fully managed, legal team, housing support",
+    "careers": "https://careers.google.com/locations/zurich/",
+    "applicationTip": "Google Zurich is the largest Google office outside the US — it's not a satellite. L4/L5 roles in SRE, ML infra, and distributed systems are the most active hiring. The interview process is the same as Mountain View (5–6 rounds). The specific Zurich advantage: Switzerland B-permit is quota-limited but Google is one of the few companies that navigates it reliably. If you get a Zurich Google offer, take the visa question off the table — their legal team has done this thousands of times.",
+    "interviewProcess": "Recruiter screen → phone tech screen → onsite loop (coding × 3, design × 2, googleyness). 6–8 weeks.",
+    "techStack": ["C++", "Go", "Python", "Java", "TensorFlow", "Spanner", "custom infra"],
+    "recruiters": [
+      { "name": "Add from LinkedIn search", "title": "Technical Recruiter", "linkedin": "", "focus": "Engineering – Zurich", "note": "Search: 'Technical Recruiter Google Zurich' on LinkedIn — many are specialized by eng domain" }
+    ]
+  }
+]

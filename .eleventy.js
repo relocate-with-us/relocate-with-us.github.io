@@ -9,6 +9,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "favicon/favicon.ico": "favicon.ico" });
   eleventyConfig.addPassthroughCopy({ "CNAME": "CNAME" });
   eleventyConfig.addPassthroughCopy({ "src/assets/js": "assets/js" });
+  eleventyConfig.addPassthroughCopy({ "pro-downloads": "pro/downloads" });
 
   // Date filters
   eleventyConfig.addFilter("dateDisplay", (dateStr) => {
@@ -151,6 +152,22 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("localeString", (num) => {
     if (num === null || num === undefined) return "";
     return Number(num).toLocaleString("en-US");
+  });
+
+  // Premium sponsors: get sorted unique country list
+  eleventyConfig.addFilter("uniqueField", (arr, field) => {
+    if (!arr) return [];
+    const seen = new Set();
+    return arr
+      .map((item) => item[field])
+      .filter((v) => v && !seen.has(v) && seen.add(v))
+      .sort();
+  });
+
+  // Premium sponsors: count items by field value
+  eleventyConfig.addFilter("countByField", (arr, field, value) => {
+    if (!arr) return 0;
+    return arr.filter((item) => item[field] === value).length;
   });
 
   // Year for copyright

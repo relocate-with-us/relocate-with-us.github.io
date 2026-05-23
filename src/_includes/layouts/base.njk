@@ -60,7 +60,7 @@
   {# Pagefind #}
   <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
 
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="{{ 'noindex, nofollow' if noindex else 'index, follow' }}">
   <meta name="language" content="English">
   <meta name="google-adsense-account" content="{{ site.analytics.adsense }}">
 

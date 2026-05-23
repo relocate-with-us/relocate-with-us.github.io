@@ -1,0 +1,166 @@
+% =============================================================
+%  Resume Template — The International Tech Job Playbook
+%  by VisaJobs.xyz
+%
+%  ATS-safe single-column LaTeX resume.
+%  Compile with:  pdflatex resume-template.tex
+%             or  xelatex  resume-template.tex
+%
+%  Replace every [BRACKETED] field. Read the comments — they
+%  encode the rules from Part 3 of the book.
+% =============================================================
+
+\documentclass[a4paper,11pt]{article}
+
+% ---------- packages ----------
+\usepackage[margin=1.6cm]{geometry}      % tight but readable margins
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}                     % standard, ATS-friendly font
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}                   % typographic polish
+\usepackage{enumitem}                    % bullet control
+\usepackage{titlesec}                    % section formatting
+\usepackage[hidelinks,colorlinks=true,
+            urlcolor=black,
+            linkcolor=black]{hyperref}   % black links print clean
+\usepackage{xcolor}
+\usepackage{fontawesome5}                % icons in contact line (optional)
+\usepackage{tabularx}
+
+% ---------- spacing ----------
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=*, topsep=2pt, itemsep=1pt, parsep=0pt}
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+% ---------- helpers ----------
+\newcommand{\role}[4]{%
+  % \role{Title}{Company}{Dates}{City, Country}
+  \noindent\textbf{#1} \hfill #3 \\
+  \textit{#2} \hfill \textit{#4}
+  \vspace{2pt}
+}
+
+\newcommand{\education}[4]{%
+  \noindent\textbf{#1} \hfill #3 \\
+  \textit{#2} \hfill \textit{#4}
+  \vspace{2pt}
+}
+
+% ---------- document ----------
+\begin{document}
+\pagestyle{empty}
+
+% =============================================================
+% HEADER — Name, headline, contact
+%
+% Rules (from Chapter 7):
+% - Headline includes role + relocation/visa statement above the fold
+% - Contact line on one line; LinkedIn + GitHub + city + email
+% - No photo, no DOB unless applying to a German traditional company
+% =============================================================
+
+\begin{center}
+  {\Huge\bfseries [YOUR NAME]} \\[3pt]
+  {\large [Senior Backend Engineer] $\cdot$ [6 yrs] $\cdot$ [Distributed systems, payments]} \\[3pt]
+  \small
+  \href{mailto:you@example.com}{you@example.com}
+  $\cdot$ \href{tel:+0000000000}{+00 000 000 000}
+  $\cdot$ \href{https://linkedin.com/in/you}{linkedin.com/in/you}
+  $\cdot$ \href{https://github.com/you}{github.com/you}
+  $\cdot$ [City, Country]
+\end{center}
+
+\vspace{-4pt}
+
+% =============================================================
+% SUMMARY — 3 lines max. Third line is the visa/relocation pin.
+% =============================================================
+
+\section*{Summary}
+
+[One-line professional positioning — what you do, for whom, with what stack.] [Senior backend engineer with 6 years building high-throughput payment systems for European fintech.]
+
+[One-line biggest achievement / unique angle.] [Led migration of payment processing to Go microservices serving 12M monthly transactions, reducing P95 latency from 380ms to 95ms.]
+
+\textbf{Eligible for the EU Blue Card. Open to relocation to Berlin, Munich, or Amsterdam. Available within 6 weeks of offer.}
+
+% =============================================================
+% EXPERIENCE
+%
+% For each role, 3-6 bullets in priority order for THIS job
+% (not chronological within the role).
+%
+% Bullet pattern: [Verb] [what] [scope/scale] -> [outcome with metric] [tools]
+% =============================================================
+
+\section*{Experience}
+
+\role{Senior Backend Engineer}{Acme Payments, B2B fintech (Series C, ~250 FTE)}{Jan 2022 — Present}{Lisbon, Portugal (remote)}
+\begin{itemize}
+  \item Migrated payment processing from a Ruby monolith to 6 Go microservices serving 12M monthly transactions; reduced P95 latency from 380ms to 95ms (Go, gRPC, Kafka, Postgres, AWS EKS).
+  \item Designed and shipped idempotency layer for cross-currency transfers, eliminating a class of double-charge bugs costing approximately \$180k/year in manual reconciliation.
+  \item Mentored 5 mid-level engineers; 3 promoted to senior within 18 months.
+  \item Led on-call hardening: cut incident MTTR from 47 minutes to 14 by introducing structured runbooks and cross-team alert ownership.
+\end{itemize}
+
+\vspace{4pt}
+
+\role{Software Engineer}{StartupCo, Consumer marketplace (Seed → Series A)}{Aug 2019 — Dec 2021}{Madrid, Spain}
+\begin{itemize}
+  \item Built and shipped redesigned checkout flow (React, Next.js, Stripe), increasing conversion 12\% on 4M monthly visitors — directly responsible for \euro2.1M annual revenue uplift.
+  \item Owned introduction of Kubernetes infrastructure from zero; cut deployment time from 35 min to 4 min.
+  \item Authored 3 RFCs adopted as company-wide standards (auth, observability, async patterns).
+\end{itemize}
+
+\vspace{4pt}
+
+\role{Junior Software Engineer}{ConsultancyCo}{Sep 2018 — Jul 2019}{Lisbon, Portugal}
+\begin{itemize}
+  \item Built backend microservices for 4 financial-services clients (Java, Spring Boot, Postgres).
+  \item Won internal innovation award for OAuth2 reference implementation reused across 6 client projects.
+\end{itemize}
+
+% =============================================================
+% EDUCATION
+% =============================================================
+
+\section*{Education}
+
+\education{MSc, Computer Science}{University of Lisbon}{2016 — 2018}{Lisbon, Portugal}
+Thesis: distributed consensus protocols. GPA 18/20 (top 10\%).
+
+\vspace{4pt}
+
+\education{BSc, Computer Science}{University of Lisbon}{2013 — 2016}{Lisbon, Portugal}
+
+% =============================================================
+% SKILLS — grouped, ATS-friendly
+%
+% Mirror the JD's exact spelling (e.g. React vs React.js).
+% =============================================================
+
+\section*{Skills}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\textbf{Languages} & Go, Python, TypeScript, Java, SQL \\
+\textbf{Frameworks} & gRPC, FastAPI, Spring Boot, Next.js, React \\
+\textbf{Infrastructure} & AWS (EKS, RDS, Lambda), Kubernetes, Docker, Terraform, Kafka, Postgres, Redis \\
+\textbf{Practices} & Distributed systems, microservices, observability (Prometheus, Grafana), on-call leadership, incident management \\
+\textbf{Spoken} & Portuguese (native), English (C2), Spanish (C1), German (A2 — learning) \\
+\end{tabularx}
+
+% =============================================================
+% PROJECTS / OPEN SOURCE / TALKS — optional, only if strong
+% =============================================================
+
+\section*{Open Source \& Talks}
+
+\begin{itemize}
+  \item \textbf{Maintainer}, \href{https://github.com/example/lib}{example/lib} — Go library for retry-with-backoff, 2.4k stars, 90+ contributors.
+  \item \textbf{Speaker}, \emph{PyCon Portugal 2024} — "Async patterns in production" (audience ~600).
+  \item \textbf{Author}, blog at \href{https://yoursite.dev}{yoursite.dev} — write monthly on systems and payments.
+\end{itemize}
+
+\end{document}
