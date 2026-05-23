@@ -4,6 +4,12 @@ eleventyExcludeFromCollections: true
 ---
 User-agent: *
 Allow: /
+Allow: /blog/
+Allow: /visa-sponsored-jobs/
+Allow: /resources/
+Allow: /jobs-by-country/
+Allow: /jobs-by-role/
+Allow: /assets/js/
 
 Sitemap: {{ site.url }}/sitemap.xml
 
@@ -11,6 +17,3 @@ Sitemap: {{ site.url }}/sitemap.xml
 Disallow: /index.html
 Disallow: /relocation-jobs/
 Disallow: /relocate-jobs/
-
-# Block development files
-Disallow: /assets/js/

@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
-title: "Visa Sponsorship Jobs & Relocation Assistance — 270+ Roles Worldwide"
-description: "Find 270+ tech jobs with visa sponsorship and relocation packages across Europe. Companies like Stripe, Revolut, and Cloudflare are hiring. Free, updated weekly."
+title: "Visa Sponsorship Jobs & Relocation Assistance — 320+ Roles Worldwide"
+description: "Find 320+ tech jobs with visa sponsorship and relocation packages across Europe. Companies like Stripe, Revolut, Spotify, and Cloudflare are hiring. Free, updated weekly."
 ogImage: "https://visajobs.xyz/media/og-image.png"
 ---
 
@@ -191,6 +191,42 @@ ogImage: "https://visajobs.xyz/media/og-image.png"
       Join Channel
       <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
     </a>
+  </div>
+</section>
+
+{# Blog Section - Internal links for SEO #}
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="section-heading text-center mb-4">Visa Sponsorship Guides</h2>
+    <p class="text-center text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
+      Expert guides to help you land your dream job abroad — from visa applications to salary negotiation.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for post in collections.blogPosts | limit(6) %}
+      <a href="{{ post.url }}" class="card p-6 hover:border-brand-300 dark:hover:border-brand-700 group block">
+        <div class="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400 mb-3">
+          <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+          {{ post.date | dateDisplay }}
+          {% if post.data.readTime %}
+          <span class="text-gray-300 dark:text-gray-600">·</span>
+          {{ post.data.readTime }}
+          {% endif %}
+        </div>
+        <h3 class="font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors mb-2 line-clamp-2">
+          {{ post.data.title }}
+        </h3>
+        {% if post.data.excerpt %}
+        <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-3">{{ post.data.excerpt }}</p>
+        {% endif %}
+      </a>
+      {% endfor %}
+    </div>
+    <div class="text-center mt-8">
+      <a href="/blog/" class="btn-secondary">
+        View All Guides
+        <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+      </a>
+    </div>
   </div>
 </section>
 
