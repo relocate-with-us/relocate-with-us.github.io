@@ -22,39 +22,6 @@
     "description": "https://stripe.com/jobs/search?query=connect"
   },
   {
-    "company": "Revolut",
-    "position": "Senior Backend Engineer - Crypto",
-    "location": "London, United Kingdom 🇬🇧",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "May 23, 2026",
-    "logo": "/media/revolut_logo.jpg",
-    "description": "https://www.revolut.com/careers/engineering/"
-  },
-  {
-    "company": "Revolut",
-    "position": "Senior iOS Engineer",
-    "location": "Barcelona, Spain 🇪🇸",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "May 23, 2026",
-    "logo": "/media/revolut_logo.jpg",
-    "description": "https://www.revolut.com/careers/engineering/"
-  },
-  {
-    "company": "Revolut",
-    "position": "Machine Learning Engineer - Risk",
-    "location": "London, United Kingdom 🇬🇧",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "May 22, 2026",
-    "logo": "/media/revolut_logo.jpg",
-    "description": "https://www.revolut.com/careers/engineering/"
-  },
-  {
     "company": "Spotify",
     "position": "Senior Backend Engineer - Content Platform",
     "location": "Stockholm, Sweden 🇸🇪",
@@ -75,28 +42,6 @@
     "post_date": "May 22, 2026",
     "logo": "/media/spotify_logo.jpg",
     "description": "https://www.lifeatspotify.com/jobs"
-  },
-  {
-    "company": "Wise",
-    "position": "Senior Software Engineer - Payments",
-    "location": "Tallinn, Estonia 🇪🇪",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "May 22, 2026",
-    "logo": "/media/wise_logo.jpg",
-    "description": "https://wise.jobs/search/"
-  },
-  {
-    "company": "Wise",
-    "position": "Full Stack Engineer - International Transfers",
-    "location": "London, United Kingdom 🇬🇧",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "May 21, 2026",
-    "logo": "/media/wise_logo.jpg",
-    "description": "https://wise.jobs/search/"
   },
   {
     "company": "Klarna",
@@ -141,39 +86,6 @@
     "post_date": "May 20, 2026",
     "logo": "/media/monzo_bank_logo.jpeg",
     "description": "https://monzo.com/careers/"
-  },
-  {
-    "company": "Snyk",
-    "position": "Senior Software Engineer - Application Security",
-    "location": "London, United Kingdom 🇬🇧",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "May 20, 2026",
-    "logo": "/media/snyk_logo.jpg",
-    "description": "https://snyk.io/careers/engineering/"
-  },
-  {
-    "company": "Snyk",
-    "position": "Staff Engineer - Developer Experience",
-    "location": "London, United Kingdom 🇬🇧",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "May 20, 2026",
-    "logo": "/media/snyk_logo.jpg",
-    "description": "https://snyk.io/careers/engineering/"
-  },
-  {
-    "company": "Canva",
-    "position": "Senior Software Engineer - Growth Platform",
-    "location": "London, United Kingdom 🇬🇧",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "May 20, 2026",
-    "logo": "/media/canva_logo.jpg",
-    "description": "https://www.canva.com/careers/jobs/"
   },
   {
     "company": "Bolt",
@@ -242,28 +154,6 @@
     "description": "https://careers.datadoghq.com/"
   },
   {
-    "company": "Glovo",
-    "position": "Senior Backend Engineer - Logistics",
-    "location": "Barcelona, Spain 🇪🇸",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "May 18, 2026",
-    "logo": "/media/glovo_logo.jpg",
-    "description": "https://about.glovoapp.com/en/careers/"
-  },
-  {
-    "company": "Glovo",
-    "position": "Android Engineer - Consumer App",
-    "location": "Barcelona, Spain 🇪🇸",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "May 18, 2026",
-    "logo": "/media/glovo_logo.jpg",
-    "description": "https://about.glovoapp.com/en/careers/"
-  },
-  {
     "company": "Catawiki",
     "position": "Senior Full-Stack Engineer - Marketplace",
     "location": "Amsterdam, Netherlands 🇳🇱",
@@ -284,50 +174,6 @@
     "post_date": "May 17, 2026",
     "logo": "/media/catawiki_logo.jpg",
     "description": "https://catawiki.careers/"
-  },
-  {
-    "company": "Ecosia",
-    "position": "Senior Backend Engineer - Search Infrastructure",
-    "location": "Berlin, Germany 🇩🇪",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "May 17, 2026",
-    "logo": "/media/ecosia_logo.jpg",
-    "description": "https://explore.ecosia.org/jobs"
-  },
-  {
-    "company": "Ecosia",
-    "position": "Frontend Engineer - Web Experience",
-    "location": "Berlin, Germany 🇩🇪",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "May 16, 2026",
-    "logo": "/media/ecosia_logo.jpg",
-    "description": "https://explore.ecosia.org/jobs"
-  },
-  {
-    "company": "Trivago",
-    "position": "Senior Software Engineer - Price Comparison",
-    "location": "Düsseldorf, Germany 🇩🇪",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "May 16, 2026",
-    "logo": "/media/trivago_logo.jpg",
-    "description": "https://company.trivago.com/careers/"
-  },
-  {
-    "company": "Trivago",
-    "position": "Data Engineer - Analytics Platform",
-    "location": "Düsseldorf, Germany 🇩🇪",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "May 16, 2026",
-    "logo": "/media/trivago_logo.jpg",
-    "description": "https://company.trivago.com/careers/"
   },
   {
     "company": "Scalable Capital",
@@ -394,28 +240,6 @@
     "post_date": "May 14, 2026",
     "logo": "/media/voodoo_logo.jpg",
     "description": "https://www.voodoo.io/careers"
-  },
-  {
-    "company": "Criteo",
-    "position": "Senior Software Engineer - Real-Time Bidding",
-    "location": "Paris, France 🇫🇷",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "May 13, 2026",
-    "logo": "/media/criteo_logo.jpg",
-    "description": "https://careers.criteo.com/"
-  },
-  {
-    "company": "Criteo",
-    "position": "Staff ML Engineer - Ad Optimization",
-    "location": "Paris, France 🇫🇷",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "May 13, 2026",
-    "logo": "/media/criteo_logo.jpg",
-    "description": "https://careers.criteo.com/"
   },
   {
     "company": "MessageBird",
