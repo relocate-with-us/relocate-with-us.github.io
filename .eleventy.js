@@ -22,7 +22,10 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("isoDate", (dateStr) => {
-    return new Date(dateStr).toISOString();
+    const d = new Date(dateStr);
+    // W3C Sitemap protocol requires YYYY-MM-DD or YYYY-MM-DDThh:mm:ss+00:00
+    // Using YYYY-MM-DD for maximum compatibility with sitemap validators
+    return d.toISOString().split('T')[0];
   });
 
   eleventyConfig.addFilter("timeAgo", (dateStr) => {
