@@ -28,7 +28,7 @@ excerpt: "The UK Health and Care visa is a fast-tracked Skilled Worker visa for 
       <p>The <strong>UK Health and Care visa</strong> is a specialised version of the Skilled Worker visa designed to fast-track overseas healthcare workers into the NHS and adult social care sector. It carries reduced application fees and faster processing compared to the standard Skilled Worker visa. However, significant changes were made in 2024 that affect who can bring dependants — making this a crucial guide for anyone considering this pathway.</p>
 
       <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 dark:border-blue-600 p-4 rounded-r-lg mb-6">
-        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Browse UK healthcare jobs:</strong> <a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">Search our job board</a> for visa-sponsored healthcare and care worker positions in the UK.</p>
+        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Browse UK healthcare jobs:</strong> <a href="/jobs-in-uk/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Search our job board</a> for visa-sponsored healthcare and care worker positions in the UK.</p>
       </div>
 
       <h2>1. What Is the Health and Care Visa?</h2>
@@ -126,7 +126,7 @@ excerpt: "The UK Health and Care visa is a fast-tracked Skilled Worker visa for 
         <li><a href="https://www.jobs.nhs.uk/" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline font-medium" rel="noopener noreferrer">NHS Jobs</a> — Official NHS recruitment portal. Many listings explicitly state "visa sponsorship available" or "OSCE support provided"</li>
         <li><a href="https://www.nursingjobsuk.com/" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline font-medium" rel="noopener noreferrer">Nursing Jobs UK</a> — Specialist nursing recruitment board</li>
         <li><strong>International nursing agencies:</strong> Aster Healthcare, Greenstaff Medical, Global Health Staffing — they recruit overseas nurses and manage the full visa process</li>
-        <li><a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">VisaJobs.xyz</a> — Curated sponsored healthcare roles in the UK</li>
+        <li><a href="/jobs-in-uk/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">VisaJobs.xyz — UK Jobs</a> — Curated sponsored healthcare roles in the UK</li>
       </ul>
 
       <h2>6. Care Worker Jobs in the UK with Visa Sponsorship</h2>
@@ -145,7 +145,7 @@ excerpt: "The UK Health and Care visa is a fast-tracked Skilled Worker visa for 
         <li><a href="https://www.carehome.co.uk/jobs/" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline font-medium" rel="noopener noreferrer">Carehome.co.uk</a> — Dedicated care sector job board. Filter by "visa sponsorship"</li>
         <li><a href="https://www.cv-library.co.uk/" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline font-medium" rel="noopener noreferrer">CV-Library</a> — Search "care worker visa sponsorship"</li>
         <li><a href="https://www.reed.co.uk/jobs/care-worker-jobs" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline font-medium" rel="noopener noreferrer">Reed Care</a> — Large volume of sponsored care roles</li>
-        <li><a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">VisaJobs.xyz</a> — Curated sponsored care worker listings</li>
+        <li><a href="/jobs-in-uk/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">VisaJobs.xyz — UK Jobs</a> — Curated sponsored care worker listings</li>
       </ul>
 
       <div class="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 dark:border-yellow-600 p-4 rounded-r-lg mb-6">

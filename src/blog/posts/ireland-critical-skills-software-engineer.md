@@ -37,7 +37,7 @@ excerpt: "Ireland uses the Critical Skills route to attract senior tech talent q
       <p>Dublin hosts the European headquarters of Google, Meta, Stripe, and dozens of high-growth SaaS companies. For non-EEA software engineers, the <strong>Critical Skills Employment Permit</strong> is the main accelerated work route: it is designed for occupations where Ireland has persistent skill shortages, including ICT professionals. This guide explains how the permit works in practice, what salary levels matter, how long it takes, and how it differs from the standard General Employment Permit.</p>
 
       <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 dark:border-blue-600 p-4 rounded-r-lg mb-6">
-        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Looking for roles now?</strong> <a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">Search visa-sponsored jobs on VisaJobs.xyz</a> — we link directly to employer postings.</p>
+        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Looking for roles now?</strong> <a href="/jobs-in-ireland/" class="text-brand-600 dark:text-brand-400 hover:underline">Search visa-sponsored jobs in Ireland on VisaJobs.xyz</a> — we link directly to employer postings.</p>
       </div>
 
       <h2>1. Critical Skills vs General Employment Permit</h2>
@@ -93,7 +93,7 @@ excerpt: "Ireland uses the Critical Skills route to attract senior tech talent q
       </ul>
 
       <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 dark:border-blue-600 p-4 rounded-r-lg mb-6">
-        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Next step:</strong> <a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">Browse visa-sponsored tech jobs</a> and filter for Ireland when available.</p>
+        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Next step:</strong> <a href="/jobs-in-ireland/" class="text-brand-600 dark:text-brand-400 hover:underline">Browse visa-sponsored tech jobs in Ireland</a>.</p>
       </div>
 
       <hr class="my-10 border-gray-200 dark:border-gray-700">

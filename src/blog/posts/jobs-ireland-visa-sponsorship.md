@@ -28,7 +28,7 @@ excerpt: "Ireland's employment permit system is one of the most accessible in Eu
       <p>Ireland hosts the European headquarters of Google, Meta, Apple, LinkedIn, Stripe, and dozens of other global technology companies — along with one of the most accessible employment permit systems in Europe. Unlike the UK, Ireland's employers do not need a pre-approved "sponsor licence" to hire non-EU workers. This makes the process more flexible and accessible for smaller companies. Here's everything you need to know about working in Ireland as a non-EU national.</p>
 
       <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 dark:border-blue-600 p-4 rounded-r-lg mb-6">
-        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Browse Ireland jobs:</strong> <a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">Search our job board</a> for visa-sponsored positions in Ireland.</p>
+        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Browse Ireland jobs:</strong> <a href="/jobs-in-ireland/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Search our job board</a> for visa-sponsored positions in Ireland.</p>
       </div>
 
       <h2>1. Ireland's Employment Permit System: An Overview</h2>
@@ -91,7 +91,7 @@ excerpt: "Ireland's employment permit system is one of the most accessible in Eu
         <li><a href="https://www.jobs.ie/" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline font-medium" rel="noopener noreferrer">Jobs.ie</a> — Major Irish job platform with tech section</li>
         <li><a href="https://www.cpl.ie/" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline font-medium" rel="noopener noreferrer">CPL</a> — Ireland's largest staffing agency, strong tech practice</li>
         <li>LinkedIn — Major tech companies post directly; filter by Dublin location and "work permit sponsorship"</li>
-        <li><a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">VisaJobs.xyz</a> — Curated sponsored tech roles in Ireland</li>
+        <li><a href="/jobs-in-ireland/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">VisaJobs.xyz — Ireland Jobs</a> — Curated sponsored tech roles in Ireland</li>
       </ul>
 
       <h2>3. Nursing Jobs in Ireland with Visa Sponsorship</h2>

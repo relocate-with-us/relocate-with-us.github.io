@@ -40,7 +40,7 @@ excerpt: "Everything you need to know about finding a tech job in Germany with v
       <p>This guide walks you through the entire process: from understanding salary expectations and finding jobs, to applying, interviewing, getting your visa, and settling in. Every step includes specific resources, links, and practical advice.</p>
 
       <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 dark:border-blue-600 p-4 rounded-r-lg mb-6">
-        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Want to skip ahead?</strong> <a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">Browse our visa-sponsored jobs in Germany</a> — every listing on our board offers relocation support.</p>
+        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Want to skip ahead?</strong> <a href="/jobs-in-germany/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Browse our visa-sponsored jobs in Germany</a> — every listing on our board offers relocation support.</p>
       </div>
 
       <!-- ==================== STEP 1 ==================== -->
@@ -159,7 +159,7 @@ excerpt: "Everything you need to know about finding a tech job in Germany with v
 
       <h3>Our own job board</h3>
       <ul class="space-y-2 mb-6">
-        <li><a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Relocate With Us — Visa-Sponsored Jobs</a> — Every job on our board explicitly offers visa sponsorship or relocation support. Filter by Germany</li>
+        <li><a href="/jobs-in-germany/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Relocate With Us — Visa-Sponsored Jobs in Germany</a> — Every job on our board explicitly offers visa sponsorship or relocation support.</li>
       </ul>
 
       <h3>Companies that regularly hire internationals</h3>

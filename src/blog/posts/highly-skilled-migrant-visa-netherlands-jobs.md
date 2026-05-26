@@ -28,7 +28,7 @@ excerpt: "The Netherlands' Highly Skilled Migrant visa and Germany's EU Blue Car
       <p>The Netherlands and Germany offer two of the most employer-friendly work visa systems in the world. Neither requires a complex pre-registration process — a qualified job offer is the primary trigger. Both lead to permanent residency faster than most alternatives. And both have large, international, English-speaking professional communities that make the transition significantly easier than typical European immigration paths.</p>
 
       <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 dark:border-blue-600 p-4 rounded-r-lg mb-6">
-        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Browse jobs in Germany and the Netherlands:</strong> Every listing on <a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">our visa-sponsored job board</a> explicitly confirms sponsorship is available.</p>
+        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Browse jobs:</strong> Check out our verified visa-sponsored listings for <a href="/jobs-in-germany/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">jobs in Germany</a> and <a href="/jobs-in-netherlands/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">jobs in the Netherlands</a>.</p>
       </div>
 
       <h2>1. Netherlands: Highly Skilled Migrant Visa (Kennismigrant)</h2>
@@ -139,7 +139,7 @@ excerpt: "The Netherlands' Highly Skilled Migrant visa and Germany's EU Blue Car
         <li><a href="https://www.arbeitnow.com/" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline font-medium" rel="noopener noreferrer">Arbeitnow</a> — Jobs with English and visa sponsorship filter</li>
         <li><a href="https://berlinstartupjobs.com/" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline font-medium" rel="noopener noreferrer">Berlin Startup Jobs</a> — Berlin-specific, most listings are open to international candidates</li>
         <li><a href="/blog/posts/software-engineer-jobs-berlin-visa-sponsorship/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Our Berlin software engineer guide</a></li>
-        <li><a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">VisaJobs.xyz</a> — Curated sponsored roles in Germany and the Netherlands</li>
+        <li><a href="/jobs-in-netherlands/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">VisaJobs.xyz Netherlands Jobs</a> &amp; <a href="/jobs-in-germany/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Germany Jobs</a> — Curated sponsored roles in these two prime destinations</li>
       </ul>
 
       <h2>3. Jobs in Europe with Relocation Package</h2>

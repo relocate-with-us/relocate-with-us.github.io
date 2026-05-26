@@ -40,7 +40,7 @@ excerpt: "The Nordics consistently top global rankings for quality of life, work
       <p>This guide covers everything you need to know: visa pathways in each country, companies hiring with sponsorship, realistic salary expectations, cost of living, and what daily life is actually like for an engineer in Copenhagen, Stockholm, or Helsinki.</p>
 
       <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 dark:border-blue-600 p-4 rounded-r-lg mb-6">
-        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Looking for jobs right now?</strong> <a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">Browse our visa-sponsored job board</a> — we list companies in Denmark, Sweden, and Finland that sponsor work visas and provide relocation packages.</p>
+        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Looking for jobs right now?</strong> <a href="/jobs-in-sweden/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Browse our Sweden visa-sponsored jobs</a> or see our full job board — we list companies in Denmark, Sweden, and Finland that sponsor work visas.</p>
       </div>
 
       <!-- ==================== SECTION 1 ==================== -->
@@ -170,7 +170,7 @@ excerpt: "The Nordics consistently top global rankings for quality of life, work
       </ul>
 
       <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 dark:border-blue-600 p-4 rounded-r-lg mb-6">
-        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>See all Nordic listings:</strong> <a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">Browse our job board</a> — filter by Denmark, Sweden, or Finland to see current open roles with visa sponsorship.</p>
+        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>See all Nordic listings:</strong> <a href="/jobs-in-sweden/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Browse Sweden visa-sponsored jobs</a> or see our general listings to find roles in Denmark, Sweden, or Finland.</p>
       </div>
 
       <!-- ==================== SECTION 4 ==================== -->
@@ -315,7 +315,7 @@ excerpt: "The Nordics consistently top global rankings for quality of life, work
       <!-- ==================== SECTION 7 ==================== -->
       <h2>7. Step-by-Step: How to Relocate to Scandinavia</h2>
       <ol class="space-y-4 mb-6">
-        <li><strong>Find a job with visa sponsorship:</strong> Use our <a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">job board</a> to find Nordic roles. Filter by Denmark, Sweden, or Finland. Apply directly through company career pages</li>
+        <li><strong>Find a job with visa sponsorship:</strong> Use our <a href="/jobs-in-sweden/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Sweden job board</a> or general board to find Nordic roles. Filter by Denmark, Sweden, or Finland. Apply directly through company career pages</li>
         <li><strong>Interview:</strong> Nordic companies typically run 3–4 rounds: recruiter call, technical interview (live coding or take-home), system design (senior+), and team/values fit. The process is usually respectful and efficient — 2–3 weeks from start to offer</li>
         <li><strong>Accept offer and start visa process:</strong> Your employer handles the visa application. You provide your passport, degree, and background check. Processing times: Finland (2–4 weeks), Denmark (~1 month), Sweden (2–4 months)</li>
         <li><strong>Register locally:</strong> Upon arrival, register with the local civil registry (CPR in Denmark, Personnummer in Sweden, Finnish personal ID). This number is essential for everything from opening a bank account to getting a library card</li>
@@ -333,7 +333,7 @@ excerpt: "The Nordics consistently top global rankings for quality of life, work
       </ul>
 
       <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 dark:border-blue-600 p-4 rounded-r-lg mb-6">
-        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Ready to explore?</strong> <a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">Browse 293+ visa-sponsored tech jobs</a> — including roles at Supercell, Nordea, Ericsson, Trustpilot, Lunar, Spotify, and more across the Nordics.</p>
+        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Ready to explore?</strong> <a href="/jobs-in-sweden/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Browse Sweden visa-sponsored tech jobs</a> and our wider job board listings — including roles at Supercell, Nordea, Ericsson, Trustpilot, Lunar, Spotify, and more across the Nordics.</p>
       </div>
 
 

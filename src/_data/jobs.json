@@ -1,5 +1,137 @@
 [
   {
+    "company": "Revolut",
+    "position": "Senior Software Engineer (Backend - Java)",
+    "location": "London, United Kingdom 🇬🇧",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 26, 2026",
+    "logo": "/media/revolut_logo.jpg",
+    "description": "https://careers.revolut.com/positions"
+  },
+  {
+    "company": "Wise",
+    "position": "Senior Full-Stack Engineer - Transfer Experience",
+    "location": "Tallinn, Estonia 🇪🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 26, 2026",
+    "logo": "/media/wise_logo.jpg",
+    "description": "https://www.wise.jobs/"
+  },
+  {
+    "company": "Miro",
+    "position": "Staff Frontend Engineer - Collaboration Suite",
+    "location": "Amsterdam, Netherlands 🇳🇱",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 26, 2026",
+    "logo": "/media/miro_logo.jpg",
+    "description": "https://miro.com/careers/"
+  },
+  {
+    "company": "TravelPerk",
+    "position": "Senior React Engineer - Booking Platforms",
+    "location": "Barcelona, Spain 🇪🇸",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 25, 2026",
+    "logo": "/media/travelperk_logo.jpg",
+    "description": "https://www.travelperk.com/careers/"
+  },
+  {
+    "company": "Snyk",
+    "position": "Senior Software Engineer (Go & Kubernetes)",
+    "location": "London, United Kingdom 🇬🇧",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 25, 2026",
+    "logo": "/media/snyk_logo.jpg",
+    "description": "https://snyk.io/careers/"
+  },
+  {
+    "company": "OpenAI",
+    "position": "Research Engineer - Alignment",
+    "location": "London, United Kingdom 🇬🇧",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 25, 2026",
+    "logo": "/media/openai_logo.jpg",
+    "description": "https://openai.com/careers"
+  },
+  {
+    "company": "Trivago",
+    "position": "Senior Backend Engineer - Search & Metadata",
+    "location": "Düsseldorf, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 25, 2026",
+    "logo": "/media/trivago_logo.jpg",
+    "description": "https://careers.trivago.com/"
+  },
+  {
+    "company": "Canva",
+    "position": "Senior Frontend Engineer - Design Systems",
+    "location": "London, United Kingdom 🇬🇧",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 25, 2026",
+    "logo": "/media/canva_logo.jpg",
+    "description": "https://www.canva.com/careers/"
+  },
+  {
+    "company": "SAP",
+    "position": "Senior Cloud Platform Developer",
+    "location": "Walldorf, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 24, 2026",
+    "logo": "/media/sap_logo.jpg",
+    "description": "https://jobs.sap.com/"
+  },
+  {
+    "company": "BlaBlaCar",
+    "position": "Senior Java Backend Engineer",
+    "location": "Paris, France 🇫🇷",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 24, 2026",
+    "logo": "/media/blablacar_logo.jpg",
+    "description": "https://www.blablacar.com/about-us/careers"
+  },
+  {
+    "company": "Dynatrace",
+    "position": "Senior Software Engineer - Agent Core",
+    "location": "Linz, Austria 🇦🇹",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 24, 2026",
+    "logo": "/media/dynatrace_logo.jpg",
+    "description": "https://jobs.dynatrace.com/"
+  },
+  {
+    "company": "Wise",
+    "position": "Senior Android Engineer - Payments",
+    "location": "London, United Kingdom 🇬🇧",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 24, 2026",
+    "logo": "/media/wise_logo.jpg",
+    "description": "https://www.wise.jobs/"
+  },
+  {
     "company": "Stripe",
     "position": "Senior Software Engineer, Payments Core",
     "location": "Dublin, Ireland 🇮🇪",

@@ -37,7 +37,7 @@ excerpt: "Berlin remains Europe's largest startup hub and one of the most realis
       <p>Berlin combines the scale of a global tech city with a cost of living that is still manageable compared to London, Munich, or Zurich. English is the working language at most product companies, and the German government actively routes skilled workers through the <strong>EU Blue Card</strong> and fast-track employment visa processes. If you are a software engineer targeting Berlin with visa sponsorship, this guide covers the hiring landscape, realistic salaries, housing, and how to avoid the most common application mistakes.</p>
 
       <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 dark:border-blue-600 p-4 rounded-r-lg mb-6">
-        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Browse live roles:</strong> <a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">VisaJobs.xyz lists Berlin and Germany roles</a> with direct application links — including fintech, marketplaces, and infrastructure companies.</p>
+        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Browse live roles:</strong> <a href="/jobs-in-germany/" class="text-brand-600 dark:text-brand-400 hover:underline">VisaJobs.xyz lists Berlin and Germany roles</a> with direct application links — including fintech, marketplaces, and infrastructure companies.</p>
       </div>
 
       <h2>1. Why Berlin for international software engineers</h2>
@@ -93,7 +93,7 @@ excerpt: "Berlin remains Europe's largest startup hub and one of the most realis
       <p>Update your CV, shortlist companies that routinely hire internationally, and apply through official career pages. Cross-check posts with our <a href="/tools/red-flags-checker/" class="text-brand-600 dark:text-brand-400 hover:underline">red flags checker</a> if a listing looks vague on visa support.</p>
 
       <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 dark:border-blue-600 p-4 rounded-r-lg mb-6">
-        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Start here:</strong> <a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">Browse visa-sponsored tech jobs</a> and filter for Germany and Berlin.</p>
+        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Start here:</strong> <a href="/jobs-in-germany/" class="text-brand-600 dark:text-brand-400 hover:underline">Browse visa-sponsored tech jobs in Germany</a>.</p>
       </div>
 
       <hr class="my-10 border-gray-200 dark:border-gray-700">

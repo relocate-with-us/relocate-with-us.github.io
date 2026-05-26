@@ -39,7 +39,7 @@ excerpt: "The Netherlands offers the 30% ruling tax benefit, a fast-track Highly
       <p>Whether you're looking for software engineer jobs in the Netherlands with visa sponsorship or wondering how to work in Amsterdam as a developer, this guide covers everything: the 30% ruling, the Highly Skilled Migrant visa, top companies hiring, realistic salary expectations, cost of living, and a step-by-step walkthrough of the entire relocation process.</p>
 
       <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 dark:border-blue-600 p-4 rounded-r-lg mb-6">
-        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Looking for jobs right now?</strong> <a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">Browse our visa-sponsored job listings</a> — every role on our board offers visa sponsorship or relocation support. Filter by Netherlands to see open positions.</p>
+        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Looking for jobs right now?</strong> <a href="/jobs-in-netherlands/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Browse our visa-sponsored job listings in the Netherlands</a> — every role on our board offers visa sponsorship or relocation support.</p>
       </div>
 
       <!-- ==================== SECTION 1 ==================== -->
@@ -370,7 +370,7 @@ excerpt: "The Netherlands offers the 30% ruling tax benefit, a fast-track Highly
 
       <h3>Where to find jobs</h3>
       <ul class="space-y-2 mb-6">
-        <li><a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">VisaJobs.xyz</a> — Every listing on our board offers visa sponsorship. Filter by Netherlands to see current openings</li>
+        <li><a href="/jobs-in-netherlands/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">VisaJobs.xyz — Netherlands Jobs</a> — Every listing on this board offers visa sponsorship or relocation support.</li>
         <li><a href="https://www.linkedin.com/jobs/search/?location=Netherlands" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">LinkedIn</a> — The most-used platform for tech recruitment in the Netherlands. Set your location to Amsterdam/Netherlands and enable "Open to Work"</li>
         <li><a href="https://www.relocate.me/search?country=netherlands" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Relocate.me</a> — Tech jobs specifically offering relocation packages</li>
         <li><a href="https://www.iamexpat.nl/career/jobs-netherlands" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">IamExpat Jobs</a> — Job board specifically for English-speaking professionals in the Netherlands</li>
@@ -460,7 +460,7 @@ excerpt: "The Netherlands offers the 30% ruling tax benefit, a fast-track Highly
       </ul>
 
       <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 dark:border-blue-600 p-4 rounded-r-lg mb-6">
-        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Ready to start?</strong> <a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">Browse visa-sponsored jobs in the Netherlands on our job board</a> — every listing offers relocation support.</p>
+        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Ready to start?</strong> <a href="/jobs-in-netherlands/" class="text-brand-600 dark:text-brand-400 hover:underline">Browse visa-sponsored jobs in the Netherlands on our job board</a> — every listing offers relocation support.</p>
       </div>
 
       <!-- ==================== RELATED ==================== -->

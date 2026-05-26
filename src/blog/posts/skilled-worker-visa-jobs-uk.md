@@ -28,7 +28,7 @@ excerpt: "The UK Skilled Worker visa is one of Europe's most accessible sponsore
       <p>The UK Skilled Worker visa replaced the old Tier 2 (General) visa in December 2020 and is the primary route for overseas workers to take up employment in the United Kingdom. With over 52,000 organisations currently holding a UK sponsor licence, there are more employers able to sponsor overseas workers than in most comparable countries. This guide explains how the visa works, what the 2025 salary thresholds are, how to find a UK sponsor employer, and which sectors are hiring the most internationally.</p>
 
       <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 dark:border-blue-600 p-4 rounded-r-lg mb-6">
-        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Browse UK sponsored jobs:</strong> Every listing on <a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">our visa-sponsored job board</a> explicitly confirms sponsorship — including positions in the United Kingdom.</p>
+        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Browse UK sponsored jobs:</strong> Every listing on <a href="/jobs-in-uk/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">our visa-sponsored job board</a> explicitly confirms sponsorship — including positions in the United Kingdom.</p>
       </div>
 
       <h2>1. How the UK Skilled Worker Visa Works</h2>
@@ -75,7 +75,7 @@ excerpt: "The UK Skilled Worker visa is one of Europe's most accessible sponsore
         <li><a href="https://www.reed.co.uk/" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline font-medium" rel="noopener noreferrer">Reed</a> — UK's largest job board. Filter by "Visa sponsorship available"</li>
         <li><a href="https://uk.indeed.com/" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline font-medium" rel="noopener noreferrer">Indeed UK</a> — Add "visa sponsorship" or "skilled worker visa" to your search</li>
         <li><a href="https://www.cv-library.co.uk/" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline font-medium" rel="noopener noreferrer">CV-Library</a> — UK jobs with visa sponsorship filter</li>
-        <li><a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">VisaJobs.xyz</a> — Every listing confirms sponsorship available</li>
+        <li><a href="/jobs-in-uk/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">VisaJobs.xyz — UK Jobs</a> — Every listing confirms sponsorship available in the United Kingdom</li>
       </ul>
 
       <h3>LinkedIn strategy</h3>

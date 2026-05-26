@@ -39,7 +39,7 @@ excerpt: "Barcelona is becoming Europe's hottest tech hub. Here's everything you
       <p>Whether you are a backend developer eyeing a role at TravelPerk in Barcelona, a data engineer considering Elastic's remote-Spain setup, or a full-stack engineer who simply wants to trade grey skies for Mediterranean beaches, this guide covers everything: visa options, companies that sponsor, realistic salary expectations, cost of living, and what daily life is actually like when you move to Barcelona as a developer.</p>
 
       <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 dark:border-blue-600 p-4 rounded-r-lg mb-6">
-        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Looking for jobs right now?</strong> <a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">Browse our visa-sponsored job board</a> — every listing offers relocation support or visa sponsorship, and you can filter by Spain.</p>
+        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Looking for jobs right now?</strong> <a href="/jobs-in-spain/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Browse our Spain visa-sponsored jobs</a> — every listing offers relocation support or visa sponsorship.</p>
       </div>
 
       <!-- ==================== SECTION 1 ==================== -->
@@ -228,7 +228,7 @@ excerpt: "Barcelona is becoming Europe's hottest tech hub. Here's everything you
       <p>Other notable companies with engineering presence in Spain include Amazon (Madrid), King (Barcelona — makers of Candy Crush), HP (Barcelona), Adevinta (Barcelona), Wallapop (Barcelona), and Cabify (Madrid).</p>
 
       <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 dark:border-blue-600 p-4 rounded-r-lg mb-6">
-        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Find more companies:</strong> Our <a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline">visa-sponsored job board</a> lists current openings in Spain from companies that actively sponsor work visas.</p>
+        <p class="text-sm text-gray-700 dark:text-gray-300 mb-0"><strong>Find more companies:</strong> Our <a href="/jobs-in-spain/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">visa-sponsored jobs in Spain</a> list current openings from companies that actively sponsor work visas.</p>
       </div>
 
       <!-- ==================== SECTION 4 ==================== -->
@@ -479,7 +479,7 @@ excerpt: "Barcelona is becoming Europe's hottest tech hub. Here's everything you
 
       <h3>Visa-sponsored job boards</h3>
       <ul class="space-y-2 mb-6">
-        <li><a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">VisaJobs.xyz — Visa-Sponsored Jobs</a> — Our own job board. Every listing offers visa sponsorship or relocation support. Filter by Spain</li>
+        <li><a href="/jobs-in-spain/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">VisaJobs.xyz — Spain Jobs</a> — Our job board specifically for visa-sponsored openings in Spain</li>
         <li><a href="https://www.linkedin.com/jobs/search/?location=Spain" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">LinkedIn</a> — The most-used platform for tech recruitment in Spain. Set your location to Barcelona or Madrid and turn on "Open to Work". Search for "visa sponsorship" or "relocation" in the job description</li>
         <li><a href="https://relocate.me/search?country=spain" target="_blank" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Relocate.me — Spain</a> — Jobs that explicitly offer relocation packages</li>
       </ul>
@@ -518,7 +518,7 @@ excerpt: "Barcelona is becoming Europe's hottest tech hub. Here's everything you
       <!-- ==================== RELATED ==================== -->
       <h2>Related Guides</h2>
       <ul class="space-y-2 mb-6">
-        <li><a href="/visa-sponsored-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Browse Visa-Sponsored Jobs</a> — Hundreds of tech roles with visa sponsorship across Europe, including Spain</li>
+        <li><a href="/jobs-in-spain/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Browse Spain Visa-Sponsored Jobs</a> — Curated tech roles with visa sponsorship in Spain</li>
         <li><a href="/blog/posts/how-to-get-a-job-in-germany/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">How to Find a Job in Germany with Visa Sponsorship</a> — Our comprehensive guide to Germany's tech job market</li>
         <li><a href="/blog/posts/top-european-tech-hubs/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">Top 10 European Tech Hubs</a> — Compare Spain to other European destinations</li>
         <li><a href="/blog/posts/resume-tips-for-international-jobs/" class="text-brand-600 dark:text-brand-400 hover:underline font-medium">How to Write a Resume for International Jobs</a> — Country-specific CV formats, ATS tips, and tools</li>
