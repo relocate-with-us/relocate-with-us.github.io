@@ -46,7 +46,7 @@ Here's everything you need to know.
 
 **What to expect:** Competitive Google-level comp, visa + relocation fully handled, world-class team.
 
-→ Apply: [deepmind.google/careers](https://deepmind.google/careers/?q=research+software+engineer)
+→ Apply: [VisaJobs](https://visajobs.xyz/visa-sponsored-jobs/?q=deepmind)
 
 ---
 
@@ -55,7 +55,7 @@ Here's everything you need to know.
 
 **Bonus:** The 30% tax ruling applies if you relocate from outside the Netherlands, making the effective salary substantially higher.
 
-→ Apply: [careers.adyen.com](https://careers.adyen.com/vacancies/technology/software-engineer)
+→ Apply: [VisaJobs](https://visajobs.xyz/visa-sponsored-jobs/?q=adyen)
 
 ---
 
@@ -64,7 +64,7 @@ Here's everything you need to know.
 
 Revolut's relocation package includes flights, 30 days hotel, and a dedicated relocation concierge.
 
-→ Apply: [revolut.com/careers](https://www.revolut.com/careers/position/staff-backend-engineer-cards-platform/)
+→ Apply: [VisaJobs](https://visajobs.xyz/visa-sponsored-jobs/?q=revolut)
 
 ---
 

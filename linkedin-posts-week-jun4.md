@@ -21,7 +21,7 @@ Here's what makes this one stand out:
 
 If you've been eyeing Amsterdam as your base in Europe, this is a strong opportunity.
 
-Apply → careers.adyen.com
+Apply on VisaJobs → https://visajobs.xyz/visa-sponsored-jobs/?q=adyen
 
 🔔 Follow @VisaJobs for weekly curated roles with visa sponsorship
 
@@ -49,7 +49,7 @@ Revolut is one of the most active visa sponsors in European fintech. They've rel
 
 All 3 roles are full-time, with no remote — they want you on-site.
 
-Apply → revolut.com/careers
+Apply on VisaJobs → https://visajobs.xyz/visa-sponsored-jobs/?q=revolut
 
 ---
 
@@ -77,7 +77,7 @@ Booking.com's relocation package is one of the most comprehensive in European te
 
 Amsterdam perks: HSM visa in ~2 weeks, 30% tax ruling, world-class cycling infrastructure, and arguably the best work-life balance culture in European tech.
 
-Apply → jobs.booking.com
+Apply on VisaJobs → https://visajobs.xyz/visa-sponsored-jobs/?q=booking
 
 💡 Tip: The most common rejection reason at Booking.com senior rounds is not depth of system design knowledge — go deep on distributed systems and fault-tolerant design patterns.
 
@@ -103,7 +103,7 @@ Why Dublin matters for international tech workers:
 
 Stripe's compensation is competitive globally, and Dublin is increasingly becoming a European tech hub rather than just a tax base.
 
-Apply → stripe.com/jobs (filter: Dublin)
+Apply on VisaJobs → https://visajobs.xyz/visa-sponsored-jobs/?q=stripe
 
 Who else thinks Dublin is underrated as a tech destination? 🤔
 
@@ -128,7 +128,7 @@ The role is in London. Not remote.
 
 DeepMind doesn't post these often. And they have an extremely high bar — expect multiple technical rounds focused on systems design, algorithms, and ML infrastructure.
 
-Apply → deepmind.google/careers
+Apply on VisaJobs → https://visajobs.xyz/visa-sponsored-jobs/?q=deepmind
 
 ---
 
@@ -140,4 +140,4 @@ Mine personally: yes.
 
 ---
 
-*All jobs listed on visajobs.xyz — 350+ verified roles with visa sponsorship and relocation assistance. Link in bio.*
+*Find all these jobs and 350+ more verified visa-sponsored roles on: https://visajobs.xyz/visa-sponsored-jobs/*
