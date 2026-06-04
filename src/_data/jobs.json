@@ -1,5 +1,93 @@
 [
   {
+    "company": "Catawiki",
+    "position": "Senior Product Manager - Shipping",
+    "location": "Portugal",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 4, 2026",
+    "logo": "/media/catawiki_logo.jpg",
+    "description": "https://relocate.me/portugal/lisbon/catawiki/senior-product-manager-shipping-10229"
+  },
+  {
+    "company": "Catawiki",
+    "position": "Senior Backend Software Engineer",
+    "location": "Portugal",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 4, 2026",
+    "logo": "/media/catawiki_logo.jpg",
+    "description": "https://relocate.me/portugal/lisbon/catawiki/senior-backend-software-engineer-9677"
+  },
+  {
+    "company": "Catawiki",
+    "position": "Security Engineer",
+    "location": "Netherlands",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 4, 2026",
+    "logo": "/media/catawiki_logo.jpg",
+    "description": "https://relocate.me/netherlands/amsterdam/catawiki/security-engineer-10249"
+  },
+  {
+    "company": "Catawiki",
+    "position": "QA Automation Engineer",
+    "location": "Portugal",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 4, 2026",
+    "logo": "/media/catawiki_logo.jpg",
+    "description": "https://relocate.me/portugal/lisbon/catawiki/qa-automation-engineer-10215"
+  },
+  {
+    "company": "Catawiki",
+    "position": "Senior Software Engineer – Developer Experience (Platform)",
+    "location": "Portugal",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 4, 2026",
+    "logo": "/media/catawiki_logo.jpg",
+    "description": "https://relocate.me/portugal/lisbon/catawiki/senior-software-engineer-developer-experience-platform-10254"
+  },
+  {
+    "company": "PayPay Card",
+    "position": "Senior Frontend Engineer",
+    "location": "Japan",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 4, 2026",
+    "logo": "/media/paypay_card_logo.jpg",
+    "description": "https://relocate.me/japan/tokyo/paypay-card/senior-frontend-engineer-10263"
+  },
+  {
+    "company": "HENNGE",
+    "position": "Senior Frontend Engineer",
+    "location": "Japan",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 4, 2026",
+    "logo": "/media/hennge_logo.jpg",
+    "description": "https://relocate.me/japan/tokyo/hennge/senior-frontend-engineer-10264"
+  },
+  {
+    "company": "PayPay",
+    "position": "Principal Software Engineer",
+    "location": "Japan",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 4, 2026",
+    "logo": "/media/paypay_logo.jpg",
+    "description": "https://relocate.me/japan/tokyo/paypay/principal-software-engineer-9445"
+  },
+  {
     "company": "Booking.com",
     "position": "Senior Software Engineer - Payments Platform",
     "location": "Amsterdam, Netherlands 🇳🇱",
