@@ -110,9 +110,9 @@ async function fetchJson(url, headers = {}) {
   return JSON.parse(text);
 }
 
-// ─── Keyword classifier (no-API fallback) ────────────────────────────────────
-const VISA_RE   = /\b(visa\s+sponsor|sponsor(ed|s|ing)?\s+visa|work\s+permit|immigration\s+support|visa\s+support|we\s+sponsor)\b/i;
-const RELOC_RE  = /\b(relocation\s+(assistance|support|package|allowance|benefit)|moving\s+(allowance|expenses)|temporary\s+housing|reloc(ation)?\s+budget)\b/i;
+// ─── Keyword classifier (Old school) ─────────────────────────────────────────
+const VISA_RE   = /\b(visa\s+sponsor|sponsor(ed|s|ing)?\s+visa|work\s+permit|immigration\s+support|visa\s+support|we\s+sponsor|sponsorship\s+available|highly\s+skilled\s+migrant|blue\s+card|eligible\s+for\s+sponsorship)\b/i;
+const RELOC_RE  = /\b(relocation\s+(assistance|support|package|allowance|benefit|budget|services)|moving\s+(allowance|expenses|cost)|temporary\s+housing|reloc(ate|ation)|help\s+with\s+relocation|relocating|help\s+you\s+move)\b/i;
 
 function keywordClassify(text) {
   const visa  = VISA_RE.test(text);
@@ -170,23 +170,8 @@ async function classifyWithGemini(jobText) {
 }
 
 async function classify(text) {
-  // Quick keyword pass first to avoid burning API quota on obvious misses
-  const kw = keywordClassify(text);
-  if (kw.include) return kw;
-
-  // If there is NEITHER visa nor reloc keywords, we don't call Gemini
-  if (!kw.visa && !kw.reloc) {
-    return { include: false, visa: false, reloc: false, source: "keyword-skip" };
-  }
-
-  // Fall back to Gemini for borderline cases
-  try {
-    const g = await classifyWithGemini(text);
-    if (g) return g;
-  } catch (err) {
-    console.warn("  Gemini classify failed:", err.message);
-  }
-  return kw;
+  // Use robust keyword classifier directly (old school!)
+  return keywordClassify(text);
 }
 
 // ─── Source: Arbeitnow ────────────────────────────────────────────────────────
@@ -309,33 +294,32 @@ async function fetchSwissDevJobs() {
 async function fetchVisaSponsorJobs() {
   const jobs = [];
   try {
-    // Try their sitemap to get job URLs, then scrape listing pages
-    const html = await fetchText("https://visasponsor.jobs/jobs?page=1");
-    // Extract job cards — structure varies, look for common patterns
-    const jobMatches = [
-      ...html.matchAll(/href="(\/jobs\/[^"]+)"[^>]*>[^<]*<[^>]+>([^<]+)<\/[^>]+>[^<]*<[^>]+>([^<]+)<\/[^>]+>/g)
-    ];
+    const html = await fetchText("https://visasponsor.jobs/api/jobs");
+    const blocks = html.split('<a href="/api/jobs/');
+    blocks.shift(); // remove header part
 
-    for (const [, urlPath, title, company] of jobMatches) {
-      if (!urlPath || !title) continue;
-      jobs.push({
-        company: company?.trim() || "",
-        position: title.trim(),
-        location: "",
-        url: "https://visasponsor.jobs" + urlPath,
-        postDate: new Date(),
-        description: [title, company, "visa sponsorship relocation assistance"].join(" ")
-      });
-    }
+    for (const block of blocks) {
+      const content = block.split('<a href="/api/jobs/')[0];
+      const urlMatch = content.match(/^([^"'\s>]+)/);
+      const urlPath = urlMatch ? urlMatch[1] : "";
+      
+      const titleMatch = content.match(/class="[^"]*fs-5[^"]*"[^>]*>([^<]+)<\/div>/i);
+      const title = titleMatch ? titleMatch[1].trim() : "";
+      
+      const companyMatch = content.match(/class="[^"]*employer-name[^"]*"[^>]*>([^<]+)<\/span>/i);
+      const company = companyMatch ? companyMatch[1].trim() : "";
 
-    // If regex didn't work, try simpler extraction
-    if (jobs.length === 0) {
-      const links = [...html.matchAll(/href="(https?:\/\/visasponsor\.jobs\/jobs\/[^"]+)"/g)];
-      for (const [, url] of links) {
+      const locMatch = content.match(/class="[^"]*col-11[^"]*sub-font[^"]*"[^>]*>([\s\S]*?)<\/div>/i);
+      const location = locMatch ? locMatch[1].replace(/<[^>]+>/g, " ").trim() : "";
+
+      if (title && urlPath) {
         jobs.push({
-          company: "", position: "Tech Role", location: "",
-          url, postDate: new Date(),
-          description: "visa sponsorship relocation assistance"
+          company,
+          position: title,
+          location,
+          url: "https://visasponsor.jobs/api/jobs/" + urlPath,
+          postDate: new Date(),
+          description: [title, company, location, "visa sponsorship relocation assistance"].join(" ")
         });
       }
     }
