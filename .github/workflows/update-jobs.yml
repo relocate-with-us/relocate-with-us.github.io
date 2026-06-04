@@ -1,15 +1,22 @@
-name: Update Jobs
+name: Generate & Add Visa Jobs
 
 on:
   schedule:
-    - cron: "30 6 * * *"
+    # Run every day at 07:00 UTC
+    - cron: "0 7 * * *"
   workflow_dispatch:
+    inputs:
+      count:
+        description: "Number of new jobs to generate"
+        required: false
+        default: "20"
+        type: string
 
 permissions:
   contents: write
 
 jobs:
-  update:
+  generate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,22 +25,27 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Update jobs
+      - name: Generate new visa-sponsored jobs
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
-          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
-          MISTRAL_MODEL: ${{ secrets.MISTRAL_MODEL }}
-        run: node scripts/update-jobs.js --max-per-source=200
+          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL || 'gemini-1.5-flash' }}
+        run: |
+          COUNT="${{ github.event.inputs.count || '20' }}"
+          echo "Generating $COUNT new jobs..."
+          node scripts/generate-jobs.js --count=$COUNT
 
       - name: Check for changes
         id: changes
         run: |
           if git diff --quiet src/_data/jobs.json db.json; then
             echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No new jobs were added."
           else
             echo "changed=true" >> $GITHUB_OUTPUT
-            echo "$(git diff --stat src/_data/jobs.json db.json)"
+            ADDED=$(git diff src/_data/jobs.json | grep '^\+' | grep '"company"' | wc -l | tr -d ' ')
+            echo "added=$ADDED" >> $GITHUB_OUTPUT
+            echo "Added $ADDED new jobs."
+            git diff --stat src/_data/jobs.json db.json
           fi
 
       - name: Commit and push
@@ -42,6 +54,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add src/_data/jobs.json db.json scripts/added-jobs.log
-          ADDED=$(git diff --cached --numstat src/_data/jobs.json | awk '{print $1}')
-          git commit -m "chore: add $ADDED visa + relocation jobs"
+          ADDED="${{ steps.changes.outputs.added }}"
+          TODAY=$(date -u +"%B %-d, %Y")
+          git commit -m "feat(jobs): add ${ADDED} new visa + relocation jobs (${TODAY})"
           git push

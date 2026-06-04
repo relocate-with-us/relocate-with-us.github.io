@@ -232,17 +232,6 @@
   },
   {
     "company": "SumUp",
-    "position": "Senior Mobile Engineer (Android)",
-    "location": "Berlin, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "June 4, 2026",
-    "logo": "/media/sumup_logo.jpg",
-    "description": "https://www.sumup.com/careers/positions/berlin-germany/engineering/"
-  },
-  {
-    "company": "SumUp",
     "position": "Staff Platform Engineer - Cloud Infrastructure",
     "location": "Berlin, Germany 🇩🇪",
     "reloc": "Relocation Assistance",
@@ -352,6 +341,963 @@
     "description": "https://www.figma.com/careers/?q=software+engineer&l=london"
   },
   {
+    "company": "Miro",
+    "position": "Staff Frontend Engineer - Collaboration Suite",
+    "location": "Amsterdam, Netherlands 🇳🇱",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 26, 2026",
+    "logo": "/media/miro_logo.jpg",
+    "description": "https://miro.com/careers/"
+  },
+  {
+    "company": "TravelPerk",
+    "position": "Senior React Engineer - Booking Platforms",
+    "location": "Barcelona, Spain 🇪🇸",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 25, 2026",
+    "logo": "/media/travelperk_logo.jpg",
+    "description": "https://www.travelperk.com/careers/"
+  },
+  {
+    "company": "Snyk",
+    "position": "Senior Software Engineer (Go & Kubernetes)",
+    "location": "London, United Kingdom 🇬🇧",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 25, 2026",
+    "logo": "/media/snyk_logo.jpg",
+    "description": "https://snyk.io/careers/"
+  },
+  {
+    "company": "Wise",
+    "position": "Senior Android Engineer - Payments",
+    "location": "London, United Kingdom 🇬🇧",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 24, 2026",
+    "logo": "/media/wise_logo.jpg",
+    "description": "https://www.wise.jobs/"
+  },
+  {
+    "company": "SAP",
+    "position": "Senior Cloud Platform Developer",
+    "location": "Walldorf, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 24, 2026",
+    "logo": "/media/sap_logo.jpg",
+    "description": "https://jobs.sap.com/"
+  },
+  {
+    "company": "Dynatrace",
+    "position": "Senior Software Engineer - Agent Core",
+    "location": "Linz, Austria 🇦🇹",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 24, 2026",
+    "logo": "/media/dynatrace_logo.jpg",
+    "description": "https://jobs.dynatrace.com/"
+  },
+  {
+    "company": "Stripe",
+    "position": "Senior Software Engineer, Payments Core",
+    "location": "Dublin, Ireland 🇮🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 23, 2026",
+    "logo": "/media/stripe_logo.jpg",
+    "description": "https://stripe.com/jobs/search?query=payments+core"
+  },
+  {
+    "company": "Stripe",
+    "position": "Backend Engineer, Connect Platform",
+    "location": "London, United Kingdom 🇬🇧",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 23, 2026",
+    "logo": "/media/stripe_logo.jpg",
+    "description": "https://stripe.com/jobs/search?query=connect"
+  },
+  {
+    "company": "Spotify",
+    "position": "Staff Data Engineer - Personalization",
+    "location": "London, United Kingdom 🇬🇧",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 22, 2026",
+    "logo": "/media/spotify_logo.jpg",
+    "description": "https://www.lifeatspotify.com/jobs"
+  },
+  {
+    "company": "Klarna",
+    "position": "Backend Engineer - Open Banking",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 21, 2026",
+    "logo": "/media/klarna_logo.jpg",
+    "description": "https://www.klarna.com/careers/"
+  },
+  {
+    "company": "Monzo",
+    "position": "Platform Engineer",
+    "location": "London, United Kingdom 🇬🇧",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 20, 2026",
+    "logo": "/media/monzo_bank_logo.jpeg",
+    "description": "https://monzo.com/careers/"
+  },
+  {
+    "company": "Delivery Hero",
+    "position": "Senior Data Scientist - Logistics (all genders)",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 20, 2026",
+    "logo": "/media/deliveryhero_logo.jpg",
+    "description": "https://careers.deliveryhero.com/"
+  },
+  {
+    "company": "Bolt",
+    "position": "Data Engineer - Marketplace Intelligence",
+    "location": "Tallinn, Estonia 🇪🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 19, 2026",
+    "logo": "/media/bolt_logo.jpg",
+    "description": "https://bolt.eu/en/careers/"
+  },
+  {
+    "company": "Wolt",
+    "position": "Machine Learning Engineer - Delivery Optimization",
+    "location": "Helsinki, Finland 🇫🇮",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 19, 2026",
+    "logo": "/media/wolt_logo.jpg",
+    "description": "https://careers.wolt.com/"
+  },
+  {
+    "company": "Zalando",
+    "position": "Senior Android Engineer - Shopping Experience (all genders)",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 19, 2026",
+    "logo": "/media/zalando_logo.jpg",
+    "description": "https://jobs.zalando.com/en/jobs/"
+  },
+  {
+    "company": "Cloudflare",
+    "position": "Senior Software Engineer - Workers Runtime",
+    "location": "London, United Kingdom 🇬🇧",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 19, 2026",
+    "logo": "/media/cloudflare_logo.jpg",
+    "description": "https://www.cloudflare.com/careers/jobs/"
+  },
+  {
+    "company": "Datadog",
+    "position": "Staff Engineer - Cloud Infrastructure",
+    "location": "Paris, France 🇫🇷",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 18, 2026",
+    "logo": "/media/datadog_logo.jpg",
+    "description": "https://careers.datadoghq.com/"
+  },
+  {
+    "company": "Catawiki",
+    "position": "Data Scientist - Search & Recommendations",
+    "location": "Amsterdam, Netherlands 🇳🇱",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 17, 2026",
+    "logo": "/media/catawiki_logo.jpg",
+    "description": "https://catawiki.careers/"
+  },
+  {
+    "company": "SumUp",
+    "position": "Staff Software Engineer - Payment Processing",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 17, 2026",
+    "logo": "/media/sumup_logo.jpg",
+    "description": "https://www.sumup.com/careers/"
+  },
+  {
+    "company": "Booking.com",
+    "position": "Data Engineer - Search Ranking",
+    "location": "Amsterdam, Netherlands 🇳🇱",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 17, 2026",
+    "logo": "/media/bookingcom_logo.jpeg",
+    "description": "https://jobs.booking.com/"
+  },
+  {
+    "company": "Scalable Capital",
+    "position": "iOS Engineer - Investment App",
+    "location": "Munich, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 15, 2026",
+    "logo": "/media/scalable_capital_logo.jpg",
+    "description": "https://de.scalable.capital/en/careers"
+  },
+  {
+    "company": "Personio",
+    "position": "Staff Data Engineer (m/f/d)",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 15, 2026",
+    "logo": "/media/personio_logo.jpg",
+    "description": "https://www.personio.com/careers/"
+  },
+  {
+    "company": "ABOUT YOU",
+    "position": "Machine Learning Engineer - Search & Discovery",
+    "location": "Hamburg, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 14, 2026",
+    "logo": "/media/aboutyou_logo.jpg",
+    "description": "https://corporate.aboutyou.de/en/career"
+  },
+  {
+    "company": "Voodoo",
+    "position": "Data Scientist - Game Analytics",
+    "location": "Paris, France 🇫🇷",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 14, 2026",
+    "logo": "/media/voodoo_logo.jpg",
+    "description": "https://www.voodoo.io/careers"
+  },
+  {
+    "company": "Siemens",
+    "position": "Senior Software Engineer - Digital Twin Platform",
+    "location": "Munich, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 14, 2026",
+    "logo": "/media/siemens_logo.jpg",
+    "description": "https://jobs.siemens.com/careers"
+  },
+  {
+    "company": "MessageBird",
+    "position": "Senior Go Engineer - Messaging Platform",
+    "location": "Amsterdam, Netherlands 🇳🇱",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 13, 2026",
+    "logo": "/media/messagebird_logo.jpg",
+    "description": "https://www.messagebird.com/careers"
+  },
+  {
+    "company": "Infineon Technologies",
+    "position": "Embedded Software Engineer - Automotive",
+    "location": "Cork, Ireland 🇮🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "May 13, 2026",
+    "logo": "/media/infineon_logo.jpg",
+    "description": "https://www.infineon.com/cms/en/careers/"
+  },
+  {
+    "company": "Trade Republic",
+    "position": "Backend Engineer",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "April 7, 2026",
+    "logo": "/media/trade_republic_logo.jpg",
+    "description": "https://jobs.weekday.works/trade-republic-backend-engineer-%E2%80%93-berlin"
+  },
+  {
+    "company": "Trade Republic",
+    "position": "Data Engineer",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "April 7, 2026",
+    "logo": "/media/trade_republic_logo.jpg",
+    "description": "https://jobs.weekday.works/trade-republic-data-engineer---berlin"
+  },
+  {
+    "company": "JetBrains",
+    "position": "Senior Software Developer (IntelliJ AI)",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "April 1, 2026",
+    "logo": "/media/jetbrains_logo.jpg",
+    "description": "https://job-boards.eu.greenhouse.io/jetbrains/jobs/4815896101"
+  },
+  {
+    "company": "JetBrains",
+    "position": "Senior/Staff Software Developer - Kotlin Multiplatform Tooling",
+    "location": "Munich, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "April 1, 2026",
+    "logo": "/media/jetbrains_logo.jpg",
+    "description": "https://job-boards.eu.greenhouse.io/jetbrains/jobs/4703937101"
+  },
+  {
+    "company": "JetBrains",
+    "position": "Senior Software Engineer - Infrastructure (Toolbox App)",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "April 1, 2026",
+    "logo": "/media/jetbrains_logo.jpg",
+    "description": "https://job-boards.eu.greenhouse.io/jetbrains/jobs/4785665101"
+  },
+  {
+    "company": "Grafana Labs",
+    "position": "Staff Backend Engineer - Adaptive Telemetry",
+    "location": "Germany (Remote) 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "April 1, 2026",
+    "logo": "/media/grafanalabs_logo.jpg",
+    "description": "https://boards.greenhouse.io/grafanalabs/jobs/5801256004"
+  },
+  {
+    "company": "Grafana Labs",
+    "position": "Staff Software Engineer - Kubernetes Monitoring",
+    "location": "Spain (Remote) 🇪🇸",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "April 1, 2026",
+    "logo": "/media/grafanalabs_logo.jpg",
+    "description": "https://boards.greenhouse.io/grafanalabs/jobs/5809258004"
+  },
+  {
+    "company": "Supercell",
+    "position": "Senior Software Engineer, Supercell Store",
+    "location": "Helsinki, Finland 🇫🇮",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "April 1, 2026",
+    "logo": "/media/supercell_logo.jpg",
+    "description": "https://supercell.com/en/careers/software-engineer-supercell-store/2154261"
+  },
+  {
+    "company": "Supercell",
+    "position": "Senior Server Engineer",
+    "location": "Helsinki, Finland 🇫🇮",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "April 1, 2026",
+    "logo": "/media/supercell_logo.jpg",
+    "description": "https://supercell.com/en/careers/senior-server-engineer-1/2262179"
+  },
+  {
+    "company": "SumUp",
+    "position": "Senior Backend Engineer - Accounts",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "April 1, 2026",
+    "logo": "/media/sumup_logo.jpg",
+    "description": "https://www.sumup.com/careers/positions/berlin-germany/backend/senior-backend-engineer-accounts-/8418083002/"
+  },
+  {
+    "company": "Nordea",
+    "position": "Software Developer - Financial Software Engineering",
+    "location": "Helsinki, Finland 🇫🇮",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "April 1, 2026",
+    "logo": "/media/nordea_logo.jpg",
+    "description": "https://careers.nordea.com/job/Helsinki-Software-Developer-Financial-Software-Engineering-for-Rates-Advisory-Business-Technology-00500/1369613233/"
+  },
+  {
+    "company": "Nordea",
+    "position": "Senior Full Stack Developer",
+    "location": "Helsinki, Finland 🇫🇮",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "April 1, 2026",
+    "logo": "/media/nordea_logo.jpg",
+    "description": "https://careers.nordea.com/job/Helsinki-Senior-Full-Stack-Developer-00500/1378481133/"
+  },
+  {
+    "company": "Ericsson",
+    "position": "Next Generation Software Developer",
+    "location": "Stockholm, Sweden 🇸🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "April 1, 2026",
+    "logo": "/media/ericsson_logo.jpg",
+    "description": "https://jobs.ericsson.com/careers/job/563121763540095-next-generation-software-developer-stockholm-stockholm-sweden"
+  },
+  {
+    "company": "Trustpilot",
+    "position": "Senior Software Engineer",
+    "location": "Copenhagen, Denmark 🇩🇰",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "April 1, 2026",
+    "logo": "/media/trustpilot_logo.jpg",
+    "description": "https://business.trustpilot.com/jobs/7622003?gh_jid=7622003"
+  },
+  {
+    "company": "Trustpilot",
+    "position": "Staff Engineer (Backend)",
+    "location": "Copenhagen, Denmark 🇩🇰",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "April 1, 2026",
+    "logo": "/media/trustpilot_logo.jpg",
+    "description": "https://business.trustpilot.com/jobs/7267789?gh_jid=7267789"
+  },
+  {
+    "company": "Deezer",
+    "position": "Senior Backend Engineer - Customer & Monetization (m/f/d)",
+    "location": "Paris, France 🇫🇷",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "April 1, 2026",
+    "logo": "/media/deezer_logo.jpg",
+    "description": "https://www.welcometothejungle.com/en/companies/deezer/jobs/senior-backend-engineer-customer-monetization-m-f-d_paris_DEEZE_Z92WbNb"
+  },
+  {
+    "company": "OVHcloud",
+    "position": "Senior Software Developer - Golang",
+    "location": "Roubaix, France 🇫🇷",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "April 1, 2026",
+    "logo": "/media/ovhcloud_logo.jpg",
+    "description": "https://careers.ovhcloud.com/job/ROUBAIX-Senior-software-developer-Golang-59100/1364900833/"
+  },
+  {
+    "company": "Ubisoft",
+    "position": "Senior Software Engineer - AI Applications (W/M/NB)",
+    "location": "Paris, France 🇫🇷",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "April 1, 2026",
+    "logo": "/media/ubisoft_logo.jpg",
+    "description": "https://www.ubisoft.com/en-us/company/careers/search/744000113665495-senior-software-engineer-ai-applications-w-m-nb-"
+  },
+  {
+    "company": "N26",
+    "position": "Machine Learning Engineer, AI Platform",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 25, 2026",
+    "logo": "/media/n26_logo.jpg",
+    "description": "https://n26.com/en/careers"
+  },
+  {
+    "company": "Doctolib",
+    "position": "Senior Software Engineer, Backend (x/f/m)",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 25, 2026",
+    "logo": "/media/doctolib_logo.jpg",
+    "description": "https://careers.doctolib.com/career-jobs/"
+  },
+  {
+    "company": "SoundCloud",
+    "position": "Principal Backend Engineer, Distribution",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 25, 2026",
+    "logo": "/media/soundcloud_logo.jpg",
+    "description": "https://careers.soundcloud.com/"
+  },
+  {
+    "company": "Qonto",
+    "position": "Staff Data Platform Engineer",
+    "location": "Barcelona, Spain 🇪🇸",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 25, 2026",
+    "logo": "/media/qonto_logo.jpg",
+    "description": "https://qonto.com/en-de/careers/tech"
+  },
+  {
+    "company": "Affirm",
+    "position": "Senior Software Engineer, Backend - Merchant Data Platform",
+    "location": "Remote, Spain 🇪🇸",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 25, 2026",
+    "logo": "/media/affirm_logo.jpg",
+    "description": "https://boards.greenhouse.io/affirm"
+  },
+  {
+    "company": "Payhawk",
+    "position": "Full-Stack AI Engineer",
+    "location": "Sofia, Bulgaria 🇧🇬",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 25, 2026",
+    "logo": "/media/payhawk_logo.jpg",
+    "description": "https://payhawk.com/careers/4775544101/fullstack-ai-engineer"
+  },
+  {
+    "company": "Payhawk",
+    "position": "Senior Software Engineer",
+    "location": "Sofia, Bulgaria 🇧🇬",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 25, 2026",
+    "logo": "/media/payhawk_logo.jpg",
+    "description": "https://payhawk.com/careers/4000039101/senior-software-engineer"
+  },
+  {
+    "company": "Flink",
+    "position": "Golang Software Engineer",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 25, 2026",
+    "logo": "/media/flink_logo.jpg",
+    "description": "https://app.welcometothejungle.com/jobs/BY2CLbRh"
+  },
+  {
+    "company": "Personio",
+    "position": "Senior MLOps Engineer",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 25, 2026",
+    "logo": "/media/personio_logo.jpg",
+    "description": "https://www.personio.com/careers/senior-mlops-engineer-d888c7a40646/"
+  },
+  {
+    "company": "NavVis",
+    "position": "Lead Software Engineer, Full-stack (F/M/D)",
+    "location": "Munich, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 25, 2026",
+    "logo": "/media/navvis_logo.jpg",
+    "description": "https://job-boards.eu.greenhouse.io/navvis/jobs/4651428101"
+  },
+  {
+    "company": "Superhuman",
+    "position": "Software Engineer, Full-Stack - Platform Team",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 25, 2026",
+    "logo": "/media/superhuman_logo.jpg",
+    "description": "https://superhuman.com/roles"
+  },
+  {
+    "company": "Ashby",
+    "position": "Senior Software Engineer, Product Engineering, EU",
+    "location": "Remote, Europe 🇪🇺",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 11, 2026",
+    "logo": "/media/ashby_logo.jpg",
+    "description": "https://jobs.ashbyhq.com/ashby/3b9b0141-86e7-46b2-b6b4-ed039b84cdc4"
+  },
+  {
+    "company": "Ashby",
+    "position": "Staff Platform Engineer, EU",
+    "location": "Remote, Europe 🇪🇺",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 11, 2026",
+    "logo": "/media/ashby_logo.jpg",
+    "description": "https://jobs.ashbyhq.com/ashby/fa001346-ea81-41b2-bfbe-2271d3faac1a"
+  },
+  {
+    "company": "Elastic",
+    "position": "Senior Software Engineer, Detections and Response",
+    "location": "Remote, Spain 🇪🇸",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 11, 2026",
+    "logo": "/media/elastic_logo.jpg",
+    "description": "https://jobs.elastic.co/jobs/engineering/spain/senior-software-engineer-detections-and-response-team/6698060"
+  },
+  {
+    "company": "Elastic",
+    "position": "Senior Software Engineer, Generative AI",
+    "location": "Remote, Spain 🇪🇸",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 11, 2026",
+    "logo": "/media/elastic_logo.jpg",
+    "description": "https://jobs.elastic.co/jobs/engineering/spain/security-analyst-experience-senior-software-engineer-generative-ai/6372233"
+  },
+  {
+    "company": "TravelPerk",
+    "position": "Senior Software Engineer",
+    "location": "Barcelona, Spain 🇪🇸",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 11, 2026",
+    "logo": "/media/travelperk_logo.jpg",
+    "description": "https://jobs.ashbyhq.com/Perk/a2ca9eea-7169-428a-9efb-0c5ac9cd732d"
+  },
+  {
+    "company": "Bondaval",
+    "position": "Full Stack Engineer",
+    "location": "London, United Kingdom 🇬🇧",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 11, 2026",
+    "logo": "/media/bondaval_logo.jpg",
+    "description": "https://jobs.dawncapital.com/companies/bondaval/jobs/64706017-full-stack-engineer"
+  },
+  {
+    "company": "NavVis",
+    "position": "Lead Software Engineer - Developer Experience (F/M/D)",
+    "location": "Munich, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 9, 2026",
+    "logo": "/media/navvis_logo.jpg",
+    "description": "https://job-boards.eu.greenhouse.io/navvis/jobs/4700625101"
+  },
+  {
+    "company": "Pleo",
+    "position": "Senior Fullstack Engineer",
+    "location": "Copenhagen, Denmark 🇩🇰",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 9, 2026",
+    "logo": "/media/pleo_logo.jpg",
+    "description": "https://job-boards.greenhouse.io/pleo/jobs/7538792003"
+  },
+  {
+    "company": "Miro",
+    "position": "Graduate Software Engineer",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 9, 2026",
+    "logo": "/media/miro_logo.jpg",
+    "description": "https://miro.com/careers/vacancy/8395758002/"
+  },
+  {
+    "company": "Cloudflare",
+    "position": "Software Engineer, All Levels",
+    "location": "London, United Kingdom 🇬🇧",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 8, 2026",
+    "logo": "/media/cloudflare_logo.jpg",
+    "description": "https://job-boards.greenhouse.io/cloudflare/jobs/5934960"
+  },
+  {
+    "company": "Cloudflare",
+    "position": "Senior Software Engineer - Distributed Systems",
+    "location": "Lisbon, Portugal 🇵🇹",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 8, 2026",
+    "logo": "/media/cloudflare_logo.jpg",
+    "description": "https://job-boards.greenhouse.io/cloudflare/jobs/7294535"
+  },
+  {
+    "company": "awork",
+    "position": "Senior Software Engineer - Frontend",
+    "location": "Hamburg, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 7, 2026",
+    "logo": "/media/awork_logo.jpg",
+    "description": "https://www.awork.com/jobs/senior-software-engineer-frontend"
+  },
+  {
+    "company": "Form3",
+    "position": "Senior Software Engineer (Go) - UK/EU Sponsorship",
+    "location": "London, United Kingdom 🇬🇧",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 7, 2026",
+    "logo": "/media/form3_logo.jpg",
+    "description": "https://job-boards.greenhouse.io/form3/jobs/6212418002"
+  },
+  {
+    "company": "SAP",
+    "position": "Senior Cloud Engineer - BTP",
+    "location": "Walldorf, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 6, 2026",
+    "logo": "/media/sap_logo.jpg",
+    "description": "https://jobs.sap.com/search/?q=cloud+engineer&locationsearch=Germany"
+  },
+  {
+    "company": "Infineon Technologies",
+    "position": "Verification Engineer - Chip Design",
+    "location": "Cork, Ireland 🇮🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 6, 2026",
+    "logo": "/media/infineon_logo.jpg",
+    "description": "https://jobs.infineon.com/careers/job/563808961484399-senior-verification-engineer-munich-germany-"
+  },
+  {
+    "company": "Wise",
+    "position": "Senior Software Engineer I - Europe Money Movement",
+    "location": "Tallinn, Estonia 🇪🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 5, 2026",
+    "logo": "/media/wise_logo.jpg",
+    "description": "https://wise.jobs/job/senior-software-engineer-i-europe-money-movement-in-tallinn-jid-2753"
+  },
+  {
+    "company": "Delivery Hero",
+    "position": "Senior Software Engineer - Vendor Growth (all genders)",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 4, 2026",
+    "logo": "/media/deliveryhero_logo.jpg",
+    "description": "https://careers.deliveryhero.com/job/senior-software-engineer-vendor-growth-all-genders-in-berlin-germany-jid-1845"
+  },
+  {
+    "company": "SAP",
+    "position": "Full-Stack Developer - AI & Machine Learning",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 4, 2026",
+    "logo": "/media/sap_logo.jpg",
+    "description": "https://jobs.sap.com/search/?q=software+engineer&locationsearch=Berlin"
+  },
+  {
+    "company": "Adyen",
+    "position": "Machine Learning Engineer",
+    "location": "Amsterdam, Netherlands 🇳🇱",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 3, 2026",
+    "logo": "/media/adyen_logo.jpg",
+    "description": "https://careers.adyen.com/vacancies/"
+  },
+  {
+    "company": "Personio",
+    "position": "Senior Backend Engineer (m/f/d)",
+    "location": "Munich, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 3, 2026",
+    "logo": "/media/personio_logo.jpg",
+    "description": "https://www.personio.com/careers/software-engineer-l5-time-money-525e5e22fc17/"
+  },
+  {
+    "company": "BMW Group",
+    "position": "Software Developer - Autonomous Driving",
+    "location": "Munich, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 2, 2026",
+    "logo": "/media/bmw_logo.jpg",
+    "description": "https://www.bmwgroup.jobs/de/en.html"
+  },
+  {
+    "company": "Delivery Hero",
+    "position": "Engineer I, Android (2026 Tech Grad Program)",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 1, 2026",
+    "logo": "/media/deliveryhero_logo.jpg",
+    "description": "https://careers.deliveryhero.com/job/engineer-l-android-2026-tech-grad-program-in-berlin-germany-jid-8007"
+  },
+  {
+    "company": "Booking.com",
+    "position": "Machine Learning Scientist",
+    "location": "Amsterdam, Netherlands 🇳🇱",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "March 1, 2026",
+    "logo": "/media/bookingcom_logo.jpeg",
+    "description": "https://jobs.booking.com/booking/jobs/28205?lang=en-us"
+  },
+  {
+    "company": "Personio",
+    "position": "Staff Frontend Engineer (m/f/d)",
+    "location": "Munich, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "February 28, 2026",
+    "logo": "/media/personio_logo.jpg",
+    "description": "https://www.personio.com/careers/lead-frontend-engineer-dfm-8d68d1f44bd6/"
+  },
+  {
+    "company": "Adyen",
+    "position": "Senior Data Platform Engineer",
+    "location": "Amsterdam, Netherlands 🇳🇱",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "February 28, 2026",
+    "logo": "/media/adyen_logo.jpg",
+    "description": "https://careers.adyen.com/vacancies/7440112-senior-data-platform-engineer"
+  },
+  {
+    "company": "Wise",
+    "position": "Software Engineer - Treasury Money Movements",
+    "location": "Tallinn, Estonia 🇪🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "February 28, 2026",
+    "logo": "/media/wise_logo.jpg",
+    "description": "https://wise.jobs/job/software-engineer-treasury-money-movements-in-tallinn-jid-2570"
+  },
+  {
+    "company": "HelloFresh",
+    "position": "Senior Data Scientist (all genders)",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "February 26, 2026",
+    "logo": "/media/hellofresh_logo.jpg",
+    "description": "https://careers.hellofresh.com/global/en/germany"
+  },
+  {
+    "company": "Mollie",
+    "position": "Full Stack Engineer (WordPress)",
+    "location": "Amsterdam, Netherlands 🇳🇱",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "February 22, 2026",
+    "logo": "/media/mollie_logo.jpg",
+    "description": "https://jobs.mollie.com/locations/amsterdam"
+  },
+  {
+    "company": "Grammarly",
+    "position": "Full-Stack Software Engineer",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "February 20, 2026",
+    "logo": "/media/grammarly_logo.jpg",
+    "description": "https://www.grammarly.com/careers/jobs/engineering/software-engineer-full-stack?gh_jid=7641282"
+  },
+  {
+    "company": "Mollie",
+    "position": "Full Stack Engineer (Relocation within EU)",
+    "location": "Lisbon, Portugal 🇵🇹",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "February 20, 2026",
+    "logo": "/media/mollie_logo.jpg",
+    "description": "https://jobs.mollie.com/locations/"
+  },
+  {
+    "company": "Contentful",
+    "position": "Senior Software Engineer - Platform",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "February 18, 2026",
+    "logo": "/media/contentful_logo.jpg",
+    "description": "https://www.contentful.com/careers/job/7604037/"
+  },
+  {
     "company": "K-tronik GmbH",
     "position": "Development Engineer (m/f/d) Aerospace Electronics",
     "location": "Lindau, Germany 🇩🇪",
@@ -361,42 +1307,6 @@
     "post_date": "August 4, 2025",
     "logo": "/media/k_tronik_gmbh_logo.jpeg",
     "description": "https://bewerbung.k-tronik.de/en/6896/development-engineer-m-f-d-aerospace-electronics"
-  },
-  {
-    "company": "Speakap",
-    "position": "Experienced Frontend Developer",
-    "location": "Amsterdam, Netherlands 🇳🇱",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "April 4, 2025",
-    "post_date": "Not specified",
-    "logo": "/media/speakap_logo.jpg",
-    "description": "https://jobs.speakap.com/o/frontend-developer"
-  },
-  {
-    "company": "N26",
-    "position": "Finance Business Partner - Investments",
-    "location": "Berlin, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "April 4, 2025",    
-    "post_date": "Not specified",
-    "logo": "/media/n26_logo.jpg",
-    "description": "https://n26.com/en-eu/careers/positions/6683900"
-  },
-  {
-    "company": "N26",
-    "position": "Backend Engineer - Memberships",
-    "location": "Berlin, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "April 4, 2025",
-    "post_date": "Not specified",
-    "logo": "/media/n26_logo.jpg",
-    "description": "https://n26.com/en-eu/careers/positions/6744192"
   },
   {
     "company": "Mistral AI",
@@ -444,17 +1354,6 @@
   },
   {
     "company": "Mistral AI",
-    "position": "Technical Program Manager, Engineering - Paris",
-    "location": "Paris, France 🇫🇷",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "March 22, 2025",
-    "logo": "/media/mistralai_logo.jpeg",
-    "description": "https://jobs.lever.co/mistral/a1854159-922e-4de7-adb6-7c1b608c147f"
-  },
-  {
-    "company": "Mistral AI",
     "position": "Applied AI Engineer, Use-case - EMEA, Singapore",
     "location": "Paris 🇫🇷 / London 🇬🇧 / Singapore",
     "reloc": "Relocation Assistance",
@@ -463,28 +1362,6 @@
     "post_date": "March 22, 2025",
     "logo": "/media/mistralai_logo.jpeg",
     "description": "https://jobs.lever.co/mistral/77f6fd1b-65cf-45d8-9b68-594c62732f62"
-  },
-  {
-    "company": "Mistral AI",
-    "position": "Staff Software Engineer, Security - Paris",
-    "location": "Paris, France",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "March 22, 2025",
-    "logo": "/media/mistralai_logo.jpeg",
-    "description": "https://jobs.lever.co/mistral/9f6e6513-fd9e-411b-b558-540bc12b2fe4"
-  },
-  {
-    "company": "Mistral AI",
-    "position": "Senior Software Engineer, Billing - Paris",
-    "location": "Paris, France 🇫🇷",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "March 22, 2025",
-    "logo": "/media/mistralai_logo.jpeg",
-    "description": "https://jobs.lever.co/mistral/e1a37c33-fdec-41cf-bb92-35646e283fa8"
   },
   {
     "company": "Mistral AI",
@@ -674,14 +1551,14 @@
     "description": "https://company.recharge.com/vacancies/staff-software-engineer-2/?_gl=1*1w7pzb*_up*MQ..*_ga*MjAxMjY0MjAzNi4xNzQwNzM1NTI4*_ga_83PT6B4VYV*MTc0MDczNTUyNi4xLjAuMTc0MDczNTUyNi4wLjAuMA.."
   },
   {
-    "company": "Hapag-Lloyd AG ",
-    "position": "Cloud Engineer ",
-    "location": "Gdansk , Poland 🇵🇱",
+    "company": "MODE Recruitment",
+    "position": "Senior PHP Developer",
+    "location": "Munich, Germany 🇩🇪",
     "reloc": "Relocation Assistance",
     "visa": "Visa Sponsorship",
     "contract": "Full Time",
     "post_date": "February 10, 2025",
-    "logo": "/media/hapag_lloyd_ag_logo.jpg",
+    "logo": "/media/moderecruitmentltd_logo.jpg",
     "description": "https://www.linkedin.com/jobs/view/4148246703"
   },
   {
@@ -695,7 +1572,7 @@
     "logo": "/media/byborg_enterprises_logo.jpg",
     "description": "https://jobs.smartrecruiters.com/DoclerHolding/744000035188883-content-marketing-manager"
   },
-   {
+  {
     "company": "Langham Recruitment",
     "position": "Senior FPGA Network Engineer",
     "location": "London , United Kingdom 🇬🇧",
@@ -727,17 +1604,6 @@
     "post_date": "February 10, 2025",
     "logo": "/media/moderecruitmentltd_logo.jpg",
     "description": "https://www.linkedin.com/jobs/view/4148245729"
-  },
-  {
-    "company": "MODE Recruitment",
-    "position": "Senior PHP Developer",
-    "location": "Munich, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "February 10, 2025",
-    "logo": "/media/moderecruitmentltd_logo.jpg",
-    "description": "https://www.linkedin.com/jobs/view/4148246703"
   },
   {
     "company": "Sunday GmbH",
@@ -785,49 +1651,49 @@
   },
   {
     "company": "Mistral AI",
-    "position": "Software Engineer, Billing",
-    "location": "Paris, France 🇫🇷",
-    "reloc": "Relocation Assistance",
-    "visa": "",
-    "contract": "Full Time",
-    "post_date": "January 20, 2025",
-    "logo": "/media/mistralai_logo.jpeg",
-    "description": "https://jobs.lever.co/mistral/e1a37c33-fdec-41cf-bb92-35646e283fa8"
-  },
-   {
-    "company": "Mistral AI",
-    "position": "Software Engineer, Security",
-    "location": "Paris, France 🇫🇷",
-    "reloc": "Relocation Assistance",
-    "visa": "",
-    "contract": "Full Time",
-    "post_date": "January 20, 2025",
-    "logo": "/media/mistralai_logo.jpeg",
-    "description": "https://jobs.lever.co/mistral/9f6e6513-fd9e-411b-b558-540bc12b2fe4"
-  },
- {
-    "company": "Mistral AI",
-    "position": "Applied AI Engineer, Deployment, Europe - Paris",
-    "location": "Paris, France 🇫🇷",
-    "reloc": "Relocation Assistance",
-    "visa": "",
-    "contract": "Full Time",
-    "post_date": "January 20, 2025",
-    "logo": "/media/mistralai_logo.jpeg",
-    "description": "https://jobs.lever.co/mistral/3e51d533-1f2d-48e3-9a2b-33fc7e8b0c0c"
-  },
- {
-    "company": "Mistral AI",
     "position": "Technical Program Manager, Engineering",
     "location": "Paris, France 🇫🇷",
     "reloc": "Relocation Assistance",
-    "visa": "",
+    "visa": "Visa Sponsorship",
     "contract": "Full Time",
     "post_date": "January 20, 2025",
     "logo": "/media/mistralai_logo.jpeg",
     "description": "https://jobs.lever.co/mistral/a1854159-922e-4de7-adb6-7c1b608c147f"
   },
- {
+  {
+    "company": "Mistral AI",
+    "position": "Software Engineer, Security",
+    "location": "Paris, France 🇫🇷",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "January 20, 2025",
+    "logo": "/media/mistralai_logo.jpeg",
+    "description": "https://jobs.lever.co/mistral/9f6e6513-fd9e-411b-b558-540bc12b2fe4"
+  },
+  {
+    "company": "Mistral AI",
+    "position": "Software Engineer, Billing",
+    "location": "Paris, France 🇫🇷",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "January 20, 2025",
+    "logo": "/media/mistralai_logo.jpeg",
+    "description": "https://jobs.lever.co/mistral/e1a37c33-fdec-41cf-bb92-35646e283fa8"
+  },
+  {
+    "company": "Mistral AI",
+    "position": "Applied AI Engineer, Deployment, Europe - Paris",
+    "location": "Paris, France 🇫🇷",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "January 20, 2025",
+    "logo": "/media/mistralai_logo.jpeg",
+    "description": "https://jobs.lever.co/mistral/3e51d533-1f2d-48e3-9a2b-33fc7e8b0c0c"
+  },
+  {
     "company": "Kikoff",
     "position": "Senior Communications Manager",
     "location": "San Francisco, USA 🇺🇸",
@@ -838,7 +1704,7 @@
     "logo": "/media/getkikoff_logo.jpg",
     "description": "https://jobs.ashbyhq.com/kikoff/d911c998-c1df-409c-a124-388f853b6ce3"
   },
-   {
+  {
     "company": "Bank for International Settlements – BIS",
     "position": "Risk Analyst",
     "location": "Basel, Switzerland 🇨🇭",
@@ -849,7 +1715,7 @@
     "logo": "/media/bis_logo.jpg",
     "description": "https://lde.tbe.taleo.net/lde01/ats/careers/v2/viewRequisition?org=BIS&cws=40&rid=1291"
   },
- {
+  {
     "company": "Bank for International Settlements – BIS",
     "position": "Data Governance Engineer",
     "location": "Basel, Switzerland 🇨🇭",
@@ -860,7 +1726,7 @@
     "logo": "/media/bis_logo.jpg",
     "description": "https://lde.tbe.taleo.net/lde01/ats/careers/v2/viewRequisition?org=BIS&cws=40&rid=1286"
   },
- {
+  {
     "company": "Bank for International Settlements – BIS",
     "position": "Head of IT Development",
     "location": "Basel, Switzerland 🇨🇭",
@@ -871,7 +1737,7 @@
     "logo": "/media/bis_logo.jpg",
     "description": "https://lde.tbe.taleo.net/lde01/ats/careers/v2/viewRequisition?org=BIS&cws=40&rid=1287"
   },
- {
+  {
     "company": "Zalando",
     "position": "Software Engineer - Core Logistics Abilities",
     "location": "Berlin, Germany 🇩🇪",
@@ -882,7 +1748,7 @@
     "logo": "/media/zalando_logo.jpg",
     "description": "https://jobs.zalando.com/en/jobs/2717241"
   },
- {
+  {
     "company": "jndsolutions",
     "position": "Network Tester",
     "location": "New Jersey, USA 🇺🇸",
@@ -893,7 +1759,7 @@
     "logo": "/media/jndsolutions_logo.jpg",
     "description": "https://jnd-inc.breezy.hr/p/14c3b744e638-network-tester-5-13958-5"
   },
- {
+  {
     "company": "Kikoff",
     "position": "Software Engineer - Mobile",
     "location": "San Francisco, USA 🇺🇸",
@@ -904,7 +1770,7 @@
     "logo": "/media/getkikoff_logo.jpg",
     "description": "https://jobs.ashbyhq.com/kikoff/5174cf92-0ef6-47c4-9414-afa2d26dfc4b"
   },
- {
+  {
     "company": "Kikoff",
     "position": "Software Engineer - Backend",
     "location": "San Francisco, USA 🇺🇸",
@@ -915,7 +1781,7 @@
     "logo": "/media/getkikoff_logo.jpg",
     "description": "https://jobs.ashbyhq.com/kikoff/642a8b0d-22cc-42fd-b21f-72d44649c3da"
   },
- {
+  {
     "company": "Kikoff",
     "position": "Senior Software Engineer - Full Stack",
     "location": "San Francisco, USA 🇺🇸",
@@ -926,7 +1792,7 @@
     "logo": "/media/getkikoff_logo.jpg",
     "description": "https://jobs.ashbyhq.com/kikoff/6b0b926f-510d-4e47-bbf1-ceec2913b78a"
   },
- {
+  {
     "company": "Kikoff",
     "position": "Senior Software Engineer - Frontend",
     "location": "San Francisco, USA 🇺🇸",
@@ -937,7 +1803,7 @@
     "logo": "/media/getkikoff_logo.jpg",
     "description": "https://jobs.ashbyhq.com/kikoff/316f1ee2-6612-48be-b20b-2d274ec57c87"
   },
- {
+  {
     "company": "Kikoff",
     "position": "Senior Software Engineer - Backend",
     "location": "San Francisco, USA 🇺🇸",
@@ -948,7 +1814,7 @@
     "logo": "/media/getkikoff_logo.jpg",
     "description": "https://jobs.ashbyhq.com/kikoff/dc5ce1c8-ef61-40b6-82e2-a6b04c19fff8"
   },
- {
+  {
     "company": "Kikoff",
     "position": "Product Engineering Manager",
     "location": "San Francisco, USA 🇺🇸",
@@ -959,7 +1825,7 @@
     "logo": "/media/getkikoff_logo.jpg",
     "description": "https://jobs.ashbyhq.com/kikoff/4ada487b-89ac-4a13-b501-bf0f8b043cae"
   },
- {
+  {
     "company": "Coolblue",
     "position": "Team Lead Front-End React",
     "location": "Rotterdam, Netherlands 🇳🇱",
@@ -981,7 +1847,7 @@
     "logo": "/media/lab_for_logo.png",
     "description": "https://labforward.jobs.personio.de/job/1888990?language=en&display=en"
   },
- {
+  {
     "company": "Labforward",
     "position": "Back-End / Full Stack Java Engineer",
     "location": "Berlin, Germany 🇩🇪",
@@ -992,7 +1858,40 @@
     "logo": "/media/lab_for_logo.png",
     "description": "https://labforward.jobs.personio.de/job/1889579?language=en%3Flanguage%3D&display=en"
   },
- {
+  {
+    "company": "Speakap",
+    "position": "Experienced Frontend Developer",
+    "location": "Amsterdam, Netherlands 🇳🇱",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "January 1, 2025",
+    "logo": "/media/speakap_logo.jpg",
+    "description": "https://jobs.speakap.com/o/frontend-developer"
+  },
+  {
+    "company": "N26",
+    "position": "Finance Business Partner - Investments",
+    "location": "Berlin, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "January 1, 2025",
+    "logo": "/media/n26_logo.jpg",
+    "description": "https://n26.com/en-eu/careers/positions/6683900"
+  },
+  {
+    "company": "N26",
+    "position": "Backend Engineer - Memberships",
+    "location": "Berlin, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "January 1, 2025",
+    "logo": "/media/n26_logo.jpg",
+    "description": "https://n26.com/en-eu/careers/positions/6744192"
+  },
+  {
     "company": "SELIUK LTD",
     "position": "Senior Software Engineer (C++, C, Python)",
     "location": "Munich, Germany 🇩🇪",
@@ -1002,17 +1901,6 @@
     "post_date": "December 31, 2024",
     "logo": "/media/seliuk_ltd_logo.jpg",
     "description": "https://apply.workable.com/seliuk-ltd/j/CB14238331/"
-  },
-  {
-    "company": "QuantCo",
-    "position": "Software Engineer",
-    "location": "Berlin, Germany 🇩🇪",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "December 31, 2024",
-    "logo": "/media/quantco_logo.jpg",
-    "description": "https://jobs.lever.co/quantco-/16bbc741-38b5-498f-a871-c5ccca08e092"
   },
   {
     "company": "QuantCo",
@@ -1069,7 +1957,7 @@
     "logo": "/media/applike_gmbh_logo.jpeg",
     "description": "https://join.com/companies/applike-group/13189902-senior-agile-coach-f-m-d"
   },
-   {
+  {
     "company": "Shiftmove",
     "position": "Senior Software Engineer - Backend (Java) (f/m/x)",
     "location": "Berlin, Germany 🇩🇪",
@@ -1079,17 +1967,6 @@
     "post_date": "December 26, 2024",
     "logo": "/media/shiftmove_logo.jpeg",
     "description": "https://www.shiftmove.com/careers/job-opening?id=3f763e48-0809-4037-9c0f-1ab9551f6093"
-  },
-   {
-    "company": "justDice",
-    "position": "Tech Lead – Backend Services (Go) (f/m/d)",
-    "location": "Hamburg, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "December 26, 2024",
-    "logo": "/media/justdice_logo.jpg",
-    "description": "https://justdice.io/jobs/?j_id=341d7353-3e3a-4e85-8911-43bcbfa6ac42"
   },
   {
     "company": "DOXA PARTNERS",
@@ -1102,7 +1979,7 @@
     "logo": "/media/doxa.jpeg",
     "description": "https://www.doxa.partners/doxaregister"
   },
- {
+  {
     "company": "Marsh McLennan",
     "position": "IT Program Manager",
     "location": "Sydney, Australia 🇦🇺",
@@ -1113,7 +1990,7 @@
     "logo": "/media/marshmclennan_logo.jpeg",
     "description": "https://careers.marshmclennan.com/global/en/job/R_286926/IT-Program-Manager"
   },
- {
+  {
     "company": "Kikoff",
     "position": "Data Scientist",
     "location": "San Francisco, USA 🇺🇸",
@@ -1124,7 +2001,7 @@
     "logo": "/media/getkikoff_logo.jpg",
     "description": "https://jobs.ashbyhq.com/kikoff/3411be84-b1e5-4702-8ed8-312385f1b7dc"
   },
- {
+  {
     "company": "Sumup",
     "position": "(Senior) Backend Engineer",
     "location": "Berlin, Germany 🇩🇪",
@@ -1135,7 +2012,7 @@
     "logo": "/media/sumup_logo.jpg",
     "description": "https://www.sumup.com/careers/positions/berlin-germany/engineering/senior-backend-engineer/7687337002/"
   },
- {
+  {
     "company": "Zalando",
     "position": "Junior Business Intelligence Engineer (All Genders)",
     "location": "Berlin, Germany 🇩🇪",
@@ -1146,7 +2023,7 @@
     "logo": "/media/zalando_logo.jpg",
     "description": "https://jobs.zalando.com/en/jobs/2716140-Junior-Business-Intelligence-Engineer-(All-Genders"
   },
- {
+  {
     "company": "Shield AI",
     "position": "Mechanical Design Engineer II (R3051)",
     "location": "San Diego, USA 🇺🇸",
@@ -1267,7 +2144,6 @@
     "logo": "/media/multiversecomputing_logo.jpg",
     "description": "https://multiversecomputing.teamtailor.com/jobs/5067680-business-development-manager"
   },
-
   {
     "company": "Shield AI",
     "position": "Senior Staff Electrical Engineer",
@@ -1290,8 +2166,7 @@
     "logo": "/media/hometogo_logo.jpg",
     "description": "https://job-boards.eu.greenhouse.io/hometogo/jobs/4474966101"
   },
- 
-   {
+  {
     "company": "Universal Quantum",
     "position": "Software Engineer/Architect",
     "location": "Haywards Heath, United Kingdom 🇬🇧",
@@ -1318,7 +2193,7 @@
     "position": "Senior Product Manager - Integrations",
     "location": "Paris, France 🇫🇷",
     "reloc": "Relocation Assistance",
-    "visa": "",
+    "visa": "Visa Sponsorship",
     "contract": "Full Time",
     "post_date": "December 9, 2024",
     "logo": "/media/dashlane_logo.jpg",
@@ -1329,7 +2204,7 @@
     "position": "Senior Software Engineer - Backend",
     "location": "Porto, Portugal 🇵🇹",
     "reloc": "Relocation Assistance",
-    "visa": "",
+    "visa": "Visa Sponsorship",
     "contract": "Full Time",
     "post_date": "December 9, 2024",
     "logo": "/media/dashlane_logo.jpg",
@@ -1340,7 +2215,7 @@
     "position": "Senior Software Engineer - Web",
     "location": "Porto, Portugal 🇵🇹",
     "reloc": "Relocation Assistance",
-    "visa": "",
+    "visa": "Visa Sponsorship",
     "contract": "Full Time",
     "post_date": "December 9, 2024",
     "logo": "/media/dashlane_logo.jpg",
@@ -1351,7 +2226,7 @@
     "position": "Engineering Manager",
     "location": "Porto, Portugal 🇵🇹",
     "reloc": "Relocation Assistance",
-    "visa": "",
+    "visa": "Visa Sponsorship",
     "contract": "Full Time",
     "post_date": "December 9, 2024",
     "logo": "/media/dashlane_logo.jpg",
@@ -1362,7 +2237,7 @@
     "position": "Senior People Partner",
     "location": "Paris, France 🇫🇷",
     "reloc": "Relocation Assistance",
-    "visa": "",
+    "visa": "Visa Sponsorship",
     "contract": "Full Time",
     "post_date": "December 9, 2024",
     "logo": "/media/dashlane_logo.jpg",
@@ -1373,7 +2248,7 @@
     "position": "Senior Software Engineer - Web",
     "location": "Paris, France 🇫🇷",
     "reloc": "Relocation Assistance",
-    "visa": "",
+    "visa": "Visa Sponsorship",
     "contract": "Full Time",
     "post_date": "December 9, 2024",
     "logo": "/media/dashlane_logo.jpg",
@@ -1384,7 +2259,7 @@
     "position": "Senior Software Engineer - Backend",
     "location": "Paris, France 🇫🇷",
     "reloc": "Relocation Assistance",
-    "visa": "",
+    "visa": "Visa Sponsorship",
     "contract": "Full Time",
     "post_date": "December 9, 2024",
     "logo": "/media/dashlane_logo.jpg",
@@ -1395,7 +2270,7 @@
     "position": "Engineering Manager - Core Features",
     "location": "Paris, France 🇫🇷",
     "reloc": "Relocation Assistance",
-    "visa": "",
+    "visa": "Visa Sponsorship",
     "contract": "Full Time",
     "post_date": "December 9, 2024",
     "logo": "/media/dashlane_logo.jpg",
@@ -1412,7 +2287,7 @@
     "logo": "/media/higher_talent_graduates_sales_logo.jpg",
     "description": "https://www.learn4good.com/jobs/nottingham/uk/hr_and_recruitment/3791554722/e/"
   },
-   {
+  {
     "company": "HealthcareLink",
     "position": "Community-Based Occupational Therapist",
     "location": "Adelaide, Australia 🇦🇺",
@@ -1458,17 +2333,6 @@
   },
   {
     "company": "adjoe",
-    "position": "Senior BI Analyst (Anti-Fraud) (f/m/d)",
-    "location": "Hamburg, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "December 8, 2024",
-    "logo": "/media/adjoe_logo.jpeg",
-    "description": "https://adjoe.io/company/careers/?j_id=38f67985-bc22-456e-9774-5fc95db90a41"
-  },
-  {
-    "company": "adjoe",
     "position": "Machine Learning Engineer (f/m/d)",
     "location": "Hamburg, Germany 🇩🇪",
     "reloc": "Relocation Assistance",
@@ -1488,17 +2352,6 @@
     "post_date": "December 8, 2024",
     "logo": "/media/adjoe_logo.jpeg",
     "description": "https://adjoe.io/company/careers/?j_id=6647084f-2c9d-405b-a30b-dec97a6669cb"
-  },
-  {
-    "company": "adjoe",
-    "position": "Senior Go Developer (Advertising Dashboard Team) (f/m/d)",
-    "location": "Hamburg, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "December 8, 2024",
-    "logo": "/media/adjoe_logo.jpeg",
-    "description": "https://adjoe.io/company/careers/?j_id=a52d2c9e-63c8-4554-a4d7-28982c1952b0"
   },
   {
     "company": "adjoe",
@@ -1785,17 +2638,6 @@
     "post_date": "October 31, 2024",
     "logo": "/media/greenlyte_carbon_technologies_logo.jpg",
     "description": "https://greenlyte-carbon-technologies-gmbh.jobs.personio.de/job/1718957?language=en&display=en"
-  },
-  {
-    "company": "Celus",
-    "position": "Middle QA Engineer",
-    "location": "Porto, Portugal 🇵🇹",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "October 28, 2024",
-    "logo": "/media/celus_logo.jpg",
-    "description": "https://celus.jobs.personio.de/job/1317413?language=en&display=en"
   },
   {
     "company": "Celus",
@@ -2142,6 +2984,17 @@
     "descriptions": "https:/"
   },
   {
+    "company": "Celus",
+    "position": "Middle QA Engineer",
+    "location": "Lisbon, Portugal 🇵🇹",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "September 1, 2024",
+    "logo": "/media/celus_logo.jpg",
+    "description": "https://celus.jobs.personio.de/job/1317413?language=en&display=en"
+  },
+  {
     "company": "FINN",
     "position": "Junior Backend Engineer (NodeJS/Typescript)",
     "location": "Munich, Germany 🇩🇪",
@@ -2196,17 +3049,6 @@
     "post_date": "September 1, 2024",
     "logo": "/media/celus_logo.jpg",
     "description": "https://celus.jobs.personio.de/job/1598917?language=en&display=en"
-  },
-  {
-    "company": "Celus",
-    "position": "Middle QA Engineer",
-    "location": "Lisbon, Portugal 🇵🇹",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "September 1, 2024",
-    "logo": "/media/celus_logo.jpg",
-    "description": "https://celus.jobs.personio.de/job/1317413?language=en&display=en"
   },
   {
     "company": "Celus",
@@ -2319,6 +3161,17 @@
     "description": "https://boards.greenhouse.io/housinganywhere/jobs/6091303003"
   },
   {
+    "company": "justDice",
+    "position": "Tech Lead – Devops and Backend Services (f/m/d)",
+    "location": "Hamburg, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "August 16, 2024",
+    "logo": "/media/justdice_logo.jpg",
+    "description": "https://justdice.io/jobs/?j_id=341d7353-3e3a-4e85-8911-43bcbfa6ac42"
+  },
+  {
     "company": "raisin",
     "position": "(Junior) Product Manager (m/f/d)",
     "location": "Berlin, Germany 🇩🇪",
@@ -2394,17 +3247,6 @@
     "post_date": "August 16, 2024",
     "logo": "/media/justdice_logo.jpg",
     "description": "https://justdice.io/jobs/?j_id=05ceb489-50c0-4b0b-b700-3d4394303321"
-  },
-  {
-    "company": "justDice",
-    "position": "Tech Lead – Devops and Backend Services (f/m/d)",
-    "location": "Hamburg, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "August 16, 2024",
-    "logo": "/media/justdice_logo.jpg",
-    "description": "https://justdice.io/jobs/?j_id=341d7353-3e3a-4e85-8911-43bcbfa6ac42"
   },
   {
     "company": "Picnic Technologies",
@@ -2639,17 +3481,6 @@
   },
   {
     "company": "K-tronik GmbH",
-    "position": "Project Manager (m/f/x) Aerospace",
-    "location": "Kiel, Germany 🇩🇪",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "August 2, 2024",
-    "logo": "/media/k_tronik_gmbh_logo.jpeg",
-    "description": "https://bewerbung.k-tronik.de/en/6600/project-manager-m-f-x-aerospace"
-  },
-  {
-    "company": "K-tronik GmbH",
     "position": "Test Engineer - Propulsion (f/m/d) ",
     "location": "Kiel, Germany 🇩🇪",
     "contract": "Full Time",
@@ -2758,7 +3589,6 @@
     "logo": "/media/kolibri_games_logo.jpg",
     "description": "https://www.kolibrigames.com/career/position/8ab35ce3-a5f5-4be5-84ab-7adf89e2dc39/"
   },
-
   {
     "company": "Sunday GmbH",
     "position": "Media & Communication Manager (f/m/d)",
@@ -2915,39 +3745,6 @@
   },
   {
     "company": "adjoe",
-    "position": "QA Engineer (Anti-Fraud Team) f/m/d",
-    "location": "Hamburg, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "May 7, 2024",
-    "logo": "/media/adjoe_logo.jpeg",
-    "description": "https://adjoe.io/company/careers/?j_id=955cab4d-0422-4762-9073-0cf888c9210d"
-  },
-  {
-    "company": "adjoe",
-    "position": "Business Intelligence Analyst (f/m/d)",
-    "location": "Hamburg, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "May 7, 2024",
-    "logo": "/media/adjoe_logo.jpeg",
-    "description": "https://adjoe.io/company/careers/?j_id=44642da4-2428-4f5d-9fe7-462f5bd572ba"
-  },
-  {
-    "company": "adjoe",
-    "position": "Backend Development Tech Lead (f/m/d)",
-    "location": "Hamburg, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "May 7, 2024",
-    "logo": "/media/adjoe_logo.jpeg",
-    "description": "https://adjoe.io/company/careers/?j_id=a594c0d0-e2b8-47ce-b883-38ec42ea63fb"
-  },
-  {
-    "company": "adjoe",
     "position": "Senior Go Backend Developer (Demand Solutions) (f/m/d)",
     "location": "Hamburg, Germany 🇩🇪",
     "reloc": "Relocation Assistance",
@@ -2959,14 +3756,25 @@
   },
   {
     "company": "adjoe",
-    "position": "Senior Frontend Developer (f/m/d)",
+    "position": "QA Engineer (Anti-Fraud Team) f/m/d",
     "location": "Hamburg, Germany 🇩🇪",
     "reloc": "Relocation Assistance",
     "visa": "Visa Sponsorship",
     "contract": "Full Time",
     "post_date": "May 7, 2024",
     "logo": "/media/adjoe_logo.jpeg",
-    "description": "https://adjoe.io/company/careers/?j_id=be4b2a59-cc6a-4bac-8182-1b8728dda53a"
+    "description": "https://adjoe.io/company/careers/?j_id=955cab4d-0422-4762-9073-0cf888c9210d"
+  },
+  {
+    "company": "adjoe",
+    "position": "Backend Development Tech Lead (f/m/d)",
+    "location": "Hamburg, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "May 7, 2024",
+    "logo": "/media/adjoe_logo.jpeg",
+    "description": "https://adjoe.io/company/careers/?j_id=a594c0d0-e2b8-47ce-b883-38ec42ea63fb"
   },
   {
     "company": "adjoe",
@@ -3035,28 +3843,6 @@
     "description": "https://adjoe.io/company/careers/?j_id=b4ec2e96-c3ef-47c7-b53c-79e20321dc4e"
   },
   {
-    "company": "Robust Intelligence",
-    "position": "Senior Machine Learning Engineer, AI Security",
-    "location": "San Francisco Bay Area, USA 🇺🇸",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "April 27, 2024",
-    "logo": "/media/robust_intelligence_logo.jpeg",
-    "description": "https://jobs.lever.co/robustintelligence/cd0fcaa4-a98c-4b3a-8141-6135c00b2e41"
-  },
-  {
-    "company": "Robust Intelligence",
-    "position": "Senior Software Engineer, Cloud",
-    "location": "San Francisco Bay Area, USA 🇺🇸",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "April 27, 2024",
-    "logo": "/media/robust_intelligence_logo.jpeg",
-    "description": "https://jobs.lever.co/robustintelligence/073ea6ee-6c26-425f-aa3e-35ccfcdac655"
-  },
-  {
     "company": "adjoe",
     "position": "Senior Data Scientist (Recommendation Systems Expert) (f/m/d)",
     "location": "Hamburg, Germany 🇩🇪",
@@ -3079,6 +3865,28 @@
     "description": "https://adjoe.io/company/careers/?j_id=f6ad6765-0c06-47d4-8255-6c6c69e61574"
   },
   {
+    "company": "Robust Intelligence",
+    "position": "Senior Machine Learning Engineer, AI Security",
+    "location": "San Francisco Bay Area, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "April 27, 2024",
+    "logo": "/media/robust_intelligence_logo.jpeg",
+    "description": "https://jobs.lever.co/robustintelligence/cd0fcaa4-a98c-4b3a-8141-6135c00b2e41"
+  },
+  {
+    "company": "Robust Intelligence",
+    "position": "Senior Software Engineer, Cloud",
+    "location": "San Francisco Bay Area, USA 🇺🇸",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "April 27, 2024",
+    "logo": "/media/robust_intelligence_logo.jpeg",
+    "description": "https://jobs.lever.co/robustintelligence/073ea6ee-6c26-425f-aa3e-35ccfcdac655"
+  },
+  {
     "company": "Fishlabs GmbH",
     "position": "QA Tester (Games) (m/f/d)",
     "location": "Hamburg, Germany 🇩🇪",
@@ -3088,17 +3896,6 @@
     "post_date": "April 27, 2024",
     "logo": "/media/deep_silver_fishlabs_logo.jpeg",
     "description": "https://jobs.eu.lever.co/dsfishlabs/736bc4de-e91e-4559-9da9-7107d094d697"
-  },
-  {
-    "company": "adjoe",
-    "position": "Senior Data Scientist (f/m/d)",
-    "location": "Hamburg, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "May 7, 2024",
-    "logo": "/media/adjoe_logo.jpeg",
-    "description": "https://adjoe.io/company/careers/?j_id=19c85586-f71d-4ede-aff4-bd4097628a00"
   },
   {
     "company": "Fishlabs GmbH",
@@ -3299,17 +4096,6 @@
     "description": "https://raisin.jobs.personio.de/job/1357512?language=en&display=en"
   },
   {
-    "company": "Enzo",
-    "position": "Mobile App Engineer",
-    "location": "Heidelberg, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "February 28, 2024",
-    "logo": "/media/heyenzo_logo.jpeg",
-    "description": "https://join.com/companies/heyenzo/10631844-mobile-app-engineer-intern-fte?widgetv2=true&pid=d73d1a20e99ab4ced633"
-  },
-  {
     "company": "raisin",
     "position": "Security Operations Center (SOC) Lead (m/f/d)",
     "location": "Berlin, Germany 🇩🇪",
@@ -3319,28 +4105,6 @@
     "post_date": "March 28, 2024",
     "logo": "/media/raisinbank_logo.jpeg",
     "description": "https://raisin.jobs.personio.de/job/1357534?language=en&display=en"
-  },
-  {
-    "company": "JUCR",
-    "position": "Staff Electrical Engineer",
-    "location": "Berlin, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "February 28, 2024",
-    "logo": "/media/jucr_logo.jpeg",
-    "description": "https://jucr-gmbh.jobs.personio.de/job/882032?language=en&display=en"
-  },
-  {
-    "company": "JUCR",
-    "position": "Senior Embedded Engineer",
-    "location": "Berlin, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "February 28, 2024",
-    "logo": "/media/jucr_logo.jpeg",
-    "description": "https://jucr-gmbh.jobs.personio.de/job/1372594?language=en&display=en"
   },
   {
     "company": "raisin",
@@ -3365,39 +4129,6 @@
     "description": "https://raisin.jobs.personio.de/job/1429879?language=en&display=en"
   },
   {
-    "company": "JUCR",
-    "position": "Senior Front end Engineer",
-    "location": "Berlin, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "February 28, 2024",
-    "logo": "/media/jucr_logo.jpeg",
-    "description": "https://jucr-gmbh.jobs.personio.de/job/1365981?language=en&display=en"
-  },
-  {
-    "company": "Bigpoint GmbH",
-    "position": "Junior Unity Developer (m/f/d)",
-    "location": "Hamburg, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "February 13, 2024",
-    "logo": "/media/bigpoint_gmbh_logo.jpeg",
-    "description": "https://bigpoint.jobs.personio.de/job/1345752?language=en&display=en"
-  },
-  {
-    "company": "Bigpoint GmbH",
-    "position": "Associate PHP Developer (m/f/d)",
-    "location": "Hamburg, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "February 13, 2024",
-    "logo": "/media/bigpoint_gmbh_logo.jpeg",
-    "description": "https://bigpoint.jobs.personio.de/job/1356656?language=en&display=en"
-  },
-  {
     "company": "adjoe",
     "position": "Business Intelligence Analyst (f/m/d)",
     "location": "Hamburg, Germany 🇩🇪",
@@ -3407,6 +4138,72 @@
     "post_date": "February 28, 2024",
     "logo": "/media/adjoe_logo.jpeg",
     "description": "https://adjoe.io/company/careers/?j_id=44642da4-2428-4f5d-9fe7-462f5bd572ba"
+  },
+  {
+    "company": "adjoe",
+    "position": "Senior Frontend Developer (f/m/d)",
+    "location": "Hamburg, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "February 28, 2024",
+    "logo": "/media/adjoe_logo.jpeg",
+    "description": "https://adjoe.io/company/careers/?j_id=be4b2a59-cc6a-4bac-8182-1b8728dda53a"
+  },
+  {
+    "company": "adjoe",
+    "position": "Senior Data Scientist (f/m/d)",
+    "location": "Hamburg, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "February 28, 2024",
+    "logo": "/media/adjoe_logo.jpeg",
+    "description": "https://adjoe.io/company/careers/?j_id=19c85586-f71d-4ede-aff4-bd4097628a00"
+  },
+  {
+    "company": "Enzo",
+    "position": "Mobile App Engineer",
+    "location": "Heidelberg, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "February 28, 2024",
+    "logo": "/media/heyenzo_logo.jpeg",
+    "description": "https://join.com/companies/heyenzo/10631844-mobile-app-engineer-intern-fte?widgetv2=true&pid=d73d1a20e99ab4ced633"
+  },
+  {
+    "company": "JUCR",
+    "position": "Staff Electrical Engineer",
+    "location": "Berlin, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "February 28, 2024",
+    "logo": "/media/jucr_logo.jpeg",
+    "description": "https://jucr-gmbh.jobs.personio.de/job/882032?language=en&display=en"
+  },
+  {
+    "company": "JUCR",
+    "position": "Senior Embedded Engineer",
+    "location": "Berlin, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "February 28, 2024",
+    "logo": "/media/jucr_logo.jpeg",
+    "description": "https://jucr-gmbh.jobs.personio.de/job/1372594?language=en&display=en"
+  },
+  {
+    "company": "JUCR",
+    "position": "Senior Front end Engineer",
+    "location": "Berlin, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "February 28, 2024",
+    "logo": "/media/jucr_logo.jpeg",
+    "description": "https://jucr-gmbh.jobs.personio.de/job/1365981?language=en&display=en"
   },
   {
     "company": "adjoe",
@@ -3432,28 +4229,6 @@
   },
   {
     "company": "adjoe",
-    "position": "Senior Frontend Developer (f/m/d)",
-    "location": "Hamburg, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "February 28, 2024",
-    "logo": "/media/adjoe_logo.jpeg",
-    "description": "https://adjoe.io/company/careers/?j_id=be4b2a59-cc6a-4bac-8182-1b8728dda53a"
-  },
-  {
-    "company": "adjoe",
-    "position": "Senior Data Scientist (f/m/d)",
-    "location": "Hamburg, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "February 28, 2024",
-    "logo": "/media/adjoe_logo.jpeg",
-    "description": "https://adjoe.io/company/careers/?j_id=19c85586-f71d-4ede-aff4-bd4097628a00"
-  },
-  {
-    "company": "adjoe",
     "position": "QA Engineer (f/m/d)",
     "location": "Hamburg, Germany 🇩🇪",
     "reloc": "Relocation Assistance",
@@ -3462,6 +4237,28 @@
     "post_date": "February 28, 2024",
     "logo": "/media/adjoe_logo.jpeg",
     "description": "https://adjoe.io/company/careers/?j_id=f46b07a1-4a9d-4f09-a076-56c74c3de460"
+  },
+  {
+    "company": "Bigpoint GmbH",
+    "position": "Junior Unity Developer (m/f/d)",
+    "location": "Hamburg, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "February 13, 2024",
+    "logo": "/media/bigpoint_gmbh_logo.jpeg",
+    "description": "https://bigpoint.jobs.personio.de/job/1345752?language=en&display=en"
+  },
+  {
+    "company": "Bigpoint GmbH",
+    "position": "Associate PHP Developer (m/f/d)",
+    "location": "Hamburg, Germany 🇩🇪",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "contract": "Full Time",
+    "post_date": "February 13, 2024",
+    "logo": "/media/bigpoint_gmbh_logo.jpeg",
+    "description": "https://bigpoint.jobs.personio.de/job/1356656?language=en&display=en"
   },
   {
     "company": "Bigpoint GmbH",
@@ -3507,5 +4304,4 @@
     "logo": "/media/justtrack_logo.jpeg",
     "description": "https://justtrack.io/career/?j_id=2795eebb-e23f-41a6-a42f-6785cb73871e"
   }
-
 ]
