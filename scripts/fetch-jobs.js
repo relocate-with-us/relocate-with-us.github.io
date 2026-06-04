@@ -121,6 +121,28 @@ function keywordClassify(text) {
 }
 
 // ─── Gemini classifier ────────────────────────────────────────────────────────
+async function fetchWithRetry(url, options, maxRetries = 3) {
+  let attempt = 0;
+  while (attempt < maxRetries) {
+    try {
+      const res = await fetch(url, options);
+      if (res.status === 429) {
+        attempt++;
+        const delay = Math.pow(2, attempt) * 2000;
+        console.warn(`  429 received, waiting ${delay}ms before retry... (attempt ${attempt}/${maxRetries})`);
+        await sleep(delay);
+        continue;
+      }
+      return res;
+    } catch (err) {
+      attempt++;
+      if (attempt >= maxRetries) throw err;
+      await sleep(1000);
+    }
+  }
+  throw new Error("Max retries exceeded for fetch request");
+}
+
 async function classifyWithGemini(jobText) {
   if (!GEMINI_API_KEY) return null;
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
@@ -131,7 +153,7 @@ async function classifyWithGemini(jobText) {
     "Job text:\n" + jobText.slice(0, 3000)
   ].join("\n");
 
-  const res = await fetch(url, {
+  const res = await fetchWithRetry(url, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -151,6 +173,11 @@ async function classify(text) {
   // Quick keyword pass first to avoid burning API quota on obvious misses
   const kw = keywordClassify(text);
   if (kw.include) return kw;
+
+  // If there is NEITHER visa nor reloc keywords, we don't call Gemini
+  if (!kw.visa && !kw.reloc) {
+    return { include: false, visa: false, reloc: false, source: "keyword-skip" };
+  }
 
   // Fall back to Gemini for borderline cases
   try {
@@ -204,39 +231,43 @@ async function fetchArbeitnow() {
 }
 
 // ─── Source: Relocate.me ─────────────────────────────────────────────────────
-// Relocate.me has a JSON API — jobs listed with relocation explicitly
 async function fetchRelocateMe() {
   const jobs = [];
   try {
-    // Their public search API
-    const url = "https://relocate.me/api/jobs?limit=50&offset=0";
-    const data = await fetchJson(url);
-    const batch = Array.isArray(data) ? data : (data.jobs || data.data || []);
+    const html = await fetchText("https://relocate.me/international-jobs");
+    const blocks = html.split('<div class="jobs-list__job');
+    blocks.shift(); // remove header part
 
-    for (const j of batch) {
-      jobs.push({
-        company:  j.company?.name || j.company_name || "",
-        position: j.title || j.position || "",
-        location: j.location || j.city || "",
-        url:      j.url || j.apply_url || j.job_url || "",
-        postDate: j.published_at ? new Date(j.published_at) : new Date(),
-        description: [j.title, j.company?.name, j.location, j.description || ""].join(" ")
-      });
+    for (const block of blocks) {
+      const content = block.split('class="jobs-list__job')[0].split('class="jobs-list__pagination')[0];
+      const pMatches = [...content.matchAll(/<p>([^<]+)<\/p>/gi)].map(m => m[1].trim());
+      
+      let location = "";
+      let company = "";
+      if (pMatches.length >= 2) {
+        location = pMatches[0];
+        company = pMatches[1];
+      } else if (pMatches.length === 1) {
+        location = pMatches[0];
+      }
+
+      const aMatch = content.match(/<a href="([^"]+)"[^>]*>\s*<b>([\s\S]*?)<\/b>/i);
+      const urlPath = aMatch ? aMatch[1].trim() : "";
+      const title = aMatch ? aMatch[2].replace(/<[^>]+>/g, " ").replace(/&amp;/g, "&").trim() : "";
+
+      if (title && urlPath) {
+        jobs.push({
+          company,
+          position: title,
+          location,
+          url: "https://relocate.me" + urlPath,
+          postDate: new Date(),
+          description: [title, company, location, "visa sponsorship relocation assistance"].join(" ")
+        });
+      }
     }
   } catch (err) {
-    console.warn("  Relocate.me API failed:", err.message, "— trying RSS fallback");
-    // RSS fallback
-    try {
-      const xml = await fetchText("https://relocate.me/api/v1/jobs?visa=true&limit=50");
-      // minimal xml parse for titles/links
-      const entries = [...xml.matchAll(/<title><!\[CDATA\[(.*?)\]\]><\/title>[\s\S]*?<link>(.*?)<\/link>/g)];
-      for (const [, title, link] of entries) {
-        if (!title || !link || link.includes("relocate.me/news")) continue;
-        jobs.push({ company: "", position: title, location: "", url: link, postDate: new Date(), description: title });
-      }
-    } catch (e2) {
-      console.warn("  Relocate.me RSS also failed:", e2.message);
-    }
+    console.warn("  Relocate.me scrape failed:", err.message);
   }
   return jobs.slice(0, MAX_PER_SOURCE);
 }
@@ -467,14 +498,25 @@ async function main() {
         source.relocConfirmed ? "relocation assistance" : "",
       ].join(" ");
 
-      // If both are confirmed by the source, skip API call
+      // If both are confirmed by the source, OR if the company is a verified premium sponsor, skip classification
       let include = !!(source.visaConfirmed && source.relocConfirmed);
+
+      if (!include && raw.company) {
+        const companyLower = raw.company.toLowerCase().trim();
+        if (sponsorsMap.has(companyLower)) {
+          include = true;
+        }
+      }
 
       if (!include) {
         try {
           const result = await classify(classText);
           include = result.include;
-          await sleep(150); // rate-limit Gemini
+          if (result.source !== "keyword" && result.source !== "keyword-skip") {
+            await sleep(1500); // rate-limit Gemini only if we hit the API
+          } else {
+            await sleep(100);  // short sleep for fast keyword evaluation
+          }
         } catch {
           include = false;
         }
