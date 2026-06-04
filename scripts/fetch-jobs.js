@@ -338,9 +338,63 @@ async function fetchJaabz() {
 }
 
 // ─── Logo mapper ──────────────────────────────────────────────────────────────
+function buildMediaMap() {
+  const mediaDir = path.join(__dirname, "..", "media");
+  if (!fs.existsSync(mediaDir)) return new Map();
+  try {
+    const files = fs.readdirSync(mediaDir);
+    const map = new Map();
+    for (const f of files) {
+      if (f.endsWith(".Identifier")) continue;
+      const norm = f.toLowerCase()
+        .replace(/_logo$/, "")
+        .replace(/_logo_logo$/, "")
+        .replace(/_logo\.[a-z0-9]+$/, "")
+        .replace(/\.[a-z0-9]+$/, "")
+        .replace(/[^a-z0-9]+/g, "");
+      if (norm) {
+        map.set(norm, `/media/${f}`);
+      }
+    }
+    return map;
+  } catch {
+    return new Map();
+  }
+}
+
+const mediaMap = buildMediaMap();
+
+function buildSponsorsMap() {
+  const sponsorsPath = path.join(__dirname, "..", "src", "_data", "premium-sponsors.json");
+  const sponsors = readJson(sponsorsPath, []);
+  const map = new Map();
+  for (const s of sponsors) {
+    if (s && s.name && s.logo) {
+      map.set(s.name.toLowerCase().trim(), s.logo);
+    }
+  }
+  return map;
+}
+
+const sponsorsMap = buildSponsorsMap();
+
 function companyToLogoPath(company) {
   if (!company) return "";
-  const slug = company.toLowerCase()
+  const nameLower = company.toLowerCase().trim();
+  
+  // 1. Check if we have this exact company in premium-sponsors
+  if (sponsorsMap.has(nameLower)) {
+    return sponsorsMap.get(nameLower);
+  }
+
+  // 2. Check if we have a match in mediaMap using normalized name
+  const norm = nameLower.replace(/[^a-z0-9]+/g, "");
+  if (mediaMap.has(norm)) {
+    return mediaMap.get(norm);
+  }
+
+  // 3. Fallback to default naming convention
+  const slug = nameLower
     .replace(/[^a-z0-9]+/g, "_")
     .replace(/^_|_$/g, "");
   return `/media/${slug}_logo.jpg`;

@@ -6,13 +6,19 @@
     "industry": "E-commerce / Fashion Tech",
     "size": "17,000+",
     "sponsors": true,
-    "countries": ["Germany"],
-    "visaTypes": ["EU Blue Card", "Skilled Worker Visa"],
+    "countries": [
+      "Germany"
+    ],
+    "visaTypes": [
+      "EU Blue Card",
+      "Skilled Worker Visa"
+    ],
     "relocation": true,
     "relocationDetails": "Flight tickets, moving expenses, temporary housing, visa services, real estate agent",
     "careers": "https://jobs.zalando.com/en/jobs/",
     "verified": "2026-03",
-    "notes": "Europe's largest online fashion platform. Sponsors EU Blue Card for non-EU engineers. 100+ nationalities on staff."
+    "notes": "Europe's largest online fashion platform. Sponsors EU Blue Card for non-EU engineers. 100+ nationalities on staff.",
+    "logo": "/media/zalando_logo.jpg"
   },
   {
     "name": "SAP",
@@ -21,13 +27,24 @@
     "industry": "Enterprise Software",
     "size": "107,000+",
     "sponsors": true,
-    "countries": ["Germany", "Ireland", "United Kingdom", "Canada", "Australia"],
-    "visaTypes": ["EU Blue Card", "Skilled Worker Visa", "ICT Visa"],
+    "countries": [
+      "Germany",
+      "Ireland",
+      "United Kingdom",
+      "Canada",
+      "Australia"
+    ],
+    "visaTypes": [
+      "EU Blue Card",
+      "Skilled Worker Visa",
+      "ICT Visa"
+    ],
     "relocation": true,
     "relocationDetails": "Full relocation package including visa support, moving allowance, temporary housing",
     "careers": "https://jobs.sap.com/",
     "verified": "2026-03",
-    "notes": "World's largest enterprise software company. Global mobility program sponsors visas in 50+ countries."
+    "notes": "World's largest enterprise software company. Global mobility program sponsors visas in 50+ countries.",
+    "logo": "/media/sap_logo.jpg"
   },
   {
     "name": "Siemens",
@@ -36,13 +53,22 @@
     "industry": "Industrial Technology",
     "size": "320,000+",
     "sponsors": true,
-    "countries": ["Germany", "United Kingdom", "Austria", "Switzerland"],
-    "visaTypes": ["EU Blue Card", "Skilled Worker Visa"],
+    "countries": [
+      "Germany",
+      "United Kingdom",
+      "Austria",
+      "Switzerland"
+    ],
+    "visaTypes": [
+      "EU Blue Card",
+      "Skilled Worker Visa"
+    ],
     "relocation": true,
     "relocationDetails": "Relocation allowance, visa sponsorship, temporary accommodation support",
     "careers": "https://jobs.siemens.com/careers",
     "verified": "2026-03",
-    "notes": "Global industrial technology giant. Regularly sponsors EU Blue Card for engineering roles."
+    "notes": "Global industrial technology giant. Regularly sponsors EU Blue Card for engineering roles.",
+    "logo": "/media/siemens_logo.jpg"
   },
   {
     "name": "BMW Group",
@@ -51,13 +77,20 @@
     "industry": "Automotive / Tech",
     "size": "149,000+",
     "sponsors": true,
-    "countries": ["Germany", "Austria"],
-    "visaTypes": ["EU Blue Card", "Skilled Worker Visa"],
+    "countries": [
+      "Germany",
+      "Austria"
+    ],
+    "visaTypes": [
+      "EU Blue Card",
+      "Skilled Worker Visa"
+    ],
     "relocation": true,
     "relocationDetails": "Relocation package, visa support, housing assistance",
     "careers": "https://www.bmwgroup.jobs/",
     "verified": "2026-03",
-    "notes": "Luxury automotive manufacturer with large software engineering division for autonomous driving and connected car tech."
+    "notes": "Luxury automotive manufacturer with large software engineering division for autonomous driving and connected car tech.",
+    "logo": "/media/bmw_logo.jpg"
   },
   {
     "name": "Delivery Hero",
@@ -66,13 +99,19 @@
     "industry": "Food Delivery / Tech",
     "size": "53,000+",
     "sponsors": true,
-    "countries": ["Germany"],
-    "visaTypes": ["EU Blue Card", "Skilled Worker Visa"],
+    "countries": [
+      "Germany"
+    ],
+    "visaTypes": [
+      "EU Blue Card",
+      "Skilled Worker Visa"
+    ],
     "relocation": true,
     "relocationDetails": "Relocation support, visa sponsorship, onboarding assistance",
     "careers": "https://careers.deliveryhero.com/",
     "verified": "2026-03",
-    "notes": "World's leading food delivery platform. Hires globally with EU Blue Card sponsorship in Berlin."
+    "notes": "World's leading food delivery platform. Hires globally with EU Blue Card sponsorship in Berlin.",
+    "logo": "/media/deliveryhero_logo.jpg"
   },
   {
     "name": "HelloFresh",
@@ -81,13 +120,18 @@
     "industry": "Food Tech / E-commerce",
     "size": "20,000+",
     "sponsors": true,
-    "countries": ["Germany"],
-    "visaTypes": ["EU Blue Card"],
+    "countries": [
+      "Germany"
+    ],
+    "visaTypes": [
+      "EU Blue Card"
+    ],
     "relocation": true,
     "relocationDetails": "Visa sponsorship, relocation support, German language courses",
     "careers": "https://careers.hellofresh.com/",
     "verified": "2026-03",
-    "notes": "Global meal kit company. 70+ nationalities on staff in Berlin HQ. Sponsors EU Blue Card."
+    "notes": "Global meal kit company. 70+ nationalities on staff in Berlin HQ. Sponsors EU Blue Card.",
+    "logo": "/media/hellofresh_logo.jpg"
   },
   {
     "name": "Personio",
@@ -96,13 +140,23 @@
     "industry": "HR Tech / SaaS",
     "size": "2,000+",
     "sponsors": true,
-    "countries": ["Germany", "Ireland", "United Kingdom", "Netherlands", "Spain"],
-    "visaTypes": ["EU Blue Card", "Skilled Worker Visa"],
+    "countries": [
+      "Germany",
+      "Ireland",
+      "United Kingdom",
+      "Netherlands",
+      "Spain"
+    ],
+    "visaTypes": [
+      "EU Blue Card",
+      "Skilled Worker Visa"
+    ],
     "relocation": true,
     "relocationDetails": "Relocation support, visa sponsorship across multiple European offices",
     "careers": "https://www.personio.com/about-personio/careers/",
     "verified": "2026-03",
-    "notes": "Leading European HR software company. Actively sponsors across multiple EU offices."
+    "notes": "Leading European HR software company. Actively sponsors across multiple EU offices.",
+    "logo": "/media/personio_logo.jpg"
   },
   {
     "name": "Grammarly",
@@ -111,13 +165,20 @@
     "industry": "AI / Writing Tech",
     "size": "1,000+",
     "sponsors": true,
-    "countries": ["Germany", "United States"],
-    "visaTypes": ["EU Blue Card", "H-1B"],
+    "countries": [
+      "Germany",
+      "United States"
+    ],
+    "visaTypes": [
+      "EU Blue Card",
+      "H-1B"
+    ],
     "relocation": true,
     "relocationDetails": "Full relocation package, visa support, hybrid work",
     "careers": "https://www.grammarly.com/jobs/engineering",
     "verified": "2026-03",
-    "notes": "AI writing assistant with Berlin engineering hub. Sponsors EU Blue Card for Berlin office."
+    "notes": "AI writing assistant with Berlin engineering hub. Sponsors EU Blue Card for Berlin office.",
+    "logo": "/media/grammarly_logo.jpg"
   },
   {
     "name": "SumUp",
@@ -126,13 +187,20 @@
     "industry": "FinTech / Payments",
     "size": "3,000+",
     "sponsors": true,
-    "countries": ["Germany", "United Kingdom"],
-    "visaTypes": ["EU Blue Card", "Skilled Worker Visa"],
+    "countries": [
+      "Germany",
+      "United Kingdom"
+    ],
+    "visaTypes": [
+      "EU Blue Card",
+      "Skilled Worker Visa"
+    ],
     "relocation": true,
     "relocationDetails": "Visa sponsorship, relocation support, German and yoga classes",
     "careers": "https://www.sumup.com/careers/",
     "verified": "2026-03",
-    "notes": "Payment technology company. 93 nationalities across 4 continents. Sponsors EU Blue Card."
+    "notes": "Payment technology company. 93 nationalities across 4 continents. Sponsors EU Blue Card.",
+    "logo": "/media/sumup_logo.jpg"
   },
   {
     "name": "Contentful",
@@ -141,13 +209,18 @@
     "industry": "CMS / SaaS",
     "size": "800+",
     "sponsors": true,
-    "countries": ["Germany"],
-    "visaTypes": ["EU Blue Card"],
+    "countries": [
+      "Germany"
+    ],
+    "visaTypes": [
+      "EU Blue Card"
+    ],
     "relocation": true,
     "relocationDetails": "Visa sponsorship, relocation assistance",
     "careers": "https://www.contentful.com/careers/",
     "verified": "2026-03",
-    "notes": "Headless CMS platform. Berlin-based with diverse international team."
+    "notes": "Headless CMS platform. Berlin-based with diverse international team.",
+    "logo": "/media/contentful_logo.jpg"
   },
   {
     "name": "Adyen",
@@ -156,13 +229,22 @@
     "industry": "FinTech / Payments",
     "size": "4,000+",
     "sponsors": true,
-    "countries": ["Netherlands", "United Kingdom", "Germany"],
-    "visaTypes": ["Highly Skilled Migrant Visa (HSM)", "EU Blue Card", "Skilled Worker Visa"],
+    "countries": [
+      "Netherlands",
+      "United Kingdom",
+      "Germany"
+    ],
+    "visaTypes": [
+      "Highly Skilled Migrant Visa (HSM)",
+      "EU Blue Card",
+      "Skilled Worker Visa"
+    ],
     "relocation": true,
     "relocationDetails": "Visa sponsorship, health insurance, commute allowance, office lunch",
     "careers": "https://careers.adyen.com/vacancies/",
     "verified": "2026-03",
-    "notes": "Global payments platform processing for Netflix, Spotify, Uber. IND-recognized sponsor in the Netherlands."
+    "notes": "Global payments platform processing for Netflix, Spotify, Uber. IND-recognized sponsor in the Netherlands.",
+    "logo": "/media/adyen_logo.jpg"
   },
   {
     "name": "Mollie",
@@ -171,13 +253,19 @@
     "industry": "FinTech / Payments",
     "size": "800+",
     "sponsors": true,
-    "countries": ["Netherlands", "Portugal"],
-    "visaTypes": ["Highly Skilled Migrant Visa (HSM)"],
+    "countries": [
+      "Netherlands",
+      "Portugal"
+    ],
+    "visaTypes": [
+      "Highly Skilled Migrant Visa (HSM)"
+    ],
     "relocation": true,
     "relocationDetails": "Advanced package: flight tickets, moving expenses, temporary housing, visa services, real estate agent",
     "careers": "https://jobs.mollie.com/",
     "verified": "2026-03",
-    "notes": "European payment service provider. 30% of staff in technical roles. Advanced relocation package."
+    "notes": "European payment service provider. 30% of staff in technical roles. Advanced relocation package.",
+    "logo": "/media/mollie_logo.jpg"
   },
   {
     "name": "Booking.com",
@@ -186,13 +274,20 @@
     "industry": "Travel Tech",
     "size": "20,000+",
     "sponsors": true,
-    "countries": ["Netherlands", "United Kingdom"],
-    "visaTypes": ["Highly Skilled Migrant Visa (HSM)", "Skilled Worker Visa"],
+    "countries": [
+      "Netherlands",
+      "United Kingdom"
+    ],
+    "visaTypes": [
+      "Highly Skilled Migrant Visa (HSM)",
+      "Skilled Worker Visa"
+    ],
     "relocation": true,
     "relocationDetails": "Full relocation package, visa sponsorship, housing support",
     "careers": "https://jobs.booking.com/",
     "verified": "2026-03",
-    "notes": "World's largest online travel platform. IND-recognized sponsor. Hires hundreds of engineers annually."
+    "notes": "World's largest online travel platform. IND-recognized sponsor. Hires hundreds of engineers annually.",
+    "logo": "/media/bookingcom_logo.jpeg"
   },
   {
     "name": "Form3",
@@ -201,13 +296,22 @@
     "industry": "FinTech / Payments",
     "size": "400+",
     "sponsors": true,
-    "countries": ["United Kingdom", "Netherlands", "Germany"],
-    "visaTypes": ["Skilled Worker Visa", "Highly Skilled Migrant Visa (HSM)", "EU Blue Card"],
+    "countries": [
+      "United Kingdom",
+      "Netherlands",
+      "Germany"
+    ],
+    "visaTypes": [
+      "Skilled Worker Visa",
+      "Highly Skilled Migrant Visa (HSM)",
+      "EU Blue Card"
+    ],
     "relocation": true,
     "relocationDetails": "Visa sponsorship to UK, Netherlands, or Germany. 100% remote after relocation.",
     "careers": "https://www.form3.tech/careers",
     "verified": "2026-03",
-    "notes": "Cloud-native payment technology. Sponsors in 3 countries. Raised $160M. 100% remote after relocation."
+    "notes": "Cloud-native payment technology. Sponsors in 3 countries. Raised $160M. 100% remote after relocation.",
+    "logo": "/media/form3_logo.jpg"
   },
   {
     "name": "Revolut",
@@ -216,13 +320,22 @@
     "industry": "FinTech / Banking",
     "size": "8,000+",
     "sponsors": true,
-    "countries": ["United Kingdom", "Poland", "Portugal", "Spain"],
-    "visaTypes": ["Skilled Worker Visa", "EU residence permits"],
+    "countries": [
+      "United Kingdom",
+      "Poland",
+      "Portugal",
+      "Spain"
+    ],
+    "visaTypes": [
+      "Skilled Worker Visa",
+      "EU residence permits"
+    ],
     "relocation": true,
     "relocationDetails": "Visa assistance, travel costs covered, first month accommodation, relocation to multiple hubs",
     "careers": "https://www.revolut.com/careers/",
     "verified": "2026-03",
-    "notes": "Global neobank with 40M+ customers. Relocates engineers to London, Krakow, Lisbon, or Madrid."
+    "notes": "Global neobank with 40M+ customers. Relocates engineers to London, Krakow, Lisbon, or Madrid.",
+    "logo": "/media/revolut_logo.jpg"
   },
   {
     "name": "Spotify",
@@ -231,13 +344,20 @@
     "industry": "Music / Media Tech",
     "size": "10,000+",
     "sponsors": true,
-    "countries": ["Sweden", "United Kingdom"],
-    "visaTypes": ["Swedish Work Permit", "Skilled Worker Visa"],
+    "countries": [
+      "Sweden",
+      "United Kingdom"
+    ],
+    "visaTypes": [
+      "Swedish Work Permit",
+      "Skilled Worker Visa"
+    ],
     "relocation": true,
     "relocationDetails": "Full relocation package, visa sponsorship, hybrid work",
     "careers": "https://www.lifeatspotify.com/jobs",
     "verified": "2026-03",
-    "notes": "World's largest music streaming platform. Sponsors work permits for Stockholm and London offices."
+    "notes": "World's largest music streaming platform. Sponsors work permits for Stockholm and London offices.",
+    "logo": "/media/spotify_logo.jpg"
   },
   {
     "name": "Klarna",
@@ -246,13 +366,20 @@
     "industry": "FinTech / Payments",
     "size": "5,000+",
     "sponsors": true,
-    "countries": ["Sweden", "Germany"],
-    "visaTypes": ["Swedish Work Permit", "EU Blue Card"],
+    "countries": [
+      "Sweden",
+      "Germany"
+    ],
+    "visaTypes": [
+      "Swedish Work Permit",
+      "EU Blue Card"
+    ],
     "relocation": true,
     "relocationDetails": "Visa sponsorship, relocation support",
     "careers": "https://www.klarna.com/careers/",
     "verified": "2026-03",
-    "notes": "Buy Now Pay Later giant. Sponsors Swedish work permits for Stockholm office."
+    "notes": "Buy Now Pay Later giant. Sponsors Swedish work permits for Stockholm office.",
+    "logo": "/media/klarna_logo.jpg"
   },
   {
     "name": "Infineon Technologies",
@@ -261,8 +388,15 @@
     "industry": "Semiconductors",
     "size": "56,000+",
     "sponsors": true,
-    "countries": ["Ireland", "Germany", "Austria"],
-    "visaTypes": ["Critical Skills Employment Permit", "EU Blue Card"],
+    "countries": [
+      "Ireland",
+      "Germany",
+      "Austria"
+    ],
+    "visaTypes": [
+      "Critical Skills Employment Permit",
+      "EU Blue Card"
+    ],
     "relocation": true,
     "relocationDetails": "Relocation allowance, visa sponsorship, housing assistance, serviced apartments for relocating staff",
     "careers": "https://www.infineon.com/cms/en/careers/",
@@ -276,13 +410,21 @@
     "industry": "Cloud / Observability",
     "size": "6,000+",
     "sponsors": true,
-    "countries": ["France", "United States"],
-    "visaTypes": ["French Tech Visa", "Passeport Talent", "H-1B"],
+    "countries": [
+      "France",
+      "United States"
+    ],
+    "visaTypes": [
+      "French Tech Visa",
+      "Passeport Talent",
+      "H-1B"
+    ],
     "relocation": true,
     "relocationDetails": "Visa sponsorship, relocation support, hybrid workplace",
     "careers": "https://careers.datadoghq.com/",
     "verified": "2026-03",
-    "notes": "Leading cloud monitoring platform. Large Paris engineering office. Hires early-career to senior engineers."
+    "notes": "Leading cloud monitoring platform. Large Paris engineering office. Hires early-career to senior engineers.",
+    "logo": "/media/datadog_logo.jpg"
   },
   {
     "name": "Wise",
@@ -291,13 +433,20 @@
     "industry": "FinTech / Money Transfer",
     "size": "6,000+",
     "sponsors": true,
-    "countries": ["Estonia", "United Kingdom"],
-    "visaTypes": ["Estonian Residence Permit", "Skilled Worker Visa"],
+    "countries": [
+      "Estonia",
+      "United Kingdom"
+    ],
+    "visaTypes": [
+      "Estonian Residence Permit",
+      "Skilled Worker Visa"
+    ],
     "relocation": true,
     "relocationDetails": "Visa sponsorship for experienced roles, relocation support to Tallinn",
     "careers": "https://wise.jobs/",
     "verified": "2026-03",
-    "notes": "Global money transfer platform handling £35B+ monthly. Note: graduate program does NOT sponsor visas."
+    "notes": "Global money transfer platform handling £35B+ monthly. Note: graduate program does NOT sponsor visas.",
+    "logo": "/media/wise_logo.jpg"
   },
   {
     "name": "Bolt",
@@ -306,13 +455,18 @@
     "industry": "Mobility / Ride-hailing",
     "size": "5,000+",
     "sponsors": true,
-    "countries": ["Estonia"],
-    "visaTypes": ["Estonian Residence Permit"],
+    "countries": [
+      "Estonia"
+    ],
+    "visaTypes": [
+      "Estonian Residence Permit"
+    ],
     "relocation": true,
     "relocationDetails": "Relocation and visa support to Tallinn",
     "careers": "https://bolt.eu/en/careers/",
     "verified": "2026-03",
-    "notes": "Mobility super-app serving 100M+ users. Sponsors Estonian residence permits for engineering roles."
+    "notes": "Mobility super-app serving 100M+ users. Sponsors Estonian residence permits for engineering roles.",
+    "logo": "/media/bolt_logo.jpg"
   },
   {
     "name": "Wolt",
@@ -321,13 +475,20 @@
     "industry": "Food Delivery / Tech",
     "size": "12,000+",
     "sponsors": true,
-    "countries": ["Estonia", "Finland"],
-    "visaTypes": ["Estonian Residence Permit", "Finnish Residence Permit"],
+    "countries": [
+      "Estonia",
+      "Finland"
+    ],
+    "visaTypes": [
+      "Estonian Residence Permit",
+      "Finnish Residence Permit"
+    ],
     "relocation": true,
     "relocationDetails": "Visa sponsorship, relocation support",
     "careers": "https://careers.wolt.com/",
     "verified": "2026-03",
-    "notes": "Part of DoorDash. Engineering offices in Helsinki and Tallinn. Sponsors residence permits."
+    "notes": "Part of DoorDash. Engineering offices in Helsinki and Tallinn. Sponsors residence permits.",
+    "logo": "/media/wolt_logo.jpg"
   },
   {
     "name": "Canva",
@@ -336,13 +497,18 @@
     "industry": "Design Tech / SaaS",
     "size": "5,000+",
     "sponsors": true,
-    "countries": ["Australia"],
-    "visaTypes": ["Temporary Skill Shortage Visa (TSS/482)"],
+    "countries": [
+      "Australia"
+    ],
+    "visaTypes": [
+      "Temporary Skill Shortage Visa (TSS/482)"
+    ],
     "relocation": true,
     "relocationDetails": "Visa application fees covered, relocation bonus, temporary housing, stock options",
     "careers": "https://www.lifeatcanva.com/en/jobs/",
     "verified": "2026-03",
-    "notes": "Design platform valued at $40B. Covers all visa fees and provides relocation bonus for Sydney office."
+    "notes": "Design platform valued at $40B. Covers all visa fees and provides relocation bonus for Sydney office.",
+    "logo": "/media/canva_logo.jpg"
   },
   {
     "name": "Mistral AI",
@@ -351,13 +517,21 @@
     "industry": "AI / Machine Learning",
     "size": "600+",
     "sponsors": true,
-    "countries": ["France", "United Kingdom"],
-    "visaTypes": ["French Tech Visa", "Passeport Talent", "Skilled Worker Visa"],
+    "countries": [
+      "France",
+      "United Kingdom"
+    ],
+    "visaTypes": [
+      "French Tech Visa",
+      "Passeport Talent",
+      "Skilled Worker Visa"
+    ],
     "relocation": true,
     "relocationDetails": "Visa sponsorship, relocation support",
     "careers": "https://mistral.ai/careers/",
     "verified": "2026-03",
-    "notes": "Leading European AI company. Rapidly hiring AI researchers and engineers with visa sponsorship."
+    "notes": "Leading European AI company. Rapidly hiring AI researchers and engineers with visa sponsorship.",
+    "logo": "/media/mistralai_logo.jpeg"
   },
   {
     "name": "N26",
@@ -366,12 +540,17 @@
     "industry": "FinTech / Banking",
     "size": "1,500+",
     "sponsors": true,
-    "countries": ["Germany"],
-    "visaTypes": ["EU Blue Card"],
+    "countries": [
+      "Germany"
+    ],
+    "visaTypes": [
+      "EU Blue Card"
+    ],
     "relocation": true,
     "relocationDetails": "Visa sponsorship, relocation assistance",
     "careers": "https://n26.com/en-eu/careers",
     "verified": "2026-03",
-    "notes": "European mobile bank with 8M+ customers. Sponsors EU Blue Card for Berlin engineering roles."
+    "notes": "European mobile bank with 8M+ customers. Sponsors EU Blue Card for Berlin engineering roles.",
+    "logo": "/media/n26_logo.jpg"
   }
 ]
