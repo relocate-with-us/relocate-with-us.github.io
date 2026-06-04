@@ -1,0 +1,47 @@
+name: Update Jobs
+
+on:
+  schedule:
+    - cron: "30 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Update jobs
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
+          MISTRAL_MODEL: ${{ secrets.MISTRAL_MODEL }}
+        run: node scripts/update-jobs.js --max-per-source=200
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet src/_data/jobs.json db.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "$(git diff --stat src/_data/jobs.json db.json)"
+          fi
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/_data/jobs.json db.json scripts/added-jobs.log
+          ADDED=$(git diff --cached --numstat src/_data/jobs.json | awk '{print $1}')
+          git commit -m "chore: add $ADDED visa + relocation jobs"
+          git push

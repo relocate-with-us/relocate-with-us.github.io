@@ -4,6 +4,7 @@
   "description": "Job board for visa-sponsored and relocation jobs worldwide",
   "private": true,
   "scripts": {
+    "update:jobs": "node scripts/update-jobs.js",
     "build:css": "tailwindcss -i src/assets/css/input.css -o _site/assets/css/styles.css --minify",
     "build:11ty": "ELEVENTY_ENV=production npx @11ty/eleventy",
     "build:search": "npx pagefind --site _site",
