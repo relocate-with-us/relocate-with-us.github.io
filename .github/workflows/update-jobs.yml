@@ -1,4 +1,4 @@
-name: Generate & Add Visa Jobs
+name: Fetch & Add Visa Jobs
 
 on:
   schedule:
@@ -6,17 +6,29 @@ on:
     - cron: "0 7 * * *"
   workflow_dispatch:
     inputs:
-      count:
-        description: "Number of new jobs to generate"
+      source:
+        description: "Specific source to run (leave blank for all)"
         required: false
-        default: "20"
+        default: ""
+        type: choice
+        options:
+          - ""
+          - arbeitnow
+          - relocateme
+          - swissdevjobs
+          - visasponsor
+          - jaabz
+      max:
+        description: "Max jobs to fetch per source"
+        required: false
+        default: "100"
         type: string
 
 permissions:
   contents: write
 
 jobs:
-  generate:
+  fetch:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -25,15 +37,60 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Generate new visa-sponsored jobs
+      # ── Secret validation ────────────────────────────────────────────────
+      - name: Validate secrets
+        run: |
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "⚠️  GEMINI_API_KEY is not set — will use keyword classifier only."
+          else
+            echo "✅ GEMINI_API_KEY is set."
+          fi
+          echo "GEMINI_MODEL=${GEMINI_MODEL}"
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL || 'gemini-1.5-flash' }}
-        run: |
-          COUNT="${{ github.event.inputs.count || '20' }}"
-          echo "Generating $COUNT new jobs..."
-          node scripts/generate-jobs.js --count=$COUNT
+          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
 
+      # ── Step 1: Fetch real jobs from job boards ───────────────────────────
+      - name: Fetch visa-sponsored jobs from real sources
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Provide model from secret; fall back to default in the script itself
+          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
+        run: |
+          MAX="${{ github.event.inputs.max || '100' }}"
+          SOURCE="${{ github.event.inputs.source }}"
+          CMD="node scripts/fetch-jobs.js --max=$MAX"
+          if [ -n "$SOURCE" ]; then
+            CMD="$CMD --source=$SOURCE"
+          fi
+          echo "Running: $CMD"
+          $CMD
+
+      # ── Step 2: Gemini top-up (optional) ─────────────────────────────────
+      # If the real fetch added fewer than 5 new jobs, top up with AI-generated ones
+      - name: Top-up with generated jobs if needed
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
+        run: |
+          # Count how many jobs were added (lines with "ADDED:" in today's log)
+          TODAY=$(date -u +"%Y-%m-%d")
+          if [ -f scripts/added-jobs.log ]; then
+            ADDED_TODAY=$(grep "$TODAY" scripts/added-jobs.log | wc -l | tr -d ' ')
+          else
+            ADDED_TODAY=0
+          fi
+          echo "Jobs added today from real sources: $ADDED_TODAY"
+
+          if [ "$ADDED_TODAY" -lt 5 ] && [ -n "$GEMINI_API_KEY" ]; then
+            TOPUP=$((10 - ADDED_TODAY))
+            echo "Topping up with $TOPUP AI-generated jobs..."
+            node scripts/generate-jobs.js --count=$TOPUP
+          else
+            echo "Sufficient jobs added from real sources. Skipping AI top-up."
+          fi
+
+      # ── Step 3: Detect changes ────────────────────────────────────────────
       - name: Check for changes
         id: changes
         run: |
@@ -42,12 +99,13 @@ jobs:
             echo "No new jobs were added."
           else
             echo "changed=true" >> $GITHUB_OUTPUT
-            ADDED=$(git diff src/_data/jobs.json | grep '^\+' | grep '"company"' | wc -l | tr -d ' ')
+            ADDED=$(git diff src/_data/jobs.json | grep -c '^+.*"company"' || echo 0)
             echo "added=$ADDED" >> $GITHUB_OUTPUT
-            echo "Added $ADDED new jobs."
+            echo "New jobs to commit: $ADDED"
             git diff --stat src/_data/jobs.json db.json
           fi
 
+      # ── Step 4: Commit & push ─────────────────────────────────────────────
       - name: Commit and push
         if: steps.changes.outputs.changed == 'true'
         run: |
@@ -56,5 +114,5 @@ jobs:
           git add src/_data/jobs.json db.json scripts/added-jobs.log
           ADDED="${{ steps.changes.outputs.added }}"
           TODAY=$(date -u +"%B %-d, %Y")
-          git commit -m "feat(jobs): add ${ADDED} new visa + relocation jobs (${TODAY})"
+          git commit -m "feat(jobs): add ${ADDED} visa-sponsored jobs (${TODAY})"
           git push
