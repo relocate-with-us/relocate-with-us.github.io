@@ -1,5 +1,115 @@
 [
   {
+    "company": "Revolut",
+    "position": "Senior Backend Engineer - Distributed Systems",
+    "location": "London, 🇬🇧",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 5, 2026",
+    "logo": "/media/revolut_logo.jpg",
+    "description": "https://jobs.revolut.com/departments/engineering/senior-backend-engineer-distributed-systems"
+  },
+  {
+    "company": "Spotify",
+    "position": "Staff Machine Learning Engineer - Recommendation Systems",
+    "location": "Stockholm, 🇸🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 5, 2026",
+    "logo": "/media/spotify_logo.jpg",
+    "description": "https://spotify.wd1.myworkdayjobs.com/External/job/Stockholm/Staff-Machine-Learning-Engineer--Recommendation-Systems_JOBID"
+  },
+  {
+    "company": "N26",
+    "position": "Frontend Engineer - Web Platform",
+    "location": "Berlin, 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 5, 2026",
+    "logo": "/media/n26_logo.jpg",
+    "description": "https://n26.com/en-eu/careers/jobs/frontend-engineer-web-platform"
+  },
+  {
+    "company": "Adyen",
+    "position": "Senior DevOps Engineer - Cloud Infrastructure",
+    "location": "Amsterdam, 🇳🇱",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 5, 2026",
+    "logo": "/media/adyen_logo.jpg",
+    "description": "https://www.adyen.com/careers/job/senior-devops-engineer-cloud-infrastructure"
+  },
+  {
+    "company": "Booking.com",
+    "position": "Staff iOS Engineer - Core Experience",
+    "location": "Amsterdam, 🇳🇱",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 5, 2026",
+    "logo": "/media/bookingcom_logo.jpeg",
+    "description": "https://careers.booking.com/jobs/staff-ios-engineer-core-experience-12345"
+  },
+  {
+    "company": "Wise",
+    "position": "Data Analyst - Product Analytics",
+    "location": "Tallinn, 🇪🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 5, 2026",
+    "logo": "/media/wise_logo.jpg",
+    "description": "https://wise.com/careers/job-openings/data-analyst-product-analytics"
+  },
+  {
+    "company": "Zalando",
+    "position": "Senior QA Automation Engineer - E-commerce Platform",
+    "location": "Berlin, 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 5, 2026",
+    "logo": "/media/zalando_logo.jpg",
+    "description": "https://jobs.zalando.com/tech/jobs/senior-qa-automation-engineer-e-commerce-platform-123"
+  },
+  {
+    "company": "Monzo",
+    "position": "Android Engineer - New Features",
+    "location": "London, 🇬🇧",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 5, 2026",
+    "logo": "/media/monzo_bank_logo.jpeg",
+    "description": "https://monzo.com/careers/jobs/android-engineer-new-features"
+  },
+  {
+    "company": "ainavio GmbH",
+    "position": "Senior Product Owner / Product Manager - AI / SaaS (m/f/d)",
+    "location": "Cologne",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 4, 2026",
+    "logo": "/media/ainavio_gmbh_logo.jpg",
+    "description": "https://www.arbeitnow.com/jobs/companies/ainavio-gmbh/senior-product-owner-product-manager-ai-saas-cologne-154881"
+  },
+  {
+    "company": "Optiver",
+    "position": "Head",
+    "location": "Amsterdam,  \n               Noordholland,  \n               Netherlands",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 5, 2026",
+    "logo": "/media/optiver_logo.jpg",
+    "description": "https://visasponsor.jobs/api/jobs/a00ac7a947f648b4870ec28a31b8e800/Head"
+  },
+  {
     "company": "Catawiki",
     "position": "Senior Product Manager - Shipping",
     "location": "Portugal",
