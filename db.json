@@ -1,5 +1,93 @@
 [
   {
+    "company": "Spotify",
+    "position": "Senior Frontend Engineer - Web Player",
+    "location": "Stockholm, Sweden 🇸🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 6, 2026",
+    "logo": "/media/spotify_logo.jpg",
+    "description": "https://www.spotifyjobs.com/jobs/senior-frontend-engineer-web-player"
+  },
+  {
+    "company": "DeepMind",
+    "position": "Staff Machine Learning Engineer - Reinforcement Learning",
+    "location": "London, UK 🇬🇧",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 6, 2026",
+    "logo": "/media/deepmind_logo.jpg",
+    "description": "https://deepmind.google/careers/"
+  },
+  {
+    "company": "N26",
+    "position": "Senior Backend Engineer - Core Banking",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 6, 2026",
+    "logo": "/media/n26_logo.jpg",
+    "description": "https://n26.com/en-eu/careers/"
+  },
+  {
+    "company": "Adyen",
+    "position": "Staff Software Engineer - Payments Infrastructure",
+    "location": "Amsterdam, Netherlands 🇳🇱",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 6, 2026",
+    "logo": "/media/adyen_logo.jpg",
+    "description": "https://www.adyen.com/careers/jobs"
+  },
+  {
+    "company": "Revolut",
+    "position": "Senior Data Engineer - Financial Crime",
+    "location": "Vilnius, Lithuania 🇱🇹",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 6, 2026",
+    "logo": "/media/revolut_logo.jpg",
+    "description": "https://www.revolut.com/careers/"
+  },
+  {
+    "company": "Booking.com",
+    "position": "Senior QA Engineer - Accommodation Search",
+    "location": "Manchester, UK 🇬🇧",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 6, 2026",
+    "logo": "/media/bookingcom_logo.jpeg",
+    "description": "https://careers.booking.com/"
+  },
+  {
+    "company": "ainavio GmbH",
+    "position": "Senior Product Owner / Manager - AI / SaaS - native German(m/f/d)",
+    "location": "Kamp-Lintfort",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 5, 2026",
+    "logo": "/media/ainavio_gmbh_logo.jpg",
+    "description": "https://www.arbeitnow.com/jobs/companies/ainavio-gmbh/senior-product-owner-product-manager-ai-saas-kamp-lintfort-330033"
+  },
+  {
+    "company": "ainavio GmbH",
+    "position": "Senior Product Owner / Manager - AI / SaaS - native German (m/f/d)",
+    "location": "Berlin",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 5, 2026",
+    "logo": "/media/ainavio_gmbh_logo.jpg",
+    "description": "https://www.arbeitnow.com/jobs/companies/ainavio-gmbh/senior-product-owner-product-manager-ai-saas-berlin-19854"
+  },
+  {
     "company": "Revolut",
     "position": "Senior Backend Engineer - Distributed Systems",
     "location": "London, 🇬🇧",
