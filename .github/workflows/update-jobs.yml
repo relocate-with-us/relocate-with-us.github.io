@@ -66,31 +66,7 @@ jobs:
           echo "Running: $CMD"
           $CMD
 
-      # ── Step 2: Gemini top-up (optional) ─────────────────────────────────
-      # If the real fetch added fewer than 5 new jobs, top up with AI-generated ones
-      - name: Top-up with generated jobs if needed
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
-        run: |
-          # Count how many jobs were added (lines with "ADDED:" in today's log)
-          TODAY=$(date -u +"%Y-%m-%d")
-          if [ -f scripts/added-jobs.log ]; then
-            ADDED_TODAY=$(grep "$TODAY" scripts/added-jobs.log | wc -l | tr -d ' ')
-          else
-            ADDED_TODAY=0
-          fi
-          echo "Jobs added today from real sources: $ADDED_TODAY"
-
-          if [ "$ADDED_TODAY" -lt 5 ] && [ -n "$GEMINI_API_KEY" ]; then
-            TOPUP=$((10 - ADDED_TODAY))
-            echo "Topping up with $TOPUP AI-generated jobs..."
-            node scripts/generate-jobs.js --count=$TOPUP
-          else
-            echo "Sufficient jobs added from real sources. Skipping AI top-up."
-          fi
-
-      # ── Step 3: Detect changes ────────────────────────────────────────────
+      # ── Step 2: Detect changes ────────────────────────────────────────────
       - name: Check for changes
         id: changes
         run: |
@@ -105,7 +81,7 @@ jobs:
             git diff --stat src/_data/jobs.json db.json
           fi
 
-      # ── Step 4: Commit & push ─────────────────────────────────────────────
+      # ── Step 3: Commit & push ─────────────────────────────────────────────
       - name: Commit and push
         if: steps.changes.outputs.changed == 'true'
         run: |
