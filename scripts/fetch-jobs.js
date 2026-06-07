@@ -46,9 +46,7 @@ const GEMINI_MODEL   = process.env.GEMINI_MODEL   || "gemini-1.5-flash";
 
 // ─── Constants ───────────────────────────────────────────────────────────────
 const UA = "Mozilla/5.0 (compatible; VisaJobsBot/2.0; +https://visajobs.xyz)";
-const TODAY = new Date().toLocaleDateString("en-US", {
-  year: "numeric", month: "long", day: "numeric"
-});
+const TODAY = new Date().toISOString().split("T")[0]; // YYYY-MM-DD
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 function readJson(p, fallback) {
@@ -516,7 +514,7 @@ async function main() {
         reloc:     "Relocation Assistance",
         visa:      "Visa Sponsorship",
         post_date: raw.postDate instanceof Date
-          ? raw.postDate.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })
+          ? raw.postDate.toISOString().split("T")[0]
           : TODAY,
         logo:      companyToLogoPath(raw.company),
         description: raw.url,

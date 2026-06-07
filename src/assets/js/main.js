@@ -11,15 +11,22 @@ function debounce(fn, wait) {
 }
 
 function timeAgo(dateString) {
-  var date = new Date(dateString);
+  if (!dateString) return "Recently";
+  // ISO dates (YYYY-MM-DD) are UTC midnight — anchor to noon to avoid
+  // off-by-one-day shifts in timezones ahead of UTC.
+  var normalized = /^\d{4}-\d{2}-\d{2}$/.test(dateString)
+    ? dateString + "T12:00:00"
+    : dateString;
+  var date = new Date(normalized);
+  if (isNaN(date.getTime())) return "Recently";
   var now = new Date();
   var seconds = Math.floor((now - date) / 1000);
   var intervals = [
-    { label: "year", seconds: 31536000 },
-    { label: "month", seconds: 2592000 },
-    { label: "week", seconds: 604800 },
-    { label: "day", seconds: 86400 },
-    { label: "hour", seconds: 3600 },
+    { label: "year",   seconds: 31536000 },
+    { label: "month",  seconds: 2592000 },
+    { label: "week",   seconds: 604800 },
+    { label: "day",    seconds: 86400 },
+    { label: "hour",   seconds: 3600 },
     { label: "minute", seconds: 60 },
   ];
   for (var i = 0; i < intervals.length; i++) {

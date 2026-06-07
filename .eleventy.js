@@ -29,15 +29,22 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("timeAgo", (dateStr) => {
-    const date = new Date(dateStr);
+    if (!dateStr) return "Recently";
+    // ISO dates (YYYY-MM-DD) are UTC midnight — anchor to noon to avoid
+    // off-by-one-day errors in timezones ahead of UTC (e.g. UTC+2).
+    const normalized = /^\d{4}-\d{2}-\d{2}$/.test(dateStr)
+      ? dateStr + "T12:00:00"
+      : dateStr;
+    const date = new Date(normalized);
+    if (isNaN(date.getTime())) return "Recently";
     const now = new Date();
     const seconds = Math.floor((now - date) / 1000);
     const intervals = [
-      { label: "year", seconds: 31536000 },
-      { label: "month", seconds: 2592000 },
-      { label: "week", seconds: 604800 },
-      { label: "day", seconds: 86400 },
-      { label: "hour", seconds: 3600 },
+      { label: "year",   seconds: 31536000 },
+      { label: "month",  seconds: 2592000 },
+      { label: "week",   seconds: 604800 },
+      { label: "day",    seconds: 86400 },
+      { label: "hour",   seconds: 3600 },
       { label: "minute", seconds: 60 },
     ];
     for (const interval of intervals) {

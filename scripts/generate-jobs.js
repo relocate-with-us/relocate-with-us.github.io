@@ -38,8 +38,8 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY || "";
 const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-1.5-flash";
 
 if (!GEMINI_API_KEY) {
-  console.error("ERROR: GEMINI_API_KEY environment variable is not set.");
-  process.exit(1);
+  console.warn("⚠️  GEMINI_API_KEY not set — skipping AI job generation.");
+  process.exit(0);
 }
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -270,8 +270,9 @@ async function main() {
   try {
     rawText = await callGemini(prompt);
   } catch (err) {
-    console.error("Gemini call failed:", err.message);
-    process.exit(1);
+    console.warn("⚠️  Gemini call failed:", err.message);
+    console.warn("Skipping AI top-up — will retry on next scheduled run.");
+    process.exit(0);
   }
 
   console.log(`✅ Gemini responded (${rawText.length} chars)\n`);
@@ -281,9 +282,10 @@ async function main() {
   try {
     newJobs = parseJobs(rawText);
   } catch (err) {
-    console.error("Failed to parse Gemini response:", err.message);
-    console.error("Raw response (first 500 chars):", rawText.slice(0, 500));
-    process.exit(1);
+    console.warn("⚠️  Failed to parse Gemini response:", err.message);
+    console.warn("Raw response (first 500 chars):", rawText.slice(0, 500));
+    console.warn("Skipping AI top-up — will retry on next scheduled run.");
+    process.exit(0);
   }
 
   console.log(`📋 Parsed ${newJobs.length} jobs from Gemini`);
