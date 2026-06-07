@@ -1,71 +1,5 @@
 [
   {
-    "company": "N26",
-    "position": "Staff Android Engineer - Mobile Banking",
-    "location": "Berlin, Germany 🇩🇪",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "June 7, 2026",
-    "logo": "/media/n26_logo.jpg",
-    "description": "https://n26.careers/jobs/staff-android-engineer-mobile-banking"
-  },
-  {
-    "company": "Wise",
-    "position": "Mid-level Full Stack Engineer - Transfers",
-    "location": "London, UK 🇬🇧",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "June 7, 2026",
-    "logo": "/media/wise_logo.jpg",
-    "description": "https://wise.com/careers/job-details/full-stack-engineer-transfers"
-  },
-  {
-    "company": "Zalando",
-    "position": "Senior Machine Learning Engineer - Personalization",
-    "location": "Dublin, Ireland 🇮🇪",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "June 7, 2026",
-    "logo": "/media/zalando_logo.jpg",
-    "description": "https://jobs.zalando.com/tech/jobs/senior-machine-learning-engineer-personalization"
-  },
-  {
-    "company": "Stripe",
-    "position": "Staff Site Reliability Engineer (SRE) - Core Platform",
-    "location": "Dublin, Ireland 🇮🇪",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "June 7, 2026",
-    "logo": "/media/stripe_logo.jpg",
-    "description": "https://stripe.com/jobs/listing/staff-site-reliability-engineer-core-platform"
-  },
-  {
-    "company": "Spotify",
-    "position": "Mid-level Backend Engineer - Creator Tools",
-    "location": "Stockholm, Sweden 🇸🇪",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "June 7, 2026",
-    "logo": "/media/spotify_logo.jpg",
-    "description": "https://jobs.spotify.com/jobs/backend-engineer-creator-tools"
-  },
-  {
-    "company": "Datadog",
-    "position": "Senior Product Manager - Observability Platform",
-    "location": "Paris, France 🇫🇷",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "June 7, 2026",
-    "logo": "/media/datadog_logo.jpg",
-    "description": "https://careers.datadoghq.com/jobs/senior-product-manager-observability-platform"
-  },
-  {
     "company": "Adyen",
     "position": "Mid-level Frontend Engineer - Merchant Portal",
     "location": "Amsterdam, Netherlands 🇳🇱",
@@ -77,28 +11,6 @@
     "description": "https://adyen.careers/jobs/frontend-engineer-merchant-portal"
   },
   {
-    "company": "Booking.com",
-    "position": "Staff Data Scientist - Pricing & Revenue",
-    "location": "Amsterdam, Netherlands 🇳🇱",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "June 7, 2026",
-    "logo": "/media/bookingcom_logo.jpeg",
-    "description": "https://careers.booking.com/jobs/staff-data-scientist-pricing-revenue"
-  },
-  {
-    "company": "Revolut",
-    "position": "Senior QA Automation Engineer - Trading Platform",
-    "location": "Vilnius, Lithuania 🇱🇹",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "June 7, 2026",
-    "logo": "/media/revolut_logo.jpg",
-    "description": "https://jobs.revolut.com/roles/senior-qa-automation-engineer-trading-platform"
-  },
-  {
     "company": "WSP",
     "position": "Chinese Speaking Graduate Role (With Visa Sponsor)",
     "location": "United Kingdom",
@@ -108,17 +20,6 @@
     "post_date": "2026-06-07",
     "logo": "/media/wsp_logo.jpg",
     "description": "https://visasponsor.jobs/api/jobs/2c81d6975e5e4fdea03e89690c248537/Chinese-Speaking-Graduate-Role-(With-Visa-Sponsor)"
-  },
-  {
-    "company": "Spotify",
-    "position": "Senior Frontend Engineer - Web Player",
-    "location": "Stockholm, Sweden 🇸🇪",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "June 6, 2026",
-    "logo": "/media/spotify_logo.jpg",
-    "description": "https://www.spotifyjobs.com/jobs/senior-frontend-engineer-web-player"
   },
   {
     "company": "DeepMind",
@@ -141,28 +42,6 @@
     "post_date": "June 6, 2026",
     "logo": "/media/n26_logo.jpg",
     "description": "https://n26.com/en-eu/careers/"
-  },
-  {
-    "company": "Adyen",
-    "position": "Staff Software Engineer - Payments Infrastructure",
-    "location": "Amsterdam, Netherlands 🇳🇱",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "June 6, 2026",
-    "logo": "/media/adyen_logo.jpg",
-    "description": "https://www.adyen.com/careers/jobs"
-  },
-  {
-    "company": "Revolut",
-    "position": "Senior Data Engineer - Financial Crime",
-    "location": "Vilnius, Lithuania 🇱🇹",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "June 6, 2026",
-    "logo": "/media/revolut_logo.jpg",
-    "description": "https://www.revolut.com/careers/"
   },
   {
     "company": "Booking.com",
@@ -198,17 +77,6 @@
     "description": "https://www.arbeitnow.com/jobs/companies/ainavio-gmbh/senior-product-owner-product-manager-ai-saas-berlin-19854"
   },
   {
-    "company": "Revolut",
-    "position": "Senior Backend Engineer - Distributed Systems",
-    "location": "London, 🇬🇧",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "June 5, 2026",
-    "logo": "/media/revolut_logo.jpg",
-    "description": "https://jobs.revolut.com/departments/engineering/senior-backend-engineer-distributed-systems"
-  },
-  {
     "company": "Spotify",
     "position": "Staff Machine Learning Engineer - Recommendation Systems",
     "location": "Stockholm, 🇸🇪",
@@ -229,61 +97,6 @@
     "post_date": "June 5, 2026",
     "logo": "/media/n26_logo.jpg",
     "description": "https://n26.com/en-eu/careers/jobs/frontend-engineer-web-platform"
-  },
-  {
-    "company": "Adyen",
-    "position": "Senior DevOps Engineer - Cloud Infrastructure",
-    "location": "Amsterdam, 🇳🇱",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "June 5, 2026",
-    "logo": "/media/adyen_logo.jpg",
-    "description": "https://www.adyen.com/careers/job/senior-devops-engineer-cloud-infrastructure"
-  },
-  {
-    "company": "Booking.com",
-    "position": "Staff iOS Engineer - Core Experience",
-    "location": "Amsterdam, 🇳🇱",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "June 5, 2026",
-    "logo": "/media/bookingcom_logo.jpeg",
-    "description": "https://careers.booking.com/jobs/staff-ios-engineer-core-experience-12345"
-  },
-  {
-    "company": "Wise",
-    "position": "Data Analyst - Product Analytics",
-    "location": "Tallinn, 🇪🇪",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "June 5, 2026",
-    "logo": "/media/wise_logo.jpg",
-    "description": "https://wise.com/careers/job-openings/data-analyst-product-analytics"
-  },
-  {
-    "company": "Zalando",
-    "position": "Senior QA Automation Engineer - E-commerce Platform",
-    "location": "Berlin, 🇩🇪",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "June 5, 2026",
-    "logo": "/media/zalando_logo.jpg",
-    "description": "https://jobs.zalando.com/tech/jobs/senior-qa-automation-engineer-e-commerce-platform-123"
-  },
-  {
-    "company": "Monzo",
-    "position": "Android Engineer - New Features",
-    "location": "London, 🇬🇧",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "June 5, 2026",
-    "logo": "/media/monzo_bank_logo.jpeg",
-    "description": "https://monzo.com/careers/jobs/android-engineer-new-features"
   },
   {
     "company": "ainavio GmbH",
@@ -397,17 +210,6 @@
   },
   {
     "company": "Booking.com",
-    "position": "Senior Software Engineer - Payments Platform",
-    "location": "Amsterdam, Netherlands 🇳🇱",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "June 4, 2026",
-    "logo": "/media/bookingcom_logo.jpeg",
-    "description": "https://jobs.booking.com/careers/job?domain=booking.com&pid=562950004079827"
-  },
-  {
-    "company": "Booking.com",
     "position": "Staff Machine Learning Engineer - Search Ranking",
     "location": "Amsterdam, Netherlands 🇳🇱",
     "reloc": "Relocation Assistance",
@@ -416,61 +218,6 @@
     "post_date": "June 4, 2026",
     "logo": "/media/bookingcom_logo.jpeg",
     "description": "https://jobs.booking.com/careers?domain=booking.com&query=machine+learning"
-  },
-  {
-    "company": "Adyen",
-    "position": "Software Engineer - Acquiring",
-    "location": "Amsterdam, Netherlands 🇳🇱",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "June 4, 2026",
-    "logo": "/media/adyen_logo.jpg",
-    "description": "https://careers.adyen.com/vacancies/technology/software-engineer"
-  },
-  {
-    "company": "Adyen",
-    "position": "Data Engineer - Analytics Platform",
-    "location": "Amsterdam, Netherlands 🇳🇱",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "June 4, 2026",
-    "logo": "/media/adyen_logo.jpg",
-    "description": "https://careers.adyen.com/vacancies/technology/data-engineer"
-  },
-  {
-    "company": "Revolut",
-    "position": "Senior Software Engineer - Core Banking",
-    "location": "London, United Kingdom 🇬🇧",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "June 4, 2026",
-    "logo": "/media/revolut_logo.jpg",
-    "description": "https://www.revolut.com/careers/position/senior-software-engineer-core-banking/"
-  },
-  {
-    "company": "Revolut",
-    "position": "Senior iOS Engineer - Mobile Platform",
-    "location": "Kraków, Poland 🇵🇱",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "June 4, 2026",
-    "logo": "/media/revolut_logo.jpg",
-    "description": "https://www.revolut.com/careers/position/senior-ios-engineer-mobile-platform/"
-  },
-  {
-    "company": "Revolut",
-    "position": "Staff Backend Engineer - Cards Platform",
-    "location": "Madrid, Spain 🇪🇸",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "June 4, 2026",
-    "logo": "/media/revolut_logo.jpg",
-    "description": "https://www.revolut.com/careers/position/staff-backend-engineer-cards-platform/"
   },
   {
     "company": "Stripe",
@@ -493,28 +240,6 @@
     "post_date": "June 4, 2026",
     "logo": "/media/stripe_logo.jpg",
     "description": "https://stripe.com/jobs/search?query=backend+engineer&location=dublin"
-  },
-  {
-    "company": "Wise",
-    "position": "Software Engineer - Platform",
-    "location": "London, United Kingdom 🇬🇧",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "June 4, 2026",
-    "logo": "/media/wise_logo.jpg",
-    "description": "https://www.wise.jobs/search/?query=software+engineer&office=london"
-  },
-  {
-    "company": "Wise",
-    "position": "Senior Software Engineer - Infrastructure",
-    "location": "Tallinn, Estonia 🇪🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "June 4, 2026",
-    "logo": "/media/wise_logo.jpg",
-    "description": "https://www.wise.jobs/search/?query=infrastructure&office=tallinn"
   },
   {
     "company": "Spotify",
@@ -561,28 +286,6 @@
     "description": "https://www.personio.com/about-personio/careers/?q=frontend+engineer"
   },
   {
-    "company": "Klarna",
-    "position": "Software Engineer - Checkout",
-    "location": "Stockholm, Sweden 🇸🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "June 4, 2026",
-    "logo": "/media/klarna_logo.jpg",
-    "description": "https://jobs.klarna.com/jobs?q=software+engineer&l=stockholm"
-  },
-  {
-    "company": "Klarna",
-    "position": "Senior Backend Engineer - Risk & Fraud",
-    "location": "Berlin, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "June 4, 2026",
-    "logo": "/media/klarna_logo.jpg",
-    "description": "https://jobs.klarna.com/jobs?q=backend+engineer&l=berlin"
-  },
-  {
     "company": "DeepMind",
     "position": "Research Software Engineer - Foundation Models",
     "location": "London, United Kingdom 🇬🇧",
@@ -627,17 +330,6 @@
     "description": "https://www.typeform.com/careers/?q=backend+engineer"
   },
   {
-    "company": "SumUp",
-    "position": "Staff Platform Engineer - Cloud Infrastructure",
-    "location": "Berlin, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "June 4, 2026",
-    "logo": "/media/sumup_logo.jpg",
-    "description": "https://www.sumup.com/careers/positions/berlin-germany/engineering/"
-  },
-  {
     "company": "Infosys",
     "position": "Cloud Solutions Architect (AWS/Azure)",
     "location": "Frankfurt, Germany 🇩🇪",
@@ -658,28 +350,6 @@
     "post_date": "June 4, 2026",
     "logo": "/media/infosys_logo.jpg",
     "description": "https://career.infosys.com/joblist#SearchKey=devops&Country=Netherlands"
-  },
-  {
-    "company": "Canva",
-    "position": "Senior Software Engineer - Design Systems",
-    "location": "London, United Kingdom 🇬🇧",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "June 4, 2026",
-    "logo": "/media/canva_logo.jpg",
-    "description": "https://www.canva.com/careers/jobs/?q=software+engineer&l=london"
-  },
-  {
-    "company": "Canva",
-    "position": "Staff Backend Engineer - Collaboration",
-    "location": "Berlin, Germany 🇩🇪",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "contract": "Full Time",
-    "post_date": "June 4, 2026",
-    "logo": "/media/canva_logo.jpg",
-    "description": "https://www.canva.com/careers/jobs/?q=backend+engineer&l=berlin"
   },
   {
     "company": "Contentful",

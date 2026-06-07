@@ -172,3 +172,33 @@
 [2026-05-28T10:05:57.633Z] REMOVED: BlaBlaCar | Senior Java Backend Engineer | https://www.blablacar.com/about-us/careers | HTTP 403
 [2026-06-01T11:39:02.793Z] REMOVED: SumUp | Backend Engineer - Sales & Orders | https://www.sumup.com/careers/positions/berlin-germany/engineering/backend-engineer-sales-orders/8427119002/ | HTTP 410
 [2026-06-04T09:58:46.599Z] REMOVED: N26 | Senior Product Manager - Payments Platform | https://n26.com/en-eu/careers/positions/7140089 | HTTP 404
+[2026-06-07T17:59:45.881Z] REMOVED: N26 | Staff Android Engineer - Mobile Banking | https://n26.careers/jobs/staff-android-engineer-mobile-banking | ENOTFOUND
+[2026-06-07T17:59:45.881Z] REMOVED: Wise | Mid-level Full Stack Engineer - Transfers | https://wise.com/careers/job-details/full-stack-engineer-transfers | HTTP 404
+[2026-06-07T17:59:45.881Z] REMOVED: Zalando | Senior Machine Learning Engineer - Personalization | https://jobs.zalando.com/tech/jobs/senior-machine-learning-engineer-personalization | HTTP 404
+[2026-06-07T17:59:45.881Z] REMOVED: Stripe | Staff Site Reliability Engineer (SRE) - Core Platform | https://stripe.com/jobs/listing/staff-site-reliability-engineer-core-platform | HTTP 404
+[2026-06-07T17:59:45.881Z] REMOVED: Spotify | Mid-level Backend Engineer - Creator Tools | https://jobs.spotify.com/jobs/backend-engineer-creator-tools | ENOTFOUND
+[2026-06-07T17:59:45.881Z] REMOVED: Datadog | Senior Product Manager - Observability Platform | https://careers.datadoghq.com/jobs/senior-product-manager-observability-platform | HTTP 404
+[2026-06-07T17:59:45.881Z] REMOVED: Booking.com | Staff Data Scientist - Pricing & Revenue | https://careers.booking.com/jobs/staff-data-scientist-pricing-revenue | HTTP 404
+[2026-06-07T17:59:45.881Z] REMOVED: Revolut | Senior QA Automation Engineer - Trading Platform | https://jobs.revolut.com/roles/senior-qa-automation-engineer-trading-platform | ENOTFOUND
+[2026-06-07T17:59:45.882Z] REMOVED: Spotify | Senior Frontend Engineer - Web Player | https://www.spotifyjobs.com/jobs/senior-frontend-engineer-web-player | HTTP 404
+[2026-06-07T17:59:45.882Z] REMOVED: Adyen | Staff Software Engineer - Payments Infrastructure | https://www.adyen.com/careers/jobs | HTTP 404
+[2026-06-07T17:59:45.882Z] REMOVED: Revolut | Senior Data Engineer - Financial Crime | https://www.revolut.com/careers/ | HTTP 403
+[2026-06-07T17:59:45.882Z] REMOVED: Revolut | Senior Backend Engineer - Distributed Systems | https://jobs.revolut.com/departments/engineering/senior-backend-engineer-distributed-systems | ENOTFOUND
+[2026-06-07T17:59:45.882Z] REMOVED: Adyen | Senior DevOps Engineer - Cloud Infrastructure | https://www.adyen.com/careers/job/senior-devops-engineer-cloud-infrastructure | HTTP 404
+[2026-06-07T17:59:45.882Z] REMOVED: Booking.com | Staff iOS Engineer - Core Experience | https://careers.booking.com/jobs/staff-ios-engineer-core-experience-12345 | HTTP 404
+[2026-06-07T17:59:45.882Z] REMOVED: Wise | Data Analyst - Product Analytics | https://wise.com/careers/job-openings/data-analyst-product-analytics | HTTP 404
+[2026-06-07T17:59:45.882Z] REMOVED: Zalando | Senior QA Automation Engineer - E-commerce Platform | https://jobs.zalando.com/tech/jobs/senior-qa-automation-engineer-e-commerce-platform-123 | HTTP 404
+[2026-06-07T17:59:45.882Z] REMOVED: Monzo | Android Engineer - New Features | https://monzo.com/careers/jobs/android-engineer-new-features | HTTP 404
+[2026-06-07T17:59:45.882Z] REMOVED: Booking.com | Senior Software Engineer - Payments Platform | https://jobs.booking.com/careers/job?domain=booking.com&pid=562950004079827 | HTTP 404
+[2026-06-07T17:59:45.882Z] REMOVED: Adyen | Software Engineer - Acquiring | https://careers.adyen.com/vacancies/technology/software-engineer | HTTP 404
+[2026-06-07T17:59:45.882Z] REMOVED: Adyen | Data Engineer - Analytics Platform | https://careers.adyen.com/vacancies/technology/data-engineer | HTTP 404
+[2026-06-07T17:59:45.882Z] REMOVED: Revolut | Senior Software Engineer - Core Banking | https://www.revolut.com/careers/position/senior-software-engineer-core-banking/ | HTTP 403
+[2026-06-07T17:59:45.882Z] REMOVED: Revolut | Senior iOS Engineer - Mobile Platform | https://www.revolut.com/careers/position/senior-ios-engineer-mobile-platform/ | HTTP 403
+[2026-06-07T17:59:45.882Z] REMOVED: Revolut | Staff Backend Engineer - Cards Platform | https://www.revolut.com/careers/position/staff-backend-engineer-cards-platform/ | HTTP 403
+[2026-06-07T17:59:45.882Z] REMOVED: Wise | Software Engineer - Platform | https://www.wise.jobs/search/?query=software+engineer&office=london | HTTP 404
+[2026-06-07T17:59:45.882Z] REMOVED: Wise | Senior Software Engineer - Infrastructure | https://www.wise.jobs/search/?query=infrastructure&office=tallinn | HTTP 404
+[2026-06-07T17:59:45.882Z] REMOVED: Klarna | Software Engineer - Checkout | https://jobs.klarna.com/jobs?q=software+engineer&l=stockholm | ENOTFOUND
+[2026-06-07T17:59:45.882Z] REMOVED: Klarna | Senior Backend Engineer - Risk & Fraud | https://jobs.klarna.com/jobs?q=backend+engineer&l=berlin | ENOTFOUND
+[2026-06-07T17:59:45.882Z] REMOVED: SumUp | Staff Platform Engineer - Cloud Infrastructure | https://www.sumup.com/careers/positions/berlin-germany/engineering/ | HTTP 410
+[2026-06-07T17:59:45.882Z] REMOVED: Canva | Senior Software Engineer - Design Systems | https://www.canva.com/careers/jobs/?q=software+engineer&l=london | HTTP 403
+[2026-06-07T17:59:45.882Z] REMOVED: Canva | Staff Backend Engineer - Collaboration | https://www.canva.com/careers/jobs/?q=backend+engineer&l=berlin | HTTP 403
