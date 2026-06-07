@@ -1,5 +1,115 @@
 [
   {
+    "company": "N26",
+    "position": "Staff Android Engineer - Mobile Banking",
+    "location": "Berlin, Germany 🇩🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 7, 2026",
+    "logo": "/media/n26_logo.jpg",
+    "description": "https://n26.careers/jobs/staff-android-engineer-mobile-banking"
+  },
+  {
+    "company": "Wise",
+    "position": "Mid-level Full Stack Engineer - Transfers",
+    "location": "London, UK 🇬🇧",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 7, 2026",
+    "logo": "/media/wise_logo.jpg",
+    "description": "https://wise.com/careers/job-details/full-stack-engineer-transfers"
+  },
+  {
+    "company": "Zalando",
+    "position": "Senior Machine Learning Engineer - Personalization",
+    "location": "Dublin, Ireland 🇮🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 7, 2026",
+    "logo": "/media/zalando_logo.jpg",
+    "description": "https://jobs.zalando.com/tech/jobs/senior-machine-learning-engineer-personalization"
+  },
+  {
+    "company": "Stripe",
+    "position": "Staff Site Reliability Engineer (SRE) - Core Platform",
+    "location": "Dublin, Ireland 🇮🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 7, 2026",
+    "logo": "/media/stripe_logo.jpg",
+    "description": "https://stripe.com/jobs/listing/staff-site-reliability-engineer-core-platform"
+  },
+  {
+    "company": "Spotify",
+    "position": "Mid-level Backend Engineer - Creator Tools",
+    "location": "Stockholm, Sweden 🇸🇪",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 7, 2026",
+    "logo": "/media/spotify_logo.jpg",
+    "description": "https://jobs.spotify.com/jobs/backend-engineer-creator-tools"
+  },
+  {
+    "company": "Datadog",
+    "position": "Senior Product Manager - Observability Platform",
+    "location": "Paris, France 🇫🇷",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 7, 2026",
+    "logo": "/media/datadog_logo.jpg",
+    "description": "https://careers.datadoghq.com/jobs/senior-product-manager-observability-platform"
+  },
+  {
+    "company": "Adyen",
+    "position": "Mid-level Frontend Engineer - Merchant Portal",
+    "location": "Amsterdam, Netherlands 🇳🇱",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 7, 2026",
+    "logo": "/media/adyen_logo.jpg",
+    "description": "https://adyen.careers/jobs/frontend-engineer-merchant-portal"
+  },
+  {
+    "company": "Booking.com",
+    "position": "Staff Data Scientist - Pricing & Revenue",
+    "location": "Amsterdam, Netherlands 🇳🇱",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 7, 2026",
+    "logo": "/media/bookingcom_logo.jpeg",
+    "description": "https://careers.booking.com/jobs/staff-data-scientist-pricing-revenue"
+  },
+  {
+    "company": "Revolut",
+    "position": "Senior QA Automation Engineer - Trading Platform",
+    "location": "Vilnius, Lithuania 🇱🇹",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "June 7, 2026",
+    "logo": "/media/revolut_logo.jpg",
+    "description": "https://jobs.revolut.com/roles/senior-qa-automation-engineer-trading-platform"
+  },
+  {
+    "company": "WSP",
+    "position": "Chinese Speaking Graduate Role (With Visa Sponsor)",
+    "location": "United Kingdom",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-06-07",
+    "logo": "/media/wsp_logo.jpg",
+    "description": "https://visasponsor.jobs/api/jobs/2c81d6975e5e4fdea03e89690c248537/Chinese-Speaking-Graduate-Role-(With-Visa-Sponsor)"
+  },
+  {
     "company": "Spotify",
     "position": "Senior Frontend Engineer - Web Player",
     "location": "Stockholm, Sweden 🇸🇪",
