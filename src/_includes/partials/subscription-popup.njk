@@ -1,74 +1,93 @@
-{# TrustMRR-style bottom-right subscription popup — slides up after 3s #}
+{# Centered subscription popup modal — slides and scales up after 3s #}
 <style>
+  #sub-popup-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 9998;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+  }
+  #sub-popup-backdrop.backdrop-visible {
+    opacity: 1;
+    pointer-events: all;
+  }
   #sub-popup {
     position: fixed;
-    bottom: 24px;
-    right: 24px;
-    width: 340px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%) scale(0.95);
+    width: 420px;
+    max-width: calc(100vw - 32px);
     z-index: 9999;
-    transform: translateY(120%);
-    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease;
     opacity: 0;
     pointer-events: none;
   }
   #sub-popup.popup-visible {
-    transform: translateY(0);
+    transform: translate(-50%, -50%) scale(1);
     opacity: 1;
     pointer-events: all;
   }
   #sub-popup.popup-hidden {
-    transform: translateY(120%);
+    transform: translate(-50%, -40%) scale(0.95);
     opacity: 0;
     pointer-events: none;
   }
   .sub-popup-card {
     background: #ffffff;
-    border-radius: 18px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.18), 0 4px 16px rgba(0,0,0,0.08);
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     border: 1px solid rgba(0,0,0,0.06);
   }
   .dark .sub-popup-card {
     background: #1a1f2e;
     border-color: rgba(255,255,255,0.08);
-    box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 4px 16px rgba(0,0,0,0.3);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
   }
   .sub-popup-top {
     height: 4px;
     background: linear-gradient(90deg, #6366f1, #8b5cf6, #a855f7);
   }
   .sub-popup-body {
-    padding: 18px 20px 16px;
+    padding: 24px 28px 24px;
   }
   .sub-popup-header {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     gap: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
   .sub-popup-icon-wrap {
-    width: 42px;
-    height: 42px;
+    width: 44px;
+    height: 44px;
     background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    font-size: 20px;
+    font-size: 22px;
   }
   .sub-popup-close {
     background: none;
     border: none;
     cursor: pointer;
     color: #9ca3af;
-    padding: 2px;
-    border-radius: 6px;
+    padding: 4px;
+    border-radius: 8px;
     line-height: 1;
     transition: color 0.2s, background 0.2s;
     flex-shrink: 0;
-    margin-top: -2px;
+    margin-top: -4px;
   }
   .sub-popup-close:hover {
     color: #374151;
@@ -79,7 +98,7 @@
     background: rgba(255,255,255,0.1);
   }
   .sub-popup-title {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 800;
     color: #111827;
     margin: 0 0 4px;
@@ -89,9 +108,9 @@
     color: #f9fafb;
   }
   .sub-popup-desc {
-    font-size: 13px;
-    color: #6b7280;
-    margin: 0 0 12px;
+    font-size: 14px;
+    color: #4b5563;
+    margin: 0 0 16px;
     line-height: 1.5;
   }
   .dark .sub-popup-desc {
@@ -99,16 +118,16 @@
   }
   .sub-popup-input {
     width: 100%;
-    padding: 10px 14px;
+    padding: 12px 16px;
     border: 1.5px solid #e5e7eb;
     border-radius: 10px;
-    font-size: 13.5px;
+    font-size: 14px;
     color: #111827;
     background: #f9fafb;
     outline: none;
     box-sizing: border-box;
     transition: border-color 0.2s, box-shadow 0.2s;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-family: inherit;
   }
   .dark .sub-popup-input {
@@ -129,12 +148,12 @@
   }
   .sub-popup-btn {
     width: 100%;
-    padding: 11px 16px;
+    padding: 12px 18px;
     background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
     color: #fff;
     border: none;
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 14.5px;
     font-weight: 700;
     cursor: pointer;
     transition: opacity 0.2s, transform 0.15s;
@@ -146,22 +165,17 @@
     transform: translateY(-1px);
   }
   .sub-popup-proof {
-    font-size: 11.5px;
+    font-size: 12px;
     color: #9ca3af;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 12px;
   }
   .dark .sub-popup-proof {
     color: #6b7280;
   }
-  @media (max-width: 400px) {
-    #sub-popup {
-      width: calc(100vw - 32px);
-      right: 16px;
-      bottom: 16px;
-    }
-  }
 </style>
+
+<div id="sub-popup-backdrop"></div>
 
 <div id="sub-popup" role="dialog" aria-label="Subscribe to weekly visa jobs">
   <div class="sub-popup-card">
@@ -169,7 +183,7 @@
     <div class="sub-popup-body">
 
       <div class="sub-popup-header">
-        <div style="display:flex;align-items:center;gap:10px;flex:1;">
+        <div style="display:flex;align-items:center;gap:12px;flex:1;">
           <div class="sub-popup-icon-wrap">✈️</div>
           <div style="flex:1;">
             <p class="sub-popup-title">Get Visa Jobs in Your Inbox</p>
@@ -201,6 +215,7 @@
 (function() {
   var DISMISS_KEY = "sub_popup_dismissed_v2";
   var popup = document.getElementById("sub-popup");
+  var backdrop = document.getElementById("sub-popup-backdrop");
   var closeBtn = document.getElementById("sub-popup-close");
   var form = document.getElementById("sub-popup-form");
 
@@ -209,18 +224,21 @@
   function show() {
     popup.classList.add("popup-visible");
     popup.classList.remove("popup-hidden");
+    if (backdrop) backdrop.classList.add("backdrop-visible");
   }
 
   function hide() {
     popup.classList.remove("popup-visible");
     popup.classList.add("popup-hidden");
+    if (backdrop) backdrop.classList.remove("backdrop-visible");
     localStorage.setItem(DISMISS_KEY, "1");
   }
 
-  // Slide up from bottom-right after 3 seconds
+  // Slide up and scale from center after 3 seconds
   setTimeout(show, 3000);
 
   closeBtn && closeBtn.addEventListener("click", hide);
+  backdrop && backdrop.addEventListener("click", hide);
 
   form && form.addEventListener("submit", function() {
     setTimeout(hide, 800);

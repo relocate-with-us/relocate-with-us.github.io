@@ -1,0 +1,202 @@
+---
+pagination:
+  data: jobs
+  size: 1
+  alias: job
+permalink: "/visa-sponsored-jobs/{{ job | jobSlug }}/index.html"
+layout: layouts/base.njk
+eleventyComputed:
+  title: "{{ job.position }} at {{ job.company }} (Visa Sponsorship Available)"
+  description: "Apply for the {{ job.position }} position at {{ job.company }} in {{ job.location }}. Visa sponsorship: {{ job.visa }}. Relocation assistance: {{ job.reloc }}. Verified sponsorship opportunities."
+---
+
+{% block structuredData %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "{{ job.position }}",
+  "description": "<p>Apply for the {{ job.position }} position at {{ job.company }} in {{ job.location }}. This position offers {{ job.visa }} and {{ job.reloc }}. For full job details and to submit your application, please visit the employer's official job board via the apply link below.</p>",
+  "datePosted": "{{ job.post_date }}",
+  "validThrough": "{{ job.post_date | validThrough }}",
+  "employmentType": "FULL_TIME",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "{{ job.company }}",
+    "logo": "{{ site.url }}{{ job.logo }}"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "{{ job.location | extractCity }}",
+      "addressRegion": "{{ job.location | extractCity }}",
+      "addressCountry": "{{ job.location | countryCode }}"
+    }
+  },
+  "url": "{{ site.url }}/visa-sponsored-jobs/{{ job | jobSlug }}/"
+}
+</script>
+{% endblock %}
+
+<section class="bg-gradient-to-b from-brand-50 to-white dark:from-gray-900 dark:to-gray-950 py-12">
+  <div class="max-w-3xl mx-auto px-4">
+    {# Breadcrumbs #}
+    <nav class="text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <a href="/" class="hover:text-brand-600">Home</a>
+      <span class="mx-2">/</span>
+      <a href="/visa-sponsored-jobs/" class="hover:text-brand-600">Jobs</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900 dark:text-white truncate max-w-[200px] inline-block align-bottom">{{ job.position }}</span>
+    </nav>
+
+    {# Job Header Card #}
+    <div class="card p-6 sm:p-8 mb-8">
+      <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-6 pb-6 border-b dark:border-gray-800">
+        <div class="flex items-start gap-4">
+          <img src="{{ job.logo }}" alt="{{ job.company }}" class="w-16 h-16 rounded-xl object-cover shrink-0 border dark:border-gray-800" onerror="this.src='/favicon/android-chrome-192x192.png'">
+          <div>
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white mb-2 leading-tight">{{ job.position }}</h1>
+            <p class="text-lg text-gray-600 dark:text-gray-400 font-medium mb-1">
+              <a href="/tools/visa-checker/{{ job.company | lower | replace(' ', '-') | replace('/[^a-z0-9-]+/g', '') }}/" class="hover:text-brand-600 hover:underline">{{ job.company }}</a>
+            </p>
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-gray-500 dark:text-gray-400">
+              <span class="flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-4 h-4"></i>
+                {{ job.location }}
+              </span>
+              <span class="flex items-center gap-1">
+                <i data-lucide="calendar" class="w-4 h-4"></i>
+                Posted {{ job.post_date | timeAgo }}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {# Job specifications grid #}
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 py-6">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-brand-50 dark:bg-brand-950/40 flex items-center justify-center text-brand-600 dark:text-brand-400">
+            <i data-lucide="briefcase" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <p class="text-xs text-gray-500 dark:text-gray-400">Job Type</p>
+            <p class="text-sm font-semibold text-gray-900 dark:text-white">{{ job.contract }}</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-green-50 dark:bg-green-950/40 flex items-center justify-center text-green-600 dark:text-green-400">
+            <i data-lucide="shield-check" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <p class="text-xs text-gray-500 dark:text-gray-400">Visa Sponsorship</p>
+            <p class="text-sm font-semibold text-gray-900 dark:text-white">{{ job.visa }}</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-purple-50 dark:bg-purple-950/40 flex items-center justify-center text-purple-600 dark:text-purple-400">
+            <i data-lucide="plane" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <p class="text-xs text-gray-500 dark:text-gray-400">Relocation Support</p>
+            <p class="text-sm font-semibold text-gray-900 dark:text-white">{{ job.reloc }}</p>
+          </div>
+        </div>
+      </div>
+
+      {# Application block #}
+      <div class="pt-6 border-t dark:border-gray-800 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div>
+          <p class="text-sm font-medium text-gray-900 dark:text-white">Ready to apply?</p>
+          <p class="text-xs text-gray-500 dark:text-gray-400">Submit your application directly to {{ job.company }}'s hiring portal.</p>
+        </div>
+        <a href="{{ job.description }}" target="_blank" rel="noopener" class="btn-primary w-full sm:w-auto inline-flex items-center justify-center">
+          Apply to {{ job.company }}
+          <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
+        </a>
+      </div>
+    </div>
+
+    {# Visa & Relocation Context #}
+    <div class="card p-6 mb-8">
+      <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-4">Visa &amp; Relocation Details</h2>
+      <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed">
+        This role as a <strong>{{ job.position }}</strong> is fully verified to offer <strong>{{ job.visa }}</strong> and <strong>{{ job.reloc }}</strong>. 
+        Qualified international candidates who are selected for this role will receive full visa sponsorship and moving support to relocate to <strong>{{ job.location }}</strong>.
+      </p>
+      
+      {% set country = job.location | extractCountry %}
+      {% if country %}
+        {% set guideSlug = country | lower | replace(" ", "-") | replace("united kingdom", "uk") %}
+        <div class="mt-6 bg-brand-50 dark:bg-brand-950/20 p-5 rounded-xl border border-brand-100 dark:border-brand-900/30 flex items-start gap-4">
+          <div class="text-3xl">✈️</div>
+          <div>
+            <h3 class="font-bold text-gray-900 dark:text-white text-sm mb-1">Relocating to {{ country }}?</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-xs mb-3">Read our comprehensive country guide for {{ country }} to learn about visa types, cost of living, housing, tax systems, and integration.</p>
+            <a href="/resources/country-guides/{{ guideSlug }}/" class="text-brand-600 dark:text-brand-400 font-semibold hover:underline inline-flex items-center gap-1 text-xs">
+              Read {{ country }} Country Guide <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+    {# FAQ section #}
+    <div class="card p-6 mb-8">
+      <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-4">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        <div class="border-b dark:border-gray-800 pb-3 last:border-0 last:pb-0">
+          <h3 class="font-semibold text-gray-900 dark:text-white text-sm mb-1">Does {{ job.company }} provide visa sponsorship for this role?</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-xs">Yes, {{ job.company }} provides {{ job.visa }} for the {{ job.position }} position.</p>
+        </div>
+        <div class="border-b dark:border-gray-800 pb-3 last:border-0 last:pb-0">
+          <h3 class="font-semibold text-gray-900 dark:text-white text-sm mb-1">Is relocation assistance included?</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-xs">Yes, relocation assistance ({{ job.reloc }}) is offered by {{ job.company }} for this job.</p>
+        </div>
+        <div class="border-b dark:border-gray-800 pb-3 last:border-0 last:pb-0">
+          <h3 class="font-semibold text-gray-900 dark:text-white text-sm mb-1">Where is the role based?</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-xs">This position is located in {{ job.location }}.</p>
+        </div>
+      </div>
+    </div>
+
+    {# Related Jobs #}
+    <h2 class="section-heading mb-4 mt-8">More Visa Sponsored Jobs</h2>
+    <div class="space-y-4 mb-8">
+      {% set relatedCount = 0 %}
+      {% for rJob in jobs %}
+        {% if rJob.location == job.location and rJob.position != job.position and relatedCount < 3 %}
+          <div class="job-card">
+            <div class="flex items-center justify-between gap-4">
+              <div>
+                <h4 class="font-semibold text-gray-900 dark:text-white text-sm">
+                  <a href="/visa-sponsored-jobs/{{ rJob | jobSlug }}/" class="hover:text-brand-600">
+                    {{ rJob.position }}
+                  </a>
+                </h4>
+                <p class="text-xs text-gray-500 dark:text-gray-400">{{ rJob.company }} &middot; {{ rJob.location }}</p>
+              </div>
+              <a href="/visa-sponsored-jobs/{{ rJob | jobSlug }}/" class="btn-secondary text-xs px-3 py-1.5 whitespace-nowrap">
+                View Job
+              </a>
+            </div>
+          </div>
+          {% set relatedCount = relatedCount + 1 %}
+        {% endif %}
+      {% endfor %}
+      
+      {% if relatedCount == 0 %}
+        <p class="text-sm text-gray-500 dark:text-gray-400">No other jobs found in {{ job.location }} at the moment. Browse the full job board below.</p>
+      {% endif %}
+    </div>
+
+    {# Back button #}
+    <div class="text-center">
+      <a href="/visa-sponsored-jobs/" class="inline-flex items-center text-brand-600 dark:text-brand-400 hover:underline">
+        <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+        Back to all jobs
+      </a>
+    </div>
+  </div>
+</section>
