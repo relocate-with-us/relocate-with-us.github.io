@@ -92,3 +92,10 @@ jobs:
           TODAY=$(date -u +"%B %-d, %Y")
           git commit -m "feat(jobs): add ${ADDED} visa-sponsored jobs (${TODAY})"
           git push
+
+      # ── Step 4: Trigger site rebuild ─────────────────────────────────────
+      - name: Trigger site deploy
+        if: steps.changes.outputs.changed == 'true'
+        run: gh workflow run deploy.yml
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
