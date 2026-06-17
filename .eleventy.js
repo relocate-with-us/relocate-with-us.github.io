@@ -57,12 +57,22 @@ module.exports = function (eleventyConfig) {
 
   // Slug filter for job URLs
   eleventyConfig.addFilter("jobSlug", (job) => {
-    const text = `${job.company}-${job.position}`
+    const base = `${job.company}-${job.position}-${job.location || ""}`
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-|-$/g, "")
       .substring(0, 80);
-    return text;
+    
+    // Hash of the description URL to guarantee uniqueness
+    let hash = 0;
+    const desc = job.description || "";
+    for (let i = 0; i < desc.length; i++) {
+      hash = (hash << 5) - hash + desc.charCodeAt(i);
+      hash |= 0;
+    }
+    const hashStr = Math.abs(hash).toString(36).substring(0, 4);
+    
+    return `${base}-${hashStr}`;
   });
 
   // Extract city from location string (before the comma)
