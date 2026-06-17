@@ -115,7 +115,7 @@ const RELOC_RE  = /\b(relocation\s+(assistance|support|package|allowance|benefit
 function keywordClassify(text) {
   const visa  = VISA_RE.test(text);
   const reloc = RELOC_RE.test(text);
-  return { include: visa && reloc, visa, reloc, source: "keyword" };
+  return { include: visa && reloc, visa, reloc, relocation: reloc, source: "keyword" };
 }
 
 // ─── Gemini classifier ────────────────────────────────────────────────────────
@@ -168,7 +168,14 @@ async function classifyWithGemini(jobText) {
 }
 
 async function classify(text) {
-  // Use robust keyword classifier directly (old school!)
+  try {
+    const gemini = await classifyWithGemini(text);
+    if (gemini) return { ...gemini, source: "gemini" };
+  } catch (err) {
+    console.warn("  Gemini classify failed:", err.message);
+  }
+
+  // Keyword fallback stays available when Gemini is not configured.
   return keywordClassify(text);
 }
 
@@ -410,7 +417,7 @@ function companyToLogoPath(company) {
   const slug = nameLower
     .replace(/[^a-z0-9]+/g, "_")
     .replace(/^_|_$/g, "");
-  return `/media/${slug}_logo.jpg`;
+  return `/favicon/android-chrome-192x192.png`;
 }
 
 function sleep(ms) {

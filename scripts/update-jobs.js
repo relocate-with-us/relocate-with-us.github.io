@@ -100,7 +100,7 @@ function toJobRecord({
 function getCompanyLogo(company, sponsors) {
   if (!company) return "";
   const match = sponsors.get(company.toLowerCase());
-  return match ? match.logo : "";
+  return match ? match.logo : "/favicon/android-chrome-192x192.png";
 }
 
 function buildSponsorsMap() {

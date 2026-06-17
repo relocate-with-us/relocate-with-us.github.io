@@ -117,7 +117,7 @@ function companyToLogoPath(company) {
   const slug = nameLower
     .replace(/[^a-z0-9]+/g, "_")
     .replace(/^_|_$/g, "");
-  return `/media/${slug}_logo.jpg`;
+  return `/favicon/android-chrome-192x192.png`;
 }
 
 function formatDate(d) {
