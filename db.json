@@ -1,5 +1,49 @@
 [
   {
+    "company": "SumUp",
+    "position": "Senior Analytics Engineer - Risk Analytics",
+    "location": "Berlin, Germany",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-06-18",
+    "logo": "/media/sumup_logo.jpg",
+    "description": "https://www.arbeitnow.com/jobs/companies/sumup/senior-analytics-engineer-risk-analytics-berlin-301309"
+  },
+  {
+    "company": "PayPay",
+    "position": "Automation QA Engineer",
+    "location": "Japan",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-06-18",
+    "logo": "/favicon/android-chrome-192x192.png",
+    "description": "https://relocate.me/japan/tokyo/paypay/automation-qa-engineer-10105"
+  },
+  {
+    "company": "Picnic",
+    "position": "Software Engineer - Consumer Products",
+    "location": "Netherlands",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-06-18",
+    "logo": "/favicon/android-chrome-192x192.png",
+    "description": "https://relocate.me/netherlands/amsterdam/picnic/software-engineer-consumer-products-10256"
+  },
+  {
+    "company": "Multiverse Computing",
+    "position": "Senior MLOps Engineer (Training & Inference Optimization)",
+    "location": "Spain",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-06-18",
+    "logo": "/media/multiversecomputing_logo.jpg",
+    "description": "https://relocate.me/spain/san-sebastian/multiverse-computing/senior-mlops-engineer-training-inference-optimization-10243"
+  },
+  {
     "company": "PayPay Card",
     "position": "Platform Engineer",
     "location": "Japan",
