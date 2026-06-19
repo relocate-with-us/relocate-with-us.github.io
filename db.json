@@ -1,5 +1,60 @@
 [
   {
+    "company": "Welltech",
+    "position": "Head of Product, Payments",
+    "location": "Cyprus",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-06-19",
+    "logo": "/favicon/android-chrome-192x192.png",
+    "description": "https://relocate.me/cyprus/limassol/welltech/head-of-product-payments-10266"
+  },
+  {
+    "company": "Hevy",
+    "position": "Lead React Native Engineer",
+    "location": "Spain",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-06-19",
+    "logo": "/favicon/android-chrome-192x192.png",
+    "description": "https://relocate.me/spain/barcelona/hevy/lead-react-native-engineer-10255"
+  },
+  {
+    "company": "PayPay",
+    "position": "Backend Engineer",
+    "location": "Japan",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-06-19",
+    "logo": "/favicon/android-chrome-192x192.png",
+    "description": "https://relocate.me/japan/tokyo/paypay/backend-engineer-10205"
+  },
+  {
+    "company": "N26",
+    "position": "Team Lead Risk - ICAAP / ILAAP (Pillar 1)",
+    "location": "Berlin,  \n               Germany",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-06-19",
+    "logo": "/media/n26_logo.jpg",
+    "description": "https://visasponsor.jobs/api/jobs/68c9be1341234dd1a9606ff12549caee/Team-Lead-Risk-ICAAP-ILAAP-(Pillar-1)"
+  },
+  {
+    "company": "N26",
+    "position": "Information Security Controls Manager - Cloud &amp; AI Governance",
+    "location": "Berlin,  \n               Germany",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-06-19",
+    "logo": "/media/n26_logo.jpg",
+    "description": "https://visasponsor.jobs/api/jobs/46389234377e4e13bb3b556c8217ed7c/Information-Security-Controls-Manager-Cloud-&amp;-AI-Governance"
+  },
+  {
     "company": "SumUp",
     "position": "Senior Analytics Engineer - Risk Analytics",
     "location": "Berlin, Germany",
