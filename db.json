@@ -1,5 +1,38 @@
 [
   {
+    "company": "Halter",
+    "position": "Software Engineering Manager",
+    "location": "New Zealand",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-06-21",
+    "logo": "/favicon/android-chrome-192x192.png",
+    "description": "https://relocate.me/new-zealand/auckland/halter/software-engineering-manager-10239"
+  },
+  {
+    "company": "Welltech",
+    "position": "Staff Security Engineer",
+    "location": "Cyprus",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-06-21",
+    "logo": "/favicon/android-chrome-192x192.png",
+    "description": "https://relocate.me/cyprus/limassol/welltech/staff-security-engineer-10265"
+  },
+  {
+    "company": "N26",
+    "position": "ESG Analyst",
+    "location": "Berlin,  \n               Germany",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-06-21",
+    "logo": "/media/n26_logo.jpg",
+    "description": "https://visasponsor.jobs/api/jobs/4bc6a04053ae4a06b4c596a6ad2be3b3/ESG-Analyst"
+  },
+  {
     "company": "Welltech",
     "position": "Head of Product, Payments",
     "location": "Cyprus",
