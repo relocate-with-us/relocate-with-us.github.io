@@ -198,6 +198,15 @@ Generate ${count} jobs now:`;
 }
 
 // ─── Parse Gemini output ────────────────────────────────────────────────────
+function sanitizeText(str) {
+  if (!str) return "";
+  return String(str)
+    .replace(/[\n\r\t]+/g, " ")
+    .replace(/\s+/g, " ")
+    .replace(/\|/g, "-")
+    .trim();
+}
+
 function parseJobs(rawText) {
   // Strip possible markdown fences
   let text = rawText.trim();
@@ -224,15 +233,15 @@ function parseJobs(rawText) {
     if (!job.company || !job.position || !job.description) continue;
 
     valid.push({
-      company: String(job.company).trim(),
-      position: String(job.position).trim(),
-      location: String(job.location || "").trim(),
-      contract: String(job.contract || "Full Time").trim(),
+      company: sanitizeText(job.company),
+      position: sanitizeText(job.position),
+      location: sanitizeText(job.location),
+      contract: sanitizeText(job.contract || "Full Time"),
       reloc: "Relocation Assistance",
       visa: "Visa Sponsorship",
-      post_date: String(job.post_date || "").trim(),
-      logo: companyToLogoPath(String(job.company).trim()),
-      description: String(job.description || "").trim(),
+      post_date: sanitizeText(job.post_date),
+      logo: companyToLogoPath(sanitizeText(job.company)),
+      description: sanitizeText(job.description),
     });
   }
 

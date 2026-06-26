@@ -74,6 +74,15 @@ function formatPostDate(date) {
   }
 }
 
+function sanitizeText(str) {
+  if (!str) return "";
+  return String(str)
+    .replace(/[\n\r\t]+/g, " ")
+    .replace(/\s+/g, " ")
+    .replace(/\|/g, "-")
+    .trim();
+}
+
 function toJobRecord({
   company,
   position,
@@ -85,15 +94,15 @@ function toJobRecord({
 }) {
   if (!company || !position || !url) return null;
   return {
-    company,
-    position,
-    location: location || "",
-    contract: contract || "Full Time",
+    company: sanitizeText(company),
+    position: sanitizeText(position),
+    location: sanitizeText(location),
+    contract: sanitizeText(contract || "Full Time"),
     reloc: "Relocation Assistance",
     visa: "Visa Sponsorship",
-    post_date: postDate,
-    logo: logo || "",
-    description: url,
+    post_date: sanitizeText(postDate),
+    logo: sanitizeText(logo),
+    description: sanitizeText(url),
   };
 }
 
