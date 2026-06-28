@@ -1,5 +1,27 @@
 [
   {
+    "company": "N26",
+    "position": "Site Reliability Engineer - Access Team",
+    "location": "Berlin,  \n               Germany",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-06-28",
+    "logo": "/media/n26_logo.jpg",
+    "description": "https://visasponsor.jobs/api/jobs/b8f0d78746d04d8ca1a28594e891013b/Site-Reliability-Engineer-Access-Team"
+  },
+  {
+    "company": "N26",
+    "position": "Regulatory Operations Analyst",
+    "location": "Berlin,  \n               Germany",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-06-28",
+    "logo": "/media/n26_logo.jpg",
+    "description": "https://visasponsor.jobs/api/jobs/560c0df1fcd24383afedc4f54449220b/Regulatory-Operations-Analyst"
+  },
+  {
     "company": "SumUp",
     "position": "Senior Backend Engineer - Golang",
     "location": "Berlin, Berlin, Germany",
