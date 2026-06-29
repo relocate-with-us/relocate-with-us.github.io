@@ -1,5 +1,38 @@
 [
   {
+    "company": "Halter",
+    "position": "Senior Engineer - Go-to-Market",
+    "location": "New Zealand",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-06-29",
+    "logo": "/favicon/android-chrome-192x192.png",
+    "description": "https://relocate.me/new-zealand/auckland/halter/senior-engineer-go-to-market-10267"
+  },
+  {
+    "company": "Revolut",
+    "position": "Internship Programme 2027: Information Security Engineer (Operations)",
+    "location": "Porto,  \n               Porto,  \n               Portugal",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-06-29",
+    "logo": "/media/revolut_logo.jpg",
+    "description": "https://visasponsor.jobs/api/jobs/b6cb09a3d9b3438db4c0391a0c0513db/Internship-Programme-2027:-Information-Security-Engineer-(Operations)"
+  },
+  {
+    "company": "N26",
+    "position": "Senior Product Manager - Payment Processing &amp; Settlement",
+    "location": "Berlin,  \n               Germany",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-06-29",
+    "logo": "/media/n26_logo.jpg",
+    "description": "https://visasponsor.jobs/api/jobs/f9785614076c4b0bb5b6e88521d9a2df/Senior-Product-Manager-Payment-Processing-&amp;-Settlement"
+  },
+  {
     "company": "N26",
     "position": "Site Reliability Engineer - Access Team",
     "location": "Berlin,  \n               Germany",
