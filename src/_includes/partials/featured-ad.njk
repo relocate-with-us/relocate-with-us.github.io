@@ -1,0 +1,50 @@
+{# Featured Ad — The Global Move by RelocateMe #}
+{# Rendered as a real job card, matching existing job listings #}
+<div class="job-card relative border-2 border-yellow-300 dark:border-yellow-500/40" id="featured-ad-globalmove">
+  {# Featured ribbon — top right, visible on mobile only (desktop shows inline badge) #}
+  <span class="absolute top-3 right-3 inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold bg-yellow-400 text-yellow-900 sm:hidden">
+    ⭐ Featured
+  </span>
+
+  <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+    {# Real logo #}
+    <img src="/media/globalmove_logo.jpeg" alt="The Global Move" class="w-12 h-12 rounded-lg object-cover shrink-0" loading="lazy">
+
+    <div class="flex-1 min-w-0">
+      {# Featured badge — inline, visible on sm+ #}
+      <span class="hidden sm:inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-yellow-400 text-yellow-900 mb-2">
+        ⭐ Featured
+      </span>
+
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">
+        <a href="https://relocateme.substack.com/" target="_blank" rel="noopener sponsored" class="hover:text-brand-600 transition-colors">
+          All-in-one newsletter + curated job board<br class="hidden sm:inline"> for international tech careers
+        </a>
+      </h3>
+
+      <p class="text-gray-600 dark:text-gray-400 mb-2">The Global Move</p>
+
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-gray-500 dark:text-gray-400 mb-3">
+        <span class="flex items-center gap-1">
+          <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+          Newsletter
+        </span>
+        <span class="flex items-center gap-1">
+          <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+          Every week
+        </span>
+      </div>
+
+      <div class="flex flex-wrap gap-2">
+        <span class="badge badge-reloc">Relocation Assistance</span>
+        <span class="badge badge-visa">Visa Sponsorship</span>
+        <span class="badge badge-contract">Remote Jobs</span>
+      </div>
+    </div>
+
+    {# Subscribe button — same style/position as Apply button on job cards #}
+    <a href="https://relocateme.substack.com/" target="_blank" rel="noopener sponsored" class="job-card-apply">
+      Subscribe <i data-lucide="external-link" class="w-3.5 h-3.5 ml-1.5"></i>
+    </a>
+  </div>
+</div>

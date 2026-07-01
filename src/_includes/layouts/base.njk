@@ -139,6 +139,13 @@
     {{ content | safe }}
   </main>
 
+  {# Sticky Sidebar Ad — visible on wide screens in the right gutter #}
+  {% if not hideSidebarAd %}
+  <div class="hidden 2xl:block fixed right-6 top-1/2 -translate-y-1/2 w-72 z-40" id="sidebar-ad-wrapper">
+    {% include "partials/sidebar-ad.njk" %}
+  </div>
+  {% endif %}
+
   {% include "partials/footer.njk" %}
 
   {% block scripts %}{% endblock %}

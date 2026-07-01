@@ -65,6 +65,9 @@ ogImage: "https://visajobs.xyz/media/og-image.png"
     </div>
 
     <div id="featured-jobs" class="space-y-4">
+      {# Featured Sponsor Ad — newest #}
+      {% include "partials/featured-ad.njk" %}
+
       {# Pre-rendered for SEO - first 10 jobs #}
       {% for job in jobs | limit(10) %}
       <div class="job-card" data-search="{{ job.position | lower }} {{ job.company | lower }} {{ job.location | lower }}">
@@ -99,6 +102,9 @@ ogImage: "https://visajobs.xyz/media/og-image.png"
         </div>
       </div>
       {% endfor %}
+
+      {# Featured Sponsor Ad — after job listings #}
+      {% include "partials/featured-ad.njk" %}
     </div>
 
     <div class="text-center mt-8">
