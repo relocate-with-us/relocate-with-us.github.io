@@ -1,6 +1,17 @@
 [
   {
     "company": "Optiver",
+    "position": "Global Mobility Manager",
+    "location": "Amsterdam,  \n               Noordholland,  \n               Netherlands",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-04",
+    "logo": "/media/optiver_logo.jpg",
+    "description": "https://visasponsor.jobs/api/jobs/0402ad8f4d3946d89f9cf1da796f821a/Global-Mobility-Manager"
+  },
+  {
+    "company": "Optiver",
     "position": "Senior End User Computing - Virtual Desktop Engineer (EUC - VDI)",
     "location": "Sydney,  \n               New south wales,  \n               Australia",
     "contract": "Full Time",
