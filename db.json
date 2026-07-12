@@ -1,5 +1,27 @@
 [
   {
+    "company": "University of the West Scotland",
+    "position": "Lecturer",
+    "location": "United Kingdom",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-12",
+    "logo": "/favicon/android-chrome-192x192.png",
+    "description": "https://visasponsor.jobs/api/jobs/9404809a7f1c49b9826841508c7b0c11/Lecturer"
+  },
+  {
+    "company": "Zalando",
+    "position": "Financial Analyst (all genders)",
+    "location": "Ansbach,  \n               Bavaria,  \n               Germany",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-12",
+    "logo": "/media/zalando_logo.jpg",
+    "description": "https://visasponsor.jobs/api/jobs/4cf9358fecab43d8bd5a043b42f641b7/Financial-Analyst-(all-genders)"
+  },
+  {
     "company": "N26",
     "position": "Senior Manager Risk Controlling - ICAAP / ILAAP (Pillar 1)",
     "location": "Berlin,  \n               Germany",
