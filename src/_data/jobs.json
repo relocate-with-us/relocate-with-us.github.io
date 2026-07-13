@@ -1,5 +1,38 @@
 [
   {
+    "company": "Monzo",
+    "position": "Remote Senior Backend Engineer",
+    "location": "Salford,  \n               England,  \n               United Kingdom",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-13",
+    "logo": "/media/monzo_bank_logo.jpeg",
+    "description": "https://visasponsor.jobs/api/jobs/1f424ca047354861a5049fd459cac0cf/Remote-Senior-Backend-Engineer"
+  },
+  {
+    "company": "Optiver",
+    "position": "Category Manager",
+    "location": "Amsterdam,  \n               Noordholland,  \n               Netherlands",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-13",
+    "logo": "/media/optiver_logo.jpg",
+    "description": "https://visasponsor.jobs/api/jobs/8726d282e7a640ddb3ef917aceeca750/Category-Manager"
+  },
+  {
+    "company": "Workforce Australia",
+    "position": "Mental Health Nursing jobs in SE Sydney (visa sponsorship available)",
+    "location": "Sydney,  \n               New south wales,  \n               Australia",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-13",
+    "logo": "/favicon/android-chrome-192x192.png",
+    "description": "https://visasponsor.jobs/api/jobs/a4c0fc7f21ae4acd91f38d7c8ddc1948/Mental-Health-Nursing-jobs-in-SE-Sydney-(visa-sponsorship-available)"
+  },
+  {
     "company": "University of the West Scotland",
     "position": "Lecturer",
     "location": "United Kingdom",
