@@ -1,5 +1,82 @@
 [
   {
+    "company": "Barchester Healthcare",
+    "position": "Clinical Development Nurse",
+    "location": "Hailey,  \n               England,  \n               United Kingdom",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-22",
+    "logo": "/favicon/android-chrome-192x192.png",
+    "description": "https://visasponsor.jobs/api/jobs/a8293b5e6ece4f8abc7c4b546f6e16fa/Clinical-Development-Nurse"
+  },
+  {
+    "company": "Bits",
+    "position": "Commercial Finance Analyst – Fintech, Hybrid Impact",
+    "location": "Wolverhampton,  \n               England,  \n               United Kingdom",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-22",
+    "logo": "/favicon/android-chrome-192x192.png",
+    "description": "https://visasponsor.jobs/api/jobs/cfb783cbc3804ccca042d3146e86acec/Commercial-Finance-Analyst-Fintech-Hybrid-Impact"
+  },
+  {
+    "company": "Product Pulse",
+    "position": "Founding People &amp; Talent Lead",
+    "location": "Germany",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-22",
+    "logo": "/favicon/android-chrome-192x192.png",
+    "description": "https://visasponsor.jobs/api/jobs/22f0dfe133ac47a292c291a20933f01b/Founding-People-&amp;-Talent-Lead"
+  },
+  {
+    "company": "Source Medical, LLC.",
+    "position": "IT Cardiology Opening in Ashland, KY",
+    "location": "Ashland,  \n               Kentucky,  \n               United States",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-22",
+    "logo": "/favicon/android-chrome-192x192.png",
+    "description": "https://visasponsor.jobs/api/jobs/b20daddf22fa4fecac35c03d274732e1/IT-Cardiology-Opening-in-Ashland-KY"
+  },
+  {
+    "company": "The Black Caucus of SRCD",
+    "position": "Pediatric Emergency Medicine in Seattle",
+    "location": "Seattle,  \n               Washington,  \n               United States",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-22",
+    "logo": "/favicon/android-chrome-192x192.png",
+    "description": "https://visasponsor.jobs/api/jobs/3151265238244d1fb9b9934f9ec87ce3/Pediatric-Emergency-Medicine-in-Seattle"
+  },
+  {
+    "company": "Kayes &amp; Associates",
+    "position": "Associate Attorney (Part-Time to Full-Time) – Corporate, Business &amp; Immigration Law",
+    "location": "Diamond bar,  \n               California,  \n               United States",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-22",
+    "logo": "/favicon/android-chrome-192x192.png",
+    "description": "https://visasponsor.jobs/api/jobs/5df862ab33944ddb9d1159e653e9058d/Associate-Attorney-(Part-Time-to-Full-Time)-Corporate-Business-&amp;-Immigration-Law"
+  },
+  {
+    "company": "Allina Health System",
+    "position": "General Outpatient Neurologist",
+    "location": "Saint paul,  \n               Minnesota,  \n               United States",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-22",
+    "logo": "/favicon/android-chrome-192x192.png",
+    "description": "https://visasponsor.jobs/api/jobs/5556c174a09e44868bc218bbc7e03116/General-Outpatient-Neurologist"
+  },
+  {
     "company": "SumUp",
     "position": "Android Engineer - Engagement Mission",
     "location": "Berlin, Berlin, Germany",
