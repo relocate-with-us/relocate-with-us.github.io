@@ -339,20 +339,116 @@ async function fetchJaabz() {
   const jobs = [];
   try {
     const html = await fetchText("https://jaabz.com/?visa_sponsorship=1&relocation=1");
-    // Look for job entries in the HTML
     const cardMatches = [
-      ...html.matchAll(/href="(https?:\/\/(?:www\.)?jaabz\.com\/[^"]+)"[^>]*>[\s\S]{0,200}?<h\d[^>]*>([^<]+)<\/h\d>/g)
+      ...html.matchAll(/href="(https?:\/\/(?:www\.)?jaabz\.com\/job\/[^"]+)"[^>]*>[\s\S]{0,300}?<h\d[^>]*>([^<]+)<\/h\d>/gi)
     ];
     for (const [, url, title] of cardMatches) {
-      if (!url || !title || url.includes("login") || url.includes("register")) continue;
+      if (!url || !title) continue;
+      // Try to parse company and location from title if formatted like "Title at Company in Location"
+      let position = title.trim();
+      let company = "";
+      let location = "";
+
+      if (position.includes(" at ")) {
+        const parts = position.split(" at ");
+        position = parts[0].trim();
+        const companyAndLoc = parts[1].trim();
+        if (companyAndLoc.includes(" in ")) {
+          const cParts = companyAndLoc.split(" in ");
+          company = cParts[0].trim();
+          location = cParts[1].trim();
+        } else {
+          company = companyAndLoc;
+        }
+      }
+
       jobs.push({
-        company: "", position: title.trim(), location: "",
+        company, position, location,
         url, postDate: new Date(),
-        description: [title, "visa sponsorship relocation assistance"].join(" ")
+        description: [title, company, location, "visa sponsorship relocation assistance"].join(" ")
       });
     }
   } catch (err) {
     console.warn("  Jaabz scrape failed:", err.message);
+  }
+  return jobs.slice(0, MAX_PER_SOURCE);
+}
+
+// ─── Source: LinkedIn (Guest Search API) ──────────────────────────────────────
+async function fetchLinkedIn() {
+  const jobs = [];
+  const keywords = ["visa sponsorship", "relocation assistance"];
+  for (const kw of keywords) {
+    try {
+      const url = `https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=${encodeURIComponent(kw)}&location=Worldwide&start=0`;
+      const html = await fetchText(url, {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+      });
+
+      const cards = html.split("<li");
+      for (const card of cards) {
+        const titleMatch = card.match(/class="base-search-card__title"[^>]*>\s*([\s\S]*?)\s*<\/h3>/i);
+        const companyMatch = card.match(/class="base-search-card__subtitle"[^>]*>\s*<a[^>]*>([\s\S]*?)<\/a>/i) || card.match(/class="base-search-card__subtitle"[^>]*>\s*([\s\S]*?)\s*<\/h4>/i);
+        const locMatch = card.match(/class="job-search-card__location"[^>]*>\s*([\s\S]*?)\s*<\/span>/i);
+        const linkMatch = card.match(/href="(https:\/\/[a-z]+\.linkedin\.com\/jobs\/view\/[^"?]+)/i);
+
+        const position = titleMatch ? titleMatch[1].replace(/<[^>]+>/g, "").trim() : "";
+        const company = companyMatch ? companyMatch[1].replace(/<[^>]+>/g, "").trim() : "";
+        const location = locMatch ? locMatch[1].replace(/<[^>]+>/g, "").trim() : "";
+        const jobUrl = linkMatch ? linkMatch[1] : "";
+
+        if (position && jobUrl) {
+          jobs.push({
+            company,
+            position,
+            location,
+            url: jobUrl,
+            postDate: new Date(),
+            description: [position, company, location, kw].join(" ")
+          });
+        }
+      }
+    } catch (err) {
+      console.warn(`  LinkedIn scrape for "${kw}" failed:`, err.message);
+    }
+  }
+  return jobs.slice(0, MAX_PER_SOURCE);
+}
+
+// ─── Source: YC Jobs (HackerNews Who is Hiring + Work at a Startup) ────────────
+async function fetchYCJobs() {
+  const jobs = [];
+  try {
+    const url = "https://hn.algolia.com/api/v1/search_by_date?tags=story,author_whoishiring&query=who%20is%20hiring";
+    const data = await fetchJson(url);
+    const hits = data.hits || [];
+    if (hits.length > 0) {
+      const storyId = hits[0].objectID;
+      const commentsUrl = `https://hn.algolia.com/api/v1/search?tags=comment,story_${storyId}&query=visa`;
+      const commentsData = await fetchJson(commentsUrl);
+      for (const comment of (commentsData.hits || [])) {
+        const text = comment.comment_text || "";
+        const lines = text.split(/<br\s*\/?>|\n/);
+        const firstLine = lines[0] ? lines[0].replace(/<[^>]+>/g, "").trim() : "";
+        const parts = firstLine.split("|").map(p => p.trim());
+        if (parts.length >= 2) {
+          const company = parts[0];
+          const position = parts[1];
+          const location = parts[2] || "Remote / Various";
+          const hnUrl = `https://news.ycombinator.com/item?id=${comment.objectID}`;
+          jobs.push({
+            company,
+            position,
+            location,
+            url: hnUrl,
+            postDate: new Date(comment.created_at),
+            description: text.replace(/<[^>]+>/g, " ")
+          });
+        }
+      }
+    }
+  } catch (err) {
+    console.warn("  YC Jobs fetch failed:", err.message);
   }
   return jobs.slice(0, MAX_PER_SOURCE);
 }
@@ -413,11 +509,9 @@ function companyToLogoPath(company) {
     return mediaMap.get(norm);
   }
 
-  // 3. Fallback to default naming convention
-  const slug = nameLower
-    .replace(/[^a-z0-9]+/g, "_")
-    .replace(/^_|_$/g, "");
-  return `/favicon/android-chrome-192x192.png`;
+  // 3. Fallback to Clearbit logo API
+  const cleanName = company.toLowerCase().replace(/[^a-z0-9]/g, "");
+  return `https://logo.clearbit.com/${cleanName}.com`;
 }
 
 function sleep(ms) {
@@ -452,6 +546,8 @@ async function main() {
     swissdevjobs:   { label: "SwissDevJobs (RSS)",     fn: fetchSwissDevJobs,   visaConfirmed: false },
     visasponsor:    { label: "VisaSponsor.jobs",       fn: fetchVisaSponsorJobs, visaConfirmed: true },
     jaabz:          { label: "Jaabz",                  fn: fetchJaabz,          visaConfirmed: false },
+    linkedin:       { label: "LinkedIn",               fn: fetchLinkedIn,       visaConfirmed: false },
+    ycjobs:         { label: "YC Jobs (HN & Startups)", fn: fetchYCJobs,         visaConfirmed: false },
   };
 
   const toProcess = ONLY_SOURCE

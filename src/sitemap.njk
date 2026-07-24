@@ -9,8 +9,8 @@ eleventyExcludeFromCollections: true
   <url>
     <loc>{{ site.url }}{{ page.url }}</loc>
     <lastmod>{{ page.date | isoDate }}</lastmod>
-    <changefreq>{% if page.url == '/' or '/visa-sponsored-jobs/' in page.url %}daily{% elif '/blog/' in page.url %}weekly{% elif '/tools/' in page.url %}weekly{% elif '/resources/' in page.url %}weekly{% else %}monthly{% endif %}</changefreq>
-    <priority>{% if page.url == '/' %}1.0{% elif '/visa-sponsored-jobs/' in page.url %}0.9{% elif page.url == '/tools/' %}0.9{% elif '/tools/' in page.url %}0.8{% elif '/blog/posts/' in page.url %}0.8{% elif '/blog/' in page.url %}0.7{% elif '/jobs-by-country/' in page.url %}0.8{% elif '/jobs-by-role/' in page.url %}0.8{% elif '/resources/' in page.url %}0.7{% else %}0.6{% endif %}</priority>
+    <changefreq>{% if page.url == '/' %}daily{% elif '/visa-sponsored-jobs/' in page.url %}daily{% elif '/blog/' in page.url %}weekly{% elif '/tools/' in page.url %}monthly{% elif '/resources/' in page.url %}monthly{% elif '/jobs-by-country/' in page.url %}weekly{% elif '/jobs-by-role/' in page.url %}weekly{% elif '/jobs-in-' in page.url %}weekly{% else %}monthly{% endif %}</changefreq>
+    <priority>{% if page.url == '/' %}1.0{% elif page.url == '/visa-sponsored-jobs/' %}0.9{% elif '/visa-sponsored-jobs/' in page.url %}0.7{% elif page.url == '/tools/' %}0.9{% elif '/tools/' in page.url %}0.8{% elif page.url == '/blog/' %}0.8{% elif '/blog/posts/' in page.url %}0.8{% elif '/jobs-by-country/' in page.url %}0.8{% elif '/jobs-by-role/' in page.url %}0.8{% elif '/jobs-in-' in page.url %}0.9{% elif '/resources/country-guides/' in page.url %}0.8{% elif '/resources/' in page.url %}0.7{% elif page.url == '/pro/' %}0.6{% else %}0.6{% endif %}</priority>
   </url>
   {%- endif %}
   {%- endfor %}

@@ -4,16 +4,12 @@ eleventyExcludeFromCollections: true
 ---
 User-agent: *
 Allow: /
-Allow: /blog/
-Allow: /visa-sponsored-jobs/
-Allow: /resources/
-Allow: /jobs-by-country/
-Allow: /jobs-by-role/
-Allow: /assets/js/
-
-Sitemap: {{ site.url }}/sitemap.xml
 
 # Block legacy duplicate pages
-Disallow: /index.html
 Disallow: /relocation-jobs/
 Disallow: /relocate-jobs/
+Disallow: /index.html
+Disallow: /pagefind/
+
+# Sitemaps
+Sitemap: {{ site.url }}/sitemap.xml

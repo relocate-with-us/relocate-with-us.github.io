@@ -105,9 +105,6 @@
   </script>
   {% endif %}
 
-  {# Grow.me / Mediavine Journey #}
-  <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTpkNjY3Y2RkMy1mMTM1LTQwYzYtYjRhNy02MTE5MjU5MTk4MzI=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
-
   {# Google Privacy & Messaging / GDPR Consent CMP #}
   <script async src="https://fundingchoicesmessages.google.com/i/{{ site.analytics.adsense | replace('ca-', '') }}?ers=1"></script>
   <script>
@@ -137,6 +134,7 @@
 
 <body class="min-h-screen flex flex-col font-sans">
   {% include "partials/header.njk" %}
+  {% include "partials/social-sidebar.njk" %}
 
   <main class="flex-1">
     {{ content | safe }}
@@ -162,6 +160,7 @@
     gtag('config', '{{ site.analytics.ga }}');
   </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.analytics.adsense }}" crossorigin="anonymous"></script>
-  {% include "partials/subscription-popup.njk" %}
+  {% include "partials/telegram-popup.njk" %}
 </body>
 </html>
+

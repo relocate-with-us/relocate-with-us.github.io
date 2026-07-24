@@ -109,7 +109,9 @@ function toJobRecord({
 function getCompanyLogo(company, sponsors) {
   if (!company) return "";
   const match = sponsors.get(company.toLowerCase());
-  return match ? match.logo : "/favicon/android-chrome-192x192.png";
+  if (match && match.logo) return match.logo;
+  const cleanName = company.toLowerCase().replace(/[^a-z0-9]/g, "");
+  return `https://logo.clearbit.com/${cleanName}.com`;
 }
 
 function buildSponsorsMap() {
