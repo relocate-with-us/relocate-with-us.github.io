@@ -190,6 +190,39 @@ module.exports = function (eleventyConfig) {
     return arr.filter((item) => item[field] === value).length;
   });
 
+  // Generate a company logo URL from the company name using Google's Favicon API
+  // Falls back gracefully — the frontend onerror will catch any misses
+  eleventyConfig.addFilter("companyLogo", (job) => {
+    if (!job) return "/favicon/android-chrome-192x192.png";
+    // If the job already has a local /media/ logo, use it
+    if (job.logo && job.logo.startsWith("/media/")) return job.logo;
+    // Extract domain from the apply URL if possible
+    const applyUrl = job.description || "";
+    // For Greenhouse URLs: boards.greenhouse.io/COMPANY → try COMPANY.com
+    const ghMatch = applyUrl.match(/greenhouse\.io\/(\w[\w-]+)/);
+    // For Lever URLs: jobs.lever.co/COMPANY → try COMPANY.com
+    const leverMatch = applyUrl.match(/lever\.co\/(\w[\w-]+)/);
+    // For Arbeitnow: arbeitnow.com/jobs/companies/COMPANY
+    const arbMatch = applyUrl.match(/arbeitnow\.com\/jobs\/companies\/([^/]+)/);
+
+    let domain = "";
+    if (ghMatch) {
+      domain = ghMatch[1].replace(/-/g, "") + ".com";
+    } else if (leverMatch) {
+      domain = leverMatch[1].replace(/-/g, "") + ".com";
+    } else if (arbMatch) {
+      domain = arbMatch[1].replace(/-/g, "") + ".com";
+    } else if (job.company) {
+      // Guess domain from company name: "Zalando" → "zalando.com"
+      domain = job.company.toLowerCase()
+        .replace(/\s*(gmbh|inc\.?|ltd\.?|llc\.?|ag|se|plc|corp\.?|limited|co\.?)\s*$/i, "")
+        .replace(/[^a-z0-9]+/g, "")
+        .trim() + ".com";
+    }
+    if (!domain) return "/favicon/android-chrome-192x192.png";
+    return `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://${domain}&size=128`;
+  });
+
   // Year for copyright
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 

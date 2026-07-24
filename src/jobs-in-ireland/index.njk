@@ -121,7 +121,7 @@ permalink: /jobs-in-ireland/
       {% if "Ireland" in job.location %}
       <div class="job-card">
         <div class="flex flex-col sm:flex-row sm:items-start gap-4">
-          <img src="{{ job.logo }}" alt="{{ job.company }}" class="w-12 h-12 rounded-lg object-cover shrink-0" loading="lazy" onerror="this.src='/favicon/android-chrome-192x192.png'">
+          <img src="{{ job | companyLogo }}" alt="{{ job.company }}" class="w-12 h-12 rounded-lg object-cover shrink-0" loading="lazy" onerror="this.onerror=null;this.src='/favicon/android-chrome-192x192.png'">
           <div class="flex-1 min-w-0">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">{{ job.position }}</h3>
             <p class="text-gray-600 dark:text-gray-400 mb-2">{{ job.company }}</p>

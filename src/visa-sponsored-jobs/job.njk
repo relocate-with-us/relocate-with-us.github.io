@@ -54,7 +54,7 @@ eleventyComputed:
     <div class="card p-6 sm:p-8 mb-8">
       <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-6 pb-6 border-b dark:border-gray-800">
         <div class="flex items-start gap-4">
-          <img src="{{ job.logo }}" alt="{{ job.company }}" class="w-16 h-16 rounded-xl object-cover shrink-0 border dark:border-gray-800" onerror="this.src='/favicon/android-chrome-192x192.png'">
+          <img src="{{ job | companyLogo }}" alt="{{ job.company }}" class="w-16 h-16 rounded-xl object-cover shrink-0 border dark:border-gray-800" onerror="this.onerror=null;this.src='/favicon/android-chrome-192x192.png'">
           <div>
             <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white mb-2 leading-tight">{{ job.position }}</h1>
             <p class="text-lg text-gray-600 dark:text-gray-400 font-medium mb-1">
@@ -115,6 +115,47 @@ eleventyComputed:
           Apply to {{ job.company }}
           <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
         </a>
+      </div>
+    </div>
+
+    {# About This Role — proper job description #}
+    <div class="card p-6 sm:p-8 mb-8">
+      <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+        <i data-lucide="file-text" class="w-5 h-5 text-brand-500"></i>
+        About This Role
+      </h2>
+      <div class="prose-custom text-sm text-gray-600 dark:text-gray-400 leading-relaxed space-y-4">
+        <p>
+          <strong>{{ job.company }}</strong> is hiring a <strong>{{ job.position }}</strong> based in <strong>{{ job.location }}</strong>.
+          This is a <strong>{{ job.contract }}</strong> position that comes with full <strong>{{ job.visa | lower }}</strong> and <strong>{{ job.reloc | lower }}</strong> for qualified international candidates.
+        </p>
+
+        <h3 class="text-base font-semibold text-gray-900 dark:text-white !mt-6">What to Expect</h3>
+        <ul class="list-disc list-inside space-y-1.5">
+          <li><strong>Role:</strong> {{ job.position }}</li>
+          <li><strong>Company:</strong> {{ job.company }}</li>
+          <li><strong>Location:</strong> {{ job.location }}</li>
+          <li><strong>Employment Type:</strong> {{ job.contract }}</li>
+          <li><strong>Visa Sponsorship:</strong> ✅ {{ job.visa }}</li>
+          <li><strong>Relocation Support:</strong> ✅ {{ job.reloc }}</li>
+          {% if job.post_date %}<li><strong>Posted:</strong> {{ job.post_date | timeAgo }}</li>{% endif %}
+        </ul>
+
+        <h3 class="text-base font-semibold text-gray-900 dark:text-white !mt-6">How to Apply</h3>
+        <p>
+          To see the full job description, requirements, and application form, click the <strong>"Apply to {{ job.company }}"</strong> button below.
+          You will be redirected to {{ job.company }}'s official careers page where you can submit your application directly.
+        </p>
+        <p>
+          This listing has been verified to offer visa sponsorship. If you're relocating internationally, {{ job.company }} will support your work visa process and help with your move to {{ job.location }}.
+        </p>
+
+        <div class="mt-6">
+          <a href="{{ job.description }}" target="_blank" rel="noopener" class="btn-primary inline-flex items-center">
+            View Full Description & Apply
+            <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
+          </a>
+        </div>
       </div>
     </div>
 
