@@ -1,5 +1,126 @@
 [
   {
+    "company": "Richard Yu",
+    "position": "Client Success Coach (CSM)",
+    "location": "Remote",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-25",
+    "logo": "https://logo.clearbit.com/richardyu.com",
+    "description": "https://relocate.me/remote/remote/richard-yu/client-success-coach-csm-10272"
+  },
+  {
+    "company": "Numotion",
+    "position": "Clinic Liaison",
+    "location": "Yadkinville,  \n               North carolina,  \n               United States",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-25",
+    "logo": "https://logo.clearbit.com/numotion.com",
+    "description": "https://visasponsor.jobs/api/jobs/7302e689314a464a9bac8bc7e21d0921/Clinic-Liaison"
+  },
+  {
+    "company": "Barchester Healthcare",
+    "position": "Deputy General Manager Clinical",
+    "location": "Llanelli,  \n               Wales,  \n               United Kingdom",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-25",
+    "logo": "https://logo.clearbit.com/barchesterhealthcare.com",
+    "description": "https://visasponsor.jobs/api/jobs/b4a6a6f12a484183a915ed5e486d46b1/Deputy-General-Manager-Clinical"
+  },
+  {
+    "company": "HQ Migration Solutions",
+    "position": "Panel Beaters",
+    "location": "Mornington,  \n               Victoria,  \n               Australia",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-25",
+    "logo": "https://logo.clearbit.com/hqmigrationsolutions.com",
+    "description": "https://visasponsor.jobs/api/jobs/bbd5cfc227b14047a5aa2a54e2b87e12/Panel-Beaters"
+  },
+  {
+    "company": "LEONGATHA HEALTH PTY LTD",
+    "position": "Full Time Pharmacist",
+    "location": "Leongatha,  \n               Victoria,  \n               Australia",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-25",
+    "logo": "https://logo.clearbit.com/leongathahealthptyltd.com",
+    "description": "https://visasponsor.jobs/api/jobs/76fb8b1a6ef64f76ab8f67f552774854/Full-Time-Pharmacist"
+  },
+  {
+    "company": "Onemedical Group",
+    "position": "Lead GP: Primary Care Leadership &amp; Service Innovation",
+    "location": "Derby,  \n               England,  \n               United Kingdom",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-25",
+    "logo": "https://logo.clearbit.com/onemedicalgroup.com",
+    "description": "https://visasponsor.jobs/api/jobs/bd328713aca44d64a5b8e09d6409fee7/Lead-GP:-Primary-Care-Leadership-&amp;-Service-Innovation"
+  },
+  {
+    "company": "JustPlay",
+    "position": "Lead UX/UI Designer (all genders)",
+    "location": "Berlin,  \n               Germany",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-25",
+    "logo": "https://logo.clearbit.com/justplay.com",
+    "description": "https://visasponsor.jobs/api/jobs/17008de90dae4e9c8b32d66a943101dc/Lead-UX-UI-Designer-(all-genders)"
+  },
+  {
+    "company": "METANLYTICS LLC",
+    "position": "SAP QM (Quality Management) Lead Consultant",
+    "location": "Tulsa,  \n               Oklahoma,  \n               United States",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-25",
+    "logo": "https://logo.clearbit.com/metanlyticsllc.com",
+    "description": "https://visasponsor.jobs/api/jobs/2810581a6b264aeb9bfe06e483dc99ea/SAP-QM-(Quality-Management)-Lead-Consultant"
+  },
+  {
+    "company": "Tech Tandem Inc",
+    "position": "AI Product Owner with P&amp;C insurance experience",
+    "location": "Warren,  \n               New jersey,  \n               United States",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-25",
+    "logo": "https://logo.clearbit.com/techtandeminc.com",
+    "description": "https://visasponsor.jobs/api/jobs/ecb00fee50e74a2d9981ab86f9989a27/AI-Product-Owner-with-P&amp;C-insurance-experience"
+  },
+  {
+    "company": "Optiver",
+    "position": "HR Business Partner",
+    "location": "Amsterdam,  \n               Noordholland,  \n               Netherlands",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-25",
+    "logo": "/media/optiver_logo.jpg",
+    "description": "https://visasponsor.jobs/api/jobs/fa1951726dbe4ef9bb3d9916f67ad316/HR-Business-Partner"
+  },
+  {
+    "company": "Sails Restaurant",
+    "position": "Seasonal Restaurant Manager",
+    "location": "Naples,  \n               Florida,  \n               United States",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-25",
+    "logo": "https://logo.clearbit.com/sailsrestaurant.com",
+    "description": "https://visasponsor.jobs/api/jobs/6dc70ef84be34724a007bf1c97a55b54/Seasonal-Restaurant-Manager"
+  },
+  {
     "company": "University of Washington",
     "position": "Open Rank without tenure (WOT) - Vascular Neurologist (Neurology)",
     "location": "Seattle,  \n               Washington,  \n               United States",
