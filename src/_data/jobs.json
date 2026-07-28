@@ -1,5 +1,49 @@
 [
   {
+    "company": "sumup",
+    "position": "Senior Backend Engineer (Golang)",
+    "location": "Vilnius, Lithuania",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-28",
+    "logo": "/media/sumup_logo.jpg",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/sumup/senior-backend-engineer-golang-vilnius-lithuania-443469"
+  },
+  {
+    "company": "sumup",
+    "position": "Senior Backend Engineer- Global Bank",
+    "location": "Sofia, Bulgaria",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-28",
+    "logo": "/media/sumup_logo.jpg",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/sumup/senior-backend-engineer-global-bank-sofia-bulgaria-138769"
+  },
+  {
+    "company": "sumup",
+    "position": "Senior Backend Engineer - Cards",
+    "location": "Berlin, Germany",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-28",
+    "logo": "/media/sumup_logo.jpg",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/sumup/senior-backend-engineer-cards-berlin-germany-217561"
+  },
+  {
+    "company": "Wispr Flow",
+    "position": "Platform Engineer, Billing Systems",
+    "location": "San francisco,  \n               California,  \n               United States",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-28",
+    "logo": "https://logo.clearbit.com/wisprflow.com",
+    "description": "https://visasponsor.jobs/api/jobs/6e18af7b8a4f47918a5ccded4e793992/Platform-Engineer-Billing-Systems"
+  },
+  {
     "company": "hellofresh",
     "position": "Senior Manager, Global Price & Discount Strategy",
     "location": "Berlin",
