@@ -1,5 +1,49 @@
 [
   {
+    "company": "SumUp",
+    "position": "iOS Engineer - Mobile Platform",
+    "location": "Cologne, North Rhine-Westphalia, Germany",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-28",
+    "logo": "/media/sumup_logo.jpg",
+    "description": "https://www.arbeitnow.com/jobs/companies/sumup/ios-engineer-mobile-platform-cologne-75181"
+  },
+  {
+    "company": "sumup",
+    "position": "Senior Backend Engineer - Commercial Systems and Intelligence",
+    "location": "Berlin",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-28",
+    "logo": "/media/sumup_logo.jpg",
+    "description": "https://www.arbeitnow.com/jobs/companies/sumup/senior-backend-engineer-commercial-systems-and-intelligence-berlin-204665"
+  },
+  {
+    "company": "Catawiki",
+    "position": "Senior Data Scientist - Machine Learning",
+    "location": "Portugal",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-29",
+    "logo": "/media/catawiki_logo.jpg",
+    "description": "https://relocate.me/portugal/lisbon/catawiki/senior-data-scientist-machine-learning-10277"
+  },
+  {
+    "company": "Catawiki",
+    "position": "Senior Product Manager - Demand",
+    "location": "Netherlands",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-29",
+    "logo": "/media/catawiki_logo.jpg",
+    "description": "https://relocate.me/netherlands/amsterdam/catawiki/senior-product-manager-demand-10278"
+  },
+  {
     "company": "sumup",
     "position": "Senior Backend Engineer (Golang)",
     "location": "Vilnius, Lithuania",
