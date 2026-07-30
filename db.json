@@ -1,5 +1,38 @@
 [
   {
+    "company": "sumup",
+    "position": "Senior Talent Acquisition Partner",
+    "location": "London",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-30",
+    "logo": "/media/sumup_logo.jpg",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/sumup/senior-talent-acquisition-partner-london-397641"
+  },
+  {
+    "company": "Spotify",
+    "position": "Fullstack Engineer - Subscriptions",
+    "location": "London",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-29",
+    "logo": "/media/spotify_logo.jpg",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/spotify/fullstack-engineer-subscriptions-london-229822"
+  },
+  {
+    "company": "N26",
+    "position": "Site Reliability Engineer - Observability",
+    "location": "Berlin,  \n               Germany",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-30",
+    "logo": "/media/n26_logo.jpg",
+    "description": "https://visasponsor.jobs/api/jobs/00200bc5f6134c239cb4447e1f1bf40c/Site-Reliability-Engineer-Observability"
+  },
+  {
     "company": "SumUp",
     "position": "iOS Engineer - Mobile Platform",
     "location": "Cologne, North Rhine-Westphalia, Germany",
