@@ -1,5 +1,38 @@
 [
   {
+    "company": "hellofresh",
+    "position": "Senior Lifecycle Marketing Manager (all genders)",
+    "location": "Berlin",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-30",
+    "logo": "/media/hellofresh_logo.jpg",
+    "description": "https://www.arbeitnow.com/jobs/companies/hellofresh/senior-lifecycle-marketing-manager-all-genders-berlin-252615"
+  },
+  {
+    "company": "Stripe",
+    "position": "Account Executive, Bridge",
+    "location": "London",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-31",
+    "logo": "/media/stripe_logo.jpg",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/stripe/account-executive-bridge-london-209229"
+  },
+  {
+    "company": "Naija UK Connect Limited",
+    "position": "Nursery Assistant Visa Sponsorship Available",
+    "location": "Kingston upon hull,  \n               England,  \n               United Kingdom",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-07-31",
+    "logo": "https://logo.clearbit.com/naijaukconnectlimited.com",
+    "description": "https://visasponsor.jobs/api/jobs/6ba3573031fb44c0b63c342858f2f5d0/Nursery-Assistant-Visa-Sponsorship-Available"
+  },
+  {
     "company": "sumup",
     "position": "Senior Talent Acquisition Partner",
     "location": "London",
