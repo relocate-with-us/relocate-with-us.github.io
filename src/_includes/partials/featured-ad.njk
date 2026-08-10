@@ -1,50 +1,23 @@
-{# Featured Ad — The Global Move by RelocateMe #}
-{# Rendered as a real job card, matching existing job listings #}
-<div class="job-card relative border-2 border-yellow-300 dark:border-yellow-500/40" id="featured-ad-globalmove">
-  {# Featured ribbon — top right, visible on mobile only (desktop shows inline badge) #}
-  <span class="absolute top-3 right-3 inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold bg-yellow-400 text-yellow-900 sm:hidden">
-    ⭐ Featured
-  </span>
+{# Featured Ad — Zapply.jobs (Sponsored) #}
+{# Uses advertiser-approved assets. Destination URL per agreement. #}
+<div class="relative overflow-hidden rounded-2xl border-2 border-orange-500/40 shadow-xl transition-all duration-300 hover:border-orange-400 hover:shadow-orange-500/10" id="featured-ad-zapply">
+  <a href="https://app.zapply.jobs/onboarding/?ref=website-cta-Lamiiine" target="_blank" rel="noopener sponsored" class="block group">
+    {# Banner image — advertiser-provided asset #}
+    <img src="/media/zapply_banner.png" alt="Apply Faster with Zapply — Apply to jobs in seconds" class="w-full h-auto block" loading="lazy">
 
-  <div class="flex flex-col sm:flex-row sm:items-start gap-4">
-    {# Real logo #}
-    <img src="/media/globalmove_logo.jpeg" alt="The Global Move" class="w-12 h-12 rounded-lg object-cover shrink-0" loading="lazy">
+    {# Sponsored label overlay — top-left #}
+    <span class="absolute top-3 left-3 inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-bold bg-black/60 text-white backdrop-blur-sm shadow">
+      Sponsored
+    </span>
 
-    <div class="flex-1 min-w-0">
-      {# Featured badge — inline, visible on sm+ #}
-      <span class="hidden sm:inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-yellow-400 text-yellow-900 mb-2">
-        ⭐ Featured
-      </span>
-
-      <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">
-        <a href="https://relocateme.substack.com/" target="_blank" rel="noopener sponsored" class="hover:text-brand-600 transition-colors">
-          All-in-one newsletter + curated job board<br class="hidden sm:inline"> for international tech careers
-        </a>
-      </h3>
-
-      <p class="text-gray-600 dark:text-gray-400 mb-2">The Global Move</p>
-
-      <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-gray-500 dark:text-gray-400 mb-3">
-        <span class="flex items-center gap-1">
-          <i data-lucide="mail" class="w-3.5 h-3.5"></i>
-          Newsletter
-        </span>
-        <span class="flex items-center gap-1">
-          <i data-lucide="clock" class="w-3.5 h-3.5"></i>
-          Every week
-        </span>
-      </div>
-
-      <div class="flex flex-wrap gap-2">
-        <span class="badge badge-reloc">Relocation Assistance</span>
-        <span class="badge badge-visa">Visa Sponsorship</span>
-        <span class="badge badge-contract">Remote Jobs</span>
-      </div>
+    {# CTA button overlay — bottom-right on desktop, centered below on mobile #}
+    <div class="absolute bottom-3 right-3 hidden sm:block">
+      <img src="/media/zapply_button.png" alt="Get Started with Zapply" class="h-10 w-auto rounded-lg shadow-lg group-hover:scale-105 transition-transform duration-200" loading="lazy">
     </div>
-
-    {# Subscribe button — same style/position as Apply button on job cards #}
-    <a href="https://relocateme.substack.com/" target="_blank" rel="noopener sponsored" class="job-card-apply">
-      Subscribe <i data-lucide="external-link" class="w-3.5 h-3.5 ml-1.5"></i>
-    </a>
-  </div>
+  </a>
+  {# Mobile CTA below the banner #}
+  <a href="https://app.zapply.jobs/onboarding/?ref=website-cta-Lamiiine" target="_blank" rel="noopener sponsored" class="sm:hidden block bg-[#f0613a] text-white text-center font-bold text-sm py-3 hover:bg-[#d9552f] transition-colors">
+    Get Started with Zapply
+  </a>
 </div>
+

@@ -1,34 +1,33 @@
-{# Sidebar Ad — The Global Move by RelocateMe #}
-{# Compact card version for the sidebar on content pages #}
-<aside id="sidebar-ad-globalmove">
-  <a href="https://relocateme.substack.com/" target="_blank" rel="noopener sponsored"
-     class="block card border-2 border-yellow-300 dark:border-yellow-500/40 p-4 group hover:-translate-y-0.5 transition-all duration-300">
+{# Sidebar Ad — Zapply.jobs (Sponsored) #}
+{# Uses advertiser-approved assets only. Destination URL per agreement. #}
+<aside id="sidebar-ad-zapply" class="relative group">
+  {# Dismiss button #}
+  <button onclick="document.getElementById('sidebar-ad-wrapper').style.display='none'" 
+          title="Dismiss ad" 
+          aria-label="Close ad"
+          class="absolute -top-2.5 -right-2.5 z-50 w-6 h-6 rounded-full bg-gray-800 border border-gray-700 text-gray-400 hover:text-white flex items-center justify-center text-xs shadow-md transition-colors">
+    ✕
+  </button>
 
-    <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-yellow-400 text-yellow-900 mb-3">
-      ⭐ Featured
-    </span>
+  <a href="https://app.zapply.jobs/onboarding/?ref=website-cta-Lamiiine" target="_blank" rel="noopener sponsored"
+     class="block overflow-hidden rounded-2xl border-2 border-orange-500/40 bg-gray-950 shadow-2xl group-hover:-translate-y-1 transition-all duration-300 relative">
 
-    <div class="flex items-center gap-3 mb-3">
-      <img src="/media/globalmove_logo.jpeg" alt="The Global Move" class="w-10 h-10 rounded-lg object-cover shrink-0" loading="lazy">
-      <div>
-        <p class="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors leading-tight">The Global Move</p>
-        <p class="text-xs text-gray-500 dark:text-gray-400">Newsletter · weekly</p>
-      </div>
+    {# Sponsored label #}
+    <div class="px-3 pt-3">
+      <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[9px] font-bold bg-white/10 text-gray-300">
+        Sponsored
+      </span>
     </div>
 
-    <p class="text-xs text-gray-600 dark:text-gray-400 mb-3 leading-relaxed">
-      Curated job board + newsletter for international tech careers.
-    </p>
-
-    <div class="flex flex-wrap gap-1.5 mb-3">
-      <span class="badge badge-reloc text-[10px] px-2 py-0.5">Relocation</span>
-      <span class="badge badge-visa text-[10px] px-2 py-0.5">Visa</span>
-      <span class="badge badge-contract text-[10px] px-2 py-0.5">Remote</span>
+    {# Banner image #}
+    <div class="p-3 pb-2">
+      <img src="/media/zapply_banner.png" alt="Apply Faster with Zapply — Apply to jobs in seconds" class="w-full h-auto rounded-lg block" loading="lazy">
     </div>
 
-    <span class="btn-primary w-full text-xs py-2">
-      Subscribe Free
-      <i data-lucide="external-link" class="w-3 h-3 ml-1"></i>
-    </span>
+    {# CTA button — constrained #}
+    <div class="px-3 pb-3">
+      <img src="/media/zapply_button.png" alt="Get Started with Zapply" class="h-9 w-auto mx-auto rounded-md shadow-lg group-hover:scale-105 transition-transform duration-200" loading="lazy">
+    </div>
   </a>
 </aside>
+
