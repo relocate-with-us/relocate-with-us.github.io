@@ -1,5 +1,27 @@
 [
   {
+    "company": "hellofresh",
+    "position": "Senior IT Engineer, MDM Tech (f/m/x)",
+    "location": "Berlin, Berlin",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-08-22",
+    "logo": "/media/hellofresh_logo.jpg",
+    "description": "https://www.arbeitnow.com/jobs/companies/hellofresh/senior-it-engineer-mdm-tech-berlin-berlin-33452"
+  },
+  {
+    "company": "Aeyde",
+    "position": "(Senior) Collection Merchandiser Shoes (f/m/d)",
+    "location": "Berlin",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-08-22",
+    "logo": "https://logo.clearbit.com/aeyde.com",
+    "description": "https://www.arbeitnow.com/jobs/companies/aeyde/senior-collection-merchandiser-shoes-berlin-452930"
+  },
+  {
     "company": "SumUp",
     "position": "Senior Backend Engineer - MarTech",
     "location": "Berlin, Germany",
