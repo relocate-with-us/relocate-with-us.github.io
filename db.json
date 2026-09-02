@@ -1,5 +1,82 @@
 [
   {
+    "company": "sumup",
+    "position": "Senior Backend Engineer - Identity Lifecycle",
+    "location": "Berlin",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-09-02",
+    "logo": "/media/sumup_logo.jpg",
+    "description": "https://www.arbeitnow.com/jobs/companies/sumup/senior-backend-engineer-identity-lifecycle-berlin-110697"
+  },
+  {
+    "company": "hellofresh",
+    "position": "Senior Project Manager",
+    "location": "Sydney, Australia",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-09-02",
+    "logo": "/media/hellofresh_logo.jpg",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/hellofresh/senior-project-manager-sydney-australia-427226"
+  },
+  {
+    "company": "hellofresh",
+    "position": "[ANZ] Senior Systems Enablement Manager",
+    "location": "Sydney, Australia",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-09-02",
+    "logo": "/media/hellofresh_logo.jpg",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/hellofresh/anz-senior-systems-enablement-manager-sydney-australia-243978"
+  },
+  {
+    "company": "Spotify",
+    "position": "Engineering Manager - Experimentation",
+    "location": "London",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-09-02",
+    "logo": "/media/spotify_logo.jpg",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/spotify/engineering-manager-experimentation-london-354837"
+  },
+  {
+    "company": "SumUp",
+    "position": "Inbound Account Executive [Dutch Market]",
+    "location": "London, England, United Kingdom",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-09-01",
+    "logo": "/media/sumup_logo.jpg",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/sumup/inbound-account-executive-dutch-market-london-271526"
+  },
+  {
+    "company": "Multiply",
+    "position": "Python + SQL Software Engineer",
+    "location": "On-site",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-09-02",
+    "logo": "https://logo.clearbit.com/multiply.com",
+    "description": "https://news.ycombinator.com/item?id=49532978"
+  },
+  {
+    "company": "Balerion AI",
+    "position": "Software + FDE + AI Engineers",
+    "location": "San Francisco, CA",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-09-01",
+    "logo": "https://logo.clearbit.com/balerionai.com",
+    "description": "https://news.ycombinator.com/item?id=49525600"
+  },
+  {
     "company": "Form3",
     "position": "Senior Software Engineer (Go)",
     "location": "",
