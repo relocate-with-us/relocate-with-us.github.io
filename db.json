@@ -1,6 +1,39 @@
 [
   {
     "company": "sumup",
+    "position": "Senior Product Data Analyst- Consumer Growth",
+    "location": "London",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-09-03",
+    "logo": "/media/sumup_logo.jpg",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/sumup/senior-product-data-analyst-consumer-growth-london-364579"
+  },
+  {
+    "company": "sumup",
+    "position": "Senior Content & Editorial Lead",
+    "location": "London",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-09-03",
+    "logo": "/media/sumup_logo.jpg",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/sumup/senior-content-editorial-lead-london-264872"
+  },
+  {
+    "company": "lovable",
+    "position": "stockholm, london (in-person)",
+    "location": "full-stack, frontend, backend, infra design, and ai researchwe sponsor visas and have very generous relocation packages.lovable is building an agentic technical co-founder, we are the best way for non-technical people go from idea to a real software business with paying users. we need the best engineers in the world to join us and will compensate you accordingly.learn more at: https:&#x2F;&#x2F;lovable.dev&#x2F;careers,",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-09-03",
+    "logo": "https://logo.clearbit.com/lovable.com",
+    "description": "https://news.ycombinator.com/item?id=49546936"
+  },
+  {
+    "company": "sumup",
     "position": "Senior Backend Engineer - Identity Lifecycle",
     "location": "Berlin",
     "contract": "Full Time",
