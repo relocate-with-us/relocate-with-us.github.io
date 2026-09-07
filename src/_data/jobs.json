@@ -1,5 +1,27 @@
 [
   {
+    "company": "Monzo",
+    "position": "Director of Product Design",
+    "location": "Cardiff",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-09-07",
+    "logo": "/media/monzo_bank_logo.jpeg",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/monzo/director-of-product-design-cardiff-80217"
+  },
+  {
+    "company": "sumup",
+    "position": "Senior Backend Engineer",
+    "location": "London",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-09-07",
+    "logo": "/media/sumup_logo.jpg",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/sumup/senior-backend-engineer-london-24424"
+  },
+  {
     "company": "hellofresh",
     "position": "Senior Product Manager II, Consumer (all genders)",
     "location": "Berlin, Berlin",
