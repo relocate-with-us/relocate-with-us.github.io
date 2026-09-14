@@ -1,5 +1,38 @@
 [
   {
+    "company": "hellofresh",
+    "position": "[GLOBAL/INT] [MARKETING] Principal Marketing Analyst (all genders)",
+    "location": "Berlin, Berlin",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-09-14",
+    "logo": "/media/hellofresh_logo.jpg",
+    "description": "https://www.arbeitnow.com/jobs/companies/hellofresh/global-int-marketing-principal-marketing-analyst-all-genders-berlin-berlin-116162"
+  },
+  {
+    "company": "Telnyx",
+    "position": "Forward Deployed Engineer, DACH",
+    "location": "Munich",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-09-13",
+    "logo": "https://logo.clearbit.com/telnyx.com",
+    "description": "https://www.arbeitnow.com/jobs/companies/telnyx/forward-deployed-engineer-dach-munich-178293"
+  },
+  {
+    "company": "SumUp",
+    "position": "Senior Internal Auditor",
+    "location": "London, England, United Kingdom",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-09-14",
+    "logo": "/media/sumup_logo.jpg",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/sumup/senior-internal-auditor-london-404812"
+  },
+  {
     "company": "contentful",
     "position": "Enterprise Account Executive - German Speaking (f/m/d)",
     "location": "London",
