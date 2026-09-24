@@ -88,17 +88,6 @@
     "description": "https://www.arbeitnow.co.uk/jobs/companies/datadog/enterprise-account-executive-uki-public-sector-london-62122"
   },
   {
-    "company": "relokate HR GmbH",
-    "position": "Junior Immigration Lawyer (m/w/d) - Partner Network",
-    "location": "Berlin",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-09-14",
-    "logo": "https://logo.clearbit.com/relokatehrgmbh.com",
-    "description": "https://www.arbeitnow.com/jobs/companies/relokate-hr-gmbh/junior-immigration-lawyer-partner-network-berlin-36111"
-  },
-  {
     "company": "hellofresh",
     "position": "[GLOBAL/INT] [MARKETING] Principal Marketing Analyst (all genders)",
     "location": "Berlin, Berlin",
@@ -594,61 +583,6 @@
     "description": "https://www.arbeitnow.com/jobs/companies/hellofresh/senior-cloud-security-engineer-mfx-berlin-berlin-196412"
   },
   {
-    "company": "Secfix",
-    "position": "Senior Product Designer",
-    "location": "Remote-Europe",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-08-04",
-    "logo": "https://logo.clearbit.com/secfix.com",
-    "description": "https://www.arbeitnow.com/jobs/companies/secfix/senior-product-designer-berlin-51713"
-  },
-  {
-    "company": "Augustus",
-    "position": "(Senior) Software Engineer",
-    "location": "Berlin",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-08-03",
-    "logo": "https://logo.clearbit.com/augustus.com",
-    "description": "https://www.arbeitnow.com/jobs/companies/augustus/senior-software-engineer-berlin-102253"
-  },
-  {
-    "company": "Augustus",
-    "position": "(Senior) DevOps Engineer",
-    "location": "Berlin",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-08-03",
-    "logo": "https://logo.clearbit.com/augustus.com",
-    "description": "https://www.arbeitnow.com/jobs/companies/augustus/senior-devops-engineer-berlin-411573"
-  },
-  {
-    "company": "Augustus",
-    "position": "Internship",
-    "location": "Berlin",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-08-03",
-    "logo": "https://logo.clearbit.com/augustus.com",
-    "description": "https://www.arbeitnow.com/jobs/companies/augustus/internship-berlin-64787"
-  },
-  {
-    "company": "Clera",
-    "position": "Founding Engineer",
-    "location": "Berlin",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-08-02",
-    "logo": "https://logo.clearbit.com/clera.com",
-    "description": "https://www.arbeitnow.com/jobs/companies/clera/founding-engineer-berlin-212944"
-  },
-  {
     "company": "Datadog",
     "position": "Partner Solutions Architect (Pan-EMEA GSI)",
     "location": "Lisbon, Portugal",
@@ -658,17 +592,6 @@
     "post_date": "2026-07-31",
     "logo": "/media/datadog_logo.jpg",
     "description": "https://www.arbeitnow.co.uk/jobs/companies/datadog/partner-solutions-architect-pan-emea-gsi-lisbon-portugal-192493"
-  },
-  {
-    "company": "hellofresh",
-    "position": "Senior Lifecycle Marketing Manager (all genders)",
-    "location": "Berlin",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-07-30",
-    "logo": "/media/hellofresh_logo.jpg",
-    "description": "https://www.arbeitnow.com/jobs/companies/hellofresh/senior-lifecycle-marketing-manager-all-genders-berlin-252615"
   },
   {
     "company": "Stripe",
@@ -691,28 +614,6 @@
     "post_date": "2026-07-29",
     "logo": "/media/spotify_logo.jpg",
     "description": "https://www.arbeitnow.co.uk/jobs/companies/spotify/fullstack-engineer-subscriptions-london-229822"
-  },
-  {
-    "company": "SumUp",
-    "position": "iOS Engineer - Mobile Platform",
-    "location": "Cologne, North Rhine-Westphalia, Germany",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-07-28",
-    "logo": "/media/sumup_logo.jpg",
-    "description": "https://www.arbeitnow.com/jobs/companies/sumup/ios-engineer-mobile-platform-cologne-75181"
-  },
-  {
-    "company": "sumup",
-    "position": "Senior Backend Engineer - Commercial Systems and Intelligence",
-    "location": "Berlin",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-07-28",
-    "logo": "/media/sumup_logo.jpg",
-    "description": "https://www.arbeitnow.com/jobs/companies/sumup/senior-backend-engineer-commercial-systems-and-intelligence-berlin-204665"
   },
   {
     "company": "Catawiki",
@@ -759,28 +660,6 @@
     "description": "https://www.arbeitnow.co.uk/jobs/companies/sumup/senior-backend-engineer-global-bank-sofia-bulgaria-138769"
   },
   {
-    "company": "hellofresh",
-    "position": "Senior Manager, Global Price & Discount Strategy",
-    "location": "Berlin",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-07-25",
-    "logo": "/media/hellofresh_logo.jpg",
-    "description": "https://www.arbeitnow.com/jobs/companies/hellofresh/senior-manager-global-price-discount-strategy-berlin-376787"
-  },
-  {
-    "company": "hellofresh",
-    "position": "Senior GRC Analyst (m,f,x)",
-    "location": "Berlin",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-07-22",
-    "logo": "/media/hellofresh_logo.jpg",
-    "description": "https://www.arbeitnow.com/jobs/companies/hellofresh/senior-grc-analyst-mfx-berlin-180017"
-  },
-  {
     "company": "Richard Yu",
     "position": "Client Success Coach (CSM)",
     "location": "Remote",
@@ -792,17 +671,6 @@
     "description": "https://relocate.me/remote/remote/richard-yu/client-success-coach-csm-10272"
   },
   {
-    "company": "SumUp",
-    "position": "Android Engineer - Engagement Mission",
-    "location": "Berlin, Berlin, Germany",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-07-21",
-    "logo": "/media/sumup_logo.jpg",
-    "description": "https://www.arbeitnow.com/jobs/companies/sumup/android-engineer-engagement-mission-berlin-49378"
-  },
-  {
     "company": "Welltech",
     "position": "Head of Growth - Paid Social",
     "location": "Cyprus",
@@ -812,17 +680,6 @@
     "post_date": "2026-07-20",
     "logo": "https://ui-avatars.com/api/?name=Welltech&background=random&color=fff&font-size=0.4&rounded=true&size=128",
     "description": "https://relocate.me/cyprus/limassol/welltech/head-of-growth-paid-social-10274"
-  },
-  {
-    "company": "Hydrosat",
-    "position": "Platform Engineer",
-    "location": "Luxembourg",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-07-19",
-    "logo": "https://ui-avatars.com/api/?name=Hydrosat&background=random&color=fff&font-size=0.4&rounded=true&size=128",
-    "description": "https://careers.hydrosat.com/o/platform-engineer"
   },
   {
     "company": "LGG Advisors",
@@ -889,39 +746,6 @@
     "post_date": "2026-07-19",
     "logo": "https://ui-avatars.com/api/?name=Senvo&background=random&color=fff&font-size=0.4&rounded=true&size=128",
     "description": "https://www.arbeitnow.com/jobs/companies/senvo-gmbh/founding-head-of-engineering-berlin-71649"
-  },
-  {
-    "company": "Urban Sports Club",
-    "position": "Senior Backend Engineer (Golang)",
-    "location": "Berlin, Germany",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-07-18",
-    "logo": "https://ui-avatars.com/api/?name=Urban%20Sports%20Club&background=random&color=fff&font-size=0.4&rounded=true&size=128",
-    "description": "https://www.arbeitnow.com/jobs/companies/urban-sports-club/senior-backend-engineer-all-genders-golang-berlin-211662"
-  },
-  {
-    "company": "Distribusion Technologies",
-    "position": "Senior Engineering Manager - Supply Domain",
-    "location": "Berlin, Germany",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-07-18",
-    "logo": "https://ui-avatars.com/api/?name=Distribusion%20Technologies&background=random&color=fff&font-size=0.4&rounded=true&size=128",
-    "description": "https://www.arbeitnow.com/jobs/companies/distribusion-technologies/senior-engineering-manager-supply-domain-all-genders-berlin-309048"
-  },
-  {
-    "company": "Distribusion Technologies",
-    "position": "Engineering Manager - Search Engine",
-    "location": "Berlin, Germany",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-07-18",
-    "logo": "https://ui-avatars.com/api/?name=Distribusion%20Technologies&background=random&color=fff&font-size=0.4&rounded=true&size=128",
-    "description": "https://www.arbeitnow.com/jobs/companies/distribusion-technologies/engineering-manager-search-engine-all-genders-berlin-247347"
   },
   {
     "company": "Halter",
