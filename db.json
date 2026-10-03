@@ -1,5 +1,38 @@
 [
   {
+    "company": "Augustus",
+    "position": "Security Engineer",
+    "location": "Berlin",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-10-03",
+    "logo": "https://logo.clearbit.com/augustus.com",
+    "description": "https://www.arbeitnow.com/jobs/companies/augustus/security-engineer-berlin-379416"
+  },
+  {
+    "company": "JustPlay GmbH",
+    "position": "Senior Product Designer (all genders)",
+    "location": "Berlin (Hybrid)",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-10-02",
+    "logo": "https://logo.clearbit.com/justplaygmbh.com",
+    "description": "https://www.arbeitnow.com/jobs/companies/justplay-gmbh/senior-product-designer-all-genders-berlin-9351"
+  },
+  {
+    "company": "SumUp",
+    "position": "Senior Commercial Finance Business Partner",
+    "location": "London, England, United Kingdom",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-10-03",
+    "logo": "/media/sumup_logo.jpg",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/sumup/senior-commercial-finance-business-partner-london-370701"
+  },
+  {
     "company": "Catawiki",
     "position": "Lead Security Engineer",
     "location": "Netherlands",
