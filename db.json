@@ -1,5 +1,49 @@
 [
   {
+    "company": "Alteos",
+    "position": "Customer Care & Claims Agent Netherlands (m/f/d)",
+    "location": "Berlin",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-10-03",
+    "logo": "https://logo.clearbit.com/alteos.com",
+    "description": "https://www.arbeitnow.com/jobs/companies/alteos/customer-care-claims-agent-netherlands-berlin-142848"
+  },
+  {
+    "company": "Monzo",
+    "position": "Senior Product Marketing Manager, Business Banking",
+    "location": "Cardiff",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-10-05",
+    "logo": "/media/monzo_bank_logo.jpeg",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/monzo/senior-product-marketing-manager-business-banking-cardiff-155507"
+  },
+  {
+    "company": "Datadog",
+    "position": "Senior Partner Marketing Manager - Cloud & Channel",
+    "location": "London",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-10-05",
+    "logo": "/media/datadog_logo.jpg",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/datadog/senior-partner-marketing-manager-cloud-channel-london-86486"
+  },
+  {
+    "company": "REVEL",
+    "position": "Mechanical Engineer, Wearables",
+    "location": "Prague, Prague, Czechia",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-10-05",
+    "logo": "https://logo.clearbit.com/revel.com",
+    "description": "https://cz.linkedin.com/jobs/view/mechanical-engineer-wearables-at-revel-4442533268"
+  },
+  {
     "company": "Augustus",
     "position": "Security Engineer",
     "location": "Berlin",
