@@ -1,5 +1,16 @@
 [
   {
+    "company": "Augustus",
+    "position": "Product Manager",
+    "location": "Berlin",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-10-19",
+    "logo": "https://logo.clearbit.com/augustus.com",
+    "description": "https://www.arbeitnow.com/jobs/companies/augustus/product-manager-berlin-360655"
+  },
+  {
     "company": "Treat Health",
     "position": "Full-stack Engineer (Elixir, Phoenix LiveView, React)",
     "location": "Helsinki, Finland",
