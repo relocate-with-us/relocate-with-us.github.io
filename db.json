@@ -1,6 +1,17 @@
 [
   {
     "company": "Augustus",
+    "position": "Engineering Fellowship",
+    "location": "Berlin",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-10-21",
+    "logo": "https://logo.clearbit.com/augustus.com",
+    "description": "https://www.arbeitnow.com/jobs/companies/augustus/engineering-fellowship-berlin-220598"
+  },
+  {
+    "company": "Augustus",
     "position": "Product Manager",
     "location": "Berlin",
     "contract": "Full Time",
