@@ -1,5 +1,49 @@
 [
   {
+    "company": "hellofresh",
+    "position": "Software Engineer - Marketing Automation (all genders)",
+    "location": "Berlin, Berlin",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-10-22",
+    "logo": "/media/hellofresh_logo.jpg",
+    "description": "https://www.arbeitnow.com/jobs/companies/hellofresh/software-engineer-marketing-automation-all-genders-berlin-berlin-267144"
+  },
+  {
+    "company": "Kernel",
+    "position": "Engineering Manager",
+    "location": "London",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-10-22",
+    "logo": "https://logo.clearbit.com/kernel.com",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/kernel/engineering-manager-london-55321"
+  },
+  {
+    "company": "Kernel",
+    "position": "Senior Product Engineer",
+    "location": "London",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-10-22",
+    "logo": "https://logo.clearbit.com/kernel.com",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/kernel/senior-product-engineer-london-49862"
+  },
+  {
+    "company": "Hai Robotics",
+    "position": "Software Engineer (Chinese Speaking)",
+    "location": "Hoofddorp, North Holland, Netherlands",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-10-22",
+    "logo": "https://logo.clearbit.com/hairobotics.com",
+    "description": "https://nl.linkedin.com/jobs/view/software-engineer-chinese-speaking-at-hai-robotics-4477476358"
+  },
+  {
     "company": "Augustus",
     "position": "Engineering Fellowship",
     "location": "Berlin",
