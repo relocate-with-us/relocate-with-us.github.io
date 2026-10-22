@@ -594,17 +594,6 @@
     "description": "https://news.ycombinator.com/item?id=49546936"
   },
   {
-    "company": "sumup",
-    "position": "Senior Backend Engineer - Identity Lifecycle",
-    "location": "Berlin",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-09-02",
-    "logo": "/media/sumup_logo.jpg",
-    "description": "https://www.arbeitnow.com/jobs/companies/sumup/senior-backend-engineer-identity-lifecycle-berlin-110697"
-  },
-  {
     "company": "hellofresh",
     "position": "Senior Project Manager",
     "location": "Sydney, Australia",
@@ -1054,50 +1043,6 @@
     "post_date": "2026-06-29",
     "logo": "https://ui-avatars.com/api/?name=Halter&background=random&color=fff&font-size=0.4&rounded=true&size=128",
     "description": "https://relocate.me/new-zealand/auckland/halter/senior-engineer-go-to-market-10267"
-  },
-  {
-    "company": "N26",
-    "position": "Senior Product Manager - Payment Processing &amp; Settlement",
-    "location": "Berlin,  \n               Germany",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-06-29",
-    "logo": "/media/n26_logo.jpg",
-    "description": "https://visasponsor.jobs/api/jobs/f9785614076c4b0bb5b6e88521d9a2df/Senior-Product-Manager-Payment-Processing-&amp;-Settlement"
-  },
-  {
-    "company": "N26",
-    "position": "Site Reliability Engineer - Access Team",
-    "location": "Berlin,  \n               Germany",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-06-28",
-    "logo": "/media/n26_logo.jpg",
-    "description": "https://visasponsor.jobs/api/jobs/b8f0d78746d04d8ca1a28594e891013b/Site-Reliability-Engineer-Access-Team"
-  },
-  {
-    "company": "N26",
-    "position": "Regulatory Operations Analyst",
-    "location": "Berlin,  \n               Germany",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-06-28",
-    "logo": "/media/n26_logo.jpg",
-    "description": "https://visasponsor.jobs/api/jobs/560c0df1fcd24383afedc4f54449220b/Regulatory-Operations-Analyst"
-  },
-  {
-    "company": "SumUp",
-    "position": "Senior Backend Engineer - Golang",
-    "location": "Berlin, Berlin, Germany",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-06-26",
-    "logo": "/media/sumup_logo.jpg",
-    "description": "https://www.arbeitnow.com/jobs/companies/sumup/senior-backend-engineer-golang-berlin-101948"
   },
   {
     "company": "Multiverse Computing",
