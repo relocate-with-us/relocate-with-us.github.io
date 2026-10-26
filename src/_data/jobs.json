@@ -88,17 +88,6 @@
     "description": "https://www.arbeitnow.com/jobs/companies/augustus/internship-talent-acquisition-berlin-300139"
   },
   {
-    "company": "SumUp",
-    "position": "Senior Machine Learning Engineer",
-    "location": "Berlin, Berlin, Germany",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-10-14",
-    "logo": "/media/sumup_logo.jpg",
-    "description": "https://www.arbeitnow.com/jobs/companies/sumup/senior-machine-learning-engineer-berlin-164736"
-  },
-  {
     "company": "hellofresh",
     "position": "Senior Service Designer, Food Systems & Fulfillment (f/m/x)",
     "location": "Berlin, Berlin",
@@ -141,28 +130,6 @@
     "post_date": "2026-10-07",
     "logo": "/media/sumup_logo.jpg",
     "description": "https://www.arbeitnow.com/jobs/companies/sumup/senior-crm-administrator-berlin-165043"
-  },
-  {
-    "company": "Skailark",
-    "position": "Aviation Finance & Data Analyst (d/f/m)",
-    "location": "Munich",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-10-08",
-    "logo": "https://logo.clearbit.com/skailark.com",
-    "description": "https://www.arbeitnow.com/jobs/companies/skailark/aviation-finance-data-analyst-munich-253996"
-  },
-  {
-    "company": "Skailark",
-    "position": "Senior Manager Aviation Data",
-    "location": "Munich",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-10-07",
-    "logo": "https://logo.clearbit.com/skailark.com",
-    "description": "https://www.arbeitnow.com/jobs/companies/skailark/senior-manager-aviation-data-munich-253710"
   },
   {
     "company": "hellofresh",
@@ -583,28 +550,6 @@
     "description": "https://www.arbeitnow.co.uk/jobs/companies/sumup/senior-backend-engineer-london-24424"
   },
   {
-    "company": "hellofresh",
-    "position": "Senior Product Manager II, Consumer (all genders)",
-    "location": "Berlin, Berlin",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-09-06",
-    "logo": "/media/hellofresh_logo.jpg",
-    "description": "https://www.arbeitnow.com/jobs/companies/hellofresh/senior-product-manager-ii-consumer-all-genders-berlin-berlin-215795"
-  },
-  {
-    "company": "hellofresh",
-    "position": "Senior Indirect Procurement Category Manager - Marketing (All genders)",
-    "location": "Berlin, Berlin",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-09-04",
-    "logo": "/media/hellofresh_logo.jpg",
-    "description": "https://www.arbeitnow.com/jobs/companies/hellofresh/senior-indirect-procurement-category-manager-marketing-all-genders-berlin-berlin-100396"
-  },
-  {
     "company": "sumup",
     "position": "Senior Product Data Analyst- Consumer Growth",
     "location": "London",
@@ -924,28 +869,6 @@
     "description": "https://lggadvisors.zohorecruit.com/jobs/Careers/552115000006353011/AI-Engineer"
   },
   {
-    "company": "DualEntry",
-    "position": "Site Reliability Engineer (SRE)",
-    "location": "Remote (NYC HQ)",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-07-19",
-    "logo": "https://ui-avatars.com/api/?name=DualEntry&background=random&color=fff&font-size=0.4&rounded=true&size=128",
-    "description": "https://jobs.ashbyhq.com/dualentry/3a238aad-ae17-452e-b528-9933bffdfc46"
-  },
-  {
-    "company": "JustPlay GmbH",
-    "position": "Developer Experience Engineer",
-    "location": "Berlin, Germany",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-07-19",
-    "logo": "https://ui-avatars.com/api/?name=JustPlay%20GmbH&background=random&color=fff&font-size=0.4&rounded=true&size=128",
-    "description": "https://jobs.ashbyhq.com/justplay-gmbh/a738403a-6f44-41ca-b2c2-6c05b293bab6"
-  },
-  {
     "company": "AllSides",
     "position": "3D Machine Learning Engineer",
     "location": "Bressanone, Italy",
@@ -1087,17 +1010,6 @@
     "post_date": "2026-06-29",
     "logo": "https://ui-avatars.com/api/?name=Halter&background=random&color=fff&font-size=0.4&rounded=true&size=128",
     "description": "https://relocate.me/new-zealand/auckland/halter/senior-engineer-go-to-market-10267"
-  },
-  {
-    "company": "Multiverse Computing",
-    "position": "Research AI Director",
-    "location": "Spain",
-    "contract": "Full Time",
-    "reloc": "Relocation Assistance",
-    "visa": "Visa Sponsorship",
-    "post_date": "2026-06-27",
-    "logo": "/media/multiversecomputing_logo.jpg",
-    "description": "https://relocate.me/spain/san-sebastian/multiverse-computing/research-ai-director-10268"
   },
   {
     "company": "Revolut",
