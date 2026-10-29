@@ -1,5 +1,38 @@
 [
   {
+    "company": "SumUp",
+    "position": "Senior Backend Engineer - Run & Grow",
+    "location": "Dusseldorf, North Rhine-Westphalia, Germany",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-10-28",
+    "logo": "/media/sumup_logo.jpg",
+    "description": "https://www.arbeitnow.com/jobs/companies/sumup/senior-backend-engineer-run-grow-dusseldorf-186046"
+  },
+  {
+    "company": "SumUp",
+    "position": "AI / Machine Learning Engineer II",
+    "location": "Berlin, Berlin, Germany",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-10-28",
+    "logo": "/media/sumup_logo.jpg",
+    "description": "https://www.arbeitnow.com/jobs/companies/sumup/ai-machine-learning-engineer-ii-berlin-137128"
+  },
+  {
+    "company": "Optiver",
+    "position": "Software Engineer - Automated Trading Systems",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-10-29",
+    "logo": "/media/optiver_logo.jpg",
+    "description": "https://nl.linkedin.com/jobs/view/software-engineer-automated-trading-systems-at-optiver-4423649756"
+  },
+  {
     "company": "hellofresh",
     "position": "Team Lead, SEO & GEO (all genders)",
     "location": "Berlin, Berlin",
