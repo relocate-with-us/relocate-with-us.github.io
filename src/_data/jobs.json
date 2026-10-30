@@ -1,5 +1,38 @@
 [
   {
+    "company": "Datadog",
+    "position": "Services Architect 3 - Paris/London",
+    "location": "London",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-10-30",
+    "logo": "/media/datadog_logo.jpg",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/datadog/services-architect-3-paris-london-144560"
+  },
+  {
+    "company": "Catawiki",
+    "position": "Senior Product Manager - Search & Ranking",
+    "location": "Netherlands",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-10-30",
+    "logo": "/media/catawiki_logo.jpg",
+    "description": "https://relocate.me/netherlands/amsterdam/catawiki/senior-product-manager-search-ranking-10309"
+  },
+  {
+    "company": "Catawiki",
+    "position": "Senior Manager – Data Engineering & Machine Learning",
+    "location": "Netherlands",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-10-30",
+    "logo": "/media/catawiki_logo.jpg",
+    "description": "https://relocate.me/netherlands/amsterdam/catawiki/senior-manager-data-engineering-machine-learning-10310"
+  },
+  {
     "company": "SumUp",
     "position": "Senior Backend Engineer - Run & Grow",
     "location": "Dusseldorf, North Rhine-Westphalia, Germany",
