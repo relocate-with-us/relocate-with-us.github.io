@@ -1,6 +1,28 @@
 [
   {
     "company": "hellofresh",
+    "position": "[EVERGREEN] Senior Category Manager",
+    "location": "Berlin, Berlin",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-11-06",
+    "logo": "/media/hellofresh_logo.jpg",
+    "description": "https://www.arbeitnow.com/jobs/companies/hellofresh/evergreen-senior-category-manager-berlin-berlin-468464"
+  },
+  {
+    "company": "Prior Labs",
+    "position": "Berlin, Freiburg, NYC",
+    "location": "ONSITE",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-11-06",
+    "logo": "https://logo.clearbit.com/priorlabs.com",
+    "description": "https://news.ycombinator.com/item?id=50398420"
+  },
+  {
+    "company": "hellofresh",
     "position": "Senior Manager - Global Product Ops Excellence (All Genders)",
     "location": "Berlin, Berlin",
     "contract": "Full Time",
