@@ -33,7 +33,7 @@ const TIMEOUT_MS  = 10000;
 const CONCURRENCY = 8;
 
 // HTTP status codes that definitively mean the job is gone
-const DEAD_STATUS = new Set([404, 410, 451]);
+const DEAD_STATUS = new Set([404, 410]);
 
 const args = process.argv.slice(2);
 const DRY_RUN    = args.includes("--dry-run");
@@ -95,34 +95,13 @@ function getDomain(url) {
 }
 
 function staticCheck(job) {
-  const url = job.description || "";
-
-  if (!url || !url.startsWith("http")) {
-    return { ok: false, reason: "missing-url" };
+  try {
+    const url = new URL(job.description);
+    if (!["http:", "https:"].includes(url.protocol)) throw new Error();
+    return { ok: true };
+  } catch {
+    return { ok: false, reason: "invalid-url" };
   }
-
-  const domain = getDomain(url);
-
-  // Always trust known job board sources
-  const isTrusted = [...TRUSTED_SOURCES].some(d => domain === d || domain.endsWith("." + d));
-  if (isTrusted) return { ok: true };
-
-  // Reject bare careers homepages
-  if (GENERIC_HOMEPAGE_RE.test(url)) {
-    return { ok: false, reason: "generic-careers-homepage" };
-  }
-
-  // Reject known fake domain patterns like .careers/jobs/
-  if (FAKE_DOMAINS_RE.test(url)) {
-    return { ok: false, reason: "ai-hallucinated-url" };
-  }
-
-  // Reject AI-hallucinated slug patterns (only on non-trusted domains)
-  if (AI_HALLUCINATION_RE.test(url)) {
-    return { ok: false, reason: "ai-hallucinated-url" };
-  }
-
-  return { ok: true };
 }
 
 // ─── Pass 2: Live HTTP check ─────────────────────────────────────────────────
@@ -131,27 +110,29 @@ function checkUrl(url) {
   return new Promise((resolve) => {
     const mod = url.startsWith("https") ? https : http;
     const req = mod.request(url, {
-      method: "HEAD",
+      method: "GET",
       timeout: TIMEOUT_MS,
       headers: {
         "User-Agent": "Mozilla/5.0 (compatible; VisaJobsBot/2.0; +https://visajobs.xyz)",
         "Accept": "text/html,application/xhtml+xml",
       },
     }, (res) => {
+      res.resume();
       // Follow one redirect
       if ([301, 302, 307, 308].includes(res.statusCode) && res.headers.location) {
         const loc = res.headers.location;
         const redirectUrl = loc.startsWith("http") ? loc : new URL(loc, url).href;
         const mod2 = redirectUrl.startsWith("https") ? https : http;
         const req2 = mod2.request(redirectUrl, {
-          method: "HEAD",
+          method: "GET",
           timeout: TIMEOUT_MS,
           headers: { "User-Agent": "Mozilla/5.0 (compatible; VisaJobsBot/2.0; +https://visajobs.xyz)" },
         }, (res2) => {
+          res2.resume();
           const dead = DEAD_STATUS.has(res2.statusCode);
           resolve({ status: res2.statusCode, ok: !dead });
         });
-        req2.on("error", () => resolve({ status: 0, ok: false, reason: "redirect-error" }));
+        req2.on("error", () => resolve({ status: 0, ok: true, reason: "redirect-error" }));
         req2.on("timeout", () => { req2.destroy(); resolve({ status: 0, ok: true, reason: "redirect-timeout" }); });
         req2.end();
         return;
@@ -162,7 +143,7 @@ function checkUrl(url) {
 
     req.on("error", (err) => {
       if (["ENOTFOUND", "ECONNREFUSED", "ECONNRESET"].includes(err.code)) {
-        resolve({ status: 0, ok: false, reason: err.code });
+        resolve({ status: 0, ok: true, reason: err.code });
       } else {
         // e.g. cert errors — give benefit of the doubt
         resolve({ status: 0, ok: true, reason: err.code });
@@ -264,6 +245,7 @@ async function main() {
   // Write cleaned list
   const liveJobs = jobs.filter(j => !deadJobs.has(j));
   fs.writeFileSync(JOBS_PATH, JSON.stringify(liveJobs, null, 2) + "\n");
+  fs.writeFileSync(path.join(__dirname, "..", "db.json"), JSON.stringify(liveJobs, null, 2) + "\n");
   console.log(`\n✅ Wrote ${liveJobs.length} live jobs (removed ${deadJobs.size}).`);
 
   // Append to log
