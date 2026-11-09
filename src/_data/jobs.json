@@ -1,5 +1,38 @@
 [
   {
+    "company": "SumUp",
+    "position": "Senior Data Analyst",
+    "location": "London, England, United Kingdom",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-11-09",
+    "logo": "/media/sumup_logo.jpg",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/sumup/senior-data-analyst-london-381264"
+  },
+  {
+    "company": "Monzo",
+    "position": "Analytics Engineering Manager, FinCrime",
+    "location": "Cardiff",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-11-09",
+    "logo": "/media/monzo_bank_logo.jpeg",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/monzo/analytics-engineering-manager-fincrime-cardiff-423236"
+  },
+  {
+    "company": "Datadog",
+    "position": "Principal GSI Partner Manager - Accenture (EMEA)",
+    "location": "Remote",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-11-09",
+    "logo": "/media/datadog_logo.jpg",
+    "description": "https://www.arbeitnow.co.uk/jobs/companies/datadog/remote-principal-gsi-partner-manager-accenture-emea-268012"
+  },
+  {
     "company": "hellofresh",
     "position": "[EVERGREEN] Senior Category Manager",
     "location": "Berlin, Berlin",
