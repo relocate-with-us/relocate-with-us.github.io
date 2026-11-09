@@ -75,6 +75,18 @@ function dedup(arr) {
   });
 }
 
+// Store plain text, never untrusted source HTML, for safe display.
+function htmlToText(html) {
+  return String(html).replace(/<\s*br\s*\/?\s*>/gi, "\n")
+    .replace(/<\/(?:p|div|li|h[1-6])\s*>/gi, "\n\n")
+    .replace(/<[^>]*>/g, " ")
+    .replace(/&(#x[0-9a-f]+|#\d+|amp|lt|gt|quot|apos|nbsp);/gi, (_, entity) => {
+      const e = entity.toLowerCase();
+      if (e[0] === "#") { const n = e[1] === "x" ? parseInt(e.slice(2), 16) : parseInt(e.slice(1), 10); return n > 0 && n <= 0x10ffff ? String.fromCodePoint(n) : " "; }
+      return ({amp:"&",lt:"<",gt:">",quot:'"',apos:"'",nbsp:" "})[e];
+    }).replace(/[ \t]+/g, " ").replace(/\n[ \t]*/g, "\n").replace(/\n{3,}/g, "\n\n").trim();
+}
+
 /** Generic HTTP GET → string */
 function fetchText(url, extraHeaders = {}) {
   return new Promise((resolve, reject) => {
@@ -147,7 +159,7 @@ async function classifyWithGemini(jobText) {
   const prompt = [
     "Does this job listing EXPLICITLY offer BOTH (1) visa sponsorship AND (2) relocation assistance?",
     "Return ONLY JSON: {\"include\":bool,\"visa\":bool,\"reloc\":bool,\"reason\":\"string\"}",
-    "If the company is well-known to sponsor visas internationally (Booking.com, Adyen, Revolut, Zalando, N26, Stripe, Wise, DeepMind, Spotify, etc.) treat visa=true.",
+    "Only use explicit evidence in the listing. Do not infer benefits from the company or source. Reject exclusions or uncertainty.",
     "Job text:\n" + jobText.slice(0, 3000)
   ].join("\n");
 
@@ -207,7 +219,7 @@ async function fetchArbeitnow() {
         location: j.location || "",
         url:      j.url || "",
         postDate: j.created_at ? new Date(j.created_at * 1000) : new Date(),
-        description: [j.title, j.company_name, j.location, j.description || ""].join(" ")
+        description: j.description || ""
       });
     }
 
@@ -558,6 +570,7 @@ async function main() {
 
   for (const [key, source] of Object.entries(toProcess)) {
     if (!source) { console.warn(`Unknown source: ${key}`); continue; }
+    if (key !== "arbeitnow") { console.log(`Skipping ${key}: source adapter does not provide reliable full listing evidence.`); continue; }
     console.log(`🔍 Fetching: ${source.label}...`);
 
     let rawJobs = [];
@@ -575,37 +588,12 @@ async function main() {
       if (!raw.url || !raw.url.startsWith("http")) continue;
       if (existingUrls.has(raw.url)) continue;
 
-      // Build a combined text for classification
-      const classText = [
-        raw.position, raw.company, raw.location, raw.description || "",
-        // Inject known-true signals for confirmed sources
-        source.visaConfirmed  ? "visa sponsorship" : "",
-        source.relocConfirmed ? "relocation assistance" : "",
-      ].join(" ");
-
-      // If both are confirmed by the source, OR if the company is a verified premium sponsor, skip classification
-      let include = !!(source.visaConfirmed && source.relocConfirmed);
-
-      if (!include && raw.company) {
-        const companyLower = raw.company.toLowerCase().trim();
-        if (sponsorsMap.has(companyLower)) {
-          include = true;
-        }
-      }
-
-      if (!include) {
-        try {
-          const result = await classify(classText);
-          include = result.include;
-          if (result.source !== "keyword" && result.source !== "keyword-skip") {
-            await sleep(1500); // rate-limit Gemini only if we hit the API
-          } else {
-            await sleep(100);  // short sleep for fast keyword evaluation
-          }
-        } catch {
-          include = false;
-        }
-      }
+      // Only complete source descriptions are eligible for automated publication.
+      // Other source adapters contain snippets or inferred benefit claims.
+      if (key !== "arbeitnow" || !raw.description) continue;
+      const classText = htmlToText(raw.description);
+      const result = keywordClassify(classText);
+      const include = result.include && /\b(?:visa sponsorship|sponsor(?:s|ed|ing)? (?:your |a |the )?visa)\b/i.test(classText) && !/\b(?:no|not|without|unable to|cannot|do not|does not|won.t)\b[^.\n]{0,80}\b(?:visa|sponsor|relocat)/i.test(classText);
 
       if (!include) continue;
 
@@ -621,6 +609,7 @@ async function main() {
           : TODAY,
         logo:      companyToLogoPath(raw.company),
         description: raw.url,
+        job_description: classText,
       };
 
       const key2 = jobKey(record);
@@ -652,7 +641,7 @@ async function main() {
 
   // Newest-first merge
   const mergedData = dedup([...toAdd, ...existingData]);
-  const mergedDb   = dedup([...toAdd, ...existingDb]);
+  const mergedDb   = mergedData;
 
   writeJson(JOBS_PATH, mergedData);
   writeJson(DB_PATH,   mergedDb);

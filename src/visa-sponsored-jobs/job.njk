@@ -7,37 +7,8 @@ permalink: "/visa-sponsored-jobs/{{ job | jobSlug }}/index.html"
 layout: layouts/base.njk
 eleventyComputed:
   title: "{{ job.position }} at {{ job.company }} (Visa Sponsorship Available)"
-  description: "Apply for the {{ job.position }} position at {{ job.company }} in {{ job.location }}. Visa sponsorship: {{ job.visa }}. Relocation assistance: {{ job.reloc }}. Verified sponsorship opportunities."
+  description: "Apply for the {{ job.position }} position at {{ job.company }} in {{ job.location }}. Visa sponsorship: {{ job.visa }}. Relocation assistance: {{ job.reloc }}. Check the source for current eligibility and benefits."
 ---
-
-{% block structuredData %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "JobPosting",
-  "title": "{{ job.position }}",
-  "description": "<p>Apply for the {{ job.position }} position at {{ job.company }} in {{ job.location }}. This position offers {{ job.visa }} and {{ job.reloc }}. For full job details and to submit your application, please visit the employer's official job board via the apply link below.</p>",
-  "datePosted": "{{ job.post_date }}",
-  "validThrough": "{{ job.post_date | validThrough }}",
-  "employmentType": "FULL_TIME",
-  "hiringOrganization": {
-    "@type": "Organization",
-    "name": "{{ job.company }}",
-    "logo": "{{ site.url }}{{ job.logo }}"
-  },
-  "jobLocation": {
-    "@type": "Place",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "{{ job.location | extractCity }}",
-      "addressRegion": "{{ job.location | extractCity }}",
-      "addressCountry": "{{ job.location | countryCode }}"
-    }
-  },
-  "url": "{{ site.url }}/visa-sponsored-jobs/{{ job | jobSlug }}/"
-}
-</script>
-{% endblock %}
 
 <section class="bg-gradient-to-b from-brand-50 to-white dark:from-gray-900 dark:to-gray-950 py-12">
   <div class="max-w-3xl mx-auto px-4">
@@ -125,79 +96,17 @@ eleventyComputed:
         About This Role
       </h2>
       <div class="prose-custom text-sm text-gray-600 dark:text-gray-400 leading-relaxed space-y-4">
-        <p>
-          <strong>{{ job.company }}</strong> is hiring a <strong>{{ job.position }}</strong> based in <strong>{{ job.location }}</strong>.
-          This is a <strong>{{ job.contract }}</strong> position that comes with full <strong>{{ job.visa | lower }}</strong> and <strong>{{ job.reloc | lower }}</strong> for qualified international candidates.
-        </p>
-
-        <h3 class="text-base font-semibold text-gray-900 dark:text-white !mt-6">What to Expect</h3>
-        <ul class="list-disc list-inside space-y-1.5">
-          <li><strong>Role:</strong> {{ job.position }}</li>
-          <li><strong>Company:</strong> {{ job.company }}</li>
-          <li><strong>Location:</strong> {{ job.location }}</li>
-          <li><strong>Employment Type:</strong> {{ job.contract }}</li>
-          <li><strong>Visa Sponsorship:</strong> ✅ {{ job.visa }}</li>
-          <li><strong>Relocation Support:</strong> ✅ {{ job.reloc }}</li>
-          {% if job.post_date %}<li><strong>Posted:</strong> {{ job.post_date | timeAgo }}</li>{% endif %}
-        </ul>
-
-        <h3 class="text-base font-semibold text-gray-900 dark:text-white !mt-6">How to Apply</h3>
-        <p>
-          To see the full job description, requirements, and application form, click the <strong>"Apply to {{ job.company }}"</strong> button below.
-          You will be redirected to {{ job.company }}'s official careers page where you can submit your application directly.
-        </p>
-        <p>
-          This listing has been verified to offer visa sponsorship. If you're relocating internationally, {{ job.company }} will support your work visa process and help with your move to {{ job.location }}.
-        </p>
+        {% if job.job_description %}
+        <div class="whitespace-pre-line">{{ job.job_description | escape }}</div>
+        {% else %}
+        <p>The full description is available on the source listing. Please confirm visa and relocation terms with the employer before applying.</p>
+        {% endif %}
 
         <div class="mt-6">
           <a href="{{ job.description }}" target="_blank" rel="noopener" class="btn-primary inline-flex items-center">
             View Full Description & Apply
             <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
           </a>
-        </div>
-      </div>
-    </div>
-
-    {# Visa & Relocation Context #}
-    <div class="card p-6 mb-8">
-      <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-4">Visa &amp; Relocation Details</h2>
-      <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed">
-        This role as a <strong>{{ job.position }}</strong> is fully verified to offer <strong>{{ job.visa }}</strong> and <strong>{{ job.reloc }}</strong>. 
-        Qualified international candidates who are selected for this role will receive full visa sponsorship and moving support to relocate to <strong>{{ job.location }}</strong>.
-      </p>
-      
-      {% set country = job.location | extractCountry %}
-      {% if country %}
-        {% set guideSlug = country | lower | replace(" ", "-") | replace("united kingdom", "uk") %}
-        <div class="mt-6 bg-brand-50 dark:bg-brand-950/20 p-5 rounded-xl border border-brand-100 dark:border-brand-900/30 flex items-start gap-4">
-          <div class="text-3xl">✈️</div>
-          <div>
-            <h3 class="font-bold text-gray-900 dark:text-white text-sm mb-1">Relocating to {{ country }}?</h3>
-            <p class="text-gray-600 dark:text-gray-400 text-xs mb-3">Read our comprehensive country guide for {{ country }} to learn about visa types, cost of living, housing, tax systems, and integration.</p>
-            <a href="/resources/country-guides/{{ guideSlug }}/" class="text-brand-600 dark:text-brand-400 font-semibold hover:underline inline-flex items-center gap-1 text-xs">
-              Read {{ country }} Country Guide <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-            </a>
-          </div>
-        </div>
-      {% endif %}
-    </div>
-
-    {# FAQ section #}
-    <div class="card p-6 mb-8">
-      <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-4">Frequently Asked Questions</h2>
-      <div class="space-y-4">
-        <div class="border-b dark:border-gray-800 pb-3 last:border-0 last:pb-0">
-          <h3 class="font-semibold text-gray-900 dark:text-white text-sm mb-1">Does {{ job.company }} provide visa sponsorship for this role?</h3>
-          <p class="text-gray-600 dark:text-gray-400 text-xs">Yes, {{ job.company }} provides {{ job.visa }} for the {{ job.position }} position.</p>
-        </div>
-        <div class="border-b dark:border-gray-800 pb-3 last:border-0 last:pb-0">
-          <h3 class="font-semibold text-gray-900 dark:text-white text-sm mb-1">Is relocation assistance included?</h3>
-          <p class="text-gray-600 dark:text-gray-400 text-xs">Yes, relocation assistance ({{ job.reloc }}) is offered by {{ job.company }} for this job.</p>
-        </div>
-        <div class="border-b dark:border-gray-800 pb-3 last:border-0 last:pb-0">
-          <h3 class="font-semibold text-gray-900 dark:text-white text-sm mb-1">Where is the role based?</h3>
-          <p class="text-gray-600 dark:text-gray-400 text-xs">This position is located in {{ job.location }}.</p>
         </div>
       </div>
     </div>

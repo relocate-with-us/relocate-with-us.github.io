@@ -20,7 +20,7 @@ jobs:
           node-version: "20"
 
       - name: Check job URLs
-        run: node scripts/check-jobs.js --batch=100
+        run: node scripts/check-jobs.js
 
       - name: Check for changes
         id: changes
@@ -37,12 +37,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/_data/jobs.json scripts/removed-jobs.log
+          git add src/_data/jobs.json db.json scripts/removed-jobs.log
           REMOVED=$(git diff --cached --numstat src/_data/jobs.json | awk '{print $2}')
           git commit -m "$(cat <<'EOF'
           chore: remove $REMOVED unavailable job listings
 
-          Automated check found dead apply URLs (404/410/DNS failures).
+          Automated check found invalid URLs or HTTP 404/410 responses.
           See scripts/removed-jobs.log for details.
           EOF
           )"
