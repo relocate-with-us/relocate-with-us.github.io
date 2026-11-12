@@ -1,6 +1,28 @@
 [
   {
     "company": "hellofresh",
+    "position": "Senior Expert Compensation Manager  (all genders)",
+    "location": "Berlin, Berlin",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-11-12",
+    "logo": "/media/hellofresh_logo.jpg",
+    "description": "https://www.arbeitnow.com/jobs/companies/hellofresh/senior-expert-compensation-manager-all-genders-berlin-berlin-480238"
+  },
+  {
+    "company": "4psgermany",
+    "position": "Global Trainee Program - Outperformer Software Business Track (HILTI)",
+    "location": "",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-11-12",
+    "logo": "https://logo.clearbit.com/4psgermany.com",
+    "description": "https://www.arbeitnow.com/jobs/companies/4psgermany/global-trainee-program-outperformer-software-business-track-hilti-313428"
+  },
+  {
+    "company": "hellofresh",
     "position": "Senior Global Mobility Manager (all genders)",
     "location": "Berlin, Berlin",
     "contract": "Full Time",
