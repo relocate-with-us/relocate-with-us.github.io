@@ -1,6 +1,28 @@
 [
   {
     "company": "hellofresh",
+    "position": "Senior Price & Discount Strategy Manager (all genders)",
+    "location": "Berlin, Berlin",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-11-14",
+    "logo": "/media/hellofresh_logo.jpg",
+    "description": "https://www.arbeitnow.com/jobs/companies/hellofresh/senior-price-discount-strategy-manager-all-genders-berlin-berlin-428435"
+  },
+  {
+    "company": "sumup",
+    "position": "Data analyst - AML",
+    "location": "Berlin",
+    "contract": "Full Time",
+    "reloc": "Relocation Assistance",
+    "visa": "Visa Sponsorship",
+    "post_date": "2026-11-14",
+    "logo": "/media/sumup_logo.jpg",
+    "description": "https://www.arbeitnow.com/jobs/companies/sumup/data-analyst-aml-berlin-3972"
+  },
+  {
+    "company": "hellofresh",
     "position": "Senior Expert Compensation Manager  (all genders)",
     "location": "Berlin, Berlin",
     "contract": "Full Time",
