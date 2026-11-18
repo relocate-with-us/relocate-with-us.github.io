@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
-title: "Visa Sponsorship Jobs in Europe & Worldwide — 270+ Open Roles (2026)"
-description: "Browse 270+ verified tech jobs with visa sponsorship and relocation assistance. Companies like Stripe, Revolut, Cloudflare, and Spotify are hiring now. Updated weekly."
+title: "Visa Sponsorship Jobs"
+description: "Tech jobs whose postings or a known sponsor list show visa sponsorship. Relocation assistance is listed only when the posting says so."
 ogImage: "https://visajobs.xyz/media/og-image.png"
 ---
 
@@ -24,11 +24,11 @@ ogImage: "https://visajobs.xyz/media/og-image.png"
         "position": {{ loop.index }},
         "item": {
           "@type": "JobPosting",
-          "title": "{{ job.position }}",
-          "datePosted": "{{ job.post_date }}",
-          "validThrough": "{{ job.post_date | validThrough }}",
-          "description": "{{ job.position }} at {{ job.company }} — {{ job.location }}. See the employer listing for visa sponsorship and relocation details.",
-          "employmentType": "FULL_TIME",
+          "title": {{ job.position | jsonify | safe }},
+          "datePosted": "{{ job.posted_at or (job.post_date | isoDate) }}",
+          "validThrough": "{{ job.valid_through or (job.post_date | validThrough) }}",
+          "description": {{ (job.body or job.summary or (job.position ~ " at " ~ job.company)) | jsonify | safe }},
+          {% set emp = job.contract | employmentType %}{% if emp %}"employmentType": "{{ emp }}",{% endif %}
           "hiringOrganization": {
             "@type": "Organization",
             "name": "{{ job.company }}",
@@ -38,11 +38,8 @@ ogImage: "https://visajobs.xyz/media/og-image.png"
             "@type": "Place",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "",
-              "addressLocality": "{{ job.location | extractCity }}",
-              "addressRegion": "{{ job.location | extractCity }}",
-              "postalCode": "",
-              "addressCountry": "{{ job.location | countryCode }}"
+              "addressLocality": {{ (job.address.addressLocality if job.address else (job.location | extractCity)) | jsonify | safe }}{% set country = job.address.addressCountry if job.address and job.address.addressCountry else (job.location | countryCode) %}{% if country %},
+              "addressCountry": "{{ country }}"{% endif %}
             }
           },
           "url": "{{ job.description }}"
@@ -61,7 +58,7 @@ ogImage: "https://visajobs.xyz/media/og-image.png"
       Visa Sponsored Jobs
     </h1>
     <p class="text-gray-600 dark:text-gray-400 mb-8">
-      {{ jobs | length }}+ opportunities with visa sponsorship and relocation assistance
+      {{ jobs | length }}+ roles with recorded visa-sponsorship evidence
     </p>
 
     {# Search & Filters #}
@@ -101,7 +98,7 @@ ogImage: "https://visajobs.xyz/media/og-image.png"
       </div>
 
       {% for job in jobs %}
-      <div class="job-card" data-position="{{ job.position | lower }}" data-company="{{ job.company | lower }}" data-location="{{ job.location | lower }}" data-date="{{ job.post_date }}">
+      <div class="job-card" data-position="{{ job.position | lower }}" data-company="{{ job.company | lower }}" data-location="{{ job.location | lower }}" data-date="{{ job.posted_at or job.post_date }}" data-country="{{ job.country | lower }}" data-excerpt="{{ job.excerpt | lower }}">
         <div class="flex flex-col sm:flex-row sm:items-start gap-4">
           <img src="{{ job | companyLogo }}" alt="{{ job.company }}" class="w-12 h-12 rounded-lg object-cover shrink-0" loading="lazy" onerror="this.onerror=null;this.src='/favicon/android-chrome-192x192.png'">
           <div class="flex-1 min-w-0">
@@ -118,13 +115,13 @@ ogImage: "https://visajobs.xyz/media/og-image.png"
               </span>
               <span class="flex items-center gap-1">
                 <i data-lucide="clock" class="w-3.5 h-3.5"></i>
-                {{ job.post_date | timeAgo }}
+                {% set postedAt = job.posted_at or job.post_date %}<time class="js-timeago" datetime="{{ postedAt }}" title="{{ postedAt }}">{{ postedAt | timeAgo }}</time>
               </span>
             </div>
             <div class="flex flex-wrap gap-2">
               {% if job.reloc %}<span class="badge badge-reloc">{{ job.reloc }}</span>{% endif %}
               {% if job.visa %}<span class="badge badge-visa">{{ job.visa }}</span>{% endif %}
-              <span class="badge badge-contract">{{ job.contract }}</span>
+              {% if job.contract %}<span class="badge badge-contract">{{ job.contract }}</span>{% endif %}
             </div>
           </div>
           <a href="{{ job.description }}" target="_blank" rel="noopener" class="job-card-apply">
@@ -220,9 +217,10 @@ ogImage: "https://visajobs.xyz/media/og-image.png"
     filteredCards = allCards.filter(function(card) {
       var searchable = (card.dataset.position || '') + ' ' +
                        (card.dataset.company || '') + ' ' +
-                       (card.dataset.location || '');
+                       (card.dataset.location || '') + ' ' +
+                       (card.dataset.excerpt || '');
       var matchesSearch = !query || tokenMatch(searchable, query);
-      var matchesCountry = !country || (card.dataset.location || '').includes(country);
+      var matchesCountry = !country || (card.dataset.country || card.dataset.location || '').includes(country);
       return matchesSearch && matchesCountry;
     });
 

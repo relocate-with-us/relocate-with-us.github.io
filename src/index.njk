@@ -87,13 +87,14 @@ ogImage: "https://visajobs.xyz/media/og-image.png"
               </span>
               <span class="flex items-center gap-1">
                 <i data-lucide="clock" class="w-3.5 h-3.5"></i>
-                {{ job.post_date | timeAgo }}
+                {% set postedAt = job.posted_at or job.post_date %}<time class="js-timeago" datetime="{{ postedAt }}" title="{{ postedAt }}">{{ postedAt | timeAgo }}</time>
               </span>
             </div>
+            {% if job.excerpt %}<p class="text-sm text-gray-600 dark:text-gray-400 mb-3">{{ job.excerpt }}</p>{% endif %}
             <div class="flex flex-wrap gap-2">
               {% if job.reloc %}<span class="badge badge-reloc">{{ job.reloc }}</span>{% endif %}
               {% if job.visa %}<span class="badge badge-visa">{{ job.visa }}</span>{% endif %}
-              <span class="badge badge-contract">{{ job.contract }}</span>
+              {% if job.contract %}<span class="badge badge-contract">{{ job.contract }}</span>{% endif %}
             </div>
           </div>
           <a href="{{ job.description }}" target="_blank" rel="noopener" class="job-card-apply">
@@ -139,8 +140,8 @@ ogImage: "https://visajobs.xyz/media/og-image.png"
         <div class="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center mx-auto mb-4">
           <i data-lucide="shield-check" class="w-6 h-6 text-purple-600 dark:text-purple-400"></i>
         </div>
-        <div class="text-3xl font-bold text-gray-900 dark:text-white mb-1">100%</div>
-        <div class="text-gray-600 dark:text-gray-400 text-sm">Visa Sponsored</div>
+        <div class="text-3xl font-bold text-gray-900 dark:text-white mb-1">Checked</div>
+        <div class="text-gray-600 dark:text-gray-400 text-sm">Sponsorship evidence</div>
       </div>
       <div class="card p-6 text-center">
         <div class="w-12 h-12 bg-yellow-100 dark:bg-yellow-900/30 rounded-xl flex items-center justify-center mx-auto mb-4">

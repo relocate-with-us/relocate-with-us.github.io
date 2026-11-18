@@ -33,7 +33,7 @@ module.exports = function (eleventyConfig) {
     // ISO dates (YYYY-MM-DD) are UTC midnight — anchor to noon to avoid
     // off-by-one-day errors in timezones ahead of UTC (e.g. UTC+2).
     const normalized = /^\d{4}-\d{2}-\d{2}$/.test(dateStr)
-      ? dateStr + "T12:00:00"
+      ? dateStr + "T12:00:00Z"
       : dateStr;
     const date = new Date(normalized);
     if (isNaN(date.getTime())) return "Recently";
@@ -90,24 +90,31 @@ module.exports = function (eleventyConfig) {
       ""
     );
     const parts = cleaned.split(",");
-    const country = parts[parts.length - 1].trim();
+    const country = (job.country || "").trim() || parts[parts.length - 1].trim();
     const codes = {
       "Germany": "DE", "Netherlands": "NL", "United Kingdom": "GB", "UK": "GB",
       "Spain": "ES", "Ireland": "IE", "Sweden": "SE", "Switzerland": "CH",
       "Portugal": "PT", "Poland": "PL", "Denmark": "DK", "Czech Republic": "CZ",
       "France": "FR", "Austria": "AT", "Belgium": "BE", "Finland": "FI",
       "Italy": "IT", "Norway": "NO", "Bulgaria": "BG", "Romania": "RO",
-      "Europe": "EU", "Canada": "CA", "Australia": "AU", "Japan": "JP",
+      "Canada": "CA", "Australia": "AU", "Japan": "JP",
       "New Zealand": "NZ", "UAE": "AE", "Singapore": "SG", "Qatar": "QA",
+      "United States": "US", "USA": "US", "US": "US",
+      "United States of America": "US",
+      "The Netherlands": "NL", "Holland": "NL",
+      "Czechia": "CZ", "Luxembourg": "LU", "Estonia": "EE",
+      "Lithuania": "LT", "Latvia": "LV", "Hungary": "HU",
+      "Croatia": "HR", "Slovakia": "SK", "Slovenia": "SI",
+      "Greece": "GR", "Malta": "MT", "Cyprus": "CY", "Iceland": "IS",
     };
-    return codes[country] || "EU";
+    return codes[country] || "";
   });
 
   // Generate validThrough date (90 days after post_date) in ISO format
   eleventyConfig.addFilter("validThrough", (dateStr) => {
     const date = new Date(dateStr);
-    if (isNaN(date.getTime())) return new Date(Date.now() + 90 * 86400000).toISOString().split("T")[0];
-    date.setDate(date.getDate() + 90);
+    if (isNaN(date.getTime())) return new Date(Date.now() + 45 * 86400000).toISOString().split("T")[0];
+    date.setDate(date.getDate() + 45);
     return date.toISOString().split("T")[0];
   });
 
@@ -123,6 +130,18 @@ module.exports = function (eleventyConfig) {
   });
 
   // Limit/slice filter
+  
+  eleventyConfig.addFilter("employmentType", (contract) => {
+    const c = String(contract || "").toLowerCase();
+    if (!c) return "";
+    if (c.includes("intern")) return "INTERN";
+    if (c.includes("part")) return "PART_TIME";
+    if (c.includes("contract") || c.includes("freelance")) return "CONTRACTOR";
+    if (c.includes("temp")) return "TEMPORARY";
+    if (c.includes("full")) return "FULL_TIME";
+    return "";
+  });
+
   eleventyConfig.addFilter("limit", (arr, limit) => {
     return arr.slice(0, limit);
   });
@@ -141,7 +160,7 @@ module.exports = function (eleventyConfig) {
         ""
       );
       const parts = cleaned.split(",");
-      const country = parts[parts.length - 1].trim();
+      const country = (job.country || "").trim() || parts[parts.length - 1].trim();
       if (country) countries.add(country);
     });
     return Array.from(countries).sort();
@@ -156,7 +175,7 @@ module.exports = function (eleventyConfig) {
         ""
       );
       const parts = cleaned.split(",");
-      const country = parts[parts.length - 1].trim();
+      const country = (job.country || "").trim() || parts[parts.length - 1].trim();
       if (!groups[country]) groups[country] = [];
       groups[country].push(job);
     });

@@ -39,13 +39,14 @@ description: "Find international jobs with relocation packages and assistance. B
                 <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> {{ job.location }}
               </span>
               <span class="flex items-center gap-1">
-                <i data-lucide="clock" class="w-3.5 h-3.5"></i> {{ job.post_date | timeAgo }}
+                <i data-lucide="clock" class="w-3.5 h-3.5"></i> {% set postedAt = job.posted_at or job.post_date %}<time class="js-timeago" datetime="{{ postedAt }}" title="{{ postedAt }}">{{ postedAt | timeAgo }}</time>
               </span>
             </div>
+            {% if job.excerpt %}<p class="text-sm text-gray-600 dark:text-gray-400 mb-3">{{ job.excerpt }}</p>{% endif %}
             <div class="flex flex-wrap gap-2">
               {% if job.reloc %}<span class="badge badge-reloc">{{ job.reloc }}</span>{% endif %}
               {% if job.visa %}<span class="badge badge-visa">{{ job.visa }}</span>{% endif %}
-              <span class="badge badge-contract">{{ job.contract }}</span>
+              {% if job.contract %}<span class="badge badge-contract">{{ job.contract }}</span>{% endif %}
             </div>
           </div>
           <a href="{{ job.description }}" target="_blank" rel="noopener" class="job-card-apply">Apply</a>

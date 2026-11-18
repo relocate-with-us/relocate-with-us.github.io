@@ -1,55 +1,18 @@
 name: Check Job Availability
 
+# Expiry runs inside Lamiiine/scrape-jobs after each scrape, which also
+# pushes to main and triggers Build and Deploy. Leaving this on a schedule
+# reintroduced a GITHUB_TOKEN push that does not deploy, and the commit
+# message left "$REMOVED" unexpanded.
 on:
-  schedule:
-    # Run every Monday and Thursday at 06:00 UTC
-    - cron: "0 6 * * 1,4"
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
-      - name: Check job URLs
-        run: node scripts/check-jobs.js --batch=100
-
-      - name: Check for changes
-        id: changes
-        run: |
-          if git diff --quiet src/_data/jobs.json; then
-            echo "changed=false" >> $GITHUB_OUTPUT
-          else
-            echo "changed=true" >> $GITHUB_OUTPUT
-            echo "$(git diff --stat src/_data/jobs.json)"
-          fi
-
-      - name: Commit and push
-        if: steps.changes.outputs.changed == 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/_data/jobs.json scripts/removed-jobs.log
-          REMOVED=$(git diff --cached --numstat src/_data/jobs.json | awk '{print $2}')
-          git commit -m "$(cat <<'EOF'
-          chore: remove $REMOVED unavailable job listings
-
-          Automated check found dead apply URLs (404/410/DNS failures).
-          See scripts/removed-jobs.log for details.
-          EOF
-          )"
-          git push
-
-      - name: Trigger site deploy
-        if: steps.changes.outputs.changed == 'true'
-        run: gh workflow run deploy.yml
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Expiry lives in scrape-jobs
+        run: echo "Stale listings are removed by the Daily Job Scraper in Lamiiine/scrape-jobs."

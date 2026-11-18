@@ -42,9 +42,9 @@ permalink: /jobs-in-spain/
           "@type": "JobPosting",
           "title": "{{ job.position }}",
           "datePosted": "{{ job.post_date }}",
-          "validThrough": "{{ job.post_date | validThrough }}",
+          "validThrough": "{{ job.valid_through or (job.post_date | validThrough) }}",
           "description": "{{ job.position }} at {{ job.company }} in {{ job.location }}. Visa sponsorship and relocation assistance included.",
-          "employmentType": "FULL_TIME",
+          {% set emp = job.contract | employmentType %}{% if emp %}"employmentType": "{{ emp }}",{% endif %}
           "hiringOrganization": {
             "@type": "Organization",
             "name": "{{ job.company }}",
@@ -132,13 +132,14 @@ permalink: /jobs-in-spain/
               </span>
               <span class="flex items-center gap-1">
                 <i data-lucide="clock" class="w-3.5 h-3.5"></i>
-                {{ job.post_date | timeAgo }}
+                {% set postedAt = job.posted_at or job.post_date %}<time class="js-timeago" datetime="{{ postedAt }}" title="{{ postedAt }}">{{ postedAt | timeAgo }}</time>
               </span>
             </div>
+            {% if job.excerpt %}<p class="text-sm text-gray-600 dark:text-gray-400 mb-3">{{ job.excerpt }}</p>{% endif %}
             <div class="flex flex-wrap gap-2">
               {% if job.reloc %}<span class="badge badge-reloc">{{ job.reloc }}</span>{% endif %}
               {% if job.visa %}<span class="badge badge-visa">{{ job.visa }}</span>{% endif %}
-              <span class="badge badge-contract">{{ job.contract }}</span>
+              {% if job.contract %}<span class="badge badge-contract">{{ job.contract }}</span>{% endif %}
             </div>
           </div>
           <a href="{{ job.description }}" target="_blank" rel="noopener" class="job-card-apply">

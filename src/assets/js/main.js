@@ -15,7 +15,7 @@ function timeAgo(dateString) {
   // ISO dates (YYYY-MM-DD) are UTC midnight — anchor to noon to avoid
   // off-by-one-day shifts in timezones ahead of UTC.
   var normalized = /^\d{4}-\d{2}-\d{2}$/.test(dateString)
-    ? dateString + "T12:00:00"
+    ? dateString + "T12:00:00Z"
     : dateString;
   var date = new Date(normalized);
   if (isNaN(date.getTime())) return "Recently";
