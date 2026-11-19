@@ -28,7 +28,7 @@ ogImage: "https://visajobs.xyz/media/og-image.png"
           "datePosted": "{{ job.posted_at or (job.post_date | isoDate) }}",
           "validThrough": "{{ job.valid_through or (job.post_date | validThrough) }}",
           "description": {{ (job.body or job.summary or (job.position ~ " at " ~ job.company)) | jsonify | safe }},
-          {% set emp = job.contract | employmentType %}{% if emp %}"employmentType": "{{ emp }}",{% endif %}
+          "employmentType": "{{ job.employmentType or (job.contract | employmentType) }}",
           "hiringOrganization": {
             "@type": "Organization",
             "name": "{{ job.company }}",
@@ -38,7 +38,8 @@ ogImage: "https://visajobs.xyz/media/og-image.png"
             "@type": "Place",
             "address": {
               "@type": "PostalAddress",
-              "addressLocality": {{ (job.address.addressLocality if job.address else (job.location | extractCity)) | jsonify | safe }}{% set country = job.address.addressCountry if job.address and job.address.addressCountry else (job.location | countryCode) %}{% if country %},
+              "addressLocality": {{ (job.address.addressLocality if job.address and job.address.addressLocality else ((job.location | extractCity) or "Remote")) | jsonify | safe }},
+              "addressRegion": {{ (job.address.addressRegion if job.address and job.address.addressRegion else (job.address.addressLocality if job.address and job.address.addressLocality else ((job.location | extractCity) or "Remote"))) | jsonify | safe }}{% set country = job.address.addressCountry if job.address and job.address.addressCountry else (job.location | countryCode) %}{% if country %},
               "addressCountry": "{{ country }}"{% endif %}
             }
           },
@@ -121,7 +122,7 @@ ogImage: "https://visajobs.xyz/media/og-image.png"
             <div class="flex flex-wrap gap-2">
               {% if job.reloc %}<span class="badge badge-reloc">{{ job.reloc }}</span>{% endif %}
               {% if job.visa %}<span class="badge badge-visa">{{ job.visa }}</span>{% endif %}
-              {% if job.contract %}{% if job.contract %}<span class="badge badge-contract">{{ job.contract }}</span>{% endif %}{% endif %}
+              {% if job.contract %}{% if job.contract %}{% if job.contract %}<span class="badge badge-contract">{{ job.contract }}</span>{% endif %}{% endif %}{% endif %}
             </div>
           </div>
           <a href="{{ job.description }}" target="_blank" rel="noopener" class="job-card-apply">

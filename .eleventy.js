@@ -133,13 +133,11 @@ module.exports = function (eleventyConfig) {
   
   eleventyConfig.addFilter("employmentType", (contract) => {
     const c = String(contract || "").toLowerCase();
-    if (!c) return "";
     if (c.includes("intern")) return "INTERN";
-    if (c.includes("part")) return "PART_TIME";
+    if (c.includes("part-time") || c.includes("part time") || c.includes("parttime")) return "PART_TIME";
     if (c.includes("contract") || c.includes("freelance")) return "CONTRACTOR";
     if (c.includes("temp")) return "TEMPORARY";
-    if (c.includes("full")) return "FULL_TIME";
-    return "";
+    return "FULL_TIME";
   });
 
   eleventyConfig.addFilter("limit", (arr, limit) => {

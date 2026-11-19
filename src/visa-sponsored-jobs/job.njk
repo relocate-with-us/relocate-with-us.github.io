@@ -11,8 +11,12 @@ eleventyComputed:
 ---
 
 {% block structuredData %}
-{% set emp = job.contract | employmentType %}
+{% set emp = job.employmentType or (job.contract | employmentType) %}
+{% set city = job.address.addressLocality if job.address and job.address.addressLocality else (job.location | extractCity) %}
+{% set region = job.address.addressRegion if job.address and job.address.addressRegion else (city or "Remote") %}
 {% set country = job.address.addressCountry if job.address and job.address.addressCountry else (job.location | countryCode) %}
+{% set countryName = job.country or country or "Remote" %}
+{% set remote = job.jobLocationType == "TELECOMMUTE" or "remote" in (job.location | lower) %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -21,7 +25,7 @@ eleventyComputed:
   "description": {{ (job.body or job.summary or job.sponsorship_quote or job.position) | jsonify | safe }},
   "datePosted": "{{ job.posted_at or (job.post_date | isoDate) }}",
   "validThrough": "{{ job.valid_through or (job.post_date | validThrough) }}",
-  {% if emp %}"employmentType": "{{ emp }}",{% endif %}
+  "employmentType": "{{ emp }}",
   "directApply": false,
   {% if job.salary and job.salary.min %}
   "baseSalary": {
@@ -44,10 +48,16 @@ eleventyComputed:
     "@type": "Place",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": {{ (job.address.addressLocality if job.address else (job.location | extractCity)) | jsonify | safe }}{% if country %},
+      "addressLocality": {{ (city or region) | jsonify | safe }},
+      "addressRegion": {{ region | jsonify | safe }}{% if country %},
       "addressCountry": "{{ country }}"{% endif %}
     }
-  },
+  }{% if remote %},
+  "jobLocationType": "TELECOMMUTE",
+  "applicantLocationRequirements": {
+    "@type": "Country",
+    "name": {{ countryName | jsonify | safe }}
+  }{% endif %},
   "url": "{{ site.url }}/visa-sponsored-jobs/{{ job | jobSlug }}/"
 }
 </script>

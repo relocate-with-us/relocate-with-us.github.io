@@ -45,7 +45,7 @@ permalink: /jobs-in-germany/
           "datePosted": "{{ job.post_date }}",
           "validThrough": "{{ job.valid_through or (job.post_date | validThrough) }}",
           "description": "{{ job.position }} at {{ job.company }} in {{ job.location }}. Visa sponsorship and relocation assistance included.",
-          {% set emp = job.contract | employmentType %}{% if emp %}"employmentType": "{{ emp }}",{% endif %}
+          "employmentType": "{{ job.employmentType or (job.contract | employmentType) }}",
           "hiringOrganization": {
             "@type": "Organization",
             "name": "{{ job.company }}",
@@ -56,8 +56,8 @@ permalink: /jobs-in-germany/
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "",
-              "addressLocality": "{{ job.location | extractCity }}",
-              "addressRegion": "{{ job.location | extractCity }}",
+              "addressLocality": {{ (job.address.addressLocality if job.address and job.address.addressLocality else ((job.location | extractCity) or "Remote")) | jsonify | safe }},
+              "addressRegion": {{ (job.address.addressRegion if job.address and job.address.addressRegion else (job.address.addressLocality if job.address and job.address.addressLocality else ((job.location | extractCity) or "Remote"))) | jsonify | safe }},
               "postalCode": "",
               "addressCountry": "DE"
             }
@@ -140,7 +140,7 @@ permalink: /jobs-in-germany/
             <div class="flex flex-wrap gap-2">
               {% if job.reloc %}<span class="badge badge-reloc">{{ job.reloc }}</span>{% endif %}
               {% if job.visa %}<span class="badge badge-visa">{{ job.visa }}</span>{% endif %}
-              {% if job.contract %}{% if job.contract %}<span class="badge badge-contract">{{ job.contract }}</span>{% endif %}{% endif %}
+              {% if job.contract %}{% if job.contract %}{% if job.contract %}<span class="badge badge-contract">{{ job.contract }}</span>{% endif %}{% endif %}{% endif %}
             </div>
           </div>
           <a href="{{ job.description }}" target="_blank" rel="noopener" class="job-card-apply">
