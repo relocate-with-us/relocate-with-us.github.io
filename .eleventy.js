@@ -90,7 +90,7 @@ module.exports = function (eleventyConfig) {
       ""
     );
     const parts = cleaned.split(",");
-    const country = parts[parts.length - 1].trim();
+    const country = (job.country || "").trim() || parts[parts.length - 1].trim();
     const codes = {
       "Germany": "DE", "Netherlands": "NL", "United Kingdom": "GB", "UK": "GB",
       "Spain": "ES", "Ireland": "IE", "Sweden": "SE", "Switzerland": "CH",
